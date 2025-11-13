@@ -1,16 +1,24 @@
 import adapter from '@sveltejs/adapter-static';
+import preprocess from 'svelte-preprocess';
 
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
-  kit: {
-    adapter: adapter({
-      pages: 'docs',   // Dossier où sera mis ton site final
-      assets: 'docs',
-      fallback: 'index.html' // utile si tu veux que tout redirige vers la racine (SPA)
-    }),
-    paths: {
-      base: '/Generateur-de-Rituel' // ton nom de repo
+  preprocess: preprocess(),
+  	kit: {
+		adapter: adapter({
+			pages: 'docs',
+			assets: 'docs',
+			fallback: 'index.html',
+			precompress: false,
+			strict: true
+		}),
+		paths: {
+      base: '/Generateur-de-Rituel' 
+    },
+	prerender: {
+      entries: ['*'] // prérendre toutes les pages
     }
-  }
+	}
 };
 
 export default config;
