@@ -1,12 +1,11 @@
-
 import adapter from '@sveltejs/adapter-static';
 
 export default {
   kit: {
     adapter: adapter({
-      pages: 'build',
-      assets: 'build',
-      fallback: 'index.html'  // <-- permet SPA
+      pages: 'docs',   // <--- sortie dans /docs
+      assets: 'docs',
+      fallback: 'index.html'
     }),
     paths: { base: '' }
   }
