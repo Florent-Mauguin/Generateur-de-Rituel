@@ -1,12 +1,19 @@
 import adapter from '@sveltejs/adapter-static';
+import preprocess from 'svelte-preprocess';
 
-export default {
+const config = {
+  preprocess: preprocess(),
+
   kit: {
     adapter: adapter({
-      pages: 'docs',   // <--- sortie dans /docs
+      pages: 'docs',      // sortie du site dans /docs
       assets: 'docs',
       fallback: 'index.html'
     }),
-    paths: { base: '' }
+    paths: {
+      base: process.env.NODE_ENV === 'production' ? '/Generateur-de-Rituel' : ''
+    }
   }
 };
+
+export default config;
