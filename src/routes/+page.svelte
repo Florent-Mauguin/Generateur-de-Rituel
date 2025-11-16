@@ -27,8 +27,12 @@ JS
     const opt = {
       margin: 10,
       filename: 'rituel.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2 },
+      image: { type: 'jpeg', quality: 1 },
+      html2canvas: { 
+        dpi: 600,
+        scale:4,
+        letterRendering: true,
+        useCORS: true },
       jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };
     
@@ -83,13 +87,13 @@ JS
 
 
   // Parametres à l'ouverture
-  let servants = 0;
   let celebrationType = "Dominicale";
   let Oraisons = false;
   let Dateliturgique = ""
   let oraison = "";
+  let salutation = "S3";
   let ChoixPenitentiel = "1CP";
-  let hideGloria = false;
+  let [hideGloria, gloriaLatin] = [false, false];
   let showAutresParams = false;
   let Sacrements = false;
   let [Bapteme,PremiereCommunion,Confirmation,Mariage,Ordination,sacrementDesMalades] = [false,false,false,false,false,false];
@@ -98,6 +102,7 @@ JS
   let hideRubriques = false;
   let presenceBishop = false;
   let incense = false;
+  let servants = 0;
   
   let filteredRitual = [];
   let rituelName = "";
@@ -107,11 +112,10 @@ JS
   oraison = OraisonsDominicales[Dateliturgique] || null;
 }
 
-
  // Construction du rituel complet
 const fullRitual = [
   ...ritual.ritesInitiaux,
-  ...ritual.eveque,
+  ...ritual.liturgiedelaparole,
   ...ritual.servants,
   ...ritual.eucharistie
 ];
@@ -123,19 +127,9 @@ function generateRitual() {
     incense,
     servants,
     celebrationType,
-    ChoixPenitentiel
+    salutation, ChoixPenitentiel, hideGloria, gloriaLatin, oraisons: Oraisons,
   };
 
-function formatOraisonTexte(texte) {
-  return texte
-    .split("\n")
-    .map((line, i) =>
-      i === 0
-        ? line
-        : `<span class="vers">${line}</span>`
-    )
-    .join("<br>");
-}
 
 
 
@@ -147,8 +141,7 @@ function formatOraisonTexte(texte) {
     if (step.type === "insert-collecte") {
       if (Oraisons && oraison) {
         filteredRitual.push(
-          { type: "H2", texte: "PRIÈRE D’OUVERTURE (COLLECTE)" },
-          { type: "oraison", texte: formatOraisonTexte(oraison.collecte) }
+          { type: "oraison", segments: oraison.collecte }
         );
       }
       continue;
@@ -174,25 +167,24 @@ function formatOraisonTexte(texte) {
       const expected = cond[key];
       const actual = options[key];
 
-      if (key === "servants" && expected !== actual) {
-        display = false;
-        break;
-      }
-
       if (typeof expected === "boolean" && expected !== actual) {
         display = false;
         break;
       }
 
-      if (Array.isArray(expected) && !expected.includes(actual)) {
+      // Si la condition est un tableau, vérifier si `actual` est inclus dans le tableau
+      if (Array.isArray(expected)) {
+        if (!expected.includes(actual)) {
+          display = false;
+          break;
+        }
+      }
+      // Sinon, vérifier une égalité simple
+      else if (expected !== actual) {
         display = false;
         break;
       }
-
-      if (expected !== actual) {
-        display = false;
-        break;
-      }
+      
     }
 
     if (display) filteredRitual.push(step);
@@ -294,30 +286,49 @@ HTML
 <!-- Lors de l'ouverture -->
 {#if showAutresceremonie}
     <div class="panel-content">
-
-      <!-- ✅ Paramètre : Présence d'un évêque -->
-    <label>
-      Présence de l'évêque :
-      <input type="checkbox" bind:checked={presenceBishop} />
-    </label>
-
-      <!-- ✅ Paramètre : Ne pas afficher le Gloria -->
-      <label>
-        <input type="checkbox" bind:checked={hideGloria} />
-        Sans Gloria
-      </label>
-
-
-      <!-- ✅ Paramètre : Ne pas afficher le Gloria -->
+<div class="sub-options-inline">
+            <!-- ✅ Paramètre : Choix de la salutation -->
 <label>
-        Choix de l'acte pénitentiel :
+        Salutation :
+        <select bind:value={salutation}>
+          <option value="S1">Type 1</option>
+          <option value="S2">Type 2</option>
+          <option value="S3">Type 3</option>
+    </select>
+  </label>
+
+      <!-- ✅ Paramètre : Choix de l'acte pénitentiel -->
+<label>
+        Acte pénitentiel :
         <select bind:value={ChoixPenitentiel}>
           <option value="1CP">Type 1</option>
           <option value="2CP">Type 2</option>
           <option value="3CP">Type 3</option>
     </select>
   </label>
+</div>
+    
+<div class="sub-options-inline">
+  <!-- ✅ Paramètre : Ne pas afficher le Gloria -->
+      <label>
+        Sans Gloria
+        <input type="checkbox" bind:checked={hideGloria} />
+      </label>
 
+        {#if !hideGloria}
+      <!-- ✅ Paramètre : Gloria en latin -->
+      <label>
+        Gloria en Latin :
+        <input type="checkbox" bind:checked={gloriaLatin} />
+      </label>
+      {/if}
+    </div>
+
+      <!-- ✅ Paramètre : Présence d'un évêque -->
+    <label>
+      Présence de l'évêque :
+      <input type="checkbox" bind:checked={presenceBishop} />
+    </label>
     </div>
   {/if}
 </div>
@@ -458,20 +469,62 @@ Début section sacrements
       <button class="css-button-sharp--grey" on:click={generateWord}>Exporter en Word</button>
   </div>
 
+
   {#if filteredRitual.length > 0}
     <div class="card" bind:this={ritualRef}>
       {#if rituelName}
         <h2 class="H1">{rituelName}</h2>
       {/if}
+
   {#each filteredRitual as step}
     {#if step.type === "pageBreak"}
       <div class="page-break" aria-hidden="true"></div>
-    {:else if step.type === "oraison"}
-    <div class="oraison-texte {step.class || ''}">
-      {@html step.texte}
-    </div>
-    {:else}
-    <p class="{step.type} texte {step.class || ''}">{step.texte}</p>
+
+      
+      {:else if step.type === "kyrie"}
+
+        <div class="kyrie-trois-colonnes">
+          <div class="colonne gauche">
+            {#each step.left as seg}
+              <p class="{seg.type} {seg.class || ''}" style="white-space: pre-line;">
+                {seg.texte}
+              </p>
+            {/each}
+          </div>
+
+          <div class="middle">
+            {#each step.middle as seg}
+              <p class="{seg.type} {seg.class || ''}" style="white-space: pre-line;">
+                {seg.texte}
+              </p>
+            {/each}
+          </div>
+
+          <div class="colonne droite">
+            {#each step.right as seg}
+              <p class="{seg.type} {seg.class || ''}" style="white-space: pre-line;">
+                {seg.texte}
+              </p>
+            {/each}
+          </div>
+        </div>
+
+      {:else if step.type === "oraison"}
+        <div class="oraison-texte">
+          {#each step.segments as seg}
+            <p class={seg.class || ""} style="white-space: pre-line;">
+              {seg.texte}
+            </p>
+          {/each}
+        </div>
+
+      {:else if step.items}
+        {#each step.items as item}
+          <p class="{item.type} {item.class || ''}">{item.texte}</p>
+    {/each}
+
+      {:else}
+          <p class="{step.type} texte {step.class || ''}">{step.texte}</p>
     {/if}
   {/each}
 </div>
@@ -491,181 +544,285 @@ CSS
 
 
 <style>
-  :root{
-    --brand: #495057;    /* couleur bouton */
-    --accent: #b30000;   /* rouge liturgique */
-    --bg: #fff;
-    --card: #ffffff;
-    --muted: #6c757d;
-    --radius: 10px;
-    --pad: 1rem;
-    --gap: 1rem;
+/*****************************************************
+ * VARIABLES
+ *****************************************************/
+:root {
+  --brand: #495057;
+  --accent: #b30000; /* rouge liturgique */
+  --bg: #fff;
+  --card: #ffffff;
+  --muted: #6c757d;
+  --radius: 10px;
+  --pad: 1rem;
+  --gap: 1rem;
+
+  --font-main: "Times New Roman", Times, serif;
+}
+
+/*****************************************************
+ * BASE TYPO
+ *****************************************************/
+.texte{ white-space: pre-line; margin:0.01rem 0; }
+
+p {
+  line-height: 1.3;
+  font-family: var(--font-main);
+  text-align: justify;
+}
+
+/*****************************************************
+ * TITRES
+ *****************************************************/
+.H1, .H2, .H3 {
+  font-family: var(--font-main);
+  display: block;
+  text-align: center;
+  page-break-inside: avoid;
+}
+
+.H1 { font-size: 1.8rem; font-weight: 700; margin:1rem 0 1rem 0; }
+.H2 { font-size: 1.4rem; font-weight: 700; margin:1.5rem 0 1rem 0;}
+.H3 { font-size: 1.1rem; color: var(--accent); font-weight: 700; margin:1.5rem 0 1rem 0;}
+h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2rem; letter-spacing: 0.2px;}
+
+/*****************************************************
+ * DIALOGUES (V / ℟)
+ *****************************************************/
+.dialogueV {
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height:1.1;
+}
+
+.dialogueR {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.dialogueR::before {
+  content: "℟ ";
+  color: var(--accent);
+}
+
+/*****************************************************
+ * INDENTATIONS ET RUBRIQUES
+ *****************************************************/
+.rubrique { color: var(--accent); margin:0.3rem 0;}
+.allindentation { text-indent: -1em; padding-left: 1em; }
+.premiereindentation { text-indent: 0.9em; }
+.grandeindentation { text-indent: 2em; }
+.lettrine::first-letter { color: var(--accent); font-weight: bold }
+.sautdeligne {line-height: 0.6;}
+.voixbasse { font-style: italic; font-size: 1.3rem;   line-height:1.1; }
+
+.grandelettrine::first-letter {
+  color: var(--accent);
+  font-size: 3rem;
+  font-weight: 700;
+  float: left;
+  line-height: 0.85;
+  padding-top: 0.3rem;
+}
+/*****************************************************
+ * ORAISON
+ *****************************************************/
+.oraison-texte p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.1;
+}
+  
+.oraison-row{ display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; }
+
+/*****************************************************
+ * KYRIE — TROIS COLONNES
+ *****************************************************/
+.kyrie-trois-colonnes {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.kyrie-trois-colonnes p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .kyrie-trois-colonnes {
+    flex-direction: column;
   }
+}
+
+/*****************************************************
+ * CONTENEUR PRINCIPAL
+ *****************************************************/
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: calc(var(--pad) * 0.7);
+  background: transparent;
+}
+
+/*****************************************************
+ * CARD
+ *****************************************************/
+.card {
+  border-radius: var(--radius);
+  padding: calc(var(--pad) + 0.25rem);
+  margin-bottom: var(--gap);
+  border: 2px solid rgba(73, 80, 87, 0.06);
+}
+
+/*****************************************************
+ * PANELS — (PARAMÈTRES DU GÉNÉRATEUR)
+ *****************************************************/
+.panel {
+  margin-top: 0.75rem;
+  padding: 0.6rem;
+  border-radius: calc(var(--radius) - 2px);
+  border: 2px solid rgba(73, 80, 87, 0.05);
+}
+
+.panel + .panel-header { margin-top: 1rem; } /* espace visuel entre blocks */
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.6rem;
+  cursor: pointer;
+  border-radius: calc(var(--radius) - 4px);
+  transition: background 0.12s ease, transform 0.08s ease;
+  border: 2px solid transparent;
+}
+ 
+.panel-content {
+  padding: 0.6rem 0.2rem 0.2rem 0.2rem;
+}
+
+/* arrow */
+.arrow{ color:var(--muted); transition: transform .18s ease; }
+.arrow.open{ transform: rotate(90deg); color:var(--brand); }
 
 
-    /* page */
-  .container{
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: calc(var(--pad) * 0.7);
-    background: transparent;
-  }
+/*****************************************************
+ * CHAMPS DE FORMULAIRE
+ *****************************************************/
+label {
+  display: block;
+  color: #222;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
 
-  /* cartes */
-  .card{
-    border-radius: var(--radius);
-    padding: calc(var(--pad) + 0.25rem);
-    margin-bottom: var(--gap);
-    border: 2px solid rgba(73,80,87,0.06);
-  }
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--brand);
+}
 
-  h1.titre-principal{
-    text-align: center;
-    margin: 0 0 var(--gap) 0;
-    font-size: 2rem;
-    letter-spacing: 0.2px;
-  }
+input[type="number"],
+input[type="text"],
+select {
+  padding: 0.38rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+}
 
-    /* layout paramètres */
-  .panel{
-    margin-top: 0.75rem;
-    padding: 0.6rem;
-    border-radius: calc(var(--radius) - 2px);
-    border: 2px solid rgba(73,80,87,0.05);
-  }
+#NomRituel {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid rgba(0,0,0,0.1);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
 
-    /* header interactif */
-  .panel-header{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:0.5rem;
-    padding: 0.5rem 0.6rem;
-    cursor: pointer;
-    border-radius: calc(var(--radius) - 4px);
-    transition: background 0.12s ease, transform 0.08s ease;
-    border: 2px solid transparent;
-  }
+.sub-options-inline{ display:inline-flex; gap:0.6rem; align-items:center; }
 
-  .panel + .panel-header { margin-top: 1rem; } /* espace visuel entre blocks */
-
-  .panel-content { padding: 0.6rem 0.2rem 0.2rem 0.2rem; }
-
-
-  /* arrow */
-  .arrow{ color:var(--muted); transition: transform .18s ease; }
-  .arrow.open{ transform: rotate(90deg); color:var(--brand); }
-
-    /* champs */
-  label{ display:block; color: #222; font-size:0.95rem; margin-bottom:0.5rem; }
-  input[type="checkbox"]{ width:16px; height:16px; accent-color: var(--brand); }
-  input[type="number"], select, input[type="text"]{
-    padding: 0.38rem 0.5rem;
-    border-radius: 6px;
-    border: 1px solid rgba(0,0,0,0.08);
-    background: #fff;
-  }
-
-    #NomRituel{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0.5rem;
-    border-radius: 6px;
-    border: 2px solid rgba(0,0,0,0.1);
-    margin-bottom: 0.75rem;
-    font-size: 1.1rem;
-  }
-
-   /* boutons identiques à css-button-sharp--grey mais avec variantes */
-  .css-button-sharp--grey{
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 6px 14px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.18s ease;
-    border-radius: 8px;
-    display:inline-flex;
-    align-items:center;
-    gap:0.5rem;
-    justify-content:center;
-    border: 2px solid var(--brand);
-    background: var(--brand);
-  }
-  .css-button-sharp--grey:hover{
-    background: #fff;
-    color: var(--brand);
-    transform: translateY(-2px);
-  }
-  .css-button-ghost{
-    background: transparent;
-    color: var(--brand);
-    border: 2px dashed rgba(73,80,87,0.12);
-  }
-  .button-section{ display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:var(--gap); }
-  .button-section + .card {     margin-top: 1rem;  }
-
-  /* grille sacrements */
-  .sacrements-grid{
-    display:grid;
-    grid-template-columns: repeat(3, minmax(0,1fr));
-    gap: 0.5rem 1rem;
-    align-items:start;
-  }
+/*****************************************************
+ * GRILLE SACREMENTS
+ *****************************************************/
+.sacrements-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 0.5rem 1rem;
+  align-items:start;
+}
   @media (max-width:880px){ .container{ padding:0.6rem } .sacrements-grid{ grid-template-columns:repeat(2,1fr);} }
   @media (max-width:480px){ .sacrements-grid{ grid-template-columns:1fr;} .card{ padding:0.8rem } }
 
+/*****************************************************
+ * BOUTONS
+ *****************************************************/
+.css-button-sharp--grey {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 6px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  border: 2px solid var(--brand);
+  background: var(--brand);
+}
 
-  /* oraisons & texte */
-  .oraison-texte{
-    text-align:justify;
-    line-height:1.35;
-    margin:0.8rem 0;
-    font-size:1.05rem;
-    background: linear-gradient(90deg, rgba(179,0,0,0.02), transparent);
-    padding:0.4rem 0.6rem;
-    border-radius:6px;
-  }
-  .oraison-texte::first-letter{ color:var(--accent); font-size:3.2rem; font-weight:700; float:left; line-height:0.85; padding-right:0.35rem; padding-top:0.05rem; }
-  
+.css-button-sharp--grey:hover {
+  background: #fff;
+  color: var(--brand);
+  transform: translateY(-2px);
+}
+
+.css-button-ghost {
+  background: transparent;
+  color: var(--brand);
+  border: 2px dashed rgba(73,80,87,0.12);
+}
+
+.button-section {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: var(--gap);
+}
+
+.button-section + .card {     margin-top: 1rem;  }
 
 
-  .texte{ white-space: pre-line; margin:0.45rem 0; }
+/*****************************************************
+ * SAUTS DE PAGE (PDF/WORD)
+ *****************************************************/
+.page-break {
+  display: block;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  break-after: page;
+}
 
-  /* titres et rubriques */
-  p{ line-height:1.3;}
-  .H1{ font-weight:700; font-size:1.80rem; margin:1rem 0 1rem 0; text-align:center; }
-  .H2{ font-weight:700; font-size:1.4rem; margin:1.5rem 0 1rem 0; text-align:center; }
-  .H3{ color:#b30000; font-weight:700; font-size:1.1rem; margin:1.5rem 0 1rem 0; text-align:center; }
-  .rubrique{ color:var(--accent); margin:0.3rem 0; }
-  .dialogueV { font-weight: bold; font-size: 1.3rem;   margin: 0; line-height:1.1;}
-  .lettrine::first-letter {  color: #b30000; font-weight: bold }
-  .allindentation {text-indent: -1em; padding-left: 1em;}
-  .premiereindentation {text-indent: 1em;}
-  .grandeindentation {text-indent: 2em;}
-  .dialogueR {font-size: 1.3rem;   margin-top: 0; margin-bottom: 0.5rem;}
-  .dialogueR::before {  content: "℟ ";   color: #b30000;}
-  .sautdeligne {line-height: 0.6;}
+.card .oraison-texte,
+.card p,
+.card .H1,
+.card .H2 {
+  break-inside: avoid;
+}
 
-/* sauts de pages pour l'exportation */
-  .page-break {
-    display: block;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    break-after: page;        
-  }
-
-  .card .oraison-texte,
-  .card p,
-  .card .H1,
-  .card .H2 {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-  
-  /* petites finitions */
-  .oraison-row{ display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; }
-  .sub-options-inline{ display:inline-flex; gap:0.6rem; align-items:center; }
+/*****************************************************
+ * MOBILE — POLICES LÉGÈREMENT RÉDUITES
+ *****************************************************/
+@media (max-width: 600px) {
+  .H1 { font-size: 1.5rem; }
+  .H2 { font-size: 1.2rem; }
+  .H3 { font-size: 1rem; }
+  p { font-size: 0.95rem; }
+}
 </style>

@@ -3,13 +3,14 @@
 export const OraisonsDominicales = {
   "1TO": {
     titre: "1er dimanche du temps ordinaire",
-    collecte: `Aux appels de ton peuple en prière,
-réponds, Seigneur, en ta tendresse : *
-donne à chacun la claire vision de ce qu’il doit faire /
-et la force de l’accomplir.
-Par Jésus Christ, ton Fils, notre Seigneur, +
+    collecte: [{class:"grandelettrine", texte:`Aux appels de ton peuple en prière,
+réponds, Seigneur, en ta tendresse : *`},
+{ class:"allindentation", texte:`donne à chacun la claire vision de ce qu’il doit faire /
+et la force de l’accomplir.`},
+{class:"allindentation", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
 qui vit et règne avec toi dans l’unité du Saint-Esprit, /
-Dieu, pour les siècles des siècles.`,
+Dieu, pour les siècles des siècles.`},
+    ],
     priereSurLesOffrandes: `Que l’offrande de ton peuple te soit agréable,
 nous t’en prions, Seigneur : *
 qu’elle le fasse grandir en sainteté, /
@@ -20,7 +21,8 @@ Par le Christ, notre Seigneur.`,
 
   "2TO": {
     titre: "2e dimanche du temps ordinaire",
-    collecte: `Dieu éternel et tout-puissant,qui régis et le ciel et la terre, +
+    collecte: `Dieu éternel et tout-puissant,
+    qui régis et le ciel et la terre, +
     exauce, en ta bonté, les supplications de ton peuple / 
          et donne à notre temps la paix qui vient de toi.
     Par Jésus Christ, ton Fils, notre Seigneur, +
