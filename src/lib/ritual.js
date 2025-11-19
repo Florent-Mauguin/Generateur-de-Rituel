@@ -24,8 +24,6 @@ ritesInitiaux: [
     { texte: "Et avec votre esprit.", type: "dialogueR", conditions: {} },
     { texte: "Le Prêtre, le diacre ou un autre ministre peut introduire très brièvement les fidèles à la messe du jour.", type:"rubrique", conditions: {} },
 
-{ type: "pageBreak" },
-
 // Acte pénitentiel   
     { texte: "ACTE PENITENTIEL", type: "H2", conditions: {} },
     {texte: "Le dimanche, et surtout au Temps pascal, au lieu de l’acte pénitentiel habituel, on peut aussi faire la bénédiction et l’aspersion de l’eau en mémoire du baptême", type: "rubrique", conditions: {}}, 

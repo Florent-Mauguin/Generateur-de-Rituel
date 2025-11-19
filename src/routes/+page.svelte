@@ -436,7 +436,7 @@ Début section sacrements
 
   <div  class="button-section">
     <button class="css-button-sharp--grey" on:click={generateRitual}>Générer le rituel</button>
-      <button class="css-button-sharp--grey" on:click={() => window.print()}>Exporter en PDF</button>
+      <button title="Choisir ensuite “Enregistrer au format PDF”" class="css-button-sharp--grey" on:click={() => window.print()}>Exporter en PDF</button>
       <button class="css-button-sharp--grey" on:click={generateWord}>Exporter en Word</button>
   </div>
 </div>
@@ -807,7 +807,7 @@ select {
     display: block;
     break-after: page; /* Forcer un saut de page après cet élément */
   }
-  .card,  .card .H1,  .card .H2,  .card .H3,  .card p {
+  .card,  .card .H1,  .card .H2,  .card .H3,  .card p, .dialogueV, .dialogueR, .rubrique, .oraison-texte p {
     break-inside: avoid; /* Éviter les coupures dans les sections */
     page-break-inside: avoid; /* Compatibilité avec d'autres navigateurs */
   }
