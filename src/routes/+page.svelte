@@ -3,46 +3,16 @@ JS
 -->
 
 <script>
-    import { onMount } from 'svelte';
+//import { onMount } from 'svelte';
     import { ritual } from '$lib/ritual.js';
     import { OraisonsDominicales } from '$lib/oraisons';
     import FileSaver from "file-saver";
     import { Document, Packer, Paragraph, TextRun } from "docx";
     
 
-  let html2pdf;
   let ritualRef;
 
-
-  
-  onMount(async () => {
-    const modulePdf = await import('html2pdf.js');
-    html2pdf = modulePdf.default;  });
-
-
-  function exportPDF() {
-    if (!html2pdf || !ritualRef) return;
-    const elements = document.querySelectorAll('.card');
-    elements.forEach(el => el.style.border = 'none');
-    const opt = {
-      margin: 10,
-      filename: 'rituel.pdf',
-      image: { type: 'jpeg', quality: 1 },
-      html2canvas: { 
-        dpi: 600,
-        scale:4,
-        letterRendering: true,
-        useCORS: true },
-      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
-    
-    
-    html2pdf().from(ritualRef).set(opt).save();
-  }
-
-  
-
-
+// Génération du document Word
   async function generateWord() {
     if (!filteredRitual || filteredRitual.length === 0) return;
    
@@ -199,6 +169,7 @@ HTML
 -->
 
 <div class="container">
+  <div class="no-print">
   <h1 class="titre-principal">Générateur de rituel de messe</h1>
 
 
@@ -465,10 +436,10 @@ Début section sacrements
 
   <div  class="button-section">
     <button class="css-button-sharp--grey" on:click={generateRitual}>Générer le rituel</button>
-      <button class="css-button-sharp--grey" on:click={exportPDF}>Exporter en PDF</button>
+      <button class="css-button-sharp--grey" on:click={() => window.print()}>Exporter en PDF</button>
       <button class="css-button-sharp--grey" on:click={generateWord}>Exporter en Word</button>
   </div>
-
+</div>
 
   {#if filteredRitual.length > 0}
     <div class="card" bind:this={ritualRef}>
@@ -825,4 +796,21 @@ select {
   .H3 { font-size: 1rem; }
   p { font-size: 0.95rem; }
 }
+
+/*****************************************************
+ * REGLES POUR L'IMPRESSION PDF
+ *****************************************************/
+@media print {
+  .no-print {display: none !important;}
+  .card {border: none; box-shadow: none;  margin: 0; padding: 0.5rem; }
+  .page-break {
+    display: block;
+    break-after: page; /* Forcer un saut de page après cet élément */
+  }
+  .card,  .card .H1,  .card .H2,  .card .H3,  .card p {
+    break-inside: avoid; /* Éviter les coupures dans les sections */
+    page-break-inside: avoid; /* Compatibilité avec d'autres navigateurs */
+  }
+}
+
 </style>

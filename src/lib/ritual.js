@@ -87,7 +87,6 @@ nous fasse miséricorde ;`, type: "dialogueV", conditions: {} },
   { class:"allindentation", texte: `qu’il nous pardonne nos péchés
 et nous conduise à la vie éternelle.`, type: "dialogueV", conditions: {} },
   { texte: `Amen.`, type: "dialogueR", conditions: {} },
-  { type: "pageBreak" },
 
 // Kyrie
   { texte: "KÝRIE ELÉISON", type: "H2", conditions: {ChoixPenitentiel: ["1CP", "2CP"]} },
