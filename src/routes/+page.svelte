@@ -441,7 +441,9 @@ Début section sacrements
   </div>
 </div>
 
-  {#if filteredRitual.length > 0}
+
+  <!-- Affichage du rituel généré -->
+{#if filteredRitual.length > 0}
     <div class="card" bind:this={ritualRef}>
       {#if rituelName}
         <h2 class="H1">{rituelName}</h2>
@@ -641,6 +643,7 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
 .card {
   border-radius: var(--radius);
   padding: calc(var(--pad) + 0.25rem);
+  margin-top: var(--gap);
   margin-bottom: var(--gap);
   border: 2px solid rgba(73, 80, 87, 0.06);
 }
