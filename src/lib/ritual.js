@@ -176,18 +176,18 @@ liturgiedelaparole: [
   { texte: `Vient ensuite le chant d’acclamation à l’Évangile : l’Alléluia ou un autre chant selon le temps et les normes liturgiques.`, type: "rubrique", conditions: {} },
   { class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
   { texte: `Pendant ce temps, le prêtre impose l’encens, si l’on en fait usage.`, type: "rubrique", conditions: {} },
-  { texte: `Puis le diacre qui va proclamer l’Évangile, incliné profondément devant le prêtre, demande la bénédiction, en disant à voix basse :`, type: "rubrique", conditions: {secret:"true"} },
-  { texte: `Père, bénissez-moi.`, type: "voixbasse", conditions: {secret:"true"} },
-  { texte: `Le prêtre dit à voix basse :`, type: "rubrique", conditions: {secret:"true"} },
+  { texte: `Puis le diacre qui va proclamer l’Évangile, incliné profondément devant le prêtre, demande la bénédiction, en disant à voix basse :`, type: "rubrique", conditions: {secret:true} },
+  { texte: `Père, bénissez-moi.`, type: "voixbasse", conditions: {secret:true} },
+  { texte: `Le prêtre dit à voix basse :`, type: "rubrique", conditions: {secret:true} },
   { texte: `Que le Seigneur soit dans votre coeur et sur vos lèvres 
     pour que vous proclamiez dignement son Évangile : 
-    au nom du Père, et du Fils,  et du Saint-Esprit.`, type: "voixbasse", conditions: {secret:"true"} },
-  { texte: `Le diacre fait le signe de la croix et répond :`, type: "rubrique", conditions: {secret:"true"} },
-  { texte: `Amen.`, type: "voixbasse", conditions: {secret:"true"} },
-  { texte: `S’il n’y a pas de diacre, le prêtre, incliné devant l’autel, prie tout bas :`, type: "rubrique", conditions: {secret:"true"} },
+    au nom du Père, et du Fils,  et du Saint-Esprit.`, type: "voixbasse", conditions: {secret:true} },
+  { texte: `Le diacre fait le signe de la croix et répond :`, type: "rubrique", conditions: {secret:true} },
+  { texte: `Amen.`, type: "voixbasse", conditions: {secret:true} },
+  { texte: `S’il n’y a pas de diacre, le prêtre, incliné devant l’autel, prie tout bas :`, type: "rubrique", conditions: {secret:true} },
   { texte: `Purifie mon coeur et mes lèvres, 
     Dieu tout-puissant, 
-    pour que j’annonce dignement ton saint Évangile.`, type: "voixbasse", conditions: {secret:"true"} },
+    pour que j’annonce dignement ton saint Évangile.`, type: "voixbasse", conditions: {secret:true} },
   { texte: `Ensuite, le diacre ou le prêtre se rend à l’ambon, accompagné éventuellement des ministres avec l’encens et les cierges, et il dit ou chante :`, type: "rubrique", conditions: {} },
   { class:"lettrine", texte: `Le Seigneur soit avec vous.`, type: "dialogueV", conditions: {} },
   { texte: `Et avec votre esprit.`, type: "dialogueR", conditions: {} },
@@ -200,8 +200,8 @@ liturgiedelaparole: [
   { class:"lettrine", texte: `Acclamons la Parole de Dieu.`, type: "dialogueV", conditions: {} },
   { texte: `Louange à toi, Seigneur Jésus !`, type: "dialogueR", conditions: {} },
   { class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
-  { texte: `Ensuite, il le vénère d’un baiser en disant tout bas :`, type: "rubrique", conditions: {secret:"true"} },
-  { texte: `Que cet Évangile efface mes péchés.`, type: "voixbasse", conditions: {secret:"true"} },
+  { texte: `Ensuite, il le vénère d’un baiser en disant tout bas :`, type: "rubrique", conditions: {secret:true} },
+  { texte: `Que cet Évangile efface mes péchés.`, type: "voixbasse", conditions: {secret:true} },
   { texte: `Puis le prêtre ou le diacre prononce l’homélie, qui doit avoir lieu tous les dimanches et fêtes de précepte ; les autres jours, elle est recommandée.`, type: "rubrique", conditions: {} },
 
 //Credo
@@ -309,15 +309,72 @@ rassemblés pour la prière commune,
 supplions le Seigneur très bon
 pour nous-mêmes et pour tous les hommes.`, type: "dialogueV", conditions: {} },
   { texte: `PRIÈRES DE CONCLUSION`, type: "H4", conditions: {} },
-  { texte: `Dieu qui sauves tous les hommes
-et ne veux en perdre aucun,
-Écoute la prière de ton peuple
+  { class:"allindentation", texte: `Dieu qui sauves tous les hommes
+et ne veux en perdre aucun,`, type: "dialogueV", conditions: {} },
+{ class:"allindentation", texte: `Écoute la prière de ton peuple
 et donne-lui la joie d’être exaucé.
 Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {} },
 ],
 
 liturgieeucharistique: [
   { texte: "LITURGIE EUCHARISTIQUE", type: "H1", conditions: {} },
+//A ajouter plus tardAprès cela, on commence le chant d’offertoire. Pendant ce temps, les ministres placent sur
+//l’autel le missel, le corporal, le purificatoire, le calice et la pale.
+//Il est bon que les fidèles manifestent leur participation par une offrande, en apportant le
+//pain et le vin pour la célébration de l’eucharistie, ou même d’autres dons destinés à subvenir
+//aux besoins de l’Église et des pauvres.
+  { texte: `PRÉPARATION DES DONS`, type: "H2", conditions: {} },
+  { texte: `Le prêtre, debout à l’autel, prend la patène avec le pain, et la tient à deux mains, un peu élevée au-dessus de l’autel, en disant :`, type: "rubrique", conditions: {} },
+  { class:"grandelettrine allgrandeindentation", texte: `Tu es béni, Seigneur, Dieu de l’univers :
+nous avons reçu de ta bonté
+le pain que nous te présentons,
+fruit de la terre et du travail des hommes ;
+il deviendra pour nous le pain de la vie.`, type: "dialogueV", conditions: {} },
+  { texte: `S’il n’y a pas de chant d’offertoire, le prêtre peut dire ces paroles à haute voix ; à la fin, le peuple peut dire l’acclamation :`, type: "rubrique", conditions: {} },
+  { class:"allgrandeindentation", texte: `Béni soit Dieu, maintenant et toujours !`, type: "dialogueR", conditions: {} },
+  { texte: `Le diacre, ou le prêtre, verse le vin et un peu d’eau dans le calice, en disant tout bas\u00A0:`, type: "rubrique", conditions: {secret:true } },
+  { class:"voixbasse lettrine allgrandeindentation" , texte: `Comme cette eau se mêle au vin
+pour le sacrement de l’Alliance,
+puissions-nous être unis à la divinité
+de Celui qui a voulu prendre notre humanité.`, type: "voixbasse", conditions: {secret:true } },
+  { texte: `Ensuite, le prêtre prend le calice, et le tient à deux mains, un peu élevé au-dessus de l’autel, en disant à voix basse\u00A0:`, type: "rubrique", conditions: {} },
+{ class:"grandelettrine allgrandeindentation", texte: `Tu es béni, Seigneur, Dieu de l’univers\u00A0:
+nous avons reçu de ta bonté
+le vin que nous te présentons,
+fruit de la vigne et du travail des hommes ;
+il deviendra pour nous le vin du Royaume éternel.`, type: "dialogueV", conditions: {} },
+  { texte: `S’il n’y a pas de chant d’offertoire, le prêtre peut dire ces paroles à haute voix ; à la fin, le peuple peut dire l’acclamation :`, type: "rubrique", conditions: {} },
+  { class:"allgrandeindentation", texte: `Béni soit Dieu, maintenant et toujours !`, type: "dialogueR", conditions: {} },
+  { texte: `Ensuite, le prêtre, profondément incliné, dit tout bas :`, type: "rubrique", conditions: {secret:true } },
+  { texte: `Le coeur humble et contrit,
+nous te supplions, Seigneur,
+accueille-nous :
+que notre sacrifice, en ce jour,
+trouve grâce devant toi,
+Seigneur notre Dieu.`, type: "voixbasse", conditions: {secret:true }},
+//Si cela convient, le prêtre encense les offrandes, la croix et l’autel ; puis, le diacre ou un autre ministre encense le prêtre et le peuple.
+  { texte: `Ensuite, le prêtre, sur le côté de l’autel, se lave les mains, en disant tout bas\u00A0:`, type: "rubrique", conditions: {secret:true } },
+  { texte: `Lave-moi de mes fautes, Seigneur,
+et purifie-moi de mon péché.`, type: "voixbasse", conditions: {secret:true}},
+
+//Prière sur les offrandes
+  { texte: `PRIÈRE SUR LES OFFRANDES`, type: "H3", conditions: {} },
+  { texte: `Revenu au milieu de l’autel, tourné vers le peuple, étendant puis joignant les mains, il dit\u00A0:`, type: "rubrique", conditions: {} },
+  { class:"grandelettrine allgrandeindentation", texte: `Priez, frères (et soeurs) :
+que mon sacrifice, qui est aussi le vôtre,
+soit agréable à Dieu le Père tout-puissant.`, type: "dialogueV", conditions: {} },
+  { texte: `Le peuple se lève et répond :`, type: "rubrique", conditions: {} },
+  { class:"allgrandeindentation", texte: `Que le Seigneur reçoive de vos mains ce sacrifice
+à la louange et à la gloire de son nom,
+pour notre bien et celui de toute l’Église.`, type: "dialogueR", conditions: {} },
+  { texte: `Puis, les mains étendues, le prêtre dit la prière sur les offrandes.`, type: "rubrique", conditions: {} },
+  {type : "insert-priere-sur-les-offrandes"},
+  
+
+  { texte: `PRIÈRE EUCHARISTIQUE`, type: "H2", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
+
+  
 ],
 eucharistie: [  ]
 };

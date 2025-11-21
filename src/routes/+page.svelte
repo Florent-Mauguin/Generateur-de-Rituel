@@ -558,7 +558,7 @@ Début section sacrements
   {/if}
 
   <button on:click={topFunction} id="scrollToTopButton" title="Haut de page">
-  <i class="fas fa-chevron-up"></i>
+  ↑
 </button>
 </div>
 
@@ -605,7 +605,7 @@ p {
 /*****************************************************
  * TITRES
  *****************************************************/
-.H1, .H2, .H3, .premiergénéré {
+.H1, .H2, .H3, .H4, .premiergénéré {
   font-family: var(--font-main);
   display: block;
   text-align: center;
@@ -615,6 +615,7 @@ p {
 .H1 { font-size: 1.8rem; font-weight: 700; margin:3rem 0 1rem 0; }
 .H2 { font-size: 1.4rem; font-weight: 700; margin:1.5rem 0 1rem 0;}
 .H3 { font-size: 1.1rem; color: var(--accent); font-weight: 700; margin:1.5rem 0 1rem 0;}
+.H4 { font-size: 1rem; font-weight: 300; margin:1rem 0 0.5rem 0; }
 h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2rem; letter-spacing: 0.2px;}
 .premiergénéré { margin:0rem 0 1rem 0; }
 
@@ -630,9 +631,10 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
 .dialogueR {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  line-height:1.1;
 }
 .dialogueR::before {
-  content: "℟ ";
+  content: "℟. ";
   color: var(--accent);
 }
 
@@ -652,6 +654,7 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
 .allindentation { text-indent: -1em; padding-left: 1em; } 
 .premiereindentation { text-indent: 1.18rem; }
 .grandeindentation { text-indent: 2em; }
+.allgrandeindentation { padding-left: 2em; }
 .lettrine::first-letter { color: var(--accent); font-weight: bold }
 .sautdeligne {line-height: 0.6;}
 .voixbasse { font-style: italic; font-size: 1.3rem;   line-height:1.1; }
@@ -840,9 +843,13 @@ select {
 
 .button-section + .card {     margin-top: 1rem;  }
 
-
+/*****************************************************
+ * BOUTONS - Retour en haut de page
+ *****************************************************/
 #scrollToTopButton {
-  display: block;
+display: block; /* Utilise Flexbox pour centrer le contenu */
+  align-items: center; /* Centre verticalement */
+  justify-content: center; /* Centre horizontalement */
   z-index: 99;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
@@ -851,21 +858,22 @@ select {
   bottom: 20px;
   right: 30px;
   border: none;
-  border-radius: 4px;
+  border-radius: 50%; /* Bouton rond */
+  background-color: var(--brand); /* Couleur de fond */
+  color: white; /* Couleur de la flèche */
+  font-size: 3rem; /* Taille de la flèche */
+  font-weight: bold;
   outline: none;
-  width: 50px;
-  height: 50px;
-  padding: 8px;
-  background-color: #333333bf;
+  width: 50px; /* Largeur du bouton */
+  height: 50px; /* Hauteur du bouton */
+  padding: 0; /* Supprime les marges internes */
 }
-#scrollToTopButton i {
-  color: white;
-}
+
 #scrollToTopButton:hover,
 #scrollToTopButton:focus,
 #scrollToTopButton:focus-within {
   cursor: pointer;
-  background-color: #0078b4;
+  background-color: #565b5d;
 }
 /*****************************************************
  * SAUTS DE PAGE (PDF/WORD)
