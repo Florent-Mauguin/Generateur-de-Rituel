@@ -202,6 +202,115 @@ liturgiedelaparole: [
   { texte: `Ensuite, il le vénère d’un baiser en disant tout bas :`, type: "rubrique", conditions: {} },
   { texte: `Que cet Évangile efface mes péchés.`, type: "voixbasse", conditions: {} },
   { texte: `Puis le prêtre ou le diacre prononce l’homélie, qui doit avoir lieu tous les dimanches et fêtes de précepte ; les autres jours, elle est recommandée.`, type: "rubrique", conditions: {} },
+
+//Credo
+  { texte: `PROFESSION DE FOI`, type: "H2", conditions: {showCredo: true} },
+  { texte: "L’homélie étant achevée, on chante ou on dit le Symbole ou Profession de foi,", type: "rubrique", conditions: {showCredo: true} },
+  
+  //Credo de Nicée-Constantinople
+  { texte: `Symbole de Nicée-Constantinople`, type: "H3", conditions: {typeCredo: "NC", showCredo: true} },
+  { conditions: {typeCredo: "NC", showCredo: true}, items:[
+  { class:"grandelettrine" , texte: `Je crois en un seul Dieu,
+le Père tout-puissant, créateur du ciel et de la terre,`, type: "dialogueV" },
+  { class:"premiereindentation", texte: `de l’univers visible et invisible.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Je crois en un seul Seigneur, Jésus Christ,
+le Fils unique de Dieu, né du Père avant tous les siècles\u00A0:`, type: "dialogueV" },
+  { class:"allindentation", texte: `Il est Dieu, né de Dieu,
+lumière née de la lumière,
+vrai Dieu, né du vrai Dieu,`, type: "dialogueV" },
+  { class:"allindentation", texte: `Engendré, non pas créé,
+consubstantiel au Père,
+et par lui tout a été fait.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Pour nous les hommes, et pour notre salut,
+il descendit du ciel\u00A0;`, type: "dialogueV" },
+  { class:"grandeindentation", texte: `Aux mots qui suivent, tous s’inclinent jusqu’à « s’est fait homme\u00A0».`, type: "rubrique" },
+  { class:"allindentation", texte: `Par l’Esprit Saint, il a pris chair de la Vierge Marie,
+et s’est fait homme.`, type: "dialogueV"},
+  { class:"allindentation", texte: `Crucifié pour nous sous Ponce Pilate,
+il souffrit sa passion et fut mis au tombeau.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Il ressuscita le troisième jour, conformément aux Écritures,
+et il monta au ciel ; il est assis à la droite du Père.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Il reviendra dans la gloire, pour juger les vivants et les morts\u00A0;
+et son règne n’aura pas de fin.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Je crois en l’Esprit Saint, qui est Seigneur et qui donne la vie\u00A0;
+il procède du Père et du Fils\u00A0;`, type: "dialogueV" },
+  { class:"allindentation", texte: `Avec le Père et le Fils, il reçoit même adoration et même gloire\u00A0;
+il a parlé par les prophètes.`, type: "dialogueV" },
+  { texte: `Je crois en l’Église, une, sainte, catholique et apostolique.
+Je reconnais un seul baptême pour le pardon des péchés.
+J’attends la résurrection des morts, et la vie du monde à venir. Amen.`, type: "dialogueV" },
+],},
+
+//Credo en latin
+  { texte: `Symbole de Nicée-Constantinople`, type: "H3", conditions: {typeCredo: "Lt", showCredo: true} },
+  { conditions: {typeCredo: "Lt", showCredo: true}, items:[
+  { class:"grandelettrine" , texte: `Credo in unum Deum,
+Patrem omnipótentem, factórem cæli et terræ,`, type: "dialogueV"},
+  { class:"premiereindentation", texte: `visibílium ómnium et invisibílium.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Et in unum Dóminum Iesum Christum,
+Fílium Dei unigénitum,
+et ex Patre natum ante ómnia sǽcula.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Deum de Deo, lumen de lúmine, Deum verum de Deo vero,
+    génitum, non factum, consubstantiálem Patri\u00A0:
+    per quem ómnia facta sunt.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Qui propter nos hómines et propter nostram salútem
+descéndit de cælis.`, type: "dialogueV" },
+  { class:"grandeindentation", texte: `Aux mots qui suivent, tous s’inclinent jusqu’à « factus est\u00A0».`, type: "rubrique" },
+  { class:"allindentation", texte: `Et incarnátus est de Spíritu Sancto
+ex María Vírgine, et homo factus est.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Crucifíxus étiam pro nobis sub Póntio Piláto ;
+passus et sepúltus est,
+et resurréxit tértia die, secúndum Scriptúras,
+et ascéndit in cælum, sedet ad déxteram Patris.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Et íterum ventúrus est cum glória,
+iudicáre vivos et mórtuos,
+cuius regni non erit finis.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Et in Spíritum Sanctum, Dóminum et vivificántem\u00A0:
+qui ex Patre Filióque procédit.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Qui cum Patre et Fílio simul adorátur et conglorificátur\u00A0:
+qui locútus est per prophétas.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Et unam, sanctam, cathólicam et apostólicam Ecclésiam.`, type: "dialogueV" },
+  { texte: `Confíteor unum baptísma in remissiónem peccatórum.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Et exspécto resurrectiónem mortuórum,
+et vitam ventúri sǽculi. Amen.`, type: "dialogueV" },
+],},
+
+//Credo en latin
+  { texte: `Symbole des Apôtres`, type: "H3", conditions: {typeCredo: "AP", showCredo: true} },
+  { conditions: {typeCredo: "AP", showCredo: true}, items:[
+  { texte: `Surtout aux temps du Carême et de Pâques, on peut prendre le symbole baptismal de l’Église romaine appelé Symbole des Apôtres.`, type: "rubrique" },
+  { class:"grandelettrine" , texte: `Je crois en Dieu, le Père tout-puissant,
+créateur du ciel et de la terre.`, type: "dialogueV"},
+  { texte: `Et en Jésus Christ, son Fils unique, notre Seigneur,`, type: "dialogueV" },
+  { class:"grandeindentation", texte: `Aux mots qui suivent, tous s’inclinent jusqu’à « Vierge Marie\u00A0».`, type: "rubrique" },
+  { class:"allindentation", texte: `qui a été conçu du Saint-Esprit,
+est né de la Vierge Marie,
+a souffert sous Ponce Pilate,
+a été crucifié, est mort et a été enseveli,
+est descendu aux enfers,
+le troisième jour est ressuscité des morts,
+est monté aux cieux,
+est assis à la droite de Dieu le Père tout-puissant,
+d’où il viendra juger les vivants et les morts.`, type: "dialogueV" },
+  { class:"allindentation", texte: `Je crois en l’Esprit Saint,
+à la sainte Église catholique,
+à la communion des saints,
+à la rémission des péchés,
+à la résurrection de la chair,
+à la vie éternelle. Amen.`, type: "dialogueV" },
+],},
+
+
+  { texte: ``, type: "", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
 ],
 
 servants: [],

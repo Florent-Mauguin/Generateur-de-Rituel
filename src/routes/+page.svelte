@@ -64,6 +64,8 @@ JS
   let salutation = "S3";
   let ChoixPenitentiel = "1CP";
   let [hideGloria, gloriaLatin] = [false, false];
+  let showCredo = true; 
+  let typeCredo = "NC";
   let showAutresParams = false;
   let Sacrements = false;
   let [Bapteme,PremiereCommunion,Confirmation,Mariage,Ordination,sacrementDesMalades] = [false,false,false,false,false,false];
@@ -97,7 +99,7 @@ function generateRitual() {
     incense,
     servants,
     celebrationType,
-    salutation, ChoixPenitentiel, hideGloria, gloriaLatin, oraisons: Oraisons,
+    salutation, ChoixPenitentiel, hideGloria, gloriaLatin, oraisons: Oraisons, showCredo, typeCredo
   };
 
 
@@ -295,6 +297,24 @@ HTML
       {/if}
     </div>
 
+<div class="sub-options-inline">
+    <label>
+      Credo
+      <input type="checkbox" bind:checked={showCredo} />
+    </label>
+
+    {#if showCredo}
+        <label>
+          Type de Credo :
+          <select bind:value={typeCredo}>
+            <option value="NC">Symbole de Nicée-Constantinople</option>
+            <option value="AP">Symbole des Apôtres</option>
+            <option value="Lt">Symbole en latin</option>
+          </select>
+        </label>
+      {/if}
+    </div>
+
       <!-- ✅ Paramètre : Présence d'un évêque -->
     <label>
       Présence de l'évêque :
@@ -455,7 +475,6 @@ Début section sacrements
 
       
       {:else if step.type === "kyrie"}
-
         <div class="kyrie-trois-colonnes">
           <div class="colonne gauche">
             {#each step.left as seg}
@@ -493,9 +512,8 @@ Début section sacrements
 
       {:else if step.items}
         {#each step.items as item}
-          <p class="{item.type} {item.class || ''}">{item.texte}</p>
+          <p class="{item.type} {item.class || ''}" style="margin: 0; white-space: pre-line;">{item.texte}</p>
     {/each}
-
       {:else}
           <p class="{step.type} texte {step.class || ''}">{step.texte}</p>
     {/if}
@@ -581,7 +599,7 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
  * INDENTATIONS ET RUBRIQUES
  *****************************************************/
 .rubrique { color: var(--accent); margin:0.3rem 0;}
-.allindentation { text-indent: -1em; padding-left: 1em; }
+.allindentation { text-indent: -1em; padding-left: 1em; } 
 .premiereindentation { text-indent: 0.9em; }
 .grandeindentation { text-indent: 2em; }
 .lettrine::first-letter { color: var(--accent); font-weight: bold }
@@ -804,13 +822,15 @@ select {
  * REGLES POUR L'IMPRESSION PDF
  *****************************************************/
 @media print {
+   @page {size: A4 portrait; margin: 2cm 1.5cm;}
+   @page:first {  margin-top: 0cm; }
   .no-print {display: none !important;}
-  .card {border: none; box-shadow: none;  margin: 0; padding: 0.5rem; }
+  .card {border: none; box-shadow: none; }
   .page-break {
     display: block;
     break-after: page; /* Forcer un saut de page après cet élément */
   }
-  .card,  .card .H1,  .card .H2,  .card .H3,  .card p, .dialogueV, .dialogueR, .rubrique, .oraison-texte p {
+  .card,  .card .H1,  .card .H2,  .card .H3,  .card p {
     break-inside: avoid; /* Éviter les coupures dans les sections */
     page-break-inside: avoid; /* Compatibilité avec d'autres navigateurs */
   }
