@@ -3,7 +3,7 @@ import { OraisonsDominicales } from "./oraisons";
 
 export const ritual = {
 ritesInitiaux: [  
-  { texte: "RITES INITIAUX", type: "H1", conditions: {} },
+  { class:"premiergénéré", texte: "RITES INITIAUX", type: "H1", conditions: {} },
   {texte: `Lorsque le peuple est rassemblé, le prêtre s’avance vers l’autel avec les ministres, pendant le chant d’entrée.`, type: "rubrique", conditions: {} },
   { texte: "Quand il est parvenu à l’autel, il fait une inclination profonde avec les ministres, puis il vénère l’autel par un baiser et, si cela convient, il encense la croix et l’autel. Ensuite, il gagne son siège avec les ministres.", type: "rubrique", conditions: {} },
   { texte: "Le chant d’entrée achevé, le prêtre et les fidèles, debout, font le signe de la croix, tandis que le prêtre, tourné vers le peuple dit :", type: "rubrique", conditions: {} },
@@ -164,29 +164,30 @@ liturgiedelaparole: [
   { type: "pageBreak" },
   { texte: "LITURGIE DE LA PAROLE", type: "H1", conditions: {} },
   { texte: "LECTURES", type: "H2", conditions: {} },
-  { texte: `Ensuite, un lecteur se rend à l’ambon et fait la première lecture, que tous écoutent assis. À la fin de la lecture, le lecteur proclame ou chante :`, type: "rubrique", conditions: {} },
+  { texte: "Première lecture", type: "H3", conditions: {} },
+  { texte: `À la fin de la lecture, le lecteur proclame ou chante :`, type: "rubrique", conditions: {} },
   { class:"lettrine", texte: `Parole du Seigneur.`, type: "dialogueV", conditions: {} },
   { texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {} },
-  { texte: `Le psalmiste dit ou chante le psaume auquel le peuple répond, habituellement par un refrain.`, type: "rubrique", conditions: {} },
-  { class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
-  { texte: `Ensuite, s’il doit y avoir une deuxième lecture avant l’Évangile, un lecteur la fait à 
-    l’ambon comme la première. À la fin de la lecture, le lecteur proclame ou chante :`, type: "rubrique", conditions: {} },
+  { texte: "Psaume", type: "H3", conditions: {} },
+  { texte: "Deuxième lecture", type: "H3", conditions: {} },
+  { texte: `À la fin de la lecture, le lecteur proclame ou chante :`, type: "rubrique", conditions: {} },
   { class:"lettrine", texte: `Parole du Seigneur.`, type: "dialogueV", conditions: {} },
   { texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {} },
   { texte: `Vient ensuite le chant d’acclamation à l’Évangile : l’Alléluia ou un autre chant selon le temps et les normes liturgiques.`, type: "rubrique", conditions: {} },
   { class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
-  { texte: `Pendant ce temps, le prêtre impose l’encens, si l’on en fait usage. Puis le diacre qui va proclamer l’Évangile, incliné profondément devant le prêtre, demande la bénédiction, en disant à voix basse :`, type: "rubrique", conditions: {} },
-  { texte: `Père, bénissez-moi.`, type: "voixbasse", conditions: {} },
-  { texte: `Le prêtre dit à voix basse :`, type: "rubrique", conditions: {} },
+  { texte: `Pendant ce temps, le prêtre impose l’encens, si l’on en fait usage.`, type: "rubrique", conditions: {} },
+  { texte: `Puis le diacre qui va proclamer l’Évangile, incliné profondément devant le prêtre, demande la bénédiction, en disant à voix basse :`, type: "rubrique", conditions: {secret:"true"} },
+  { texte: `Père, bénissez-moi.`, type: "voixbasse", conditions: {secret:"true"} },
+  { texte: `Le prêtre dit à voix basse :`, type: "rubrique", conditions: {secret:"true"} },
   { texte: `Que le Seigneur soit dans votre coeur et sur vos lèvres 
     pour que vous proclamiez dignement son Évangile : 
-    au nom du Père, et du Fils,  et du Saint-Esprit.`, type: "voixbasse", conditions: {} },
-  { texte: `Le diacre fait le signe de la croix et répond :`, type: "rubrique", conditions: {} },
-  { texte: `Amen.`, type: "voixbasse", conditions: {} },
-  { texte: `S’il n’y a pas de diacre, le prêtre, incliné devant l’autel, prie tout bas :`, type: "rubrique", conditions: {} },
+    au nom du Père, et du Fils,  et du Saint-Esprit.`, type: "voixbasse", conditions: {secret:"true"} },
+  { texte: `Le diacre fait le signe de la croix et répond :`, type: "rubrique", conditions: {secret:"true"} },
+  { texte: `Amen.`, type: "voixbasse", conditions: {secret:"true"} },
+  { texte: `S’il n’y a pas de diacre, le prêtre, incliné devant l’autel, prie tout bas :`, type: "rubrique", conditions: {secret:"true"} },
   { texte: `Purifie mon coeur et mes lèvres, 
     Dieu tout-puissant, 
-    pour que j’annonce dignement ton saint Évangile.`, type: "voixbasse", conditions: {} },
+    pour que j’annonce dignement ton saint Évangile.`, type: "voixbasse", conditions: {secret:"true"} },
   { texte: `Ensuite, le diacre ou le prêtre se rend à l’ambon, accompagné éventuellement des ministres avec l’encens et les cierges, et il dit ou chante :`, type: "rubrique", conditions: {} },
   { class:"lettrine", texte: `Le Seigneur soit avec vous.`, type: "dialogueV", conditions: {} },
   { texte: `Et avec votre esprit.`, type: "dialogueR", conditions: {} },
@@ -199,17 +200,16 @@ liturgiedelaparole: [
   { class:"lettrine", texte: `Acclamons la Parole de Dieu.`, type: "dialogueV", conditions: {} },
   { texte: `Louange à toi, Seigneur Jésus !`, type: "dialogueR", conditions: {} },
   { class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
-  { texte: `Ensuite, il le vénère d’un baiser en disant tout bas :`, type: "rubrique", conditions: {} },
-  { texte: `Que cet Évangile efface mes péchés.`, type: "voixbasse", conditions: {} },
+  { texte: `Ensuite, il le vénère d’un baiser en disant tout bas :`, type: "rubrique", conditions: {secret:"true"} },
+  { texte: `Que cet Évangile efface mes péchés.`, type: "voixbasse", conditions: {secret:"true"} },
   { texte: `Puis le prêtre ou le diacre prononce l’homélie, qui doit avoir lieu tous les dimanches et fêtes de précepte ; les autres jours, elle est recommandée.`, type: "rubrique", conditions: {} },
 
 //Credo
   { texte: `PROFESSION DE FOI`, type: "H2", conditions: {showCredo: true} },
-  { texte: "L’homélie étant achevée, on chante ou on dit le Symbole ou Profession de foi,", type: "rubrique", conditions: {showCredo: true} },
   
   //Credo de Nicée-Constantinople
   { texte: `Symbole de Nicée-Constantinople`, type: "H3", conditions: {typeCredo: "NC", showCredo: true} },
-  { conditions: {typeCredo: "NC", showCredo: true}, items:[
+  { conditions: {typeCredo: "NC", showCredo: true},  class: "tableau",  items:[
   { class:"grandelettrine" , texte: `Je crois en un seul Dieu,
 le Père tout-puissant, créateur du ciel et de la terre,`, type: "dialogueV" },
   { class:"premiereindentation", texte: `de l’univers visible et invisible.`, type: "dialogueV" },
@@ -243,7 +243,7 @@ J’attends la résurrection des morts, et la vie du monde à venir. Amen.`, typ
 
 //Credo en latin
   { texte: `Symbole de Nicée-Constantinople`, type: "H3", conditions: {typeCredo: "Lt", showCredo: true} },
-  { conditions: {typeCredo: "Lt", showCredo: true}, items:[
+  { conditions: {typeCredo: "Lt", showCredo: true}, class: "tableau", items:[
   { class:"grandelettrine" , texte: `Credo in unum Deum,
 Patrem omnipótentem, factórem cæli et terræ,`, type: "dialogueV"},
   { class:"premiereindentation", texte: `visibílium ómnium et invisibílium.`, type: "dialogueV" },
@@ -277,7 +277,7 @@ et vitam ventúri sǽculi. Amen.`, type: "dialogueV" },
 
 //Credo en latin
   { texte: `Symbole des Apôtres`, type: "H3", conditions: {typeCredo: "AP", showCredo: true} },
-  { conditions: {typeCredo: "AP", showCredo: true}, items:[
+  { conditions: {typeCredo: "AP", showCredo: true}, class: "tableau",items:[
   { texte: `Surtout aux temps du Carême et de Pâques, on peut prendre le symbole baptismal de l’Église romaine appelé Symbole des Apôtres.`, type: "rubrique" },
   { class:"grandelettrine" , texte: `Je crois en Dieu, le Père tout-puissant,
 créateur du ciel et de la terre.`, type: "dialogueV"},
@@ -300,20 +300,25 @@ d’où il viendra juger les vivants et les morts.`, type: "dialogueV" },
 à la vie éternelle. Amen.`, type: "dialogueV" },
 ],},
 
-
-  { texte: ``, type: "", conditions: {} },
-  { texte: ``, type: "", conditions: {} },
-  { texte: ``, type: "", conditions: {} },
-  { texte: ``, type: "", conditions: {} },
-  { texte: ``, type: "", conditions: {} },
-  { texte: ``, type: "", conditions: {} },
-  { texte: ``, type: "", conditions: {} },
-  { texte: ``, type: "", conditions: {} },
-  { texte: ``, type: "", conditions: {} },
-  { texte: ``, type: "", conditions: {} },
+//Prière universelle
+  { texte: `PRIÈRE UNIVERSELLE`, type: "H3", conditions: {} },
+  { texte: `Quelques invitations sacerdotales et prières de conclusion sont proposées ici pour la commodité du prêtre et n’excluent pas l’usage d’autres formules.`, type: "rubrique", conditions: {} },
+  { texte: `INVITATION SACERDOTALE`, type: "H4", conditions: {} },
+  { texte: `Frères et soeurs,
+rassemblés pour la prière commune,
+supplions le Seigneur très bon
+pour nous-mêmes et pour tous les hommes.`, type: "dialogueV", conditions: {} },
+  { texte: `PRIÈRES DE CONCLUSION`, type: "H4", conditions: {} },
+  { texte: `Dieu qui sauves tous les hommes
+et ne veux en perdre aucun,
+Écoute la prière de ton peuple
+et donne-lui la joie d’être exaucé.
+Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {} },
 ],
 
-servants: [],
+liturgieeucharistique: [
+  { texte: "LITURGIE EUCHARISTIQUE", type: "H1", conditions: {} },
+],
 eucharistie: [  ]
 };
 // modèle plusieurs conditions: { moment: "messe", langue: "français", saison: "avent"  }

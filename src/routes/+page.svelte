@@ -3,7 +3,7 @@ JS
 -->
 
 <script>
-//import { onMount } from 'svelte';
+    import { onMount } from 'svelte';
     import { ritual } from '$lib/ritual.js';
     import { OraisonsDominicales } from '$lib/oraisons';
     import FileSaver from "file-saver";
@@ -63,7 +63,7 @@ JS
   let oraison = "";
   let salutation = "S3";
   let ChoixPenitentiel = "1CP";
-  let [hideGloria, gloriaLatin] = [false, false];
+  let [secret, hideGloria, gloriaLatin] = [false, false, false];
   let showCredo = true; 
   let typeCredo = "NC";
   let showAutresParams = false;
@@ -88,7 +88,7 @@ JS
 const fullRitual = [
   ...ritual.ritesInitiaux,
   ...ritual.liturgiedelaparole,
-  ...ritual.servants,
+  ...ritual.liturgieeucharistique,
   ...ritual.eucharistie
 ];
 
@@ -98,7 +98,7 @@ function generateRitual() {
     presenceBishop,
     incense,
     servants,
-    celebrationType,
+    celebrationType, secret,
     salutation, ChoixPenitentiel, hideGloria, gloriaLatin, oraisons: Oraisons, showCredo, typeCredo
   };
 
@@ -163,6 +163,32 @@ function generateRitual() {
   }
 }
 
+ function topFunction() {
+    document.body.scrollTop = 0; // Pour Safari
+    document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
+  }
+
+  // Fonction pour gérer le défilement
+  function scrollFunction() {
+    const mybutton = document.getElementById("scrollToTopButton");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.opacity = 1;
+      mybutton.style.visibility = "visible";
+    } else {
+      mybutton.style.opacity = 0;
+      mybutton.style.visibility = "hidden";
+    }
+  }
+/* Code dégeu pour un bouton retour en haut */
+  onMount(() => {
+window.onscroll = scrollFunction;
+
+    // Nettoyage lors de la destruction du composant
+    return () => {
+      window.onscroll = null;
+    };
+  });
 </script>
 
 
@@ -260,6 +286,14 @@ HTML
 {#if showAutresceremonie}
     <div class="panel-content">
 <div class="sub-options-inline">
+
+<!-- ✅ Paramètre : Ne pas afficher le Gloria -->
+<label>
+  Prières secrètes
+  <input type="checkbox" bind:checked={secret} />
+</label>
+
+
             <!-- ✅ Paramètre : Choix de la salutation -->
 <label>
         Salutation :
@@ -466,7 +500,7 @@ Début section sacrements
 {#if filteredRitual.length > 0}
     <div class="card" bind:this={ritualRef}>
       {#if rituelName}
-        <h2 class="H1">{rituelName}</h2>
+        <h2 class="premiergénéré">{rituelName}</h2>
       {/if}
 
   {#each filteredRitual as step}
@@ -510,17 +544,23 @@ Début section sacrements
           {/each}
         </div>
 
-      {:else if step.items}
-        {#each step.items as item}
-          <p class="{item.type} {item.class || ''}" style="margin: 0; white-space: pre-line;">{item.texte}</p>
+{:else if step.items}
+  <div class={step.class}>
+    {#each step.items as item}
+      <p class="{item.type} {item.class || ''}">{item.texte}</p>
     {/each}
+  </div>
       {:else}
           <p class="{step.type} texte {step.class || ''}">{step.texte}</p>
     {/if}
   {/each}
 </div>
   {/if}
-  </div>
+
+  <button on:click={topFunction} id="scrollToTopButton" title="Haut de page">
+  <i class="fas fa-chevron-up"></i>
+</button>
+</div>
 
 <!-- Ajouter une condition
           {#if celebrationType === "Dominicale"}
@@ -565,17 +605,18 @@ p {
 /*****************************************************
  * TITRES
  *****************************************************/
-.H1, .H2, .H3 {
+.H1, .H2, .H3, .premiergénéré {
   font-family: var(--font-main);
   display: block;
   text-align: center;
   page-break-inside: avoid;
 }
 
-.H1 { font-size: 1.8rem; font-weight: 700; margin:1rem 0 1rem 0; }
+.H1 { font-size: 1.8rem; font-weight: 700; margin:3rem 0 1rem 0; }
 .H2 { font-size: 1.4rem; font-weight: 700; margin:1.5rem 0 1rem 0;}
 .H3 { font-size: 1.1rem; color: var(--accent); font-weight: 700; margin:1.5rem 0 1rem 0;}
 h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2rem; letter-spacing: 0.2px;}
+.premiergénéré { margin:0rem 0 1rem 0; }
 
 /*****************************************************
  * DIALOGUES (V / ℟)
@@ -595,12 +636,21 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
   color: var(--accent);
 }
 
+.tableau p {
+    margin: 0; /* Supprime les marges */
+    white-space: pre-line;
+  text-align: left;
+}
+
+.tableau .rubrique {
+  margin: 0.5rem 0;
+}
 /*****************************************************
  * INDENTATIONS ET RUBRIQUES
  *****************************************************/
 .rubrique { color: var(--accent); margin:0.3rem 0;}
 .allindentation { text-indent: -1em; padding-left: 1em; } 
-.premiereindentation { text-indent: 0.9em; }
+.premiereindentation { text-indent: 1.18rem; }
 .grandeindentation { text-indent: 2em; }
 .lettrine::first-letter { color: var(--accent); font-weight: bold }
 .sautdeligne {line-height: 0.6;}
@@ -730,6 +780,7 @@ select {
   padding: 0.5rem;
   border-radius: 6px;
   border: 2px solid rgba(0,0,0,0.1);
+  margin-top: 0rem;
   margin-bottom: 0.75rem;
   font-size: 1.1rem;
 }
@@ -790,6 +841,32 @@ select {
 .button-section + .card {     margin-top: 1rem;  }
 
 
+#scrollToTopButton {
+  display: block;
+  z-index: 99;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  background-color: #333333bf;
+}
+#scrollToTopButton i {
+  color: white;
+}
+#scrollToTopButton:hover,
+#scrollToTopButton:focus,
+#scrollToTopButton:focus-within {
+  cursor: pointer;
+  background-color: #0078b4;
+}
 /*****************************************************
  * SAUTS DE PAGE (PDF/WORD)
  *****************************************************/
@@ -823,7 +900,7 @@ select {
  *****************************************************/
 @media print {
    @page {size: A4 portrait; margin: 2cm 1.5cm;}
-   @page:first {  margin-top: 0cm; }
+   @page:first {  margin-top: 0cm 1.5cm 2cm 1.5cm; }
   .no-print {display: none !important;}
   .card {border: none; box-shadow: none; }
   .page-break {
