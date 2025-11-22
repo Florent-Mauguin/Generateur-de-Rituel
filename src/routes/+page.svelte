@@ -64,8 +64,9 @@ JS
   let salutation = "S3";
   let ChoixPenitentiel = "1CP";
   let [secret, hideGloria, gloriaLatin] = [false, false, false];
-  let showCredo = true; 
+  let [showCredo, showPE] = [true, true];
   let typeCredo = "NC";
+  let typePE = "PE1";
   let showAutresParams = false;
   let Sacrements = false;
   let [Bapteme,PremiereCommunion,Confirmation,Mariage,Ordination,sacrementDesMalades] = [false,false,false,false,false,false];
@@ -99,7 +100,8 @@ function generateRitual() {
     incense,
     servants,
     celebrationType, secret,
-    salutation, ChoixPenitentiel, hideGloria, gloriaLatin, oraisons: Oraisons, showCredo, typeCredo
+    salutation, ChoixPenitentiel, hideGloria, gloriaLatin, oraisons: Oraisons, showCredo, typeCredo, 
+    showPE, typePE,
   };
 
 
@@ -354,9 +356,29 @@ HTML
       Présence de l'évêque :
       <input type="checkbox" bind:checked={presenceBishop} />
     </label>
-    </div>
+
+          <!-- ✅ Paramètre : Choix de la prière eucharistique -->
+<div class="sub-options-inline">
+    <label>
+      Prière Eucharistique
+      <input type="checkbox" bind:checked={showPE} />
+    </label>
+
+    {#if showPE}
+<label>
+        <select bind:value={typePE}>
+          <option value="PE1">Prière eucharistique 1</option>
+          <option value="PE2">Prière eucharistique 2</option>
+          <option value="PE3">Prière eucharistique 3</option>
+          <option value="PE4">Prière eucharistique 4</option>
+    </select>
+  </label>
   {/if}
+    </div>
+    </div>
+    {/if}
 </div>
+
 <!--
 Fin div panel cérémonie
 --> 
@@ -624,12 +646,12 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
  *****************************************************/
 .dialogueV {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height:1.1;
 }
 
 .dialogueR {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   line-height:1.1;
 }

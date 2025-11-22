@@ -192,7 +192,7 @@ liturgiedelaparole: [
   { class:"lettrine", texte: `Le Seigneur soit avec vous.`, type: "dialogueV", conditions: {} },
   { texte: `Et avec votre esprit.`, type: "dialogueR", conditions: {} },
   { texte: `Le diacre ou le prêtre dit :`, type: "rubrique", conditions: {} },
-  { class:"lettrine", texte: `Évangile de Jésus Christ  selon saint N.`, type: "dialogueV", conditions: {} },
+  { class:"lettrine", texte: `Évangile de Jésus Christ ✠ selon saint N.`, type: "dialogueV", conditions: {} },
   { texte: `Gloire à toi, Seigneur !`, type: "dialogueR", conditions: {} },
   { texte: `Puis le diacre ou le prêtre encense le livre, si l’on utilise l’encens, et il proclame l’Évangile.`, type: "rubrique", conditions: {} },
   { class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
@@ -370,11 +370,42 @@ pour notre bien et celui de toute l’Église.`, type: "dialogueR", conditions: 
   { texte: `Puis, les mains étendues, le prêtre dit la prière sur les offrandes.`, type: "rubrique", conditions: {} },
   {type : "insert-priere-sur-les-offrandes"},
   
+//Prière eucharistique
+  { texte: `PRIÈRE EUCHARISTIQUE I (CANON ROMAIN)`, type: "H2", conditions: {showPE: true, typePE: "PE1"} },
+  { texte: `PRIÈRE EUCHARISTIQUE II`, type: "H2", conditions: {showPE: true, typePE: "PE2"} },
+  { texte: `PRIÈRE EUCHARISTIQUE III`, type: "H2", conditions: {showPE: true, typePE: "PE3"} },
+  { texte: `PRIÈRE EUCHARISTIQUE IV`, type: "H2", conditions: {showPE: true, typePE: "PE4"} },
+  { texte: `Le prêtre commence alors la Prière eucharistique. Étendant les mains, il dit\u00A0:`, type: "rubrique", conditions: {} },
+  { class:"lettrine premiereindentation", texte: `Le Seigneur soit avec vous.`, type: "dialogueV", conditions: {} },
+  { class:"grandeindentation", texte: `Et avec votre esprit.`, type: "dialogueR", conditions: {} },
+  { class:"lettrine premiereindentation", texte: `Élevons notre coeur.`, type: "dialogueV", conditions: {} },
+  { class:"grandeindentation", texte: `Nous le tournons vers le Seigneur.`, type: "dialogueR", conditions: {} },
+  { class:"lettrine premiereindentation", texte: `Rendons grâce au Seigneur notre Dieu.`, type: "dialogueV", conditions: {} },
+  { class:"grandeindentation", texte: `Cela est juste et bon.`, type: "dialogueR", conditions: {} },
+  { texte: `Le prêtre dit la préface, les mains étendues.`, type: "rubrique", conditions: {} },
+  { type : "insert-preface"},
+  { texte: `À la fin de la préface, le prêtre joint les mains et, avec le peuple, conclut la préface en
+proclamant\u00A0:`, type: "rubrique", conditions: {} },
+  { class:"grandelettrine allgrandeindentation", texte: `Saint ! Saint ! Saint, le Seigneur, Dieu de l’univers !
+Le ciel et la terre sont remplis de ta gloire.
+Hosanna au plus haut des cieux.
+Béni soit celui qui vient au nom du Seigneur.
+Hosanna au plus haut des cieux.`, type: "dialogueV", conditions: {} },
+  { texte: `Ou bien, si l’on chante en latin\u00A0:`, type: "rubrique", conditions: {} },
+  { class:"grandelettrine allgrandeindentation", texte: `Sanctus, Sanctus, Sanctus Dóminus Deus Sábaoth.
+Pleni sunt cæli et terra glória tua.
+Hosánna in excélsis.
+Benedíctus qui venit in nómine Dómini.
+Hosánna in excélsis.`, type: "dialogueV", conditions: {} },
 
-  { texte: `PRIÈRE EUCHARISTIQUE`, type: "H2", conditions: {} },
+//PE 1
+  { conditions: {typePE: "PE1", showPE: true}, class: "tableau",items:[
+  { texte: ``, type: "", conditions: {} },
+  { texte: ``, type: "", conditions: {} },
   { texte: ``, type: "", conditions: {} },
 
   
+]},
 ],
 eucharistie: [  ]
 };
