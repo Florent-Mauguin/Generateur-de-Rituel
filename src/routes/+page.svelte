@@ -11,6 +11,38 @@ JS
     import { Document, Packer, Paragraph, TextRun } from "docx";
     
 
+  export let version = "1.0";
+  let [showPopup, dontShowAgain, forceOpen] = [false, false, false];
+  let currentPage = 0;
+
+  const pages = [
+    { title: "Bienvenue", content: "Découvrez le projet Rituel Générateur." },
+    { title: "Nouveautés", content: "Améliorations et mises à jour." },
+    { title: "Roadmap", content: "Fonctionnalités futures." }
+  ];
+
+onMount(() => {
+    const seenVersion = localStorage.getItem("welcomePopupVersionSeen");
+    if (seenVersion !== version) {
+      showPopup = true;
+    }
+  });
+
+  // ouverture forcée
+  $: if (forceOpen) {
+    currentPage = 0; // recommencer à la 1ère page
+    showPopup = true;
+    forceOpen = false;
+  }
+
+ function closePopup() {
+    if (dontShowAgain) {
+      localStorage.setItem("welcomePopupVersionSeen", version);
+    }
+    showPopup = false;
+  }
+
+
   let ritualRef;
 
 // Génération du document Word
@@ -198,6 +230,34 @@ window.onscroll = scrollFunction;
 <!--
 HTML
 -->
+{#if showPopup}
+<div class="overlay" role="button" tabindex="0" aria-label="Fermer la fenêtre"
+     on:click={closePopup}
+     on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), closePopup())}>
+</div>
+
+<div class="modal">
+  <h2>{pages[currentPage].title}</h2>
+  <p>{pages[currentPage].content}</p>
+
+  <div class="nav">
+    <button on:click={() => currentPage--} disabled={currentPage === 0}>← Précédent</button>
+    {#if currentPage < pages.length - 1}
+      <button on:click={() => currentPage++}>Suivant →</button>
+    {:else}
+      <button class="primary" on:click={closePopup}>Terminé</button>
+    {/if}
+  </div>
+
+  <label class="dontshow">
+    <input type="checkbox" bind:checked={dontShowAgain} />
+    Ne plus afficher pour cette version
+  </label>
+</div>
+{/if}
+
+<button class="onboard-btn" on:click={() => forceOpen = true}>?</button>
+
 <div class="container">
   <div class="no-print">
   <h1 class="titre-principal">Générateur de rituel de messe</h1>
@@ -580,8 +640,10 @@ Début section sacrements
   {/if}
 
   <button on:click={topFunction} id="scrollToTopButton" title="Haut de page">
-  ↑
+  ⏶
 </button>
+
+
 </div>
 
 <!-- Ajouter une condition
@@ -869,10 +931,7 @@ select {
  * BOUTONS - Retour en haut de page
  *****************************************************/
 #scrollToTopButton {
-display: block; /* Utilise Flexbox pour centrer le contenu */
-  align-items: center; /* Centre verticalement */
-  justify-content: center; /* Centre horizontalement */
-  z-index: 99;
+  z-index: 9999;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
@@ -883,12 +942,17 @@ display: block; /* Utilise Flexbox pour centrer le contenu */
   border-radius: 50%; /* Bouton rond */
   background-color: var(--brand); /* Couleur de fond */
   color: white; /* Couleur de la flèche */
-  font-size: 3rem; /* Taille de la flèche */
+  font-size: 1.8rem; /* Taille de la flèche */
   font-weight: bold;
   outline: none;
   width: 50px; /* Largeur du bouton */
   height: 50px; /* Hauteur du bouton */
   padding: 0; /* Supprime les marges internes */
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #scrollToTopButton:hover,
@@ -943,4 +1007,88 @@ display: block; /* Utilise Flexbox pour centrer le contenu */
   }
 }
 
+/*****************************************************
+ * ONBOARDING MODAL
+ *****************************************************/
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+  }
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+  .modal h2 {
+    margin: 0 0 0.5rem;
+    text-align: center;
+  }
+  .modal p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #444;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  button {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #ddd;
+    cursor: pointer;
+  }
+  button.primary {
+    background: #495057;
+    color: white;
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .dontshow {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+/*****************************************************
+ * BOUTON ONBOARDING FIXE
+ *****************************************************/
+.onboard-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #495057;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease;
+
+    /* Centrage avec Flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .onboard-btn:hover {
+    transform: scale(1.12);
+  }
 </style>

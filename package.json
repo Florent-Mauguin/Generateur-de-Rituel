@@ -25,6 +25,7 @@
 		"vite": "^7.1.10"
 	},
 	"dependencies": {
+		"@picocss/pico": "^2.1.1",
 		"docx": "^9.5.1",
 		"file-saver": "^2.0.5",
 		"html-docx-js": "^0.3.1",
