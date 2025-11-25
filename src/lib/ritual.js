@@ -192,7 +192,7 @@ liturgiedelaparole: [
   { class:"lettrine", texte: `Le Seigneur soit avec vous.`, type: "dialogueV", conditions: {} },
   { texte: `Et avec votre esprit.`, type: "dialogueR", conditions: {} },
   { texte: `Le diacre ou le prêtre dit :`, type: "rubrique", conditions: {} },
-  { class:"lettrine", texte: `Évangile de Jésus Christ ✠ selon saint N.`, type: "dialogueV", conditions: {} },
+  { class:"lettrine", texte: `Évangile de Jésus Christ <span style="color: #b30000;">✠</span> selon saint N.`, type: "dialogueV", conditions: {} },
   { texte: `Gloire à toi, Seigneur !`, type: "dialogueR", conditions: {} },
   { texte: `Puis le diacre ou le prêtre encense le livre, si l’on utilise l’encens, et il proclame l’Évangile.`, type: "rubrique", conditions: {} },
   { class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
@@ -400,7 +400,24 @@ Hosánna in excélsis.`, type: "dialogueV", conditions: {} },
 
 //PE 1
   { conditions: {typePE: "PE1", showPE: true}, class: "tableau",items:[
-  { texte: ``, type: "", conditions: {} },
+  { texte: `Le prêtre dit, les mains étendues\u00A0:`, type: "rubrique", conditions: {} },
+  { class:"grandelettrine", texte: `Toi, Père très aimant,
+nous te prions et te supplions
+par Jésus Christ, ton Fils, notre Seigneur,`, type: "dialogueV", conditions: {} },
+  { class:"grandeindentation", texte: `il joint les mains et dit\u00A0:`, type: "rubrique", conditions: {} },
+  { texte: `d’accepter`, type: "dialogueV", conditions: {} },
+  { class:"grandeindentation", texte: `puis il fait un signe de croix sur le pain et le calice et dit\u00A0:`, type: "rubrique", conditions: {} },
+  { class:"premiereindentation", texte: `et de bénir <span style="color: #b30000;">✠</span> ces dons, ces offrandes,
+sacrifice pur et saint,`, type: "dialogueV", conditions: {} },
+  { class:"grandeindentation", texte: `il étend les mains et continue :`, type: "rubrique", conditions: {} },
+  { class:"allindentation", texte: `que nous te présentons
+avant tout pour ta sainte Église catholique\u00A0:`, type: "dialogueV", conditions: {} },
+  { class:"allindentation", texte: `accorde-lui la paix et protège-la,
+daigne la rassembler dans l’unité
+et la gouverner par toute la terre ;`, type: "dialogueV", conditions: {} },
+  { class:"allindentation", texte: `nous les présentons
+en union avec ton serviteur notre Pape <span style="color: #b30000;">N.</span>,
+notre Évêque <span style="color: #b30000;">N.</span>,`, type: "dialogueV", conditions: {} },
   { texte: ``, type: "", conditions: {} },
   { texte: ``, type: "", conditions: {} },
 

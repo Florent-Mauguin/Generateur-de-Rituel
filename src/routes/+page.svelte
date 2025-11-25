@@ -6,6 +6,7 @@ JS
     import { onMount } from 'svelte';
     import { ritual } from '$lib/ritual.js';
     import { OraisonsDominicales } from '$lib/oraisons';
+    import { preface } from '$lib/prefaces';
     import FileSaver from "file-saver";
     import { Document, Packer, Paragraph, TextRun } from "docx";
     
@@ -197,7 +198,6 @@ window.onscroll = scrollFunction;
 <!--
 HTML
 -->
-
 <div class="container">
   <div class="no-print">
   <h1 class="titre-principal">Générateur de rituel de messe</h1>
@@ -569,11 +569,11 @@ Début section sacrements
 {:else if step.items}
   <div class={step.class}>
     {#each step.items as item}
-      <p class="{item.type} {item.class || ''}">{item.texte}</p>
+      <p class="{item.type} {item.class || ''}">{@html item.texte}</p>
     {/each}
   </div>
       {:else}
-          <p class="{step.type} texte {step.class || ''}">{step.texte}</p>
+          <p class="{step.type} texte {step.class || ''}">{@html step.texte}</p>
     {/if}
   {/each}
 </div>
