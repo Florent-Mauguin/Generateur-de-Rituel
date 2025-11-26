@@ -9,6 +9,8 @@ JS
     import { preface } from '$lib/prefaces';
     import FileSaver from "file-saver";
     import { Document, Packer, Paragraph, TextRun } from "docx";
+    import Roadmap from '$lib/components/Roadmap.svelte';
+
     
 
   export let version = "1.0";
@@ -18,7 +20,7 @@ JS
   const pages = [
     { title: "Bienvenue", content: "Découvrez le projet Rituel Générateur." },
     { title: "Nouveautés", content: "Améliorations et mises à jour." },
-    { title: "Roadmap", content: "Fonctionnalités futures." }
+    { title: "Roadmap", content: "" }
   ];
 
 onMount(() => {
@@ -236,9 +238,13 @@ HTML
      on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), closePopup())}>
 </div>
 
+
 <div class="modal">
   <h2>{pages[currentPage].title}</h2>
+<div class="modal-body">
   <p>{pages[currentPage].content}</p>
+ {#if pages[currentPage].title === "Roadmap"}  <Roadmap />{/if}
+ </div>
 
   <div class="nav">
     <button on:click={() => currentPage--} disabled={currentPage === 0}>← Précédent</button>
@@ -1022,11 +1028,22 @@ select {
     transform: translate(-50%, -50%);
     background: #fff;
     padding: 2rem;
+    max-height: 70vh;
     border-radius: 10px;
     width: 400px;
     max-width: 90%;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  }
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+  .modal-body {
+  flex: 1;
+  padding: 0 0.5rem;
+  overflow-y: auto; /* scroll si contenu trop grand */
+  margin: 0 0 1rem 0;
+}
   .modal h2 {
     margin: 0 0 0.5rem;
     text-align: center;
