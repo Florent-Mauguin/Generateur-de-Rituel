@@ -54,13 +54,19 @@
           desc: "Ajout des rituels du baptême, de la confirmation et de la première communion",
           priority: "Haute",
           color: "red"
+        },
+        {
+          title: "Responsive design",
+          desc: "L'interface sera optimisée pour une utilisation sur mobile et tablette",
+          priority: "Basse",
+          color: "yellow"
         }
       ]
     },
     {
       icon: "🚀",
       title: "Q4 2026 - 2027",
-      statusplannifié: "Plus tard",
+      statusplannifié: "Plus\u00A0tard",
       items: [
         {
           title: "Ensemble des sacrements",
@@ -175,7 +181,7 @@
 .quarter-content {
   flex: 1;
   background: white;
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 12px;
   border: 1px solid #EEE;
 }
@@ -185,7 +191,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .statusencours {

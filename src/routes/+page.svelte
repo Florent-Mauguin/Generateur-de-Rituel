@@ -10,6 +10,7 @@ JS
     import FileSaver from "file-saver";
     import { Document, Packer, Paragraph, TextRun } from "docx";
     import Roadmap from '$lib/components/Roadmap.svelte';
+    import Nouveautes from '$lib/components/Nouveautes.svelte';
 
     
 
@@ -18,8 +19,10 @@ JS
   let currentPage = 0;
 
   const pages = [
-    { title: "Bienvenue", content: "Découvrez le projet Rituel Générateur." },
-    { title: "Nouveautés", content: "Améliorations et mises à jour." },
+    { title: "Bienvenue", content: `Je m'appelle <b>Florent Mauguin</b> et suis séminariste pour le diocèse de Versailles et la communauté de l'Emmanuel. Il y a quelque temps, je me suis rendu compte que chaque année, lors des grandes fêtes, il fallait se replonger dans le missel afin de constituer un rituel propre pour sa paroisse. C'est ainsi qu'est née l'idée de ce projet.
+<br><br>L'objectif est simple : <b>générer en quelques clics un rituel imprimable</b> et adapté à sa paroisse.
+<br><br><b>⚠️ Le projet est encore en cours de développement !</b>` },
+    { title: "Nouveautés", content: "" },
     { title: "Roadmap", content: "" }
   ];
 
@@ -29,6 +32,7 @@ onMount(() => {
       showPopup = true;
     }
   });
+
 
   // ouverture forcée
   $: if (forceOpen) {
@@ -93,14 +97,16 @@ onMount(() => {
 
   // Parametres à l'ouverture
   let celebrationType = "Dominicale";
-  let Oraisons = false;
+  let Showoraisons = false;
   let Dateliturgique = ""
   let oraison = "";
   let salutation = "S3";
   let ChoixPenitentiel = "1CP";
-  let [secret, hideGloria, gloriaLatin] = [false, false, false];
-  let [showCredo, showPE] = [true, true];
+  let [secret, hideGloria, OrdinaireLatin] = [false, false, false];
+  let [showCredo, Showpreface, showPE] = [true, false, true];
   let typeCredo = "NC";
+  let Choixpreface = "";
+  let prefacedujour = "";
   let typePE = "PE1";
   let showAutresParams = false;
   let Sacrements = false;
@@ -112,14 +118,16 @@ onMount(() => {
   let incense = false;
   let servants = 0;
   
-  let filteredRitual = [];
+  let filteredRitual= [];
   let rituelName = "";
 
   //Met l’oraison du jour dès que l’utilisateur coche “Oraisons” et choisit une date liturgique, afin que le générateur puisse inserer les oraisons au bon endroit dans le rituel.
-  $: if (Oraisons && Dateliturgique) {
+  $: if (Showoraisons && Dateliturgique) {
   oraison = OraisonsDominicales[Dateliturgique] || null;
 }
-
+  $: if (Showpreface && Choixpreface) {
+  prefacedujour = preface[Choixpreface] || null;
+}
  // Construction du rituel complet
 const fullRitual = [
   ...ritual.ritesInitiaux,
@@ -135,8 +143,8 @@ function generateRitual() {
     incense,
     servants,
     celebrationType, secret,
-    salutation, ChoixPenitentiel, hideGloria, gloriaLatin, oraisons: Oraisons, showCredo, typeCredo, 
-    showPE, typePE,
+    salutation, ChoixPenitentiel, hideGloria, OrdinaireLatin, oraisons: Showoraisons, showCredo, typeCredo, 
+    preface, showPE, typePE,
   };
 
 
@@ -148,16 +156,39 @@ function generateRitual() {
 
     // ---- INSERTIONS Oraisons ----
     if (step.type === "insert-collecte") {
-      if (Oraisons && oraison) {
+      if (Showoraisons && oraison) {
         filteredRitual.push(
           { type: "oraison", segments: oraison.collecte }
         );
       }
       continue;
     }
-
+if (step.type === "titre-preface") {
+      if (Showpreface && prefacedujour) {
+        filteredRitual.push(
+          { type: "preface", items: prefacedujour.titre }
+        );
+      }
+      continue;
+    }
+    if (step.type === "soustitre-preface") {
+      if (Showpreface && prefacedujour) {
+        filteredRitual.push(
+          { type: "preface", items: prefacedujour.soustitre }
+        );
+      }
+      continue;
+    }
+    if (step.type === "insert-preface") {
+      if (Showpreface && prefacedujour) {
+        filteredRitual.push(
+          { type: "preface", items: prefacedujour.items }
+        );
+      }
+      continue;
+    }
     // ✅ ✅ ✅ MASQUAGE DES RUBRIQUES
-    if (hideRubriques && step.type === "rubrique") {
+    if (hideRubriques && (step.type === "rubrique" || step.type === "rubriqueinterne" )) {
       continue;
     }
 
@@ -175,6 +206,12 @@ function generateRitual() {
     for (const key in cond) {
       const expected = cond[key];
       const actual = options[key];
+
+        // Si la clé n'existe pas dans options, ignorer cette condition
+  if (actual === undefined) {
+    display = false;
+    break;
+  }
 
       if (typeof expected === "boolean" && expected !== actual) {
         display = false;
@@ -196,8 +233,39 @@ function generateRitual() {
       
     }
 
-    if (display) filteredRitual.push(step);
+    if (display) {
+    // Vérifiez si `items` existe et contient des conditions
+    if (step.items && Array.isArray(step.items)) {
+      const filteredItems = step.items.filter((item) => {
+    if (hideRubriques && (item.type === "rubrique" || item.type === "rubriqueinterne")) {
+      return false;
+    }
+        const itemCond = item.conditions;
+        if (!itemCond) return true; // Pas de conditions, afficher l'élément
+
+        let itemDisplay = true;
+        for (const key in itemCond) {
+          const expected = itemCond[key];
+          const actual = options[key];
+
+          if (actual === undefined || (Array.isArray(expected) ? !expected.includes(actual) : expected !== actual)) {
+            itemDisplay = false;
+            break;
+          }
+        }
+        return itemDisplay; // Inclure l'élément si toutes ses conditions sont remplies
+      });
+
+      // Ajouter l'étape avec les éléments filtrés
+      if (filteredItems.length > 0) {
+        filteredRitual.push({ ...step, items: filteredItems });
+      }
+    } else {
+      // Ajouter l'étape directement si elle n'a pas d'items
+      filteredRitual.push(step);
+    }
   }
+}
 }
 
  function topFunction() {
@@ -233,19 +301,17 @@ window.onscroll = scrollFunction;
 HTML
 -->
 {#if showPopup}
-<div class="overlay" role="button" tabindex="0" aria-label="Fermer la fenêtre"
-     on:click={closePopup}
-     on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), closePopup())}>
-</div>
-
+<div class="overlay" role="button" tabindex="0" aria-label="Fermer la fenêtre"></div>
 
 <div class="modal">
   <h2>{pages[currentPage].title}</h2>
 <div class="modal-body">
-  <p>{pages[currentPage].content}</p>
+  <p>{@html pages[currentPage].content}</p>
  {#if pages[currentPage].title === "Roadmap"}  <Roadmap />{/if}
+ {#if pages[currentPage].title === "Nouveautés"}  <Nouveautes />{/if}
  </div>
 
+ <footer>
   <div class="nav">
     <button on:click={() => currentPage--} disabled={currentPage === 0}>← Précédent</button>
     {#if currentPage < pages.length - 1}
@@ -259,10 +325,12 @@ HTML
     <input type="checkbox" bind:checked={dontShowAgain} />
     Ne plus afficher pour cette version
   </label>
+  </footer>
 </div>
 {/if}
 
-<button class="onboard-btn" on:click={() => forceOpen = true}>?</button>
+
+<button class="onboard-btn no-print" on:click={() => forceOpen = true}>?</button>
 
 <div class="container">
   <div class="no-print">
@@ -284,10 +352,10 @@ HTML
  <div class="oraison-row">
   <label class="oraison-label">
     Oraisons :
-    <input type="checkbox" bind:checked={Oraisons} />
+    <input type="checkbox" bind:checked={Showoraisons} />
   </label>
 
-  {#if Oraisons}
+  {#if Showoraisons}
     <div class="sub-options-inline">
       <label>
         Calendrier :
@@ -331,6 +399,23 @@ HTML
   {/if}
 </div>
 
+<div class="sub-options-inline">
+  <label >
+    Préface :
+    <input type="checkbox" bind:checked={Showpreface} />
+  </label>
+  {#if Showpreface}
+    <div >
+      <label>
+        <select bind:value={Choixpreface}>
+          <option value="1DO">1re PREFACE DES DIMANCHES DU TEMPS ORDINAIRE</option>
+          <option value="2DO">2nde PREFACE DES DIMANCHES DU TEMPS ORDINAIRE</option>
+        </select>
+      </label>
+    </div>
+  {/if}
+</div>
+
     <div class="panel">
 <!-- Option autres pour Cérémonie -->
 <div
@@ -361,26 +446,6 @@ HTML
   <input type="checkbox" bind:checked={secret} />
 </label>
 
-
-            <!-- ✅ Paramètre : Choix de la salutation -->
-<label>
-        Salutation :
-        <select bind:value={salutation}>
-          <option value="S1">Type 1</option>
-          <option value="S2">Type 2</option>
-          <option value="S3">Type 3</option>
-    </select>
-  </label>
-
-      <!-- ✅ Paramètre : Choix de l'acte pénitentiel -->
-<label>
-        Acte pénitentiel :
-        <select bind:value={ChoixPenitentiel}>
-          <option value="1CP">Type 1</option>
-          <option value="2CP">Type 2</option>
-          <option value="3CP">Type 3</option>
-    </select>
-  </label>
 </div>
     
 <div class="sub-options-inline">
@@ -390,32 +455,17 @@ HTML
         <input type="checkbox" bind:checked={hideGloria} />
       </label>
 
-        {#if !hideGloria}
-      <!-- ✅ Paramètre : Gloria en latin -->
+      <!-- ✅ Paramètre : Ordinaire en latin -->
       <label>
-        Gloria en Latin :
-        <input type="checkbox" bind:checked={gloriaLatin} />
+        Ordinaire en Latin :
+        <input type="checkbox" bind:checked={OrdinaireLatin} />
       </label>
-      {/if}
     </div>
 
-<div class="sub-options-inline">
     <label>
       Credo
       <input type="checkbox" bind:checked={showCredo} />
     </label>
-
-    {#if showCredo}
-        <label>
-          Type de Credo :
-          <select bind:value={typeCredo}>
-            <option value="NC">Symbole de Nicée-Constantinople</option>
-            <option value="AP">Symbole des Apôtres</option>
-            <option value="Lt">Symbole en latin</option>
-          </select>
-        </label>
-      {/if}
-    </div>
 
       <!-- ✅ Paramètre : Présence d'un évêque -->
     <label>
@@ -424,23 +474,11 @@ HTML
     </label>
 
           <!-- ✅ Paramètre : Choix de la prière eucharistique -->
-<div class="sub-options-inline">
     <label>
       Prière Eucharistique
       <input type="checkbox" bind:checked={showPE} />
     </label>
 
-    {#if showPE}
-<label>
-        <select bind:value={typePE}>
-          <option value="PE1">Prière eucharistique 1</option>
-          <option value="PE2">Prière eucharistique 2</option>
-          <option value="PE3">Prière eucharistique 3</option>
-          <option value="PE4">Prière eucharistique 4</option>
-    </select>
-  </label>
-  {/if}
-    </div>
     </div>
     {/if}
 </div>
@@ -595,42 +633,78 @@ Début section sacrements
     {#if step.type === "pageBreak"}
       <div class="page-break" aria-hidden="true"></div>
 
-      
-      {:else if step.type === "kyrie"}
-        <div class="kyrie-trois-colonnes">
-          <div class="colonne gauche">
-            {#each step.left as seg}
-              <p class="{seg.type} {seg.class || ''}" style="white-space: pre-line;">
-                {seg.texte}
-              </p>
-            {/each}
-          </div>
-
-          <div class="middle">
-            {#each step.middle as seg}
-              <p class="{seg.type} {seg.class || ''}" style="white-space: pre-line;">
-                {seg.texte}
-              </p>
-            {/each}
-          </div>
-
-          <div class="colonne droite">
-            {#each step.right as seg}
-              <p class="{seg.type} {seg.class || ''}" style="white-space: pre-line;">
-                {seg.texte}
-              </p>
-            {/each}
-          </div>
-        </div>
 
       {:else if step.type === "oraison"}
         <div class="oraison-texte">
           {#each step.segments as seg}
             <p class={seg.class || ""} style="white-space: pre-line;">
-              {seg.texte}
+              {@html seg.texte}
             </p>
           {/each}
         </div>
+
+      {:else if step.type === "preface"}
+        <div class="preface-texte">
+          {#each step.items as items}
+            <p class={items.class || ""} style="white-space: pre-line;">
+              {@html items.texte}
+            </p>
+          {/each}
+        </div>
+
+{:else if step.type === "H2" && step.texte.trim().toUpperCase() === "SALUTATION"}
+  <div class="variant-header">
+    <h2 class="H2">{@html step.texte}</h2>
+    <div class="variant-buttons no-print">
+      <button class:selected={salutation === "S1"} 
+        on:click={() => { salutation = "S1"; generateRitual(); }}>1 </button>
+      <button class:selected={salutation === "S2"} 
+        on:click={() => { salutation = "S2"; generateRitual(); }}>2 </button>
+      <button class:selected={salutation === "S3"} 
+        on:click={() => { salutation = "S3"; generateRitual(); }}>3 </button>
+    </div>
+  </div>
+
+  {:else if step.type === "H2" && step.texte.trim().toUpperCase() === "ACTE PENITENTIEL"}
+  <div class="variant-header">
+    <h2 class="H2">{@html step.texte}</h2>
+    <div class="variant-buttons no-print">
+      <button class:selected={ChoixPenitentiel === "1CP"} 
+        on:click={() => { ChoixPenitentiel = "1CP"; generateRitual(); }}>1 </button>
+      <button class:selected={ChoixPenitentiel === "2CP"} 
+        on:click={() => { ChoixPenitentiel = "2CP"; generateRitual(); }}>2 </button>
+      <button class:selected={ChoixPenitentiel === "3CP"} 
+        on:click={() => { ChoixPenitentiel = "3CP"; generateRitual(); }}>3 </button>
+    </div>
+  </div>
+
+  {:else if step.type === "H2" && step.texte.trim().toUpperCase() === "PROFESSION DE FOI"}
+  <div class="variant-header">
+    <h2 class="H2">{@html step.texte}</h2>
+    <div class="variant-buttons no-print">
+      <button class:selected={typeCredo === "NC"} 
+        on:click={() => { typeCredo = "NC"; generateRitual(); }}>1 </button>
+      <button class:selected={typeCredo === "AP"} 
+        on:click={() => { typeCredo = "AP"; generateRitual(); }}>2 </button>
+      <button class:selected={typeCredo === "Lt"} 
+        on:click={() => { typeCredo = "Lt"; generateRitual(); }}>3 </button>
+    </div>
+  </div>
+
+  {:else if step.type === "H3" && ["PRIÈRE EUCHARISTIQUE I", "PRIÈRE EUCHARISTIQUE II", "PRIÈRE EUCHARISTIQUE III", "PRIÈRE EUCHARISTIQUE IV"].includes(step.texte.trim().toUpperCase())}
+  <div class="variant-header">
+    <h3 class="H3">{@html step.texte}</h3>
+    <div class="variant-buttons no-print">
+      <button class:selected={typePE === "PE1"} 
+        on:click={() => { typePE = "PE1"; generateRitual(); }}>1 </button>
+      <button class:selected={typePE === "PE2"} 
+        on:click={() => { typePE = "PE2"; generateRitual(); }}>2 </button>
+      <button class:selected={typePE === "PE3"} 
+        on:click={() => { typePE = "PE3"; generateRitual(); }}>3 </button>
+      <button class:selected={typePE === "PE4"} 
+        on:click={() => { typePE = "PE4"; generateRitual(); }}>4 </button>
+    </div>
+  </div>
 
 {:else if step.items}
   <div class={step.class}>
@@ -645,9 +719,8 @@ Début section sacrements
 </div>
   {/if}
 
-  <button on:click={topFunction} id="scrollToTopButton" title="Haut de page">
-  ⏶
-</button>
+  <button on:click={topFunction} id="scrollToTopButton" class="scrollToTopButton no-print" title="Haut de page">  
+    ⏶ </button>
 
 
 </div>
@@ -715,13 +788,13 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
 .dialogueV {
   font-weight: bold;
   font-size: 1.2rem;
-  line-height:1.1;
+  line-height:1.2;
 }
 
 .dialogueR {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  line-height:1.1;
+  line-height:1.2;
 }
 .dialogueR::before {
   content: "℟. ";
@@ -741,17 +814,20 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
  * INDENTATIONS ET RUBRIQUES
  *****************************************************/
 .rubrique { color: var(--accent); margin:0.3rem 0;}
-.allindentation { text-indent: -1em; padding-left: 1em; } 
-.premiereindentation { text-indent: 1.18rem; }
-.grandeindentation { text-indent: 2em; }
-.allgrandeindentation { padding-left: 2em; }
+.rubriqueinterne { color: var(--accent); margin:0;}
+.indent1all { text-indent: -20px; padding-left: 20px; } 
+.indent1p { text-indent: 20px; }
+.indent1g { text-indent: 50px; }
+.indentallg { padding-left: 50px; }
+.indentallp { padding-left: 20px; }
+p.centre { text-align: center; }
 .lettrine::first-letter { color: var(--accent); font-weight: bold }
 .sautdeligne {line-height: 0.6;}
 .voixbasse { font-style: italic; font-size: 1.3rem;   line-height:1.1; }
 
 .grandelettrine::first-letter {
   color: var(--accent);
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
   float: left;
   line-height: 0.85;
@@ -769,23 +845,11 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
   
 .oraison-row{ display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; }
 
-/*****************************************************
- * KYRIE — TROIS COLONNES
- *****************************************************/
-.kyrie-trois-colonnes {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.kyrie-trois-colonnes p {
+.preface-texte p {
   margin: 0;
-}
-
-@media (max-width: 600px) {
-  .kyrie-trois-colonnes {
-    flex-direction: column;
-  }
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.1;
 }
 
 /*****************************************************
@@ -793,7 +857,7 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
  *****************************************************/
 .container {
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 0rem auto;
   padding: calc(var(--pad) * 0.7);
   background: transparent;
 }
@@ -936,8 +1000,8 @@ select {
 /*****************************************************
  * BOUTONS - Retour en haut de page
  *****************************************************/
-#scrollToTopButton {
-  z-index: 9999;
+.scrollToTopButton {
+  z-index: 100;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
@@ -961,12 +1025,54 @@ select {
     justify-content: center;
 }
 
-#scrollToTopButton:hover,
-#scrollToTopButton:focus,
-#scrollToTopButton:focus-within {
+.scrollToTopButton:hover,
+.scrollToTopButton:focus,
+.scrollToTopButton:focus-within {
   cursor: pointer;
   background-color: #565b5d;
 }
+
+/*****************************************************
+ * BOUTONS POUR VARIANTES
+ *****************************************************/
+.variant-header {
+  display: flex;
+  justify-content: space-between; /* Espace entre le titre et les boutons */
+  align-items: center;
+}
+
+.variant-header h2 {
+  flex: 1; /* Permet au titre de prendre tout l'espace disponible */
+  text-align: center; /* Centre le texte du titre */
+  margin: 1rem 0rem; /* Supprime les marges par défaut */
+}
+
+.variant-header h3 {
+  flex: 1; /* Permet au titre de prendre tout l'espace disponible */
+  text-align: center; /* Centre le texte du titre */
+  margin: 1rem 0rem; /* Supprime les marges par défaut */
+}
+
+.variant-buttons {
+  display: flex;
+  gap: 0.3rem; /* Espacement entre les boutons */
+}
+
+.variant-buttons button {
+  margin-left: 0.3rem;
+  padding: 4px 8px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}
+
+.variant-buttons button.selected {
+  background: #b30000;
+  color: white;
+  font-weight: bold;
+}
+
 /*****************************************************
  * SAUTS DE PAGE (PDF/WORD)
  *****************************************************/
@@ -1020,6 +1126,8 @@ select {
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.4);
+      inset: 0;                      /* couvre toute la page */
+  pointer-events: auto;     
   }
   .modal {
     position: fixed;
@@ -1027,10 +1135,10 @@ select {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
-    padding: 2rem;
+    padding: 2rem 2rem 1.5rem 2rem;
     max-height: 70vh;
     border-radius: 10px;
-    width: 400px;
+    width: 600px;
     max-width: 90%;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     overflow: hidden; 
@@ -1045,11 +1153,14 @@ select {
   margin: 0 0 1rem 0;
 }
   .modal h2 {
+    font-size: 2rem;
     margin: 0 0 0.5rem;
     text-align: center;
   }
   .modal p {
-    text-align: center;
+    text-align: justify;
+    font-size: 1.2rem; /* Taille de police standard pour le contenu */
+    line-height: 1.6;
     margin-bottom: 1.5rem;
     color: #444;
   }
@@ -1057,6 +1168,16 @@ select {
     display: flex;
     justify-content: space-between;
   }
+  @media (max-width: 600px) {
+  .modal {
+    width: 80%;            /* prend 80% de la largeur du mobile */
+    max-width: 80%;
+    border-radius: 12px;
+    padding: 1rem;
+  }}
+/*****************************************************
+ * BOUTONS MODAL
+ *****************************************************/
   button {
     padding: 0.6rem 1rem;
     border: none;
@@ -1083,9 +1204,7 @@ select {
  * BOUTON ONBOARDING FIXE
  *****************************************************/
 .onboard-btn {
-    position: fixed;
-    top: 15px;
-    left: 15px;
+  margin: 1rem 0.5rem;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -1095,7 +1214,6 @@ select {
     font-size: 1.8rem;
     font-weight: bold;
     cursor: pointer;
-    z-index: 9999;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.1s ease;
 

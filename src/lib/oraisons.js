@@ -4,11 +4,11 @@ export const OraisonsDominicales = {
   "1TO": {
     titre: "1er dimanche du temps ordinaire",
     collecte: [{class:"grandelettrine", texte:`Aux appels de ton peuple en prière,
-réponds, Seigneur, en ta tendresse : *`},
-{ class:"allindentation", texte:`donne à chacun la claire vision de ce qu’il doit faire /
+réponds, Seigneur, en ta tendresse : <span style="color: #b30000;">*</span>`},
+{ class:"indent1all", texte:`donne à chacun la claire vision de ce qu’il doit faire <span style="color: #b30000;">/</span>
 et la force de l’accomplir.`},
-{class:"allindentation", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
-qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+{class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
+qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
 Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: `Que l’offrande de ton peuple te soit agréable,
