@@ -716,11 +716,10 @@ Début section sacrements
           <p class="{step.type} texte {step.class || ''}">{@html step.texte}</p>
     {/if}
   {/each}
+    <button on:click={topFunction} id="scrollToTopButton" class="scrollToTopButton no-print" title="Haut de page">  
+    ⏶ </button>
 </div>
   {/if}
-
-  <button on:click={topFunction} id="scrollToTopButton" class="scrollToTopButton no-print" title="Haut de page">  
-    ⏶ </button>
 
 
 </div>
@@ -866,6 +865,7 @@ p.centre { text-align: center; }
  * CARD
  *****************************************************/
 .card {
+  position: relative;
   border-radius: var(--radius);
   padding: calc(var(--pad) + 0.25rem);
   margin-top: var(--gap);
@@ -997,6 +997,19 @@ select {
 
 .button-section + .card {     margin-top: 1rem;  }
 
+
+@media (max-width: 768px) {
+  .css-button-sharp--grey {
+  min-width: 119px;
+  padding: 0;
+  font-size: 0.7rem;
+  border: 0;
+  }
+.button-section {
+  justify-content: center;
+}
+}
+
 /*****************************************************
  * BOUTONS - Retour en haut de page
  *****************************************************/
@@ -1007,7 +1020,7 @@ select {
   visibility: hidden;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  margin-left: 600px; /* Positionné à droite */
   border: none;
   border-radius: 50%; /* Bouton rond */
   background-color: var(--brand); /* Couleur de fond */
@@ -1023,6 +1036,12 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .scrollToTopButton {
+    display: none;
+  }
 }
 
 .scrollToTopButton:hover,
@@ -1095,10 +1114,19 @@ select {
  * MOBILE — POLICES LÉGÈREMENT RÉDUITES
  *****************************************************/
 @media (max-width: 600px) {
-  .H1 { font-size: 1.5rem; }
-  .H2 { font-size: 1.2rem; }
+  .H1 { font-size: 1.5rem; margin :1.5rem 0 1rem 0; }
+  .premiergénéré { margin :0.5rem 0 1rem 0; }
+  .H2 { font-size: 1.2rem; margin: 1rem 0 1rem 0; }
   .H3 { font-size: 1rem; }
-  p { font-size: 0.95rem; }
+  p { font-size: 0.7rem; }
+  .dialogueR {    font-size: 0.8rem;  }
+  .dialogueV {    font-size: 0.8rem;  }
+  .indent1g { text-indent: 15px;  }
+  .indentallg { padding-left: 30px; }
+  .grandelettrine::first-letter { font-size: 36px; }
+  .variant-buttons button {
+    padding: 2px 4px;
+    margin-left: 0; }
 }
 
 /*****************************************************
@@ -1138,7 +1166,7 @@ select {
     padding: 2rem 2rem 1.5rem 2rem;
     max-height: 70vh;
     border-radius: 10px;
-    width: 600px;
+    width: 500px;
     max-width: 90%;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     overflow: hidden; 
@@ -1159,7 +1187,7 @@ select {
   }
   .modal p {
     text-align: justify;
-    font-size: 1.2rem; /* Taille de police standard pour le contenu */
+    font-size: 1.1rem; /* Taille de police standard pour le contenu */
     line-height: 1.6;
     margin-bottom: 1.5rem;
     color: #444;
@@ -1226,4 +1254,11 @@ select {
   .onboard-btn:hover {
     transform: scale(1.12);
   }
+
+  @media (max-width: 768px) {
+  .onboard-btn {
+    display: none;
+  }
+}
+
 </style>
