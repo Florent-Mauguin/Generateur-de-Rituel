@@ -33,7 +33,6 @@ onMount(() => {
     }
   });
 
-
   // ouverture forcée
   $: if (forceOpen) {
     currentPage = 0; // recommencer à la 1ère page
@@ -102,12 +101,16 @@ onMount(() => {
   let oraison = "";
   let salutation = "S3";
   let ChoixPenitentiel = "1CP";
-  let [secret, hideGloria, OrdinaireLatin] = [false, false, false];
+  let [secret, hideGloria, OrdinaireLatin, DoxologieLt] = [false, false, false, false];
   let [showCredo, Showpreface, showPE] = [true, false, true];
   let typeCredo = "NC";
   let Choixpreface = "";
   let prefacedujour = "";
   let typePE = "PE1";
+  let AcclamationEucharistique = "AE1";
+  let NotrePère = "NP1";
+  let Apologies = "1";
+  let Conclusion = "1";
   let showAutresParams = false;
   let Sacrements = false;
   let [Bapteme,PremiereCommunion,Confirmation,Mariage,Ordination,sacrementDesMalades] = [false,false,false,false,false,false];
@@ -133,7 +136,7 @@ const fullRitual = [
   ...ritual.ritesInitiaux,
   ...ritual.liturgiedelaparole,
   ...ritual.liturgieeucharistique,
-  ...ritual.eucharistie
+  ...ritual.ritesdeConclusion
 ];
 
 // Génération du rituel filtré
@@ -142,104 +145,89 @@ function generateRitual() {
     presenceBishop,
     incense,
     servants,
-    celebrationType, secret,
+    celebrationType, secret, hideRubriques, Apologies,
     salutation, ChoixPenitentiel, hideGloria, OrdinaireLatin, oraisons: Showoraisons, showCredo, typeCredo, 
-    preface, showPE, typePE,
+    preface, showPE, typePE, AcclamationEucharistique, DoxologieLt, NotrePère, Conclusion,
   };
 
+filteredRitual = [];
 
+for (const step of fullRitual) {
 
-
-
-  filteredRitual = [];
-  for (const step of fullRitual) {
-
-    // ---- INSERTIONS Oraisons ----
-    if (step.type === "insert-collecte") {
-      if (Showoraisons && oraison) {
-        filteredRitual.push(
-          { type: "oraison", segments: oraison.collecte }
-        );
-      }
-      continue;
+  // ---- INSERTIONS Oraisons ----
+  if (step.type === "insert-collecte") {
+    if (Showoraisons && oraison) {
+      filteredRitual.push({ type: "oraison", segments: oraison.collecte });
     }
-if (step.type === "titre-preface") {
-      if (Showpreface && prefacedujour) {
-        filteredRitual.push(
-          { type: "preface", items: prefacedujour.titre }
-        );
-      }
-      continue;
-    }
-    if (step.type === "soustitre-preface") {
-      if (Showpreface && prefacedujour) {
-        filteredRitual.push(
-          { type: "preface", items: prefacedujour.soustitre }
-        );
-      }
-      continue;
-    }
-    if (step.type === "insert-preface") {
-      if (Showpreface && prefacedujour) {
-        filteredRitual.push(
-          { type: "preface", items: prefacedujour.items }
-        );
-      }
-      continue;
-    }
-    // ✅ ✅ ✅ MASQUAGE DES RUBRIQUES
-    if (hideRubriques && (step.type === "rubrique" || step.type === "rubriqueinterne" )) {
-      continue;
-    }
-
-    // ---- Conditions normales ----
-    const cond = step.conditions;
-
-    if (!cond) {
-      filteredRitual.push(step);
-     if (step.pageBreak === true) filteredRitual.push({ type: "pageBreak" });
-      continue;
-    }
-
-    let display = true;
-
-    for (const key in cond) {
-      const expected = cond[key];
-      const actual = options[key];
-
-        // Si la clé n'existe pas dans options, ignorer cette condition
-  if (actual === undefined) {
-    display = false;
-    break;
+    continue;
   }
 
-      if (typeof expected === "boolean" && expected !== actual) {
-        display = false;
-        break;
-      }
-
-      // Si la condition est un tableau, vérifier si `actual` est inclus dans le tableau
-      if (Array.isArray(expected)) {
-        if (!expected.includes(actual)) {
-          display = false;
-          break;
-        }
-      }
-      // Sinon, vérifier une égalité simple
-      else if (expected !== actual) {
-        display = false;
-        break;
-      }
-      
+  if (step.type === "titre-preface") {
+    if (Showpreface && prefacedujour) {
+      filteredRitual.push({ type: "preface", items: prefacedujour.titre });
     }
+    continue;
+  }
 
-    if (display) {
+  if (step.type === "soustitre-preface") {
+    if (Showpreface && prefacedujour) {
+      filteredRitual.push({ type: "preface", items: prefacedujour.soustitre });
+    }
+    continue;
+  }
+
+  if (step.type === "insert-preface") {
+    if (Showpreface && prefacedujour) {
+      filteredRitual.push({ type: "preface", items: prefacedujour.items });
+    }
+    continue;
+  }
+
+  // ✅ MASQUAGE DES RUBRIQUES
+  if (hideRubriques && (step.type === "rubrique" || step.type === "rubriqueinterne")) {
+    continue;
+  }
+
+  // ---- Conditions normales ----
+  const cond = step.conditions;
+
+  if (!cond) {
+    filteredRitual.push(step);
+    if (step.pageBreak === true) {
+      filteredRitual.push({ type: "pageBreak" });
+    }
+    continue;
+  }
+
+  let display = true;
+
+  for (const key in cond) {
+    const expected = cond[key];
+    const actual = options[key];
+
+    // Si la clé n'existe pas dans options, ignorer cette condition
+    if (actual === undefined) continue;
+
+    if (Array.isArray(expected)) {
+      if (!expected.includes(actual)) {
+        display = false;
+        break;
+      }
+    } else {
+      if (expected !== actual) {
+        display = false;
+        break;
+      }
+    }
+  }
+
+  if (display) {
     // Vérifiez si `items` existe et contient des conditions
     if (step.items && Array.isArray(step.items)) {
       const filteredItems = step.items.filter((item) => {
-    if (hideRubriques && (item.type === "rubrique" || item.type === "rubriqueinterne")) {
-      return false;
-    }
+        if (hideRubriques && (item.type === "rubrique" || item.type === "rubriqueinterne")) {
+          return false;
+        }
         const itemCond = item.conditions;
         if (!itemCond) return true; // Pas de conditions, afficher l'élément
 
@@ -248,20 +236,27 @@ if (step.type === "titre-preface") {
           const expected = itemCond[key];
           const actual = options[key];
 
-          if (actual === undefined || (Array.isArray(expected) ? !expected.includes(actual) : expected !== actual)) {
-            itemDisplay = false;
-            break;
+          if (actual === undefined) continue;
+
+          if (Array.isArray(expected)) {
+            if (!expected.includes(actual)) {
+              itemDisplay = false;
+              break;
+            }
+          } else {
+            if (expected !== actual) {
+              itemDisplay = false;
+              break;
+            }
           }
         }
-        return itemDisplay; // Inclure l'élément si toutes ses conditions sont remplies
+        return itemDisplay;
       });
 
-      // Ajouter l'étape avec les éléments filtrés
       if (filteredItems.length > 0) {
         filteredRitual.push({ ...step, items: filteredItems });
       }
     } else {
-      // Ajouter l'étape directement si elle n'a pas d'items
       filteredRitual.push(step);
     }
   }
@@ -277,11 +272,14 @@ if (step.type === "titre-preface") {
   function scrollFunction() {
     const mybutton = document.getElementById("scrollToTopButton");
 
+    // Sécuriser l'accès si l'élément n'existe pas
+    if (!mybutton) return;
+
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.opacity = 1;
+      mybutton.style.opacity = "1";
       mybutton.style.visibility = "visible";
     } else {
-      mybutton.style.opacity = 0;
+      mybutton.style.opacity = "0";
       mybutton.style.visibility = "hidden";
     }
   }
@@ -652,9 +650,9 @@ Début section sacrements
           {/each}
         </div>
 
-{:else if step.type === "H2" && step.texte.trim().toUpperCase() === "SALUTATION"}
+{:else if step.id === "Salutation"}
   <div class="variant-header">
-    <h2 class="H2">{@html step.texte}</h2>
+    <h2>{@html step.texte}</h2>
     <div class="variant-buttons no-print">
       <button class:selected={salutation === "S1"} 
         on:click={() => { salutation = "S1"; generateRitual(); }}>1 </button>
@@ -665,9 +663,9 @@ Début section sacrements
     </div>
   </div>
 
-  {:else if step.type === "H2" && step.texte.trim().toUpperCase() === "ACTE PENITENTIEL"}
+  {:else if step.id === "ActePenitentiel"}
   <div class="variant-header">
-    <h2 class="H2">{@html step.texte}</h2>
+    <h2>{@html step.texte}</h2>
     <div class="variant-buttons no-print">
       <button class:selected={ChoixPenitentiel === "1CP"} 
         on:click={() => { ChoixPenitentiel = "1CP"; generateRitual(); }}>1 </button>
@@ -678,9 +676,9 @@ Début section sacrements
     </div>
   </div>
 
-  {:else if step.type === "H2" && step.texte.trim().toUpperCase() === "PROFESSION DE FOI"}
+  {:else if step.id === "Professiondefoi"}
   <div class="variant-header">
-    <h2 class="H2">{@html step.texte}</h2>
+    <h2>{@html step.texte}</h2>
     <div class="variant-buttons no-print">
       <button class:selected={typeCredo === "NC"} 
         on:click={() => { typeCredo = "NC"; generateRitual(); }}>1 </button>
@@ -691,7 +689,7 @@ Début section sacrements
     </div>
   </div>
 
-  {:else if step.type === "H3" && ["PRIÈRE EUCHARISTIQUE I", "PRIÈRE EUCHARISTIQUE II", "PRIÈRE EUCHARISTIQUE III", "PRIÈRE EUCHARISTIQUE IV"].includes(step.texte.trim().toUpperCase())}
+  {:else if ["PE1", "PE2", "PE3", "PE4"].includes(step.id)}
   <div class="variant-header">
     <h3 class="H3">{@html step.texte}</h3>
     <div class="variant-buttons no-print">
@@ -703,6 +701,71 @@ Début section sacrements
         on:click={() => { typePE = "PE3"; generateRitual(); }}>3 </button>
       <button class:selected={typePE === "PE4"} 
         on:click={() => { typePE = "PE4"; generateRitual(); }}>4 </button>
+    </div>
+  </div>
+
+{:else if step.id === "Anamnèse"}
+ <div class="variant-header">
+    <p class="rubrique">{@html step.texte}</p>
+    <div class="variant-buttons no-print">
+      <button class:selected={AcclamationEucharistique === "AE1"} 
+        on:click={() => { AcclamationEucharistique = "AE1"; generateRitual(); }}>1 </button>
+      <button class:selected={AcclamationEucharistique === "AE2"} 
+        on:click={() => { AcclamationEucharistique = "AE2"; generateRitual(); }}>2 </button>
+      <button class:selected={AcclamationEucharistique === "AE3"} 
+        on:click={() => { AcclamationEucharistique = "AE3"; generateRitual(); }}>3 </button>
+      <button class:selected={AcclamationEucharistique === "AE4"} 
+        on:click={() => { AcclamationEucharistique = "AE4"; generateRitual(); }}>4 </button>
+    </div>
+  </div>
+  
+{:else if step.id === "Doxologie"}
+ <div class="variant-header">
+    <h3 class="H3 no-print">{@html step.texte}</h3>
+    <div class="variant-buttons no-print">
+      <button class:selected={DoxologieLt === false} 
+        on:click={() => { DoxologieLt = false; generateRitual(); }}>1 </button>
+      <button class:selected={DoxologieLt === true} 
+        on:click={() => { DoxologieLt = true; generateRitual(); }}>2 </button>
+    </div>
+  </div>
+
+  {:else if step.id === "NotrePère"}
+ <div class="variant-header">
+    <h3 class="H3 no-print">{@html step.texte}</h3>
+    <div class="variant-buttons no-print">
+      <button class:selected={NotrePère === "NP1"} 
+        on:click={() => { NotrePère = "NP1"; generateRitual(); }}>1 </button>
+      <button class:selected={NotrePère === "NP2"} 
+        on:click={() => { NotrePère = "NP2"; generateRitual(); }}>2 </button>
+      <button class:selected={NotrePère === "NP3"} 
+        on:click={() => { NotrePère = "NP3"; generateRitual(); }}>3 </button>
+    </div>
+  </div>
+
+    {:else if step.id === "Apologies"}
+ <div class="variant-header">
+    <h3 class="H3 no-print">{@html step.texte}</h3>
+    <div class="variant-buttons no-print">
+      <button class:selected={Apologies === "1"} 
+        on:click={() => { Apologies = "1"; generateRitual(); }}>1 </button>
+      <button class:selected={Apologies === "2"} 
+        on:click={() => { Apologies = "2"; generateRitual(); }}>2 </button>
+    </div>
+  </div>
+
+    {:else if step.id === "Conclusion"}
+ <div class="variant-header">
+    <h3 class="H3 no-print">{@html step.texte}</h3>
+    <div class="variant-buttons no-print">
+      <button class:selected={Conclusion === "1"} 
+        on:click={() => { Conclusion = "1"; generateRitual(); }}>1 </button>
+      <button class:selected={Conclusion === "2"} 
+        on:click={() => { Conclusion = "2"; generateRitual(); }}>2 </button>
+      <button class:selected={Conclusion === "3"} 
+        on:click={() => { Conclusion = "3"; generateRitual(); }}>3 </button>
+      <button class:selected={Conclusion === "4"} 
+        on:click={() => { Conclusion = "4"; generateRitual(); }}>4 </button>
     </div>
   </div>
 
@@ -758,6 +821,12 @@ CSS
  *****************************************************/
 .texte{ white-space: pre-line; margin:0.01rem 0; }
 
+.tableau p {
+    margin: 0; /* Supprime les marges */
+    white-space: pre-line;
+  text-align: left;
+}
+
 p {
   line-height: 1.3;
   font-family: var(--font-main);
@@ -800,12 +869,6 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
   color: var(--accent);
 }
 
-.tableau p {
-    margin: 0; /* Supprime les marges */
-    white-space: pre-line;
-  text-align: left;
-}
-
 .tableau .rubrique {
   margin: 0.5rem 0;
 }
@@ -817,12 +880,14 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
 .indent1all { text-indent: -20px; padding-left: 20px; } 
 .indent1p { text-indent: 20px; }
 .indent1g { text-indent: 50px; }
+.indent1allg { text-indent: -20px; padding-left: 70px; } 
+.indent1gg { text-indent: 70px; }
 .indentallg { padding-left: 50px; }
 .indentallp { padding-left: 20px; }
 p.centre { text-align: center; }
 .lettrine::first-letter { color: var(--accent); font-weight: bold }
 .sautdeligne {line-height: 0.6;}
-.voixbasse { font-style: italic; font-size: 1.3rem;   line-height:1.1; }
+.voixbasse { font-style: italic; font-size: 1.2rem;   line-height:1.1; }
 
 .grandelettrine::first-letter {
   color: var(--accent);
