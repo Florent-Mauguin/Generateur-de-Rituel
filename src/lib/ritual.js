@@ -376,7 +376,32 @@ pour notre bien et celui de toute l’Église.`, type: "dialogueR", conditions: 
   { class:"lettrine indent1p", texte: `Rendons grâce au Seigneur notre Dieu.`, type: "dialogueV", conditions: {} },
   { class:"indent1g", texte: `Cela est juste et bon.`, type: "dialogueR", conditions: {} },
   { texte: `Le prêtre dit la préface, les mains étendues.`, type: "rubrique", conditions: {} },
-  { type : "insert-preface"},
+  { type : "insert-preface" },
+    { conditions: {typePE: "PE4"}, class: "tableau",items:[
+        {class:"grandelettrine", texte:`Vraiment il est juste et bon,
+            pour ta gloire et notre salut,`, type: "dialogueV"},
+        {class:"indent1all", texte:`de t’offrir notre action de grâce,
+            toujours et en tout lieu,`, type: "dialogueV"},
+        {class:"indent1all", texte:`Seigneur, Père très saint,
+            Dieu éternel et tout-puissant,
+            par le Christ, notre Seigneur.`, type: "dialogueV"},
+        { class:"sautdeligne", texte: `\n`, type: "dialogueV",},
+        {class:"indent1all", texte:`Dans le mystère de sa Pâque,
+            il a fait une œuvre merveilleuse :`, type: "dialogueV"},
+        {class:"indent1all", texte:`car nous étions esclaves de la mort et du péché,
+            et nous sommes appelés à partager sa gloire ;`, type: "dialogueV"},
+        {class:"indent1all", texte:`nous portons désormais ces noms glorieux :
+            descendance choisie, sacerdoce royal,
+            nation sainte, peuple racheté ;`, type: "dialogueV"},
+        {class:"indent1all", texte:`nous pouvons annoncer au monde
+            les merveilles que tu as accomplies,`, type: "dialogueV"},
+        {class:"indent1all", texte:`toi qui nous appelles des ténèbres
+            à ton admirable lumière.`, type: "dialogueV"},
+        { class:"sautdeligne", texte: `\n`, type: "dialogueV"},
+        {class:"indent1all", texte:`C’est pourquoi, avec les anges et les archanges,
+            avec les puissances d’en haut et tous les esprit bienheureux,
+            nous chantons l’hymne de ta gloire
+            et sans fin nous proclamons\u00A0:`, type: "dialogueV"}]},
   { texte: `À la fin de la préface, le prêtre joint les mains et, avec le peuple, proclame\u00A0:`, type: "rubrique", conditions: {} },
 //Sanctus
   //français
@@ -498,9 +523,9 @@ il rompit le pain,`, type: "dialogueV" },
   { texte: `et le donna à ses disciples, en disant\u00A0:`, type: "dialogueV" },
   { class: "indent1g", texte: `Il s’incline un peu`, type: "rubriqueinterne" },
   { class:"sautdeligne", texte: `\n`},
-  { class: "centre", texte: `« PRENEZ, ET MANGEZ-EN TOUS :
-CECI EST MON CORPS
-LIVRE POUR VOUS. »`, type: "dialogueV" },
+  { class: "centre", texte: `« Pʀᴇɴᴇᴢ, ᴇᴛ ᴍᴀɴɢᴇᴢ-ᴇɴ ᴛᴏᴜs :
+ᴄᴇᴄɪ ᴇsᴛ ᴍᴏɴ Cᴏʀᴘs
+ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs. »`, type: "dialogueV" },
   { texte: `Il montre au peuple l’hostie consacrée, la repose sur la patène, et adore en faisant la génuflexion.`, type: "rubrique" },
   { class:"sautdeligne", texte: `\n`},
   { texte: `Ensuite, il continue\u00A0:`, type: "rubrique" },
@@ -511,14 +536,157 @@ LIVRE POUR VOUS. »`, type: "dialogueV" },
 et donna la coupe à ses disciples, en disant\u00A0:`, type: "dialogueV" },
   { class: "indent1g", texte: `Il s’incline un peu`, type: "rubriqueinterne" },
   { class:"sautdeligne", texte: `\n`},
-  { class: "centre", texte: `« PRENEZ, ET BUVEZ-EN TOUS,
-CAR CECI EST LA COUPE DE MON SANG,
-LE SANG DE L’ALLIANCE NOUVELLE ET ETERNELLE,
-QUI SERA VERSE POUR VOUS ET POUR LA MULTITUDE
-EN REMISSION DES PECHES.
-VOUS FEREZ CELA EN MEMOIRE DE MOI.\u00A0»`, type: "dialogueV" },
-  { class: "", texte: `Il montre le calice au peuple, le dépose sur le corporal, et adore en faisant la génuflexion.`, type: "rubrique" },
+  { class: "centre", texte: `« Pʀᴇɴᴇᴢ, ᴇᴛ ʙᴜᴠᴇᴢ-ᴇɴ ᴛᴏᴜs,
+ᴄᴀʀ ᴄᴇᴄɪ ᴇsᴛ ʟᴀ ᴄᴏᴜᴘᴇ ᴅᴇ ᴍᴏɴ Sᴀɴɢ,
+ʟᴇ Sᴀɴɢ ᴅᴇ ʟ’Aʟʟɪᴀɴᴄᴇ ɴᴏᴜᴠᴇʟʟᴇ ᴇᴛ ᴇ́ᴛᴇʀɴᴇʟʟᴇ,
+ǫᴜɪ sᴇʀᴀ ᴠᴇʀsᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs ᴇᴛ ᴘᴏᴜʀ ʟᴀ ᴍᴜʟᴛɪᴛᴜᴅᴇ
+ᴇɴ ʀᴇ́ᴍɪssɪᴏɴ ᴅᴇs ᴘᴇ́ᴄʜᴇ́s.
+Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\u00A0»`, type: "dialogueV" },
+  { texte: `Il montre le calice au peuple, le dépose sur le corporal, et adore en faisant la génuflexion.`, type: "rubrique" },
   ] },
+//PE 2
+{ conditions: {typePE: "PE2", showPE: true}, class: "tableau",items:[
+  { texte: `Le prêtre dit, les mains étendues\u00A0:`, type: "rubrique", conditions: {} },
+  { class:"grandelettrine", texte: `Toi qui es vraiment Saint,
+toi qui es la source de toute sainteté, Dieu notre Père,`, type: "dialogueV", conditions: {} },
+  { class:"indent1all", texte: `nous voici rassemblés devant toi,
+et, dans la communion de toute l’Église,`, type: "dialogueV", conditions: {} },
+  { class:"indent1all", texte: `nous célébrons le jour
+où le Christ est ressuscité d’entre les morts.`, type: "dialogueV", conditions: {} },
+  { class:"indent1all", texte: `Par lui que tu as élevé à ta droite, nous te prions\u00A0:`, type: "dialogueV", conditions: {} },
+  { class:"indent1g", texte: `Il joint les mains, et, les tenant étendues sur les offrandes, il dit\u00A0:`, type: "rubriqueinterne", conditions: {} },
+  { texte: `Sanctifie ces offrandes
+en répandant sur elles ton Esprit\u00A0;`, type: "dialogueV", conditions: {} },
+  { class:"indent1g", texte: `il joint les mains, puis il fait un signe de croix sur le pain et le calice, en disant\u00A0:`, type: "rubriqueinterne", conditions: {} },
+  { class:"indent1all", texte: `qu’elles deviennent pour nous
+le Corps <span style="color: #b30000;">✠</span> et le Sang
+de Jésus, le Christ, notre Seigneur.`, type: "dialogueV", conditions: {} },
+  { class:"indent1g", texte: `Il joint les mains.`, type: "rubriqueinterne", conditions: {} },
+
+{ texte: `Dans les formules qui suivent, les paroles du Seigneur seront prononcées distinctement et clairement, comme le requiert la nature de ces paroles.`, type: "rubrique" },
+  { class:"sautdeligne", texte: `\n`, type: "", conditions: {hideRubriques:true} },
+  { class:"grandelettrine", texte: `Au moment d’être livré
+et d’entrer librement dans sa passion,`, type: "dialogueV" },
+  {  class: "indent1p",texte: `Il prend le pain et le tient un peu au-dessus de l’autel.`, type: "rubriqueinterne" },
+  { texte: `il prit le pain, il rendit grâce, il le rompit
+et le donna à ses disciples, en disant\u00A0:`, type: "dialogueV" },
+  { class: "indent1g", texte: `Il s’incline un peu.`, type: "rubriqueinterne" },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "centre", texte: `« Pʀᴇɴᴇᴢ, ᴇᴛ ᴍᴀɴɢᴇᴢ-ᴇɴ ᴛᴏᴜs :
+ᴄᴇᴄɪ ᴇsᴛ ᴍᴏɴ Cᴏʀᴘs
+ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs. »`, type: "dialogueV" },
+  { texte: `Il montre au peuple l’hostie consacrée, la repose sur la patène, et adore en faisant la génuflexion.`, type: "rubrique" },
+  { class:"sautdeligne", texte: `\n`},
+  { texte: `Ensuite, il continue\u00A0:`, type: "rubrique" },
+  { class:"grandelettrine", texte: `De même, après le repas,`, type: "dialogueV" },
+  { texte: `Il prend le calice et, le tenant un peu au-dessus de l’autel, il continue\u00A0:`, type: "rubriqueinterne" },
+  { class: "indent1p", texte: `il prit la coupe ;`, type: "dialogueV" },
+  { texte: `de nouveau il rendit grâce,
+et la donna à ses disciples, en disant\u00A0:`, type: "dialogueV" },
+  { class: "indent1g", texte: `Il s’incline un peu.`, type: "rubriqueinterne" },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "centre", texte: `« Pʀᴇɴᴇᴢ, ᴇᴛ ʙᴜᴠᴇᴢ-ᴇɴ ᴛᴏᴜs,
+ᴄᴀʀ ᴄᴇᴄɪ ᴇsᴛ ʟᴀ ᴄᴏᴜᴘᴇ ᴅᴇ ᴍᴏɴ Sᴀɴɢ,
+ʟᴇ Sᴀɴɢ ᴅᴇ ʟ’Aʟʟɪᴀɴᴄᴇ ɴᴏᴜᴠᴇʟʟᴇ ᴇᴛ ᴇ́ᴛᴇʀɴᴇʟʟᴇ,
+ǫᴜɪ sᴇʀᴀ ᴠᴇʀsᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs ᴇᴛ ᴘᴏᴜʀ ʟᴀ ᴍᴜʟᴛɪᴛᴜᴅᴇ
+ᴇɴ ʀᴇ́ᴍɪssɪᴏɴ ᴅᴇs ᴘᴇ́ᴄʜᴇ́s.
+Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\u00A0»`, type: "dialogueV" },
+  { texte: `Il montre le calice au peuple, le dépose sur le corporal, et adore en faisant la génuflexion.`, type: "rubrique" },
+]},
+//PE 3
+{ conditions: {typePE: "PE3", showPE: true}, class: "tableau",items:[
+  { texte: `Le prêtre dit, les mains étendues\u00A0:`, type: "rubrique", conditions: {} },
+  { class: "grandelettrine", texte: `Tu es vraiment saint, Dieu de l’univers, 
+    et il est juste que toute la création proclame ta louange,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `car c’est toi qui donnes la vie, 
+    c’est toi qui sanctifies toutes choses, 
+    par ton Fils, Jésus Christ, notre Seigneur, 
+    avec la puissance de l’Esprit Saint\u00A0;`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `et tu ne cesses de rassembler ton peuple, 
+    afin que, du levant au couchant du soleil, 
+    une offrande pure soit présentée à ton nom.`, type: "dialogueV", conditions: {} },
+  { texte: `Il joint les mains, puis, les tenant étendues sur les offrandes, il dit\u00A0:`, type: "rubrique", conditions: {} },
+  { class: "grandelettrine", texte: `C<span></span>’est pourquoi nous voici rassemblés devant toi, Dieu notre Père, 
+    et, dans la communion de toute l’Église,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `nous célébrons le jour 
+    où le Christ est ressuscité d’entre les morts.`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `Par lui, que tu as élevé à ta droite, 
+    nous te supplions de consacrer toi-même 
+    les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {} },
+  { class: "indentallp", texte: `Sanctifie-les par ton Esprit 
+    pour qu’elles deviennent`, type: "dialogueV", conditions: {} },
+  { class: "indent1g", texte: `Il joint les mains puis il fait le signe de croix sur le pain et le calice, en disant\u00A0:`, type: "rubriqueinterne", conditions: {} },
+  { class: "indentallp", texte: `le Corps <span style="color: #b30000;">✠</span> et le Sang de ton Fils,
+    Jésus Christ, notre Seigneur,`, type: "dialogueV", conditions: {} },
+  { class: "indent1g", texte: `Il joint les mains.`, type: "rubriqueinterne", conditions: {} },
+  { class: "indent1p", texte: `qui nous a dit de célébrer ce mystère.`, type: "dialogueV", conditions: {} },
+  { texte: `Dans les formules qui suivent, les paroles du Seigneur seront prononcées ou chantées de façon distincte et claire, comme le requiert la nature de ces paroles.`, type: "rubrique", conditions: {} },
+  { class: "grandelettrine", texte: `La nuit même où il fut livré,`, type: "dialogueV", conditions: {} },
+  { texte: `Il prend le pain et, le tenant un peu au-dessus de l’autel, il continue\u00A0:`, type: "rubriqueinterne", conditions: {} },
+  { class: "indent1p", texte: `il prit le pain,`, type: "dialogueV", conditions: {} },
+  { texte: `en te rendant grâce il dit la bénédiction, 
+    il rompit le pain, 
+    et le donna à ses disciples, en disant\u00A0:`, type: "dialogueV", conditions: {} },
+  { class: "indent1g", texte: `Il s’incline un peu.`, type: "rubriqueinterne" },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "centre", texte: `« Pʀᴇɴᴇᴢ, ᴇᴛ ᴍᴀɴɢᴇᴢ-ᴇɴ ᴛᴏᴜs :
+ᴄᴇᴄɪ ᴇsᴛ ᴍᴏɴ Cᴏʀᴘs
+ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs. »`, type: "dialogueV" },
+  { texte: `Il montre au peuple l’hostie consacrée, la repose sur la patène, et adore en faisant la génuflexion.`, type: "rubrique" },
+  { class:"sautdeligne", texte: `\n`},
+  { texte: `Ensuite, il continue\u00A0:`, type: "rubrique" },
+  { class:"grandelettrine", texte: `De même, après le repas,`, type: "dialogueV" },
+  { texte: `Il prend le calice et, le tenant un peu au-dessus de l’autel, il continue\u00A0:`, type: "rubriqueinterne" },
+  { class: "indent1p", texte: `il prit la coupe ;`, type: "dialogueV" },
+  { texte: `en te rendant grâce il dit la bénédiction, 
+    et donna la coupe à ses disciples, en disant\u00A0:`, type: "dialogueV" },
+  { class: "indent1g", texte: `Il s’incline un peu.`, type: "rubriqueinterne" },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "centre", texte: `« Pʀᴇɴᴇᴢ, ᴇᴛ ʙᴜᴠᴇᴢ-ᴇɴ ᴛᴏᴜs,
+ᴄᴀʀ ᴄᴇᴄɪ ᴇsᴛ ʟᴀ ᴄᴏᴜᴘᴇ ᴅᴇ ᴍᴏɴ Sᴀɴɢ,
+ʟᴇ Sᴀɴɢ ᴅᴇ ʟ’Aʟʟɪᴀɴᴄᴇ ɴᴏᴜᴠᴇʟʟᴇ ᴇᴛ ᴇ́ᴛᴇʀɴᴇʟʟᴇ,
+ǫᴜɪ sᴇʀᴀ ᴠᴇʀsᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs ᴇᴛ ᴘᴏᴜʀ ʟᴀ ᴍᴜʟᴛɪᴛᴜᴅᴇ
+ᴇɴ ʀᴇ́ᴍɪssɪᴏɴ ᴅᴇs ᴘᴇ́ᴄʜᴇ́s.
+Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\u00A0»`, type: "dialogueV" },
+  { texte: `Il montre le calice au peuple, le dépose sur le corporal, et adore en faisant la génuflexion.`, type: "rubrique" },
+]},
+//PE 4
+{ conditions: {typePE: "PE4", showPE: true}, class: "tableau",items:[
+  { texte: `Le prêtre dit, les mains étendues\u00A0:`, type: "rubrique", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+]},
+
+
 //Acclamation eucharistique / Anamnèse
   { id: "Anamnèse", texte: `Puis il introduit une des acclamations suivantes\u00A0:`, type: "rubrique", conditions: {showPE: true} },
   { class: "indent1g lettrine", texte: `Il est grand, le mystère de la foi :`, type: "dialogueV", conditions: {AcclamationEucharistique: "AE1", showPE: true} },
@@ -539,7 +707,7 @@ gloire à toi qui es vivant,
 notre Sauveur et notre Dieu :
 Viens, Seigneur Jésus !`, type: "dialogueR", conditions: {AcclamationEucharistique: "AE4", showPE: true} },
   
-
+//Suite PE 1
 { conditions: {typePE: "PE1", showPE: true}, class: "tableau",items:[
   { texte: `Ensuite, les mains étendues, le prêtre dit\u00A0:`, type: "rubrique" },
   { class: "grandelettrine", texte: `Voilà pourquoi nous, tes serviteurs,
@@ -614,6 +782,138 @@ mais en accordant largement ton pardon.`, type: "dialogueV" },
 tu les sanctifies, leur donnes la vie,
 les bénis, et nous en fais le don.`, type: "dialogueV" },
 ] },
+//Suite PE 2
+{ conditions: {typePE: "PE2", showPE: true}, class: "tableau",items:[
+  { texte: `Ensuite, les mains étendues, le prêtre dit\u00A0:`, type: "rubrique", conditions: {} },
+  { class: "grandelettrine", texte: `En faisant ainsi mémoire
+    de la mort et de la résurrection de ton Fils,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `nous t’offrons, Seigneur, 
+    le Pain de la vie et la Coupe du salut,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `et nous te rendons grâce, 
+    car tu nous as estimés dignes 
+    de nous tenir devant toi pour te servir.`, type: "dialogueV", conditions: {} },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "indent1all", texte: `Humblement, nous te demandons 
+    qu’en ayant part au Corps et au Sang du Christ, 
+    nous soyons rassemblés par l’Esprit Saint 
+    en un seul corps.`, type: "dialogueV", conditions: {} },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "grandelettrine", texte: `Souviens-toi, Seigneur, 
+    de ton Église répandue à travers le monde :`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `fais-la grandir dans ta charité 
+    en union avec ton serviteur notre pape <span style="color: #b30000;">N.</span>, 
+    notre évêque <span style="color: #b30000;">N.</span>`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `et tous les évêques, les prêtres et les diacres.`, type: "dialogueV", conditions: {} },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "grandelettrine", texte: `Souviens-toi aussi de nos frères et soeurs 
+    qui se sont endormis dans l’espérance de la résurrection,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `et souviens-toi, dans ta miséricorde, de tous les défunts\u00A0: 
+    accueille-les dans la lumière de ton visage.`, type: "dialogueV", conditions: {} },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "grandelettrine", texte: `Sur nous tous enfin, 
+    nous implorons ta bonté :`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `permets qu’avec la Vierge Marie, 
+    la bienheureuse Mère de Dieu, 
+    avec saint Joseph, son époux, 
+    les Apôtres et tous les saints 
+    qui ont fait ta joie au long des âges,`, type: "dialogueV", conditions: {} },
+  { texte: `nous ayons part à la vie éternelle 
+    et que nous chantions ta louange et ta gloire,`, type: "dialogueV", conditions: {} },
+  { class: "indent1g", texte: `Il joint les mains.`, type: "rubriqueinterne", conditions: {} },
+  { class: "indent1p", texte: `par ton Fils Jésus, le Christ.`, type: "dialogueV", conditions: {} },
+] },
+//Suite PE 3
+{ conditions: {typePE: "PE3", showPE: true}, class: "tableau",items:[
+  { texte: `Ensuite, les mains étendues, le prêtre dit\u00A0:`, type: "rubrique", conditions: {} },
+  { class: "grandelettrine", texte: `En faisant ainsi mémoire de ton Fils,
+    de sa passion qui nous sauve,`, type: "dialogueV", conditions: {} },
+  { class: "indentallp", texte: `de sa glorieuse résurrection 
+    et de son ascension dans le ciel,`, type: "dialogueV", conditions: {} },
+  { texte: `alors que nous attendons son dernier avènement,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `nous t’offrons, Seigneur, en action de grâce, 
+    ce sacrifice vivant et saint.`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `Regarde, nous t’en prions, 
+    l’oblation de ton Église,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `et daigne y reconnaître ton Fils qui, selon ta volonté, 
+    s’est offert en sacrifice pour nous réconcilier avec toi.`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `Quand nous serons nourris de son Corps et de son Sang, 
+    et remplis de l’Esprit Saint,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `accorde-nous d’être un seul corps et un seul esprit 
+    dans le Christ.`, type: "dialogueV", conditions: {} },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "grandelettrine", texte: `Que l’Esprit Saint fasse de nous 
+    une éternelle offrande à ta gloire,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `pour que nous obtenions un jour l’héritage promis, 
+    avec tes élus :`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `en premier lieu la bienheureuse Vierge Marie, 
+    Mère de Dieu,`, type: "dialogueV", conditions: {} },
+  { texte: `avec saint Joseph, son époux, 
+    les bienheureux Apôtres, les glorieux martyrs, 
+    <span style="color: #b30000;">(</span>saint <span style="color: #b30000;">N.)</span>`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: ``, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `et tous les saints, 
+    qui ne cessent d’intercéder auprès de toi 
+    et nous assurent de ton secours.`, type: "dialogueV", conditions: {} },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "grandelettrine", texte: `Et maintenant nous te supplions, Seigneur : 
+    par le sacrifice qui nous réconcilie avec toi,`, type: "dialogueV", conditions: {} },
+  { class: "indent1p", texte: `étends au monde entier le salut et la paix.`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `Affermis ton Église, en pèlerinage sur la terre, 
+    dans la foi et la charité,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `en union avec ton serviteur notre pape <span style="color: #b30000;">N.</span>, 
+    et notre évêque <span style="color: #b30000;">N.</span>`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `l’ensemble des évêques, les prêtres, les diacres, 
+    et tout le peuple que tu as racheté.`, type: "dialogueV", conditions: {} },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "indent1all", texte: `Écoute, en ta bonté, les prières de ta famille, 
+    que tu as voulu rassembler devant toi.`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `Dans ta miséricorde, ramène à toi, Père très aimant, 
+    tous tes enfants dispersés.`, type: "dialogueV", conditions: {} },
+  { class:"sautdeligne", texte: `\n`},
+  { class: "grandelettrine", texte: `Pour nos frères et soeurs défunts, 
+    et pour tous ceux qui ont quitté ce monde`, type: "dialogueV", conditions: {} },
+  { class: "indentallp", texte: `et trouvent grâce devant toi, 
+    nous te prions :`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `en ta bienveillance, 
+    accueille-les dans ton royaume,`, type: "dialogueV", conditions: {} },
+  { class: "indent1all", texte: `où nous espérons être comblés de ta gloire, 
+    tous ensemble et pour l’éternité,`, type: "dialogueV", conditions: {} },
+  { class: "indent1g", texte: `Il joint les mains.`, type: "rubriqueinterne", conditions: {} },
+  { class: "indent1all", texte: `par le Christ, notre Seigneur, 
+    par qui tu donnes au monde 
+    toute grâce et tout bien.`, type: "dialogueV", conditions: {} },
+] },
+//Suite PE 4
+{ conditions: {typePE: "PE4", showPE: true}, class: "tableau",items:[
+  { texte: `Ensuite, les mains étendues, le prêtre dit\u00A0:`, type: "rubrique", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+  { class: "", texte: ``, type: "", conditions: {} },
+] },
+
+
 
 //Doxologie 
   { class:"sautdeligne", texte: `\n`},

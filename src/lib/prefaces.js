@@ -11,6 +11,7 @@ export const preface = {
         {class:"indent1all", texte:`Seigneur, Père très saint,
             Dieu éternel et tout-puissant,
             par le Christ, notre Seigneur.`},
+        { class:"sautdeligne", texte: `\n`,},
         {class:"indent1all", texte:`Dans le mystère de sa Pâque,
             il a fait une œuvre merveilleuse :`},
         {class:"indent1all", texte:`car nous étions esclaves de la mort et du péché,
@@ -22,6 +23,7 @@ export const preface = {
             les merveilles que tu as accomplies,`},
         {class:"indent1all", texte:`toi qui nous appelles des ténèbres
             à ton admirable lumière.`},
+        { class:"sautdeligne", texte: `\n`,},
         {class:"indent1all", texte:`C’est pourquoi, avec les anges et les archanges,
             avec les puissances d’en haut et tous les esprit bienheureux,
             nous chantons l’hymne de ta gloire
@@ -39,6 +41,7 @@ export const preface = {
         {texte:`Seigneur, Père très saint,
             Dieu éternel et tout-puissant,
             par le Christ, notre Seigneur.`},
+        { class:"sautdeligne", texte: `\n`,},
         {texte:`Dans le mystère de sa Pâque,
             il a fait une œuvre merveilleuse :`},
         {texte:`car nous étions esclaves de la mort et du péché,

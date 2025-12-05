@@ -177,12 +177,13 @@ for (const step of fullRitual) {
   }
 
   if (step.type === "insert-preface") {
-    if (Showpreface && prefacedujour) {
-      filteredRitual.push({ type: "preface", items: prefacedujour.items });
+    if (Showpreface && prefacedujour && typePE !== "PE4") {
+        filteredRitual.push({ type: "preface", items: prefacedujour.items });
     }
     continue;
   }
 
+  
   // ✅ MASQUAGE DES RUBRIQUES
   if (hideRubriques && (step.type === "rubrique" || step.type === "rubriqueinterne")) {
     continue;
@@ -780,7 +781,7 @@ Début section sacrements
     {/if}
   {/each}
     <button on:click={topFunction} id="scrollToTopButton" class="scrollToTopButton no-print" title="Haut de page">  
-    ⏶ </button>
+    ⭱ </button>
 </div>
   {/if}
 
@@ -884,9 +885,10 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
 .indent1gg { text-indent: 70px; }
 .indentallg { padding-left: 50px; }
 .indentallp { padding-left: 20px; }
-p.centre { text-align: center; }
+p.centre { text-align: center; line-height: 1; font-weight: 400; font-size: 1.6rem;}
 .lettrine::first-letter { color: var(--accent); font-weight: bold }
 .sautdeligne {line-height: 0.6;}
+.preface-texte .sautdeligne { line-height: 0.6; }
 .voixbasse { font-style: italic; font-size: 1.2rem;   line-height:1.1; }
 
 .grandelettrine::first-letter {
@@ -1086,11 +1088,11 @@ select {
   position: fixed;
   bottom: 20px;
   margin-left: 600px; /* Positionné à droite */
-  border: none;
+  border: 2px solid var(--brand);
   border-radius: 50%; /* Bouton rond */
   background-color: var(--brand); /* Couleur de fond */
   color: white; /* Couleur de la flèche */
-  font-size: 1.8rem; /* Taille de la flèche */
+  font-size: 2rem; /* Taille de la flèche */
   font-weight: bold;
   outline: none;
   width: 50px; /* Largeur du bouton */
@@ -1099,7 +1101,6 @@ select {
     cursor: pointer;
 
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -1113,7 +1114,10 @@ select {
 .scrollToTopButton:focus,
 .scrollToTopButton:focus-within {
   cursor: pointer;
-  background-color: #565b5d;
+      transform: scale(1.12);
+        background: #fff;
+  color: var(--brand);
+      
 }
 
 /*****************************************************
@@ -1297,14 +1301,14 @@ select {
  * BOUTON ONBOARDING FIXE
  *****************************************************/
 .onboard-btn {
-  margin: 1rem 0.5rem;
-    width: 50px;
-    height: 50px;
+  margin: 2rem 1.5rem;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: none;
     background: #495057;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
