@@ -17,7 +17,18 @@
         { icon: '🔔', label: "Mise en place du modal à l'ouverture de la page" },
         { icon: '🎨', label: "Système d'exportation PDF" }
       ]
-    }
+    },
+    /*{
+      version: 'v0.2.0',
+      date: 'décembre 2025',
+      summary: '1ère version du générateur',
+      items: [
+        { icon: '🧑‍💻', label: 'Rituel complet pour une messe du Temps Ordinaire' },
+        { icon: '⚡', label: 'Boutons de choix pour les différentes variantes' },
+        { icon: '🔔', label: "Intégration de l'ensemble des préfaces et oraisons" },
+        { icon: '🎨', label: "" }
+      ]
+    }*/
   ];
 
 </script>

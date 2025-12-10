@@ -99,6 +99,12 @@
           color: "yellow"
         },
         {
+          title: "Intégration des partitions",
+          desc: "Permettre d'afficher les partitions musicales associées aux différentes parties du rituel",
+          priority: "Basse",
+          color: "yellow"
+        },
+        {
           title: "Amélioration continue",
           desc: "",
           priority: "Basse",

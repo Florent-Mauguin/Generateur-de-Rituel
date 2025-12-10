@@ -12,7 +12,6 @@ JS
     import Roadmap from '$lib/components/Roadmap.svelte';
     import Nouveautes from '$lib/components/Nouveautes.svelte';
 
-    
 
   export let version = "1.0";
   let [showPopup, dontShowAgain, forceOpen] = [false, false, false];
@@ -23,10 +22,10 @@ JS
 <br><br>L'objectif est simple : <b>générer en quelques clics un rituel imprimable</b> et adapté à sa paroisse.
 <br><br><b>⚠️ Le projet est encore en cours de développement !</b>` },
     { title: "Nouveautés", content: "" },
-    { title: "Roadmap", content: "" }
+    { title: "Roadmap" }
   ];
 
-onMount(() => {
+onMount(async () => {
     const seenVersion = localStorage.getItem("welcomePopupVersionSeen");
     if (seenVersion !== version) {
       showPopup = true;
