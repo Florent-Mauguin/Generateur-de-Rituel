@@ -25,8 +25,8 @@
       items: [
         { icon: '🧑‍💻', label: 'Rituel complet pour une messe du Temps Ordinaire' },
         { icon: '⚡', label: 'Boutons de choix pour les différentes variantes' },
-        { icon: '🔔', label: "Intégration de l'ensemble des préfaces et oraisons" },
-        { icon: '🎨', label: "" }
+        { icon: '🔔', label: "Intégration de l'ensemble des préfaces (plus de 70...)" },
+        { icon: '🎨', label: "Ajout de la librairie romcal pour acceder au calendrier liturgique" }
       ]
     }*/
   ];

@@ -11,12 +11,103 @@ JS
     import { Document, Packer, Paragraph, TextRun } from "docx";
     import Roadmap from '$lib/components/Roadmap.svelte';
     import Nouveautes from '$lib/components/Nouveautes.svelte';
+    import * as romcalModule from 'romcal';
+    const { Romcal } = romcalModule; 
+    import { France_Fr } from '@romcal/calendar.france';
+    import { liturgyRules } from '$lib/mapping.js';
 
+const romcal = new Romcal({
+  localizedCalendar: France_Fr,
+});
 
+// --- Variables d'état ---
+  let selectedDate = new Date().toISOString().split('T')[0];
+  let availableEvents = []; // Toutes les fêtes du jour
+  let selectedEventId = ""; // L'ID choisi par l'utilisateur
+
+// Tes variables de formulaire (extraites de ton page.txt)
   export let version = "1.0";
+  let celebrationType = "Dominicale";
+  let CelebrationduJour = "";
+  let Showoraisons = false;
+  let Dateliturgique = ""
+  let oraison = "";
+  let salutation = "S3";
+  let ChoixPenitentiel = "1CP";
+  let [secret, hideGloria, OrdinaireLatin, DoxologieLt] = [false, false, false, false];
+  let [showCredo, Showpreface, showPE] = [true, false, true];
+  let typeCredo = "NC";
+  let Choixpreface = "";
+  let prefacedujour = "";
+  let typePE = "PE1";
+  let AcclamationEucharistique = "AE1";
+  let NotrePère = "NP1";
+  let Apologies = "1";
+  let Conclusion = "1";
+  let showAutresParams = false;
+  let Sacrements = false;
+  let [Bapteme,PremiereCommunion,Confirmation,Mariage,Ordination,sacrementDesMalades] = [false,false,false,false,false,false];
+  let Servants = false;
+  let showAutresceremonie = false;
+  let hideRubriques = false;
+  let presenceBishop = false;
+  let incense = false;
+  let servants = 0;
+
+
+// --- Logique Réactive ---
+
+  // 1. Quand la date change, on charge les événements de Romcal
+  $: if (selectedDate) {
+    updateCalendarData(selectedDate);
+  }
+
+  async function updateCalendarData(dateStr) {
+    if (!romcal) return;
+    const year = parseInt(dateStr.split('-')[0]);
+    const calendar = await romcal.generateCalendar(year);
+    const events = calendar[dateStr] || [];
+
+    availableEvents = events;
+
+    if (events.length > 0) {
+      // Par défaut, on prend la fête avec la plus haute priorité (index 0)
+      selectedEventId = events[0].id;
+    } else {
+      selectedEventId = "";
+    }
+  }
+
+  function applyLiturgyMapping(fete) {
+      Dateliturgique = "";
+      CelebrationduJour = fete.name;
+      Showoraisons = false;
+      Showpreface = false;
+    // On regarde dans ton fichier mapping.js
+    if (liturgyRules && liturgyRules[fete.id]) {
+      const regles = liturgyRules[fete.id];
+
+      // On injecte les valeurs du mapping dans tes variables Svelte
+      if (regles.Dateliturgique) Dateliturgique = regles.Dateliturgique;
+      if (regles.Choixpreface) Choixpreface = regles.Choixpreface;
+      if (regles.typeCredo) typeCredo = regles.typeCredo;
+      if (regles.CelebrationduJour ) CelebrationduJour = regles.CelebrationduJour;
+
+      if (Dateliturgique) {oraison = OraisonsDominicales[Dateliturgique] || null;}
+      if (Choixpreface) {prefacedujour = preface[Choixpreface] || null;}
+
+      // On active les sections visuelles
+      Showoraisons = true;
+      Showpreface = true;
+      
+    } else {
+    }
+  }
+
+  
+
   let [showPopup, dontShowAgain, forceOpen] = [false, false, false];
   let currentPage = 0;
-
   const pages = [
     { title: "Bienvenue", content: `Je m'appelle <b>Florent Mauguin</b> et suis séminariste pour le diocèse de Versailles et la communauté de l'Emmanuel. Il y a quelque temps, je me suis rendu compte que chaque année, lors des grandes fêtes, il fallait se replonger dans le missel afin de constituer un rituel propre pour sa paroisse. C'est ainsi qu'est née l'idée de ce projet.
 <br><br>L'objectif est simple : <b>générer en quelques clics un rituel imprimable</b> et adapté à sa paroisse.
@@ -46,8 +137,6 @@ onMount(async () => {
     showPopup = false;
   }
 
-
-  let ritualRef;
 
 // Génération du document Word
   async function generateWord() {
@@ -93,43 +182,12 @@ onMount(async () => {
   }
 
 
-  // Parametres à l'ouverture
-  let celebrationType = "Dominicale";
-  let Showoraisons = false;
-  let Dateliturgique = ""
-  let oraison = "";
-  let salutation = "S3";
-  let ChoixPenitentiel = "1CP";
-  let [secret, hideGloria, OrdinaireLatin, DoxologieLt] = [false, false, false, false];
-  let [showCredo, Showpreface, showPE] = [true, false, true];
-  let typeCredo = "NC";
-  let Choixpreface = "";
-  let prefacedujour = "";
-  let typePE = "PE1";
-  let AcclamationEucharistique = "AE1";
-  let NotrePère = "NP1";
-  let Apologies = "1";
-  let Conclusion = "1";
-  let showAutresParams = false;
-  let Sacrements = false;
-  let [Bapteme,PremiereCommunion,Confirmation,Mariage,Ordination,sacrementDesMalades] = [false,false,false,false,false,false];
-  let Servants = false;
-  let showAutresceremonie = false;
-  let hideRubriques = false;
-  let presenceBishop = false;
-  let incense = false;
-  let servants = 0;
   
   let filteredRitual= [];
+  let inputRituelName = "";
   let rituelName = "";
 
-  //Met l’oraison du jour dès que l’utilisateur coche “Oraisons” et choisit une date liturgique, afin que le générateur puisse inserer les oraisons au bon endroit dans le rituel.
-  $: if (Showoraisons && Dateliturgique) {
-  oraison = OraisonsDominicales[Dateliturgique] || null;
-}
-  $: if (Showpreface && Choixpreface) {
-  prefacedujour = preface[Choixpreface] || null;
-}
+
  // Construction du rituel complet
 const fullRitual = [
   ...ritual.ritesInitiaux,
@@ -140,6 +198,14 @@ const fullRitual = [
 
 // Génération du rituel filtré
 function generateRitual() {
+  rituelName = inputRituelName;
+    // 1. Trouver l'objet événement complet à partir de l'ID sélectionné
+    const feteChoisie = availableEvents.find(e => e.id === selectedEventId);
+
+    if (feteChoisie) {
+        // 2. Appliquer le mapping seulement maintenant
+        applyLiturgyMapping(feteChoisie);};
+
   const options = {
     presenceBishop,
     incense,
@@ -154,12 +220,42 @@ filteredRitual = [];
 for (const step of fullRitual) {
 
   // ---- INSERTIONS Oraisons ----
+  if (step.type === "insert-antienne_ouverture" && celebrationType === "Semaine") {
+    if (Showoraisons && oraison) {
+      filteredRitual.push({ type: "oraison", segments: oraison.antienne_ouverture });
+    }
+    continue;
+  }
+
   if (step.type === "insert-collecte") {
     if (Showoraisons && oraison) {
       filteredRitual.push({ type: "oraison", segments: oraison.collecte });
     }
     continue;
   }
+
+  if (step.type === "insert-priereSurLesOffrandes") {
+    if (Showoraisons && oraison) {
+      filteredRitual.push({ type: "oraison", segments: oraison.priereSurLesOffrandes });
+    }
+    continue;
+  }
+
+
+  if (step.type === "insert-antienne_communion" && celebrationType === "Semaine") {
+    if (Showoraisons && oraison) {
+      filteredRitual.push({ type: "oraison", segments: oraison.antienne_communion });
+    }
+    continue;
+  }
+
+  if (step.type === "insert-priereApresLaCommunion") {
+    if (Showoraisons && oraison) {
+      filteredRitual.push({ type: "oraison", segments: oraison.priereApresLaCommunion });
+    }
+    continue;
+  }
+
 
   if (step.type === "titre-preface") {
     if (Showpreface && prefacedujour) {
@@ -337,7 +433,7 @@ HTML
 
   <div class="card">
 
-     <input id="NomRituel" bind:value={rituelName} placeholder="Donnez un nom à votre Rituel" type="text">
+     <input id="NomRituel" bind:value={inputRituelName} placeholder="Donnez un nom à votre Rituel" type="text">
 
     <label>
       Célébration Eucharistique :
@@ -347,75 +443,41 @@ HTML
       </select>
     </label>
 
- <div class="oraison-row">
-  <label class="oraison-label">
-    Oraisons :
-    <input type="checkbox" bind:checked={Showoraisons} />
-  </label>
-
-  {#if Showoraisons}
-    <div class="sub-options-inline">
-      <label>
-        Calendrier :
-        <select bind:value={Dateliturgique}>
-          <option value="1TO">1er dimanche du Temps Ordinaire</option>
-          <option value="2TO">2ème dimanche du Temps Ordinaire</option>
-          <option value="3TO">3ème dimanche du Temps Ordinaire</option>
-          <option value="4TO">4ème dimanche du Temps Ordinaire</option>
-          <option value="5TO">5ème dimanche du Temps Ordinaire</option>
-          <option value="6TO">6ème dimanche du Temps Ordinaire</option>
-          <option value="7TO">7ème dimanche du Temps Ordinaire</option>
-          <option value="8TO">8ème dimanche du Temps Ordinaire</option>
-          <option value="9TO">9ème dimanche du Temps Ordinaire</option>
-          <option value="10TO">10ème dimanche du Temps Ordinaire</option>
-          <option value="11TO">11ème dimanche du Temps Ordinaire</option>
-          <option value="12TO">12ème dimanche du Temps Ordinaire</option>
-          <option value="13TO">13ème dimanche du Temps Ordinaire</option>
-          <option value="14TO">14ème dimanche du Temps Ordinaire</option>
-          <option value="15TO">15ème dimanche du Temps Ordinaire</option>
-          <option value="16TO">16ème dimanche du Temps Ordinaire</option>
-          <option value="17TO">17ème dimanche du Temps Ordinaire</option>
-          <option value="18TO">18ème dimanche du Temps Ordinaire</option>
-          <option value="19TO">19ème dimanche du Temps Ordinaire</option>
-          <option value="20TO">20ème dimanche du Temps Ordinaire</option>
-          <option value="21TO">21ème dimanche du Temps Ordinaire</option>
-          <option value="22TO">22ème dimanche du Temps Ordinaire</option>
-          <option value="23TO">23ème dimanche du Temps Ordinaire</option>
-          <option value="24TO">24ème dimanche du Temps Ordinaire</option>
-          <option value="25TO">25ème dimanche du Temps Ordinaire</option>
-          <option value="26TO">26ème dimanche du Temps Ordinaire</option>
-          <option value="27TO">27ème dimanche du Temps Ordinaire</option>
-          <option value="28TO">28ème dimanche du Temps Ordinaire</option>
-          <option value="29TO">29ème dimanche du Temps Ordinaire</option>
-          <option value="30TO">30ème dimanche du Temps Ordinaire</option>
-          <option value="31TO">31ème dimanche du Temps Ordinaire</option>
-          <option value="32TO">32ème dimanche du Temps Ordinaire</option>
-          <option value="33TO">33ème dimanche du Temps Ordinaire</option>
-        </select>
-      </label>
-    </div>
-  {/if}
+    <div id="selectdate">
+<p>Sélectionnez une date :
+<input
+type="date"
+id="date-input"
+name="selected_date"
+required
+bind:value={selectedDate}
+class="date-input"
+/></p>
 </div>
+<!--
+<button on:click={() => console.log(`Date choisie: ${selectedDate}`)}>
+Afficher la date
+</button>
+-->
+{#if availableEvents.length > 1}
+        <div class="single-event">
+          Aujourd'hui nous célébrons :
+          {#each availableEvents as event}
+            <label class="event-card" class:active={selectedEventId === event.id}>
+              <input type="radio" bind:group={selectedEventId} value={event.id} />
+              <div class="details">
+                <span class="name">{event.name}</span>
+              </div>
+            </label>
+          {/each}
+        </div>
+      {:else if availableEvents.length === 1}
+        <p class="single-event">Aujourd'hui nous célébrons :<br /><strong>{availableEvents[0].name}</strong></p>
+      {/if}
 
-<div class="sub-options-inline">
-  <label >
-    Préface :
-    <input type="checkbox" bind:checked={Showpreface} />
-  </label>
-  {#if Showpreface}
-    <div >
-      <label>
-        <select bind:value={Choixpreface}>
-          <option value="1DO">1re PREFACE DES DIMANCHES DU TEMPS ORDINAIRE</option>
-          <option value="2DO">2nde PREFACE DES DIMANCHES DU TEMPS ORDINAIRE</option>
-        </select>
-      </label>
-    </div>
-  {/if}
-</div>
 
     <div class="panel">
-<!-- Option autres pour Cérémonie -->
+<!-- Option Eucharistie -->
 <div
   class="panel-header"
   role="button"
@@ -429,7 +491,7 @@ HTML
     }
   }}
 >
-  <span>Plus de paramètres</span>
+  <span>Eucharistie</span>
   <span class="arrow {showAutresceremonie ? 'open' : ''}">▶</span>
 </div>
 
@@ -464,6 +526,20 @@ HTML
       Credo
       <input type="checkbox" bind:checked={showCredo} />
     </label>
+    
+     <div class="oraison-row">
+  <label class="oraison-label">
+    Oraisons :
+    <input type="checkbox" bind:checked={Showoraisons} />
+  </label>
+</div>
+
+<div class="sub-options-inline">
+  <label >
+    Préface :
+    <input type="checkbox" bind:checked={Showpreface} />
+  </label>
+</div>
 
       <!-- ✅ Paramètre : Présence d'un évêque -->
     <label>
@@ -622,9 +698,10 @@ Début section sacrements
 
   <!-- Affichage du rituel généré -->
 {#if filteredRitual.length > 0}
-    <div class="card" bind:this={ritualRef}>
+    <div class="card">
+      <h2 class="premiergénéré">{CelebrationduJour}</h2>
       {#if rituelName}
-        <h2 class="premiergénéré">{rituelName}</h2>
+        <h2 class="nomdurituel">{rituelName}</h2>
       {/if}
 
   {#each filteredRitual as step}
@@ -634,11 +711,11 @@ Début section sacrements
 
       {:else if step.type === "oraison"}
         <div class="oraison-texte">
-          {#each step.segments as seg}
-            <p class={seg.class || ""} style="white-space: pre-line;">
-              {@html seg.texte}
-            </p>
-          {/each}
+    {#each (Array.isArray(step.segments) ? step.segments : [{ texte: step.segments }]) as seg}
+      <p class={seg.class || ""} style="white-space: pre-line;">
+        {@html seg.texte}
+      </p>
+    {/each}
         </div>
 
       {:else if step.type === "preface"}
@@ -836,7 +913,7 @@ p {
 /*****************************************************
  * TITRES
  *****************************************************/
-.H1, .H2, .H3, .H4, .premiergénéré {
+.H1, .H2, .H3, .H4, .nomdurituel {
   font-family: var(--font-main);
   display: block;
   text-align: center;
@@ -848,7 +925,8 @@ p {
 .H3 { font-size: 1.1rem; color: var(--accent); font-weight: 700; margin:1.5rem 0 1rem 0;}
 .H4 { font-size: 1rem; font-weight: 300; margin:1rem 0 0.5rem 0; }
 h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2rem; letter-spacing: 0.2px;}
-.premiergénéré { margin:0rem 0 1rem 0; }
+.premiergénéré { text-align: right; font-size: 0.8rem; margin:0rem 0 1rem 0; }
+.sansmarge { margin:0 0 1rem 0; }
 
 /*****************************************************
  * DIALOGUES (V / ℟)
@@ -1329,4 +1407,54 @@ select {
   }
 }
 
+
+
+
+  
+  .event-selector {
+    margin: 0 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #f0f2f5;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .event-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0.5rem 0 0 0;
+  }
+
+  .event-card.active {
+    border-color: #495057;
+    background: #e9ecef;
+  }
+
+  .details { display: flex; flex-direction: column; }
+  .name { font-weight: bold; }
+  .rank { font-size: 0.8rem; color: #666; text-transform: uppercase; }
+  
+  .single-event {margin: 0 0 1rem 1rem; padding-left: 1rem;}
+  .hint { font-size: 0.8rem; margin-top: 4px; }
+  
+  input[type="date"], input[type="text"] {
+    padding: 0.38rem 0.5rem;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 6px;
+  }
+
+#selectdate {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 </style>

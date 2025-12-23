@@ -16,7 +16,7 @@ export const preface = {
             il a fait une œuvre merveilleuse\u00A0:`},
         {class:"indent1all", texte:`car nous étions esclaves de la mort et du péché,
             et nous sommes appelés à partager sa gloire\u00A0;`},
-        {class:"indent1all", texte:`nous portons désormais ces noms glorieux :
+        {class:"indent1all", texte:`nous portons désormais ces noms glorieux\u00A0:
             descendance choisie, sacerdoce royal,
             nation sainte, peuple racheté\u00A0;`},
         {class:"indent1all", texte:`nous pouvons annoncer au monde
@@ -449,7 +449,7 @@ On peut la dire, tout comme l’une des préfaces de la Nativité, aux féries d
         {class:"indent1all", texte:`Seigneur, Père très saint,
             Dieu éternel et tout-puissant.`},
         {class:"sautdeligne", texte: `\n`,},
-        {class:"indent1all", texte:`Tu as voulu que nous te rendions grâce par nos privations :
+        {class:"indent1all", texte:`Tu as voulu que nous te rendions grâce par nos privations\u00A0:
         elles rabaissent notre orgueil de pécheurs
         et nous invitent à suivre l’exemple de ta bonté
             en nous faisant partager avec ceux qui ont faim.`},
@@ -542,22 +542,21 @@ On peut la dire, tout comme l’une des préfaces de la Nativité, aux féries d
             pour chanter et proclamer\u00A0:`}]
 },
 
-//A completer
 "1PA": {
         titre: "1ʳᵉ PRÉFACE DE PÂQUES",
     soustitre: "Le mystère pascal",
     rubrique:`Cette préface se dit au Temps pascal.
-– À la messe de la Veillée pascale, on dit ;
-– depuis le jour de Pâques et pendant toute l’octave ;
+– À la messe de la Veillée pascale\u00A0;
+– depuis le jour de Pâques et pendant toute l’octave\u00A0;
 – après l’octave.`,
     items: [ 
         {class:"grandelettrine", texte:`Vraiment il est juste et bon,
             pour ta gloire et notre salut,`},
         {texte:`de te louer, Seigneur, en tout temps,`},
         {class:"indent1all", texte:`mais plus encore de te glorifier
-            • en cette nuit (la nuit de Pâques)
-            • aujourd’hui (le jour et pendant l’octave)
-            • en ces jours (après l’octave)
+            • en cette nuit <span style="color: #b30000; font-weight: normal; font-style: italic;">(la nuit de Pâques)</span>
+            • aujourd’hui <span style="color: #b30000; font-weight: normal; font-style: italic;">(le jour et pendant l’octave)</span>
+            • en ces jours <span style="color: #b30000; font-weight: normal; font-style: italic;">(après l’octave)</span>
             où le Christ, notre Pâque, a été immolé.`},
         {class:"sautdeligne", texte: `\n`,},
         {class:"indent1all", texte:`Car il est l’Agneau véritable
@@ -802,9 +801,8 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
         titre: "1ʳᵉ PRÉFACE DE LA VIERGE MARIE",
     soustitre: "La maternité de la bienheureuse Vierge Marie",
     rubrique:`Cette préface se dit aux messes de la bienheureuse Vierge Marie\u00A0:
-– selon le titre de la fête, on dit la Maternité, ou la Visitation, ou la Nativité, etc.\u00A0;
-– aux autres mémoires de la Vierge Marie, on dit : où nous célébrons la mémoire\u00A0;
-– aux messes de la Vierge Marie le Samedi, et aux messes votives dans lesquelles on ne célèbre pas de mystère particulier, on dit : où nous honorons.`,
+– aux autres mémoires de la Vierge Marie\u00A0;
+– aux messes de la Vierge Marie le Samedi, et aux messes votives dans lesquelles on ne célèbre pas de mystère particulier.`,
     items: [ 
         {class:"grandelettrine", texte:`Vraiment il est juste et bon,
             pour ta gloire et notre salut,`},
@@ -813,9 +811,8 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
         {class:"indent1all", texte:`Seigneur, Père très saint,
             Dieu éternel et tout-puissant.`},
         {class:"sautdeligne", texte: `\n`,},
-//A compléter
         {class:"indent1all", texte:`En ce jour
-            • où nous célébrons la (nommer la fête...) de la bienheureuse Vierge Marie\u00A0:
+            • où nous célébrons la <span style="color: #b30000; font-weight: normal;">(nommer la fête...)</span> de la bienheureuse Vierge Marie\u00A0:
             • où nous célébrons la mémoire de la bienheureuse Vierge Marie\u00A0:
             • où nous honorons la bienheureuse Vierge Marie\u00A0:
             nous voulons te chanter, te bénir et te glorifier.`},
@@ -998,9 +995,9 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
         {class:"indent1all", texte:`Seigneur, Père très saint,
             Dieu éternel et tout-puissant.`},
         {class:"sautdeligne", texte: `\n`,},
-//A compléter
+
         {class:"indent1all", texte:`Nous reconnaissons un signe éclatant de ta grâce
-            dans le martyre de saint (de sainte, des saints, des saintes) N.\u00A0;`},
+            dans le martyre de saint (de sainte, des saints, des saintes) <span style="color: #b30000;">N.</span>\u00A0;`},
         {class:"indent1all", texte:`en répandant son (leur) propre sang comme le Christ,
             il a (elle a, ils ont, elles ont) glorifié ton nom.`},
         {class:"indent1all", texte:`C’est ta puissance qui se déploie dans la faiblesse
@@ -1056,9 +1053,9 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             Dieu éternel et tout-puissant,
             par le Christ, notre Seigneur.`},
         {class:"sautdeligne", texte: `\n`,},
-//A compléter
+
         {class:"indent1all", texte:`Tu donnes à ton Église de se réjouir
-            en la fête de saint (des saints) N.\u00A0:`},
+            en la fête de saint (des saints) <span style="color: #b30000;">N.</span>\u00A0:`},
         {class:"indent1all", texte:`par l’exemple qu’il a (qu’ils ont) donné, tu nous encourages,
             par son (leur) enseignement, tu nous éclaires,
             à sa (leur) prière, tu veilles sur nous.`},
@@ -1249,8 +1246,8 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
         {class:"indent1all", texte:`pour ta gloire et notre salut,`},
         {class:"indent1all", texte:`de t’offrir notre action de grâce,
             toujours et en tout lieu,`},
-        {class:"indent1all", texte:`par ton Fils bien-aimé, Jésus, le Christ :
-            il est ta Parole par qui tu as créé toutes choses ;`},
+        {class:"indent1all", texte:`par ton Fils bien-aimé, Jésus, le Christ\u00A0:
+            il est ta Parole par qui tu as créé toutes choses\u00A0;`},
         {class:"indent1all", texte:`c’est lui que tu nous as envoyé
             comme Rédempteur et Sauveur,
             Dieu fait homme, conçu de l’Esprit Saint,
@@ -1766,7 +1763,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             et transformés à l’image de ce que nous serons au ciel.`},
 
         {class:"sautdeligne", texte: `\n`,},
-        {class:"indent1all", texte:`C’est pourquoi le ciel et la terre t’adorent ;
+        {class:"indent1all", texte:`C’est pourquoi le ciel et la terre t’adorent\u00A0;
             ils te chantent le cantique nouveau,`},
         {class:"indent1all", texte:`et nous-mêmes,
             unissant notre voix à celle des anges,
@@ -1824,7 +1821,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             en victime pure et pacifique.`},
         {class:"indent1all", texte:`Quand toutes les créatures auront été soumises à son pouvoir,
             il remettra aux mains de ta souveraine puissance
-            le règne éternel et universel :`},
+            le règne éternel et universel\u00A0:`},
         {class:"indent1all", texte:`règne de vie et de vérité,
             règne de grâce et de sainteté,
             règne de justice, d’amour et de paix.`},
@@ -1882,9 +1879,9 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
 
         {class:"indent1all", texte:`Car il fut l’homme juste 
             que tu donnas comme époux à la Vierge Marie, 
-            la Mère de Dieu ;`},
+            la Mère de Dieu\u00A0;`},
         {class:"indent1all", texte:`il fut le serviteur fidèle et prudent 
-            à qui tu confias la sainte Famille ;`},
+            à qui tu confias la sainte Famille\u00A0;`},
         {class:"indent1all", texte:`il veilla comme un père sur ton Fils unique 
             conçu par la puissance du Saint-Esprit, 
             Jésus Christ, notre Seigneur.`},
@@ -1917,13 +1914,13 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
         {class:"indent1all", texte:`C’est lui qui pour sauver les hommes 
             devait naître parmi les hommes, 
             par la puissance de l’Esprit Saint 
-            qui couvrit Marie de son ombre ;`},
+            qui couvrit Marie de son ombre\u00A0;`},
         {class:"indent1all", texte:`c’est lui que le messager du ciel annonça à la Vierge, 
             lui qu’elle accueillit dans la foi, 
             lui qu’elle porta avec amour 
             dans son corps immaculé.`},
         {class:"indent1all", texte:`il fut le serviteur fidèle et prudent 
-            à qui tu confias la sainte Famille ;`},
+            à qui tu confias la sainte Famille\u00A0;`},
         {class:"indent1all", texte:`Il venait accomplir en vérité 
             les promesses faites aux enfants d’Israël, 
             combler, et même dépasser, l’espérance des nations.`},
@@ -1986,16 +1983,16 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
         {class:"sautdeligne", texte: `\n`,},
 
         {class:"indent1all", texte:`Nous chantons les merveilles que tu as accomplies
-            pour Jean, le Précurseur de ton Fils ;`},
+            pour Jean, le Précurseur de ton Fils\u00A0;`},
         {class:"indent1all", texte:`parmi ceux qui sont nés d’une femme, tu l’as consacré,
             lui faisant l’honneur d’une mission sans égal.`},
         {class:"indent1all", texte:`Avant même de naître,
-            il tressaillit d’allégresse à l’approche du Sauveur ;`},
-        {class:"indent1all", texte:`en venant au monde il apportait une grande joie ;`},
+            il tressaillit d’allégresse à l’approche du Sauveur\u00A0;`},
+        {class:"indent1all", texte:`en venant au monde il apportait une grande joie\u00A0;`},
         {class:"indent1all", texte:`il fut, de tous les prophètes, 
-            celui qui désigna l’Agneau de Dieu de la rédemption ;`},
+            celui qui désigna l’Agneau de Dieu de la rédemption\u00A0;`},
         {class:"indent1all", texte:`dans les eaux qui devaient en être sanctifiées
-            il baptisa l’auteur du baptême ;`},
+            il baptisa l’auteur du baptême\u00A0;`},
     {class:"indent1all", texte:`et il rendit au Christ le témoignage suprême,
             celui de son propre sang.`},
 
@@ -2019,17 +2016,17 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
         {class:"sautdeligne", texte: `\n`,},
 
         {class:"indent1all", texte:`Car tu nous donnes la joie de célébrer en ce jour
-            les bienheureux Apôtres Pierre et Paul :`},
+            les bienheureux Apôtres Pierre et Paul\u00A0:`},
         {class:"indent1all", texte:`celui qui fut le premier à confesser la foi,
-            et celui qui l’a mise en lumière ;`},
+            et celui qui l’a mise en lumière\u00A0;`},
         {class:"indent1all", texte:`Pierre qui constitua l’Église naissante,
             parmi les pauvres d’Israël,`},
         {class:"indent1all", texte:`et Paul, maître et docteur 
-            des nations appelées au salut ;`},
+            des nations appelées au salut\u00A0;`},
         {class:"indent1all", texte:`l’un et l’autre ont travaillé, par des voies différentes,
-            à rassembler l’unique famille du Christ ;`},
+            à rassembler l’unique famille du Christ\u00A0;`},
         {class:"indent1all", texte:`dans les eaux qui devaient en être sanctifiées
-            il baptisa l’auteur du baptême ;`},
+            il baptisa l’auteur du baptême\u00A0;`},
     {class:"indent1all", texte:`dans le martyre, une même couronne les a réunis
             et ils reçoivent, de par le monde, la même vénération.`},
 
@@ -2086,7 +2083,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
         {class:"indent1all", texte:`Car il a révélé sa gloire
             aux témoins qu’il avait choisis,`},
         {class:"indent1all", texte:`le jour où en son corps semblable au nôtre 
-            se répandit une splendeur incomparable ;`},
+            se répandit une splendeur incomparable\u00A0;`},
         {class:"indent1all", texte:`il préparait ainsi le coeur de ses disciples
             à surmonter le scandale de la croix,`},
         {class:"indent1all", texte:`il manifestait que s’accomplirait
@@ -2164,10 +2161,120 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             pour chanter et proclamer\u00A0:`}]
 },
 
+"1_ARCHANGES": {
+        titre: "PRÉFACE DE SAINTS MICHEL, GABRIEL ET RAPHAËL, archanges",
+    soustitre: "La gloire de Dieu célébrée par les Anges",
+    rubrique:``,
+    items: [ 
+        {class:"grandelettrine", texte:`Vraiment il est juste et bon,
+            pour ta gloire et notre salut,`},
+        {class:"indent1all", texte:`de t’offrir notre action de grâce,
+            toujours et en tout lieu,`},
+        {class:"indent1all", texte:`Seigneur, Père très saint,
+            Dieu éternel et tout-puissant.`},
+        {class:"sautdeligne", texte: `\n`,},
+
+        {class:"indent1all", texte:`Oui, il est bon de te chanter pour les Archanges et pour les Anges,`},
+        {class:"indent1all", texte:`car c’est vers ta perfection et ta gloire que rejoint notre louange
+            lorsqu’elle honore ces créatures nouvelles,`},
+        {class:"indent1all", texte:`et leur splendeur manifeste combien tu es grand
+            nous laisse entrevoir combien tu es grand
+            et surpasses tous les êtres
+            par le Christ, notre Seigneur.`},
+
+        {class:"sautdeligne", texte: `\n`,},
+        {class:"indent1all", texte:`Par lui, la multitude des Anges célèbre ta grandeur\u00A0:`},
+        {class:"indent1all", texte:`dans l’allégresse d’une même adoration,
+            laisse-nous joindre nos voix à leur louange,
+            pour chanter et proclamer\u00A0:`}]
+},
+
+"1_SAINTS": {
+        titre: "PRÉFACE DE TOUS LES SAINTS",
+    soustitre: "La gloire de Jérusalem, notre mère",
+    rubrique:``,
+    items: [ 
+        {class:"grandelettrine", texte:`Vraiment il est juste et bon,
+            pour ta gloire et notre salut,`},
+        {class:"indent1all", texte:`de t’offrir notre action de grâce,
+            toujours et en tout lieu,`},
+        {class:"indent1all", texte:`Seigneur, Père très saint,
+            Dieu éternel et tout-puissant.`},
+        {class:"sautdeligne", texte: `\n`,},
+
+        {class:"indent1all", texte:`Car tu nous donnes de célébrer aujourd’hui la cité du ciel, 
+            notre mère la Jérusalem d’en haut\u00A0;`},
+        {class:"indent1all", texte:`c’est là que nos frères les saints, déjà rassemblés, 
+            chantent sans fin ta louange.`},
+        {class:"indent1all", texte:`Et nous qui marchons vers elle par le chemin de la foi, 
+            nous hâtons le pas,`},
+        {class:"indent1all", texte:`joyeux de voir glorifiés ces enfants de l’Église 
+            dont tu fais non seulement un exemple 
+            mais aussi un secours pour notre faiblesse.`},
+
+        {class:"sautdeligne", texte: `\n`,},
+        {class:"indent1all", texte:`C’est pourquoi, avec la foule immense des saints et des anges, 
+            d’une seule voix, nous célébrons ta louange en proclamant\u00A0:`}]
+},
+
+"1_DEDICACE": {
+        titre: "PRÉFACE DE LA DÉDICACE DE LA BASILIQUE DU LATRAN",
+    soustitre: "Le mystère de l’Église, épouse du Christ et temple de l’Esprit",
+    rubrique:``,
+    items: [ 
+        {class:"grandelettrine", texte:`Vraiment il est juste et bon,
+            pour ta gloire et notre salut,`},
+        {class:"indent1all", texte:`de t’offrir notre action de grâce,
+            toujours et en tout lieu,`},
+        {class:"indent1all", texte:`Seigneur, Père très saint,
+            Dieu éternel et tout-puissant.`},
+        {class:"sautdeligne", texte: `\n`,},
+
+        {class:"indent1all", texte:`Dans ta bonté pour ton peuple, 
+            tu veux habiter une maison de prière,`},
+        {class:"indent1all", texte:`afin que ta grâce toujours offerte 
+            fasse de nous le temple de l’Esprit Saint, 
+            resplendissant d’une vie qui te plaise.`},
+        {class:"indent1all", texte:`De jour en jour, tu sanctifies l’Épouse du Christ, l’Église 
+            dont les églises d’ici-bas sont l’image,`},
+        {class:"indent1all", texte:`jusqu’au jour où elle aura sa demeure dans la gloire du ciel, 
+            mère que réjouit la multitude de ses enfants.`},
+
+        {class:"sautdeligne", texte: `\n`,},
+        {class:"indent1all", texte:`C’est pourquoi, avec les saints et tous les anges, 
+            nous te louons et sans fin nous proclamons\u00A0:`}]
+},
+
+"1_IMMACULEE": {
+        titre: "PRÉFACE DE L'IMMACULÉE CONCEPTION DE LA BIENHEUREUSE VIERGE MARIE",
+    soustitre: "Le mystère de Marie et de l’Église",
+    rubrique:``,
+    items: [ 
+        {class:"grandelettrine", texte:`Vraiment il est juste et bon,
+            pour ta gloire et notre salut,`},
+        {class:"indent1all", texte:`de t’offrir notre action de grâce,
+            toujours et en tout lieu,`},
+        {class:"indent1all", texte:`Seigneur, Père très saint,
+            Dieu éternel et tout-puissant.`},
+        {class:"sautdeligne", texte: `\n`,},
+
+        {class:"indent1all", texte:`Car tu as préservé la bienheureuse Vierge Marie 
+            de la souillure du péché originel,`},
+        {class:"indent1all", texte:`tu l’as comblée de ta grâce en plénitude 
+            pour préparer en elle une mère vraiment digne de ton Fils`},
+        {class:"indent1all", texte:`et manifester l’origine de l’Église, 
+            l’Épouse sans tache ni ride, 
+            resplendissante de beauté.`},
+        {class:"indent1all", texte:`Cette vierge très pure devait nous donner le Fils, 
+            l’Agneau innocent qui supprimerait nos fautes.`},
+        {class:"indent1all", texte:`Pour ton peuple, tu la disposais à être, parmi toutes les femmes, 
+            l’avocate de la grâce et le modèle de la sainteté.`},
+
+        {class:"sautdeligne", texte: `\n`,},
+        {class:"indent1all", texte:`C’est pourquoi, 
+            unissant nos voix à celles des anges, 
+            nous te louons dans la joie en proclamant\u00A0:`}]
+},
 /*
-SAINTS MICHEL, GABRIEL ET RAPHAËL, archanges
-TOUS LES SAINTS
-DÉDICACE DE LA BASILIQUE DU LATRAN
-IMMACULÉE CONCEPTION DE LA BIENHEUREUSE VIERGE MARIE
 */
 };
