@@ -26,8 +26,8 @@ const romcal = new Romcal({
   let selectedEventId = ""; // L'ID choisi par l'utilisateur
 
 // Tes variables de formulaire (extraites de ton page.txt)
-  export let version = "1.0";
-  let celebrationType = "Dominicale";
+  export let version = "0.2";
+  let celebrationType = "Solennité";
   let CelebrationduJour = "";
   let Showoraisons = false;
   let Dateliturgique = ""
@@ -37,6 +37,8 @@ const romcal = new Romcal({
   let [secret, hideGloria, OrdinaireLatin, DoxologieLt] = [false, false, false, false];
   let [showCredo, Showpreface, showPE] = [true, false, true];
   let typeCredo = "NC";
+  let InvitS = "5";
+  let PriereC = "3";
   let Choixpreface = "";
   let prefacedujour = "";
   let typePE = "PE1";
@@ -92,6 +94,7 @@ const romcal = new Romcal({
       if (regles.Choixpreface) Choixpreface = regles.Choixpreface;
       if (regles.typeCredo) typeCredo = regles.typeCredo;
       if (regles.CelebrationduJour ) CelebrationduJour = regles.CelebrationduJour;
+      if (regles.celebrationType) celebrationType = regles.celebrationType;
 
       if (Dateliturgique) {oraison = OraisonsDominicales[Dateliturgique] || null;}
       if (Choixpreface) {prefacedujour = preface[Choixpreface] || null;}
@@ -109,9 +112,9 @@ const romcal = new Romcal({
   let [showPopup, dontShowAgain, forceOpen] = [false, false, false];
   let currentPage = 0;
   const pages = [
-    { title: "Bienvenue", content: `Je m'appelle <b>Florent Mauguin</b> et suis séminariste pour le diocèse de Versailles et la communauté de l'Emmanuel. Il y a quelque temps, je me suis rendu compte que chaque année, lors des grandes fêtes, il fallait se replonger dans le missel afin de constituer un rituel propre pour sa paroisse. C'est ainsi qu'est née l'idée de ce projet.
-<br><br>L'objectif est simple : <b>générer en quelques clics un rituel imprimable</b> et adapté à sa paroisse.
-<br><br><b>⚠️ Le projet est encore en cours de développement !</b>` },
+    { title: "Bienvenue", content: `Je m'appelle <b>Florent Mauguin</b> et suis séminariste pour le diocèse de Versailles et la communauté de l'Emmanuel. 
+<br><br>L'objectif de ce projet est simple : <b>générer en quelques clics un rituel imprimable</b> et adapté à sa paroisse pour la célébration de l'eucharistie et des sacrements.
+<br><br><b>⚠️ L'outil est encore en cours de développement !</b><br>Il n'est pas tout à fait utilisable en l'état.` },
     { title: "Nouveautés", content: "" },
     { title: "Roadmap" }
   ];
@@ -211,7 +214,7 @@ function generateRitual() {
     incense,
     servants,
     celebrationType, secret, hideRubriques, Apologies,
-    salutation, ChoixPenitentiel, hideGloria, OrdinaireLatin, oraisons: Showoraisons, showCredo, typeCredo, 
+    salutation, ChoixPenitentiel, hideGloria, OrdinaireLatin, oraisons: Showoraisons, showCredo, typeCredo, InvitS, PriereC,
     preface, showPE, typePE, AcclamationEucharistique, DoxologieLt, NotrePère, Conclusion,
   };
 
@@ -428,21 +431,22 @@ HTML
 
 <div class="container">
   <div class="no-print">
-  <h1 class="titre-principal">Générateur de rituel de messe</h1>
+  <h1 class="titre-principal">Générateur de rituels catholiques</h1>
 
 
   <div class="card">
 
      <input id="NomRituel" bind:value={inputRituelName} placeholder="Donnez un nom à votre Rituel" type="text">
-
+<!--
     <label>
       Célébration Eucharistique :
       <select bind:value={celebrationType}>
-        <option value="Dominicale">du Dimanche</option>
+        <option value="Solennité">Solennité</option>
+        <option value="Fête">Fète</option>
         <option value="Semaine">de semaine</option>
       </select>
     </label>
-
+  -->
     <div id="selectdate">
 <p>Sélectionnez une date :
 <input
@@ -472,7 +476,7 @@ Afficher la date
           {/each}
         </div>
       {:else if availableEvents.length === 1}
-        <p class="single-event">Aujourd'hui nous célébrons :<br /><strong>{availableEvents[0].name}</strong></p>
+        <p class="single-event">Aujourd'hui nous célébrons : <strong>{availableEvents[0].name}</strong></p>
       {/if}
 
 
@@ -766,10 +770,43 @@ Début section sacrements
     </div>
   </div>
 
+
+{:else if step.id === "InvitS"}
+  <div class="variant-header">
+    <h4>{@html step.texte}</h4>
+    <div class="variant-buttons no-print">
+      {#each Array(6) as _, i}
+        {@const val = (i + 1).toString()}
+        <button 
+          class:selected={InvitS === val} 
+          on:click={() => { InvitS = val; generateRitual(); }}
+        >
+          {val}
+        </button>
+      {/each}
+    </div>
+  </div>
+
+{:else if step.id === "PriereC"}
+  <div class="variant-header">
+    <h4>{@html step.texte}</h4>
+    <div class="variant-buttons no-print">
+      {#each Array(9) as _, i}
+        {@const val = (i + 1).toString()}
+        <button 
+          class:selected={PriereC === val} 
+          on:click={() => { PriereC = val; generateRitual(); }}
+        >
+          {val}
+        </button>
+      {/each}
+    </div>
+  </div>
+
   {:else if ["PE1", "PE2", "PE3", "PE4"].includes(step.id)}
   <div class="variant-header">
     <h3 class="H3">{@html step.texte}</h3>
-    <div class="variant-buttons no-print">
+    <div class="variant-buttons no-print no-wrap">
       <button class:selected={typePE === "PE1"} 
         on:click={() => { typePE = "PE1"; generateRitual(); }}>1 </button>
       <button class:selected={typePE === "PE2"} 
@@ -784,7 +821,7 @@ Début section sacrements
 {:else if step.id === "Anamnèse"}
  <div class="variant-header">
     <p class="rubrique">{@html step.texte}</p>
-    <div class="variant-buttons no-print">
+    <div class="variant-buttons no-print no-wrap">
       <button class:selected={AcclamationEucharistique === "AE1"} 
         on:click={() => { AcclamationEucharistique = "AE1"; generateRitual(); }}>1 </button>
       <button class:selected={AcclamationEucharistique === "AE2"} 
@@ -833,8 +870,8 @@ Début section sacrements
 
     {:else if step.id === "Conclusion"}
  <div class="variant-header">
-    <h3 class="H3 no-print">{@html step.texte}</h3>
-    <div class="variant-buttons no-print">
+    <h3 class="H3 no-print no-wrap">{@html step.texte}</h3>
+    <div class="variant-buttons no-print no-wrap">
       <button class:selected={Conclusion === "1"} 
         on:click={() => { Conclusion = "1"; generateRitual(); }}>1 </button>
       <button class:selected={Conclusion === "2"} 
@@ -1068,12 +1105,6 @@ input[type="checkbox"] {
 
 input[type="number"],
 input[type="text"],
-select {
-  padding: 0.38rem 0.5rem;
-  border-radius: 6px;
-  border: 1px solid rgba(0,0,0,0.08);
-  background: #fff;
-}
 
 #NomRituel {
   width: 100%;
@@ -1138,6 +1169,11 @@ select {
   flex-wrap: wrap;
   margin-top: var(--gap);
 }
+
+.variant-buttons.no-wrap {
+  display:flex;
+    flex-wrap: nowrap;
+  }
 
 .button-section + .card {     margin-top: 1rem;  }
 
@@ -1204,6 +1240,7 @@ select {
   display: flex;
   justify-content: space-between; /* Espace entre le titre et les boutons */
   align-items: center;
+  align-content : center;
 }
 
 .variant-header h2 {
@@ -1218,9 +1255,20 @@ select {
   margin: 1rem 0rem; /* Supprime les marges par défaut */
 }
 
+.variant-header h4 {
+  flex: 1; /* Permet au titre de prendre tout l'espace disponible */
+  text-align: center; /* Centre le texte du titre */
+  margin: 1rem 0rem; /* Supprime les marges par défaut */
+  font-weight: normal;
+}
+
 .variant-buttons {
-  display: flex;
-  gap: 0.3rem; /* Espacement entre les boutons */
+  display: grid;
+    /* Crée exactement 3 colonnes de largeur égale */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 8px; /* Espace entre les boutons */
+    max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */
+    margin-top: 10px;
 }
 
 .variant-buttons button {
@@ -1265,6 +1313,7 @@ select {
   .H2 { font-size: 1.2rem; margin: 1rem 0 1rem 0; }
   .H3 { font-size: 1rem; }
   p { font-size: 0.7rem; }
+  .oraison-texte p { font-size: 0.8rem; }
   .dialogueR {    font-size: 0.8rem;  }
   .dialogueV {    font-size: 0.8rem;  }
   .indent1g { text-indent: 15px;  }
@@ -1287,7 +1336,7 @@ select {
     display: block;
     break-after: page; /* Forcer un saut de page après cet élément */
   }
-  .card,  .card .H1,  .card .H2,  .card .H3,  .card p {
+  .card .H1,  .card .H2,  .card .H3 {
     break-inside: avoid; /* Éviter les coupures dans les sections */
     page-break-inside: avoid; /* Compatibilité avec d'autres navigateurs */
   }

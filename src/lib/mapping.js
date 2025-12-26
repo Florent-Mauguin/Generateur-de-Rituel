@@ -3,3728 +3,3731 @@
 export const liturgyRules = {
 
   "christmas_time_january_2": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_time_january_3": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_time_january_4": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_time_january_5": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_time_january_6": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_time_january_7": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_time_january_8": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "epiphany_of_the_lord": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Épiphanie du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC",
+        celebrationType: "Dominicale"
     },
   "monday_after_epiphany": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi après l'Épiphanie du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "tuesday_after_epiphany": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi après l'Épiphanie du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "wednesday_after_epiphany": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi après l'Épiphanie du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "thursday_after_epiphany": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi après l'Épiphanie du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "friday_after_epiphany": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi après l'Épiphanie du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "saturday_after_epiphany": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi après l'Épiphanie du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "baptism_of_the_lord": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Baptême du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC",
+        celebrationType: "Dominicale"
     },
   "ash_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi des Cendres",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC",
+        celebrationType: "Dominicale"
     },
   "thursday_after_ash_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi après les Cendres",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "friday_after_ash_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi après les Cendres",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "saturday_after_ash_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi après les Cendres",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_1_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Premier Dimanche du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_1_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la première semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_1_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la première semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_1_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la première semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_1_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la première semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_1_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la première semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_1_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la première semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_2_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Deuxième Dimanche du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_2_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la deuxième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_2_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la deuxième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_2_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la deuxième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_2_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la deuxième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_2_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la deuxième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_2_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la deuxième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_3_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Troisième Dimanche du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_3_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la troisième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_3_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la troisième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_3_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la troisième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_3_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la troisième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_3_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la troisième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_3_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la troisième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_4_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Quatrième Dimanche du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_4_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la quatrième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_4_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la quatrième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_4_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la quatrième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_4_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la quatrième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_4_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la quatrième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_4_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la quatrième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_5_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Cinquième Dimanche du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_5_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la cinquième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_5_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la cinquième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_5_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la cinquième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_5_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la cinquième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_5_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la cinquième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lent_5_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la cinquième semaine du Carême",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "palm_sunday_of_the_passion_of_the_lord": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Dimanche des Rameaux et de la Passion du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "holy_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la Semaine Sainte",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "holy_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la Semaine Sainte",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "holy_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la Semaine Sainte",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "holy_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Messe Chrismale",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "thursday_of_the_lords_supper": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Messe du Jeudi Saint en mémoire de la Cène du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "friday_of_the_passion_of_the_lord": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Office de la Passion du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "holy_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vigile Pascale",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Dimanche de Pâques - la Résurrection du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi dans l'octave de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi dans l'octave de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi dans l'octave de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi dans l'octave de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi dans l'octave de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi dans l'octave de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "divine_mercy_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Deuxième Dimanche de Pâques ou de la Miséricorde Divine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_2_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la deuxième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_2_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la deuxième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_2_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la deuxième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_2_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la deuxième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_2_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la deuxième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_2_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la deuxième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_3_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Troisième Dimanche de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_3_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la troisième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_3_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la troisième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_3_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la troisième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_3_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la troisième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_3_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la troisième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_3_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la troisième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_4_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Quatrième Dimanche de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_4_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la quatrième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_4_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la quatrième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_4_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la quatrième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_4_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la quatrième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_4_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la quatrième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_4_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la quatrième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_5_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Cinquième Dimanche de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_5_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la cinquième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_5_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la cinquième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_5_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la cinquième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_5_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la cinquième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_5_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la cinquième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_5_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la cinquième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_6_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Sixième Dimanche de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_6_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la sixième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_6_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la sixième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_6_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la sixième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ascension_of_the_lord": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Ascension du Seigneur",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_6_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la sixième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_6_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la sixième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_6_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la sixième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_7_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Septième Dimanche de Pâques",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_7_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Lundi de la septième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_7_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mardi de la septième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_7_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la septième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_7_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la septième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_7_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la septième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "easter_time_7_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la septième semaine",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "pentecost_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Dimanche de la Pentecôte",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "most_holy_trinity": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "La Sainte Trinité",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "most_holy_body_and_blood_of_christ": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Le Saint-Sacrement du Corps et du Sang du Christ",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "most_sacred_heart_of_jesus": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Le Sacré-Cœur de Jésus",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_1_monday": {
         CelebrationduJour: "Lundi de la première semaine du Temps Ordinaire",
         Dateliturgique: "1TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_1_tuesday": {
         CelebrationduJour: "Mardi de la première semaine du Temps Ordinaire",
         Dateliturgique: "1TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_1_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Mercredi de la première semaine du Temps Ordinaire",
         Dateliturgique: "1TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_1_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Jeudi de la première semaine du Temps Ordinaire",
         Dateliturgique: "1TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_1_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Vendredi de la première semaine du Temps Ordinaire",
         Dateliturgique: "1TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_1_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "Samedi de la première semaine du Temps Ordinaire",
         Dateliturgique: "1TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_2_sunday": {
         CelebrationduJour: "2ème dimanche du Temps Ordinaire",
         Dateliturgique: "2TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_2_monday": {
         CelebrationduJour: "Lundi de la deuxième semaine du Temps Ordinaire",
         Dateliturgique: "2TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_2_tuesday": {
         CelebrationduJour: "Mardi de la deuxième semaine du Temps Ordinaire",
         Dateliturgique: "2TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_2_wednesday": {
         CelebrationduJour: "Mercredi de la deuxième semaine du Temps Ordinaire",
         Dateliturgique: "2TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_2_thursday": {
         CelebrationduJour: "Jeudi de la deuxième semaine du Temps Ordinaire",
         Dateliturgique: "2TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_2_friday": {
         CelebrationduJour: "Vendredi de la deuxième semaine du Temps Ordinaire",
         Dateliturgique: "2TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_2_saturday": {
         CelebrationduJour: "Samedi de la deuxième semaine du Temps Ordinaire",
         Dateliturgique: "2TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "sunday_of_the_word_of_god": {
         CelebrationduJour: "Dimanche de la Parole de Dieu",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_3_monday": {
         CelebrationduJour: "Lundi de la troisième semaine du Temps Ordinaire",
         Dateliturgique: "3TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_3_tuesday": {
         CelebrationduJour: "Mardi de la troisième semaine du Temps Ordinaire",
         Dateliturgique: "3TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_3_wednesday": {
         CelebrationduJour: "Mercredi de la troisième semaine du Temps Ordinaire",
         Dateliturgique: "3TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_3_thursday": {
         CelebrationduJour: "Jeudi de la troisième semaine du Temps Ordinaire",
         Dateliturgique: "3TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_3_friday": {
         CelebrationduJour: "Vendredi de la troisième semaine du Temps Ordinaire",
         Dateliturgique: "3TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_3_saturday": {
         CelebrationduJour: "Samedi de la troisième semaine du Temps Ordinaire",
         Dateliturgique: "3TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_4_sunday": {
         CelebrationduJour: "4ème dimanche du Temps Ordinaire",
         Dateliturgique: "4TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_4_monday": {
         CelebrationduJour: "Lundi de la quatrième semaine du Temps Ordinaire",
         Dateliturgique: "4TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_4_tuesday": {
         CelebrationduJour: "Mardi de la quatrième semaine du Temps Ordinaire",
         Dateliturgique: "4TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_4_wednesday": {
         CelebrationduJour: "Mercredi de la quatrième semaine du Temps Ordinaire",
         Dateliturgique: "4TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_4_thursday": {
         CelebrationduJour: "Jeudi de la quatrième semaine du Temps Ordinaire",
         Dateliturgique: "4TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_4_friday": {
         CelebrationduJour: "Vendredi de la quatrième semaine du Temps Ordinaire",
         Dateliturgique: "4TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_4_saturday": {
         CelebrationduJour: "Samedi de la quatrième semaine du Temps Ordinaire",
         Dateliturgique: "4TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_5_sunday": {
         CelebrationduJour: "5ème dimanche du Temps Ordinaire",
         Dateliturgique: "5TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_5_monday": {
         CelebrationduJour: "Lundi de la cinquième semaine du Temps Ordinaire",
         Dateliturgique: "5TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_5_tuesday": {
         CelebrationduJour: "Mardi de la cinquième semaine du Temps Ordinaire",
         Dateliturgique: "5TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_5_wednesday": {
         CelebrationduJour: "Mercredi de la cinquième semaine du Temps Ordinaire",
         Dateliturgique: "5TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_5_thursday": {
         CelebrationduJour: "Jeudi de la cinquième semaine du Temps Ordinaire",
         Dateliturgique: "5TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_5_friday": {
         CelebrationduJour: "Vendredi de la cinquième semaine du Temps Ordinaire",
         Dateliturgique: "5TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_5_saturday": {
         CelebrationduJour: "Samedi de la cinquième semaine du Temps Ordinaire",
         Dateliturgique: "5TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_6_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "6ème dimanche du Temps Ordinaire",
+        Dateliturgique: "6TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_6_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la sixième semaine du Temps Ordinaire",
+        Dateliturgique: "6TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_6_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mardi de la sixième semaine du Temps Ordinaire",
+        Dateliturgique: "6TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_6_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mercredi de la sixième semaine du Temps Ordinaire",
+        Dateliturgique: "6TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_6_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Jeudi de la sixième semaine du Temps Ordinaire",
+        Dateliturgique: "6TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_6_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Vendredi de la sixième semaine du Temps Ordinaire",
+        Dateliturgique: "6TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_6_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Samedi de la sixième semaine du Temps Ordinaire",
+        Dateliturgique: "6TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_7_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "7ème dimanche du Temps Ordinaire",
+        Dateliturgique: "7TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_7_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la septième semaine du Temps Ordinaire",
+        Dateliturgique: "7TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_7_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mardi de la septième semaine du Temps Ordinaire",
+        Dateliturgique: "7TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_7_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mercredi de la septième semaine du Temps Ordinaire",
+        Dateliturgique: "7TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_7_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Jeudi de la septième semaine du Temps Ordinaire",
+        Dateliturgique: "7TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_7_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Vendredi de la septième semaine du Temps Ordinaire",
+        Dateliturgique: "7TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_7_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Samedi de la septième semaine du Temps Ordinaire",
+        Dateliturgique: "7TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_8_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "8ème dimanche du Temps Ordinaire",
+        Dateliturgique: "8TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_8_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la huitième semaine du Temps Ordinaire",
+        Dateliturgique: "8TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_8_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mardi de la huitième semaine du Temps Ordinaire",
+        Dateliturgique: "8TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_8_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mercredi de la huitième semaine du Temps Ordinaire",
+        Dateliturgique: "8TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_8_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Jeudi de la huitième semaine du Temps Ordinaire",
+        Dateliturgique: "8TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_8_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Vendredi de la huitième semaine du Temps Ordinaire",
+        Dateliturgique: "8TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_8_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Samedi de la huitième semaine du Temps Ordinaire",
+        Dateliturgique: "8TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_9_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "9ème dimanche du Temps Ordinaire",
+        Dateliturgique: "9TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_9_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la neuvième semaine du Temps Ordinaire",
+        Dateliturgique: "9TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_9_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mardi de la neuvième semaine du Temps Ordinaire",
+        Dateliturgique: "9TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_9_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mercredi de la neuvième semaine du Temps Ordinaire",
+        Dateliturgique: "9TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_9_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Jeudi de la neuvième semaine du Temps Ordinaire",
+        Dateliturgique: "9TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_9_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Vendredi de la neuvième semaine du Temps Ordinaire",
+        Dateliturgique: "9TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_9_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Samedi de la neuvième semaine du Temps Ordinaire",
+        Dateliturgique: "9TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_10_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "10ème dimanche du Temps Ordinaire",
+        Dateliturgique: "10TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_10_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la dixième semaine du Temps Ordinaire",
+        Dateliturgique: "10TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_10_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mardi de la dixième semaine du Temps Ordinaire",
+        Dateliturgique: "10TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_10_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mercredi de la dixième semaine du Temps Ordinaire",
+        Dateliturgique: "10TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_10_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Jeudi de la dixième semaine du Temps Ordinaire",
+        Dateliturgique: "10TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_10_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Vendredi de la dixième semaine du Temps Ordinaire",
+        Dateliturgique: "10TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_10_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Samedi de la dixième semaine du Temps Ordinaire",
+        Dateliturgique: "10TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_11_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "11ème dimanche du Temps Ordinaire",
+        Dateliturgique: "11TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_11_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la onzième semaine du Temps Ordinaire",
+        Dateliturgique: "11TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_11_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mardi de la onzième semaine du Temps Ordinaire",
+        Dateliturgique: "11TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_11_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mercredi de la onzième semaine du Temps Ordinaire",
+        Dateliturgique: "11TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_11_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Jeudi de la onzième semaine du Temps Ordinaire",
+        Dateliturgique: "11TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_11_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Vendredi de la onzième semaine du Temps Ordinaire",
+        Dateliturgique: "11TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_11_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Samedi de la onzième semaine du Temps Ordinaire",
+        Dateliturgique: "11TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_12_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "12ème dimanche du Temps Ordinaire",
+        Dateliturgique: "12TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_12_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la douzième semaine du Temps Ordinaire",
+        Dateliturgique: "12TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_12_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mardi de la douzième semaine du Temps Ordinaire",
+        Dateliturgique: "12TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_12_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mercredi de la douzième semaine du Temps Ordinaire",
+        Dateliturgique: "12TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_12_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Jeudi de la douzième semaine du Temps Ordinaire",
+        Dateliturgique: "12TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_12_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Vendredi de la douzième semaine du Temps Ordinaire",
+        Dateliturgique: "12TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_12_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Samedi de la douzième semaine du Temps Ordinaire",
+        Dateliturgique: "12TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_13_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "13ème dimanche du Temps Ordinaire",
+        Dateliturgique: "13TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_13_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la treizième semaine du Temps Ordinaire",
+        Dateliturgique: "13TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_13_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mardi de la treizième semaine du Temps Ordinaire",
+        Dateliturgique: "13TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_13_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mercredi de la treizième semaine du Temps Ordinaire",
+        Dateliturgique: "13TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_13_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Jeudi de la treizième semaine du Temps Ordinaire",
+        Dateliturgique: "13TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_13_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Vendredi de la treizième semaine du Temps Ordinaire",
+        Dateliturgique: "13TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_13_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Samedi de la treizième semaine du Temps Ordinaire",
+        Dateliturgique: "13TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_14_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "14ème dimanche du Temps Ordinaire",
+        Dateliturgique: "14TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_14_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la quatorzième semaine du Temps Ordinaire",
+        Dateliturgique: "14TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_14_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mardi de la quatorzième semaine du Temps Ordinaire",
+        Dateliturgique: "14TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_14_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mercredi de la quatorzième semaine du Temps Ordinaire",
+        Dateliturgique: "14TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_14_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Jeudi de la quatorzième semaine du Temps Ordinaire",
+        Dateliturgique: "14TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_14_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Vendredi de la quatorzième semaine du Temps Ordinaire",
+        Dateliturgique: "14TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_14_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Samedi de la quatorzième semaine du Temps Ordinaire",
+        Dateliturgique: "14TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_15_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "15ème dimanche du Temps Ordinaire",
+        Dateliturgique: "15TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_15_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la quinzième semaine du Temps Ordinaire",
+        Dateliturgique: "15TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_15_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mardi de la quinzième semaine du Temps Ordinaire",
+        Dateliturgique: "15TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_15_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Mercredi de la quinzième semaine du Temps Ordinaire",
+        Dateliturgique: "15TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_15_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Jeudi de la quinzième semaine du Temps Ordinaire",
+        Dateliturgique: "15TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_15_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Vendredi de la quinzième semaine du Temps Ordinaire",
+        Dateliturgique: "15TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_15_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Samedi de la quinzième semaine du Temps Ordinaire",
+        Dateliturgique: "15TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_16_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "16ème dimanche du Temps Ordinaire",
+        Dateliturgique: "16TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_16_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
-        Dateliturgique: "",
+        CelebrationduJour: "Lundi de la seizième semaine du Temps Ordinaire",
+        Dateliturgique: "16TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_16_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_16_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_16_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_16_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_16_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_17_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_17_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_17_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_17_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_17_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_17_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_17_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_18_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_18_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_18_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_18_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_18_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_18_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_18_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_19_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_19_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_19_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_19_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_19_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_19_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_19_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_20_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_20_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_20_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_20_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_20_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_20_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_20_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_21_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_21_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_21_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_21_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_21_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_21_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_21_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_22_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_22_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_22_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_22_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_22_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_22_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_22_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_23_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_23_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_23_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_23_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_23_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_23_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_23_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_24_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_24_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_24_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_24_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_24_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_24_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_24_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_25_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_25_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_25_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_25_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_25_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_25_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_25_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_26_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_26_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_26_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_26_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_26_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_26_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_26_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_27_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_27_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_27_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_27_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_27_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_27_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_27_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_28_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_28_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_28_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_28_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_28_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_28_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_28_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_29_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_29_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_29_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_29_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_29_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_29_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_29_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_30_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_30_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_30_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_30_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_30_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_30_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_30_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_31_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_31_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_31_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_31_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_31_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_31_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_31_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_32_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_32_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_32_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_32_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_32_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_32_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_32_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_33_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_33_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_33_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_33_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_33_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_33_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_33_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "our_lord_jesus_christ_king_of_the_universe": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_34_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_34_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_34_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_34_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_34_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ordinary_time_34_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_1_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_1_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_1_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_1_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_1_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_1_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_1_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_2_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_2_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_2_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_2_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_2_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_2_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_2_saturday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_3_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_3_monday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_3_tuesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_3_wednesday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_3_thursday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_3_friday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_4_sunday": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_december_17": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_december_18": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_december_19": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_december_20": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_december_21": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL", 
+        typeCredo: "NC", 
     },
   "advent_december_22": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL", 
+        typeCredo: "NC", 
     },
   "advent_december_23": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "advent_december_24": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "nativity_of_the_lord": {
-        Dateliturgique: "",
+        Dateliturgique: "NAT",
         PrefacesOptionnelles: [
             { id: "1NS", label: "1" },
             { id: "2NS", label: "2" },
             { id: "3NS", label: "3" }
         ],
-        typeCredo: "AL", 
-        CelebrationduJour: "Dimanche de la Résurrection"
+        typeCredo: "NC", 
+        CelebrationduJour: "Nativité du Seigneur"
     },
   "christmas_octave_day_2": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_octave_day_3": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_octave_day_4": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_octave_day_5": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_octave_day_6": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christmas_octave_day_7": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "holy_family_of_jesus_mary_and_joseph": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "basil_the_great_and_gregory_nazianzen_bishops": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "most_holy_name_of_jesus": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "raymond_of_penyafort_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "hilary_of_poitiers_bishop": {
         CelebrationduJour: "Hilaire de Poitiers, évêque et docteur de l'Église",
         Dateliturgique: "2TO",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "anthony_of_egypt_abbot": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "fabian_i_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "sebastian_of_milan_martyr": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "agnes_of_rome_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "vincent_of_saragossa_deacon": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "francis_de_sales_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "conversion_of_saint_paul_the_apostle": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "timothy_of_ephesus_and_titus_of_crete_bishops": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "angela_merici_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "thomas_aquinas_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_bosco_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "presentation_of_the_lord": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "blaise_of_sebaste_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ansgar_of_hamburg_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "agatha_of_sicily_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "paul_miki_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "jerome_emiliani": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "josephine_bakhita_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "scholastica_of_nursia_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "our_lady_of_lourdes": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "cyril_constantine_the_philosopher_monk_and_methodius_michael_of_thessaloniki_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "seven_holy_founders_of_the_servite_order": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "peter_damian_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "chair_of_saint_peter_the_apostle": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "polycarp_of_smyrna_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "gregory_of_narek_abbot": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "casimir_of_poland": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "perpetua_of_carthage_and_felicity_of_carthage_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_of_god_duarte_cidade_religious": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "frances_of_rome_religious": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "patrick_of_ireland_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "cyril_of_jerusalem_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "joseph_spouse_of_mary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "turibius_of_mogrovejo_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "annunciation_of_the_lord": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "francis_of_paola_hermit": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "isidore_of_seville_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "vincent_ferrer_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_baptist_de_la_salle_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "stanislaus_of_szczepanow_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "martin_i_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "anselm_of_canterbury_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "george_of_lydda_martyr": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "adalbert_of_prague_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "fidelis_of_sigmaringen_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "mark_evangelist": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "peter_chanel_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "louis_grignion_de_montfort_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "catherine_of_siena_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "pius_v_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "joseph_the_worker": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "athanasius_of_alexandria_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "philip_and_james_apostles": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_of_avila_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "nereus_of_terracina_and_achilleus_of_terracina_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "pancras_of_rome_martyr": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "our_lady_of_fatima": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "matthias_apostle": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_i_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "bernardine_of_siena_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "christopher_magallanes_priest_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "rita_of_cascia_religious": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "bede_the_venerable_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "gregory_vii_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "mary_magdalene_de_pazzi_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "philip_neri_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "augustine_of_canterbury_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "paul_vi_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "visitation_of_mary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "mary_mother_of_the_church": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "immaculate_heart_of_mary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "justin_martyr": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "marcellinus_of_rome_and_peter_the_exorcist_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "charles_lwanga_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "boniface_of_mainz_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "norbert_of_xanten_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ephrem_the_syrian_deacon": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "barnabas_apostle": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "anthony_of_padua_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "romuald_of_ravenna_abbot": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "aloysius_gonzaga_religious": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "paulinus_of_nola_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_fisher_bishop_and_thomas_more_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "nativity_of_john_the_baptist": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "cyril_of_alexandria_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "irenaeus_of_lyon_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "peter_and_paul_apostles": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "first_martyrs_of_the_holy_roman_church": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "thomas_apostle": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "elizabeth_of_portugal": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "anthony_zaccaria_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "maria_goretti_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "augustine_zhao_rong_priest_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "benedict_of_nursia_abbot": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "henry_ii_emperor": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "camillus_de_lellis_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "bonaventure_of_bagnoregio_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "our_lady_of_mount_carmel": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "apollinaris_of_ravenna_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lawrence_of_brindisi_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "mary_magdalene": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "bridget_of_sweden_religious": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "sharbel_makhluf_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "james_apostle": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "joachim_and_anne_parents_of_mary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "martha_of_bethany_mary_of_bethany_and_lazarus_of_bethany": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "peter_chrysologus_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ignatius_of_loyola_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "alphonsus_mary_liguori_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "eusebius_of_vercelli_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "peter_julian_eymard_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_mary_vianney_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "dedication_of_the_basilica_of_saint_mary_major": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "transfiguration_of_the_lord": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "sixtus_ii_pope_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "cajetan_of_thiene_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "dominic_de_guzman_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "teresa_benedicta_of_the_cross_stein_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lawrence_of_rome_deacon": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "clare_of_assisi_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "jane_frances_de_chantal_religious": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "pontian_i_pope_and_hippolytus_of_rome_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "maximilian_mary_raymund_kolbe_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "assumption_of_the_blessed_virgin_mary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "stephen_i_of_hungary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_eudes_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "bernard_of_clairvaux_abbot": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "pius_x_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "queenship_of_the_blessed_virgin_mary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "rose_of_lima_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "bartholomew_apostle": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "louis_ix_of_france": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "joseph_of_calasanz_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "monica_of_hippo": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "augustine_of_hippo_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "passion_of_saint_john_the_baptist": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "gregory_i_the_great_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "teresa_of_calcutta_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "nativity_of_the_blessed_virgin_mary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "peter_claver_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "most_holy_name_of_mary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_chrysostom_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "exaltation_of_the_holy_cross": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "our_lady_of_sorrows": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "cornelius_i_pope_and_cyprian_of_carthage_bishop_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "hildegard_of_bingen_abbess": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "robert_bellarmine_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "januarius_i_of_benevento_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "andrew_kim_tae_gon_priest_paul_chong_ha_sang_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "matthew_apostle": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "pius_francesco_forgione_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "cosmas_of_cilicia_and_damian_of_cilicia_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "vincent_de_paul_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "wenceslaus_i_of_bohemia_martyr": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lawrence_ruiz_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "michael_gabriel_and_raphael_archangels": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "jerome_of_stridon_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "therese_of_the_child_jesus_and_the_holy_face_of_lisieux_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "holy_guardian_angels": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "francis_of_assisi": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "faustina_kowalska_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "bruno_of_cologne_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "our_lady_of_the_rosary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "denis_of_paris_bishop_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_leonardi_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_xxiii_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "callistus_i_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "teresa_of_jesus_of_avila_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "hedwig_of_silesia_religious": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "margaret_mary_alacoque_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ignatius_of_antioch_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "luke_evangelist": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_de_brebeuf_isaac_jogues_priests_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "paul_of_the_cross_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_paul_ii_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_of_capistrano_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "anthony_mary_claret_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "simon_and_jude_apostles": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "all_saints": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "commemoration_of_all_the_faithful_departed": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "martin_de_porres_religious": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "charles_borromeo_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "dedication_of_the_lateran_basilica": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "leo_i_the_great_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "martin_of_tours_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "josaphat_kuntsevych_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "albert_the_great_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "margaret_of_scotland": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "gertrude_the_great_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "elizabeth_of_hungary_religious": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "dedication_of_the_basilicas_of_saints_peter_and_paul_apostles": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "presentation_of_the_blessed_virgin_mary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "cecilia_of_rome_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "clement_i_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "columban_of_luxeuil_abbot": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "andrew_dung_lac_priest_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "catherine_of_alexandria_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "andrew_apostle": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "francis_xavier_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_damascene_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "nicholas_of_myra_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ambrose_of_milan_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "immaculate_conception_of_the_blessed_virgin_mary": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "juan_diego_cuauhtlatoatzin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "our_lady_of_loreto": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "damasus_i_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "our_lady_of_guadalupe": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "lucy_of_syracuse_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_of_the_cross_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "peter_canisius_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_of_kanty_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "stephen_the_first_martyr": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "john_apostle": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "holy_innocents_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "thomas_becket_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "sylvester_i_pope": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "genevieve_of_paris_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "remigius_of_reims_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "bernadette_soubirous_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "louise_de_marillac_religious": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "ivo_of_kermartin_priest": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "joan_of_arc_virgin": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "pothinus_of_lyon_bishop_blandina_of_lyon_virgin_and_companions_martyrs": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "clotilde_of_burgundy": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "caesarius_of_arles_bishop": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "our_lady_of_la_salette": {
-        CelebrationduJour: "Dimanche de la Résurrection",
+        CelebrationduJour: "",
         Dateliturgique: "",
         Choixpreface: "",
-        typeCredo: "AL"
+        typeCredo: "NC"
     },
   "dedication_of_consecrated_churches": {
         Dateliturgique: "NOEL", // Ta variable pour aller chercher l'oraison

@@ -4,13 +4,13 @@ import { OraisonsDominicales } from "./oraisons";
 export const ritual = {
 ritesInitiaux: [  
   { class:"sansmarge", texte: "RITES INITIAUX", type: "H1", conditions: {} },
-  {texte: `Lorsque le peuple est rassemblé, le prêtre s’avance vers l’autel avec les ministres, pendant le chant d’entrée.`, type: "rubrique", conditions: {celebrationType: "Dominicale" } },
+  {texte: `Lorsque le peuple est rassemblé, le prêtre s’avance vers l’autel avec les ministres, pendant le chant d’entrée.`, type: "rubrique", conditions: {celebrationType: "Solennité" } },
   {texte: `Lorsque le peuple est rassemblé, le prêtre s’avance vers l’autel avec les ministres.`, type: "rubrique", conditions: {celebrationType: "Semaine" } },
   { texte: "Quand il est parvenu à l’autel, il fait une inclination profonde avec les ministres, puis il vénère l’autel par un baiser et, si cela convient, il encense la croix et l’autel. Ensuite, il gagne son siège avec les ministres.", type: "rubrique", conditions: {} },
   { texte: "S’il n’y a pas de chant pour l´entrée, on fait réciter l´antienne que propose le Missel, soit par les fidèles, soit par un lecteur ou, autrement, par le prêtre lui-même.", type: "rubrique", conditions: {celebrationType: "Semaine"}},
   { texte: `ANTIENNE D’OUVERTURE`, type: "H3"  , conditions: {oraisons : true, celebrationType: "Semaine"}},
   { type: "insert-antienne_ouverture"},
-  { texte: "Le chant d’entrée achevé, le prêtre et les fidèles, debout, font le signe de la croix, tandis que le prêtre, tourné vers le peuple dit :", type: "rubrique", conditions: {celebrationType: "Dominicale" } },
+  { texte: "Le chant d’entrée achevé, le prêtre et les fidèles, debout, font le signe de la croix, tandis que le prêtre, tourné vers le peuple dit :", type: "rubrique", conditions: {celebrationType: "Solennité" } },
   { texte: "Ensuite, le prêtre et les fidèles, debout, font le signe de la croix, tandis que le prêtre, tourné vers le peuple dit :", type: "rubrique", conditions: {celebrationType: "Semaine" } },
   { class:"lettrine", texte: "Au nom du Père, et du Fils, et du Saint-Esprit.", type: "dialogueV", conditions: {} },
     { texte: "Amen.", type: "dialogueR", conditions: {} },
@@ -206,7 +206,7 @@ liturgiedelaparole: [
   { id: "Professiondefoi",texte: `PROFESSION DE FOI`, type: "H2", conditions: {showCredo: true} },
   
   //Credo de Nicée-Constantinople
-  { class: "premiergénéré", texte: `Symbole de Nicée-Constantinople`, type: "H3", conditions: {typeCredo: "NC", showCredo: true} },
+  { class: "", texte: `Symbole de Nicée-Constantinople`, type: "H3", conditions: {typeCredo: "NC", showCredo: true} },
   { conditions: {typeCredo: "NC", showCredo: true},  class: "tableau",  items:[
   { class:"grandelettrine" , texte: `Je crois en un seul Dieu,
 le Père tout-puissant, créateur du ciel et de la terre,`, type: "dialogueV" },
@@ -222,6 +222,7 @@ et par lui tout a été fait.`, type: "dialogueV" },
   { class:"indent1all", texte: `Pour nous les hommes, et pour notre salut,
 il descendit du ciel\u00A0;`, type: "dialogueV" },
   { class:"indent1g", texte: `Aux mots qui suivent, tous s’inclinent jusqu’à « s’est fait homme\u00A0».`, type: "rubriqueinterne" },
+//  { class:"indent1g", texte: `Aux mots qui suivent, tous s’inclinent jusqu’à « s’est fait homme\u00A0».`, type: "rubriqueinterne", conditions: {Dateliturgique: "NAT"} },
   { class:"indent1all", texte: `Par l’Esprit Saint, il a pris chair de la Vierge Marie,
 et s’est fait homme.`, type: "dialogueV"},
   { class:"indent1all", texte: `Crucifié pour nous sous Ponce Pilate,
@@ -239,8 +240,8 @@ Je reconnais un seul baptême pour le pardon des péchés.
 J’attends la résurrection des morts, et la vie du monde à venir. Amen.`, type: "dialogueV" },
 ],},
 
-//Credo en latin
-  { class: "premiergénéré", texte: `Symbole de Nicée-Constantinople`, type: "H3", conditions: {typeCredo: "Lt", showCredo: true} },
+//Credo de Nicée-Constantinople
+  { class: "", texte: `Symbole de Nicée-Constantinople`, type: "H3", conditions: {typeCredo: "Lt", showCredo: true} },
   { conditions: {typeCredo: "Lt", showCredo: true}, class: "tableau", items:[
   { class:"grandelettrine" , texte: `Credo in unum Deum,
 Patrem omnipótentem, factórem cæli et terræ,`, type: "dialogueV"},
@@ -273,8 +274,8 @@ qui locútus est per prophétas.`, type: "dialogueV" },
 et vitam ventúri sǽculi. Amen.`, type: "dialogueV" },
 ],},
 
-//Credo en latin
-  { class: "premiergénéré", texte: `Symbole des Apôtres`, type: "H3", conditions: {typeCredo: "AP", showCredo: true} },
+//Credo des Apôtres
+  { class: "", texte: `Symbole des Apôtres`, type: "H3", conditions: {typeCredo: "AP", showCredo: true} },
   { conditions: {typeCredo: "AP", showCredo: true}, class: "tableau",items:[
   { texte: `Surtout aux temps du Carême et de Pâques, on peut prendre le symbole baptismal de l’Église romaine appelé Symbole des Apôtres.`, type: "rubrique" },
   { class:"grandelettrine" , texte: `Je crois en Dieu, le Père tout-puissant,
@@ -301,17 +302,99 @@ d’où il viendra juger les vivants et les morts.`, type: "dialogueV" },
 //Prière universelle
   { texte: `PRIÈRE UNIVERSELLE`, type: "H3", conditions: {} },
   { texte: `Quelques invitations sacerdotales et prières de conclusion sont proposées ici pour la commodité du prêtre et n’excluent pas l’usage d’autres formules.`, type: "rubrique", conditions: {} },
-  { texte: `INVITATION SACERDOTALE`, type: "H4", conditions: {} },
+  { id:"InvitS", texte: `INVITATION SACERDOTALE`, type: "H4", conditions: {} },
+    { texte: `Tandis que nous attendons l’avènement
+de notre Seigneur Jésus Christ,
+implorons sa miséricorde
+pour qu’il apporte le salut au monde d’aujourd’hui.`, type: "dialogueV", conditions: {InvitS: "1"} },
+    { texte: `Frères bien-aimés, implorons avec confiance
+Dieu le Père tout-puissant,
+car il a tant aimé le monde
+qu’il lui a donné son Fils unique.`, type: "dialogueV", conditions: {InvitS: "2"} },
+    { texte: `À l’approche des solennités pascales,
+prions le Seigneur de façon plus pressante,
+afin que l’univers entier bénéficie davantage
+des richesses du mystère du salut.`, type: "dialogueV", conditions: {InvitS: "3"} },
+    { texte: `En ces jours très saints,
+supplions le Père tout-puissant,
+afin que la Pâque de son Fils unique,
+Jésus Christ, notre Seigneur,
+apporte grâce et joie au monde entier.`, type: "dialogueV", conditions: {InvitS: "4"} },
   { texte: `Frères et soeurs,
 rassemblés pour la prière commune,
 supplions le Seigneur très bon
-pour nous-mêmes et pour tous les hommes.`, type: "dialogueV", conditions: {} },
-  { texte: `PRIÈRES DE CONCLUSION`, type: "H4", conditions: {} },
-  { class:"indent1all", texte: `Dieu qui sauves tous les hommes
-et ne veux en perdre aucun,`, type: "dialogueV", conditions: {} },
+pour nous-mêmes et pour tous les hommes.`, type: "dialogueV", conditions: {InvitS: "5"} },
+  { texte: `Dans une prière unanime,
+faisons monter vers le Seigneur
+notre supplication pour tous les hommes,
+afin que tous puissent mener
+une vie calme et paisible,
+et parvenir au bonheur éternel.`, type: "dialogueV", conditions: {InvitS: "6"} },
+  { texte: `Pour que tous les hommes
+puissent mener sur terre
+une vie digne et fraternelle,
+faisons monter ensemble
+notre prière vers le Seigneur.`, type: "dialogueV", conditions: {InvitS: "7"} },
+  { texte: `Élargissons notre supplication
+à la mesure de la charité du Christ,
+et présentons au Père
+les intentions de tous nos frères les hommes.`, type: "dialogueV", conditions: {InvitS: "8"} },
+  { texte: `Réunis pour célébrer les bienfaits de Dieu,
+prions-le, mes frères,
+de nous inspirer lui-même
+une prière qui il puisse exaucer.`, type: "dialogueV", conditions: {InvitS: "9"} },
+  { texte: `Et maintenant, frères bien-aimés,
+ouvrons nos coeurs à toutes les souffrances
+et à tous les besoins de nos frères les hommes.`, type: "dialogueV", conditions: {InvitS: "10"} },
+
+  { id:"PriereC", texte: `PRIÈRES DE CONCLUSION`, type: "H4", conditions: {} },
+  { class:"indent1all", texte: `À tes fidèles, Seigneur,
+tends une main secourable :`, type: "dialogueV", conditions: {PriereC: "1"} },
+{ class:"indent1all", texte: `Qu’ils te cherchent de tout coeur,
+et voient exaucées leurs justes demandes.`, type: "dialogueV", conditions: {PriereC: "1"} },
+{ class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "1" }},
+{ class:"indent1all", texte: `Regarde avec bonté, Seigneur,
+le peuple qui se confie en ta miséricorde ;`, type: "dialogueV", conditions: {PriereC: "2"} },
+{ class:"indent1all", texte: `Et comme il ne peut subsister sans toi,
+soutiens-le maintenant de tes bienfaits
+pour qu’il progresse jusqu’à l’éternité.`, type: "dialogueV", conditions: {PriereC: "2"} },
+{ class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "2" }},
+{ class:"indent1all", texte: `Dieu qui sauves tous les hommes
+et ne veux en perdre aucun,`, type: "dialogueV", conditions: {PriereC: "3"} },
 { class:"indent1all", texte: `Écoute la prière de ton peuple
 et donne-lui la joie d’être exaucé.
-Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {} },
+Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "3"} },
+{ class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "3" }},
+{ class:"indent1all", texte: `Seigneur, viens au secours de ton peuple
+qui espère en ta miséricorde :`, type: "dialogueV", conditions: {PriereC: "4"} },
+{ class:"indent1all", texte: `Que ta puissance le soutienne en cette vie
+et le conduise aux joies de l’éternité.`, type: "dialogueV", conditions: {PriereC: "4"} },
+{ class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "4" }},
+{ class:"indent1all", texte: `Dieu qui sais toutes choses,
+tu vois tous les besoins de notre vie humaine.`, type: "dialogueV", conditions: {PriereC: "5"} },
+{ class:"indent1all", texte: `Accueille les prières de ceux qui croient en toi,
+exauce les désirs de ceux qui te supplient.`, type: "dialogueV", conditions: {PriereC: "5"} },
+{ class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "5" }},
+{ class:"indent1all", texte: `Seigneur, écoute avec bonté les prières de ton peuple :`, type: "dialogueV", conditions: {PriereC: "6"} },
+{ class:"indent1all", texte: `Accorde à tous ce qu’ils te demandent
+et à chacun ce qu’il lui faut.`, type: "dialogueV", conditions: {PriereC: "6"} },
+{ class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "6" }},
+{ class:"indent1all", texte: `Écoute, Seigneur, les prières
+que tu inspires toi-même à ton Église,`, type: "dialogueV", conditions: {PriereC: "7"} },
+{ class:"indent1all", texte: `Et, dans ta bonté, daigne les exaucer.`, type: "dialogueV", conditions: {PriereC: "7"} },
+{ class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "7" }},
+{ class:"indent1all", texte: `Aux appels de ton peuple en prière,
+réponds, Seigneur, en ta bonté :`, type: "dialogueV", conditions: {PriereC: "8"} },
+{ class:"indent1all", texte: `Donne à chacun la claire vision de ce qu’il doit faire
+et la force de l’accomplir.`, type: "dialogueV", conditions: {PriereC: "8"} },
+{ class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "8" }},
+{ class:"indent1all", texte: `Seigneur Jésus,
+qui te tiens au milieu des croyants
+rassemblés en ton Nom,`, type: "dialogueV", conditions: {PriereC: "9"} },
+{ class:"indent1all", texte: `Écoute les supplications de ta famille
+et daigne répondre à ses appels.`, type: "dialogueV", conditions: {PriereC: "9"} },
+{ class:"", texte: `Toi qui vis et règnes pour les siècles des siècles.`, type: "dialogueV", conditions: {PriereC: "9" }},
+
 ],
 
 liturgieeucharistique: [
@@ -467,11 +550,11 @@ pour la paix, et le salut qu’ils espèrent\u00A0;`, type: "dialogueV", conditi
   { texte: `DURANT L’ACTION`, type: "rubrique", conditions: {} },
   { class:"sautdeligne", texte: `\n`, type: "", conditions: {hideRubriques:true} },
   { class:"grandelettrine", texte: `Unis dans une même communion,
-    nous célébrons le jour`, type: "dialogueV", conditions: {celebrationType: "Dominicale" } },
-  { class:"indentallp", texte: `où le Christ est ressuscité d’entre les morts\u00A0;`, type: "dialogueV", conditions: {celebrationType:"Dominicale"} },
+    nous célébrons le jour`, type: "dialogueV", conditions: {celebrationType: "Solennité" } },
+  { class:"indentallp", texte: `où le Christ est ressuscité d’entre les morts\u00A0;`, type: "dialogueV", conditions: {celebrationType:"Solennité"} },
   { class:"indent1all", texte: `et vénérant d’abord la mémoire
 de la bienheureuse Marie toujours Vierge,
-Mère de notre Dieu et Seigneur, Jésus Christ,`, type: "dialogueV", conditions: {celebrationType:"Dominicale"} },
+Mère de notre Dieu et Seigneur, Jésus Christ,`, type: "dialogueV", conditions: {celebrationType:"Solennité"} },
 
   { class:"grandelettrine", texte: `Unis dans une même communion,
 vénérant d’abord la mémoire`, type: "dialogueV", conditions: {celebrationType: "Semaine"} },
@@ -1167,7 +1250,7 @@ et je serai guéri.`, type: "dialogueV", conditions: {} },
   { class: "indent1p lettrine", texte: `Que le Sang du Christ me garde pour la vie éternelle.`, type: "voixbasse", conditions: {secret: true} },
   { texte: `Et il boit avec respect le Sang du Christ.`, type: "rubrique", conditions: {secret: true} },
 
-  { texte: `Pendant que le prêtre communie au Corps du Christ, on commence le chant de communion.`, type: "rubrique", conditions: {celebrationType: "Dominicale"} },
+  { texte: `Pendant que le prêtre communie au Corps du Christ, on commence le chant de communion.`, type: "rubrique", conditions: {celebrationType: [ "Solennité", "Fête"]} },
   { texte: `S´il n´y a pas de chant, l´antienne proposée dans le Missel peut être dite soit par les fidèles, soit par un lecteur ou, à défaut, par le prêtre, après avoir lui-même communié et avant qu’il ne distribue la communion aux fidèles.`, type: "rubrique", conditions: {celebrationType: "Semaine"} },
     { texte: `ANTIENNE DE COMMUNION`, type: "H3"  , conditions: {oraisons : true, celebrationType: "Semaine"}},
   { type: "insert-antienne_communion"},

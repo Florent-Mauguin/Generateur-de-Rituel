@@ -7,8 +7,21 @@
   };
 
   const releases: Release[] = [
+   {
+      version: 'v0.2',
+      date: 'décembre 2025',
+      summary: '1ère version alpha du générateur',
+      items: [
+        { icon: '⛪', label: 'Rituel complet pour une messe du Temps Ordinaire' },
+        { icon: '⏹️', label: 'Boutons de choix pour les différentes variantes' },
+        { icon: '📋', label: "Intégration de l'ensemble des préfaces (seulement 78...)" },
+        { icon: '📚', label: "Ajout de la librairie Romcal pour acceder au calendrier liturgique" },
+        { icon: '📝', label: "Début de l'integration des oraisons : 6,5% (20/307)" },
+        { icon: '🗺️', label: "Début du mapping : tel jour -> telle préface, oraison, etc. : 8% (50/622)" }
+      ]
+   },
     {
-      version: 'v0.1.0',
+      version: 'v0.1',
       date: 'novembre 2025',
       summary: 'Création du générateur, mise en place du projet',
       items: [
@@ -18,17 +31,9 @@
         { icon: '🎨', label: "Système d'exportation PDF" }
       ]
     },
-    /*{
-      version: 'v0.2.0',
-      date: 'décembre 2025',
-      summary: '1ère version du générateur',
-      items: [
-        { icon: '🧑‍💻', label: 'Rituel complet pour une messe du Temps Ordinaire' },
-        { icon: '⚡', label: 'Boutons de choix pour les différentes variantes' },
-        { icon: '🔔', label: "Intégration de l'ensemble des préfaces (plus de 70...)" },
-        { icon: '🎨', label: "Ajout de la librairie romcal pour acceder au calendrier liturgique" }
-      ]
-    }*/
+ 
+    /*  ⏺️🔘📄📄📃🗾🗂️💥⭐🌟✨⚡💫🔥🎉🎊❤️‍🔥🫆🦴👇✍️🙏🤝❄️☃️⛄🧭🚦🚥⚓🚀🎈🎂🎯🧩🖼️🎨🖌️🎹🪫🔋🧹🧼⚗️🧪🪜⛓️‍💥⚙️🔗⛓️📎📋🗄️📖🗃️📊📈📌📍🏷️⏳⌛🗓️📜🆕✝️🎼🎵🎶🏁🇻🇦
+    */
   ];
 
 </script>

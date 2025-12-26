@@ -3,7 +3,7 @@
     {
       icon: "⛄",
       title: "Hiver 2025",
-      statusencours: "In Progress",
+      statusencours: "En cours",
       items: [
         {
           title: "Première génération",
@@ -14,12 +14,6 @@
         {
           title: "Amélioration UX/UI",
           desc: "Amélioration de l'expérience utilisateur et de l'interface",
-          priority: "Basse",
-          color: "yellow"
-        },
-        {
-          title: "Préfaces",
-          desc: "Ajout de l'ensemble des préfaces",
           priority: "Basse",
           color: "yellow"
         }
