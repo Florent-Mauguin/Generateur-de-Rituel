@@ -5,7 +5,7 @@ JS
 <script>
     import { onMount } from 'svelte';
     import { ritual } from '$lib/ritual.js';
-    import { OraisonsDominicales } from '$lib/oraisons';
+    import { Oraisons } from '$lib/oraisons';
     import { preface } from '$lib/prefaces';
     import FileSaver from "file-saver";
     import { Document, Packer, Paragraph, TextRun } from "docx";
@@ -24,25 +24,31 @@ const romcal = new Romcal({
   let selectedDate = new Date().toISOString().split('T')[0];
   let availableEvents = []; // Toutes les fêtes du jour
   let selectedEventId = ""; // L'ID choisi par l'utilisateur
+  let lastLoadedEventId = "";
 
-// Tes variables de formulaire (extraites de ton page.txt)
+// Variables de formulaire
   export let version = "0.2";
   let celebrationType = "Solennité";
   let CelebrationduJour = "";
   let Showoraisons = false;
-  let Dateliturgique = ""
-  let oraison = "";
-  let salutation = "S3";
-  let ChoixPenitentiel = "1CP";
+  let ChoixOraison = "";
+  let OraisonsDuJour = "";
+  let Tempsliturgique = "";
+  let Messe = "";
+  // Valeurs : "TO", 
   let [secret, hideGloria, OrdinaireLatin, DoxologieLt] = [false, false, false, false];
   let [showCredo, Showpreface, showPE] = [true, false, true];
+  let salutation = "S3";
+  let ChoixPenitentiel = "1CP";
   let typeCredo = "NC";
   let InvitS = "5";
   let PriereC = "3";
   let Choixpreface = "";
+  let availablePrefaces = [];
   let prefacedujour = "";
   let typePE = "PE1";
   let AcclamationEucharistique = "AE1";
+  let Communicantes = "Semaine";
   let NotrePère = "NP1";
   let Apologies = "1";
   let Conclusion = "1";
@@ -58,11 +64,9 @@ const romcal = new Romcal({
 
 
 // --- Logique Réactive ---
-
   // 1. Quand la date change, on charge les événements de Romcal
-  $: if (selectedDate) {
-    updateCalendarData(selectedDate);
-  }
+  $: if (selectedDate) {updateCalendarData(selectedDate)}
+
 
   async function updateCalendarData(dateStr) {
     if (!romcal) return;
@@ -75,37 +79,32 @@ const romcal = new Romcal({
     if (events.length > 0) {
       // Par défaut, on prend la fête avec la plus haute priorité (index 0)
       selectedEventId = events[0].id;
-    } else {
-      selectedEventId = "";
-    }
+    } else {selectedEventId = ""}
   }
 
   function applyLiturgyMapping(fete) {
-      Dateliturgique = "";
-      CelebrationduJour = fete.name;
-      Showoraisons = false;
-      Showpreface = false;
-    // On regarde dans ton fichier mapping.js
-    if (liturgyRules && liturgyRules[fete.id]) {
       const regles = liturgyRules[fete.id];
+  if (!regles) return;
 
-      // On injecte les valeurs du mapping dans tes variables Svelte
-      if (regles.Dateliturgique) Dateliturgique = regles.Dateliturgique;
-      if (regles.Choixpreface) Choixpreface = regles.Choixpreface;
-      if (regles.typeCredo) typeCredo = regles.typeCredo;
-      if (regles.CelebrationduJour ) CelebrationduJour = regles.CelebrationduJour;
-      if (regles.celebrationType) celebrationType = regles.celebrationType;
-
-      if (Dateliturgique) {oraison = OraisonsDominicales[Dateliturgique] || null;}
-      if (Choixpreface) {prefacedujour = preface[Choixpreface] || null;}
-
-      // On active les sections visuelles
-      Showoraisons = true;
-      Showpreface = true;
-      
+  CelebrationduJour = regles.CelebrationduJour || fete.name;
+  ChoixOraison = regles.ChoixOraison || "";
+  
+  // Gestion du choix multiple de préfaces
+  if (regles.Choixpreface) {
+    if (Array.isArray(regles.Choixpreface)) {
+      availablePrefaces = regles.Choixpreface;
+      Choixpreface = regles.Choixpreface[0]; // On prend la 1ère par défaut
     } else {
+      availablePrefaces = [];
+      Choixpreface = regles.Choixpreface;
     }
   }
+
+  typeCredo = regles.typeCredo || "NC";
+  celebrationType = regles.celebrationType || "Semaine";
+  Showoraisons = true;
+  Showpreface = true;
+}
 
   
 
@@ -202,19 +201,28 @@ const fullRitual = [
 // Génération du rituel filtré
 function generateRitual() {
   rituelName = inputRituelName;
-    // 1. Trouver l'objet événement complet à partir de l'ID sélectionné
-    const feteChoisie = availableEvents.find(e => e.id === selectedEventId);
+  const feteChoisie = availableEvents.find(e => e.id === selectedEventId);
 
-    if (feteChoisie) {
-        // 2. Appliquer le mapping seulement maintenant
-        applyLiturgyMapping(feteChoisie);};
+  if (feteChoisie) {
+    // Si l'ID a changé par rapport à la dernière génération, ou si c'est la première fois, on applique le mapping (Reset)
+    if (selectedEventId !== lastLoadedEventId) {
+      applyLiturgyMapping(feteChoisie);
+      lastLoadedEventId = selectedEventId;
+    }
+  }
+
+  // 2. IMPORTANT : On met à jour l'objet de données de la préface. APRES le mapping pour prendre en compte le bouton sur lequel on a cliqué
+  if (Choixpreface) {prefacedujour = preface[Choixpreface] || null;}
+  
+  // 3. Mise à jour des oraisons (si besoin)
+  if (ChoixOraison) {OraisonsDuJour = Oraisons[ChoixOraison] || null; }
 
   const options = {
     presenceBishop,
     incense,
     servants,
-    celebrationType, secret, hideRubriques, Apologies,
-    salutation, ChoixPenitentiel, hideGloria, OrdinaireLatin, oraisons: Showoraisons, showCredo, typeCredo, InvitS, PriereC,
+    celebrationType, secret, hideRubriques, Apologies, Communicantes, Messe, 
+    salutation, ChoixPenitentiel, hideGloria, OrdinaireLatin, OraisonsDuJour, Showoraisons, showCredo, typeCredo, InvitS, PriereC,
     preface, showPE, typePE, AcclamationEucharistique, DoxologieLt, NotrePère, Conclusion,
   };
 
@@ -224,59 +232,59 @@ for (const step of fullRitual) {
 
   // ---- INSERTIONS Oraisons ----
   if (step.type === "insert-antienne_ouverture" && celebrationType === "Semaine") {
-    if (Showoraisons && oraison) {
-      filteredRitual.push({ type: "oraison", segments: oraison.antienne_ouverture });
+    if (Showoraisons && OraisonsDuJour) {
+      filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.antienne_ouverture });
     }
     continue;
   }
 
   if (step.type === "insert-collecte") {
-    if (Showoraisons && oraison) {
-      filteredRitual.push({ type: "oraison", segments: oraison.collecte });
+    if (Showoraisons && OraisonsDuJour) {
+      filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.collecte });
     }
     continue;
   }
 
   if (step.type === "insert-priereSurLesOffrandes") {
-    if (Showoraisons && oraison) {
-      filteredRitual.push({ type: "oraison", segments: oraison.priereSurLesOffrandes });
+    if (Showoraisons && OraisonsDuJour) {
+      filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.priereSurLesOffrandes });
     }
     continue;
   }
 
 
   if (step.type === "insert-antienne_communion" && celebrationType === "Semaine") {
-    if (Showoraisons && oraison) {
-      filteredRitual.push({ type: "oraison", segments: oraison.antienne_communion });
+    if (Showoraisons && OraisonsDuJour) {
+      filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.antienne_communion });
     }
     continue;
   }
 
   if (step.type === "insert-priereApresLaCommunion") {
-    if (Showoraisons && oraison) {
-      filteredRitual.push({ type: "oraison", segments: oraison.priereApresLaCommunion });
+    if (Showoraisons && OraisonsDuJour) {
+      filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.priereApresLaCommunion });
     }
     continue;
   }
 
 
   if (step.type === "titre-preface") {
-    if (Showpreface && prefacedujour) {
-      filteredRitual.push({ type: "preface", items: prefacedujour.titre });
-    }
-    continue;
+  if (Showpreface && prefacedujour) {
+    filteredRitual.push({ type: "preface-titre", texte: prefacedujour.titre });
   }
+  continue;
+}
 
   if (step.type === "soustitre-preface") {
     if (Showpreface && prefacedujour) {
-      filteredRitual.push({ type: "preface", items: prefacedujour.soustitre });
+      filteredRitual.push({ type: "soustitre-preface", texte: prefacedujour.soustitre });
     }
     continue;
   }
 
   if (step.type === "insert-preface") {
     if (Showpreface && prefacedujour && typePE !== "PE4") {
-        filteredRitual.push({ type: "preface", items: prefacedujour.items });
+        filteredRitual.push({ type: "preface", segments: prefacedujour.items });
     }
     continue;
   }
@@ -360,6 +368,11 @@ for (const step of fullRitual) {
     }
   }
 }
+
+// console.log(prefacedujour.titre);
+//console.log(Array.isArray(prefacedujour.titre));
+console.log(Choixpreface);
+
 }
 
  function topFunction() {
@@ -724,12 +737,36 @@ Début section sacrements
 
       {:else if step.type === "preface"}
         <div class="preface-texte">
-          {#each step.items as items}
-            <p class={items.class || ""} style="white-space: pre-line;">
-              {@html items.texte}
+    {#each (Array.isArray(step.segments) ? step.segments : [{ texte: step.segments }]) as seg}
+            <p class={seg.class || ""} style="white-space: pre-line;">
+              {@html seg.texte}
             </p>
           {/each}
         </div>
+
+{:else if step.type === "preface-titre"}
+  <div class="variant-header">
+    <h3 class="H3">{step.texte}</h3>
+    
+    {#if availablePrefaces.length > 1}
+      <div class="variant-buttons boutons4 no-print">
+        {#each availablePrefaces as prefId, i}
+          <button 
+            class:selected={Choixpreface === prefId} 
+            on:click={() => { 
+                Choixpreface = prefId; 
+                prefacedujour = preface[Choixpreface]; // Mise à jour immédiate
+                generateRitual(); 
+            }}
+          >
+            {i + 1}
+          </button>
+        {/each}
+      </div>
+    {/if}
+  </div>
+{:else if step.type === "soustitre-preface"}
+  <p class="rubrique" style="text-align: right; margin-bottom: 0.5rem;">{step.texte}</p>
 
 {:else if step.id === "Salutation"}
   <div class="variant-header">
@@ -790,7 +827,7 @@ Début section sacrements
 {:else if step.id === "PriereC"}
   <div class="variant-header">
     <h4>{@html step.texte}</h4>
-    <div class="variant-buttons no-print">
+    <div class="variant-buttons boutons5 no-print">
       {#each Array(9) as _, i}
         {@const val = (i + 1).toString()}
         <button 
@@ -836,7 +873,7 @@ Début section sacrements
 {:else if step.id === "Doxologie"}
  <div class="variant-header">
     <h3 class="H3 no-print">{@html step.texte}</h3>
-    <div class="variant-buttons no-print">
+    <div class="variant-buttons boutons2 no-print">
       <button class:selected={DoxologieLt === false} 
         on:click={() => { DoxologieLt = false; generateRitual(); }}>1 </button>
       <button class:selected={DoxologieLt === true} 
@@ -860,7 +897,7 @@ Début section sacrements
     {:else if step.id === "Apologies"}
  <div class="variant-header">
     <h3 class="H3 no-print">{@html step.texte}</h3>
-    <div class="variant-buttons no-print">
+    <div class="variant-buttons boutons2 no-print">
       <button class:selected={Apologies === "1"} 
         on:click={() => { Apologies = "1"; generateRitual(); }}>1 </button>
       <button class:selected={Apologies === "2"} 
@@ -1019,8 +1056,8 @@ p.centre { text-align: center; line-height: 1; font-weight: 400; font-size: 1.6r
 .oraison-texte p {
   margin: 0;
   font-weight: bold;
-  font-size: 1.3rem;
-  line-height: 1.1;
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
   
 .oraison-row{ display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; }
@@ -1028,7 +1065,7 @@ p.centre { text-align: center; line-height: 1; font-weight: 400; font-size: 1.6r
 .preface-texte p {
   margin: 0;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.1;
 }
 
@@ -1239,7 +1276,7 @@ input[type="text"],
 .variant-header {
   display: flex;
   justify-content: space-between; /* Espace entre le titre et les boutons */
-  align-items: center;
+  align-items: baseline;
   align-content : center;
 }
 
@@ -1252,7 +1289,7 @@ input[type="text"],
 .variant-header h3 {
   flex: 1; /* Permet au titre de prendre tout l'espace disponible */
   text-align: center; /* Centre le texte du titre */
-  margin: 1rem 0rem; /* Supprime les marges par défaut */
+  margin: 1rem 0rem 0.5rem 0rem; /* Supprime les marges par défaut */
 }
 
 .variant-header h4 {
@@ -1268,9 +1305,28 @@ input[type="text"],
     grid-template-columns: repeat(3, 1fr); 
     gap: 8px; /* Espace entre les boutons */
     max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */
-    margin-top: 10px;
 }
 
+.boutons2 {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 8px; /* Espace entre les boutons */
+    max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */
+}
+
+.boutons4 {
+  display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 8px; /* Espace entre les boutons */
+    max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */
+}
+
+.boutons5 {
+  display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 8px; /* Espace entre les boutons */
+    max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */
+}
 .variant-buttons button {
   margin-left: 0.3rem;
   padding: 4px 8px;
@@ -1340,6 +1396,7 @@ input[type="text"],
     break-inside: avoid; /* Éviter les coupures dans les sections */
     page-break-inside: avoid; /* Compatibilité avec d'autres navigateurs */
   }
+  
 }
 
 /*****************************************************

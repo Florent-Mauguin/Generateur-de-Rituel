@@ -2,7 +2,6 @@ export const preface = {
 "1DO": {
         titre: "1ʳᵉ PRÉFACE DES DIMANCHES DU TEMPS ORDINAIRE",
     soustitre: "Le mystère pascal et le peuple de Dieu",
-    rubrique:"",
     items: [ 
         {class:"grandelettrine", texte:`Vraiment il est juste et bon,
             pour ta gloire et notre salut,`},
