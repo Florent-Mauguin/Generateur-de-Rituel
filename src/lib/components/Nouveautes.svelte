@@ -7,6 +7,19 @@
   };
 
   const releases: Release[] = [
+    /*
+    {
+      version: 'v0.3',
+      date: 'janvier 2026',
+      summary: 'Vers l'intégration des oraisons et du mapping',
+      items: [
+        { icon: '', label: '' },
+        { icon: '', label: '' },
+        { icon: '📝', label: "Suite de l'integration des oraisons : 21,2% (65/307)" },
+        { icon: '🗺️', label: "Suite du mapping : tel jour -> telle préface, oraison, etc. : 8% (50/622)" }
+      ]
+   },
+    */
    {
       version: 'v0.2',
       date: 'décembre 2025',

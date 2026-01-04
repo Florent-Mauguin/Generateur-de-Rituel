@@ -32,9 +32,9 @@
         },
         {
           title: "Oraisons",
-          desc: "Ajout de toutes les oraisons des dimanches et solennités",
-          priority: "Basse",
-          color: "yellow"
+          desc: "Ajout de toutes les oraisons du missel romain",
+          priority: "Haute",
+          color: "red"
         }
       ]
     },
@@ -77,12 +77,6 @@
         {
           title: "Evêque, concelebrant, diacre",
           desc: "Adaptation du rituel en fonction de la présence de différents ministères",
-          priority: "Basse",
-          color: "yellow"
-        },
-        {
-          title: "Fêtes et mémoires",
-          desc: "Ajout des oraisons pour l'ensemble des fêtes et mémoires du calendrier liturgique",
           priority: "Basse",
           color: "yellow"
         },
