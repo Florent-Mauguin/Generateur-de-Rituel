@@ -1522,8 +1522,8 @@ Et son règne n’aura pas de fin.*/
 
 "EPI_MA": {
     titre: "Mardi après l'épiphanie",
-    antienne_ouverture: {class:"indent1all", texte: `Béni soit celui qui vient au nom du Seigneur :
-        le Seigneur est Dieu, et il nous illumine.`},
+    antienne_ouverture: [{class:"indent1all", texte: `Béni soit celui qui vient au nom du Seigneur :
+        le Seigneur est Dieu, et il nous illumine.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, +
         c’est dans la réalité de notre chair`},
         {class:"indent1p", texte:`que ton Fils unique est apparu ; *`},
