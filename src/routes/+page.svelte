@@ -11,6 +11,12 @@ JS
     import { Document, Indent, Packer, Paragraph, TextRun } from "docx";
     import Roadmap from '$lib/components/Roadmap.svelte';
     import Nouveautes from '$lib/components/Nouveautes.svelte';
+    import cierges from '$lib/assets/cierges.svg';
+    import encensoir from '$lib/assets/encensoir.svg';
+    import missel from '$lib/assets/missel.svg';
+    import croix from '$lib/assets/croix.svg';
+    import imginsigne from '$lib/assets/imginsigne.svg';
+    import acolytat from '$lib/assets/acolytat.svg';
     import * as romcalModule from 'romcal';
     const { Romcal } = romcalModule; 
     import { France_Fr } from '@romcal/calendar.france';
@@ -54,9 +60,13 @@ const romcal = new Romcal({ localizedCalendar: France_Fr });
   let Apologies = "1";
   let Conclusion = "1";
   let Messe = "";
+
+//paramètres servants
+  let showservants = false;
+  let [incense, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes] = [false, false, false, false, false, false];
   
   let [showAutresParams, hideliturgieeucharistique, hideLiturgieParole, Sacrements, Servants, showAutresceremonie] = [false, false, false, false, false, false];
-  let [hideRubriques, presenceBishop, presenceDiacre, incense, showcat, aspersion] = [false, false, false, false, false, false];
+  let [hideRubriques, presenceBishop, presenceDiacre, showcat, aspersion] = [false, false, false, false, false];
   let servants = 0;
   let filteredRitual = [];
 
@@ -215,8 +225,8 @@ $: {hideLiturgieParole, selectedEventId, inputRituelName, secret, hideGloria, Or
     Bapteme, PremiereCommunion, Confirmation, Mariage, Ordination, celebrationType,
     sacrementDesMalades, salutation, ChoixPenitentiel, typeCredo, presenceDiacre,
     InvitS, PriereC, Choixpreface, typePE, AcclamationEucharistique, aspersion,
-    Communicantes, NotrePère, Apologies, Conclusion, hideRubriques, 
-    presenceBishop, incense, servants;
+    Communicantes, NotrePère, Apologies, Conclusion, hideRubriques, showservants,
+    presenceBishop, incense, servants, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes;
     
     generateRitual();
 }
@@ -230,7 +240,7 @@ function generateRitual() {
   const options = {
     presenceBishop,
     incense, hideliturgieeucharistique,
-    servants, presenceDiacre,
+    servants, presenceDiacre, showservants, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes,
     celebrationType, secret, hideRubriques, Apologies, Communicantes, Messe, aspersion,
     salutation, ChoixPenitentiel, hideGloria, OrdinaireLatin, OraisonsDuJour, Showoraisons, hideCredo, typeCredo, InvitS, PriereC,
     preface, hidePE, typePE, AcclamationEucharistique, DoxologieLt, NotrePère, Conclusion,
@@ -239,6 +249,10 @@ function generateRitual() {
 filteredRitual = [];
 
 for (const step of fullRitual) {
+  
+  if (!showservants && step.type === "servants") {
+    continue;
+  }
 
   // ---- INSERTIONS Oraisons ----
   if (step.type === "insert-antienne_ouverture" && celebrationType === "Semaine") {
@@ -345,30 +359,17 @@ for (const step of fullRitual) {
         if (hideRubriques && (item.type === "rubrique" || item.type === "rubriqueinterne")) {
           return false;
         }
-        const itemCond = item.conditions;
-        if (!itemCond) return true; // Pas de conditions, afficher l'élément
+        
+    if (!item.conditions || Object.keys(item.conditions).length === 0) return true;
 
-        let itemDisplay = true;
-        for (const key in itemCond) {
-          const expected = itemCond[key];
-          const actual = options[key];
-
-          if (actual === undefined) continue;
-
-          if (Array.isArray(expected)) {
-            if (!expected.includes(actual)) {
-              itemDisplay = false;
-              break;
+            // On vérifie chaque condition de l'item
+            for (const [key, expectedValue] of Object.entries(item.conditions)) {
+                if (options[key] !== expectedValue) {
+                    return false; // Désaccord entre la checkbox et la condition
+                }
             }
-          } else {
-            if (expected !== actual) {
-              itemDisplay = false;
-              break;
-            }
-          }
-        }
-        return itemDisplay;
-      });
+            return true;
+        });
 
       if (filteredItems.length > 0) {
         filteredRitual.push({ ...step, items: filteredItems });
@@ -385,27 +386,6 @@ console.log(Choixpreface);
 
 }
 
- function topFunction() {
-    document.body.scrollTop = 0; // Pour Safari
-    document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
-  }
-
-  // Fonction pour gérer le défilement
-  function scrollFunction() {
-    const mybutton = document.getElementById("scrollToTopButton");
-
-    // Sécuriser l'accès si l'élément n'existe pas
-    if (!mybutton) return;
-
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.opacity = "1";
-      mybutton.style.visibility = "visible";
-    } else {
-      mybutton.style.opacity = "0";
-      mybutton.style.visibility = "hidden";
-    }
-  }
-
   function handleAspersion(event) {
   aspersion = event.target.checked;
   if (aspersion) {
@@ -414,15 +394,33 @@ console.log(Choixpreface);
     ChoixPenitentiel = "1CP"; // Revient au rite par défaut si on décoche
   }
 }
-/* Code dégeu pour un bouton retour en haut */
-  onMount(() => {
-window.onscroll = scrollFunction;
 
-    // Nettoyage lors de la destruction du composant
-    return () => {
-      window.onscroll = null;
-    };
-  });
+let card; // Cette variable sera liée à ton élément HTML
+  let showScrollButton = false;
+
+  function scrollFunction() {
+    if (!card) return;
+    
+    // On vérifie le scroll interne du conteneur
+    if (card.scrollTop > 100) {
+      showScrollButton = true;
+    } else {
+      showScrollButton = false;
+    }
+  }
+
+  function scrollToTop() {
+    if (card) {
+      card.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  function toggleLatin() {
+    DoxologieLt = !DoxologieLt;
+  }
+
+$: if (presenceBishop) {porteinsigne = true } else {porteinsigne = false }
+
 </script>
 
 
@@ -644,7 +642,7 @@ Afficher la date
   
 
 
-<!-- Début section sacrements --> 
+<!-- Début section sacrements 
 <div class="panel">
 <div class="panel-header"
   role="button"
@@ -670,9 +668,8 @@ Afficher la date
         </div>
       {/if}
 </div>
-
+ -->
 <!-- Début section Servants -->
-<!--
 <div class="panel">
 <div class="panel-header"
   role="button"
@@ -689,11 +686,50 @@ Afficher la date
 
 {#if Servants}
         <div class="grid-buttons">
-          <label><input type="checkbox" bind:checked={incense} /> Encensement :</label>
-          <label><input type="number" min="0" bind:value={servants} /> Nombre de servants :</label>
+          <label class="toggle-container">
+            <span class="label-text">Afficher les commentaires</span>
+            <div class="switch">
+              <input type="checkbox" bind:checked={showservants} />
+              <span class="slider"></span>
+            </div>
+          </label>
+          {#if showservants}
+          <div class="servants-grid">
+          <label class="servant-option">
+            <input type="checkbox" bind:checked={cruciferaire} name="Cruciféraire">
+            <img src={croix} alt="Cruciféraire">
+            <span>Cruciféraire</span>
+          </label>
+          <label class="servant-option">
+            <input type="checkbox" bind:checked={ceroferaire} name="Céroféraires">
+            <img src={cierges} alt="Céroféraires">
+            <span>Céroféraires</span>
+          </label>
+          <label class="servant-option">
+            <input type="checkbox" bind:checked={acolytes} name="Acolytes">
+            <img src={acolytat} alt="Acolytes">
+            <span>Acolytes</span>
+          </label>
+          <label class="servant-option">
+            <input type="checkbox" bind:checked={portemissel} name="Porte-missel">
+            <img src={missel} alt="Porte-missel">
+            <span>Porte-missel</span>
+          </label>
+          <label class="servant-option">
+            <input type="checkbox" bind:checked={incense} name="Thuriféraire et naviculaire">
+            <img src={encensoir} alt="Thuriféraire et naviculaire">
+            <span>Thuriféraire et naviculaire</span>
+          </label>
+          <label class="servant-option">
+            <input type="checkbox" bind:checked={porteinsigne} name="Porte-insignes">
+            <img src={imginsigne} alt="Porte-insignes">
+            <span>Porte-insignes</span>
+          </label>
+           </div>
+              {/if}
         </div>
    {/if}
-</div>  -->
+</div> 
 <!-- Fin section Servants -->
 
 
@@ -738,7 +774,8 @@ Afficher la date
 
   <!-- Affichage du rituel généré -->
      <div class="card-wrap">
-    <div class="card">
+    <div class="card" bind:this={card} 
+    on:scroll={scrollFunction}>
 {#if filteredRitual.length > 0}
       {#if rituelName}
         <h2 class=" nomdurituel">{rituelName}</h2>
@@ -748,6 +785,17 @@ Afficher la date
   {#each filteredRitual as step}
     {#if step.type === "pageBreak"}
       <div class="page-break" aria-hidden="true"></div>
+
+  {:else if step.type === "servants"}
+    <div class="servants-container no-print-break">
+      {#if step.items}
+        {#each step.items as item}
+          <span class="servants-line">{@html item.texte}</span>
+        {/each}
+      {:else}
+        <span class="servants-line">{@html step.texte}</span>
+      {/if}
+    </div>
 
 
       {:else if step.type === "oraison"}
@@ -829,15 +877,15 @@ Afficher la date
   </div>
 
   {:else if step.id === "Professiondefoi"}
-  <div class="variant-header">
-    <h2>{@html step.texte}</h2>
-    <div class="variant-buttons no-print">
+  <div class="variant-header2">
+        <h2 style="text-align: center;">{@html step.texte}</h2>
+    <div class="variant-buttons2 no-print" style="margin-top: 0">
       <button class:selected={typeCredo === "NC"} 
-        on:click={() => { typeCredo = "NC"; }}>1 </button>
+        on:click={() => { typeCredo = "NC"; }}>Symbole de Nicée-Constantinople</button>
       <button class:selected={typeCredo === "AP"} 
-        on:click={() => { typeCredo = "AP"; }}>2 </button>
+        on:click={() => { typeCredo = "AP"; }}>Symbole des apôtres</button>
       <button class:selected={typeCredo === "Lt"} 
-        on:click={() => { typeCredo = "Lt";  }}>3 </button>
+        on:click={() => { typeCredo = "Lt";  }}>Symbole de N-C en Latin</button>
     </div>
   </div>
 
@@ -875,18 +923,18 @@ Afficher la date
   </div>
 
   {:else if ["PE1", "PE2", "PE3", "PE4"].includes(step.id)}
-  <div class="variant-header">
-    <h3 class="H3">{@html step.texte}</h3>
-    <div class="variant-buttons no-print no-wrap">
+  <div class="variant-header2">
+    <div class="variant-buttons2 no-print no-wrap">
       <button class:selected={typePE === "PE1"} 
-        on:click={() => { typePE = "PE1";  }}>1 </button>
+        on:click={() => { typePE = "PE1";  }}>Prière Eucharistique 1</button>
       <button class:selected={typePE === "PE2"} 
-        on:click={() => { typePE = "PE2";  }}>2 </button>
+        on:click={() => { typePE = "PE2";  }}>Prière Eucharistique 2</button>
       <button class:selected={typePE === "PE3"} 
-        on:click={() => { typePE = "PE3";  }}>3 </button>
+        on:click={() => { typePE = "PE3";  }}>Prière Eucharistique 3</button>
       <button class:selected={typePE === "PE4"} 
-        on:click={() => { typePE = "PE4";  }}>4 </button>
+        on:click={() => { typePE = "PE4";  }}>Prière Eucharistique 4</button>
     </div>
+        <h3 class="H3">{@html step.texte}</h3>
   </div>
 
 {:else if step.id === "Anamnèse"}
@@ -906,12 +954,13 @@ Afficher la date
   
 {:else if step.id === "Doxologie"}
  <div class="variant-header">
-    <h3 class="H3 no-print">{@html step.texte}</h3>
-    <div class="variant-buttons boutons2 no-print">
-      <button class:selected={DoxologieLt === false} 
-        on:click={() => { DoxologieLt = false;  }}>1 </button>
-      <button class:selected={DoxologieLt === true} 
-        on:click={() => { DoxologieLt = true;  }}>2 </button>
+    <p class="rubrique">{@html step.texte}</p>
+    <div class="no-print">
+      <button 
+    class="btn-toggle-latin" 
+    class:active={DoxologieLt} 
+    on:click={toggleLatin}
+  >En Latin</button>
     </div>
   </div>
 
@@ -964,9 +1013,16 @@ Afficher la date
           <p class="{step.type} texte {step.class || ''}">{@html step.texte}</p>
     {/if}
   {/each}
-    <button on:click={topFunction} id="scrollToTopButton" class="scrollToTopButton no-print" title="Haut de page">  
-    ⭱ </button>
-
+  {#if showScrollButton}
+      <button 
+        id="scrollToTopButton" 
+        on:click={scrollToTop}
+        class="scrollToTopButton no-print"
+        title="Haut de page"
+      >
+        ⭱
+      </button>
+    {/if}
   {/if}
 </div>
 </div>
@@ -986,152 +1042,67 @@ CSS
 
 
 <style>
-:root {
-  --brand: #495057;
-  --accent: #b30000; /* rouge liturgique */
-  --bg: #fff;
-  --card: #ffffff;
-  --muted: #6c757d;
-  --radius: 10px;
-  --pad: 1rem;
-  --gap: 1rem;
-  --font-main: "Times New Roman", Times, serif;
-}
-
-:global(body, html) {
-    background-color: #3D3D3D;
-    margin: 0;
-}
-
-.container {
-  background: transparent;
-  display: grid;
-  grid-template-columns: 400px 1fr; 
-  height: 100vh;
-}
-
-.sidebar {
-  background-color: transparent;
-  color: white;
-  padding: 20px;
-  overflow-y: auto;
-  position: sticky;
-}
-
-
-.card-wrap {
-  background: #E1E1E1;
-  --r: 20px;
-  border-radius: 10px;
-  padding: 2.5rem 8rem 0rem 8rem;
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-
+:root { --brand: #495057; --accent: #b30000 !important; /* rouge liturgique */ --bg: #fff; --card: #ffffff; --muted: #6c757d; --radius: 10px; --pad: 1rem; --gap: 1rem; --font-main: "Times New Roman", Times, serif; }
+:global(body, html) { background-color: #3D3D3D; margin: 0; padding: 0; height: 100vh; overflow: hidden; /* Empêche le scroll sur toute la page */ }
+.container { background: transparent; display: grid; grid-template-columns: 400px 1fr; height: 100vh; width: 100vw; transition: grid-template-columns 0.3s ease; }
+.sidebar { background-color: transparent; color: white; padding: 20px; overflow-y: auto; position: sticky; scrollbar-width: none; -ms-overflow-style: none; }
+.sidebar::-webkit-scrollbar { display: none; }
+.card-wrap { background: #E1E1E1; --r: 20px; border-radius: 10px; padding: 2.5rem 8rem 0rem 8rem; margin: 20px auto; display: flex; justify-content: center; width: 100%; box-sizing: border-box; }
 /* --- LA FEUILLE UNIQUE (Blanche) --- */
-.card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 40px 80px;
-  box-shadow:0 4px 20px rgba(0,0,0,.15);
-  width: 100%;
-  max-width: 850px;
-  min-height: 180mm; 
-  box-sizing: border-box;
-}
-
-.brand-chip {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  background-color: #4A141C; /* Le rouge bordeaux de la maquette */
-  color: #ffffff;
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 14px;
-  border-radius: 20px; /* Très arrondi pour l'effet "chipset" */
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-}
-
-.prempare {
-  background-color: #50504F; /* Le rouge bordeaux de la maquette */
-  color: #ffffff;
-  padding: 15px 14px;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-/*****************************************************
- * BASE TYPO
- *****************************************************/
+.card { background: #fff; padding: 40px 80px; box-shadow:0 4px 20px rgba(0,0,0,.15); width: 100%; max-width: 850px; min-height: 180mm; box-sizing: border-box; position: sticky; top: 20px; height: calc(100vh - 40px); overflow-y: auto; }
+.brand-chip { display: flex; align-items: center; margin-bottom: 1.5rem; background-color: #4A141C; /* Le rouge bordeaux de la maquette */ color: #ffffff; display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 20px; /* Très arrondi pour l'effet "chipset" */ font-size: 0.85rem; letter-spacing: 1px; }
+.prempare { background-color: #50504F; /* Le rouge bordeaux de la maquette */ color: #ffffff; padding: 15px 14px; border-radius: 10px; margin-bottom: 1rem; }
+/***************************************************** * BASE TYPO *****************************************************/
 .texte{ white-space: pre-line; margin:0.01rem 0; }
-
-.tableau p {
-    margin: 0; /* Supprime les marges */
-    white-space: pre-line;
-  text-align: left;
-}
-
-p {
-  line-height: 1.3;
-  font-family: var(--font-main);
-  text-align: justify;
-}
-
-/*****************************************************
- * TITRES
- *****************************************************/
-.H1, .H2, .H3, .H4 {
-  font-family: var(--font-main);
-  display: block;
-  text-align: center;
-  page-break-inside: avoid;
-}
-
+.tableau p { margin: 0; /* Supprime les marges */ white-space: pre-line; text-align: left; }
+p { line-height: 1.3; font-family: var(--font-main); text-align: justify; }
+/***************************************************** * TITRES *****************************************************/
+.H1, .H2, .H3, .H4 { font-family: var(--font-main); display: block; text-align: center; page-break-inside: avoid; }
 .nomdurituel {text-align: right; font-size: 1.2rem; margin:0 0 2rem 0; font-weight: 600 }
 .H1 { font-size: 1.8rem; font-weight: 700; margin:3rem 0 1rem 0; }
 .H2 { font-size: 1.4rem; font-weight: 700; margin:1.5rem 0 1rem 0;}
 .H3 { font-size: 1.1rem; color: var(--accent); font-weight: 700; margin:1.5rem 0 1rem 0;}
 .H4 { font-size: 1rem; font-weight: 300; margin:1rem 0 0.5rem 0; }
 h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2rem; letter-spacing: 0.2px;}
-.premiergénéré { text-align: center; font-size: 2rem; margin:0.5rem 0 1rem 0; color: #b30000; font-family: garamond  }
+.premiergénéré { text-align: center; font-size: 2rem; margin:0.5rem 0 1rem 0; color: #b30000; font-family: garamond }
 .sansmarge { margin:0 0 1rem 0; }
-
-/*****************************************************
- * DIALOGUES (V / ℟)
- *****************************************************/
-.dialogueV {
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height:1.2;
-}
-
-.dialogueR {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  line-height:1.2;
-}
-.dialogueR::before {
-  content: "℟. ";
-  color: var(--accent);
-}
-
-.tableau .rubrique {
-  margin: 0.5rem 0;
-}
-/*****************************************************
- * INDENTATIONS ET RUBRIQUES
- *****************************************************/
-.rubrique { color: var(--accent); margin:0.3rem 0;}
+/***************************************************** * DIALOGUES (V / ℟) *****************************************************/
+.dialogueV { font-weight: bold; font-size: 1.2rem; line-height:1.2; }
+.dialogueR { font-size: 1.2rem; margin-bottom: 0.5rem; line-height:1.2; }
+.dialogueR::before { content: "℟. "; color: var(--accent); }
+.tableau .rubrique { margin: 0.5rem 0; }
+/***************************************************** * ORAISON *****************************************************/
+.oraison-texte p { margin: 0; font-weight: bold; font-size: 1.2rem; line-height: 1.2; }
+.oraison-row{ display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; }
+.preface-texte p { margin: 0; font-weight: bold; font-size: 1.2rem; line-height: 1.1; }
+/***************************************************** * INDENTATIONS ET RUBRIQUES *****************************************************/
+.rubrique { color: var(--accent); margin:0.3rem 0; font-weight: normal; }
 .rubriqueinterne { color: var(--accent); margin:0;}
+/* Le conteneur global */
+.servants-container {
+    border-left: 5px solid #2F5D8A;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    color: #2F5D8A;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+.servants-container + .servants-container {
+    margin-top: 0rem; /* Espace entre les conteneurs */
+}
+
+/* Les lignes à l'intérieur */
+.servants-line {
+    margin: 0.3rem 0; /* Espace entre les lignes de texte */
+    display: block;
+}
+
+.servants-line:first-child { margin-top: 0; }
+.servants-line:last-child { margin-bottom: 0; }
+.paragraph.servants + .paragraph.servants { margin-top: 0;}
 .indent1all { text-indent: -20px; padding-left: 20px; } 
 .indent1p { text-indent: 20px; }
 .indent1g { text-indent: 50px; }
-.indent1allg { text-indent: -20px; padding-left: 70px; } 
+.indent1allg { text-indent: -20px; padding-left: 70px; }
 .indent1gg { text-indent: 70px; }
 .indentallg { padding-left: 50px; }
 .indentallp { padding-left: 20px; }
@@ -1139,739 +1110,176 @@ p.centre { text-align: center; line-height: 1; font-weight: 400; font-size: 1.6r
 .lettrine::first-letter { color: var(--accent); font-weight: bold }
 .sautdeligne {line-height: 0.6;}
 .preface-texte .sautdeligne { line-height: 0.6; }
-.voixbasse { font-style: italic; font-size: 1.2rem;   line-height:1.1; }
-
-.grandelettrine::first-letter {
-  color: var(--accent);
-  font-size: 48px;
-  font-weight: 700;
-  float: left;
-  line-height: 0.85;
-  padding-top: 0.3rem;
-}
-
-/*****************************************************
- * ORAISON
- *****************************************************/
-.oraison-texte p {
-  margin: 0;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 1.2;
-}
-  
-.oraison-row{ display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; }
-
-.preface-texte p {
-  margin: 0;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 1.1;
-}
-
-
-/*****************************************************
- * PANELS — (PARAMÈTRES DU GÉNÉRATEUR)
- *****************************************************/
-.panel {
-  margin-bottom: 0.75rem;
-  padding: 0.6rem;
-  border-radius: calc(var(--radius) - 2px);
-  border: 3px solid rgba(23, 24, 24, 0.175);
-}
-
+.voixbasse { font-style: italic; font-size: 1.2rem; line-height:1.1; }
+.grandelettrine::first-letter { color: var(--accent); font-size: 48px; font-weight: 700; float: left; line-height: 0.85; padding-top: 0.3rem; }
+/***************************************************** * PANELS — (PARAMÈTRES DU GÉNÉRATEUR) *****************************************************/
+.panel { margin-bottom: 0.75rem; padding: 0.6rem; border-radius: calc(var(--radius) - 2px); border: 3px solid rgba(23, 24, 24, 0.175); }
 .panel + .panel-header { margin-top: 1rem; } /* espace visuel entre blocks */
-
-.panel-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding: 0.5rem 0.6rem;
-  cursor: pointer;
-  border-radius: calc(var(--radius) - 4px);
-  transition: background 0.12s ease, transform 0.08s ease;
-  border: 2px solid transparent;
-}
- 
-.panel-content {
-  padding: 0.6rem 0.2rem 0.2rem 0.2rem;
-}
-
+.panel-header { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.5rem 0.6rem; cursor: pointer; border-radius: calc(var(--radius) - 4px); transition: background 0.12s ease, transform 0.08s ease; border: 2px solid transparent; }
+.panel-content { padding: 0.6rem 0.2rem 0.2rem 0.2rem; }
 /* arrow */
 .arrow{ color:#E1E1E1; transition: transform .18s ease; }
 .arrow.open{ transform: rotate(90deg); color:#3D3D3D; }
-
-/*****************************************************
- * CHAMPS DE FORMULAIRE
- *****************************************************/
-label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  accent-color: var(--brand);
-  
-}
-/*
-input[type="number"],*/
-input[type="text"],
-#NomRituel {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0.5rem;
-  border-radius: 6px;
-  border: 2px solid rgba(0,0,0,0.1);
-  font-size: 1.1rem;
-}
-
+/***************************************************** * CHAMPS DE FORMULAIRE *****************************************************/
+label { display: block; }
+label.toggle-container {margin-bottom: 0.5rem;}
+input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--brand); }
+input[type="text"], #NomRituel { width: 100%; box-sizing: border-box; padding: 0.5rem; border-radius: 6px; border: 2px solid rgba(0,0,0,0.1); font-size: 1.1rem; }
 .sub-options-inline{ display:inline-flex; gap:0.6rem; align-items:center; }
-
-/*****************************************************
- * GRILLE SACREMENTS
- *****************************************************/
-.sacrements-grid{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  gap: 0.5rem 1rem;
-  align-items:start;
-}
-/*****************************************************
- * BOUTONS
- *****************************************************/
-.css-button-sharp--grey {
-  min-width: 130px;
-  height: 40px;
-  color: #E1E1E1;
-  padding: 6px 14px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.18s ease;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: center;
-  border: 2px solid #4A141C;
-  background: #4A141C;
-}
-
-.css-button-sharp--grey:hover {
-  background: #E1E1E1;
-  color: #4A141C;
-  transform: translateY(-2px);
-}
-
-.css-button-ghost {
-  background: transparent;
-  color: var(--brand);
-  border: 2px dashed rgba(73,80,87,0.12);
-}
-
-.button-section {
-    position: sticky;
-  overflow: auto;
-  display: flex;
-  gap: 110px;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 80px;
-}
-
-.variant-buttons.no-wrap {
-  display:flex;
-    flex-wrap: nowrap;
-  }
-
-.button-section + .card {     margin-top: 1rem;  }
-
-
-/*****************************************************
- * BOUTONS POUR VARIANTES
- *****************************************************/
-.variant-header {
-  display: flex;
-  justify-content: space-between; /* Espace entre le titre et les boutons */
-  align-items: baseline;
-  align-content : center;
-}
-
-.variant-header h2 {
-  flex: 1; /* Permet au titre de prendre tout l'espace disponible */
-  text-align: center; /* Centre le texte du titre */
-  margin: 1rem 0rem; /* Supprime les marges par défaut */
-}
-
-.variant-header h3 {
-  flex: 1; /* Permet au titre de prendre tout l'espace disponible */
-  text-align: center; /* Centre le texte du titre */
-  margin: 1rem 0rem 0.5rem 0rem; /* Supprime les marges par défaut */
-}
-
-.variant-header h4 {
-  flex: 1; /* Permet au titre de prendre tout l'espace disponible */
-  text-align: center; /* Centre le texte du titre */
-  margin: 1rem 0rem; /* Supprime les marges par défaut */
-  font-weight: normal;
-}
-
-.variant-buttons {
-  display: grid;
-    /* Crée exactement 3 colonnes de largeur égale */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 8px; /* Espace entre les boutons */
-    max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */
-}
-
-.boutons2 {
-  display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 8px; /* Espace entre les boutons */
-    max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */
-}
-
-.boutons4 {
-  display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 8px; /* Espace entre les boutons */
-    max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */
-}
-
-.boutons5 {
-  display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 8px; /* Espace entre les boutons */
-    max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */
-}
-.variant-buttons button {
-  margin-left: 0.3rem;
-  padding: 4px 8px;
-  border: 1px solid #555;
-  border-radius: 5px;
-  background: white;
-  cursor: pointer;
-}
-
-.variant-buttons button.selected {
-  background: #b30000;
-  color: white;
-  font-weight: bold;
-}
-
-/*****************************************************
- * SAUTS DE PAGE (PDF/WORD)
- *****************************************************/
-.page-break {
-  display: block;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  break-after: page;
-}
-
-.card .oraison-texte,
-.card p,
-.card .H1,
-.card .H2 {
-  break-inside: avoid;
-}
-
-/*****************************************************
- * MOBILE — POLICES LÉGÈREMENT RÉDUITES
- *****************************************************/
-@media (max-width: 600px) {
-  .H1 { font-size: 1.5rem; margin :1.5rem 0 1rem 0; }
-  .premiergénéré { margin :0.5rem 0 1rem 0; }
-  .H2 { font-size: 1.2rem; margin: 1rem 0 1rem 0; }
-  .H3 { font-size: 1rem; }
-  p { font-size: 0.7rem; }
-  p.centre { font-size: 1rem; }
-  .oraison-texte p { font-size: 0.8rem; }
-  .preface-texte p { font-size: 0.8rem; }
-  .dialogueR {    font-size: 0.8rem;  }
-  .dialogueV {    font-size: 0.8rem;  }
-  .indent1g { text-indent: 15px;  }
-  .indentallg { padding-left: 30px; }
-  .grandelettrine::first-letter { font-size: 36px; }
-  .variant-buttons button {
-    padding: 2px 4px;
-    margin-left: 0; }
-}
-
-/*****************************************************
- * ONBOARDING MODAL
- *****************************************************/
-  .overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.4);
-      inset: 0;                      /* couvre toute la page */
-  pointer-events: auto;     
-  }
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 2rem 2rem 1.5rem 2rem;
-    max-height: 70vh;
-    border-radius: 10px;
-    width: 500px;
-    max-width: 90%;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    overflow: hidden; 
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
-}
-  .modal-body {
-  flex: 1;
-  padding: 0 0.5rem;
-  overflow-y: auto; /* scroll si contenu trop grand */
-  margin: 0 0 1rem 0;
-}
-  .modal h2 {
-    font-size: 2rem;
-    margin: 0 0 0.5rem;
-    text-align: center;
-  }
-  .modal p {
-    text-align: justify;
-    font-size: 1.1rem; /* Taille de police standard pour le contenu */
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: #444;
-  }
-  .nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  @media (max-width: 600px) {
-  .modal {
-    width: 80%;            /* prend 80% de la largeur du mobile */
-    max-width: 80%;
-    border-radius: 12px;
-    padding: 1rem;
-  }}
-
-  .btn-close {
-  position: absolute;
-  top: 4px;
-  right: 12px;
-  background: transparent;
-  border: none;
-  font-size: 40px;
-  color: #999;
-  cursor: pointer;
-  line-height: 1;
-  padding: 5px;
-  transition: color 0.2s;
-}
-
-.btn-close:hover {
-  color: var(--accent, #b30000); /* Devient rouge au survol */
-}
-/*****************************************************
- * BOUTONS MODAL
- *****************************************************/
-  button {
-    padding: 0.6rem 1rem;
-    border: none;
-    border-radius: 6px;
-    background: #ddd;
-    cursor: pointer;
-  }
-  button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  .dontshow {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-/*****************************************************
- * BOUTON ONBOARDING FIXE
- *****************************************************/
-.onboard-btn {
-  margin: 0 1.5rem 0 0.5rem;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background: #4A141C;
-    color: #E1E1E1;
-    font-size: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.1s ease;
-
-    /* Centrage avec Flexbox */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-  .onboard-btn:hover {
-    transform: scale(1.12);
-  }
-
-/*****************************************************
- * Liturgie du jour - Sélecteur d'événements
- *****************************************************/
-.event-card {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 10px 10px 10px;
-    background: #E1E1E1;
-    cursor: pointer;
-    margin: 0.5rem 0 0 0;
-    border-left: 12px solid #ccc; /* Épaisseur par défaut */
-    color: #3D3D3D;
-    font-size: 1rem;
-    border-radius: 0 6px 6px 0; /* Arrondi uniquement à droite */
-    transition: all 0.2s ease;
-}
-
-  .event-card.active {
-    background: #e9ecef;
-box-shadow: inset 2px 0 5px rgba(0,0,0,0.1);
-  }
-
-  .details { display: flex; flex-direction: column; }
-  .name { font-weight: bold; }
-  .rank { font-size: 0.8rem; color: #666; text-transform: uppercase; }
-
-  input[type="radio"] {
-  accent-color: #4A141C; /* Remplace le bleu par votre rouge liturgique */
-  cursor: pointer;
-}
-  
-  .single-event {
-    display: block;
-    padding: 10px;
-    background: #E1E1E1;
-    border-radius: 0 6px 6px 0;
-    margin: 0.5rem 0 0 0;}
-  .hint { font-size: 0.8rem; margin-top: 4px; }
-  
-  input[type="date"], input[type="text"] {
-    padding: 0.38rem 0.5rem;
-    border: 1px solid rgba(0,0,0,0.08);
-    background-color: #E1E1E1;
-    border-radius: 6px;
-  }
-
-#selectdate {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-/*****************************************************
- * BOUTONS - Retour en haut de page
- *****************************************************/
-.scrollToTopButton {
-  z-index: 100;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  bottom: 20px;
-  margin-left: 800px; /* Positionné à droite */
-  border: 2px solid var(--brand);
-  border-radius: 50%; /* Bouton rond */
-  background-color: #3D3D3D; /* Couleur de fond */
-  color: white; /* Couleur de la flèche */
-  font-size: 2rem; /* Taille de la flèche */
-  font-weight: bold;
-  outline: none;
-  width: 50px; /* Largeur du bouton */
-  height: 50px; /* Hauteur du bouton */
-  padding: 0; /* Supprime les marges internes */
-    cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-}
-
-
-.scrollToTopButton:hover,
-.scrollToTopButton:focus,
-.scrollToTopButton:focus-within {
-  cursor: pointer;
-      transform: scale(1.12);
-        background: #fff;
-  color: var(--brand);
-      
-}
-
-/*****************************************************
- * Règles d'impression
- *****************************************************/
-@media print {
-@page {
-  size: A4;
-  margin: 1cm;
-}
-
-:global(body, html) {
-    margin: 0 !important;
-    padding: 0 !important;
-      background-color: white;
-  }
-
-  .container {
-    display: block !important;
-    width: 100% !important;
-  }
-
-  .sidebar,
-  .no-print,
-  #scrollToTopButton {
-    display: none !important;
-  }
-
-  .card {
-    max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    box-shadow: none !important;
-    border: none !important;
-    background: white !important;
-  }
-
-  .card-wrap {
-    padding: 0 !important;
-    margin: 0;
-  }
-
-  /* Évite les coupures moches */
-  .card p,
-  .card .oraison-texte,
-  .card .preface-texte,
-  .card h1,
-  .card h2,
-  .card h3 {
-    break-inside: avoid;
-  }
-}
-
-/*****************************************************
- * BOUTON DE CONTACT
- *****************************************************/
-.floating-contact-btn {
-  position: absolute;
-  top: 28px;
-  right: 8px;
-  z-index: 2000; /* Au-dessus de la sidebar et du rituel */
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  background-color: #4A141C; 
-  color: #E1E1E1;
-  text-decoration: none;
-  padding: 4px 10px;
-  cursor: pointer;
-  border-radius: 10px;
-  border: 1px solid #4A141C;;
-  font-family: sans-serif;
-  font-size: 0.85rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-
-.floating-contact-btn:hover {
-  background: #E1E1E1;
-  color: #4A141C;
-  transform: translateY(-2px);
-}
-
-.floating-contact-btn .icon {
-  font-size: 1.1rem;
-}
-
-
-/*****************************************************
- * BOUTONS TOGGLE
- *****************************************************/
-.toggle-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  cursor: pointer;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-}
-
+/***************************************************** * GRILLE SACREMENTS *****************************************************/
+.sacrements-grid{ display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0.5rem 1rem; align-items:start; }
+/***************************************************** * BOUTONS *****************************************************/
+.css-button-sharp--grey { min-width: 130px; height: 40px; color: #E1E1E1; padding: 6px 14px; font-weight: 700; cursor: pointer; transition: all 0.18s ease; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; justify-content: center; border: 2px solid #4A141C; background: #4A141C; }
+.css-button-sharp--grey:hover { background: #E1E1E1; color: #4A141C; transform: translateY(-2px); }
+.css-button-ghost { background: transparent; color: var(--brand); border: 2px dashed rgba(73,80,87,0.12); }
+.button-section { position: sticky; overflow: auto; display: flex; gap: 110px; flex-wrap: wrap; align-items: center; height: 80px; margin-bottom: 40px; }
+.variant-buttons.no-wrap { display:flex; flex-wrap: nowrap; }
+.button-section + .card { margin-top: 1rem; }
+/***************************************************** * BOUTONS POUR VARIANTES *****************************************************/
+.variant-header { display: flex; justify-content: space-between; /* Espace entre le titre et les boutons */ align-items: baseline; align-content : center; }
+.variant-header2 { display: flex; flex-direction: column; }
+.variant-buttons2 { margin-top: 2rem; display: flex; justify-content: space-between; }
+.variant-header h2 { flex: 1; /* Permet au titre de prendre tout l'espace disponible */ text-align: center; /* Centre le texte du titre */ margin: 1rem 0rem; /* Supprime les marges par défaut */ }
+.variant-header h3 { flex: 1; /* Permet au titre de prendre tout l'espace disponible */ text-align: center; /* Centre le texte du titre */ margin: 1rem 0rem 0.5rem 0rem; /* Supprime les marges par défaut */ }
+.variant-header h4 { flex: 1; /* Permet au titre de prendre tout l'espace disponible */ text-align: center; /* Centre le texte du titre */ margin: 1rem 0rem; /* Supprime les marges par défaut */ font-weight: normal; }
+.variant-buttons { display: grid; /* Crée exactement 3 colonnes de largeur égale */ grid-template-columns: repeat(3, 1fr); gap: 8px; /* Espace entre les boutons */ max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */ }
+.boutons2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; max-width: 300px; }
+.boutons4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-width: 300px; }
+.boutons5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; max-width: 300px; }
+.variant-buttons button { margin-left: 0.3rem; padding: 4px 8px; border: 1px solid #555; border-radius: 5px; background: white; cursor: pointer; }
+.variant-buttons button.selected { background: #652430; color: white; font-weight: bold; }
+.variant-buttons2 button { margin-left: 0.3rem; padding: 12px 8px; border: 1px solid #b1b1b1; border-radius: 5px; background: #E9ECEF; cursor: pointer; font-weight: bold; }
+.variant-buttons2 button.selected { background: #652430; color: white; font-weight: bold; }
+.btn-toggle-latin { padding: 10px; width: 100%; border: 2px solid #652430; background: white; color: #652430; cursor: pointer; font-weight: bold; transition: all 0.3s; }
+.btn-toggle-latin.active { background: #652430; color: white; }
+/***************************************************** * SAUTS DE PAGE (PDF/WORD) *****************************************************/
+.page-break { display: block; height: 0; margin: 0; padding: 0; break-after: page; }
+.card .oraison-texte, .card p, .card .H1, .card .H2 { break-inside: avoid; }
+/***************************************************** * MOBILE — POLICES LÉGÈREMENT RÉDUITES *****************************************************/
+@media (max-width: 600px) { .H1 { font-size: 1.5rem; margin :1.5rem 0 1rem 0; } .premiergénéré { margin :0.5rem 0 1rem 0; } .H2 { font-size: 1.2rem; margin: 1rem 0 1rem 0; } .H3 { font-size: 1rem; } p { font-size: 0.7rem; } p.centre { font-size: 1rem; } .oraison-texte p { font-size: 0.8rem; } .preface-texte p { font-size: 0.8rem; } .dialogueR { font-size: 0.8rem; } .dialogueV { font-size: 0.8rem; } .indent1g { text-indent: 15px; } .indentallg { padding-left: 30px; } .grandelettrine::first-letter { font-size: 36px; } .variant-buttons button { padding: 2px 4px; margin-left: 0; } }
+/***************************************************** * ONBOARDING MODAL *****************************************************/
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); inset: 0; /* couvre toute la page */ pointer-events: auto; }
+.modal { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 2rem 2rem 1.5rem 2rem; max-height: 70vh; border-radius: 10px; width: 500px; max-width: 90%; box-shadow: 0 10px 25px rgba(0,0,0,0.2); overflow: hidden; display: flex; flex-direction: column; z-index: 100; }
+.modal-body { flex: 1; padding: 0 0.5rem; overflow-y: auto; /* scroll si contenu trop grand */ margin: 0 0 1rem 0; }
+.modal h2 { font-size: 2rem; margin: 0 0 0.5rem; text-align: center; }
+.modal p { text-align: justify; font-size: 1.1rem; /* Taille de police standard pour le contenu */ line-height: 1.6; margin-bottom: 1.5rem; color: #444; }
+.nav { display: flex; justify-content: space-between; }
+@media (max-width: 600px) { .modal { width: 80%; /* prend 80% de la largeur du mobile */ max-width: 80%; border-radius: 12px; padding: 1rem; } }
+.btn-close { position: absolute; top: 4px; right: 12px; background: transparent; border: none; font-size: 40px; color: #999; cursor: pointer; line-height: 1; padding: 5px; transition: color 0.2s; }
+.btn-close:hover { color: var(--accent, #b30000); /* Devient rouge au survol */ }
+/***************************************************** * BOUTONS MODAL *****************************************************/
+button { padding: 0.6rem 1rem; border: none; border-radius: 6px; background: #ddd; cursor: pointer; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+.dontshow { margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+/***************************************************** * BOUTON ONBOARDING FIXE *****************************************************/
+.onboard-btn { margin: 0 1.5rem 0 0.5rem; width: 60px; height: 60px; border-radius: 50%; border: none; background: #4A141C; color: #E1E1E1; font-size: 2rem; font-weight: bold; cursor: pointer; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); transition: transform 0.1s ease; display: flex; align-items: center; justify-content: center; }
+.onboard-btn:hover { transform: scale(1.12); }
+/***************************************************** * Liturgie du jour - Sélecteur d'événements *****************************************************/
+.event-card { display: flex; align-items: center; gap: 12px; padding: 10px 10px 10px 10px; background: #E1E1E1; cursor: pointer; margin: 0.5rem 0 0 0; border-left: 12px solid #ccc; /* Épaisseur par défaut */ color: #3D3D3D; font-size: 1rem; border-radius: 0 6px 6px 0; /* Arrondi uniquement à droite */ transition: all 0.2s ease; }
+.event-card.active { background: #e9ecef; box-shadow: inset 2px 0 5px rgba(0,0,0,0.1); }
+.details { display: flex; flex-direction: column; }
+.name { font-weight: bold; }
+.rank { font-size: 0.8rem; color: #666; text-transform: uppercase; }
+input[type="radio"] { accent-color: #4A141C; /* Remplace le bleu par votre rouge liturgique */ cursor: pointer; }
+.single-event { display: block; padding: 10px; background: #E1E1E1; border-radius: 0 6px 6px 0; margin: 0.5rem 0 0 0;}
+.hint { font-size: 0.8rem; margin-top: 4px; }
+input[type="date"], input[type="text"] { padding: 0.38rem 0.5rem; border: 1px solid rgba(0,0,0,0.08); background-color: #E1E1E1; border-radius: 6px; }
+#selectdate { display: flex; justify-content: flex-start; align-items: center; }
+/***************************************************** * BOUTONS - Retour en haut de page *****************************************************/
+.scrollToTopButton { z-index: 100; transition: background-color 0.3s, opacity 0.5s, visibility 0.5s; position: fixed; bottom: 20px; margin-left: 800px; /* Positionné à droite */ border: 2px solid var(--brand); border-radius: 50%; /* Bouton rond */ background-color: #3D3D3D; /* Couleur de fond */ color: white; /* Couleur de la flèche */ font-size: 2rem; /* Taille de la flèche */ font-weight: bold; outline: none; width: 50px; /* Largeur du bouton */ height: 50px; /* Hauteur du bouton */ padding: 0; /* Supprime les marges internes */ cursor: pointer; display: flex; justify-content: center; }
+.scrollToTopButton:hover, .scrollToTopButton:focus, .scrollToTopButton:focus-within { cursor: pointer; transform: scale(1.12); background: #fff; color: var(--brand); }
+/***************************************************** * Règles d'impression *****************************************************/
+@media print { @page { size: A4; margin: 1.5cm; }
+:global(body, html) { overflow: visible !important; height: auto !important; margin: 0 !important; padding: 0 !important; background-color: white; }
+.container { display: block !important; width: 100% !important; }
+.sidebar, .no-print, #scrollToTopButton { display: none !important; }
+.card { max-width: none !important; width: 100% !important; margin: 0 !important; box-shadow: none !important; border: none !important; background: white !important; overflow: visible !important; height: auto !important; }
+.card-wrap { padding: 0 !important; margin: 0; }
+/* Évite les coupures moches */
+.card p, .card .oraison-texte, .card .preface-texte, .card h2, .card h3 { break-inside: avoid; } }
+/***************************************************** * BOUTON DE CONTACT *****************************************************/
+.floating-contact-btn { position: absolute; top: 28px; right: 8px; z-index: 2000; /* Au-dessus de la sidebar et du rituel */ display: flex; align-items: center; gap: 4px; background-color: #4A141C; color: #E1E1E1; text-decoration: none; padding: 4px 10px; cursor: pointer; border-radius: 10px; border: 1px solid #4A141C;; font-family: sans-serif; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; }
+.floating-contact-btn:hover { background: #E1E1E1; color: #4A141C; transform: translateY(-2px); }
+.floating-contact-btn .icon { font-size: 1.1rem; }
+/***************************************************** * BOUTONS TOGGLE *****************************************************/
+.toggle-container { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; cursor: pointer; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+.switch { position: relative; display: inline-block; width: 40px; height: 20px; }
 .switch input { opacity: 0; width: 0; height: 0; }
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #777;
-  transition: .4s;
-  border-radius: 20px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 14px; width: 14px;
-  left: 3px; bottom: 3px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
-}
-
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #777; transition: .4s; border-radius: 20px; }
+.slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
 input:checked + .slider { background-color: #4A141C; }
 input:checked + .slider:before { transform: translateX(20px); }
-
-
 /* --- MEDIA QUERIES (TABLETTES ET MOBILES) --- */
-
 @media (max-width: 768px) {
-
-  /* ---- STRUCTURE GÉNÉRALE ---- */
-
-  .container {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
-
-  .sidebar {
-    position: relative;
-    padding: 1rem;
-    max-height: none;
-  }
-
-  .card-wrap {
-    padding: 1rem;
-    margin: 0;
-    border-radius: 0px;
-  }
-
-  .card {
-    padding: 1.2rem 1rem;
-    border-radius: 8px;
-    max-width: 100%;
-    min-height: auto;
-  }
-
-  .scrollToTopButton {
-    display: flex;           /* ✅ réaffiche le bouton */
-    right: 25px;             /* position mobile */
-    bottom: 10px;
-    margin-left: 0;        
-    width: 44px;
-    height: 44px;
-    font-size: 1.6rem;
-  }
-
-.onboard-btn {
-  margin: 0 1.5rem 0 0.5rem;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background: #4A141C;
-    color: #E1E1E1;
-    font-size: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.1s ease;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: center;
-}
-}
-@media (max-width: 1024px) {
-  .container {
-    grid-template-columns: 1fr; /* On passe sur une seule colonne */
-  }
-
-  .sidebar {
-    height: auto;
-    position: relative;
-    padding: 1rem;
-  }
-
-  .card-wrap {
-    padding: 15px; /* On réduit l'espace autour de la feuille */
-  }
-
-  .card {
-    padding: 20px; /* On réduit les marges internes du document */
-    box-shadow: none; /* Plus léger pour le mobile */
-  }
-
-  /* Ajustement des titres pour mobile */
-  .premiergénéré {
-    font-size: 1.5rem !important;
-  }
-}
-
+/* ---- STRUCTURE GÉNÉRALE ---- */
+.container { grid-template-columns: 1fr; height: auto; }
+.sidebar { position: relative; padding: 1rem; max-height: none; }
+.card-wrap { padding: 1rem; margin: 0; border-radius: 0px; }
+.card { padding: 1.2rem 1rem; border-radius: 8px; max-width: 100%; min-height: auto; }
+.scrollToTopButton { display: flex; /* ✅ réaffiche le bouton */ right: 25px; /* position mobile */ bottom: 10px; margin-left: 0; width: 44px; height: 44px; font-size: 1.6rem; }
+.onboard-btn { margin: 0 1.5rem 0 0.5rem; width: 60px; height: 60px; border-radius: 50%; border: none; background: #4A141C; color: #E1E1E1; font-size: 2rem; font-weight: bold; cursor: pointer; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); transition: transform 0.1s ease; display: flex; align-items: center; flex-direction: row-reverse; justify-content: center; } }
+@media (max-width: 1024px) { .container { grid-template-columns: 1fr; /* On passe sur une seule colonne */ }
+.sidebar { height: auto; position: relative; padding: 1rem; }
+.card-wrap { padding: 15px; /* On réduit l'espace autour de la feuille */ }
+.card { padding: 20px; /* On réduit les marges internes du document */ box-shadow: none; /* Plus léger pour le mobile */ }
+/* Ajustement des titres pour mobile */
+.premiergénéré { font-size: 1.5rem !important; } }
 /* --- FIXATIONS POUR L'INTERFACE --- */
-
 /* Bouton flottant de contact - adaptation mobile */
-@media (max-width: 600px) {
-  .floating-contact-btn {
-    top: 15px;
-    right: 15px;
-    padding: 8px;
-    border-radius: 100%; /* Bouton rond */
-  }
-  .floating-contact-btn .text {
-    display: none; /* On ne garde que l'icône sur petit téléphone */
-  }
-}
-
+@media (max-width: 600px) { .floating-contact-btn { top: 15px; right: 15px; padding: 8px; border-radius: 100%; /* Bouton rond */ }
+.floating-contact-btn .text { display: none; /* On ne garde que l'icône sur petit téléphone */ } }
 /* Zone de boutons (Export) fixe sur mobile pour être toujours accessible */
-@media (max-width: 768px) {
-  .button-section {
-    position: initial;
-    background: var(--dark-bg);
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 50px;
-    justify-content: right;
-    z-index: 999;
-  }
-
-  /* On ajoute une marge en bas du rituel pour ne pas cacher le texte sous les boutons fixes */
-  .card-wrap {
-    padding-bottom: 80px;
-  }
+@media (max-width: 768px) { .button-section { position: initial; background: var(--dark-bg); display: flex; flex-direction: row-reverse; gap: 50px; justify-content: right; z-index: 999; }
+/* On ajoute une marge en bas du rituel pour ne pas cacher le texte sous les boutons fixes */
+.card-wrap { padding-bottom: 80px; } }
+.servants-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(12px, 1fr));
+  gap: 12px;
 }
 
-/* Gestion de l'affichage des cartes d'événements (Romcal) */
-.event-card {
+.servant-option {
+  background: #3D3D3D;
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 8px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
-  margin-bottom: 8px;
-  background: rgba(255,255,255,0.05);
-  border-left: 4px solid transparent;
+  text-align: center;
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.2s ease;
+}
+
+.servant-option img {
+  width: auto;
+  height: 70px;
+  margin-bottom: 4px;
+  filter: grayscale(100%);
+}
+
+.servant-option span {
+  color: #E0E0E0;
+  font-size: 0.9rem;
+}
+
+/* cacher la checkbox */
+.servant-option input {
+  display: none;
+}
+
+/* état sélectionné */
+.servant-option input:checked + img {
+  filter: none;
+}
+
+.servant-option input:checked ~ * {
+  border-color: #4A141C;
+}
+
+.servant-option:has(input:checked) {
+  border-color: #4A141C;
+  box-shadow: 0 0 6px rgba(74, 20, 28, 0.6);
 }
 
 </style>

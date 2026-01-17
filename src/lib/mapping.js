@@ -1093,7 +1093,7 @@ export const liturgyRules = {
   "ordinary_time_4_sunday": {
         CelebrationduJour: "4ème dimanche du Temps Ordinaire",
         ChoixOraison: "4TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1149,7 +1149,7 @@ export const liturgyRules = {
   "ordinary_time_5_sunday": {
         CelebrationduJour: "5ème dimanche du Temps Ordinaire",
         ChoixOraison: "5TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1205,7 +1205,7 @@ export const liturgyRules = {
   "ordinary_time_6_sunday": {
         CelebrationduJour: "6ème dimanche du Temps Ordinaire",
         ChoixOraison: "6TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1261,7 +1261,7 @@ export const liturgyRules = {
   "ordinary_time_7_sunday": {
         CelebrationduJour: "7ème dimanche du Temps Ordinaire",
         ChoixOraison: "7TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1317,7 +1317,7 @@ export const liturgyRules = {
   "ordinary_time_8_sunday": {
         CelebrationduJour: "8ème dimanche du Temps Ordinaire",
         ChoixOraison: "8TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1373,7 +1373,7 @@ export const liturgyRules = {
   "ordinary_time_9_sunday": {
         CelebrationduJour: "9ème dimanche du Temps Ordinaire",
         ChoixOraison: "9TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1429,7 +1429,7 @@ export const liturgyRules = {
   "ordinary_time_10_sunday": {
         CelebrationduJour: "10ème dimanche du Temps Ordinaire",
         ChoixOraison: "10TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1485,7 +1485,7 @@ export const liturgyRules = {
   "ordinary_time_11_sunday": {
         CelebrationduJour: "11ème dimanche du Temps Ordinaire",
         ChoixOraison: "11TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1541,7 +1541,7 @@ export const liturgyRules = {
   "ordinary_time_12_sunday": {
         CelebrationduJour: "12ème dimanche du Temps Ordinaire",
         ChoixOraison: "12TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1597,7 +1597,7 @@ export const liturgyRules = {
   "ordinary_time_13_sunday": {
         CelebrationduJour: "13ème dimanche du Temps Ordinaire",
         ChoixOraison: "13TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1653,7 +1653,7 @@ export const liturgyRules = {
   "ordinary_time_14_sunday": {
         CelebrationduJour: "14ème dimanche du Temps Ordinaire",
         ChoixOraison: "14TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1709,7 +1709,7 @@ export const liturgyRules = {
   "ordinary_time_15_sunday": {
         CelebrationduJour: "15ème dimanche du Temps Ordinaire",
         ChoixOraison: "15TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1765,7 +1765,7 @@ export const liturgyRules = {
   "ordinary_time_16_sunday": {
         CelebrationduJour: "16ème dimanche du Temps Ordinaire",
         ChoixOraison: "16TO",
-        Choixpreface: "",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
@@ -1780,7 +1780,7 @@ export const liturgyRules = {
     },
   "ordinary_time_16_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "16TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1788,7 +1788,7 @@ export const liturgyRules = {
     },
   "ordinary_time_16_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "16TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1796,7 +1796,7 @@ export const liturgyRules = {
     },
   "ordinary_time_16_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "16TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1804,7 +1804,7 @@ export const liturgyRules = {
     },
   "ordinary_time_16_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "16TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1812,7 +1812,7 @@ export const liturgyRules = {
     },
   "ordinary_time_16_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "16TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1820,15 +1820,15 @@ export const liturgyRules = {
     },
   "ordinary_time_17_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "17TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_17_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "17TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1836,7 +1836,7 @@ export const liturgyRules = {
     },
   "ordinary_time_17_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "17TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1844,7 +1844,7 @@ export const liturgyRules = {
     },
   "ordinary_time_17_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "17TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1852,7 +1852,7 @@ export const liturgyRules = {
     },
   "ordinary_time_17_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "17TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1860,7 +1860,7 @@ export const liturgyRules = {
     },
   "ordinary_time_17_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "17TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1868,7 +1868,7 @@ export const liturgyRules = {
     },
   "ordinary_time_17_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "17TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1876,15 +1876,15 @@ export const liturgyRules = {
     },
   "ordinary_time_18_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "18TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_18_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "18TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1892,7 +1892,7 @@ export const liturgyRules = {
     },
   "ordinary_time_18_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "18TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1900,7 +1900,7 @@ export const liturgyRules = {
     },
   "ordinary_time_18_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "18TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1908,7 +1908,7 @@ export const liturgyRules = {
     },
   "ordinary_time_18_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "18TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1916,7 +1916,7 @@ export const liturgyRules = {
     },
   "ordinary_time_18_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "18TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1924,7 +1924,7 @@ export const liturgyRules = {
     },
   "ordinary_time_18_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "18TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1932,15 +1932,15 @@ export const liturgyRules = {
     },
   "ordinary_time_19_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "19TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_19_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "19TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1948,7 +1948,7 @@ export const liturgyRules = {
     },
   "ordinary_time_19_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "19TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1956,7 +1956,7 @@ export const liturgyRules = {
     },
   "ordinary_time_19_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "19TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1964,7 +1964,7 @@ export const liturgyRules = {
     },
   "ordinary_time_19_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "19TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1972,7 +1972,7 @@ export const liturgyRules = {
     },
   "ordinary_time_19_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "19TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1980,7 +1980,7 @@ export const liturgyRules = {
     },
   "ordinary_time_19_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "19TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -1988,15 +1988,15 @@ export const liturgyRules = {
     },
   "ordinary_time_20_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "20TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_20_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "20TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2004,7 +2004,7 @@ export const liturgyRules = {
     },
   "ordinary_time_20_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "20TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2012,7 +2012,7 @@ export const liturgyRules = {
     },
   "ordinary_time_20_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "20TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2020,7 +2020,7 @@ export const liturgyRules = {
     },
   "ordinary_time_20_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "20TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2028,7 +2028,7 @@ export const liturgyRules = {
     },
   "ordinary_time_20_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "20TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2036,7 +2036,7 @@ export const liturgyRules = {
     },
   "ordinary_time_20_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "20TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2044,15 +2044,15 @@ export const liturgyRules = {
     },
   "ordinary_time_21_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "21TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_21_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "21TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2060,7 +2060,7 @@ export const liturgyRules = {
     },
   "ordinary_time_21_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "21TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2068,7 +2068,7 @@ export const liturgyRules = {
     },
   "ordinary_time_21_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "21TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2076,7 +2076,7 @@ export const liturgyRules = {
     },
   "ordinary_time_21_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "21TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2084,7 +2084,7 @@ export const liturgyRules = {
     },
   "ordinary_time_21_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "21TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2092,7 +2092,7 @@ export const liturgyRules = {
     },
   "ordinary_time_21_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "21TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2100,15 +2100,15 @@ export const liturgyRules = {
     },
   "ordinary_time_22_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "22TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_22_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "22TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2116,7 +2116,7 @@ export const liturgyRules = {
     },
   "ordinary_time_22_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "22TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2124,7 +2124,7 @@ export const liturgyRules = {
     },
   "ordinary_time_22_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "22TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2132,7 +2132,7 @@ export const liturgyRules = {
     },
   "ordinary_time_22_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "22TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2140,7 +2140,7 @@ export const liturgyRules = {
     },
   "ordinary_time_22_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "22TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2148,7 +2148,7 @@ export const liturgyRules = {
     },
   "ordinary_time_22_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "22TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2156,15 +2156,15 @@ export const liturgyRules = {
     },
   "ordinary_time_23_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "23TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_23_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "23TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2172,7 +2172,7 @@ export const liturgyRules = {
     },
   "ordinary_time_23_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "23TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2180,7 +2180,7 @@ export const liturgyRules = {
     },
   "ordinary_time_23_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "23TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2188,7 +2188,7 @@ export const liturgyRules = {
     },
   "ordinary_time_23_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "23TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2196,7 +2196,7 @@ export const liturgyRules = {
     },
   "ordinary_time_23_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "23TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2204,7 +2204,7 @@ export const liturgyRules = {
     },
   "ordinary_time_23_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "23TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2212,15 +2212,15 @@ export const liturgyRules = {
     },
   "ordinary_time_24_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "24TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_24_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "24TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2228,7 +2228,7 @@ export const liturgyRules = {
     },
   "ordinary_time_24_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "24TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2236,7 +2236,7 @@ export const liturgyRules = {
     },
   "ordinary_time_24_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "24TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2244,7 +2244,7 @@ export const liturgyRules = {
     },
   "ordinary_time_24_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "24TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2252,7 +2252,7 @@ export const liturgyRules = {
     },
   "ordinary_time_24_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "24TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2260,7 +2260,7 @@ export const liturgyRules = {
     },
   "ordinary_time_24_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "24TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2268,15 +2268,15 @@ export const liturgyRules = {
     },
   "ordinary_time_25_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "25TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_25_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "25TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2284,7 +2284,7 @@ export const liturgyRules = {
     },
   "ordinary_time_25_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "25TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2292,7 +2292,7 @@ export const liturgyRules = {
     },
   "ordinary_time_25_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "25TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2300,7 +2300,7 @@ export const liturgyRules = {
     },
   "ordinary_time_25_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "25TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2308,7 +2308,7 @@ export const liturgyRules = {
     },
   "ordinary_time_25_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "25TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2316,7 +2316,7 @@ export const liturgyRules = {
     },
   "ordinary_time_25_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "25TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2324,15 +2324,15 @@ export const liturgyRules = {
     },
   "ordinary_time_26_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "26TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_26_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "26TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2340,7 +2340,7 @@ export const liturgyRules = {
     },
   "ordinary_time_26_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "26TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2348,7 +2348,7 @@ export const liturgyRules = {
     },
   "ordinary_time_26_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "26TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2356,7 +2356,7 @@ export const liturgyRules = {
     },
   "ordinary_time_26_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "26TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2364,7 +2364,7 @@ export const liturgyRules = {
     },
   "ordinary_time_26_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "26TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2372,7 +2372,7 @@ export const liturgyRules = {
     },
   "ordinary_time_26_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "26TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2380,15 +2380,15 @@ export const liturgyRules = {
     },
   "ordinary_time_27_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "27TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_27_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "27TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2396,7 +2396,7 @@ export const liturgyRules = {
     },
   "ordinary_time_27_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "27TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2404,7 +2404,7 @@ export const liturgyRules = {
     },
   "ordinary_time_27_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "27TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2412,7 +2412,7 @@ export const liturgyRules = {
     },
   "ordinary_time_27_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "27TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2420,7 +2420,7 @@ export const liturgyRules = {
     },
   "ordinary_time_27_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "27TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2428,7 +2428,7 @@ export const liturgyRules = {
     },
   "ordinary_time_27_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "27TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2436,15 +2436,15 @@ export const liturgyRules = {
     },
   "ordinary_time_28_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "28TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_28_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "28TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2452,7 +2452,7 @@ export const liturgyRules = {
     },
   "ordinary_time_28_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "28TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2460,7 +2460,7 @@ export const liturgyRules = {
     },
   "ordinary_time_28_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "28TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2468,7 +2468,7 @@ export const liturgyRules = {
     },
   "ordinary_time_28_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "28TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2476,7 +2476,7 @@ export const liturgyRules = {
     },
   "ordinary_time_28_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "28TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2484,7 +2484,7 @@ export const liturgyRules = {
     },
   "ordinary_time_28_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "28TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2492,15 +2492,15 @@ export const liturgyRules = {
     },
   "ordinary_time_29_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "29TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_29_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "29TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2508,7 +2508,7 @@ export const liturgyRules = {
     },
   "ordinary_time_29_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "29TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2516,7 +2516,7 @@ export const liturgyRules = {
     },
   "ordinary_time_29_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "29TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2524,7 +2524,7 @@ export const liturgyRules = {
     },
   "ordinary_time_29_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "29TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2532,7 +2532,7 @@ export const liturgyRules = {
     },
   "ordinary_time_29_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "29TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2540,7 +2540,7 @@ export const liturgyRules = {
     },
   "ordinary_time_29_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "29TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2548,15 +2548,15 @@ export const liturgyRules = {
     },
   "ordinary_time_30_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "30TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_30_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "30TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2564,7 +2564,7 @@ export const liturgyRules = {
     },
   "ordinary_time_30_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "30TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2572,7 +2572,7 @@ export const liturgyRules = {
     },
   "ordinary_time_30_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "30TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2580,7 +2580,7 @@ export const liturgyRules = {
     },
   "ordinary_time_30_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "30TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2588,7 +2588,7 @@ export const liturgyRules = {
     },
   "ordinary_time_30_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "30TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2596,7 +2596,7 @@ export const liturgyRules = {
     },
   "ordinary_time_30_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "30TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2604,15 +2604,15 @@ export const liturgyRules = {
     },
   "ordinary_time_31_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "31TO",
+        Choixpreface:  ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_31_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "31TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2620,7 +2620,7 @@ export const liturgyRules = {
     },
   "ordinary_time_31_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "31TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2628,7 +2628,7 @@ export const liturgyRules = {
     },
   "ordinary_time_31_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "31TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2636,7 +2636,7 @@ export const liturgyRules = {
     },
   "ordinary_time_31_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "31TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2644,7 +2644,7 @@ export const liturgyRules = {
     },
   "ordinary_time_31_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "31TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2652,7 +2652,7 @@ export const liturgyRules = {
     },
   "ordinary_time_31_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "31TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2660,15 +2660,15 @@ export const liturgyRules = {
     },
   "ordinary_time_32_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "32TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_32_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "32TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2676,7 +2676,7 @@ export const liturgyRules = {
     },
   "ordinary_time_32_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "32TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2684,7 +2684,7 @@ export const liturgyRules = {
     },
   "ordinary_time_32_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "32TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2692,7 +2692,7 @@ export const liturgyRules = {
     },
   "ordinary_time_32_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "32TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2700,7 +2700,7 @@ export const liturgyRules = {
     },
   "ordinary_time_32_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "32TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2708,7 +2708,7 @@ export const liturgyRules = {
     },
   "ordinary_time_32_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "32TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2716,15 +2716,15 @@ export const liturgyRules = {
     },
   "ordinary_time_33_sunday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "33TO",
+        Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Dimanche"
     },
   "ordinary_time_33_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "33TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2732,7 +2732,7 @@ export const liturgyRules = {
     },
   "ordinary_time_33_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "33TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2740,7 +2740,7 @@ export const liturgyRules = {
     },
   "ordinary_time_33_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "33TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2748,7 +2748,7 @@ export const liturgyRules = {
     },
   "ordinary_time_33_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "33TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2756,7 +2756,7 @@ export const liturgyRules = {
     },
   "ordinary_time_33_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "33TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2764,7 +2764,7 @@ export const liturgyRules = {
     },
   "ordinary_time_33_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "33TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2780,7 +2780,7 @@ export const liturgyRules = {
     },
   "ordinary_time_34_monday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "34TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2788,7 +2788,7 @@ export const liturgyRules = {
     },
   "ordinary_time_34_tuesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "34TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2796,7 +2796,7 @@ export const liturgyRules = {
     },
   "ordinary_time_34_wednesday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "34TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2804,7 +2804,7 @@ export const liturgyRules = {
     },
   "ordinary_time_34_thursday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "34TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2812,7 +2812,7 @@ export const liturgyRules = {
     },
   "ordinary_time_34_friday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "34TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -2820,7 +2820,7 @@ export const liturgyRules = {
     },
   "ordinary_time_34_saturday": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "34TO",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
