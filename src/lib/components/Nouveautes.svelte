@@ -7,20 +7,17 @@
   };
 
   const releases: Release[] = [
-    /*
     {
       version: 'v0.3',
       date: 'janvier 2026',
       summary: 'Refonte graphique et suite du mapping',
       items: [
-        { icon: '', label: 'Refonte graphique du site internet pour une meilleure prise en main !' },
-        { icon: '', label: 'Ajout des textes de la bénédiction de l'eau' },
-        { icon: '', label: 'Ajout d'un bouton de contact' },
-        { icon: '📝', label: "Suite de l'integration des oraisons : 21,2% (65/336)" },
-        { icon: '🗺️', label: "Suite du mapping : tel jour -> telle préface, oraison, etc. : 8% (50/622)" }
+        { icon: '🖌️', label: 'Refonte graphique du site pour une meilleure prise en main !' },
+        { icon: '🌊', label: "Ajout des textes de la bénédiction de l'eau" },
+        { icon: '☎️', label: "Ajout d'un bouton de contact" },
+        { icon: '📝', label: "Suite de l'integration des oraisons : 37,2% (125/336)" },
       ]
    },
-    */
        /*
          86/187 oraisons du temporal,
          60 oraisons du commun

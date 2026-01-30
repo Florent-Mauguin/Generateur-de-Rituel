@@ -3736,568 +3736,866 @@ que nous ayons part au même pain`},
 
     "3CA_L": {
     titre: "LUNDI DE LA TROISIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Mon âme s’épuise à désirer
+        les parvis du Seigneur ;`},
+        {class:"indent1all", texte: `Mon âme s’épuise à désirer
+        les parvis du Seigneur ;`}],
+    collecte: [{class:"grandelettrine", texte:`Que ta miséricorde inlassable, Seigneur,
+        purifie et protège ton Église ; *`},
+        {class:"indent1all", texte:`et puisque sans toi, elle ne peut demeurer en ton salut : /
+        dans ta grâce gouverne-la toujours.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Fidèles à te servir, Seigneur, +
+        nous te présentons ces offrandes : *`},
+        {class:"indent1all", texte:`transforme-les toi-même /
+        en sacrement de notre salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Louez le Seigneur, tous les peuples !
+        Son amour envers nous s’est montré le plus fort.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Que notre communion à ton sacrement, Seigneur,
+        purifie chacun de nous, /`},
+        {class:"indent1all", texte:`et réalise notre unité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Que ta droite, Seigneur, protège ton peuple en prière ; *
+        qu’elle le purifie et lui apprenne`},
+        {class:"indent1p", texte:`à mettre à profit la consolation reçue dès maintenant, /
+        pour avancer vers les biens à venir.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
     "3CA_MA": {
     titre: "MARDI DE LA TROISIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Je t’appelle, toi, le Dieu qui répond :
+        écoute-moi, entends ce que je dis.`},
+        {class:"indent1all", texte: `Garde-moi comme la prunelle de l’oeil ;
+        à l’ombre de tes ailes, cache-moi.`}],
+    collecte: [{class:"grandelettrine", texte:`Que ta grâce ne nous abandonne pas,
+        Seigneur, nous t’en prions : *`},
+        {class:"indent1all", texte:`qu’elle nous consacre à ton service /
+        et nous obtienne toujours ton aide.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : *
+        que ce sacrifice offert pour notre salut`},
+        {class:"indent1p", texte:`nous purifie de nos fautes /
+        et attire sur nous la puissance de ton pardon.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Seigneur, qui séjournera sous ta tente ?
+        Qui habitera ta sainte montagne ?`},
+        {class:"indent1all", texte: `Celui qui se conduit parfaitement,
+        qui agit avec justice.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Que cette participation à ton saint mystère, Seigneur,
+        fasse grandir en nous la vie : *`},
+        {class:"indent1all", texte:`qu’elle nous apporte à la fois le rachat de nos fautes /
+        et le secours de ta protection.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Seigneur Dieu, +
+        toi qui formes et diriges ton peuple,`},
+        {class:"indent1p", texte:`repousse les péchés qui l’assaillent, *`},
+        {class:"indent1all", texte:`afin qu’il puisse toujours te plaire, /
+        et que ta protection le délivre de toute inquiétude.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
     "3CA_ME": {
     titre: "MERCREDI DE LA TROISIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Que ta promesse assure mes pas :
+        qu’aucun mal ne triomphe de moi !`}],
+    collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : *
+        formés à l’école du Carême`},
+        {class:"indent1p", texte:`et nourris de ta parole,`},
+        {class:"indent1all", texte:`fais que nous soyons de tout coeur à ton service
+        par notre effort de pénitence /
+        et toujours unanimes à te prier.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
+        accueille les supplications de ton peuple`},
+        {class:"indent1p", texte:`quand il te présente ce sacrifice ; *`},
+        {class:"indent1all", texte:`et, par la célébration de tes mystères, /
+        protège-nous de tout danger.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Tu m’apprends le chemin de la vie :
+        devant ta face, débordement de joie, Seigneur.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Que la nourriture prise à la table du ciel
+        nous sanctifie, Seigneur ; *`},
+        {class:"indent1all", texte:`après avoir effacé tous nos torts, /
+        qu’elle nous rende dignes de recevoir
+        les promesses qui viennent de toi.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Seigneur notre Dieu, +
+        accorde à ton peuple de vouloir ce que tu veux, *`},
+        {class:"indent1all", texte:`car lorsque tu le rends capable d’accomplir tes préceptes, /
+        alors tu le combles de bienfaits.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
     "3CA_J": {
     titre: "JEUDI DE LA TROISIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Je suis le salut de mon peuple, dit le Seigneur,`},
+        {class:"indent1all", texte: `dans toutes les épreuves, s’il crie vers moi, je l’exaucerai ;
+        je serai son Seigneur pour toujours.`}],
+    collecte: [{class:"grandelettrine", texte:`Nous t’en supplions, Seigneur souverain : *
+        à mesure qu’approche le jour`},
+        {class:"indent1p", texte:`où nous fêterons notre salut, /`},
+        {class:"indent1all", texte:`accorde-nous une plus grande générosité
+        pour nous préparer à célébrer le mystère pascal.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Pour que les offrandes de ton peuple
+        te soient agréables, Seigneur, +`},
+        {class:"indent1all", texte:`préserve-nous de toute contagion du mal : *`},
+        {class:"indent1all", texte:`ne permets pas qu’il s’attache à de fausses joies /
+        lui que tu veux mener à ta vérité,
+        promise en récompense.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Toi, tu promulgues des préceptes
+        à observer entièrement.`},
+        {class:"indent1all", texte: `Puissent mes voies s’affermir
+        à observer tes commandements !`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Par ton secours, Dieu de bonté,
+        relève ceux que tu réconfortes par tes sacrements, *`},
+        {class:"indent1all", texte:`afin de recueillir
+        les fruits de ton oeuvre de salut /
+        dans ces mystères et dans toute notre conduite.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Sûrs de ta miséricorde,
+        nous implorons ta bonté, Seigneur : +`},
+        {class:"", texte:`nous tenons de toi d’être ce que nous sommes ; *`},
+        {class:"indent1all", texte:`de même, que ta grâce nous accorde
+        à la fois de vouloir le bien /
+        et de pouvoir accomplir ce bien que nous voulons.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
     "3CA_V": {
     titre: "VENDREDI DE LA TROISIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Aucun parmi les dieux n’est comme toi, Seigneur,`},
+        {class:"indent1all", texte: `car tu es grand et tu fais des merveilles,
+        toi, Dieu, le seul.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur, nous t’en prions : +
+        dans ta bonté, répands ta grâce en nos coeurs, *`},
+        {class:"indent1all", texte:`délivre-nous des égarements de la faiblesse humaine /
+        et accorde-nous de nous attacher avec force à tes enseignements.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Jette un regard bienveillant, Seigneur,
+        sur les offrandes que nous te consacrons ; *`},
+        {class:"indent1all", texte:`qu’elles te soient agréables, /
+        et nous apportent toujours le salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Aimer Dieu de tout son coeur,
+        et son prochain comme soi-même
+        vaut mieux que tous les sacrifices.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Que la puissance de ton action, Seigneur,
+        imprègne nos esprits et nos corps ; *`},
+        {class:"indent1all", texte:`ce que nous avons déjà reçu en participant au sacrement, /
+        puissions-nous le posséder dans la plénitude du salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Regarde favorablement, Seigneur,
+        tes fidèles qui implorent ta miséricorde ; *`},
+        {class:"indent1all", texte:`et comme ils mettent leur confiance en ta tendresse, /
+        puissent-ils répandre en tout lieu
+        les dons de ta charité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
     "3CA_S": {
     titre: "SAMEDI DE LA TROISIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Bénis le Seigneur, ô mon âme,
+        n’oublie aucun de ses bienfaits,
+        car il pardonne toutes tes offenses.`}],
+    collecte: [{class:"grandelettrine", texte:`En célébrant avec joie, chaque année, ce temps de Carême,
+        nous te prions, Seigneur : *`},
+        {class:"indent1all", texte:`puisque nous vivons déjà du mystère de Pâques, /
+        accorde-nous le bonheur d’en goûter pleinement les fruits.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur Dieu, +
+        c’est toi qui nous donnes la grâce`},
+        {class:"indent1p", texte:`d’approcher de tes mystères avec un coeur purifié ; *`},
+        {class:"indent1all", texte:`nous t’en prions :`},
+        {class:"indent1all", texte:`lorsque nous célébrerons le jour où tu les as transmis, /
+        accorde-nous de pouvoir t’offrir le culte qui te revient.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Le publicain se tenait à distance
+        et se frappait la poitrine en disant :`},
+        {class:"indent1all", texte: `Mon Dieu, montre-toi favorable
+        au pécheur que je suis !`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu de miséricorde, +
+        tu ne cesses de nous combler par tes sacrements : *`},
+        {class:"indent1all", texte:`donne-nous de les célébrer avec respect /
+        et de les recevoir toujours dans un esprit de foi.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`A tes fidèles, Seigneur,
+        tends une main secourable, *`},
+        {class:"indent1all", texte:`afin qu’ils te cherchent de tout leur coeur /
+        et méritent de voir exaucées leurs justes demandes.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
     "4CA": {
     titre: "QUATRIÈME DIMANCHE DU CARÊME",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `afin qu’ils te cherchent de tout leur coeur /
+        et méritent de voir exaucées leurs justes demandes.`},
+        {class:"indent1all", texte: `Jubilez de sa joie, vous qui étiez dans la tristesse ;
+        alors vous exulterez, vous serez rassasiés de consolation.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, +
+        par ton Verbe incarné`},
+        {class:"indent1p", texte:`tu as merveilleusement réconcilié avec toi le genre humain ; *`},
+        {class:"indent1all", texte:`accorde au peuple chrétien
+        de se hâter avec un amour généreux et une foi ardente /
+        au-devant des fêtes pascales qui approchent.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur, nous te présentons dans la joie
+        l’eucharistie qui assure la guérison éternelle, +`},
+        {class:"indent1p", texte:`et nous te prions humblement : *`},
+        {class:"indent1all", texte:`accorde-nous de la vénérer avec foi /
+        et de l’offrir avec respect pour le salut du monde.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1g rubrique", texte:`Quand on a lu l’évangile de l’Aveugle-né : cf. Jn 9, 11.38`},
+        {class:"indent1all", texte:`Le Seigneur a mis de la boue sur mes yeux,
+        je suis allé me laver, j’ai vu,
+        et j’ai cru en Dieu.`},
+        {class:"indent1g rubrique", texte:`Quand on a lu l’évangile de l’Enfant prodigue : cf. Lc 15, 32`},
+        {class:"indent1all", texte:`Il faut te réjouir, mon fils,
+        car ton frère qui était mort est revenu à la vie ;
+        il était perdu, et il est retrouvé !`},
+        {class:"indent1g rubrique", texte:`Dans les autres cas : cf. Ps 121, 3-4`},
+        {class:"indent1all", texte: `Jérusalem, te voici dans tes murs :
+        ville où tout ensemble ne fait qu’un !`},
+        {class:"indent1all", texte: `C’est là que montent les tribus,
+        les tribus du Seigneur,`},
+        {class:"indent1all", texte: `pour rendre grâce à ton nom, Seigneur.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu qui éclaires tout homme venant dans ce monde, +
+        nous t’en prions, illumine nos coeurs`},
+        {class:"indent1p", texte:`par la splendeur de ta grâce : *`},
+        {class:"indent1all", texte:`que nos pensées soient toujours dignes de toi,
+        et accordées à ta grandeur, /`},
+        {class:"indent1all", texte:`et qu’ainsi nous puissions t’aimer sincèrement.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Protège, Seigneur, ceux qui te supplient, +
+        soutiens les faibles,`},
+        {class:"indent1p", texte:`fais revivre sans cesse par ta lumière
+        ceux qui marchent dans les ténèbres de la mort, *`},
+        {class:"indent1all", texte:`et accorde à ceux que ton amour a délivrés de tout mal, /
+        de parvenir aux biens suprêmes.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
     "4CA_L": {
     titre: "LUNDI DE LA QUATRIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Moi, je mettrai mon espérance dans le Seigneur.`},
+        {class:"indent1all", texte: `J’exulterai et je me réjouirai en ta miséricorde
+        car tu as regardé ma misère.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, +
+        tu renouvelles ce monde`},
+        {class:"indent1p", texte:`par la force inexprimable de tes sacrements ; *`},
+        {class:"indent1all", texte:`fais que ton Église progresse par ces moyens de salut /
+        et ne manque jamais de tes secours ici-bas.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Fais-nous recueillir, Seigneur,
+        les fruits de l’offrande qui t’est consacrée, *`},
+        {class:"indent1all", texte:`afin que, purifiés de la dégradation liée à notre condition terrestre, /
+        nous soyons renouvelés par nos progrès dans la vie spirituelle.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Je mettrai en vous mon esprit,
+        je ferai que vous marchiez selon mes lois,
+        que vous gardiez mes préceptes
+        et leur soyez fidèles, déclare le Seigneur.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Que tes sacrements, nous t’en prions, Seigneur,
+        nous renouvellent et nous fassent revivre ; *`},
+        {class:"indent1all", texte:`qu’ils nous sanctifient /
+        et nous conduisent ainsi aux biens éternels.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Donne à ton peuple, Seigneur,
+        d’être renouvelé à l’intérieur et à l’extérieur, *`},
+        {class:"indent1all", texte:`et, puisque tu ne veux pas
+        qu’il se laisse arrêter par les plaisirs du corps, /`},
+        {class:"indent1all", texte:`fais-lui trouver sa force
+        dans le chemin spirituel que tu lui proposes.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "4CA_MA": {
     titre: "MARDI DE LA QUATRIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Vous tous qui avez soif, venez, voici de l’eau !
+        dit le Seigneur ;`},
+        {class:"indent1all", texte: `Même si vous n’avez pas d’argent,
+        venez et buvez avec joie.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur, en ce temps de pénitence,
+        donne à tes fidèles de te servir d’un coeur généreux, *`},
+        {class:"indent1all", texte:`pour être bien disposés à accueillir le mystère pascal /
+        et proclamer l’annonce de ton salut.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous te présentons, Seigneur,
+        les biens que tu nous as donnés : *`},
+        {class:"indent1all", texte:`qu’ils témoignent des bienfaits de ta création
+        pour notre condition mortelle, /`},
+        {class:"indent1all", texte:`et qu’ils deviennent le remède
+        qui nous procurera l’immortalité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Le Seigneur est mon berger : je ne manque de rien.
+        Sur des prés d’herbe fraîche, il me fait reposer.`},
+        {class:"indent1all", texte: `Il me mène vers les eaux tranquilles et me fait revivre.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans ta bonté, Seigneur, purifie nos esprits : +
+        que tes sacrements les renouvellent ; *`},
+        {class:"indent1all", texte:`fais que même nos corps y trouvent une aide /
+        pour aujourd’hui et pour la vie future.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Dieu de miséricorde, +
+        fais que ton peuple soit toujours fidèle à te servir *`},
+        {class:"indent1all", texte:`et reçoive constamment de ta bienveillance /
+        ce qui lui est profitable.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "4CA_ME": {
     titre: "MERCREDI DE LA QUATRIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Moi, je te prie Seigneur,
+        c’est l’heure de ta grâce ;`},
+        {class:"indent1all", texte: `dans ton grand amour, Dieu, réponds-moi,
+        par ta vérité, sauve-moi.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
+        tu offres aux justes la récompense de leurs efforts`},
+        {class:"indent1p", texte:`et le pardon aux pécheurs qui se repentent : +`},
+        {class:"indent1all", texte:`prends pitié de ceux qui te supplient, *`},
+        {class:"indent1all", texte:`afin que la confession de nos péchés /
+        obtienne le pardon de nos fautes.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dans ta bienveillance, Seigneur, +
+        fais que la puissance de ce sacrifice`},
+        {class:"indent1p", texte:`purifie tout ce qui vieillit en nous : *`},
+        {class:"indent1all", texte:`qu’elle fasse grandir la vie nouvelle /
+        et nous apporte le salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Dieu a envoyé son Fils dans le monde,
+        non pas pour juger le monde,
+        mais pour que, par lui, le monde soit sauvé.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Ne permets pas, Seigneur, que ce don du ciel
+        soit un motif de condamnation pour ceux qui l’ont reçu, *`},
+        {class:"indent1all", texte:`puisque tu l’as destiné /
+        à la guérison de tes fidèles.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Que ta tendresse, Seigneur,
+        entoure et protège ceux qui te servent ; *`},
+        {class:"indent1all", texte:`alors, faisant le bien en ce monde, /
+        ils parviendront jusqu’à toi, le souverain bien.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "4CA_J": {
     titre: "JEUDI DE LA QUATRIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Joie pour les coeurs qui cherchent Dieu.`},
+        {class:"indent1all", texte: `Cherchez le Seigneur, et vous serez affermis,
+        recherchez sans trêve sa face.`}],
+    collecte: [{class:"grandelettrine", texte:`Nous implorons humblement, Seigneur, ta tendresse : +
+        donne à tes serviteurs, purifiés par la conversion`},
+        {class:"indent1p", texte:`et formés par leurs oeuvres bonnes, *`},
+        {class:"indent1all", texte:`de persévérer dans tes commandements d’un coeur sincère /
+        et d’arriver sans encombre aux fêtes de Pâques.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant,
+        toi qui connais notre faiblesse : *`},
+        {class:"indent1all", texte:`que l’offrande de ce sacrifice /
+        nous purifie de tout mal et nous protège toujours.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Je mettrai ma Loi au plus profond d’eux-mêmes ;
+        je l’inscrirai sur leur coeur.`},
+        {class:"indent1all", texte: `Je serai leur Dieu,
+        et ils seront mon peuple, déclare le Seigneur.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Purifie-nous, Seigneur,
+        par les sacrements que nous avons reçus +`},
+        {class:"indent1all", texte:`et libère de tout péché ceux qui te servent ; *`},
+        {class:"indent1all", texte:`ils sont liés par la conscience de leurs fautes : /
+        qu’ils trouvent leur gloire
+        dans la pleine guérison qui vient du ciel.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Seigneur Dieu, défenseur de ceux qui espèrent en toi, +
+        bénis ton peuple, donne-lui salut et protection, gouverne-le, *`},
+        {class:"indent1all", texte:`afin que, libéré des péchés, hors d’atteinte de l’ennemi, /
+        il persévère toujours dans ton amour.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "4CA_V": {
     titre: "VENDREDI DE LA QUATRIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Par ton nom, Dieu, sauve-moi,
+        par ta puissance libère-moi ;`},
+        {class:"indent1all", texte: `Dieu, entends ma prière,
+        écoute les paroles de ma bouche.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, +
+        tu as préparé les secours dont notre faiblesse a besoin ; *`},
+        {class:"indent1all", texte:`donne-nous d’accueillir avec joie notre relèvement /
+        et d’en témoigner par la fidélité de notre vie.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu tout-puissant, +
+        que le sacrifice dont la force purifie`},
+        {class:"indent1p", texte:`nous achemine jusqu’à sa source /
+        en nous purifiant encore.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Dans le Christ, par son sang,
+        nous avons la rédemption, le pardon de nos fautes.`},
+        {class:"indent1all", texte: `Telle est la richesse de la grâce de Dieu.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
+        nous qui allons du passé vers ce qui est nouveau : *`},
+        {class:"indent1all", texte:`tandis que nous quittons ce qui ne peut que vieillir /
+        mets en nous un esprit de renouveau et de sainteté.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Tourne ton regard, Seigneur, vers ceux qui te servent
+        et se confient en ta miséricorde ; *`},
+        {class:"indent1all", texte:`dans ta bienveillance, accorde-leur /
+        la protection de ton secours.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "4CA_S": {
     titre: "SAMEDI DE LA QUATRIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Les angoisses de la mort m’entouraient,
+        les douleurs des enfers m’étreignaient ;`},
+        {class:"indent1all", texte: `dans mon épreuve, j’appelai le Seigneur ;
+        de son temple saint, il a entendu ma voix.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur, nous t’en prions : *
+        dirige nos coeurs par l’action de ta miséricorde, /`},
+        {class:"indent1p", texte:`car, sans toi, il nous est impossible de te plaire.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille nos offrandes, Seigneur, Dieu de paix ; *
+        et même si nos volontés se rebellent, /`},
+        {class:"indent1p", texte:`en ta bonté, tourne-les vers toi.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Nous avons été rachetés par un sang précieux,`},
+        {class:"indent1all", texte: `celui de l’Agneau sans défaut et sans tache,
+        le Christ.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Que tes saints mystères nous purifient, Seigneur : *
+        qu’ils agissent en nous /`},
+        {class:"indent1p", texte:`pour nous rendre agréables à tes yeux.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Regarde ton peuple, Seigneur,
+        tandis qu’il se hâte au-devant des fêtes qui approchent ; *`},
+        {class:"indent1all", texte:`que ta grâce généreuse l’accompagne,
+        afin qu’il trouve dans les réconforts visibles /`},
+        {class:"indent1all", texte:`une aide pour s’élancer avec plus d’ardeur
+        vers les biens invisibles.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "5CA": {
     titre: "CINQUIÈME DIMANCHE DU CARÊME",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Rends-moi justice, ô mon Dieu, défends ma cause
+        contre un peuple sans foi ;`},
+        {class:"indent1all", texte: `de l’homme qui ruse et trahit, libère-moi ;
+        c’est toi, Dieu, ma forteresse.`}],
+    collecte: [{class:"grandelettrine", texte:`Viens à notre secours, Seigneur notre Dieu : +
+        accorde-nous de marcher avec joie`},
+        {class:"indent1p", texte:`dans la charité de ton Fils *`},
+        {class:"indent1all", texte:`qui a aimé le monde /
+        jusqu’à donner sa vie pour lui.`},
+        {class:"indent1all", texte:`Lui qui vit et règne avec toi dans l’unité du Saint-Esprit,
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Exauce-nous, Dieu tout-puissant, *
+        et accorde à tes serviteurs,`},
+        {class:"indent1p", texte:`formés par l’enseignement de la foi chrétienne, /
+        d’être purifiés par l’action de ce sacrifice.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1g rubrique", texte:`Quand on a lu l’évangile de Lazare : Jn 11, 26`},
+        {class:"indent1all", texte:`Quiconque vit et croit en moi
+        ne mourra jamais, dit le Seigneur.`},
+        {class:"indent1g rubrique", texte:`Quand on a lu l’évangile de la Femme adultère : Jn 8, 10-11`},
+        {class:"indent1all", texte:`Femme, dit Jésus, personne ne t’a condamnée ?
+        – Personne, Seigneur,
+        – Moi non plus, je ne te condamne pas.
+        Va, et désormais ne pèche plus.`},
+        {class:"indent1g rubrique", texte:`Quand on a lu un autre évangile : Jn 12, 24-25`},
+        {class:"indent1all", texte: `Amen, amen, je vous le dis :`},
+        {class:"indent1all", texte: `si le grain de blé tombé en terre ne meurt pas,
+        il reste seul ;`},
+        {class:"indent1all", texte: `mais s’il meurt,
+        il donne beaucoup de fruit.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Accorde-nous, Dieu tout-puissant,
+        d’être toujours comptés parmi les membres du Christ, /`},
+        {class:"indent1p", texte:`nous qui communions à son Corps et à son Sang.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Seigneur, bénis ton peuple
+        qui attend le bienfait de ta compassion ; *`},
+        {class:"indent1all", texte:`accorde-lui, dans ta largesse, /
+        de voir exaucer les désirs que toi-même lui inspires.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "5CA_L": {
     titre: "LUNDI DE LA CINQUIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Pitié, mon Dieu !`},
+        {class:"indent1all", texte: `Des hommes s’acharnent contre moi ;
+        tout le jour, ils me combattent, ils me harcèlent.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, +
+        tu nous combles de toute bénédiction`},
+        {class:"indent1p", texte:`par la richesse inexprimable de ta grâce ; *`},
+        {class:"indent1all", texte:`fais-nous passer de ce qui ne peut que vieillir,
+        à ce qui est nouveau, /`},
+        {class:"indent1all", texte:`et nous serons préparés à la gloire
+        du royaume des Cieux.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Au moment de célébrer les saints mystères, +
+        accorde-nous, Seigneur,`},
+        {class:"indent1p", texte:`comme un fruit de notre pénitence corporelle,
+        la grâce de paraître devant toi /
+        avec un coeur purifié.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1g rubrique", texte:`Quand on a lu l’évangile de la Femme adultère : Jn 8, 10-11`},
+        {class:"indent1all", texte:`Femme, dit Jésus, personne ne t’a condamnée ?
+        – Personne, Seigneur,
+        – Moi non plus, je ne te condamne pas.
+        Va, et désormais ne pèche plus.`},
+        {class:"indent1g rubrique", texte:`Quand on a lu un autre évangile : Jn 8, 12`},
+        {class:"indent1all", texte: `Je suis la lumière du monde, dit le Seigneur,
+        celui qui me suit ne marchera pas dans les ténèbres :
+        il aura la lumière de la vie.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Fortifiés par la bénédiction de tes sacrements,
+        nous te prions, Seigneur : +`},
+        {class:"indent1all", texte:`qu’ils nous purifient de nos penchants mauvais, *
+        et nous aident à progresser rapidement vers toi /
+        en suivant le Christ.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Seigneur, nous t’en prions : +
+        libère de ses péchés ton peuple qui te supplie, *`},
+        {class:"indent1all", texte:`fais que rien ne l’accable /
+        puisqu’il mène désormais une vie de sainteté.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "5CA_MA": {
     titre: "MARDI DE LA CINQUIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Attends le Seigneur,
+        sois fort et prends courage,
+        espère dans le Seigneur.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur, accorde-nous de persévérer
+        dans l’attachement à ta volonté, *`},
+        {class:"indent1all", texte:`afin qu’au long des jours,
+        le peuple qui te sert /
+        augmente en nombre et grandisse en sainteté.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’offrons, Seigneur, le sacrifice de réconciliation : *
+        dans ta miséricorde, pardonne nos fautes /`},
+        {class:"indent1all", texte:`et dirige toi-même nos coeurs indécis.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Quand j’aurai été élevé de terre, dit le Seigneur,
+        j’attirerai à moi tous les hommes.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Accorde-nous, Dieu tout-puissant,
+        de rechercher assidûment ce qui vient de toi, *`},
+        {class:"indent1all", texte:`afin de progresser de jour en jour /
+        vers les biens du ciel.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`A ceux qui espèrent en toi, Seigneur Dieu,
+        tu préfères montrer ta pitié plutôt que ta colère ; *`},
+        {class:"indent1all", texte:`donne à tes fidèles de pleurer comme il convient
+        le mal qu’ils ont fait, /
+        afin qu’ils méritent d’obtenir la grâce de ta consolation.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "5CA_ME": {
     titre: "MERCREDI DE LA CINQUIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Toi qui me délivres des peuples en colère,`},
+        {class:"indent1all", texte: `tu me feras triompher de mes agresseurs,
+        tu m’arracheras à la violence de l’homme, Seigneur.`}],
+    collecte: [{class:"grandelettrine", texte:`Dieu de miséricorde, +
+        éclaire le coeur de tes enfants,`},
+        {class:"indent1p", texte:`sanctifiés par la pénitence ; *`},
+        {class:"indent1all", texte:`toi qui nous as donné le goût de te servir, /
+        écoute avec une grande bienveillance ceux qui te supplient.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accepte en sacrifice, Seigneur,
+        les présents que nous voulons te consacrer : *`},
+        {class:"indent1all", texte:`tu nous les as donnés
+        pour qu’ils soient offerts à la gloire de ton nom, /
+        et servent ainsi à nous guérir.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Dieu nous a placés dans le royaume de son Fils bien-aimé :
+        en lui, par son sang, nous avons la rédemption,
+        le pardon de nos péchés.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Que cette communion à tes mystères, Seigneur,
+        nous procure la guérison que toi seul peux donner : *`},
+        {class:"indent1all", texte:`qu’elle arrache de nos coeurs jusqu’aux racines du mal, /
+        qu’elle nous protège et nous fortifie à jamais.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Dieu tout-puissant, +
+        montre-toi proche de ton peuple qui te supplie ; *`},
+        {class:"indent1all", texte:`et puisque tu lui permets d’espérer avec confiance en ta tendresse,
+        donne-lui, dans ta bonté, /
+        de goûter le fruit de ta constante miséricorde.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "5CA_J": {
     titre: "JEUDI DE LA CINQUIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Le Christ est le médiateur d’une alliance nouvelle,
+        d’un testament nouveau,`},
+        {class:"indent1all", texte: `puisque par sa mort, ceux qui sont appelés
+        peuvent recevoir l’héritage éternel.`}],
+    collecte: [{class:"grandelettrine", texte:`Sois attentif à nos appels, Seigneur, +
+        et, dans ta bonté, protège`},
+        {class:"indent1p", texte:`ceux qui mettent leur espérance en ta miséricorde, *`},
+        {class:"indent1all", texte:`afin que, purifiés de leurs péchés,
+        ils persévèrent dans une vie de sainteté /
+        et deviennent les héritiers de ta promesse.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Regarde favorablement, Seigneur,
+        le sacrifice que nous te présentons : *`},
+        {class:"indent1all", texte:`qu’il serve à notre conversion /
+        et au salut du monde entier.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Dieu n’a pas épargné son propre Fils,
+        mais il l’a livré pour nous tous :
+        avec lui, il nous a tout donné.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu nous as rassasiés, Seigneur,
+        par ce don qui nous sauve, +`},
+        {class:"indent1p", texte:`et nous implorons ta miséricorde : *`},
+        {class:"indent1all", texte:`par ce même sacrement qui nous fortifie en cette vie, /
+        rends-nous participants de la vie éternelle.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Sois favorable à ton peuple,
+        Seigneur, nous t’en prions, *`},
+        {class:"indent1all", texte:`afin que, rejetant jour après jour ce qui te déplaît /
+        il préfère trouver toute sa joie dans tes commandements.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "5CA_V": {
     titre: "VENDREDI DE LA CINQUIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Prends pitié de moi, Seigneur, je suis en détresse ;
+        délivre-moi des mains hostiles qui s’acharnent.`},
+        {class:"indent1all", texte: `Seigneur, garde-moi d’être humilié,
+        moi qui t’appelle.`}],
+    collecte: [{class:"grandelettrine", texte:`Pardonne, Seigneur, les fautes de ton peuple : *
+        puisque notre faiblesse`},
+        {class:"indent1p", texte:`nous a rendus captifs des liens du péché, /
+        que ta tendresse nous en délivre.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
+        {class:"rubrique", texte:`ou bien`},
+        {class:"grandelettrine", texte:`Seigneur Dieu, +
+        dans ta bonté, tu donnes maintenant à ton Église`},
+        {class:"indent1p", texte:`d’imiter avec amour la bienheureuse Marie
+        quand elle contemplait la passion du Christ ; *`},
+        {class:"indent1all", texte:`nous t’en prions, accorde-nous, par l’intercession de la Vierge,
+        de nous attacher toujours plus fermement à ton Fils unique /
+        et de parvenir enfin à la plénitude de sa grâce.`},
+        {class:"indent1all", texte:`Lui qui vit et règne avec toi dans l’unité du Saint-Esprit,
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu de miséricorde, +
+        donne-nous de pouvoir toujours`},
+        {class:"indent1p", texte:`te servir à ton autel avec respect, *`},
+        {class:"indent1all", texte:`et de trouver le salut /
+        dans la participation fidèle aux mystères que nous célébrons.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Jésus a porté nos péchés,
+        dans son corps, sur le bois,`},
+        {class:"indent1all", texte: `afin que, morts à nos péchés,
+        nous vivions pour la justice.`},
+        {class:"indent1all", texte: `Par ses blessures, nous sommes guéris.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Donne-nous, Seigneur,
+        de trouver dans la communion à ce sacrifice`},
+        {class:"indent1p", texte:`une indéfectible protection ; *`},
+        {class:"indent1all", texte:`grâce à elle,
+        que tout mal soit à jamais éloigné de nous.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Dieu tout-puissant, +
+        accorde à ceux qui te servent`},
+        {class:"indent1p", texte:`et recherchent la grâce de ta protection,`},
+        {class:"indent1all", texte:`d’être libérés de tout mal /
+        afin de pouvoir te servir d’un coeur paisible.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "5CA_S": {
     titre: "SAMEDI DE LA CINQUIÈME SEMAINE",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Toi, Seigneur, ne sois pas loin :
+        ô ma force, viens vite à mon aide !`},
+        {class:"indent1all", texte: `Moi, je suis un ver, pas un homme,
+        raillé par les gens, rejeté par le peuple.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, +
+        de tous ceux à qui tu as donné de renaître dans le Christ,`},
+        {class:"indent1p", texte:`tu as fait une descendance choisie, un sacerdoce royal ; *`},
+        {class:"indent1all", texte:`accorde-nous de vouloir ce que tu commandes
+        et de pouvoir l’accomplir, /`},
+        {class:"indent1all", texte:`afin que le peuple appelé à l’éternité
+        ait une même foi dans le coeur,
+        une même charité dans l’action.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, +
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accepte, Seigneur, les offrandes
+        présentées en ce temps de jeûne ; *`},
+        {class:"indent1all", texte:`qu’elles nous purifient et nous rendent dignes de ta grâce, /
+        pour nous conduire aux biens promis dans l’éternité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Le Christ a été livré, afin de rassembler dans l’unité
+        les enfants de Dieu dispersés.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu souverain, +
+        nous te le demandons humblement : *`},
+        {class:"indent1all", texte:`puisque tu nous as fait communier
+        au Corps et au Sang très saints de ton Fils, /
+        rends-nous participants de la nature divine.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Prends pitié, Seigneur, de ton Église en prière, +
+        et regarde avec bonté`},
+        {class:"indent1p", texte:`le coeur de tes fidèles tournés vers toi ; *`},
+        {class:"indent1all", texte:`ne permets pas que le péché les entrave,
+        ne laisse pas le malheur les accabler, /
+        puisque tu les as rachetés par la mort de ton Fils unique.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
       "RAM": {
     titre: "DIMANCHE DES RAMEAUX ET DE LA PASSION DU SEIGNEUR",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_ouverture: [{class:"", texte: `Hosanna au fils de David !
+        Béni soit celui qui vient au nom du Seigneur, le Roi d’Israël !
+        Hosanna au plus haut des cieux !`}],
+    collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, +
+        pour donner au genre humain`},
+        {class:"indent1p", texte:`un exemple d’humilité,`},
+        {class:"indent1all", texte:`tu as voulu que notre Sauveur prenne chair
+        et qu’il subisse la croix : *`},
+        {class:"indent1all", texte:`accorde-nous, dans ta bonté,
+        d’accueillir le témoignage de sa force dans la souffrance /
+        et d’avoir part à sa résurrection.`},
+        {class:"indent1all", texte:`Lui qui vit et règne avec toi dans l’unité du Saint-Esprit, /
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Par la passion de ton Fils unique, nous te prions, Seigneur : +
+        ne tarde pas à nous réconcilier avec toi ; *`},
+        {class:"indent1all", texte:`et même si nos oeuvres ne méritent pas ton pardon,
+        nous comptons sur ta miséricorde pour le recevoir, /
+        grâce à l’unique sacrifice du Christ.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Mon Père,
+        si cette coupe ne peut passer sans que je la boive,
+        que ta volonté soit faite !`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Rassasiés par ce don sacré,
+        nous te supplions humblement, Seigneur : *`},
+        {class:"indent1all", texte:`toi qui nous as donné, dans la mort de ton Fils,
+        d’espérer les biens auxquels nous croyons, /`},
+        {class:"indent1all", texte:`donne-nous, par sa résurrection,
+        de parvenir au but vers lequel nous tendons.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
-    priereSurLePeuple: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
+    priereSurLePeuple: [{class:"grandelettrine", texte:`Regarde, Seigneur, nous t’en prions,
+        la famille qui t’appartient : *`},
+        {class:"indent1all", texte:`c’est pour elle que Jésus, le Christ, notre Seigneur,
+        n’hésita pas à se livrer aux mains des méchants /
+        et à subir le supplice de la croix.`},
+        {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
     ],
   },
 
