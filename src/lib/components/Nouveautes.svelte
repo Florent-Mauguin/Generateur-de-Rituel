@@ -7,6 +7,26 @@
   };
 
   const releases: Release[] = [
+    /*
+{
+      version: 'v0.5',
+      date: 'mars 2026',
+      summary: '',
+      items: [
+        { icon: '📝', label: "Suite et fin de l'integration des oraisons : 100% (476/476). Soit plus de 15 000 lignes de code..." },
+        { icon: '🙏', label: "Ajout d'indications pour le service de l'autel" },
+      ]
+   },
+    */
+{
+      version: 'v0.4',
+      date: 'fevrier 2026',
+      summary: 'Oraisons et service de l\'autel',
+      items: [
+        { icon: '📝', label: "Suite et fin de l'integration des oraisons : 100% (476/476). Soit plus de 15 000 lignes de code..." },
+        { icon: '🙏', label: "Ajout d'indications pour le service de l'autel" },
+      ]
+   },
     {
       version: 'v0.3',
       date: 'janvier 2026',
@@ -15,14 +35,9 @@
         { icon: '🖌️', label: 'Refonte graphique du site pour une meilleure prise en main !' },
         { icon: '🌊', label: "Ajout des textes de la bénédiction de l'eau" },
         { icon: '☎️', label: "Ajout d'un bouton de contact" },
-        { icon: '📝', label: "Suite de l'integration des oraisons : 37,2% (125/336)" },
+        { icon: '📝', label: "Suite de l'integration des oraisons : 26,3% (125/476)" },
       ]
    },
-       /*
-         86/187 oraisons du temporal,
-         60 oraisons du commun
-         89 oraisons du sanctoral
-    */
    {
       version: 'v0.2',
       date: 'décembre 2025',
@@ -32,7 +47,7 @@
         { icon: '⏹️', label: 'Boutons de choix pour les différentes variantes' },
         { icon: '📋', label: "Intégration de l'ensemble des préfaces (seulement 78...)" },
         { icon: '📚', label: "Ajout de la librairie Romcal pour acceder au calendrier liturgique" },
-        { icon: '📝', label: "Début de l'integration des oraisons : 6,5% (20/307)" },
+        { icon: '📝', label: "Début de l'integration des oraisons : 4,2% (20/476)" },
         { icon: '🗺️', label: "Début du mapping : tel jour -> telle préface, oraison, etc. : 8% (50/622)" }
       ]
    },

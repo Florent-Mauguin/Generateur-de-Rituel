@@ -1151,7 +1151,7 @@ export const liturgyRules = {
         ChoixOraison: "5TO",
         Choixpreface: ["1DO","2DO","3DO","4DO","5DO","6DO","7DO","8DO"],
         typeCredo: "NC",
-        celebrationType: "Semaine",
+        celebrationType: "Dominicale",
         Communicantes: "Dimanche"
     },
   "ordinary_time_5_monday": {
@@ -3053,7 +3053,7 @@ export const liturgyRules = {
   "advent_december_24": {
         CelebrationduJour: "",
         ChoixOraison: "24_12",
-        Choixpreface: "",
+        Choixpreface: "1NS",
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Semaine"
@@ -3144,7 +3144,8 @@ export const liturgyRules = {
     },
   "raymond_of_penyafort_priest": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "ST_Ray",
+        CommunOptions: [{ id: "PASTEURS_EVEQUE"}, { id: "DOCTEURS"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3216,7 +3217,7 @@ export const liturgyRules = {
     },
   "timothy_of_ephesus_and_titus_of_crete_bishops": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "STS_TT",
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",

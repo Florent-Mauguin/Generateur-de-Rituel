@@ -29,16 +29,19 @@ const romcal = new Romcal({ localizedCalendar: France_Fr });
   let availableEvents = []; // Toutes les fêtes du jour
   let selectedEventId = ""; // L'ID choisi par l'utilisateur
   let lastLoadedEventId = "";
+  let currentStep = "choice"; 
+let projectType = ""; // 'messe', 'sacrement', ou 'mixte'
 
 // Formulaire
-  export let version = "0.2";
+  export let version = "0.4";
   let inputRituelName = "";
   let rituelName = "";
   let celebrationType = "Solennité";
   let CelebrationduJour = "";
+  let selectedCommunId = "";
   
   // Options
-  let [secret, hideCredo, hideGloria, hidePE, OrdinaireLatin, DoxologieLt] = [false, false, false, false, false, false];
+  let [secret, hideCredo, hideGloria, hidePE, kyriegrec, glorialatin, DoxologieLt, sanctusLt, agnusLt ] = [false, false, false, false, false, false, false, false, false];
   let [Showpreface, Showoraisons] = [true, true];
   let [Bapteme, PremiereCommunion, Confirmation, Mariage, Ordination, sacrementDesMalades] = [false,false,false,false,false,false];
   
@@ -87,20 +90,35 @@ const romcal = new Romcal({ localizedCalendar: France_Fr });
     const regles = liturgyRules[fete.id];
     if (!regles) return;
 
-  
+  if (regles.CommunOptions) {
+        selectedCommunId = regles.CommunOptions[0].id;
+    } else {
+        selectedCommunId = regles.CommunSource || ""; 
+    }
+
   CelebrationduJour = regles.CelebrationduJour || fete.name;
   ChoixOraison = regles.ChoixOraison || "";
   
   // Gestion du choix multiple de préfaces
-  if (regles.Choixpreface) {
-    if (Array.isArray(regles.Choixpreface)) {
-      availablePrefaces = regles.Choixpreface;
-      Choixpreface = regles.Choixpreface[0]; // On prend la 1ère par défaut
-    } else {
-      availablePrefaces = [];
-      Choixpreface = regles.Choixpreface;
+availablePrefaces = []; 
+
+    if (regles.PrefacesOptionnelles) {
+        // CAS : Liste d'objets [{id: "...", label: "..."}]
+        availablePrefaces = regles.PrefacesOptionnelles;
+        Choixpreface = regles.PrefacesOptionnelles[0].id;
+    } 
+    else if (regles.Choixpreface) {
+        if (Array.isArray(regles.Choixpreface)) {
+            // CAS : Simple tableau d'IDs ["1NS", "2NS"]
+            // On le convertit en format standard pour le HTML si besoin
+            availablePrefaces = regles.Choixpreface.map(id => ({ id: id, label: id }));
+            Choixpreface = regles.Choixpreface[0];
+        } else {
+            // CAS : ID unique "1NS"
+            Choixpreface = regles.Choixpreface;
+            availablePrefaces = [{ id: regles.Choixpreface, label: "Préface propre" }];
+        }
     }
-  }
 
   typeCredo = regles.typeCredo || "NC";
   celebrationType = regles.celebrationType || "Semaine";
@@ -220,9 +238,9 @@ function getCssColor(event) {
   return colorMap[color] || color;
 }
 
-$: {hideLiturgieParole, selectedEventId, inputRituelName, secret, hideGloria, OrdinaireLatin, 
-    DoxologieLt, hideCredo, Showpreface, hidePE, Showoraisons, hideliturgieeucharistique,
-    Bapteme, PremiereCommunion, Confirmation, Mariage, Ordination, celebrationType,
+$: {hideLiturgieParole, selectedEventId, inputRituelName, secret, hideGloria, glorialatin, sanctusLt, agnusLt,
+    DoxologieLt, hideCredo, Showpreface, hidePE, Showoraisons, hideliturgieeucharistique, kyriegrec,
+    Bapteme, PremiereCommunion, Confirmation, Mariage, Ordination, celebrationType, selectedCommunId,
     sacrementDesMalades, salutation, ChoixPenitentiel, typeCredo, presenceDiacre,
     InvitS, PriereC, Choixpreface, typePE, AcclamationEucharistique, aspersion,
     Communicantes, NotrePère, Apologies, Conclusion, hideRubriques, showservants,
@@ -232,158 +250,108 @@ $: {hideLiturgieParole, selectedEventId, inputRituelName, secret, hideGloria, Or
 }
 // Génération du rituel filtré
 function generateRitual() {
-  rituelName = inputRituelName;
-  // 2. IMPORTANT : On met à jour l'objet de données de la préface. APRES le mapping pour prendre en compte le bouton sur lequel on a cliqué
-  if (Choixpreface) {prefacedujour = preface[Choixpreface] || null;}
-  if (ChoixOraison) {OraisonsDuJour = Oraisons[ChoixOraison] || null; }
+    rituelName = inputRituelName;
 
-  const options = {
-    presenceBishop,
-    incense, hideliturgieeucharistique,
-    servants, presenceDiacre, showservants, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes,
-    celebrationType, secret, hideRubriques, Apologies, Communicantes, Messe, aspersion,
-    salutation, ChoixPenitentiel, hideGloria, OrdinaireLatin, OraisonsDuJour, Showoraisons, hideCredo, typeCredo, InvitS, PriereC,
-    preface, hidePE, typePE, AcclamationEucharistique, DoxologieLt, NotrePère, Conclusion,
-  };
+    // 1. Mise à jour des données (Préfaces et Oraisons)
+    if (Choixpreface) { prefacedujour = preface[Choixpreface] || null; }
 
-filteredRitual = [];
-
-for (const step of fullRitual) {
-  
-  if (!showservants && step.type === "servants") {
-    continue;
-  }
-
-  // ---- INSERTIONS Oraisons ----
-  if (step.type === "insert-antienne_ouverture" && celebrationType === "Semaine") {
-    if (Showoraisons && OraisonsDuJour) {
-      filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.antienne_ouverture });
+    const regles = liturgyRules[selectedEventId];
+    const sourceId = selectedCommunId;
+    if (sourceId && Oraisons[sourceId]) {
+        const base = { ...Oraisons[sourceId] };
+        const propre = Oraisons[ChoixOraison] || {};
+        OraisonsDuJour = { ...base, ...propre };
+    } else if (ChoixOraison) {
+        OraisonsDuJour = Oraisons[ChoixOraison] || null;
     }
-    continue;
-  }
 
-  if (step.type === "insert-collecte") {
-    if (Showoraisons && OraisonsDuJour) {
-      filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.collecte });
-    }
-    continue;
-  }
+    // 2. Préparation du contexte des options
+    const options = {
+        presenceBishop, kyriegrec, glorialatin, agnusLt, sanctusLt,
+        incense, hideliturgieeucharistique, servants, presenceDiacre, 
+        showservants, cruciferaire, ceroferaire, porteinsigne, portemissel, 
+        acolytes, celebrationType, secret, hideRubriques, Apologies, 
+        Communicantes, Messe, aspersion, salutation, ChoixPenitentiel, 
+        hideGloria, OraisonsDuJour, Showoraisons, hideCredo, typeCredo, 
+        InvitS, PriereC, preface, hidePE, typePE, AcclamationEucharistique, 
+        DoxologieLt, NotrePère, Conclusion
+    };
 
-  if (step.type === "insert-priereSurLesOffrandes") {
-    if (Showoraisons && OraisonsDuJour) {
-      filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.priereSurLesOffrandes });
-    }
-    continue;
-  }
-
-
-  if (step.type === "insert-antienne_communion" && celebrationType === "Semaine") {
-    if (Showoraisons && OraisonsDuJour) {
-      filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.antienne_communion });
-    }
-    continue;
-  }
-
-  if (step.type === "insert-priereApresLaCommunion") {
-    if (Showoraisons && OraisonsDuJour) {
-      filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.priereApresLaCommunion });
-    }
-    continue;
-  }
-
-
-  if (step.type === "titre-preface") {
-  if (Showpreface && prefacedujour) {
-    filteredRitual.push({ type: "preface-titre", texte: prefacedujour.titre });
-  }
-  continue;
-}
-
-  if (step.type === "soustitre-preface") {
-    if (Showpreface && prefacedujour) {
-      filteredRitual.push({ type: "soustitre-preface", texte: prefacedujour.soustitre });
-    }
-    continue;
-  }
-
-  if (step.type === "insert-preface") {
-    if (Showpreface && prefacedujour && typePE !== "PE4") {
-        filteredRitual.push({ type: "preface", segments: prefacedujour.items });
-    }
-    continue;
-  }
-
-  
-  // ✅ MASQUAGE DES RUBRIQUES
-  if (hideRubriques && (step.type === "rubrique" || step.type === "rubriqueinterne")) {
-    continue;
-  }
-
-  // ---- Conditions normales ----
-  const cond = step.conditions;
-
-  if (!cond) {
-    filteredRitual.push(step);
-    if (step.pageBreak === true) {
-      filteredRitual.push({ type: "pageBreak" });
-    }
-    continue;
-  }
-
-  let display = true;
-
-  for (const key in cond) {
-    const expected = cond[key];
-    const actual = options[key];
-
-    // Si la clé n'existe pas dans options, ignorer cette condition
-    if (actual === undefined) continue;
-
-    if (Array.isArray(expected)) {
-      if (!expected.includes(actual)) {
-        display = false;
-        break;
-      }
-    } else {
-      if (expected !== actual) {
-        display = false;
-        break;
-      }
-    }
-  }
-
-  if (display) {
-    // Vérifiez si `items` existe et contient des conditions
-    if (step.items && Array.isArray(step.items)) {
-      const filteredItems = step.items.filter((item) => {
-        if (hideRubriques && (item.type === "rubrique" || item.type === "rubriqueinterne")) {
-          return false;
-        }
+    // 3. Sous-fonction de filtrage sécurisée
+    const checkConditions = (item) => {
+        if (!item) return false;
+        if (!showservants && item.type === "servants") {
+        return false;}
+        // Masquage global des rubriques
+        if (hideRubriques && (item.type === "rubrique" || item.type === "rubriqueinterne")) return false;
         
-    if (!item.conditions || Object.keys(item.conditions).length === 0) return true;
+        const cond = item.conditions;
+        // S'il n'y a pas de conditions, on affiche
+        if (!cond || Object.keys(cond).length === 0) return true;
 
-            // On vérifie chaque condition de l'item
-            for (const [key, expectedValue] of Object.entries(item.conditions)) {
-                if (options[key] !== expectedValue) {
-                    return false; // Désaccord entre la checkbox et la condition
-                }
+        for (const [key, expected] of Object.entries(cond)) {
+            const actual = options[key];
+            if (actual === undefined) continue;
+
+            if (Array.isArray(expected)) {
+                if (!expected.includes(actual)) return false;
+            } else if (actual !== expected) {
+                return false;
             }
-            return true;
-        });
+        }
+        return true;
+    };
 
-      if (filteredItems.length > 0) {
-        filteredRitual.push({ ...step, items: filteredItems });
-      }
-    } else {
-      filteredRitual.push(step);
+    // 4. Boucle principale
+    filteredRitual = [];
+
+    for (const step of fullRitual) {
+        // Protection contre les objets sans type
+        const sType = step.type || "";
+
+        // Cas particuliers
+        if (!showservants && sType === "servants") continue;
+
+        // Gestion des oraisons
+        if (sType.startsWith("insert-antienne") || sType.startsWith("insert-priere") || sType.startsWith("insert-collecte")) {
+            const key = sType.replace("insert-", "");
+            if (Showoraisons && OraisonsDuJour && OraisonsDuJour[key]) {
+                if (sType.includes("antienne") && celebrationType !== "Semaine") continue;
+                filteredRitual.push({ type: "oraison", segments: OraisonsDuJour[key] });
+            }
+            continue;}
+
+        // Gestion préface
+        if (sType === "titre-preface") {
+            if (Showpreface && prefacedujour) filteredRitual.push({ type: "preface-titre", texte: prefacedujour.titre });
+            continue; }
+        if (sType === "soustitre-preface") {
+            if (Showpreface && prefacedujour) filteredRitual.push({ type: "soustitre-preface", texte: prefacedujour.soustitre });
+            continue; }
+        if (sType === "insert-preface") {
+            if (Showpreface && prefacedujour && typePE !== "PE4") filteredRitual.push({ type: "preface", segments: prefacedujour.items });
+            continue; }
+
+        // --- LOGIQUE DE FILTRAGE ---
+        // 1. On vérifie si l'étape elle-même peut être affichée
+        if (!checkConditions(step)) continue;
+
+        // 2. Si l'étape a des items, on les filtre
+        if (step.items && Array.isArray(step.items)) {
+            const filteredItems = step.items.filter(checkConditions);
+            // On ajoute l'élément avec ses items filtrés (même si la liste est vide, 
+            // car l'élément parent peut avoir un type "H3" ou "tableau" important)
+            filteredRitual.push({ ...step, items: filteredItems });
+        } else {
+            // Étape simple sans sous-items
+            filteredRitual.push(step);
+        }
+
+        // Gestion du saut de page
+        if (step.pageBreak) {
+            filteredRitual.push({ type: "pageBreak" });
+        }
     }
-  }
-}
-
-// console.log(prefacedujour.titre);
-//console.log(Array.isArray(prefacedujour.titre));
-console.log(Choixpreface);
-
 }
 
   function handleAspersion(event) {
@@ -415,9 +383,11 @@ let card; // Cette variable sera liée à ton élément HTML
     }
   }
 
-  function toggleLatin() {
-    DoxologieLt = !DoxologieLt;
-  }
+  function toggleLatin() {DoxologieLt = !DoxologieLt;}
+  function toggleKyrieGrec() {kyriegrec = !kyriegrec;}
+  function toggleGloriaLatin() {glorialatin = !glorialatin;}
+  function toggleSanctusLatin() {sanctusLt = !sanctusLt;}
+  function toggleAgnusLatin() {agnusLt = !agnusLt;}
 
 $: if (presenceBishop) {porteinsigne = true } else {porteinsigne = false }
 
@@ -450,6 +420,35 @@ HTML
 </div>
 {/if}
 
+{#if currentStep === "choice"}
+  <div class="welcome-screen">
+    <div class="welcome-card">
+      <h1 class="titre-principal" style="color: white; text-align: center;">Que souhaitez-vous générer ?</h1>
+      <p style="text-align: center; color: #ccc; margin-bottom: 2rem;">Sélectionnez le type de rituel pour commencer</p>
+      
+      <div class="choice-grid">
+        <button class="choice-btn" on:click={() => { projectType = 'messe'; currentStep = 'generator'; }}>
+          <span class="choice-icon">⛪</span>
+          <span class="choice-title">Rituel de Messe</span>
+          <span class="choice-desc">Missel Quotidien Complet pour la forme ordinaire du rite romain</span>
+        </button>
+
+<button class="choice-btn disabled" disabled title="Bientôt disponible">
+    <span class="choice-icon">🕊️</span>
+    <span class="choice-title">Rituel de Sacrement</span>
+    <span class="choice-desc">(Bientôt disponible)</span>
+  </button>
+
+  <button class="choice-btn disabled" disabled title="Bientôt disponible">
+    <span class="choice-icon">✨</span>
+    <span class="choice-title">Messe + Sacrement</span>
+    <span class="choice-desc">(Bientôt disponible)</span>
+  </button>
+      </div>
+    </div>
+  </div>
+
+{:else}
 <!--
 -->
 <a 
@@ -466,7 +465,7 @@ HTML
   <div class="sidebar no-print">
     <div class="brand-chip">
       <span class="brand-dot"></span>
-      <span>Version 0.2<br></span>
+      <span>Version 0.4<br></span>
       <span class="brand-icon">☰</span>
     </div>
     <h1 class="titre-principal">Générateur de rituels catholiques</h1>
@@ -561,7 +560,18 @@ Afficher la date
               <input type="checkbox" bind:checked={presenceDiacre} />
               <span class="slider"></span>
             </div>
-          </label><label class="toggle-container">
+          </label>
+                      {#if selectedEvent && liturgyRules[selectedEvent.id]?.CommunOptions}
+  <div class="common-selector no-print">
+    <p>Choisir le commun :</p>
+    <select bind:value={selectedCommunId}>
+      {#each liturgyRules[selectedEvent.id].CommunOptions as option}
+        <option value={option.id}>{option.label}</option>
+      {/each}
+    </select>
+  </div>
+{/if}
+          <label class="toggle-container">
             <span class="label-text">Bénédiction et aspersion de l'eau</span>
             <div class="switch">
               <input type="checkbox" bind:checked={aspersion} on:change={handleAspersion} />
@@ -787,15 +797,15 @@ Afficher la date
       <div class="page-break" aria-hidden="true"></div>
 
   {:else if step.type === "servants"}
-    <div class="servants-container no-print-break">
-      {#if step.items}
-        {#each step.items as item}
-          <span class="servants-line">{@html item.texte}</span>
-        {/each}
-      {:else}
-        <span class="servants-line">{@html step.texte}</span>
-      {/if}
-    </div>
+  <div class="servants-container no-print-break">
+    {#if step.items}
+      {#each step.items as item}
+        <span class="servants-line">{@html item.texte}</span>
+      {/each}
+    {:else}
+      <span class="servants-line">{@html step.texte}</span>
+    {/if}
+  </div>
 
 
       {:else if step.type === "oraison"}
@@ -820,18 +830,20 @@ Afficher la date
   <div class="variant-header">
     <h3 class="H3">{step.texte}</h3>
     
-    {#if availablePrefaces.length > 1}
+    {#if availablePrefaces && availablePrefaces.length > 1}
       <div class="variant-buttons boutons4 no-print">
-        {#each availablePrefaces as prefId, i}
+        {#each availablePrefaces as pref, i}
           <button 
-            class:selected={Choixpreface === prefId} 
+            class:selected={Choixpreface === pref.id} 
             on:click={() => { 
-                Choixpreface = prefId; 
-                prefacedujour = preface[Choixpreface]; // Mise à jour immédiate
+                Choixpreface = pref.id; 
+                // On recharge les données de la préface choisie
+                prefacedujour = preface[Choixpreface]; 
+                // On relance la génération du rituel
                 generateRitual(); 
             }}
           >
-            {i + 1}
+            {pref.label || (i + 1)}
           </button>
         {/each}
       </div>
@@ -873,6 +885,30 @@ Afficher la date
         on:click={() => { ChoixPenitentiel = "4CP";  }}>1 </button>
       <button class:selected={ChoixPenitentiel === "5CP"} 
         on:click={() => { ChoixPenitentiel = "5CP";  }}>2 </button>
+    </div>
+  </div>
+
+  {:else if step.id === "kyrie"}
+ <div class="variant-header">
+    <h2>{@html step.texte}</h2>
+    <div class="no-print">
+      <button 
+    class="btn-toggle-latin" 
+    class:active={kyriegrec} 
+    on:click={toggleKyrieGrec}
+  >En Grec</button>
+    </div>
+  </div>
+
+  {:else if step.id === "gloria"}
+ <div class="variant-header">
+    <h2>{@html step.texte}</h2>
+    <div class="no-print">
+      <button 
+    class="btn-toggle-latin" 
+    class:active={glorialatin} 
+    on:click={toggleGloriaLatin}
+  >En Latin</button>
     </div>
   </div>
 
@@ -919,6 +955,18 @@ Afficher la date
           {val}
         </button>
       {/each}
+    </div>
+  </div>
+
+  {:else if step.id === "sanctus"}
+ <div class="variant-header">
+    <p class="rubrique">{@html step.texte}</p>
+    <div class="no-print">
+      <button 
+    class="btn-toggle-latin" 
+    class:active={sanctusLt} 
+    on:click={toggleSanctusLatin}
+  >En Latin</button>
     </div>
   </div>
 
@@ -988,6 +1036,18 @@ Afficher la date
     </div>
   </div>
 
+    {:else if step.id === "agnus"}
+ <div class="variant-header">
+    <p class="rubrique">{@html step.texte}</p>
+    <div class="no-print">
+      <button 
+    class="btn-toggle-latin" 
+    class:active={agnusLt} 
+    on:click={toggleAgnusLatin}
+  >En Latin</button>
+    </div>
+  </div>
+
     {:else if step.id === "Conclusion"}
  <div class="variant-header">
     <h3 class="H3 no-print no-wrap">{@html step.texte}</h3>
@@ -1006,12 +1066,19 @@ Afficher la date
 {:else if step.items}
   <div class={step.class}>
     {#each step.items as item}
-      <p class="{item.type} {item.class || ''}">{@html item.texte}</p>
+      {#if item.type === "servants"}
+        <div class="servants-container no-print-break">
+          <span class="servants-line">{@html item.texte}</span>
+        </div>
+      {:else}
+        <p class="{item.type} {item.class || ''}">{@html item.texte}</p>
+      {/if}
     {/each}
   </div>
-      {:else}
-          <p class="{step.type} texte {step.class || ''}">{@html step.texte}</p>
-    {/if}
+
+{:else}
+  <p class="{step.type} texte {step.class || ''}">{@html step.texte}</p>
+{/if}
   {/each}
   {#if showScrollButton}
       <button 
@@ -1028,6 +1095,7 @@ Afficher la date
 </div>
 
 </div>
+{/if}
 
 <!-- Ajouter une condition
           {#if celebrationType === "Dominicale"}
@@ -1083,22 +1151,18 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
     border-left: 5px solid #2F5D8A;
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
     color: #2F5D8A;
-    margin-left: 0.5rem;
-    margin-top: 1rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
 }
-.servants-container + .servants-container {
-    margin-top: 0rem; /* Espace entre les conteneurs */
-}
-
-/* Les lignes à l'intérieur */
+.servants-container + .servants-container {margin-top: 0rem; margin-bottom: 0; }
 .servants-line {
     margin: 0.3rem 0; /* Espace entre les lignes de texte */
-    display: block;
+    display: block; }
+.servants-container:first-of-type {
+    margin-bottom: 0rem;
 }
-
 .servants-line:first-child { margin-top: 0; }
 .servants-line:last-child { margin-bottom: 0; }
-.paragraph.servants + .paragraph.servants { margin-top: 0;}
+.paragraph.servants + .paragraph.servants { margin-top: 0; }
 .indent1all { text-indent: -20px; padding-left: 20px; } 
 .indent1p { text-indent: 20px; }
 .indent1g { text-indent: 50px; }
@@ -1111,7 +1175,7 @@ p.centre { text-align: center; line-height: 1; font-weight: 400; font-size: 1.6r
 .sautdeligne {line-height: 0.6;}
 .preface-texte .sautdeligne { line-height: 0.6; }
 .voixbasse { font-style: italic; font-size: 1.2rem; line-height:1.1; }
-.grandelettrine::first-letter { color: var(--accent); font-size: 48px; font-weight: 700; float: left; line-height: 0.85; padding-top: 0.3rem; }
+.grandelettrine::first-letter { color: var(--accent); font-size: 52px; font-weight: 700; float: left; line-height: 0.85; padding-top: 0.3rem; }
 /***************************************************** * PANELS — (PARAMÈTRES DU GÉNÉRATEUR) *****************************************************/
 .panel { margin-bottom: 0.75rem; padding: 0.6rem; border-radius: calc(var(--radius) - 2px); border: 3px solid rgba(23, 24, 24, 0.175); }
 .panel + .panel-header { margin-top: 1rem; } /* espace visuel entre blocks */
@@ -1281,5 +1345,69 @@ input:checked + .slider:before { transform: translateX(20px); }
   border-color: #4A141C;
   box-shadow: 0 0 6px rgba(74, 20, 28, 0.6);
 }
+.welcome-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3D3D3D;
+}
 
+.welcome-card {
+    max-width: 900px;
+    width: 95%;
+}
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.choice-btn {
+    background: #50504F;
+    border: 1px solid #444;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.choice-btn:hover {
+    background: #333;
+    border-color: #666;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.choice-icon { font-size: 3rem; margin-bottom: 1rem; }
+.choice-title { font-size: 1.2rem; font-weight: bold; display: block; margin-bottom: 0.5rem; }
+.choice-desc { font-size: 0.9rem; color: #888; }
+
+.btn-back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: #4A141C;
+    cursor: pointer;
+}
+.choice-btn.disabled {
+    opacity: 0.5;
+    cursor: default;
+    filter: grayscale(1); /* Met le bouton en noir et blanc */
+    border-style: dashed; /* Bordure en pointillés pour l'aspect "en construction" */
+}
+
+.choice-btn.disabled:hover {
+    transform: none; /* Désactive l'animation de survol */
+    box-shadow: none;
+    background: #2a2a2a;
+}
 </style>

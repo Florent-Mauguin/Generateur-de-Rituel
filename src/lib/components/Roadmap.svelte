@@ -1,25 +1,6 @@
 <script>
   export let quarters = [
     {
-      icon: "⛄",
-      title: "Hiver 2025",
-      statusencours: "En cours",
-      items: [
-        {
-          title: "Première génération",
-          desc: "Rituel complet pour le quotidien (dimanches et semaine)",
-          priority: "Haute",
-          color: "red"
-        },
-        {
-          title: "Amélioration UX/UI",
-          desc: "Amélioration de l'expérience utilisateur et de l'interface",
-          priority: "Basse",
-          color: "yellow"
-        }
-      ]
-    },
-    {
       icon: "☔",
       title: "Printemps 2026",
       statusplannifié: "Plannifié",
@@ -31,8 +12,8 @@
           color: "red"
         },
         {
-          title: "Oraisons",
-          desc: "Ajout de toutes les oraisons du missel romain",
+          title: "Mapping",
+          desc: "Relier chaque oraison à son jour",
           priority: "Haute",
           color: "red"
         }
