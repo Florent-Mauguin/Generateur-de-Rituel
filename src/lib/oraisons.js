@@ -11,7 +11,7 @@ export const Oraisons = {
         Pour qui espère en toi, pas de honte.`}],
     collecte: [{class:"grandelettrine", texte:`Donne à tes fidèles, Dieu tout-puissant, 
         la volonté d’aller par les chemins de la justice`},
-        {class:"indent1p", texte:`à la rencontre de celui qui vient, le Christ <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à la rencontre de celui qui vient, le Christ <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin qu’ils soient admis à sa droite <span style="color: #b30000;">/</span>
         et méritent d’entrer en possession du royaume des Cieux.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -20,7 +20,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’offrons, Seigneur, ces dons 
         prélevés sur les bienfaits reçus de toi : <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisse la célébration fervente,
         que tu nous donnes d’accomplir dans le temps présent, <span style="color: #b30000;">/</span>
         nous obtenir la rédemption éternelle.`},
@@ -30,7 +30,7 @@ export const Oraisons = {
         et notre terre donnera son fruit.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, 
         fais fructifier en nous`},
-        {class:"indent1p", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tandis que nous marchons dans ce monde qui passe,
         tu nous enseignes par eux
         à aimer dès maintenant les biens du ciel, <span style="color: #b30000;">/</span>
@@ -52,7 +52,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’offrons, Seigneur, ces dons 
         prélevés sur les bienfaits reçus de toi : <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisse la célébration fervente,
         que tu nous donnes d’accomplir dans le temps présent, <span style="color: #b30000;">/</span>
         nous obtenir la rédemption éternelle.`},
@@ -62,7 +62,7 @@ export const Oraisons = {
         afin que, de tout coeur, nous nous réjouissions devant toi.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, 
         fais fructifier en nous`},
-        {class:"indent1p", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tandis que nous marchons dans ce monde qui passe,
         tu nous enseignes par eux
         à aimer dès maintenant les biens du ciel, <span style="color: #b30000;">/</span>
@@ -78,7 +78,7 @@ export const Oraisons = {
       {texte:"on verra, ce jour-là, une grande lumière."}],
     collecte: [{class:"grandelettrine", texte:`Sois favorable à nos supplications, Seigneur Dieu ; <span style="color: #b30000;">+</span>
         nous t’en prions : accorde le secours de ta tendresse`},
-        {class:"indent1p", texte:`à ceux qui sont dans l’épreuve, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à ceux qui sont dans l’épreuve, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que, réconfortés par la présence
         de ton Fils qui doit venir, <span style="color: #b30000;">/</span>`},
         {class:"", texte:`nous soyons préservés de la dégradation du péché.`},
@@ -120,7 +120,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         accorde-nous de t’offrir toujours`},
-        {class:"indent1p", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il réalise le mystère sacré que tu as institué, <span style="color: #b30000;">/</span>
         et opère en nous ton salut avec puissance.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -129,7 +129,7 @@ export const Oraisons = {
         il vient illuminer le regard de ceux qui le servent.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous implorons, Seigneur, ta bonté : <span style="color: #b30000;">*</span>
         que ce réconfort divin`},
-        {class:"indent1p", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
         et nous prépare aux fêtes qui approchent.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -151,7 +151,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’offrons, Seigneur, ces dons
         prélevés sur les bienfaits reçus de toi : <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisse la célébration fervente,
         que tu nous donnes d’accomplir dans le temps présent, <span style="color: #b30000;">/</span>
         nous obtenir la rédemption éternelle.`},
@@ -163,7 +163,7 @@ export const Oraisons = {
         la manifestation de la gloire de notre grand Dieu.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         fais fructifier en nous`},
-        {class:"indent1p", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tandis que nous marchons dans ce monde qui passe,
         tu nous enseignes par eux
         à aimer dès maintenant les biens du ciel, <span style="color: #b30000;">/</span>
@@ -179,7 +179,7 @@ export const Oraisons = {
         et lui donner la vie éternelle.`}],
     collecte: [{class:"grandelettrine", texte:`Réveille, Seigneur, ta puissance, et viens : <span style="color: #b30000;">*</span>
         afin que, sous ta protection,`},
-        {class:"indent1p", texte:`nous puissions être délivrés des dangers imminents
+        {class:"indentallp", texte:`nous puissions être délivrés des dangers imminents
         où nous mettent nos péchés, <span style="color: #b30000;">/</span>
         et sauvés par toi, notre libérateur.`},
         {class:"indent1all", texte:`Toi qui vis et règnes avec le Père dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -213,7 +213,7 @@ export const Oraisons = {
     ],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as envoyé ton Fils unique dans ce monde`},
-        {class:"indent1p", texte:`pour libérer le genre humain de sa condition périssable ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour libérer le genre humain de sa condition périssable ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à ceux qui t’appellent du fond du coeur,
         accorde généreusement la grâce de ta tendresse <span style="color: #b30000;">/</span>`},
         {class:"", texte:`pour qu’ils parviennent à la vraie liberté.`},
@@ -223,7 +223,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         accorde-nous de t’offrir toujours`},
-        {class:"indent1p", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il réalise le mystère sacré que tu as institué, <span style="color: #b30000;">/</span>
         et opère en nous ton salut avec puissance.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -233,7 +233,7 @@ export const Oraisons = {
         que je vais donner à chacun selon ce qu’il a fait.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous implorons, Seigneur, ta bonté : <span style="color: #b30000;">*</span>
         que ce réconfort divin`},
-        {class:"indent1p", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
         et nous prépare aux fêtes qui approchent.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -248,7 +248,7 @@ export const Oraisons = {
         pour la joie de vos coeurs.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu de puissance et de miséricorde, <span style="color: #b30000;">+</span>
         ne laisse pas le souci de nos tâches présentes`},
-        {class:"indent1p", texte:`entraver la marche de ceux qui se hâtent
+        {class:"indentallp", texte:`entraver la marche de ceux qui se hâtent
         à la rencontre de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`mais forme-nous à la sagesse d’en-haut, <span style="color: #b30000;">/</span>
         qui nous fait entrer en communion avec lui.`},
@@ -287,7 +287,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’offrons, Seigneur, ces dons
         prélevés sur les bienfaits reçus de toi : <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},        
+        {class:"indentallp", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},        
         {class:"indent1all", texte:`puisse la célébration fervente,
         que tu nous donnes d’accomplir dans le temps présent, <span style="color: #b30000;">/</span>
         nous obtenir la rédemption éternelle.`},
@@ -297,7 +297,7 @@ export const Oraisons = {
         en ta présence nous goûterons la joie.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         fais fructifier en nous`},
-        {class:"indent1p", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tandis que nous marchons dans ce monde qui passe,
         tu nous enseignes par eux
         à aimer dès maintenant les biens du ciel, <span style="color: #b30000;">/</span>
@@ -313,7 +313,7 @@ export const Oraisons = {
         {class:"", texte:`on verra, ce jour-là, une grande lumière.`},],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as manifesté jusqu’aux extrémités de la terre`},
-        {class:"indent1p", texte:`celui qui apporte ton salut ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`celui qui apporte ton salut ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions, accorde-nous d’attendre dans la joie <span style="color: #b30000;">/</span>
         le jour glorieux de sa naissance.`},
         {class:"indent1all", texte:`Lui qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -344,7 +344,7 @@ export const Oraisons = {
         et se manifester à toutes les nations.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         tu nous demandes de préparer`},
-        {class:"indent1p", texte:`le chemin du Christ, le Seigneur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`le chemin du Christ, le Seigneur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`dans ta bonté, ne permets pas que la faiblesse nous accable, <span style="color: #b30000;">/</span>
         nous qui attendons d’être réconfortés
         par la présence du médecin qui vient du ciel.`},
@@ -353,7 +353,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         accorde-nous de t’offrir toujours`},
-        {class:"indent1p", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il réalise le mystère sacré que tu as institué, <span style="color: #b30000;">/</span>
         et opère en nous ton salut avec puissance.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -362,7 +362,7 @@ export const Oraisons = {
         il vient illuminer le regard de ceux qui le servent.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous implorons, Seigneur, ta bonté : <span style="color: #b30000;">*</span>
         que ce réconfort divin`},
-        {class:"indent1p", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
         et nous prépare aux fêtes qui approchent.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -384,7 +384,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’offrons, Seigneur, ces dons
         prélevés sur les bienfaits reçus de toi : <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisse la célébration fervente,
         que tu nous donnes d’accomplir dans le temps présent, <span style="color: #b30000;">/</span>
         nous obtenir la rédemption éternelle.`},
@@ -396,7 +396,7 @@ export const Oraisons = {
         la manifestation de la gloire de notre grand Dieu.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         fais fructifier en nous`},
-        {class:"indent1p", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tandis que nous marchons dans ce monde qui passe,
         tu nous enseignes par eux
         à aimer dès maintenant les biens du ciel, <span style="color: #b30000;">/</span>
@@ -412,7 +412,7 @@ export const Oraisons = {
         et lui donner la vie éternelle.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant, <span style="color: #b30000;">+</span>
         accorde à ton peuple d’attendre avec une grande vigilance`},
-        {class:"indent1p", texte:`l’avènement de ton Fils unique ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`l’avènement de ton Fils unique ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puissions-nous, comme l’enseigne notre Sauveur,
         rester en éveil et nous hâter à sa rencontre <span style="color: #b30000;">/</span>
         avec nos lampes allumées.`},
@@ -457,7 +457,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         accorde-nous de t’offrir toujours`},
-        {class:"indent1p", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il réalise le mystère sacré que tu as institué, <span style="color: #b30000;">/</span>
         et opère en nous ton salut avec puissance.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -467,7 +467,7 @@ export const Oraisons = {
         que je vais donner à chacun selon ce qu’il a fait.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous implorons, Seigneur, ta bonté : <span style="color: #b30000;">*</span>
         que ce réconfort divin`},
-        {class:"indent1p", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
         et nous prépare aux fêtes qui approchent.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -480,7 +480,7 @@ export const Oraisons = {
         Le Seigneur est proche.`}],
     collecte: [{class:"grandelettrine", texte:`Tu le vois, Seigneur Dieu, <span style="color: #b30000;">+</span>
         ton peuple attend avec foi`},
-        {class:"indent1p", texte:`la fête de la naissance de ton Fils ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la fête de la naissance de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions, accorde-nous
         de parvenir au bonheur d’un tel salut, <span style="color: #b30000;">/</span>
         et de le célébrer solennellement avec une joie toujours nouvelle.`},
@@ -490,7 +490,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         accorde-nous de t’offrir toujours`},
-        {class:"indent1p", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il réalise le mystère sacré que tu as institué, <span style="color: #b30000;">/</span>
         et opère en nous ton salut avec puissance.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -501,7 +501,7 @@ export const Oraisons = {
         Il vient et va nous sauver.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous implorons, Seigneur, ta bonté : <span style="color: #b30000;">*</span>
         que ce réconfort divin`},
-        {class:"indent1p", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
         et nous prépare aux fêtes qui approchent.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -521,7 +521,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’offrons, Seigneur, ces dons
         prélevés sur les bienfaits reçus de toi : <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},        
+        {class:"indentallp", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},        
         {class:"indent1all", texte:`puisse la célébration fervente,
         que tu nous donnes d’accomplir dans le temps présent, <span style="color: #b30000;">/</span>
         nous obtenir la rédemption éternelle.`},
@@ -531,7 +531,7 @@ export const Oraisons = {
         en ta présence nous goûterons la joie.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         fais fructifier en nous`},
-        {class:"indent1p", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tandis que nous marchons dans ce monde qui passe,
         tu nous enseignes par eux
         à aimer dès maintenant les biens du ciel, <span style="color: #b30000;">/</span>
@@ -579,7 +579,7 @@ export const Oraisons = {
         et se manifester à toutes les nations.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">*</span>
         que la fête prochaine de la venue de ton Fils`},
-        {class:"indent1p", texte:`nous procure la guérison pour la vie présente <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous procure la guérison pour la vie présente <span style="color: #b30000;">/</span>
         et nous assure une récompense éternelle.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -587,7 +587,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         accorde-nous de t’offrir toujours`},
-        {class:"indent1p", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ce sacrifice d’un coeur généreux : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il réalise le mystère sacré que tu as institué, <span style="color: #b30000;">/</span>
         et opère en nous ton salut avec puissance.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -596,7 +596,7 @@ export const Oraisons = {
         il vient illuminer le regard de ceux qui le servent.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous implorons, Seigneur, ta bonté : <span style="color: #b30000;">*</span>
         que ce réconfort divin`},
-        {class:"indent1p", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous délivre de nos penchants mauvais <span style="color: #b30000;">/</span>
         et nous prépare aux fêtes qui approchent.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -618,7 +618,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’offrons, Seigneur, ces dons
         prélevés sur les bienfaits reçus de toi : <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, accueille-les ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisse la célébration fervente,
         que tu nous donnes d’accomplir dans le temps présent, <span style="color: #b30000;">/</span>
         nous obtenir la rédemption éternelle.`},
@@ -630,7 +630,7 @@ export const Oraisons = {
         la manifestation de la gloire de notre grand Dieu.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         fais fructifier en nous`},
-        {class:"indent1p", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les mystères que nous avons célébrés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tandis que nous marchons dans ce monde qui passe,
         tu nous enseignes par eux
         à aimer dès maintenant les biens du ciel, <span style="color: #b30000;">/</span>
@@ -682,7 +682,7 @@ export const Oraisons = {
         que la terre s’ouvre, et que germe le Sauveur.`}],
     collecte: [{class:"grandelettrine", texte:`Nous te prions, Seigneur, de répandre ta grâce en nos coeurs ; <span style="color: #b30000;">+</span>
         par le message de l’Ange, tu nous as fait connaître`},
-        {class:"indent1p", texte:`l’incarnation de ton Fils bien-aimé ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`l’incarnation de ton Fils bien-aimé ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`conduis-nous par sa passion et par sa croix <span style="color: #b30000;">/</span>
         jusqu’à la gloire de la résurrection.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -691,7 +691,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Ces offrandes déposées sur ton autel, Seigneur,
         que l’Esprit les sanctifie, <span style="color: #b30000;">*</span>`},
-        {class:"indent1p", texte:`lui dont la puissance a fécondé <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`lui dont la puissance a fécondé <span style="color: #b30000;">/</span>
         le sein de la bienheureuse Marie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
@@ -715,7 +715,7 @@ export const Oraisons = {
       {texte:"de ses pauvres, il a compassion."}],
     collecte: [{class:"grandelettrine", texte:`Dieu, créateur et rédempteur du genre humain, <span style="color: #b30000;">+</span>
         tu as voulu que ton Verbe prenne chair`},
-        {class:"indent1p", texte:`dans le sein de Marie toujours vierge ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`dans le sein de Marie toujours vierge ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`sois favorable à notre prière : <span style="color: #b30000;">/</span>
         que ton Fils unique, qui a pris notre humanité,
         nous donne part à sa vie divine.`},
@@ -746,7 +746,7 @@ export const Oraisons = {
         Voici l’Agneau qui devait venir.`}],
     collecte: [{class:"grandelettrine", texte:`nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">+</span>
         nous ployons sous le joug du péché`},
-        {class:"indent1p", texte:`qui depuis longtemps nous réduit en esclavage,`},
+        {class:"indentallp", texte:`qui depuis longtemps nous réduit en esclavage,`},
         {class:"indent1all", texte:`accorde-nous d’être délivrés, <span style="color: #b30000;">/</span>
         nous qui attendons la naissance incomparable de ton Fils unique.`},
         {class:"indent1all", texte:`Lui qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -777,7 +777,7 @@ export const Oraisons = {
         car il est notre Sauveur.`},],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par la maternité de la Vierge sainte,`},
-        {class:"indent1p", texte:`tu as voulu révéler au monde la splendeur de ta gloire ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as voulu révéler au monde la splendeur de ta gloire ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions : accorde-nous de vénérer
         le mystère si grand de l’incarnation
         dans la pureté de la foi <span style="color: #b30000;">/</span>
@@ -788,7 +788,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Regarde avec bonté,
         nous t’en prions, Seigneur,`},
-        {class:"indent1p", texte:`les offrandes apportées à ton autel : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les offrandes apportées à ton autel : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que les dons présentés par nous, dans notre faiblesse, <span style="color: #b30000;">/</span>
         soient consacrés par ta puissance.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -812,7 +812,7 @@ export const Oraisons = {
         et tout être de chair verra le salut de Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu d’éternelle majesté, <span style="color: #b30000;">+</span>
         à l’annonce de l’Ange,`},
-        {class:"indent1p", texte:`la Vierge immaculée accueillit ton Verbe indicible,
+        {class:"indentallp", texte:`la Vierge immaculée accueillit ton Verbe indicible,
         et, devenue la demeure de Dieu,
         elle fut remplie de la lumière de l’Esprit Saint ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous te demandons qu’à son exemple <span style="color: #b30000;">/</span>
@@ -854,7 +854,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille favorablement, Seigneur, ces présents
         que, dans ta miséricorde, tu as donnés à ton Église`},
-        {class:"indent1p", texte:`pour qu’elle puisse te les offrir ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour qu’elle puisse te les offrir ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’ils deviennent, par ta puissance, <span style="color: #b30000;">/</span>
         le sacrement de notre salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -878,7 +878,7 @@ export const Oraisons = {
         qu’il entre, le roi de gloire !`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par la venue de ton Fils Unique,`},
-        {class:"indent1p", texte:`tu as voulu racheter l’homme déchu,
+        {class:"indentallp", texte:`tu as voulu racheter l’homme déchu,
         que tu voyais soumis à la mort ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ceux qui reconnaissent humblement
         le mystère de son incarnation, <span style="color: #b30000;">/</span>
@@ -888,7 +888,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Confiants dans ta tendresse, Seigneur, <span style="color: #b30000;">+</span>
         nous approchons de ton autel avec respect`},
-        {class:"indent1p", texte:`en apportant nos présents ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en apportant nos présents ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puissions-nous, par un effet de ta grâce qui nous purifie,
         être renouvelés par ces mystères que nous célébrons.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -910,7 +910,7 @@ export const Oraisons = {
         en lui seront bénies toutes les familles de la terre.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tandis que nous voyons approcher`},
-        {class:"indent1p", texte:`la naissance de ton Fils selon la chair,
+        {class:"indentallp", texte:`la naissance de ton Fils selon la chair,
         nous te prions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que ton Verbe fasse miséricorde
         aux indignes serviteurs que nous sommes, <span style="color: #b30000;">/</span>`},
@@ -1003,7 +1003,7 @@ export const Oraisons = {
     priereApresLaCommunion: [
       {class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">*</span>
         accorde-nous de reprendre vie`},
-      {class:"indent1p", texte:`en rappelant la naissance de ton Fils unique, <span style="color: #b30000;">/</span>`},
+      {class:"indentallp", texte:`en rappelant la naissance de ton Fils unique, <span style="color: #b30000;">/</span>`},
       {class:"indent1all", texte:`puisque notre faim et notre soif
         sont apaisées par le sacrement du ciel.`},
       {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -1030,7 +1030,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En t’offrant, Seigneur,
         le sacrifice qui nous réconcilie avec toi,`},
-        {class:"indent1p", texte:`nous te supplions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te supplions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à la prière de la Vierge, la Mère de Dieu,
         et à la prière de saint Joseph, <span style="color: #b30000;">/</span>
         affermis nos familles dans ta grâce et dans ta paix.`},
@@ -1056,7 +1056,7 @@ export const Oraisons = {
         mais obtienne la vie éternelle.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, que nul ne peut voir, <span style="color: #b30000;">+</span>
         tu as dissipé les ténèbres du monde`},
-        {class:"indent1p", texte:`par la venue de ta lumière ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par la venue de ta lumière ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions, tourne vers nous ton visage de paix,
         pour que nos louanges proclament
         l’oeuvre merveilleuse que tu as accomplie <span style="color: #b30000;">/</span>
@@ -1066,7 +1066,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur,
         ce que nous présentons pour cette eucharistie`},
-        {class:"indent1p", texte:`où s’accomplit un admirable échange : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`où s’accomplit un admirable échange : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en offrant ce que tu nous as donné, <span style="color: #b30000;">/</span>
         puissions-nous te recevoir toi-même.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -1075,7 +1075,7 @@ export const Oraisons = {
         l’Astre d’en haut est venu nous visiter.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous t’en prions : <span style="color: #b30000;">*</span>
         fais que la force de tes saints mystères <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`soutienne constamment notre vie.`},
+        {class:"indentallp", texte:`soutienne constamment notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -1088,7 +1088,7 @@ export const Oraisons = {
         vint du ciel, de ton trône royal.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">+</span>
         nous ployons sous le joug du péché`},
-        {class:"indent1p", texte:`qui depuis longtemps nous tient en esclavage : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`qui depuis longtemps nous tient en esclavage : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous la délivrance
         par l’incomparable naissance en notre chair <span style="color: #b30000;">/</span>
         de ton Fils unique, Jésus Christ.`},
@@ -1097,7 +1097,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois favorablement,
         nous t’en prions, Seigneur,`},
-        {class:"indent1p", texte:`les dons présentés par ton peuple : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les dons présentés par ton peuple : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que tous obtiennent par tes sacrements <span style="color: #b30000;">/</span>
         ce qu’ils proclament dans la ferveur de la foi.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -1106,7 +1106,7 @@ export const Oraisons = {
         et reçu grâce après grâce.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         toi qui viens jusqu’à nous`},
-        {class:"indent1p", texte:`quand nous participons à ce sacrement, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`quand nous participons à ce sacrement, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`produis en nos coeurs les fruits de ce mystère,
         pour que tes propres dons nous préparent <span style="color: #b30000;">/</span>
         à recevoir ce que tu nous donnes.`},
@@ -1122,7 +1122,7 @@ export const Oraisons = {
         on proclame son nom : Ange du grand conseil.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu as voulu que l’origine et l’achèvement de toute la religion`},
-        {class:"indent1p", texte:`se trouvent dans la naissance de ton Fils ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`se trouvent dans la naissance de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions, accorde-nous d’être comptés
         parmi ceux qui appartiennent au Christ <span style="color: #b30000;">/</span>
         en qui réside la plénitude du salut de l’humanité.`},
@@ -1163,7 +1163,7 @@ export const Oraisons = {
         Et son règne n’aura pas de fin.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par la virginité féconde de la bienheureuse Marie,`},
-        {class:"indent1p", texte:`tu as offert au genre humain les bienfaits du salut éternel ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as offert au genre humain les bienfaits du salut éternel ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d’éprouver qu’intercède en notre faveur
         celle qui nous permit d’accueillir l’auteur de la vie, <span style="color: #b30000;">/</span>
         Jésus Christ, ton Fils, notre Seigneur.`},
@@ -1172,7 +1172,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         dans ta bonté, tu es à l’origine de tout bien,`},
-        {class:"indent1p", texte:`et tu le mènes à sa perfection ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et tu le mènes à sa perfection ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque la solennité de la sainte Mère de Dieu
         nous fait célébrer dans l’allégresse les premiers temps de ta grâce, <span style="color: #b30000;">/</span>
         donne-nous la joie d’en recueillir tous les fruits.`},
@@ -1236,7 +1236,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous te prions, Seigneur : <span style="color: #b30000;">+</span>
         accueille les offrandes que nous te consacrons`},
-        {class:"indent1p", texte:`pour célébrer la manifestation de ton Fils unique
+        {class:"indentallp", texte:`pour célébrer la manifestation de ton Fils unique
         et le premier hommage des nations ; <span style="color: #b30000;">*</span>`},        
         {class:"indent1all", texte:`alors montera vers toi la louange <span style="color: #b30000;">/</span>
         et s’accomplira pour nous le salut éternel.`},
@@ -1258,7 +1258,7 @@ export const Oraisons = {
         il tient en main la royauté, la puissance et l’empire.`}],
     collecte: [{class:"grandelettrine", texte:`Aujourd’hui, Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as révélé ton Fils unique aux nations,`},
-        {class:"indent1p", texte:`grâce à l’étoile qui les guidait ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`grâce à l’étoile qui les guidait ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous dans ta bonté,
         à nous qui te connaissons déjà par la foi, <span style="color: #b30000;">/</span>
         d’être conduits jusqu’à la claire vision de ta splendeur.`},
@@ -1268,7 +1268,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Regarde avec bonté, nous t’en prions, Seigneur,
         les dons de ton Église qui ne t’offre plus`},
-        {class:"indent1p", texte:`ni l’or, ni l’encens, ni la myrrhe, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ni l’or, ni l’encens, ni la myrrhe, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`mais Celui que ces présents révélaient, <span style="color: #b30000;">/</span>
         qui s’immole et se donne en nourriture : Jésus, le Christ.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
@@ -1304,7 +1304,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur,
         ce que nous présentons pour cette eucharistie`},
-        {class:"indent1p", texte:`où s’accomplit un admirable échange : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`où s’accomplit un admirable échange : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en offrant ce que tu nous as donné, <span style="color: #b30000;">/</span>
         puissions-nous te recevoir toi-même.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -1315,7 +1315,7 @@ export const Oraisons = {
         {class:"indent1all", texte: ``}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous t’en prions : <span style="color: #b30000;">*</span>
         fais que la force de tes saints mystères <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`soutienne constamment notre vie.`},
+        {class:"indentallp", texte:`soutienne constamment notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -1326,7 +1326,7 @@ export const Oraisons = {
         le Seigneur est Dieu, et il nous illumine.`},
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as voulu que ton Fils,`},
-        {class:"indent1p", texte:`par sa bienheureuse naissance de la Vierge sainte,
+        {class:"indentallp", texte:`par sa bienheureuse naissance de la Vierge sainte,
         ne soit pas soumis dans sa chair
         à la condamnation qui pesait sur le genre humain ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d’échapper à la dégradation du péché, <span style="color: #b30000;">/</span>
@@ -1347,7 +1347,7 @@ export const Oraisons = {
         semblable à celle des pécheurs.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         toi qui viens jusqu’à nous`},
-        {class:"indent1p", texte:`quand nous participons à ce sacrement, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`quand nous participons à ce sacrement, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`produis en nos coeurs les fruits de ce mystère,
         pour que tes propres dons nous préparent
         à recevoir ce que tu nous donnes.`},
@@ -1363,7 +1363,7 @@ export const Oraisons = {
         une lumière a resplendi.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous t’en prions : <span style="color: #b30000;">+</span>
         puisque ton salut s’est manifesté pour la rédemption du monde`},
-        {class:"indent1p", texte:`par une lumière nouvelle dans les cieux, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`par une lumière nouvelle dans les cieux, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`qu’il se lève en nos coeurs
         pour les renouveler toujours.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -1398,7 +1398,7 @@ export const Oraisons = {
         comme Sauveur du monde.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as merveilleusement inauguré la rédemption de ton peuple`},
-        {class:"indent1p", texte:`par la naissance de ton Fils unique ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par la naissance de ton Fils unique ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à tes serviteurs une foi solide
         pour qu’ils se laissent conduire par lui, <span style="color: #b30000;">/</span>
         et parviennent ainsi à la gloire que tu leur promets.`},
@@ -1408,7 +1408,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur,
         ce que nous présentons pour cette eucharistie`},
-        {class:"indent1p", texte:`où s’accomplit un admirable échange : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`où s’accomplit un admirable échange : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en offrant ce que tu nous as donné, <span style="color: #b30000;">/</span>
         puissions-nous te recevoir toi-même.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -1419,7 +1419,7 @@ export const Oraisons = {
         mais obtienne la vie éternelle.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous t’en prions : <span style="color: #b30000;">*</span>
         fais que la force de tes saints mystères <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`soutienne constamment notre vie.`},
+        {class:"indentallp", texte:`soutienne constamment notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -1447,7 +1447,7 @@ export const Oraisons = {
         pour que nous vivions par lui.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         toi qui viens jusqu’à nous`},
-        {class:"indent1p", texte:`quand nous participons à ce sacrement, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`quand nous participons à ce sacrement, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`produis en nos coeurs les fruits de ce mystère,
         pour que tes propres dons nous préparent
         à recevoir ce que tu nous donnes.`},
@@ -1461,7 +1461,7 @@ export const Oraisons = {
         pour que nous soyons adoptés comme fils.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         par l’avènement de ton Fils unique,`},
-        {class:"indent1p", texte:`tu as bien voulu rayonner d’une lumière nouvelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as bien voulu rayonner d’une lumière nouvelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous l’avons vu prendre un corps comme le nôtre,
         en devenant l’enfant de la Vierge, <span style="color: #b30000;">/</span>
         accorde-nous d’avoir part à la grâce dans son Royaume.`},
@@ -1495,7 +1495,7 @@ export const Oraisons = {
         car une grande lumière est descendue sur la terre.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         ton Verbe, dont l’éternité fait resplendir la beauté du ciel,`},
-        {class:"indent1p", texte:`a pris, de la Vierge Marie, la faiblesse de notre chair ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`a pris, de la Vierge Marie, la faiblesse de notre chair ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :
         puisqu’il nous est apparu dans la splendeur de la vérité, <span style="color: #b30000;">/</span>
         qu’il s’avance aussi, dans la plénitude de sa puissance,
@@ -1505,7 +1505,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur,
         ce que nous présentons pour cette eucharistie`},
-        {class:"indent1p", texte:`où s’accomplit un admirable échange : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`où s’accomplit un admirable échange : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en offrant ce que tu nous as donné, <span style="color: #b30000;">/</span>
         puissions-nous te recevoir toi-même.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -1516,7 +1516,7 @@ export const Oraisons = {
         {class:"indent1all", texte: ``}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous t’en prions : <span style="color: #b30000;">*</span>
         fais que la force de tes saints mystères <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`soutienne constamment notre vie.`},
+        {class:"indentallp", texte:`soutienne constamment notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -1527,7 +1527,7 @@ export const Oraisons = {
         le Seigneur est Dieu, et il nous illumine.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         c’est dans la réalité de notre chair`},
-        {class:"indent1p", texte:`que ton Fils unique est apparu ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`que ton Fils unique est apparu ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisqu’à son aspect extérieur,
         nous l’avons reconnu semblable à nous, <span style="color: #b30000;">/</span>`},
         {class:"", texte:`fais que par lui nous soyons intérieurement transformés.`},
@@ -1546,7 +1546,7 @@ export const Oraisons = {
         semblable à celle des pécheurs.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         toi qui viens jusqu’à nous`},
-        {class:"indent1p", texte:`quand nous participons à ce sacrement, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`quand nous participons à ce sacrement, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`produis en nos coeurs les fruits de ce mystère,
         pour que tes propres dons nous préparent
         à recevoir ce que tu nous donnes.`},
@@ -1598,7 +1598,7 @@ export const Oraisons = {
         comme Sauveur du monde.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par ton Fils, tu as fait lever sur toutes les nations`},
-        {class:"indent1p", texte:`l’aurore de ton jour éternel ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`l’aurore de ton jour éternel ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ton peuple
         de reconnaître la splendeur éclatante de son Rédempteur <span style="color: #b30000;">/</span>
         et de parvenir, en progressant dans la foi,
@@ -1609,7 +1609,7 @@ export const Oraisons = {
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur,
         ce que nous présentons pour cette eucharistie`},
-        {class:"indent1p", texte:`où s’accomplit un admirable échange : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`où s’accomplit un admirable échange : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en offrant ce que tu nous as donné, <span style="color: #b30000;">/</span>
         puissions-nous te recevoir toi-même.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -1620,7 +1620,7 @@ export const Oraisons = {
         mais obtienne la vie éternelle.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous t’en prions : <span style="color: #b30000;">*</span>
         fais que la force de tes saints mystères <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`soutienne constamment notre vie.`},
+        {class:"indentallp", texte:`soutienne constamment notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -1631,7 +1631,7 @@ export const Oraisons = {
         le Seigneur de justice, de tendresse et de pitié.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         tu as manifesté par une étoile`},
-        {class:"indent1p", texte:`qu’un Sauveur était né pour le monde ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`qu’un Sauveur était né pour le monde ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :
         que la lumière de cette naissance se révèle à nos esprits <span style="color: #b30000;">/</span>
         et grandisse toujours dans nos coeurs.`},
@@ -1650,7 +1650,7 @@ export const Oraisons = {
         pour que nous vivions par lui.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         toi qui viens jusqu’à nous`},
-        {class:"indent1p", texte:`quand nous participons à ce sacrement, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`quand nous participons à ce sacrement, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`produis en nos coeurs les fruits de ce mystère,
         pour que tes propres dons nous préparent
         à recevoir ce que tu nous donnes.`},
@@ -1664,7 +1664,7 @@ export const Oraisons = {
         pour que nous soyons adoptés comme fils.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu as voulu que, par ton Fils unique,`},
-        {class:"indent1p", texte:`nous devenions pour toi une création nouvelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous devenions pour toi une création nouvelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :
         fais que, par ta grâce, nous soyons configurés <span style="color: #b30000;">/</span>
         à Celui en qui notre nature est unie à la tienne.`},
@@ -1700,7 +1700,7 @@ export const Oraisons = {
         en qui je trouve ma joie.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         quand le Christ fut baptisé dans le Jourdain,`},
-        {class:"indent1p", texte:`et que l’Esprit Saint descendit sur lui,
+        {class:"indentallp", texte:`et que l’Esprit Saint descendit sur lui,
         tu l’as manifesté solennellement comme ton Fils bien-aimé ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à tes enfants d’adoption,
         qui ont reçu la nouvelle naissance de l’eau et de l’Esprit, <span style="color: #b30000;">/</span>
@@ -1783,8 +1783,8 @@ export const Oraisons = {
     la coupe qui m'enivre, comme elle est admirable !`}],
     priereApresLaCommunion: [
       {class:"grandelettrine", texte:`Répands en nous, Seigneur, ton Esprit de charité, <span style="color: #b30000;">*</span>`},
-      {class:"indent1p", texte:`afin d'unir dans un même amour <span style="color: #b30000;">/</span>`},
-      {class:"indent1p", texte:`ceux que tu as nourris du même pain du ciel.`},
+      {class:"indentallp", texte:`afin d'unir dans un même amour <span style="color: #b30000;">/</span>`},
+      {class:"indentallp", texte:`ceux que tu as nourris du même pain du ciel.`},
       {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -1857,7 +1857,7 @@ de pouvoir t’adorer de tout notre esprit, <span style="color: #b30000;">*</spa
     priereApresLaCommunion: [
       {class:"grandelettrine", texte:`Nous avons été fortifiés
         par le sacrement de notre Rédemption,`},
-      {class:"indent1p", texte:`et nous t’en prions, Seigneur : <span style="color: #b30000;">*</span>`},
+      {class:"indentallp", texte:`et nous t’en prions, Seigneur : <span style="color: #b30000;">*</span>`},
       {class:"indent1all", texte:`que cette nourriture pour le salut éternel <span style="color: #b30000;">/</span>
         nous fasse progresser dans la foi véritable.`},
       {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -1899,7 +1899,7 @@ ces aliments qui soutiennent notre fragilité ; <span style="color: #b30000;">*<
     priereApresLaCommunion: [
       {class:"grandelettrine", texte:`Tu as voulu, Seigneur Dieu,
 que nous ayons part au même pain`},
-      {class:"indent1p", texte:`et à la même coupe ; <span style="color: #b30000;">+</span>`},
+      {class:"indentallp", texte:`et à la même coupe ; <span style="color: #b30000;">+</span>`},
       {class:"", texte:`nous t’en prions :`},
       {class:"indent1all", texte:`puisque nous sommes devenus un dans le Christ, <span style="color: #b30000;">*</span>
         que notre manière de vivre
@@ -1948,14 +1948,14 @@ que nous ayons part au même pain`},
         pour le bien qu’il m’a fait.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous t’en prions :
         accorde-nous de conformer à ta volonté nos paroles et nos actes <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`dans une inlassable recherche des biens spirituels.`},
+        {class:"indentallp", texte:`dans une inlassable recherche des biens spirituels.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
         Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En célébrant tes mystères, Seigneur,
         pour te servir comme il convient, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous te supplions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te supplions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que les dons offerts pour honorer ta gloire <span style="color: #b30000;">/</span>
         nous fassent progresser vers le salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -1966,7 +1966,7 @@ que nous ayons part au même pain`},
         je fêterai ton nom, Dieu Très-Haut.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">*</span>
         donne-nous de recueillir tous les fruits de salut <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`dont ces mystères sont déjà la promesse et le gage.`},
+        {class:"indentallp", texte:`dont ces mystères sont déjà la promesse et le gage.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -1987,7 +1987,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         ce qui est offert en l’honneur de ton nom,`},
-        {class:"indent1p", texte:`c’est toi qui le donnes,`},
+        {class:"indentallp", texte:`c’est toi qui le donnes,`},
         {class:"indent1all", texte:`et tu reconnais dans ces offrandes
         notre attachement à ton service ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous implorons ta bonté :`},
@@ -2000,7 +2000,7 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte: `je fêterai le nom du Seigneur, le Très-Haut.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`tu nous as rassasiés, Seigneur,
         par ce don qui nous sauve, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`et nous implorons ta miséricorde : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous implorons ta miséricorde : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par ce même sacrement qui nous fortifie en cette vie, <span style="color: #b30000;">/</span>
         rends-nous, dans ta bonté, participants de la vie éternelle.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -2015,7 +2015,7 @@ que nous ayons part au même pain`},
         enlève tous mes péchés, toi, mon Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         nous en appelons à ta providence`},
-        {class:"indent1p", texte:`qui, dans ses desseins, jamais ne se trompe,`},
+        {class:"indentallp", texte:`qui, dans ses desseins, jamais ne se trompe,`},
         {class:"indent1all", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>
         tout ce qui fait du mal, écarte-le, <span style="color: #b30000;">/</span>
         donne-nous ce qui pourra nous aider.`},
@@ -2025,7 +2025,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Confiants dans ta tendresse, Seigneur, <span style="color: #b30000;">+</span>
         nous approchons de ton autel avec respect`},
-        {class:"indent1p", texte:`en apportant nos présents ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en apportant nos présents ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puissions-nous, par un effet de ta grâce qui nous purifie,
         être renouvelés par ces mystères que nous célébrons.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -2069,7 +2069,7 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte: `Mon Dieu vient à mon aide.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Par ta force de guérison, Seigneur, <span style="color: #b30000;">*</span>
         dans ta bonté, libère-nous de nos égarements, <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`et conduis-nous sur le droit chemin.`},
+        {class:"indentallp", texte:`et conduis-nous sur le droit chemin.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -2081,7 +2081,7 @@ que nous ayons part au même pain`},
         ne me délaisse pas, Dieu, mon salut !`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         force de ceux qui espèrent en toi, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`sois favorable à nos appels : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`sois favorable à nos appels : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque, mortels et fragiles, nous ne pouvons rien sans toi,
         donne-nous toujours le secours de ta grâce ; <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`ainsi pourrons-nous, en observant tes commandements,
@@ -2092,7 +2092,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu donnes à notre humanité la nourriture qui fortifie,`},
-        {class:"indent1p", texte:`et le sacrement qui renouvelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et le sacrement qui renouvelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :`},
         {class:"indent1all", texte:`fais que ton secours ne manque jamais <span style="color: #b30000;">/</span>
         à nos corps et à nos esprits.`},
@@ -2125,14 +2125,14 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur, le sacrifice de louange et de paix ; <span style="color: #b30000;">*</span>
         accorde-nous d’être purifiés par son action <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`et de t’offrir un coeur qui te plaise.`},
+        {class:"indentallp", texte:`et de t’offrir un coeur qui te plaise.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:`Les yeux sur toi, tous, ils espèrent, Seigneur :
         tu leur donnes la nourriture au temps voulu.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nourris et renouvelés
         par le Corps sacré et le Sang précieux de ton Fils,`},
-        {class:"indent1p", texte:`nous implorons ta bonté, Seigneur : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous implorons ta bonté, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que, sûrs de la rédemption, <span style="color: #b30000;">/</span>
         nous possédions ce que nous aimons célébrer avec ferveur.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -2145,7 +2145,7 @@ que nous ayons part au même pain`},
         acclamez Dieu par vos cris de joie !`}],
     collecte: [{class:"grandelettrine", texte:`Tu as voulu, Seigneur Dieu,
         que par la grâce de l’adoption filiale,`},
-        {class:"indent1p", texte:`nous devenions des enfants de lumière ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous devenions des enfants de lumière ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ne permets pas que nous soyons enveloppés des ténèbres de l’erreur, <span style="color: #b30000;">/</span>
         mais accorde-nous d’être toujours rayonnants
         dans la splendeur de ta vérité.`},
@@ -2155,7 +2155,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         dans ta bonté, tu donnes à tes mystères`},
-        {class:"indent1p", texte:`de produire leurs effets ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de produire leurs effets ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions : que notre liturgie <span style="color: #b30000;">/</span>
         soit accordée à la sainteté de ces dons.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -2186,7 +2186,7 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte: `Ta main droite est pleine de justice.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         par l’abaissement de ton Fils,`},
-        {class:"indent1p", texte:`tu as relevé le monde déchu ; <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`tu as relevé le monde déchu ; <span style="color: #b30000;">+</span>`},
         {class:"", texte:`donne à tes fidèles une joie sainte : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tu les as tirés de l’esclavage du péché ; <span style="color: #b30000;">/</span>
         fais-leur connaître le bonheur éternel.`},
@@ -2219,7 +2219,7 @@ que nous ayons part au même pain`},
         quand ta gloire se manifestera, je serai rassasié.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu montres aux égarés la lumière de ta vérité`},
-        {class:"indent1p", texte:`pour qu’ils puissent reprendre le bon chemin ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour qu’ils puissent reprendre le bon chemin ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne à tous ceux qui se déclarent chrétiens
         de rejeter ce qui est contraire à ce nom <span style="color: #b30000;">/</span>
         et de rechercher ce qui lui fait honneur.`},
@@ -2229,7 +2229,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Regarde, Seigneur, les dons de l’Église qui te supplie : <span style="color: #b30000;">*</span>
         accorde à tes fidèles qui vont les recevoir <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`la grâce d’une sainteté plus grande.`},
+        {class:"indentallp", texte:`la grâce d’une sainteté plus grande.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:`Le passereau lui-même s’est trouvé une maison,
@@ -2265,7 +2265,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         dans le sacrifice unique et parfait de ton Fils,`},
-        {class:"indent1p", texte:`tu as porté à leur achèvement
+        {class:"indentallp", texte:`tu as porté à leur achèvement
         les multiples sacrifices de l’ancienne Loi ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`reçois maintenant le sacrifice offert par tes fidèles serviteurs
         et sanctifie-le comme tu as béni les présents d’Abel : <span style="color: #b30000;">/</span>`},
@@ -2323,7 +2323,7 @@ que nous ayons part au même pain`},
         car ils verront Dieu.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous avons communié, Seigneur,
         au sacrement divin,`},
-        {class:"indent1p", texte:`mémorial à jamais de la passion de ton Fils ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`mémorial à jamais de la passion de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :`},
         {class:"indent1all", texte:`fais servir à notre salut <span style="color: #b30000;">/</span>
         le don que lui-même nous a légué
@@ -2377,7 +2377,7 @@ que nous ayons part au même pain`},
         n’oublie pas le cri de ceux qui te cherchent.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         comme l’enseigne l’Esprit Saint,`},
-        {class:"indent1p", texte:`nous pouvons déjà t’appeler du nom de Père ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous pouvons déjà t’appeler du nom de Père ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais grandir en nos coeurs l’esprit d’adoption filiale, <span style="color: #b30000;">/</span>
         afin que nous soyons capables d’entrer un jour
         dans l’héritage qui nous est promis.`},
@@ -2387,7 +2387,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille favorablement, Seigneur, ces présents
         que, dans ta miséricorde, tu as donnés à ton Église`},
-        {class:"indent1p", texte:`pour qu’elle puisse te les offrir ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour qu’elle puisse te les offrir ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’ils deviennent, par ta puissance, <span style="color: #b30000;">/</span>
         le sacrement de notre salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -2437,7 +2437,7 @@ que nous ayons part au même pain`},
         il vivra éternellement.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Par ces sacrements, Seigneur,
         tu nous as unis au Christ,`},
-        {class:"indent1p", texte:`et nous implorons humblement ta bonté : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous implorons humblement ta bonté : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`sur la terre, transforme-nous à son image, <span style="color: #b30000;">/</span>
         pour que nous puissions partager sa vie dans le ciel.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
@@ -2478,7 +2478,7 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte:`et moi, je le ressusciterai au dernier jour.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que ta miséricorde agisse en nous,
         Seigneur, nous t’en prions,`},
-        {class:"indent1p", texte:`et qu’elle nous guérisse entièrement ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et qu’elle nous guérisse entièrement ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par ta bonté, transforme-nous
         et rends-nous si fervents <span style="color: #b30000;">/</span>
         que nous puissions te plaire en toute chose.`},
@@ -2504,7 +2504,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Que cette offrande sainte
         nous apporte à jamais, Seigneur,`},
-        {class:"indent1p", texte:`la bénédiction du salut, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la bénédiction du salut, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin qu’elle donne toute sa force <span style="color: #b30000;">/</span>
         à ce qu’elle accomplit dans le sacrement.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -2531,7 +2531,7 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte: `Agis pour ton serviteur selon ta miséricorde.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         par toi nous vient la rédemption,`},
-        {class:"indent1p", texte:`par toi nous est donnée l’adoption filiale ; <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`par toi nous est donnée l’adoption filiale ; <span style="color: #b30000;">+</span>`},
         {class:"", texte:`dans ta bonté, regarde avec amour tes enfants ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à ceux qui croient au Christ, accorde la vraie liberté <span style="color: #b30000;">/</span>
         et la vie éternelle en héritage.`},
@@ -2606,7 +2606,7 @@ que nous ayons part au même pain`},
         je serai son Seigneur pour toujours.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as voulu que toute la loi de sainteté`},
-        {class:"indent1p", texte:`consiste à t’aimer et à aimer son prochain : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`consiste à t’aimer et à aimer son prochain : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous de garder tes commandements, <span style="color: #b30000;">/</span>
         et de parvenir ainsi à la vie éternelle.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -2615,7 +2615,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois favorablement,
         nous t’en prions, Seigneur,`},
-        {class:"indent1p", texte:`les dons présentés par ton peuple : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les dons présentés par ton peuple : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que tous obtiennent par tes sacrements <span style="color: #b30000;">/</span>
         ce qu’ils proclament dans la ferveur de la foi.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -2630,7 +2630,7 @@ que nous ayons part au même pain`},
         et mes brebis me connaissent.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans ta bonté, Seigneur, <span style="color: #b30000;">+</span>
         fais que ton aide soutienne toujours`},
-        {class:"indent1p", texte:`ceux que tu as nourris de tes sacrements, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ceux que tu as nourris de tes sacrements, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin qu’ils puissent,
         dans ces mystères et par toute leur vie, <span style="color: #b30000;">/</span>
         recueillir les fruits de la rédemption.`},
@@ -2648,7 +2648,7 @@ que nous ayons part au même pain`},
         et agis envers nous selon l’abondance de ta miséricorde.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         quand tu pardonnes et prends pitié,`},
-        {class:"indent1p", texte:`tu manifestes au plus haut point ta toute-puissance ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu manifestes au plus haut point ta toute-puissance ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`multiplie pour nous les dons de ta grâce :
         alors, en nous hâtant vers les biens que tu promets, <span style="color: #b30000;">/</span>
         nous aurons part au bonheur du ciel.`},
@@ -2687,7 +2687,7 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte: `Tu es le Seigneur de l’univers.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         dans ta tendresse inépuisable,`},
-        {class:"indent1p", texte:`tu combles ceux qui t’implorent,
+        {class:"indentallp", texte:`tu combles ceux qui t’implorent,
         bien au-delà de leurs mérites et de leurs désirs ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`répands sur nous ta miséricorde <span style="color: #b30000;">/</span>
         en délivrant notre conscience de ce qui l’inquiète
@@ -2713,7 +2713,7 @@ que nous ayons part au même pain`},
         et à une seule coupe.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous t’en prions : <span style="color: #b30000;">*</span>
         par la communion à ce sacrement,`},
-        {class:"indent1p", texte:`comble notre soif et notre faim de toi ; <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`comble notre soif et notre faim de toi ; <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`afin que nous puissions devenir
         ce que nous avons reçu.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -2728,7 +2728,7 @@ que nous ayons part au même pain`},
         Dieu d’Israël.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">*</span>
         que ta grâce nous devance`},
-        {class:"indent1p", texte:`et qu’elle nous accompagne toujours, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`et qu’elle nous accompagne toujours, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`pour nous rendre attentifs
         à faire le bien sans relâche.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -2764,14 +2764,14 @@ que nous ayons part au même pain`},
         à l’ombre de tes ailes, cache-moi.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         fais-nous toujours agir pour toi d’une volonté ardente, <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`et servir ta gloire d’un coeur sans partage.`},
+        {class:"indentallp", texte:`et servir ta gloire d’un coeur sans partage.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
         Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accorde-nous, Seigneur, nous t’en prions,
         de te servir d’un coeur libre`},
-        {class:"indent1p", texte:`en te présentant ces dons ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en te présentant ces dons ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puissions-nous, par un effet de ta grâce, être purifiés <span style="color: #b30000;">/</span>
         par ces mystères que nous célébrons.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -2831,7 +2831,7 @@ que nous ayons part au même pain`},
         Seigneur, force de mon salut !`}],
     collecte: [{class:"grandelettrine", texte:`Dieu de puissance et de miséricorde, <span style="color: #b30000;">+</span>
         c’est ta grâce qui donne à tes fidèles`},
-        {class:"indent1p", texte:`de pouvoir dignement te servir ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de pouvoir dignement te servir ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions : accorde-nous
         de courir sans que rien nous arrête <span style="color: #b30000;">/</span>
         vers les biens que tu promets.`},
@@ -2841,7 +2841,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur, que ce sacrifice
         devienne pour toi une offrande pure, <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`et pour nous, le don généreux et saint de ta miséricorde.`},
+        {class:"indentallp", texte:`et pour nous, le don généreux et saint de ta miséricorde.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:`Tu m’apprends, Seigneur, le chemin de la vie :
@@ -2874,7 +2874,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Sur les offrandes que nous présentons pour le sacrifice,
         nous t’en prions, Seigneur,`},
-        {class:"indent1p", texte:`jette un regard favorable, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`jette un regard favorable, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que, par la ferveur de notre amour, <span style="color: #b30000;">/</span>
         nous obtenions ce que nous célébrons
         dans le mystère de la passion de ton Fils.`},
@@ -2888,7 +2888,7 @@ que nous ayons part au même pain`},
         à la fraction du pain, alléluia.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Fortifiés par le don très saint que tu nous fais,
         Seigneur, nous te rendons grâce <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`et nous implorons ta bonté : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous implorons ta bonté : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que, par le don de ton Esprit,
         ceux qui ont reçu la force d’en haut <span style="color: #b30000;">/</span>
         aient la grâce de persévérer dans la droiture.`},
@@ -2925,7 +2925,7 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte:`et cela vous sera accordé, dit le Seigneur.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur, nous avons reçu
         les dons que tu nous as faits dans ce sacrement, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ton Fils nous a demandé de les célébrer en mémoire de lui, <span style="color: #b30000;">/</span>
         qu’ils augmentent en nous la charité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -2960,7 +2960,7 @@ que nous ayons part au même pain`},
         jusqu’à la fin du monde, dit le Seigneur.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en supplions, Dieu tout-puissant : <span style="color: #b30000;">*</span>
         ne permets pas que soient jamais séparés de toi <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`ceux qui ont la joie de participer à ta vie divine.`},
+        {class:"indentallp", texte:`ceux qui ont la joie de participer à ta vie divine.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -2975,7 +2975,7 @@ que nous ayons part au même pain`},
         car tu es le Seigneur notre Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Accorde-nous, Seigneur,
         de savoir commencer saintement par le jeûne`},
-        {class:"indent1p", texte:`l’entraînement au combat spirituel : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`l’entraînement au combat spirituel : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que nos privations nous rendent plus forts <span style="color: #b30000;">/</span>
         pour lutter contre l’esprit du mal.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -3000,7 +3000,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Dans ta bonté, Dieu souverain, <span style="color: #b30000;">+</span>
         répands sur ceux qui s’inclinent devant toi`},
-        {class:"indent1p", texte:`un esprit de contrition, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`un esprit de contrition, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que ta miséricorde leur obtienne la récompense <span style="color: #b30000;">/</span>
         promise à ceux qui font pénitence.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3025,7 +3025,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Regarde avec bonté,
         Seigneur, nous t’en prions,`},
-        {class:"indent1p", texte:`les offrandes que nous déposons sur l’autel qui t’est consacré ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les offrandes que nous déposons sur l’autel qui t’est consacré ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en nous procurant ton pardon, <span style="color: #b30000;">/</span>
         qu’elles servent à la gloire de ton nom.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3034,7 +3034,7 @@ que nous ayons part au même pain`},
         renouvelle et raffermis au fond de moi mon esprit.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         par ce don venu du ciel,`},
-        {class:"indent1p", texte:`nous avons reçu ta bénédiction ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous avons reçu ta bénédiction ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en supplions humblement :
         qu’il ne cesse jamais de nous apporter <span style="color: #b30000;">/</span>
         à la fois ton pardon et notre salut.`},
@@ -3042,7 +3042,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         tu as fait connaître à ton peuple`},
-        {class:"indent1p", texte:`les chemins de la vie éternelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les chemins de la vie éternelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions,
         donne-lui de les suivre <span style="color: #b30000;">/</span>
         pour parvenir jusqu’à toi, lumière sans déclin.`},
@@ -3064,7 +3064,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">+</span>
         que le sacrifice, offert en ce temps`},
-        {class:"indent1p", texte:`où nous pratiquons le Carême,
+        {class:"indentallp", texte:`où nous pratiquons le Carême,
         nous rende agréables à tes yeux <span style="color: #b30000;">/</span>
         et nous aide à nous montrer
         plus empressés dans le renoncement.`},
@@ -3074,7 +3074,7 @@ que nous ayons part au même pain`},
         fais-moi connaître ta route.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">+</span>
         par notre participation à ce mystère,`},
-        {class:"indent1p", texte:`nous avons été purifiés de tous nos péchés ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous avons été purifiés de tous nos péchés ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puissions-nous vivre en accord avec la guérison <span style="color: #b30000;">/</span>
         reçue de ta tendresse.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3103,7 +3103,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Aaccueille, Seigneur, le sacrifice de louange et de paix ; <span style="color: #b30000;">*</span>
         accorde-nous d’être purifiés par son action <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`et de t’offrir un coeur qui te plaise.`},
+        {class:"indentallp", texte:`et de t’offrir un coeur qui te plaise.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:`Je veux la miséricorde, non le sacrifice,
@@ -3118,7 +3118,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Dans ta bonté, Seigneur, <span style="color: #b30000;">+</span>
         reste auprès de ton peuple`},
-        {class:"indent1p", texte:`qui s’est approché des saints mystères, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`qui s’est approché des saints mystères, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que nul danger ne le menace, <span style="color: #b30000;">/</span>
         lui qui a mis sa confiance dans ta protection.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3133,7 +3133,7 @@ que nous ayons part au même pain`},
         de longs jours, je veux le rassasier.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         toi qui nous invites chaque année`},
-        {class:"indent1p", texte:`à vivre le Carême en vérité, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à vivre le Carême en vérité, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous de progresser
         dans l’intelligence du mystère du Christ <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et d’en rechercher la réalisation
@@ -3154,7 +3154,7 @@ que nous ayons part au même pain`},
         tu trouves sous son aile un refuge.`},],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Restaurés par le pain du ciel,
         qui nourrit la foi,`},
-        {class:"indent1p", texte:`stimule l’espérance
+        {class:"indentallp", texte:`stimule l’espérance
         et fortifie la charité,`},
         {class:"indent1all", texte:`nous t’en prions, Seigneur : <span style="color: #b30000;">*</span>
         apprends-nous à toujours avoir faim
@@ -3178,14 +3178,14 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte: `Pitié pour nous, Seigneur, pitié pour nous.`}],
     collecte: [{class:"grandelettrine", texte:`Fais-nous revenir à toi, Dieu notre Sauveur, <span style="color: #b30000;">*</span>
         et pour que ce Carême nous soit profitable, <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`forme nos esprits par l’enseignement qui vient du ciel.`},
+        {class:"indentallp", texte:`forme nos esprits par l’enseignement qui vient du ciel.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
         Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur, notre fervent sacrifice : <span style="color: #b30000;">*</span>
         par ton action, qu’il sanctifie notre manière de vivre, <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`et nous obtienne la grâce de ton pardon.`},
+        {class:"indentallp", texte:`et nous obtienne la grâce de ton pardon.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:`Amen, je vous le dis, tout ce que vous avez fait
@@ -3195,7 +3195,7 @@ que nous ayons part au même pain`},
         le Royaume préparé pour vous depuis la fondation du monde.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans la communion à ton sacrement, Seigneur, <span style="color: #b30000;">+</span>
         fais-nous ressentir un secours`},
-        {class:"indent1p", texte:`pour l’esprit et pour le corps, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour l’esprit et pour le corps, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que, sauvés tout entiers,
         nous trouvions notre gloire au ciel <span style="color: #b30000;">/</span>
         dans la plénitude de la guérison.`},
@@ -3203,7 +3203,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         éclaire l’intelligence de ton peuple`},
-        {class:"indent1p", texte:`par la lumière de ta gloire, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par la lumière de ta gloire, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin qu’il puisse voir ce qu’il doit faire <span style="color: #b30000;">/</span>
         et sache accomplir ce qui est droit.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3216,7 +3216,7 @@ que nous ayons part au même pain`},
         de toujours à toujours, toi, tu es Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Regarde ta famille, Seigneur ; <span style="color: #b30000;">*</span>
         et fais que notre esprit,`},
-        {class:"indent1p", texte:`affiné par la discipline imposée à notre corps, <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`affiné par la discipline imposée à notre corps, <span style="color: #b30000;">/</span>
         resplendisse à tes yeux du désir de te trouver.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -3234,13 +3234,13 @@ que nous ayons part au même pain`},
         pitié pour moi, écoute ma prière !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur, nous te prions : <span style="color: #b30000;">+</span>
         tandis que nous modérons nos désirs terrestres, <span style="color: #b30000;">*</span>`},
-        {class:"indent1p", texte:`qu’il nous soit donné, par ces mystères, <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`qu’il nous soit donné, par ces mystères, <span style="color: #b30000;">/</span>
         d’apprendre à aimer les biens du ciel.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Que tes fidèles, Seigneur Dieu,
         trouvent en ta bénédiction`},
-        {class:"indent1p", texte:`une force nouvelle : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`une force nouvelle : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`sois pour eux consolation dans la tristesse,
         patience dans l’épreuve, <span style="color: #b30000;">/</span>
         secours dans le péril.`},
@@ -3266,7 +3266,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous te présentons, Seigneur,
         les biens que tu nous as donnés`},
-        {class:"indent1p", texte:`pour qu’ils soient consacrés à ton nom : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour qu’ils soient consacrés à ton nom : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et puisque tu en fais pour nous un sacrement, <span style="color: #b30000;">/</span>
         permets qu’ils nous apportent aussi l’éternelle guérison.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3276,7 +3276,7 @@ que nous ayons part au même pain`},
         et tu habiteras parmi eux !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu ne cesses pas de nous donner`},
-        {class:"indent1p", texte:`tes sacrements en nourriture ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tes sacrements en nourriture ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que cet aliment, reçu de ta bonté, <span style="color: #b30000;">/</span>
         nous apporte la vie éternelle.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3297,7 +3297,7 @@ que nous ayons part au même pain`},
         ô mon Roi et mon Dieu !`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur, nous t’en prions, <span style="color: #b30000;">+</span>
         inspire-nous de toujours penser ce qui est juste`},
-        {class:"indent1p", texte:`et de l’accomplir avec empressement ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et de l’accomplir avec empressement ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et puisque sans toi nous ne pouvons exister, <span style="color: #b30000;">/</span>
         fais-nous vivre en accord avec toi.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -3315,14 +3315,14 @@ que nous ayons part au même pain`},
         à qui frappe, on ouvrira.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur notre Dieu,
         toi qui nous donnes ces mystères très saints`},
-        {class:"indent1p", texte:`pour soutenir notre relèvement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour soutenir notre relèvement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’ils nous soient un remède <span style="color: #b30000;">/</span>
         maintenant et pour la vie future.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         fais venir sur ceux qui te supplient`},
-        {class:"indent1p", texte:`la miséricorde qu’ils espèrent ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la miséricorde qu’ils espèrent ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que leur soit accordée en abondance
         la grâce de reconnaître ce qu’ils doivent demander <span style="color: #b30000;">/</span>
         et de voir leurs prières exaucées.`},
@@ -3337,7 +3337,7 @@ que nous ayons part au même pain`},
         enlève tous mes péchés.`}],
     collecte: [{class:"grandelettrine", texte:`Accorde à tes fidèles,
         Seigneur, nous t’en prions,`},
-        {class:"indent1p", texte:`de s’appliquer comme il convient
+        {class:"indentallp", texte:`de s’appliquer comme il convient
         à la préparation de Pâques : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que la pénitence imposée chaque année à notre corps <span style="color: #b30000;">/</span>
         porte en nous tous du fruit pour nos âmes.`},
@@ -3362,7 +3362,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Jette un regard de tendresse sur ton peuple, Seigneur : <span style="color: #b30000;">*</span>
         que se réalise intérieurement <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`ce qu’il manifeste par une observance extérieure.`},
+        {class:"indentallp", texte:`ce qu’il manifeste par une observance extérieure.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -3398,7 +3398,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         que tes fidèles trouvent une force nouvelle`},
-        {class:"indent1p", texte:`dans la bénédiction qu’ils attendent de toi : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`dans la bénédiction qu’ils attendent de toi : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle les aide à ne jamais s’écarter de ta volonté <span style="color: #b30000;">/</span>
         et à toujours se réjouir de tes bienfaits.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3457,7 +3457,7 @@ que nous ayons part au même pain`},
         dans l’assemblée je bénirai le Seigneur.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         pour guérir nos âmes,`},
-        {class:"indent1p", texte:`tu nous prescris de discipliner nos corps ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous prescris de discipliner nos corps ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que nous puissions nous garder de tout péché <span style="color: #b30000;">/</span>
         et accomplir ainsi de tout coeur les préceptes de ton amour.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -3466,7 +3466,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille avec bienveillance nos prières, Seigneur, <span style="color: #b30000;">*</span>
         et rends libres devant les séductions du monde <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`ceux que tu appelles à te servir en ces mystères divins.`},
+        {class:"indentallp", texte:`ceux que tu appelles à te servir en ces mystères divins.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:`Soyez miséricordieux comme votre Père est miséricordieux,
@@ -3490,7 +3490,7 @@ que nous ayons part au même pain`},
         garde-moi du sommeil de la mort,`},
         {class:"indent1all", texte: `que l’adversaire ne crie pas : « Victoire ! »`}],
     collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:`Avec une inlassable bonté, Seigneur,
+        {class:"indentallp", texte:`Avec une inlassable bonté, Seigneur,
         veille sur ton Église ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`comme, sans toi, l’homme mortel succombe, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`puisse ton aide constante nous arracher au mal
@@ -3510,7 +3510,7 @@ que nous ayons part au même pain`},
         je fêterai ton nom, Dieu Très-Haut.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         que ce repas, pris à la table sainte,`},
-        {class:"indent1p", texte:`nous aide à vivre plus saintement, <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous aide à vivre plus saintement, <span style="color: #b30000;">/</span>
         et nous procure ton inépuisable pardon.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -3546,7 +3546,7 @@ que nous ayons part au même pain`},
         et donner sa vie en rançon pour la multitude.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur notre Dieu : <span style="color: #b30000;">+</span>
         puisque tu as voulu que ce sacrement`},
-        {class:"indent1p", texte:`soit pour nous gage d’immortalité, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`soit pour nous gage d’immortalité, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il nous soit un secours <span style="color: #b30000;">/</span>
         en vue de l’éternel salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3567,7 +3567,7 @@ que nous ayons part au même pain`},
         et conduis-moi sur le chemin d’éternité.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         toi qui aimes l’innocence et la fais recouvrer, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`oriente vers toi le coeur de ceux qui te servent ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`oriente vers toi le coeur de ceux qui te servent ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ainsi, animés par la ferveur de ton Esprit,
         ils seront fermes dans la foi <span style="color: #b30000;">/</span>
         et vraiment efficaces dans l’action.`},
@@ -3577,7 +3577,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Par le sacrifice que nous célébrons aujourd’hui,
         nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`sanctifie nos oeuvres de pénitence, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`sanctifie nos oeuvres de pénitence, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`pour que ce dont témoignent extérieurement
         les efforts du Carême <span style="color: #b30000;">/</span>
         produise ses effets à l’intérieur de nous-mêmes.`},
@@ -3587,7 +3587,7 @@ que nous ayons part au même pain`},
         qui marchent suivant la loi du Seigneur !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         que ce sacrifice demeure agissant en nous <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`et prolonge son effet dans notre vie.`},
+        {class:"indentallp", texte:`et prolonge son effet dans notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Sois proche, Seigneur, de ceux qui te servent
@@ -3614,7 +3614,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur Dieu, <span style="color: #b30000;">+</span>
         que ta tendresse devance tes serviteurs,`},
-        {class:"indent1p", texte:`comme toi seul sais le faire ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`comme toi seul sais le faire ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle nous conduise dans une vie sainte <span style="color: #b30000;">/</span>
         à célébrer pleinement ces mystères.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3644,7 +3644,7 @@ que nous ayons part au même pain`},
         sa tendresse, pour toutes ses oeuvres.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par les secours de ta grâce divine,`},
-        {class:"indent1p", texte:`tu nous associes déjà aux biens du ciel
+        {class:"indentallp", texte:`tu nous associes déjà aux biens du ciel
         alors que nous sommes encore sur la terre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :
         dirige-nous toi-même en cette vie <span style="color: #b30000;">/</span>
@@ -3655,7 +3655,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">+</span>
         que par ces mystères`},
-        {class:"indent1p", texte:`la rédemption porte en nous ses fruits,`},
+        {class:"indentallp", texte:`la rédemption porte en nous ses fruits,`},
         {class:"indent1all", texte:`nous fasse éviter tout écart dans notre vie <span style="color: #b30000;">/</span>
         et nous mène vers les biens du salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3665,12 +3665,12 @@ que nous ayons part au même pain`},
         il était perdu, et il est retrouvé !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous avons reçu ton sacrement divin, Seigneur : <span style="color: #b30000;">*</span>
         qu’il nous atteigne au plus intime de notre coeur <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`et nous communique sa puissance.`},
+        {class:"indentallp", texte:`et nous communique sa puissance.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Dans ta miséricorde, Seigneur, <span style="color: #b30000;">+</span>
         prête une oreille attentive`},
-        {class:"indent1p", texte:`aux prières de ceux qui te supplient ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`aux prières de ceux qui te supplient ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et afin de pouvoir exaucer leurs désirs, <span style="color: #b30000;">/</span>
         fais-leur demander ce qui te plaît.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3691,7 +3691,7 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte: `Et je mettrai en vous un esprit nouveau.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         source de toute bonté,`},
-        {class:"indent1p", texte:`et de toute miséricorde, <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`et de toute miséricorde, <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`tu nous as montré comment guérir du péché
         par le jeûne, la prière et le partage ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accueille favorablement l’aveu de notre faiblesse, <span style="color: #b30000;">/</span>
@@ -3729,7 +3729,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Dirige, Seigneur, le coeur de tes fidèles <span style="color: #b30000;">*</span>
         et, dans ta bienveillance, donne à ceux qui te servent`},
-        {class:"indent1p", texte:`la grâce d’accomplir la plénitude de tes commandements <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`la grâce d’accomplir la plénitude de tes commandements <span style="color: #b30000;">/</span>
         en demeurant dans l’amour pour toi et pour le prochain.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -3739,8 +3739,8 @@ que nous ayons part au même pain`},
     titre: "LUNDI DE LA TROISIÈME SEMAINE",
     antienne_ouverture: [{class:"indent1all", texte: `Mon âme s’épuise à désirer
         les parvis du Seigneur ;`},
-        {class:"indent1all", texte: `Mon âme s’épuise à désirer
-        les parvis du Seigneur ;`}],
+        {class:"indent1all", texte: `mon coeur et ma chair sont un cri de joie
+        vers le Dieu vivant !`}],
     collecte: [{class:"grandelettrine", texte:`Que ta miséricorde inlassable, Seigneur,
         purifie et protège ton Église ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et puisque sans toi, elle ne peut demeurer en ton salut : <span style="color: #b30000;">/</span>
@@ -3764,7 +3764,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Que ta droite, Seigneur, protège ton peuple en prière ; <span style="color: #b30000;">*</span>
         qu’elle le purifie et lui apprenne`},
-        {class:"indent1p", texte:`à mettre à profit la consolation reçue dès maintenant, <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`à mettre à profit la consolation reçue dès maintenant, <span style="color: #b30000;">/</span>
         pour avancer vers les biens à venir.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -3786,7 +3786,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">*</span>
         que ce sacrifice offert pour notre salut`},
-        {class:"indent1p", texte:`nous purifie de nos fautes <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous purifie de nos fautes <span style="color: #b30000;">/</span>
         et attire sur nous la puissance de ton pardon.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
@@ -3802,7 +3802,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         toi qui formes et diriges ton peuple,`},
-        {class:"indent1p", texte:`repousse les péchés qui l’assaillent, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`repousse les péchés qui l’assaillent, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin qu’il puisse toujours te plaire, <span style="color: #b30000;">/</span>
         et que ta protection le délivre de toute inquiétude.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3815,7 +3815,7 @@ que nous ayons part au même pain`},
         qu’aucun mal ne triomphe de moi !`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">*</span>
         formés à l’école du Carême`},
-        {class:"indent1p", texte:`et nourris de ta parole,`},
+        {class:"indentallp", texte:`et nourris de ta parole,`},
         {class:"indent1all", texte:`fais que nous soyons de tout coeur à ton service
         par notre effort de pénitence <span style="color: #b30000;">/</span>
         et toujours unanimes à te prier.`},
@@ -3825,7 +3825,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         accueille les supplications de ton peuple`},
-        {class:"indent1p", texte:`quand il te présente ce sacrifice ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`quand il te présente ce sacrifice ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et, par la célébration de tes mystères, <span style="color: #b30000;">/</span>
         protège-nous de tout danger.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -3854,7 +3854,7 @@ que nous ayons part au même pain`},
         je serai son Seigneur pour toujours.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en supplions, Seigneur souverain : <span style="color: #b30000;">*</span>
         à mesure qu’approche le jour`},
-        {class:"indent1p", texte:`où nous fêterons notre salut, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`où nous fêterons notre salut, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`accorde-nous une plus grande générosité
         pour nous préparer à célébrer le mystère pascal.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -3942,7 +3942,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         c’est toi qui nous donnes la grâce`},
-        {class:"indent1p", texte:`d’approcher de tes mystères avec un coeur purifié ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`d’approcher de tes mystères avec un coeur purifié ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :`},
         {class:"indent1all", texte:`lorsque nous célébrerons le jour où tu les as transmis, <span style="color: #b30000;">/</span>
         accorde-nous de pouvoir t’offrir le culte qui te revient.`},
@@ -3974,7 +3974,7 @@ que nous ayons part au même pain`},
         alors vous exulterez, vous serez rassasiés de consolation.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par ton Verbe incarné`},
-        {class:"indent1p", texte:`tu as merveilleusement réconcilié avec toi le genre humain ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as merveilleusement réconcilié avec toi le genre humain ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde au peuple chrétien
         de se hâter avec un amour généreux et une foi ardente <span style="color: #b30000;">/</span>
         au-devant des fêtes pascales qui approchent.`},
@@ -3984,7 +3984,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur, nous te présentons dans la joie
         l’eucharistie qui assure la guérison éternelle, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`et nous te prions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te prions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de la vénérer avec foi <span style="color: #b30000;">/</span>
         et de l’offrir avec respect pour le salut du monde.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -4005,7 +4005,7 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte: `pour rendre grâce à ton nom, Seigneur.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu qui éclaires tout homme venant dans ce monde, <span style="color: #b30000;">+</span>
         nous t’en prions, illumine nos coeurs`},
-        {class:"indent1p", texte:`par la splendeur de ta grâce : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par la splendeur de ta grâce : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que nos pensées soient toujours dignes de toi,
         et accordées à ta grandeur, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et qu’ainsi nous puissions t’aimer sincèrement.`},
@@ -4013,7 +4013,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Protège, Seigneur, ceux qui te supplient, <span style="color: #b30000;">+</span>
         soutiens les faibles,`},
-        {class:"indent1p", texte:`fais revivre sans cesse par ta lumière
+        {class:"indentallp", texte:`fais revivre sans cesse par ta lumière
         ceux qui marchent dans les ténèbres de la mort, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et accorde à ceux que ton amour a délivrés de tout mal, <span style="color: #b30000;">/</span>
         de parvenir aux biens suprêmes.`},
@@ -4028,7 +4028,7 @@ que nous ayons part au même pain`},
         car tu as regardé ma misère.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu renouvelles ce monde`},
-        {class:"indent1p", texte:`par la force inexprimable de tes sacrements ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par la force inexprimable de tes sacrements ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que ton Église progresse par ces moyens de salut <span style="color: #b30000;">/</span>
         et ne manque jamais de tes secours ici-bas.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -4108,7 +4108,7 @@ que nous ayons part au même pain`},
         par ta vérité, sauve-moi.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         tu offres aux justes la récompense de leurs efforts`},
-        {class:"indent1p", texte:`et le pardon aux pécheurs qui se repentent : <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`et le pardon aux pécheurs qui se repentent : <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`prends pitié de ceux qui te supplient, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que la confession de nos péchés <span style="color: #b30000;">/</span>
         obtienne le pardon de nos fautes.`},
@@ -4118,7 +4118,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dans ta bienveillance, Seigneur, <span style="color: #b30000;">+</span>
         fais que la puissance de ce sacrifice`},
-        {class:"indent1p", texte:`purifie tout ce qui vieillit en nous : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`purifie tout ce qui vieillit en nous : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle fasse grandir la vie nouvelle <span style="color: #b30000;">/</span>
         et nous apporte le salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -4147,7 +4147,7 @@ que nous ayons part au même pain`},
         recherchez sans trêve sa face.`}],
     collecte: [{class:"grandelettrine", texte:`Nous implorons humblement, Seigneur, ta tendresse : <span style="color: #b30000;">+</span>
         donne à tes serviteurs, purifiés par la conversion`},
-        {class:"indent1p", texte:`et formés par leurs oeuvres bonnes, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et formés par leurs oeuvres bonnes, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`de persévérer dans tes commandements d’un coeur sincère <span style="color: #b30000;">/</span>
         et d’arriver sans encombre aux fêtes de Pâques.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -4196,7 +4196,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         que le sacrifice dont la force purifie`},
-        {class:"indent1p", texte:`nous achemine jusqu’à sa source <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous achemine jusqu’à sa source <span style="color: #b30000;">/</span>
         en nous purifiant encore.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
@@ -4225,14 +4225,14 @@ que nous ayons part au même pain`},
         de son temple saint, il a entendu ma voix.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur, nous t’en prions : <span style="color: #b30000;">*</span>
         dirige nos coeurs par l’action de ta miséricorde, <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`car, sans toi, il nous est impossible de te plaire.`},
+        {class:"indentallp", texte:`car, sans toi, il nous est impossible de te plaire.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
         Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille nos offrandes, Seigneur, Dieu de paix ; <span style="color: #b30000;">*</span>
         et même si nos volontés se rebellent, <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`en ta bonté, tourne-les vers toi.`},
+        {class:"indentallp", texte:`en ta bonté, tourne-les vers toi.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:`Nous avons été rachetés par un sang précieux,`},
@@ -4240,7 +4240,7 @@ que nous ayons part au même pain`},
         le Christ.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que tes saints mystères nous purifient, Seigneur : <span style="color: #b30000;">*</span>
         qu’ils agissent en nous <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`pour nous rendre agréables à tes yeux.`},
+        {class:"indentallp", texte:`pour nous rendre agréables à tes yeux.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Regarde ton peuple, Seigneur,
@@ -4261,7 +4261,7 @@ que nous ayons part au même pain`},
         c’est toi, Dieu, ma forteresse.`}],
     collecte: [{class:"grandelettrine", texte:`Viens à notre secours, Seigneur notre Dieu : <span style="color: #b30000;">+</span>
         accorde-nous de marcher avec joie`},
-        {class:"indent1p", texte:`dans la charité de ton Fils <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`dans la charité de ton Fils <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qui a aimé le monde <span style="color: #b30000;">/</span>
         jusqu’à donner sa vie pour lui.`},
         {class:"indent1all", texte:`Lui qui vit et règne avec toi dans l’unité du Saint-Esprit,
@@ -4269,7 +4269,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Exauce-nous, Dieu tout-puissant, <span style="color: #b30000;">*</span>
         et accorde à tes serviteurs,`},
-        {class:"indent1p", texte:`formés par l’enseignement de la foi chrétienne, <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`formés par l’enseignement de la foi chrétienne, <span style="color: #b30000;">/</span>
         d’être purifiés par l’action de ce sacrifice.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
@@ -4289,7 +4289,7 @@ que nous ayons part au même pain`},
         il donne beaucoup de fruit.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Accorde-nous, Dieu tout-puissant,
         d’être toujours comptés parmi les membres du Christ, <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`nous qui communions à son Corps et à son Sang.`},
+        {class:"indentallp", texte:`nous qui communions à son Corps et à son Sang.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Seigneur, bénis ton peuple
@@ -4307,7 +4307,7 @@ que nous ayons part au même pain`},
         tout le jour, ils me combattent, ils me harcèlent.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu nous combles de toute bénédiction`},
-        {class:"indent1p", texte:`par la richesse inexprimable de ta grâce ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par la richesse inexprimable de ta grâce ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais-nous passer de ce qui ne peut que vieillir,
         à ce qui est nouveau, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et nous serons préparés à la gloire
@@ -4318,7 +4318,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Au moment de célébrer les saints mystères, <span style="color: #b30000;">+</span>
         accorde-nous, Seigneur,`},
-        {class:"indent1p", texte:`comme un fruit de notre pénitence corporelle,
+        {class:"indentallp", texte:`comme un fruit de notre pénitence corporelle,
         la grâce de paraître devant toi <span style="color: #b30000;">/</span>
         avec un coeur purifié.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -4390,7 +4390,7 @@ que nous ayons part au même pain`},
         tu m’arracheras à la violence de l’homme, Seigneur.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu de miséricorde, <span style="color: #b30000;">+</span>
         éclaire le coeur de tes enfants,`},
-        {class:"indent1p", texte:`sanctifiés par la pénitence ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`sanctifiés par la pénitence ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`toi qui nous as donné le goût de te servir, <span style="color: #b30000;">/</span>
         écoute avec une grande bienveillance ceux qui te supplient.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -4430,7 +4430,7 @@ que nous ayons part au même pain`},
         peuvent recevoir l’héritage éternel.`}],
     collecte: [{class:"grandelettrine", texte:`Sois attentif à nos appels, Seigneur, <span style="color: #b30000;">+</span>
         et, dans ta bonté, protège`},
-        {class:"indent1p", texte:`ceux qui mettent leur espérance en ta miséricorde, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ceux qui mettent leur espérance en ta miséricorde, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que, purifiés de leurs péchés,
         ils persévèrent dans une vie de sainteté <span style="color: #b30000;">/</span>
         et deviennent les héritiers de ta promesse.`},
@@ -4449,7 +4449,7 @@ que nous ayons part au même pain`},
         avec lui, il nous a tout donné.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu nous as rassasiés, Seigneur,
         par ce don qui nous sauve, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`et nous implorons ta miséricorde : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous implorons ta miséricorde : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par ce même sacrement qui nous fortifie en cette vie, <span style="color: #b30000;">/</span>
         rends-nous participants de la vie éternelle.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -4470,7 +4470,7 @@ que nous ayons part au même pain`},
         moi qui t’appelle.`}],
     collecte: [{class:"grandelettrine", texte:`Pardonne, Seigneur, les fautes de ton peuple : <span style="color: #b30000;">*</span>
         puisque notre faiblesse`},
-        {class:"indent1p", texte:`nous a rendus captifs des liens du péché, <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous a rendus captifs des liens du péché, <span style="color: #b30000;">/</span>
         que ta tendresse nous en délivre.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -4478,7 +4478,7 @@ que nous ayons part au même pain`},
         {class:"rubrique", texte:`ou bien`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         dans ta bonté, tu donnes maintenant à ton Église`},
-        {class:"indent1p", texte:`d’imiter avec amour la bienheureuse Marie
+        {class:"indentallp", texte:`d’imiter avec amour la bienheureuse Marie
         quand elle contemplait la passion du Christ ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions, accorde-nous, par l’intercession de la Vierge,
         de nous attacher toujours plus fermement à ton Fils unique <span style="color: #b30000;">/</span>
@@ -4488,7 +4488,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu de miséricorde, <span style="color: #b30000;">+</span>
         donne-nous de pouvoir toujours`},
-        {class:"indent1p", texte:`te servir à ton autel avec respect, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`te servir à ton autel avec respect, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et de trouver le salut <span style="color: #b30000;">/</span>
         dans la participation fidèle aux mystères que nous célébrons.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -4500,14 +4500,14 @@ que nous ayons part au même pain`},
         {class:"indent1all", texte: `Par ses blessures, nous sommes guéris.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Donne-nous, Seigneur,
         de trouver dans la communion à ce sacrifice`},
-        {class:"indent1p", texte:`une indéfectible protection ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`une indéfectible protection ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`grâce à elle,
         que tout mal soit à jamais éloigné de nous.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         accorde à ceux qui te servent`},
-        {class:"indent1p", texte:`et recherchent la grâce de ta protection,`},
+        {class:"indentallp", texte:`et recherchent la grâce de ta protection,`},
         {class:"indent1all", texte:`d’être libérés de tout mal <span style="color: #b30000;">/</span>
         afin de pouvoir te servir d’un coeur paisible.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -4522,7 +4522,7 @@ que nous ayons part au même pain`},
         raillé par les gens, rejeté par le peuple.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         de tous ceux à qui tu as donné de renaître dans le Christ,`},
-        {class:"indent1p", texte:`tu as fait une descendance choisie, un sacerdoce royal ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as fait une descendance choisie, un sacerdoce royal ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de vouloir ce que tu commandes
         et de pouvoir l’accomplir, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`afin que le peuple appelé à l’éternité
@@ -4549,7 +4549,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Prends pitié, Seigneur, de ton Église en prière, <span style="color: #b30000;">+</span>
         et regarde avec bonté`},
-        {class:"indent1p", texte:`le coeur de tes fidèles tournés vers toi ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`le coeur de tes fidèles tournés vers toi ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ne permets pas que le péché les entrave,
         ne laisse pas le malheur les accabler, <span style="color: #b30000;">/</span>
         puisque tu les as rachetés par la mort de ton Fils unique.`},
@@ -4564,7 +4564,7 @@ que nous ayons part au même pain`},
         Hosanna au plus haut des cieux !`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         pour donner au genre humain`},
-        {class:"indent1p", texte:`un exemple d’humilité,`},
+        {class:"indentallp", texte:`un exemple d’humilité,`},
         {class:"indent1all", texte:`tu as voulu que notre Sauveur prenne chair
         et qu’il subisse la croix : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, dans ta bonté,
@@ -4627,7 +4627,7 @@ que nous ayons part au même pain`},
         viens vite, réponds-moi !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Visite ton peuple, Seigneur ; <span style="color: #b30000;">+</span>
         dans ton amour inlassable,`},
-        {class:"indent1p", texte:`veille sur nos coeurs sanctifiés par les mystères divins ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`veille sur nos coeurs sanctifiés par les mystères divins ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et puisque tu nous as donné dans ta miséricorde
         les remèdes du salut éternel, <span style="color: #b30000;">/</span>
         aide-nous, par ta protection, à les garder fidèlement.`},
@@ -4664,14 +4664,14 @@ que nous ayons part au même pain`},
         mais il l’a livré pour nous tous.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu nous as rassasiés, Seigneur,
         par ce don qui nous sauve, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`et nous implorons ta miséricorde ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous implorons ta miséricorde ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tu as voulu nous fortifier en cette vie par ce même sacrement : <span style="color: #b30000;">/</span>
         qu’il nous rende participants de la vie éternelle.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Par ta miséricorde, Seigneur Dieu, <span style="color: #b30000;">+</span>
         purifie le peuple qui t’appartient`},
-        {class:"indent1p", texte:`de tout ce qui l’entraîne au vieillissement, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`de tout ce qui l’entraîne au vieillissement, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et rends-le capable de renouveau dans la sainteté.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -4687,7 +4687,7 @@ que nous ayons part au même pain`},
         à la gloire de Dieu le Père.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as voulu que ton Fils`},
-        {class:"indent1p", texte:`soit soumis pour nous au supplice de la croix
+        {class:"indentallp", texte:`soit soumis pour nous au supplice de la croix
         afin de nous arracher au pouvoir de l’Ennemi ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne à ceux qui te servent <span style="color: #b30000;">/</span>
         de recevoir la grâce de la résurrection.`},
@@ -4706,7 +4706,7 @@ que nous ayons part au même pain`},
         et donner sa vie en rançon pour la multitude.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu tout puissant, <span style="color: #b30000;">+</span>
         accorde-nous de croire,`},
-        {class:"indent1p", texte:`au plus profond de nous-mêmes,`},
+        {class:"indentallp", texte:`au plus profond de nous-mêmes,`},
         {class:"indent1all", texte:`que tu nous as donné la vie éternelle par la mort de ton Fils,
         subie dans le cours du temps
         et annoncée par les saints mystères.`},
@@ -4714,7 +4714,7 @@ que nous ayons part au même pain`},
     ],
     priereSurLePeuple: [{class:"grandelettrine", texte:`Seigneur, nous t’en prions : <span style="color: #b30000;">+</span>
         donne à tes fidèles de recueillir sans cesse`},
-        {class:"indent1p", texte:`les fruits des sacrements de Pâques
+        {class:"indentallp", texte:`les fruits des sacrements de Pâques
         et d’attendre les biens futurs avec un grand désir, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin qu’ils demeurent attachés
         aux mystères qui les ont fait renaître <span style="color: #b30000;">/</span>
@@ -4731,7 +4731,7 @@ que nous ayons part au même pain`},
         pour les siècles des siècles. Amen.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as donné l’onction de l’Esprit Saint à ton Fils unique`},
-        {class:"indent1p", texte:`et l’as établi Christ et Seigneur ;
+        {class:"indentallp", texte:`et l’as établi Christ et Seigneur ;
         nous t’en prions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque tu nous fais participer à sa consécration, <span style="color: #b30000;">/</span>
         accorde-nous d’être dans le monde
@@ -4751,31 +4751,44 @@ que nous ayons part au même pain`},
         ta fidélité, je l’annonce d’âge en âge.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en supplions, Dieu tout-puissant : <span style="color: #b30000;">*</span>
         donne à ceux que tu as fortifiés par tes sacrements <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`d’être au milieu du monde la bonne odeur du Christ.`},
+        {class:"indentallp", texte:`d’être au milieu du monde la bonne odeur du Christ.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
     ],
   },
-
+//A completer
       "SAI_J": {
     titre: "JEUDI SAINT - EN MÉMOIRE DE LA CÈNE DU SEIGNEUR",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
+    antienne_ouverture: [{class:"indent1all", texte: `Que notre seule fierté
+        soit la croix de notre Seigneur Jésus Christ.`},
+        {class:"indent1all", texte: `En lui, nous avons le salut, la vie et la résurrection,
+        par lui, nous sommes sauvés et délivrés.`}],
+    collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
+        tu nous appelles à célébrer`},
+        {class:"indentallp", texte:`la très sainte Cène où ton Fils unique,
+        avant de se livrer lui-même à la mort,
+        a remis pour toujours à son Église le sacrifice nouveau,
+        le repas qui est le sacrement de son amour ; <span style="color: #b30000;">*</span>`},
+        {class:"indent1all", texte:`donne-nous de puiser à ce grand mystère <span style="color: #b30000;">/</span>
+        la charité et la vie en plénitude.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
-qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
-Dieu, pour les siècles des siècles.`},
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
+        Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accorde-nous, Seigneur, nous t’en prions,
+        de participer dignement à ces mystères, <span style="color: #b30000;">*</span>`},
+        {class:"indent1all", texte:`car chaque fois qu’est célébré ce sacrifice en mémorial, <span style="color: #b30000;">/</span>
+        c’est l’oeuvre de notre Rédemption qui s’accomplit.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`« Ceci est mon corps, livré pour vous, dit le Seigneur.
+        Faites cela en mémoire de moi.`},
+        {class:"indent1all", texte: `Cette coupe est la nouvelle Alliance en mon sang.
+        Chaque fois que vous en boirez
+        faites cela en mémoire de moi. »`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous avons repris des forces, Dieu tout-puissant,
+        en célébrant aujourd’hui la Cène de ton Fils ; <span style="color: #b30000;">*</span>`},
+        {class:"indent1all", texte:`accorde-nous d’être rassasiés <span style="color: #b30000;">/</span>
+        au banquet de l’éternité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -4785,7 +4798,7 @@ Dieu, pour les siècles des siècles.`},
     antienne_ouverture: [{class:"indent1all", texte: ``},
         {class:"indent1all", texte: ``}],
     collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"", texte:``},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -4809,21 +4822,25 @@ Dieu, pour les siècles des siècles.`},
     antienne_ouverture: [{class:"indent1all", texte: ``},
         {class:"indent1all", texte: ``}],
     collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"", texte:``},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
 qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
 Dieu, pour les siècles des siècles.`},
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, nous t’en supplions, Seigneur,
+        les prières de ton peuple`},
+        {class:"indent1p", texte:`qui t’offre ce sacrifice ; <span style="color: #b30000;">*</span>`},
+        {class:"indent1all", texte:`fais que les mystères inaugurés dans la célébration pascale <span style="color: #b30000;">/</span>
+        nous procurent, avec l’aide de ta grâce, la guérison éternelle.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:``},
       {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Répands en nous, Seigneur, ton Esprit de charité, <span style="color: #b30000;">*</span>
+        afin que soient unis par ta tendresse <span style="color: #b30000;">/</span>`},
+        {class:"indent1p", texte:`ceux que tu as nourris des sacrements de Pâques.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -4833,7 +4850,7 @@ Dieu, pour les siècles des siècles.`},
     antienne_ouverture: [{class:"indent1all", texte: ``},
         {class:"indent1all", texte: ``}],
     collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"", texte:``},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -4864,7 +4881,7 @@ Dieu, pour les siècles des siècles.`},
         car il règne pour l’éternité, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu fais grandir sans cesse ton Église`},
-        {class:"indent1p", texte:`en lui donnant de nouveaux enfants ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en lui donnant de nouveaux enfants ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-leur de te servir
         et d’être fidèles par toute leur vie <span style="color: #b30000;">/</span>
         au sacrement qu’ils ont reçu dans la foi.`},
@@ -4883,7 +4900,7 @@ Dieu, pour les siècles des siècles.`},
         sur lui, la mort n’a plus de pouvoir, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que la grâce du mystère pascal,
         Seigneur, nous t’en prions,`},
-        {class:"indent1p", texte:`surabonde en nos coeurs, ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`surabonde en nos coeurs, ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque tu nous as mis sur le chemin du salut éternel, <span style="color: #b30000;">/</span>
         rends-nous dignes de tes bienfaits.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -4907,7 +4924,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois avec bonté les offrandes de ta famille,
         nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle ne perde aucun des bienfaits déjà reçus, <span style="color: #b30000;">/</span>
         et parvienne aux dons éternels.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -4918,7 +4935,7 @@ Dieu, pour les siècles des siècles.`},
         pensez aux réalités d’en haut, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Ecoute notre prière, Dieu tout-puissant : <span style="color: #b30000;">+</span>
         tu as donné à ta famille`},
-        {class:"indent1p", texte:`la grâce incomparable du baptême ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la grâce incomparable du baptême ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`dispose nos coeurs à recevoir <span style="color: #b30000;">/</span>
         le bonheur éternel.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -4932,7 +4949,7 @@ Dieu, pour les siècles des siècles.`},
         préparé pour vous depuis la fondation du monde, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu nous donnes chaque année`},
-        {class:"indent1p", texte:`la joie de fêter la résurrection du Seigneur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la joie de fêter la résurrection du Seigneur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à travers ces fêtes d’ici-bas,
         accorde-nous, dans ta bonté, <span style="color: #b30000;">/</span>
         de parvenir aux joies éternelles.`},
@@ -4950,7 +4967,7 @@ Dieu, pour les siècles des siècles.`},
         à la fraction du pain, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Après avoir été purifiés
         de tout ce qui reste en nous de l’homme ancien,`},
-        {class:"indent1p", texte:`nous te prions, Seigneur : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te prions, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que le sacrement de ton Fils, reçu avec ferveur, <span style="color: #b30000;">/</span>
         nous fasse entrer dans la création nouvelle.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -4965,7 +4982,7 @@ Dieu, pour les siècles des siècles.`},
         et délié la langue des tout-petits, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as uni des peuples divers`},
-        {class:"indent1p", texte:`dans la confession de ton nom ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`dans la confession de ton nom ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ceux qui renaissent à la fontaine baptismale
         d’avoir au coeur la même foi <span style="color: #b30000;">/</span>
         et dans leurs actes le même amour.`},
@@ -4987,7 +5004,7 @@ Dieu, pour les siècles des siècles.`},
         à son admirable lumière, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Ecoute nos prières, Seigneur : <span style="color: #b30000;">*</span>
         que cet échange très saint où l’homme est racheté`},
-        {class:"indent1p", texte:`nous soutienne durant la vie présente <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous soutienne durant la vie présente <span style="color: #b30000;">/</span>
         et nous procure les joies éternelles.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -4999,7 +5016,7 @@ Dieu, pour les siècles des siècles.`},
         et la mer a englouti leurs ennemis, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         par le mystère pascal,`},
-        {class:"indent1p", texte:`tu as rétabli l’humanité dans ton alliance ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as rétabli l’humanité dans ton alliance ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d’exprimer par nos actes <span style="color: #b30000;">/</span>
         la foi que nos célébrations proclament.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -5016,7 +5033,7 @@ Dieu, pour les siècles des siècles.`},
         {class:"indent1all", texte: `Puis il prend le pain et le leur donne, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         ne cesse pas de protéger avec tendresse`},
-        {class:"indent1p", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`la passion de ton Fils les a rachetés, <span style="color: #b30000;">/</span>
         qu’ils trouvent leur joie dans sa résurrection.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
@@ -5029,7 +5046,7 @@ Dieu, pour les siècles des siècles.`},
         ses élus, avec des cris de joie, alléluia !`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par l’abondance de ta grâce,`},
-        {class:"indent1p", texte:`tu fais grandir le peuple des croyants ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu fais grandir le peuple des croyants ; <span style="color: #b30000;">*</span>`},
         {class:"", texte:`regarde avec bonté ceux que tu as choisis ; <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`le baptême les a fait renaître :
         qu’ils soient revêtus de l’immortalité bienheureuse.`},
@@ -5039,7 +5056,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Donne-nous, Seigneur, nous t’en prions,
         de toujours te rendre grâce`},
-        {class:"indent1p", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’ils continuent l’oeuvre de notre relèvement <span style="color: #b30000;">/</span>
         et deviennent pour nous
         une source intarissable de joie.`},
@@ -5078,7 +5095,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, nous t’en prions, Seigneur,
         les offrandes de ton peuple,`},
-        {class:"indent1p", texte:`et, en particulier, de ceux que tu as fait renaître ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et, en particulier, de ceux que tu as fait renaître ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ils ont été renouvelés en confessant ton nom
         et en recevant le baptême : <span style="color: #b30000;">/</span>
         accorde-leur de parvenir au bonheur sans fin.`},
@@ -5089,7 +5106,7 @@ Dieu, pour les siècles des siècles.`},
         cesse d’être incrédule, sois croyant, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">*</span>
         que le mystère pascal accueilli dans cette communion <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`ne cesse jamais d’agir en nos coeurs.`},
+        {class:"indentallp", texte:`ne cesse jamais d’agir en nos coeurs.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -5100,7 +5117,7 @@ Dieu, pour les siècles des siècles.`},
         sur lui, la mort n’a plus de pouvoir, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">+</span>
         renouvelés et guéris par ta Pâque,`},
-        {class:"indent1p", texte:`nous sommes affranchis de la ressemblance
+        {class:"indentallp", texte:`nous sommes affranchis de la ressemblance
         avec notre premier parent, issu de la terre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`transforme-nous à l’image du créateur, <span style="color: #b30000;">/</span>
         qui est aux cieux.`},
@@ -5130,7 +5147,7 @@ Dieu, pour les siècles des siècles.`},
         Il règne, le Seigneur notre Dieu, le Souverain de l’univers, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu fort, nous t’en prions, <span style="color: #b30000;">+</span>
         fais-nous proclamer la puissance`},
-        {class:"indent1p", texte:`déployée dans la résurrection du Seigneur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`déployée dans la résurrection du Seigneur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous avons reçu les prémices de sa grâce : <span style="color: #b30000;">/</span>
         rends-nous capables d’en saisir la plénitude.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -5139,7 +5156,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Donne-nous, Seigneur, nous t’en prions,
         de toujours te rendre grâce`},
-        {class:"indent1p", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’ils continuent l’oeuvre de notre relèvement <span style="color: #b30000;">/</span>
         et deviennent pour nous
         une source intarissable de joie.`},
@@ -5150,7 +5167,7 @@ Dieu, pour les siècles des siècles.`},
         pour entrer dans sa gloire, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Ecoute nos prières, Seigneur : <span style="color: #b30000;">*</span>
         que cet échange très saint où l’homme est racheté`},
-        {class:"indent1p", texte:`nous soutienne durant la vie présente <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous soutienne durant la vie présente <span style="color: #b30000;">/</span>
         et nous procure les joies éternelles.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -5162,7 +5179,7 @@ Dieu, pour les siècles des siècles.`},
         je proclamerai ton nom devant mes frères, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Chaque année, Seigneur, <span style="color: #b30000;">+</span>
         tu nous fais revivre le mystère pascal`},
-        {class:"indent1p", texte:`où la nature humaine, renouvelée dans sa dignité originelle,
+        {class:"indentallp", texte:`où la nature humaine, renouvelée dans sa dignité originelle,
         reçoit l’espérance de la résurrection ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous implorons humblement ta bonté :
         donne-nous de toujours accueillir avec amour <span style="color: #b30000;">/</span>
@@ -5173,7 +5190,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span>
         dans l’admirable échange du sacrifice eucharistique,`},
-        {class:"indent1p", texte:`tu nous fais participer à ton unique et souveraine divinité ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous fais participer à ton unique et souveraine divinité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous avons reçu la connaissance de ta vérité : <span style="color: #b30000;">/</span>
         accorde-nous de lui être fidèles par toute notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5183,7 +5200,7 @@ Dieu, pour les siècles des siècles.`},
         et que votre fruit demeure, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans ta bienveillance,
         reste auprès de ton peuple,`},
-        {class:"indent1p", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque tu l’as initié aux sacrements du ciel, <span style="color: #b30000;">/</span>
         fais-le passer de ce qui est ancien
         à la vie nouvelle.`},
@@ -5198,7 +5215,7 @@ Dieu, pour les siècles des siècles.`},
         les cieux même fondirent devant la face de Dieu, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         toi qui as accompli le sacrifice pascal pour le salut du monde,`},
-        {class:"indent1p", texte:`sois favorable aux supplications de ton peuple ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`sois favorable aux supplications de ton peuple ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`le Christ, notre grand prêtre, intercède en notre faveur :
         lui qui est semblable à nous, qu’il nous procure la réconciliation ; <span style="color: #b30000;">/</span>
         lui qui est égal à toi, qu’il nous apporte le pardon.`},
@@ -5217,7 +5234,7 @@ Dieu, pour les siècles des siècles.`},
         jusqu’à la fin du monde, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         dans la résurrection du Christ,`},
-        {class:"indent1p", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`multiplie en nous les fruits du sacrement pascal : <span style="color: #b30000;">/</span>
         répands en nos coeurs la force
         de cette nourriture qui apporte le salut.`},
@@ -5233,7 +5250,7 @@ Dieu, pour les siècles des siècles.`},
         un royaume et des prêtres, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         espérance et lumière des coeurs droits, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous t’en supplions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en supplions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de t’offrir une prière digne de toi <span style="color: #b30000;">/</span>
         et de toujours te glorifier par le service de la louange.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -5242,7 +5259,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois avec bonté les offrandes de ta famille,
         nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle ne perde aucun des bienfaits déjà reçus, <span style="color: #b30000;">/</span>
         et parvienne aux dons éternels.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5251,7 +5268,7 @@ Dieu, pour les siècles des siècles.`},
         est ressuscité pour nous rendre justes, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         ne cesse pas de protéger avec tendresse`},
-        {class:"indent1p", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`la passion de ton Fils les a rachetés, <span style="color: #b30000;">/</span>
         qu’ils trouvent leur joie dans sa résurrection.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5273,7 +5290,7 @@ Dieu, pour les siècles des siècles.`},
         {class:"rubrique", texte:`ou bien`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par les mystères de Pâques,`},
-        {class:"indent1p", texte:`tu as voulu ouvrir à tes fidèles la porte de la miséricorde ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as voulu ouvrir à tes fidèles la porte de la miséricorde ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`regarde-nous et prends pitié de nous,
         afin qu’en suivant par ta grâce le chemin de ta volonté, <span style="color: #b30000;">/</span>
         nous n’abandonnions jamais les sentiers de la vie.`},
@@ -5349,7 +5366,7 @@ Dieu, pour les siècles des siècles.`},
         lui qui a choisi de mourir pour son troupeau, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">+</span>
         par la guérison obtenue dans le mystère pascal,`},
-        {class:"indent1p", texte:`tu nous as conformés à la nature de ton Fils ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous as conformés à la nature de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’en nous dépouillant de l’homme ancien
         et de ses façons d’agir, <span style="color: #b30000;">/</span>
         nous vivions de la vie du Christ.`},
@@ -5368,7 +5385,7 @@ Dieu, pour les siècles des siècles.`},
         dit le Seigneur, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         dans la résurrection du Christ,`},
-        {class:"indent1p", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`multiplie en nous les fruits du sacrement pascal : <span style="color: #b30000;">/</span>
         répands en nos coeurs la force
         de cette nourriture qui apporte le salut.`},
@@ -5384,7 +5401,7 @@ Dieu, pour les siècles des siècles.`},
         et le pouvoir de son Christ, alléluia !`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         à ceux que tu as fait renaître de l’eau et de l’Esprit Saint,`},
-        {class:"indent1p", texte:`tu ouvres le royaume des Cieux ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu ouvres le royaume des Cieux ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais grandir ta grâce en tes serviteurs,
         afin que, déjà purifiés de leurs fautes, <span style="color: #b30000;">/</span>
         ils ne rendent vaine aucune des promesses de ton amour.`},
@@ -5423,7 +5440,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Donne-nous, Seigneur, nous t’en prions,
         de toujours te rendre grâce`},
-        {class:"indent1p", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’ils continuent l’oeuvre de notre relèvement <span style="color: #b30000;">/</span>
         et deviennent pour nous
         une source intarissable de joie.`},
@@ -5434,7 +5451,7 @@ Dieu, pour les siècles des siècles.`},
         et nous remplit de sa lumière, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Ecoute nos prières, Seigneur : <span style="color: #b30000;">*</span>
         que cet échange très saint où l’homme est racheté`},
-        {class:"indent1p", texte:`nous soutienne durant la vie présente <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous soutienne durant la vie présente <span style="color: #b30000;">/</span>
         et nous procure les joies éternelles.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -5447,7 +5464,7 @@ Dieu, pour les siècles des siècles.`},
         il est pour moi le salut, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         nous implorons avec plus de ferveur ta tendresse,`},
-        {class:"indent1p", texte:`en ce temps de Pâques où ta bonté nous l’a mieux fait connaître : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en ce temps de Pâques où ta bonté nous l’a mieux fait connaître : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ceux que tu as dégagés des ténèbres de l’erreur, <span style="color: #b30000;">/</span>
         fais-les adhérer plus fermement
         aux enseignements de ta vérité.`},
@@ -5457,7 +5474,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span>
         dans l’admirable échange du sacrifice eucharistique,`},
-        {class:"indent1p", texte:`tu nous fais participer à ton unique et souveraine divinité ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous fais participer à ton unique et souveraine divinité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous avons reçu la connaissance de ta vérité : <span style="color: #b30000;">/</span>
         accorde-nous de lui être fidèles par toute notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5467,7 +5484,7 @@ Dieu, pour les siècles des siècles.`},
         mais sur lui, qui est mort et ressuscité pour eux, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans ta bienveillance,
         reste auprès de ton peuple,`},
-        {class:"indent1p", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque tu l’as initié aux sacrements du ciel, <span style="color: #b30000;">/</span>
         fais-le passer de ce qui est ancien
         à la vie nouvelle.`},
@@ -5482,7 +5499,7 @@ Dieu, pour les siècles des siècles.`},
         sagesse, force et honneur, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">+</span>
         puisque nous avons la grâce`},
-        {class:"indent1p", texte:`de connaître la résurrection du Seigneur, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de connaître la résurrection du Seigneur, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que ton Esprit d’amour nous ressuscite, nous aussi, <span style="color: #b30000;">/</span>
         à une vie nouvelle.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -5500,7 +5517,7 @@ Dieu, pour les siècles des siècles.`},
         il nous a rachetés, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur, nous avons reçu
         le don de tes sacrements,`},
-        {class:"indent1p", texte:`et nous te prions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te prions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ton Fils nous a demandé de les célébrer en mémoire de lui, <span style="color: #b30000;">/</span>
         qu’ils augmentent en nous la charité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5515,7 +5532,7 @@ Dieu, pour les siècles des siècles.`},
         qui l’a ressuscité d’entre les morts, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         à la fontaine baptismale,`},
-        {class:"indent1p", texte:`tu as renouvelé ceux qui croient en toi ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as renouvelé ceux qui croient en toi ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`protège ceux que tu as fait renaître dans le Christ
         pour les rendre victorieux contre les assauts de l’erreur, <span style="color: #b30000;">/</span>
         et les garder fidèles à la grâce de ta bénédiction.`},
@@ -5525,7 +5542,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois avec bonté les offrandes de ta famille,
         nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle ne perde aucun des bienfaits déjà reçus, <span style="color: #b30000;">/</span>
         et parvienne aux dons éternels.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5536,7 +5553,7 @@ Dieu, pour les siècles des siècles.`},
         dit le Seigneur, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         ne cesse pas de protéger avec tendresse`},
-        {class:"indent1p", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`la passion de ton Fils les a rachetés, <span style="color: #b30000;">/</span>
         qu’ils trouvent leur joie dans sa résurrection.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5556,7 +5573,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Donne-nous, Seigneur, nous t’en prions,
         de toujours te rendre grâce`},
-        {class:"indent1p", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’ils continuent l’oeuvre de notre relèvement <span style="color: #b30000;">/</span>
         et deviennent pour nous
         une source intarissable de joie.`},
@@ -5610,7 +5627,7 @@ Dieu, pour les siècles des siècles.`},
         Il règne, le Seigneur notre Dieu, le Souverain de l’univers, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous t’en prions : <span style="color: #b30000;">+</span>
         alors que nous célébrons le mystère`},
-        {class:"indent1p", texte:`de la résurrection du Seigneur, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de la résurrection du Seigneur, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d’accueillir <span style="color: #b30000;">/</span>
         la joie de notre rédemption.`},
         {class:"indent1all", texte:`Lui qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -5618,7 +5635,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Donne-nous, Seigneur, nous t’en prions,
         de toujours te rendre grâce`},
-        {class:"indent1p", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’ils continuent l’oeuvre de notre relèvement <span style="color: #b30000;">/</span>
         et deviennent pour nous
         une source intarissable de joie.`},
@@ -5629,7 +5646,7 @@ Dieu, pour les siècles des siècles.`},
         pour entrer dans sa gloire, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Ecoute nos prières, Seigneur : <span style="color: #b30000;">*</span>
         que cet échange très saint où l’homme est racheté`},
-        {class:"indent1p", texte:`nous soutienne durant la vie présente <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous soutienne durant la vie présente <span style="color: #b30000;">/</span>
         et nous procure les joies éternelles.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -5641,7 +5658,7 @@ Dieu, pour les siècles des siècles.`},
         je proclamerai ton nom devant mes frères, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         tu es la vie de tes fidèles, la gloire des humbles`},
-        {class:"indent1p", texte:`et le bonheur des justes ; <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`et le bonheur des justes ; <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`dans ta bienveillance,
         écoute ceux qui te prient : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ils ont soif des biens que tu promets, <span style="color: #b30000;">/</span>
@@ -5652,7 +5669,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span>
         dans l’admirable échange du sacrifice eucharistique,`},
-        {class:"indent1p", texte:`tu nous fais participer à ton unique et souveraine divinité ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous fais participer à ton unique et souveraine divinité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous avons reçu la connaissance de ta vérité : <span style="color: #b30000;">/</span>
         accorde-nous de lui être fidèles par toute notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5662,7 +5679,7 @@ Dieu, pour les siècles des siècles.`},
         et que votre fruit demeure, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans ta bienveillance,
         reste auprès de ton peuple,`},
-        {class:"indent1p", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque tu l’as initié aux sacrements du ciel, <span style="color: #b30000;">/</span>
         fais-le passer de ce qui est ancien
         à la vie nouvelle.`},
@@ -5677,7 +5694,7 @@ Dieu, pour les siècles des siècles.`},
         les cieux même fondirent devant la face de Dieu, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         tu relèves la nature humaine`},
-        {class:"indent1p", texte:`bien au-dessus de sa condition originelle ; <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`bien au-dessus de sa condition originelle ; <span style="color: #b30000;">+</span>`},
         {class:"", texte:`souviens-toi de l’ineffable mystère de ton amour : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`garde en ta grâce et ta bénédiction <span style="color: #b30000;">/</span>
         ceux que le sacrement de la nouvelle naissance a régénérés.`},
@@ -5696,7 +5713,7 @@ Dieu, pour les siècles des siècles.`},
         jusqu’à la fin du monde, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         dans la résurrection du Christ,`},
-        {class:"indent1p", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`multiplie en nous les fruits du sacrement pascal : <span style="color: #b30000;">/</span>
         répands en nos coeurs la force
         de cette nourriture qui apporte le salut.`},
@@ -5722,7 +5739,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois avec bonté les offrandes de ta famille,
         nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle ne perde aucun des bienfaits déjà reçus, <span style="color: #b30000;">/</span>
         et parvienne aux dons éternels.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5731,7 +5748,7 @@ Dieu, pour les siècles des siècles.`},
         est ressuscité pour nous rendre justes, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         ne cesse pas de protéger avec tendresse`},
-        {class:"indent1p", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`la passion de ton Fils les a rachetés, <span style="color: #b30000;">/</span>
         qu’ils trouvent leur joie dans sa résurrection.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5793,7 +5810,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span>
         dans l’admirable échange du sacrifice eucharistique,`},
-        {class:"indent1p", texte:`tu nous fais participer à ton unique et souveraine divinité ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous fais participer à ton unique et souveraine divinité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous avons reçu la connaissance de ta vérité : <span style="color: #b30000;">/</span>
         accorde-nous de lui être fidèles par toute notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5803,7 +5820,7 @@ Dieu, pour les siècles des siècles.`},
         celui-là porte beaucoup de fruit, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans ta bienveillance,
         reste auprès de ton peuple`},
-        {class:"indent1p", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque tu l’as initié aux sacrements du ciel, <span style="color: #b30000;">/</span>
         fais-le passer de ce qui est ancien
         à la vie nouvelle.`},
@@ -5818,7 +5835,7 @@ Dieu, pour les siècles des siècles.`},
         lui qui a choisi de mourir pour son troupeau, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">+</span>
         entoure ta famille`},
-        {class:"indent1p", texte:`et que ta main droite la soutienne toujours ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et que ta main droite la soutienne toujours ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ainsi, par la résurrection de ton Fils unique,
         qu’elle soit préservée de tout égarement <span style="color: #b30000;">/</span>
         et recherche les dons du ciel.`},
@@ -5838,7 +5855,7 @@ Dieu, pour les siècles des siècles.`},
         dit le Seigneur, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         dans la résurrection du Christ,`},
-        {class:"indent1p", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`multiplie en nous les fruits du sacrement pascal : <span style="color: #b30000;">/</span>
         répands en nos coeurs la force
         de cette nourriture qui apporte le salut.`},
@@ -5854,7 +5871,7 @@ Dieu, pour les siècles des siècles.`},
         et le pouvoir de son Christ, alléluia !`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         tu nous recrées pour la vie éternelle`},
-        {class:"indent1p", texte:`dans la résurrection du Christ ; <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`dans la résurrection du Christ ; <span style="color: #b30000;">+</span>`},
         {class:"", texte:`affermis la foi et l’espérance de ton peuple : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ne laisse pas le doute entamer notre confiance <span style="color: #b30000;">/</span>
         dans les promesses que toi-même nous as faites.`},
@@ -5895,7 +5912,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Donne-nous, Seigneur, nous t’en prions,
         de toujours te rendre grâce`},
-        {class:"indent1p", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par ces mystères de Pâques ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’ils continuent l’oeuvre de notre relèvement <span style="color: #b30000;">/</span>
         et deviennent pour nous
         une source intarissable de joie.`},
@@ -5906,7 +5923,7 @@ Dieu, pour les siècles des siècles.`},
         et nous remplit de sa lumière, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Ecoute nos prières, Seigneur : <span style="color: #b30000;">*</span>
         que cet échange très saint où l’homme est racheté`},
-        {class:"indent1p", texte:`nous soutienne durant la vie présente <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`nous soutienne durant la vie présente <span style="color: #b30000;">/</span>
         et nous procure les joies éternelles.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -5919,7 +5936,7 @@ Dieu, pour les siècles des siècles.`},
         il est pour moi le salut, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         par ta grâce tu as fait de nous des justes`},
-        {class:"indent1p", texte:`quand nous étions pécheurs, <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`quand nous étions pécheurs, <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`tu nous as donné le bonheur
         quand nous étions malheureux ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`veille sur ton oeuvre, veille sur tes dons : <span style="color: #b30000;">/</span>
@@ -5931,7 +5948,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span>
         dans l’admirable échange du sacrifice eucharistique,`},
-        {class:"indent1p", texte:`tu nous fais participer à ton unique et souveraine divinité ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous fais participer à ton unique et souveraine divinité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous avons reçu la connaissance de ta vérité : <span style="color: #b30000;">/</span>
         accorde-nous de lui être fidèles par toute notre vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5941,7 +5958,7 @@ Dieu, pour les siècles des siècles.`},
         mais sur lui, qui est mort et ressuscité pour eux, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans ta bienveillance,
         reste auprès de ton peuple,`},
-        {class:"indent1p", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque tu l’as initié aux sacrements du ciel, <span style="color: #b30000;">/</span>
         fais-le passer de ce qui est ancien
         à la vie nouvelle.`},
@@ -5956,7 +5973,7 @@ Dieu, pour les siècles des siècles.`},
         sagesse, force et honneur, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">*</span>
         donne-nous de vivre en plein accord`},
-        {class:"indent1p", texte:`avec le mystère pascal que nous célébrons dans la joie ; <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`avec le mystère pascal que nous célébrons dans la joie ; <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`qu’il nous protège toujours par sa puissance
         et nous apporte le salut.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -5974,7 +5991,7 @@ Dieu, pour les siècles des siècles.`},
         il nous a rachetés, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur, nous avons reçu
         les dons qui nous ont fait participer aux saints mystères,`},
-        {class:"indent1p", texte:`et nous te prions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te prions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ton Fils nous a demandé de les célébrer en mémoire de lui, <span style="color: #b30000;">/</span>
         qu’ils augmentent en nous la charité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -5989,7 +6006,7 @@ Dieu, pour les siècles des siècles.`},
         qui l’a ressuscité d’entre les morts, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu as voulu nous donner la vie du ciel`},
-        {class:"indent1p", texte:`en nous faisant renaître par le baptême ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en nous faisant renaître par le baptême ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions : toi qui nous ouvres à l’immortalité
         en faisant de nous des justes,`},
         {class:"indent1all", texte:`donne-nous de parvenir, sous ta conduite, <span style="color: #b30000;">/</span>
@@ -6000,7 +6017,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois avec bonté les offrandes de ta famille,
         nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle ne perde aucun des bienfaits déjà reçus, <span style="color: #b30000;">/</span>
         et parvienne aux dons éternels.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6011,7 +6028,7 @@ Dieu, pour les siècles des siècles.`},
         dit le Seigneur, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         ne cesse pas de protéger avec tendresse`},
-        {class:"indent1p", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`la passion de ton Fils les a rachetés, <span style="color: #b30000;">/</span>
         qu’ils trouvent leur joie dans sa résurrection.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6025,7 +6042,7 @@ Dieu, pour les siècles des siècles.`},
         le Seigneur a libéré son peuple, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         accorde-nous, en ces jours de fête,`},
-        {class:"indent1p", texte:`de célébrer avec ferveur le Seigneur ressuscité : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de célébrer avec ferveur le Seigneur ressuscité : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puissions-nous mettre en oeuvre fidèlement <span style="color: #b30000;">/</span>
         tout ce dont nous faisons mémoire.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -6045,7 +6062,7 @@ Dieu, pour les siècles des siècles.`},
         qui sera pour toujours avec vous, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         dans la résurrection du Christ,`},
-        {class:"indent1p", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`multiplie en nous les fruits du sacrement pascal : <span style="color: #b30000;">/</span>
         répands en nos coeurs la force
         de cette nourriture qui apporte le salut.`},
@@ -6059,7 +6076,7 @@ Dieu, pour les siècles des siècles.`},
         sur lui, la mort n’a plus de pouvoir, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu de miséricorde, <span style="color: #b30000;">+</span>
         donne-nous de voir fructifier, tout au long de notre vie, <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`ce que nous célébrons dans le Temps pascal.`},
+        {class:"indentallp", texte:`ce que nous célébrons dans le Temps pascal.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
         Dieu, pour les siècles des siècles.`},
@@ -6085,7 +6102,7 @@ Dieu, pour les siècles des siècles.`},
     antienne_ouverture: [{class:"indent1all", texte: ``},
         {class:"indent1all", texte: ``}],
     collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"", texte:``},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -6093,14 +6110,14 @@ qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: 
 Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:``},
       {class:"indent1all", texte: ``}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -6111,7 +6128,7 @@ Dieu, pour les siècles des siècles.`},
     antienne_ouverture: [{class:"indent1all", texte: ``},
         {class:"indent1all", texte: ``}],
     collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"", texte:``},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -6119,14 +6136,14 @@ qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: 
 Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:``},
       {class:"indent1all", texte: ``}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -6139,7 +6156,7 @@ Dieu, pour les siècles des siècles.`},
         celui que vous avez vu s’en aller vers le ciel, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         fais-nous exulter d’une joie sainte`},
-        {class:"indent1p", texte:`et nous réjouir dans une fervente action de grâce,
+        {class:"indentallp", texte:`et nous réjouir dans une fervente action de grâce,
         car l’ascension de ton Fils, le Christ,
         nous introduit déjà auprès de toi, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous, les membres du corps dont il est la tête,
@@ -6150,7 +6167,7 @@ Dieu, pour les siècles des siècles.`},
         {class:"rubrique", texte:`ou bien`},
         {class:"indent1all", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">*</span>
         puisque nous croyons que ton Fils unique, notre Rédempteur,`},
-        {class:"indent1p", texte:`est aujourd’hui monté au ciel, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`est aujourd’hui monté au ciel, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`accorde-nous d’habiter en esprit
         dans la demeure des cieux.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -6159,7 +6176,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur, en ce jour où nous fêtons
         l’admirable ascension de ton Fils auprès de toi, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous te présentons humblement ce sacrifice ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te présentons humblement ce sacrifice ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions, fais que cet échange très saint <span style="color: #b30000;">/</span>
         élève nos coeurs vers les réalités célestes.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6168,7 +6185,7 @@ Dieu, pour les siècles des siècles.`},
         jusqu’à la fin du monde, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu nous donnes d’avoir part aux mystères divins`},
-        {class:"indent1p", texte:`alors que nous sommes encore sur la terre ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`alors que nous sommes encore sur la terre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`mets en nos coeurs un grand désir d’être unis au Christ <span style="color: #b30000;">/</span>
         en qui notre nature humaine est déjà près de toi.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6182,7 +6199,7 @@ Dieu, pour les siècles des siècles.`},
         les cieux même fondirent devant la face de Dieu, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as donné à ton peuple`},
-        {class:"indent1p", texte:`de participer à ta rédemption ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de participer à ta rédemption ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de toujours te rendre grâce <span style="color: #b30000;">/</span>
         pour la résurrection du Seigneur.`},
         {class:"indent1all", texte:`Lui qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -6199,7 +6216,7 @@ Dieu, pour les siècles des siècles.`},
         jusqu’à la fin du monde, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         dans la résurrection du Christ,`},
-        {class:"indent1p", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`multiplie en nous les fruits du sacrement pascal : <span style="color: #b30000;">/</span>
         répands en nos coeurs la force
         de cette nourriture qui apporte le salut.`},
@@ -6215,7 +6232,7 @@ Dieu, pour les siècles des siècles.`},
         un royaume et des prêtres, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         dans la résurrection du Christ,`},
-        {class:"indent1p", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`tu nous recrées pour la vie éternelle ; <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`dirige nos regards vers celui qui siège à ta droite,
         l’auteur de notre salut, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ainsi, au jour où notre Sauveur viendra en majesté, <span style="color: #b30000;">/</span>
@@ -6227,7 +6244,7 @@ Dieu, pour les siècles des siècles.`},
         {class:"rubrique", texte:`Ou bien, si l’Ascension est célébrée le dimanche :`},
         {class:"grandelettrine", texte:`Seigneur, écoute nos prières : <span style="color: #b30000;">+</span>
         que la prédication de l’Évangile`},
-        {class:"indent1p", texte:`réalise dans le monde ce que ton Verbe promettait
+        {class:"indentallp", texte:`réalise dans le monde ce que ton Verbe promettait
         en se sanctifiant lui-même ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et que l’adoption filiale, acquise en plénitude,
         accomplisse le salut que le Christ annonçait <span style="color: #b30000;">/</span>
@@ -6237,7 +6254,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois avec bonté les offrandes de ta famille,
         nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`garde-la sous ta protection : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle ne perde aucun des bienfaits déjà reçus, <span style="color: #b30000;">/</span>
         et parvienne aux dons éternels.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6246,7 +6263,7 @@ Dieu, pour les siècles des siècles.`},
         est ressuscité pour nous rendre justes, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur,
         ne cesse pas de protéger avec tendresse`},
-        {class:"indent1p", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ceux que tu as sauvés : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`la passion de ton Fils les a rachetés, <span style="color: #b30000;">/</span>
         qu’ils trouvent leur joie dans sa résurrection.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6261,7 +6278,7 @@ Dieu, pour les siècles des siècles.`},
         à son admirable lumière, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         en montant au ciel,`},
-        {class:"indent1p", texte:`ton Fils a promis l’Esprit Saint aux Apôtres ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ton Fils a promis l’Esprit Saint aux Apôtres ; <span style="color: #b30000;">*</span>`},
         {class:"", texte:`nous t’en prions :`},
         {class:"indent1all", texte:`de même qu’ils reçurent des grâces multiples
         leur apprenant les réalités d’en haut, <span style="color: #b30000;">/</span>`},
@@ -6293,7 +6310,7 @@ Dieu, pour les siècles des siècles.`},
         celle que tu m’as donnée, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur, nous avons reçu
         les dons qui nous ont fait participer aux saints mystères,`},
-        {class:"indent1p", texte:`et nous te prions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te prions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ton Fils nous a demandé de les célébrer en mémoire de lui, <span style="color: #b30000;">/</span>
         qu’ils augmentent en nous la charité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6309,7 +6326,7 @@ Dieu, pour les siècles des siècles.`},
         ne me cache pas ta face, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Sois favorable à nos supplications, Seigneur : <span style="color: #b30000;">+</span>
         nous croyons que le Sauveur du genre humain`},
-        {class:"indent1p", texte:`est auprès de toi dans la gloire ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`est auprès de toi dans la gloire ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puissions-nous éprouver
         qu’il demeure avec nous jusqu’à la fin du monde, <span style="color: #b30000;">/</span>
         comme lui-même l’a promis.`},
@@ -6360,7 +6377,7 @@ Dieu, pour les siècles des siècles.`},
         et votre joie, personne ne vous l’enlèvera, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans ta bienveillance,
         reste auprès de ton peuple,`},
-        {class:"indent1p", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, Seigneur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque tu l’as initié aux sacrements du ciel, <span style="color: #b30000;">/</span>
         fais-le passer de ce qui est ancien
         à la vie nouvelle.`},
@@ -6391,7 +6408,7 @@ Dieu, pour les siècles des siècles.`},
         {class:"indent1all", texte: `il vous fera souvenir de tout ce que je vous ai dit, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur, nous avons reçu
         les dons qui nous ont fait participer aux saints mystères,`},
-        {class:"indent1p", texte:`et nous te prions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te prions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ton Fils nous a demandé de les célébrer en mémoire de lui, <span style="color: #b30000;">/</span>
         qu’ils augmentent en nous la charité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6404,7 +6421,7 @@ Dieu, pour les siècles des siècles.`},
         acclamez Dieu par vos cris de joie, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu de miséricorde, <span style="color: #b30000;">+</span>
         dans ta bonté, donne à ton Église rassemblée par l’Esprit Saint`},
-        {class:"indent1p", texte:`de s’attacher à toi de tout coeur, <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`de s’attacher à toi de tout coeur, <span style="color: #b30000;">/</span>
         et de vouloir vraiment être unie.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -6438,7 +6455,7 @@ Dieu, pour les siècles des siècles.`},
         et recevoir, en temps voulu, la grâce de son secours, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">+</span>
         que ton Esprit, dans sa puissance,`},
-        {class:"indent1p", texte:`répande en nous les dons spirituels ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`répande en nous les dons spirituels ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il change notre coeur en un coeur qui te plaise, <span style="color: #b30000;">/</span>
         parfaitement accordé à ta volonté.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -6459,7 +6476,7 @@ Dieu, pour les siècles des siècles.`},
         le Défenseur ne viendra pas à vous, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Donne-nous de trouver, Seigneur,
         dans la communion à ces mystères,`},
-        {class:"indent1p", texte:`un enseignement qui nous affermit <span style="color: #b30000;">*</span>
+        {class:"indentallp", texte:`un enseignement qui nous affermit <span style="color: #b30000;">*</span>
         et une nourriture qui refait nos forces,`},
         {class:"indent1all", texte:`afin d’être en mesure de recevoir <span style="color: #b30000;">/</span>
         les dons de l’Esprit Saint.`},
@@ -6475,7 +6492,7 @@ Dieu, pour les siècles des siècles.`},
         pour son Dieu et Père, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         en glorifiant ton Christ`},
-        {class:"indent1p", texte:`et en donnant la lumière de l’Esprit Saint,
+        {class:"indentallp", texte:`et en donnant la lumière de l’Esprit Saint,
         tu nous ouvres les portes de la vie éternelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’en participant à une telle grâce,
         nous soyons plus dévoués à te servir <span style="color: #b30000;">/</span>
@@ -6494,7 +6511,7 @@ Dieu, pour les siècles des siècles.`},
         il vous guidera vers la vérité tout entière, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         nous sommes purifiés et nourris`},
-        {class:"indent1p", texte:`par tes mystères que nous célébrons ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par tes mystères que nous célébrons ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque tu leur as donné de refaire nos forces, <span style="color: #b30000;">/</span>
         qu’ils nous procurent la vie éternelle.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6525,19 +6542,19 @@ Dieu, pour les siècles des siècles.`},
         pour vous le faire connaître, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans ta bonté, Seigneur, exauce nos prières : <span style="color: #b30000;">+</span>
         déjà, nous sommes passés du monde ancien`},
-        {class:"indent1p", texte:`aux sacrements des temps nouveaux : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`aux sacrements des temps nouveaux : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais-nous quitter ce qui ne peut que vieillir, <span style="color: #b30000;">/</span>
         envoie-nous un esprit de renouveau et de sainteté.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
-        "7PA_D": {
+        "PEN": {
     titre: "DIMANCHE DE LA PENTECÔTE",
     antienne_ouverture: [{class:"indent1all", texte: ``},
         {class:"indent1all", texte: ``}],
     collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"", texte:``},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -6545,14 +6562,14 @@ qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: 
 Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:``},
       {class:"indent1all", texte: ``}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
@@ -6565,7 +6582,7 @@ Dieu, pour les siècles des siècles.`},
         car il nous a montré sa miséricorde.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu notre Père, <span style="color: #b30000;">+</span>
         tu as envoyé dans le monde`},
-        {class:"indent1p", texte:`le Verbe de vérité et l’Esprit qui sanctifie
+        {class:"indentallp", texte:`le Verbe de vérité et l’Esprit qui sanctifie
         pour révéler aux hommes ton admirable mystère ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous de professer la vraie foi
         en reconnaissant la gloire de l’éternelle Trinité, <span style="color: #b30000;">/</span>
@@ -6586,7 +6603,7 @@ Dieu, pour les siècles des siècles.`},
         l’Esprit de son Fils, qui crie Abba, c’est-à-dire : Père !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span>
         puissions-nous trouver le salut de l’âme et du corps`},
-        {class:"indent1p", texte:`dans notre communion à ce sacrement, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`dans notre communion à ce sacrement, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en professant notre foi
         en la Trinité, éternelle et sainte, <span style="color: #b30000;">/</span>
         comme en son indivisible Unité.`},
@@ -6600,7 +6617,7 @@ Dieu, pour les siècles des siècles.`},
         il l’a rassasié avec le miel du rocher.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Jésus Christ, <span style="color: #b30000;">+</span>
         dans cet admirable sacrement,`},
-        {class:"indent1p", texte:`tu nous as laissé le mémorial de ta passion ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous as laissé le mémorial de ta passion ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous de vénérer avec une telle ferveur
         les saints mystères de ton Corps et de ton Sang, <span style="color: #b30000;">/</span>
         que nous puissions goûter sans cesse en nous
@@ -6610,7 +6627,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">*</span>
         dans ta bonté accorde à ton Église`},
-        {class:"indent1p", texte:`les dons de l’unité et de la paix, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`les dons de l’unité et de la paix, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`signifiés mystérieusement
         par les présents que nous t’offrons.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6619,7 +6636,7 @@ Dieu, pour les siècles des siècles.`},
         demeure en moi, et moi en lui, dit le Seigneur.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur Jésus Christ : <span style="color: #b30000;">+</span>
         donne-nous de goûter pleinement`},
-        {class:"indent1p", texte:`à ta vie divine dans l’éternité, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à ta vie divine dans l’éternité, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ce que préfigure dans le temps <span style="color: #b30000;">/</span>
         la communion à ton Corps et à ton Sang précieux.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6633,7 +6650,7 @@ Dieu, pour les siècles des siècles.`},
         et les nourrir aux jours de famine.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         en glorifiant le Coeur de ton Fils bien-aimé,`},
-        {class:"indent1p", texte:`nous rappelons les admirables bienfaits de son amour pour nous ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous rappelons les admirables bienfaits de son amour pour nous ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions, accorde-nous
         de puiser à cette source divine <span style="color: #b30000;">/</span>
         une surabondance de grâce.`},
@@ -6643,7 +6660,7 @@ Dieu, pour les siècles des siècles.`},
         {class:"rubrique", texte:`ou bien`},
         {class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">/</span>
         dans le Coeur de ton Fils meurtri par nos péchés,`},
-        {class:"indent1p", texte:`tu nous prodigues avec miséricorde
+        {class:"indentallp", texte:`tu nous prodigues avec miséricorde
         les trésors infinis de ta tendresse ; <span style="color: #b30000;">*</span>`},
         {class:"", texte:`nous t’en prions :`},
         {class:"indent1all", texte:`fais que, dans l’hommage fervent de notre piété, <span style="color: #b30000;">/</span>
@@ -6667,7 +6684,7 @@ Dieu, pour les siècles des siècles.`},
         et aussitôt, il en sortit du sang et de l’eau.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Par ce sacrement de ton amour, Seigneur, <span style="color: #b30000;">+</span>
         fais-nous brûler d’une charité`},
-        {class:"indent1p", texte:`qui nous attire toujours vers ton Fils, <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`qui nous attire toujours vers ton Fils, <span style="color: #b30000;">/</span>
         et nous apprenne ainsi à le reconnaître en nos frères.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
     ],
@@ -6682,7 +6699,7 @@ Dieu, pour les siècles des siècles.`},
         pour les siècles des siècles.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu as voulu récapituler toutes choses`},
-        {class:"indent1p", texte:`en ton Fils bien-aimé, le Roi de l’univers ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en ton Fils bien-aimé, le Roi de l’univers ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`dans ta bonté, fais que, libérée de la servitude, <span style="color: #b30000;">/</span>
         toute la création serve ta gloire et chante sans fin ta louange.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -6723,7 +6740,7 @@ Dieu, pour les siècles des siècles.`},
         et leur nom reste vivant pour toutes les générations.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as voulu illuminer ton Église`},
-        {class:"indent1p", texte:`par l’exemple et les enseignements
+        {class:"indentallp", texte:`par l’exemple et les enseignements
         des bienheureux évêques Basile et Grégoire ; <span style="color: #b30000;">*</span>`},
         {class:"", texte:`accorde-nous de rechercher ta vérité dans l’humilité <span style="color: #b30000;">/</span>
         et de la mettre en oeuvre fidèlement dans la charité.`},
@@ -6760,7 +6777,7 @@ Dieu, pour les siècles des siècles.`},
         à la gloire de Dieu le Père.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         dans l’incarnation de ton Verbe,`},
-        {class:"indent1p", texte:`tu as fondé le salut du genre humain : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as fondé le salut du genre humain : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne aux peuples qui t’appartiennent 
         la miséricorde qu’ils implorent, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`afin que tous reconnaissent le seul Nom à invoquer, 
@@ -6770,7 +6787,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En te présentant les offrandes 
         qui nous viennent de ta largesse,`},
-        {class:"indent1p", texte:`nous te supplions, Seigneur : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te supplions, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque tu as donné le Nom qui sauve
         au Christ obéissant jusqu’à la mort, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`accorde-nous d’être protégés
@@ -6782,7 +6799,7 @@ Dieu, pour les siècles des siècles.`},
         par toute la terre !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur, Dieu de majesté, <span style="color: #b30000;">+</span> 
         nous avons communié au sacrifice`},
-        {class:"indent1p", texte:`offert pour honorer le Nom du Christ,`},
+        {class:"indentallp", texte:`offert pour honorer le Nom du Christ,`},
         {class:"indent1all", texte:`et nous te prions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il répande en nous les richesses de ta grâce <span style="color: #b30000;">/</span> 
         et nous donne la joie de savoir 
@@ -6795,7 +6812,7 @@ Dieu, pour les siècles des siècles.`},
     titre: "Sainte Geneviève, vierge",
     collecte: [{class:"grandelettrine", texte:`Répands sur nous, Seigneur, 
         l’esprit d’intelligence et d’amour `},
-        {class:"indent1p", texte:`dont tu as rempli sainte Geneviève, ta servante ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`dont tu as rempli sainte Geneviève, ta servante ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que nous imitions avec empressement
         sa fidélité et son obéissance, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et que nous sachions te plaire
@@ -6809,7 +6826,7 @@ Dieu, pour les siècles des siècles.`},
     titre: "SAINT RAYMOND DE PENYAFORT,",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fait rayonner le prêtre saint Raymond`},
-        {class:"indent1p", texte:`d’une admirable compassion pour les pécheurs et les captifs ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`d’une admirable compassion pour les pécheurs et les captifs ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession, 
         d’être délivrés de l’esclavage du péché <span style="color: #b30000;">/</span> 
         afin d’agir comme il te plaît, en toute liberté d’esprit.`},
@@ -6823,7 +6840,7 @@ Dieu, pour les siècles des siècles.`},
     titre: "SAINT HILAIRE, évêque et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Accorde-nous, Dieu tout-puissant, 
         de mieux comprendre et de proclamer fidèlement`},
-        {class:"indent1p", texte:`la divinité de ton Fils, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la divinité de ton Fils, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que le bienheureux évêque Hilaire <span style="color: #b30000;">/</span> 
         défendit sans jamais faiblir.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -6836,7 +6853,7 @@ Dieu, pour les siècles des siècles.`},
     titre: "Saint Rémi, évêque",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu que les travaux apostoliques de saint Remi `},
-        {class:"indent1p", texte:`et sa générosité à te servir
+        {class:"indentallp", texte:`et sa générosité à te servir
         fassent grandir ton Église ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à son intercession,
         de garder la foi qu’il a transmise <span style="color: #b30000;">/</span>
@@ -6854,7 +6871,7 @@ Dieu, pour les siècles des siècles.`},
         il grandira dans la maison de notre Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné au bienheureux abbé Antoine`},
-        {class:"indent1p", texte:`de te servir au désert 
+        {class:"indentallp", texte:`de te servir au désert 
         par une admirable manière de vivre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession 
         de renoncer à nous-mêmes 
@@ -6865,7 +6882,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accepte, Seigneur, comme un hommage de tes serviteurs 
         l’offrande que nous déposons sur ton autel`},
-        {class:"indent1p", texte:`en faisant mémoire du bienheureux Antoine ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en faisant mémoire du bienheureux Antoine ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et permets que libérés des fardeaux d’ici-bas, <span style="color: #b30000;">/</span> 
         nous n’ayons d’autre richesse que toi.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -6902,7 +6919,7 @@ Dieu, pour les siècles des siècles.`},
         pour que l’exemple de ton bienheureux martyr Sébastien`},
         {class:"indent1all", texte: ``}],
     collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:`nous apprenne à t’obéir, <span style="color: #b30000;">/</span> 
+        {class:"indentallp", texte:`nous apprenne à t’obéir, <span style="color: #b30000;">/</span> 
         à toi plutôt qu’aux hommes.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -6914,7 +6931,7 @@ Dieu, pour les siècles des siècles.`},
     titre: "SAINTE AGNÈS, vierge et martyre",
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         tu choisis ce qui est faible dans le monde`},
-        {class:"indent1p", texte:`pour couvrir de confusion ce qui est fort ;`},
+        {class:"indentallp", texte:`pour couvrir de confusion ce qui est fort ;`},
         {class:"indent1all", texte:`alors que nous célébrons la naissance au ciel 
         de la bienheureuse Agnès ta martyre, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, dans ta bienveillance, 
@@ -6942,7 +6959,7 @@ Dieu, pour les siècles des siècles.`},
     titre: "SAINT FRANÇOIS DE SALES, évêque et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, pour le salut des âmes, 
         tu as voulu que l’évêque saint François de Sales`},
-        {class:"indent1p", texte:`devienne le serviteur de tous en toutes choses ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`devienne le serviteur de tous en toutes choses ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`dans ta bonté, accorde-nous, à son exemple, <span style="color: #b30000;">/</span> 
         de manifester toujours ta douce charité 
         dans le service fraternel.`},
@@ -6972,7 +6989,7 @@ Dieu, pour les siècles des siècles.`},
             lui, le juste Juge.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as instruit le monde entier`},
-        {class:"indent1p", texte:`par la parole du bienheureux apôtre Paul 
+        {class:"indentallp", texte:`par la parole du bienheureux apôtre Paul 
         dont nous célébrons aujourd’hui la conversion ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d’aller vers toi 
             en suivant les exemples qu’il nous donne, <span style="color: #b30000;">/</span> 
@@ -6983,7 +7000,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Tandis que nous célébrons tes mystères, Seigneur, <span style="color: #b30000;">+</span> 
         que ton Esprit Saint répande sur nous la lumière de la foi, <span style="color: #b30000;">/</span>`},
-        {class:"indent1p", texte:`dont il n’a cessé d’éclairer le bienheureux apôtre Paul, 
+        {class:"indentallp", texte:`dont il n’a cessé d’éclairer le bienheureux apôtre Paul, 
         pour que rayonne ta gloire.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
@@ -7004,7 +7021,7 @@ Dieu, pour les siècles des siècles.`},
         {class:"indent1all", texte: `car il est grand, le Seigneur, hautement loué !`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">/</span> 
         dans les bienheureux Timothée et Tite`},
-        {class:"indent1p", texte:`tu as fait rayonner les vertus des Apôtres ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as fait rayonner les vertus des Apôtres ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par leur intercession, 
         de vivre dans ce monde avec justice et piété <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -7013,7 +7030,7 @@ Dieu, pour les siècles des siècles.`},
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">+</span> 
         accueille les offrandes que ton peuple te présente`},
-        {class:"indent1p", texte:`en la fête des bienheureux Timothée et Tite ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en la fête des bienheureux Timothée et Tite ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et, dans ta bonté, donne-nous un coeur pur <span style="color: #b30000;">/</span>
         qui te soit agréable.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -7022,7 +7039,7 @@ Dieu, pour les siècles des siècles.`},
         moi, je suis avec vous tous les jours, dit le Seigneur.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span> 
         que le sacrement reçu nourrisse en nous la foi`},
-        {class:"indent1p", texte:`enseignée par la prédication des Apôtres <span style="color: #b30000;">/</span> 
+        {class:"indentallp", texte:`enseignée par la prédication des Apôtres <span style="color: #b30000;">/</span> 
         et gardée avec sollicitude 
         par les bienheureux Timothée et Tite.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -7033,7 +7050,7 @@ Dieu, pour les siècles des siècles.`},
     titre: "SAINTE ANGÈLE MERICI, vierge",
     collecte: [{class:"grandelettrine", texte:`Que la prière de sainte Angèle, vierge bienheureuse, 
         nous recommande sans cesse à ta bonté, Seigneur : <span style="color: #b30000;">*</span>`},
-        {class:"indent1p", texte:`pour que dociles à ses exemples de prudence et de charité,`},
+        {class:"indentallp", texte:`pour que dociles à ses exemples de prudence et de charité,`},
         {class:"indent1all", texte:`nous puissions être fidèles à ton enseignement <span style="color: #b30000;">/</span> 
         et en témoigner dans toute notre vie.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -7046,7 +7063,7 @@ Dieu, pour les siècles des siècles.`},
     titre: "SAINT THOMAS D’AQUIN, prêtre et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fait de saint Thomas d’Aquin`},
-        {class:"indent1p", texte:`un modèle admirable par son désir ardent de sainteté 
+        {class:"indentallp", texte:`un modèle admirable par son désir ardent de sainteté 
         et l’étude de la science sacrée ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de contempler par l’intelligence ce qu’il a enseigné <span style="color: #b30000;">/</span> 
         et d’accomplir ce qu’il a lui-même pratiqué.`},
@@ -7060,7 +7077,7 @@ Dieu, pour les siècles des siècles.`},
     titre: "SAINT JEAN BOSCO, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as suscité le prêtre saint Jean Bosco`},
-        {class:"indent1p", texte:`comme un père et un maître pour la jeunesse ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`comme un père et un maître pour la jeunesse ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de brûler du même feu de charité <span style="color: #b30000;">/</span> 
         afin de pouvoir attirer les âmes à toi 
         et ne servir que toi seul.`},
@@ -7098,7 +7115,7 @@ Dieu, pour les siècles des siècles.`},
 que tu préparais à la face des peuples.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Par la nourriture sainte que nous avons reçue, 
         accomplis en nous, Seigneur, l’oeuvre de ta grâce,`},
-        {class:"indent1p", texte:`toi qui as comblé l’espérance de Syméon : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`toi qui as comblé l’espérance de Syméon : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`il n’a pas vu la mort 
         sans qu’il lui fût donné d’accueillir le Christ ; <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`donne-nous aussi d’avancer à la rencontre du Seigneur 
@@ -7111,7 +7128,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Blaise, évêque et martyr",
     collecte: [{class:"grandelettrine", texte:`Seigneur, exauce la supplication de ton peuple 
         qui se confie à la protection`},
-        {class:"indent1p", texte:`du bienheureux Blaise ton martyr ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`du bienheureux Blaise ton martyr ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous la joie de vivre aujourd’hui dans la paix <span style="color: #b30000;">/</span> 
         et de trouver les secours pour atteindre la vie éternelle.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -7136,7 +7153,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Sainte Agathe, vierge et martyre",
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         que la bienheureuse Agathe, vierge et martyre,`},
-        {class:"indent1p", texte:`implore pour nous le pardon, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`implore pour nous le pardon, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`elle qui sut toujours te plaire par le courage de son martyre <span style="color: #b30000;">/</span> 
         et le mérite de sa chasteté.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -7149,7 +7166,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Paul Miki et ses compagnons, martyrs",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, force de tous les saints, <span style="color: #b30000;">+</span> 
         tu as appelé les saints martyrs Paul Miki et ses compagnons`},
-        {class:"indent1p", texte:`à entrer dans la vie en passant par la croix ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à entrer dans la vie en passant par la croix ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à leur intercession, 
         la force de garder jusqu’à la mort <span style="color: #b30000;">/</span> 
         la foi que nous proclamons.`},
@@ -7162,8 +7179,9 @@ que tu préparais à la face des peuples.`}],
     "ST_JER_E": {
     titre: "Saint Jérôme Emilien",
     collecte: [{class:"grandelettrine", texte:`Dieu, Père des miséricordes, <span style="color: #b30000;">+</span> 
-        tu as donné aux orphelins saint Jérôme Émilien`},
-        {class:"indent1p", texte:`comme père et protecteur ; <span style="color: #b30000;">*</span>`},
+        tu as donné aux orphelins`},
+        {class:"indentallp", texte:`saint Jérôme Émilien
+        comme père et protecteur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, accorde-nous 
         de garder fidèlement l’esprit d’adoption 
         par lequel nous sommes appelés tes fils, <span style="color: #b30000;">/</span> 
@@ -7178,7 +7196,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE JOSÉPHINE BAKHITA, vierge",
     collecte: [{class:"grandelettrine", texte:`Dieu notre Père, tu as conduit sainte Joséphine 
         de l’abaissement de l’esclavage`},
-        {class:"indent1p", texte:`à l’honneur d’être ta fille 
+        {class:"indentallp", texte:`à l’honneur d’être ta fille 
         et de devenir l’épouse du Christ ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à son exemple, 
         de suivre d’un amour fidèle le Seigneur Jésus crucifié <span style="color: #b30000;">/</span> 
@@ -7193,7 +7211,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE SCHOLASTIQUE, vierge",
     collecte: [{class:"grandelettrine", texte:`En célébrant la mémoire 
         de la bienheureuse vierge Scholastique,`},
-        {class:"indent1p", texte:`Seigneur, nous te prions : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`Seigneur, nous te prions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’à son exemple, nous te servions 
         avec une charité sans faille <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et que nous goûtions avec bonheur 
@@ -7243,7 +7261,7 @@ que tu préparais à la face des peuples.`}],
         la vérité reçue du Seigneur.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as conduit les peuples slaves à la lumière,`},
-        {class:"indent1p", texte:`grâce aux deux frères saints Cyrille et Méthode ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`grâce aux deux frères saints Cyrille et Méthode ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ouvre nos coeurs à l’intelligence de ta Parole :`},
         {class:"indent1all", texte:`fais de nous un peuple uni dans la vraie foi <span style="color: #b30000;">/</span>
         et dans un témoignage authentique.`},
@@ -7263,7 +7281,7 @@ que tu préparais à la face des peuples.`}],
         par les signes qui l’accompagnaient.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu, Père de toutes les nations, <span style="color: #b30000;">+</span> 
         tu nous donnes d’avoir part à un seul Pain et à un seul Esprit,`},
-        {class:"indent1p", texte:`et tu fais de nous les héritiers du banquet éternel ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et tu fais de nous les héritiers du banquet éternel ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en cette fête des saints Cyrille et Méthode,`},
         {class:"indent1all", texte:`accorde en ta bonté à la multitude de tes enfants 
         de persévérer dans la même foi <span style="color: #b30000;">/</span>`},
@@ -7277,7 +7295,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Les sept saints fondateurs de l’ordre des Servites de Marie",
     collecte: [{class:"grandelettrine", texte:`Mets en nous, Seigneur, cette piété 
         qui portait les saints frères fondateurs des Servites`},
-        {class:"indent1p", texte:`à aimer tendrement la mère de ton Fils <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`à aimer tendrement la mère de ton Fils <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et à faire avancer ton peuple vers toi.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -7289,7 +7307,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Sainte Bernadette Soubirous, vierge",
     collecte: [{class:"grandelettrine", texte:`Tu prends la défense des humbles, Seigneur, <span style="color: #b30000;">+</span> 
         tu les aimes et les glorifies,`},
-        {class:"indent1p", texte:`et tu as donné à sainte Bernadette
+        {class:"indentallp", texte:`et tu as donné à sainte Bernadette
         d’étonnantes grâces de patience et de charité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’à sa prière et à son exemple,
         en suivant simplement les chemins de la foi, <span style="color: #b30000;">/</span>
@@ -7304,7 +7322,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Pierre Damien, évêque et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Accorde-nous, Dieu tout-puissant, 
         de suivre les exemples et les exhortations`},
-        {class:"indent1p", texte:`de l’évêque saint Pierre Damien, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de l’évêque saint Pierre Damien, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que, sans rien préférer au Christ, 
         et toujours attentifs à servir ton Église, <span style="color: #b30000;">/</span>`},
         {class:"", texte:`nous parvenions aux joies de la lumière éternelle.`},
@@ -7341,7 +7359,7 @@ que tu préparais à la face des peuples.`}],
         et sur cette pierre je bâtirai mon Église. »`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu nous as fortifiés, Seigneur Dieu, 
         en cette fête du bienheureux apôtre Pierre`},
-        {class:"indent1p", texte:`par la communion au Corps et au Sang du Christ ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par la communion au Corps et au Sang du Christ ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que cet échange où nous sommes rachetés <span style="color: #b30000;">/</span>
         soit pour nous sacrement d’unité et de paix.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -7352,7 +7370,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Polycarpe, évêque et martyr",
     collecte: [{class:"grandelettrine", texte:`Dieu de toute la création, <span style="color: #b30000;">+</span> 
         tu as accordé au bienheureux évêque Polycarpe`},
-        {class:"indent1p", texte:`d’être au nombre de tes martyrs ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`d’être au nombre de tes martyrs ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous prenons part avec lui à la coupe du Christ, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`donne-nous, à son intercession, 
         de ressusciter dans l’Esprit Saint à la vie éternelle.`},
@@ -7366,7 +7384,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Grégoire de Narek, abbé et docteur de l’Eglise",
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         tu as donné à Saint Grégoire Maître,`},
-        {class:"indent1p", texte:`maître de doctrine et honneur du peuple arménien, 
+        {class:"indentallp", texte:`maître de doctrine et honneur du peuple arménien, 
         la grâce d’enseigner la vie mystique ;`},
         {class:"indent1all", texte:`accorde-nous d’apprendre à son école 
         l’art de parler avec toi`},
@@ -7422,7 +7440,7 @@ que tu préparais à la face des peuples.`}],
         dans notre condition charnelle vouée à la mort.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Alors que nous faisons mémoire 
         des bienheureuses Perpétue et Félicité,`},
-        {class:"indent1p", texte:`nous te supplions humblement, Seigneur : <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`nous te supplions humblement, Seigneur : <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`En prenant part à ce sacrement, 
         nous avons goûté aux joies éternelles ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ce que nous accomplissons par ta grâce en serviteurs fidèles, 
@@ -7436,7 +7454,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Jean de Dieu, religieux",
     collecte: [{class:"grandelettrine", texte:`Toi qui as répandu un esprit de compassion 
         sur saint Jean de Dieu,`},
-        {class:"indent1p", texte:`nous te prions, Seigneur : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te prions, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous de mettre en oeuvre ta charité, <span style="color: #b30000;">/</span> 
         et ainsi de trouver place parmi les élus dans ton Royaume.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -7464,7 +7482,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT PATRICK, évêque",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as bien voulu donner l’évêque saint Patrick`},
-        {class:"indent1p", texte:`aux peuples d’Irlande 
+        {class:"indentallp", texte:`aux peuples d’Irlande 
         pour qu’il leur proclame ta gloire ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à sa prière et par ses mérites, 
             accorde à ceux qui portent avec fierté le nom de chrétiens <span style="color: #b30000;">/</span> 
@@ -7479,7 +7497,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Cyrille de Jérusalem, évêque et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         par l’enseignement du bienheureux évêque Cyrille de Jérusalem,`},
-        {class:"indent1p", texte:`tu as conduit ton Église d’une manière admirable 
+        {class:"indentallp", texte:`tu as conduit ton Église d’une manière admirable 
         vers une intelligence plus profonde des mystères du salut ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession, 
         de si bien connaître ton Fils <span style="color: #b30000;">/</span> 
@@ -7496,7 +7514,7 @@ que tu préparais à la face des peuples.`}],
         que le Seigneur a placé à la tête de sa famille.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span> 
         à l’aube des temps nouveaux`},
-        {class:"indent1p", texte:`tu as confié au bienheureux Joseph
+        {class:"indentallp", texte:`tu as confié au bienheureux Joseph
         la garde des mystères du salut ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde maintenant à ton Église, 
         soutenue par sa prière, <span style="color: #b30000;">/</span> 
@@ -7507,7 +7525,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">+</span> 
         fais que nous puissions nous présenter`},
-        {class:"indent1p", texte:`au service de ton autel 
+        {class:"indentallp", texte:`au service de ton autel 
         avec un coeur sans partage, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à l’exemple du bienheureux Joseph 
         qui s’est consacré tout entier <span style="color: #b30000;">/</span> 
@@ -7529,7 +7547,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Turibio de Mogrovejo, évêque",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fait grandir ton Église`},
-        {class:"indent1p", texte:`par les travaux apostoliques de l’évêque saint Turibio 
+        {class:"indentallp", texte:`par les travaux apostoliques de l’évêque saint Turibio 
         et par son amour de la vérité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde au peuple qui t’est consacré <span style="color: #b30000;">/</span> 
         une foi et une sainteté toujours en progrès.`},
@@ -7545,7 +7563,7 @@ que tu préparais à la face des peuples.`}],
         « Me voici, mon Dieu ; je viens pour faire ta volonté. »`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu que ton Verbe prît chair en toute vérité`},
-        {class:"indent1p", texte:`dans le sein de la Vierge Marie ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`dans le sein de la Vierge Marie ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous reconnaissons en lui notre Rédempteur, 
         à la fois Dieu et homme, <span style="color: #b30000;">/</span> 
         accorde-nous d’être participants de sa nature divine.`},
@@ -7576,7 +7594,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint François de Paule, ermite",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         toi qui élèves les humbles,`},
-        {class:"indent1p", texte:`tu as exalté saint François de Paule 
+        {class:"indentallp", texte:`tu as exalté saint François de Paule 
         dans la gloire des saints ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’en lui ressemblant, et avec son aide, <span style="color: #b30000;">/</span> 
         nous obtenions le bonheur promis aux humbles.`},
@@ -7590,7 +7608,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Isidore, évêque et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Daigne exaucer, Seigneur, 
         les prières que nous t’adressons`},
-        {class:"indent1p", texte:`en la mémoire de saint Isidore : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en la mémoire de saint Isidore : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que ton Église trouve une aide en son intercession, <span style="color: #b30000;">/</span> 
         elle qui se laisse instruire par lui des réalités célestes.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -7603,7 +7621,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Vincent Ferrier, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as appelé le prêtre saint Vincent Ferrier`},
-        {class:"indent1p", texte:`comme prédicateur de l’Évangile ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`comme prédicateur de l’Évangile ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous le bonheur de voir un jour 
         dans le royaume des Cieux <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`celui dont il annonçait ici-bas 
@@ -7618,7 +7636,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Jean-Baptiste de la Salle, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as choisi saint Jean-Baptiste de la Salle`},
-        {class:"indent1p", texte:`pour former les jeunes à la vie chrétienne ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour former les jeunes à la vie chrétienne ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`suscite encore dans ton Église 
         des éducateurs qui se dévoueront tout entiers 
         à la formation humaine et chrétienne des jeunes.`},
@@ -7632,7 +7650,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Stanislas, évêque et martyr",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         pour l’honneur de ton nom,`},
-        {class:"indent1p", texte:`l’évêque saint Stanislas 
+        {class:"indentallp", texte:`l’évêque saint Stanislas 
         est tombé sous les coups de ses persécuteurs ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous la force de persévérer jusqu’à la mort, <span style="color: #b30000;">/</span> 
         fermes dans la foi.`},
@@ -7646,7 +7664,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Martin Ier, pape et martyr",
     collecte: [{class:"grandelettrine", texte:`Accorde-nous, Dieu tout-puissant, 
         une force d’âme invincible`},
-        {class:"indent1p", texte:`pour supporter les épreuves qui viennent du monde, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour supporter les épreuves qui viennent du monde, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`toi qui as permis au bienheureux Martin, pape et martyr, 
         d’être sans peur devant les menaces <span style="color: #b30000;">/</span> 
         et victorieux sous la torture.`},
@@ -7685,7 +7703,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Adalbert de Prague, évêque et martyr",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné la couronne du martyre`},
-        {class:"indent1p", texte:`à l’évêque saint Adalbert, 
+        {class:"indentallp", texte:`à l’évêque saint Adalbert, 
         tout enflammé de zèle pour les âmes ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’à sa prière, 
         le troupeau ne manque pas d’obéir à ses pasteurs <span style="color: #b30000;">/</span> 
@@ -7700,7 +7718,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Fidèle de Sigmaringen, prêtre et martyr",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné à saint Fidèle de Sigmaringen`},
-        {class:"indent1p", texte:`la palme du martyre,`},
+        {class:"indentallp", texte:`la palme du martyre,`},
         {class:"indent1all", texte:`alors que, brûlant de ton amour, 
         il travaillait à répandre la foi ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à sa prière, accorde-nous la grâce 
@@ -7717,7 +7735,7 @@ que tu préparais à la face des peuples.`}],
         proclamez l’Évangile à toute la création, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as accordé au bienheureux Marc, ton évangéliste,`},
-        {class:"indent1p", texte:`l’honneur et la grâce de proclamer la Bonne Nouvelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`l’honneur et la grâce de proclamer la Bonne Nouvelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais-nous profiter de son enseignement <span style="color: #b30000;">/</span> 
         pour que nous marchions dans la foi sur les traces du Christ.`},
         {class:"indent1all", texte:`Lui qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span> 
@@ -7725,7 +7743,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Pour célébrer la gloire du bienheureux Marc, 
         nous t’offrons, Seigneur, le sacrifice de louange,`},
-        {class:"indent1p", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que l’Évangile ne cesse jamais <span style="color: #b30000;">/</span>
         d’être proclamé dans ton Église.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -7744,7 +7762,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Pierre Chanel, prêtre et martyr",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         pour la croissance et le progrès de ton Église,`},
-        {class:"indent1p", texte:`tu as donné à saint Pierre Chanel la couronne du martyre ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as donné à saint Pierre Chanel la couronne du martyre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en ce temps de joie pascale,
         accorde-nous de célébrer les mystères du Christ mort et ressuscité, <span style="color: #b30000;">/</span> 
         pour que nous devenions ainsi les témoins de la vie nouvelle.`},
@@ -7757,7 +7775,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Louis-Marie Grignion de Montfort, prêtre",
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         tu as fait du prêtre saint Louis-Marie`},
-        {class:"indent1p", texte:`un témoin et un maître admirable 
+        {class:"indentallp", texte:`un témoin et un maître admirable 
         de la parfaite consécration à ton Fils Jésus Christ 
         par les mains de sa Mère bienheureuse ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de suivre le même chemin spirituel <span style="color: #b30000;">/</span> 
@@ -7774,7 +7792,7 @@ que tu préparais à la face des peuples.`}],
         pour sortir à la rencontre du Christ, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as brûlé du feu de ton amour sainte Catherine de Sienne`},
-        {class:"indent1p", texte:`en lui donnant de contempler la passion de Jésus 
+        {class:"indentallp", texte:`en lui donnant de contempler la passion de Jésus 
         et en l’appelant à servir l’Église ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, accorde à ton peuple, 
         uni au mystère du Christ, <span style="color: #b30000;">/</span> 
@@ -7807,7 +7825,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Pie V, pape",
     collecte: [{class:"grandelettrine", texte:`Dieu très bon, <span style="color: #b30000;">+</span> 
         tu as suscité dans ton Église le pape saint Pie V`},
-        {class:"indent1p", texte:`pour la défense de la foi et la dignité du culte ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour la défense de la foi et la dignité du culte ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession, 
         de participer à tes mystères <span style="color: #b30000;">/</span> 
         avec une foi vive et une charité qui porte du fruit.`},
@@ -7835,7 +7853,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu, source de toute miséricorde, <span style="color: #b30000;">+</span> 
         regarde les présents que nous déposons devant toi`},
-        {class:"indent1p", texte:`en faisant mémoire du bienheureux Joseph : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en faisant mémoire du bienheureux Joseph : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`dans ta bonté, permets que ces offrandes <span style="color: #b30000;">/</span> 
         deviennent le secours de ceux qui te supplient.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -7859,7 +7877,7 @@ que tu préparais à la face des peuples.`}],
         et l’a revêtu de gloire, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         tu as appelé le bienheureux évêque Athanase`},
-        {class:"indent1p", texte:`à devenir un défenseur remarquable 
+        {class:"indentallp", texte:`à devenir un défenseur remarquable 
         de la divinité de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`Alors que nous nous réjouissons 
         de son enseignement et de sa protection,`},
@@ -7880,7 +7898,7 @@ que tu préparais à la face des peuples.`}],
         que celle qui s’y trouve : Jésus Christ, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">+</span> 
         puisqu’avec le bienheureux Athanase,`},
-        {class:"indent1p", texte:`nous confessons fermement, 
+        {class:"indentallp", texte:`nous confessons fermement, 
         la divinité de ton Fils unique, <span style="color: #b30000;">*</span>
         lui qui est vraiment Dieu, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il nous procure dans ce sacrement 
@@ -7895,7 +7913,7 @@ que tu préparais à la face des peuples.`}],
         il les a choisis et leur a donné une gloire éternelle, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu nous réjouis chaque année`},
-        {class:"indent1p", texte:`par la fête des apôtres Philippe et Jacques ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par la fête des apôtres Philippe et Jacques ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à leur prière, accorde-nous d’être associés 
         à la passion et à la résurrection de ton Fils unique, <span style="color: #b30000;">/</span>`},
         {class:"", texte:`afin de parvenir ainsi à te contempler pour l’éternité.`},
@@ -7925,7 +7943,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Sainte Louise de Marillac, religieuse",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         toi qui es source de la charité et qui la récompenses, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`tu as suscité dans ton Eglise sainte Louise de Marillac`},
+        {class:"indentallp", texte:`tu as suscité dans ton Eglise sainte Louise de Marillac`},
         {class:"indent1all", texte:`pour fonder une nouvelle famille religieuse, 
         vouée au service des pauvres 
         et de toute personne en détresse ; <span style="color: #b30000;">*</span>`},
@@ -7942,7 +7960,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Jean d’Avila, prêtre et docteur de l’Eglise",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, 
         toi qui es source de la charité et qui la récompenses, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`saint Jean d’Avila comme un maître incomparable 
+        {class:"indentallp", texte:`saint Jean d’Avila comme un maître incomparable 
         par la sainteté et la ferveur de sa vie ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :
         fais que de même, en notre temps, 
@@ -7957,7 +7975,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saints Nérée et Achille, martyrs",
     collecte: [{class:"grandelettrine", texte:`Connaissant le courageux témoignage 
         de tes martyrs Nérée et Achille,`},
-        {class:"indent1p", texte:`nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d’éprouver les effets <span style="color: #b30000;">/</span> 
         de leur bienveillante intercession auprès de toi.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -7969,7 +7987,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Pancrace, martyr",
     collecte: [{class:"grandelettrine", texte:`Que ton Église se réjouisse, Seigneur Dieu,
         elle qui se confie aux prières`},
-        {class:"indent1p", texte:`du bienheureux Pancrace, ton martyr ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`du bienheureux Pancrace, ton martyr ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession auprès de toi dans la gloire, <span style="color: #b30000;">/</span> 
         qu’elle demeure fidèle 
         et vive dans la paix.`},
@@ -7982,7 +8000,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Bienheureuse Vierge Marie de Fatima",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu que la Mère de ton Fils`},
-        {class:"indent1p", texte:`soit aussi notre Mère ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`soit aussi notre Mère ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de persévérer dans la pénitence et la prière 
         pour le salut du monde ; <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`puissions-nous devenir ainsi, de jour en jour, 
@@ -7996,10 +8014,10 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [{class:"indent1all", texte: `Ce n’est pas vous qui m’avez choisi, dit le Seigneur, 
         c’est moi qui vous ai choisis,`},
         {class:"indent1all", texte: `afin que vous alliez, que vous portiez du fruit,
-        et que votre fruit demeure <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et que votre fruit demeure <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as agrégé le bienheureux Matthias`},
-        {class:"indent1p", texte:`au collège des Apôtres ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`au collège des Apôtres ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à sa prière, 
         de nous réjouir du choix de ton amour <span style="color: #b30000;">/</span> 
         et d’être comptés parmi tes élus.`},
@@ -8015,7 +8033,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:`Voici mon commandement, dit le Seigneur : 
-        aimez-vous les uns les autres comme je vous ai aimés <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        aimez-vous les uns les autres comme je vous ai aimés <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Ne cesse pas, Seigneur, 
         de combler ton peuple de tes bienfaits : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à la prière du bienheureux Matthias, <span style="color: #b30000;">/</span>
@@ -8056,7 +8074,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Bernardin de Sienne, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as inspiré au prêtre saint Bernardin,`},
-        {class:"indent1p", texte:`un très grand amour pour le nom de Jésus ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`un très grand amour pour le nom de Jésus ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à sa prière et par ses mérites, <span style="color: #b30000;">/</span> 
         d’être toujours embrasés par ton esprit de charité.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -8068,7 +8086,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Christophe Magallanes, prêtre, et ses compagnons, martyrs",
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         tu as rendu fidèles au Christ Roi, jusqu’au martyre,`},
-        {class:"indent1p", texte:`le prêtre saint Christophe et ses compagnons ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`le prêtre saint Christophe et ses compagnons ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par leur intercession, 
         de persévérer dans la confession de la vraie foi <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et de rester toujours attachés 
@@ -8082,7 +8100,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Sainte Rita de Cascia, religieuse",
     collecte: [{class:"grandelettrine", texte:`Donne-nous, Seigneur, en abondance 
         la sagesse de la Croix et la force d’âme`},
-        {class:"indent1p", texte:`dont tu as voulu combler sainte Rita : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`dont tu as voulu combler sainte Rita : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous pourrons alors supporter avec le Christ 
         les épreuves de la vie, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et participer plus profondément 
@@ -8095,7 +8113,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Bède le Vénérable, prêtre et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu éclaires ton Église`},
-        {class:"indent1p", texte:`par l’enseignement du prêtre saint Bède le Vénérable ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par l’enseignement du prêtre saint Bède le Vénérable ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ceux qui te servent 
         la lumière de sa grande sagesse <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et l’appui de ses mérites.`},
@@ -8108,7 +8126,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Grégoire VII, pape",
     collecte: [{class:"grandelettrine", texte:`Accorde à ton Église, Seigneur, 
         l’esprit de force et la soif de justice`},
-        {class:"indent1p", texte:`dont tu as voulu que rayonne 
+        {class:"indentallp", texte:`dont tu as voulu que rayonne 
         le pape saint Grégoire VII : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle sache rejeter le mal
         et faire valoir le droit, <span style="color: #b30000;">/</span> 
@@ -8136,10 +8154,10 @@ que tu préparais à la face des peuples.`}],
       "ST_PN": {
     titre: "Saint Philippe Néri, prêtre",
     antienne_ouverture: [{class:"indent1all", texte: `L’amour de Dieu a été répandu dans nos coeurs 
-        par l’Esprit Saint qui nous a été donné <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        par l’Esprit Saint qui nous a été donné <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu ne cesses d’élever à la gloire de la sainteté`},
-        {class:"indent1p", texte:`ceux qui te servent fidèlement ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ceux qui te servent fidèlement ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d’être embrasés du feu de l’Esprit Saint <span style="color: #b30000;">/</span> 
         qui habitait merveilleusement 
         le coeur de saint Philippe Néri.`},
@@ -8157,7 +8175,7 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [{class:"indent1all", texte:`Comme le Père m’a aimé, 
         moi aussi je vous ai aimés, dit le Seigneur.`},
-        {class:"indent1all", texte: `Demeurez dans mon amour <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `Demeurez dans mon amour <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu nous as fait goûter, Seigneur, aux joies du ciel, 
         et nous te prions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous, à l’exemple de saint Philippe, <span style="color: #b30000;">/</span>`},
@@ -8170,7 +8188,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Augustin de Cantorbéry, évêque",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as conduit à l’Évangile les peuples de l’Angleterre`},
-        {class:"indent1p", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
+        {class:"indentallp", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as conduit à l’Évangile les peuples de l’Angleterre`},
         {class:"indent1all", texte:`par la prédication de l’évêque saint Augustin de Cantorbéry ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions : fais que ses travaux <span style="color: #b30000;">/</span> 
@@ -8184,7 +8202,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Paul VI, pape",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as confié la charge de conduire ton Eglise`},
-        {class:"indent1p", texte:`au pape saint Paul VI,
+        {class:"indentallp", texte:`au pape saint Paul VI,
         qui fut un ardent apôtre de l’Evangile de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à nous qui accueillons la lumière de ses enseignements,`},
         {class:"indent1all", texte:`donne, nous t’en prions, la force de travailler avec toi, <span style="color: #b30000;">/</span> 
@@ -8198,10 +8216,10 @@ que tu préparais à la face des peuples.`}],
       "VIS": {
     titre: "VISITATION DE LA BIENHEUREUSE VIERGE MARIE",
     antienne_ouverture: [{class:"indent1all", texte: `Venez, écoutez, vous tous qui craignez Dieu : 
-        je vous dirai ce que le Seigneur a fait pour mon âme <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        je vous dirai ce que le Seigneur a fait pour mon âme <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         tu as inspiré à la bienheureuse Vierge Marie,`},
-        {class:"indent1p", texte:`qui portait en elle ton propre Fils, 
+        {class:"indentallp", texte:`qui portait en elle ton propre Fils, 
         de rendre visite à Élisabeth ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d’être dociles au souffle de l’Esprit <span style="color: #b30000;">/</span> 
         afin de pouvoir, avec elle, te magnifier éternellement.`},
@@ -8217,7 +8235,7 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [{class:"indent1all", texte:`Tous les âges me diront bienheureuse,`},
         {class:"indent1all", texte: `car le Puissant fit pour moi des merveilles ; 
-        Saint est son nom ! <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        Saint est son nom ! <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que ton Église te magnifie, Seigneur Dieu,
         toi qui as fait des merveilles pour tes fidèles ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`comme le bienheureux Jean Baptiste, tressaillant d’allégresse, 
@@ -8237,7 +8255,7 @@ que tu préparais à la face des peuples.`}],
         avec Marie, la mère de Jésus.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu, Père de toute miséricorde, <span style="color: #b30000;">+</span> 
         ton Fils unique, cloué sur la croix,`},
-        {class:"indent1p", texte:`a voulu que la bienheureuse Vierge Marie, sa Mère, 
+        {class:"indentallp", texte:`a voulu que la bienheureuse Vierge Marie, sa Mère, 
         soit aussi notre mère ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ton Église, soutenue par son amour, 
         la joie de donner naissance à des enfants 
@@ -8275,7 +8293,7 @@ que tu préparais à la face des peuples.`}],
         je chanterai le Seigneur pour le bien qu’il m’a fait.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as préparé dans le Coeur de la bienheureuse Vierge Marie`},
-        {class:"indent1p", texte:`une demeure digne de l’Esprit Saint ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`une demeure digne de l’Esprit Saint ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession, <span style="color: #b30000;">/</span> 
         de devenir le temple de ta gloire.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -8284,7 +8302,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En la mémoire de la bienheureuse Marie, Mère de Dieu, <span style="color: #b30000;">+</span> 
         regarde, Seigneur, les prières et les offrandes`},
-        {class:"indent1p", texte:`présentées par tes fidèles : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`présentées par tes fidèles : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elles soient agréables à tes yeux, <span style="color: #b30000;">/</span> 
         et nous obtiennent le secours de ta miséricorde.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -8310,7 +8328,7 @@ que tu préparais à la face des peuples.`}],
         ses promesses de miséricorde.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as choisi sainte Jeanne d’Arc`},
-        {class:"indent1p", texte:`pour venir au secours de son pays ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour venir au secours de son pays ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à son intercession,
         de travailler pour la justice <span style="color: #b30000;">/</span>
         et de vivre dans la paix.`},
@@ -8320,7 +8338,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur, 
         en la fête de sainte Jeanne,`},
-        {class:"indent1p", texte:`l’offrande pure de ton Fils, victime qui nous sauve ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`l’offrande pure de ton Fils, victime qui nous sauve ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de t’aimer en tout et plus que tout, <span style="color: #b30000;">/</span> 
         afin de vivre pour la louange de ta gloire.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -8332,7 +8350,7 @@ que tu préparais à la face des peuples.`}],
         ton bâton me guide et me rassure.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu nous as fortifiés, Seigneur, par le pain du ciel 
         où sainte Jeanne trouva tant de fois`},
-        {class:"indent1p", texte:`lumière et réconfort ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`lumière et réconfort ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que cet aliment du salut <span style="color: #b30000;">/</span>
         nous soutienne dans le service de nos frères.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -8345,10 +8363,10 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [{class:"indent1all", texte: `Les païens m’ont conté des fables :
         au mépris de ta loi.`},
         {class:"indent1all", texte: `Devant les rois, je parlais de tes exigences
-        et ne fus pas humilié <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et ne fus pas humilié <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         par la folie de la croix,`},
-        {class:"indent1p", texte:`tu as donné, de manière admirable, 
+        {class:"indentallp", texte:`tu as donné, de manière admirable, 
         au bienheureux martyr Justin
         une très haute connaissance de Jésus Christ ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
@@ -8365,7 +8383,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [{class:"indent1all", texte:`Parmi vous, je n’ai rien voulu connaître d’autre 
-        que Jésus Christ, ce Messie crucifié <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        que Jésus Christ, ce Messie crucifié <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Déjà réconfortés par le pain du ciel, 
         nous t’adressons, Seigneur, cette humble prière : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’en suivant les leçons du bienheureux Justin, ton martyr, <span style="color: #b30000;">/</span>
@@ -8379,7 +8397,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saints Marcellin et Pierre, martyrs",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         du glorieux témoignage des saints martyrs Marcellin et Pierre,`},
-        {class:"indent1p", texte:`tu fais notre rempart et notre protection ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu fais notre rempart et notre protection ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que leur exemple nous entraîne, <span style="color: #b30000;">/</span>
         et que leur prière nous soutienne.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -8391,7 +8409,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Pothin, évêque, Sainte Blandine, vierge, et leurs compagnons, martyrs",
     collecte: [{class:"grandelettrine", texte:`Tu as donné, Seigneur Dieu, 
         à ceux qui furent les premiers dans notre pays`},
-        {class:"indent1p", texte:`à offrir leur vie pour la foi,
+        {class:"indentallp", texte:`à offrir leur vie pour la foi,
         saint Pothin, sainte Blandine et leurs compagnons,
         d’affirmer jusqu’à la mort leur joie d’être chrétiens ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`rends-nous dignes de toujours mieux te connaître, <span style="color: #b30000;">/</span>
@@ -8407,10 +8425,10 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [{class:"indent1all", texte: `Comme l’or au creuset, le Seigneur a éprouvé ses élus ; 
         comme une offrande parfaite, il les accueille.`},
         {class:"indent1all", texte: `Au temps de sa visite, ils resplendiront. 
-        Pour ses amis, grâce et miséricorde <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        Pour ses amis, grâce et miséricorde <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fait du sang des martyrs`},
-        {class:"indent1p", texte:`une semence de chrétiens ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`une semence de chrétiens ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ton Église,
         terre féconde arrosée par le sang
         de saint Charles Lwanga et de ses compagnons, <span style="color: #b30000;">/</span>
@@ -8498,10 +8516,10 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [{class:"indent1all", texte: `Heureux, saint Barnabé, 
         qui fut digne d’être compté parmi les Apôtres :`},
         {class:"indent1all", texte: `c’était un homme de bien, 
-        rempli de l’Esprit Saint et de foi <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        rempli de l’Esprit Saint et de foi <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as demandé de mettre à part le bienheureux Barnabé,`},
-        {class:"indent1p", texte:`rempli de foi et d’Esprit Saint, 
+        {class:"indentallp", texte:`rempli de foi et d’Esprit Saint, 
         pour la conversion des nations païennes ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que l’Évangile du Christ, 
         qu’il a proclamé sans faiblir, <span style="color: #b30000;">/</span> 
@@ -8521,7 +8539,7 @@ que tu préparais à la face des peuples.`}],
         car le serviteur ne sait pas ce que fait son maître ;`},
         {class:"indent1all", texte: `je vous appelle mes amis, 
         car tout ce que j’ai entendu de mon Père, 
-        je vous l’ai fait connaître <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        je vous l’ai fait connaître <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Ayant reçu de toi, Seigneur, le gage de la vie éternelle, 
         nous te supplions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de saisir un jour en plénitude <span style="color: #b30000;">/</span> 
@@ -8535,7 +8553,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Antoine de Padoue, prêtre et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         en saint Antoine de Padoue,`},
-        {class:"indent1p", texte:`tu as donné à ton peuple 
+        {class:"indentallp", texte:`tu as donné à ton peuple 
         un grand prédicateur de l’Évangile 
         et un recours en toute nécessité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`permets qu’avec son aide,
@@ -8551,7 +8569,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Romuald, abbé",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         par saint Romuald,`},
-        {class:"indent1p", texte:`tu as renouvelé la vie érémitique dans ton Église ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as renouvelé la vie érémitique dans ton Église ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de renoncer à nous-mêmes 
         pour suivre le Christ, <span style="color: #b30000;">/</span>
         et de parvenir ainsi au royaume des Cieux.`},
@@ -8567,7 +8585,7 @@ que tu préparais à la face des peuples.`}],
         et se tenir dans le lieu saint.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, source de tous les dons spirituels, <span style="color: #b30000;">+</span> 
         tu as uni en saint Louis de Gonzague`},
-        {class:"indent1p", texte:`la pratique de la pénitence 
+        {class:"indentallp", texte:`la pratique de la pénitence 
         et une admirable pureté de vie ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous n’avons pas la même innocence,
         mais accorde-nous, à sa prière et par ses mérites, <span style="color: #b30000;">/</span>
@@ -8578,7 +8596,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Fais que nous prenions place à ton banquet, Seigneur, 
         portant toujours le vêtement de noce`},
-        {class:"indent1p", texte:`comme saint Louis de Gonzague, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`comme saint Louis de Gonzague, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que la participation à cette eucharistie <span style="color: #b30000;">/</span>
         nous enrichisse de ta grâce.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -8597,7 +8615,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Paulin de Nole, évêque",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu que le bienheureux évêque Paulin,`},
-        {class:"indent1p", texte:`brille par son amour de la pauvreté 
+        {class:"indentallp", texte:`brille par son amour de la pauvreté 
         et par son zèle pastoral ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous célébrons ses mérites, <span style="color: #b30000;">/</span> 
         accorde-nous de prendre exemple sur sa charité.`},
@@ -8610,7 +8628,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saints Jean Fischer, évêque, et Thomas More, martyrs",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu que la foi trouve dans le martyre`},
-        {class:"indent1p", texte:`son expression la plus parfaite ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`son expression la plus parfaite ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à la prière des saints Jean Fisher et Thomas More,
         accorde-nous, dans ta bonté, <span style="color: #b30000;">/</span>
         la force de confirmer par le témoignage de notre vie
@@ -8629,7 +8647,7 @@ que tu préparais à la face des peuples.`}],
         et préparer au Seigneur un peuple bien disposé.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as suscité le bienheureux Jean le Baptiste`},
-        {class:"indent1p", texte:`afin qu’il prépare pour le Christ Seigneur
+        {class:"indentallp", texte:`afin qu’il prépare pour le Christ Seigneur
         un peuple disposé à l’accueillir ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ton Église le don de la joie spirituelle, <span style="color: #b30000;">/</span>
         et guide l’esprit de tous les croyants
@@ -8640,7 +8658,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur, ces offrandes : <span style="color: #b30000;">+</span> 
         elles sont déposées sur ton autel`},
-        {class:"indent1p", texte:`pour célébrer comme il convient la nativité de saint Jean, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour célébrer comme il convient la nativité de saint Jean, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`car il prophétisa que le Sauveur du monde viendrait, <span style="color: #b30000;">/</span> 
         et montra qu’il était déjà parmi nous.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
@@ -8649,7 +8667,7 @@ que tu préparais à la face des peuples.`}],
         l’Astre d’en haut est venu nous visiter.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Au festin des noces de l’Agneau, 
         tu as refait nos forces, Seigneur,`},
-        {class:"indent1p", texte:`et nous te prions : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te prions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne à ton Église qui trouve sa joie
         dans la naissance du bienheureux Jean le Baptiste <span style="color: #b30000;">/</span> 
         de reconnaître en Jésus, dont il annonçait la venue 
@@ -8662,7 +8680,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Cyrille d’Alexandrie, évêque et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fait du bienheureux évêque Cyrille`},
-        {class:"indent1p", texte:`d’Alexandrie l’invincible défenseur 
+        {class:"indentallp", texte:`d’Alexandrie l’invincible défenseur 
         de la maternité divine de la bienheureuse Vierge Marie ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous croyons qu’elle est vraiment la Mère de Dieu, 
         accorde-nous d’être sauvés <span style="color: #b30000;">/</span> 
@@ -8679,7 +8697,7 @@ que tu préparais à la face des peuples.`}],
         nombreux furent ceux qu’il détourna de la faute.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné au bienheureux évêque Irénée`},
-        {class:"indent1p", texte:`d’enseigner plus solidement la vérité
+        {class:"indentallp", texte:`d’enseigner plus solidement la vérité
         et d’affermir avec bonheur la paix dans l’Église ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, renouvelle notre foi et notre charité, <span style="color: #b30000;">/</span>
         pour que nous cherchions en toute chose
@@ -8701,7 +8719,7 @@ que tu préparais à la face des peuples.`}],
         celui-là porte beaucoup de fruit.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Par cette communion à tes mystères, 
         nous t’en prions, Seigneur de miséricorde,`},
-        {class:"indent1p", texte:`augmente en nous la foi : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`augmente en nous la foi : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`elle a été la gloire du bienheureux évêque Irénée
         qui l’a gardée jusqu’à la mort ; <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`que cette même foi sincèrement vécue
@@ -8719,7 +8737,7 @@ que tu préparais à la face des peuples.`}],
         et sont devenus les amis de Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu nous as donné ce jour de sainte joie`},
-        {class:"indent1p", texte:`pour fêter les apôtres Pierre et Paul ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour fêter les apôtres Pierre et Paul ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ton Église une fidélité sans faille à leur enseignement, <span style="color: #b30000;">/</span>
         puisqu’elle a reçu par eux la première annonce de la foi.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -8751,7 +8769,7 @@ que tu préparais à la face des peuples.`}],
     titre: "PREMIERS MARTYRS DE L’ÉGLISE DE ROME",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as consacré par le sang des martyrs`},
-        {class:"indent1p", texte:`les magnifiques débuts de l’Église de Rome ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les magnifiques débuts de l’Église de Rome ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que leur grand courage dans le combat nous fortifie <span style="color: #b30000;">/</span>
         et que leur victoire dans la foi nous réjouisse toujours.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -8787,7 +8805,7 @@ que tu préparais à la face des peuples.`}],
         cesse d’être incrédule, sois croyant.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         dans ce sacrement, nous avons vraiment reçu`},
-        {class:"indent1p", texte:`le corps de ton Fils unique ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`le corps de ton Fils unique ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`avec l’apôtre Thomas, nous reconnaissons dans la foi 
         qu’il est notre Seigneur et notre Dieu : <span style="color: #b30000;">/</span>
         donne-nous de le proclamer par toute notre vie.`},
@@ -8799,7 +8817,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Sainte Elisabeth de Portugal",
     collecte: [{class:"grandelettrine", texte:`Dieu, source de la paix, toi qui aimes la charité, <span style="color: #b30000;">+</span> 
         tu as donné à sainte Élisabeth de Portugal`},
-        {class:"indent1p", texte:`une grâce merveilleuse pour réconcilier les adversaires ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`une grâce merveilleuse pour réconcilier les adversaires ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         de travailler au service de la paix, <span style="color: #b30000;">/</span>
         et de pouvoir ainsi être appelés enfants de Dieu.`},
@@ -8812,7 +8830,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Antoine-Marie Zaccaria, prêtre",
     collecte: [{class:"grandelettrine", texte:`Accorde-nous, Seigneur, 
         de rechercher, selon l’esprit de l’apôtre Paul,`},
-        {class:"indent1p", texte:`la connaissance incomparable de Jésus Christ, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la connaissance incomparable de Jésus Christ, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`elle qui forma saint Antoine-Marie Zaccaria <span style="color: #b30000;">/</span>
         pour annoncer sans relâche à ton Église la Parole du salut.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -8824,7 +8842,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Sainte Maria Goretti, vierge et martyre",
     collecte: [{class:"grandelettrine", texte:`Dieu, source de l’innocence, toi qui aimes la pureté, <span style="color: #b30000;">+</span> 
         tu as accordé la grâce du martyre`},
-        {class:"indent1p", texte:`à ta servante Maria Goretti ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à ta servante Maria Goretti ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous, à son intercession,
         de garder jusqu’au bout tes commandements, <span style="color: #b30000;">/</span>
         toi qui lui as donné la victoire quand elle défendit sa virginité.`},
@@ -8837,7 +8855,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Augustin Zhao Rong, prêtre, et ses compagnons, martyrs",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fortifié ton Église de façon admirable`},
-        {class:"indent1p", texte:`par la confession de foi des martyrs de Chine,
+        {class:"indentallp", texte:`par la confession de foi des martyrs de Chine,
         saint Augustin et ses compagnons ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ton peuple, fidèle à sa mission, <span style="color: #b30000;">/</span>
         d’être de plus en plus libre
@@ -8856,7 +8874,7 @@ que tu préparais à la face des peuples.`}],
         il rechercha une vie de sainteté.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fait du bienheureux abbé Benoît`},
-        {class:"indent1p", texte:`un maître spirituel remarquable
+        {class:"indentallp", texte:`un maître spirituel remarquable
         pour ceux qui se mettent à l’école de ton service ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de ne rien préférer à ton amour <span style="color: #b30000;">/</span>
         et de courir, le coeur dilaté,
@@ -8867,7 +8885,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur, regarde avec bienveillance 
         les offrandes que nous te présentons`},
-        {class:"indent1p", texte:`en la fête du bienheureux Benoît : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en la fête du bienheureux Benoît : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’à son exemple, en ne cherchant que toi, <span style="color: #b30000;">/</span>
         nous trouvions à ton service
         les dons de l’unité et de la paix.`},
@@ -8889,7 +8907,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Henri",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as comblé saint Henri de ta grâce`},
-        {class:"indent1p", texte:`et tu as élevé à la gloire du ciel
+        {class:"indentallp", texte:`et tu as élevé à la gloire du ciel
         celui qui avait eu la charge d’un royaume terrestre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous à son intercession,
         au milieu des changements de ce monde, <span style="color: #b30000;">/</span>
@@ -8903,7 +8921,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Camille de Lellis, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné à saint Camille, ton prêtre,`},
-        {class:"indent1p", texte:`une grâce extraordinaire de charité 
+        {class:"indentallp", texte:`une grâce extraordinaire de charité 
         envers les malades ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`répands en nous, par ses mérites, l’esprit de ton amour,
         pour que nous puissions te servir dans nos frères <span style="color: #b30000;">/</span>
@@ -8918,7 +8936,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Bonaventure, évêque et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Accorde-nous, Dieu tout-puissant, <span style="color: #b30000;">+</span> 
         tandis que nous célébrons la naissance au ciel`},
-        {class:"indent1p", texte:`de l’évêque saint Bonaventure, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de l’évêque saint Bonaventure, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`de mettre à profit les richesses de son enseignement, <span style="color: #b30000;">/</span>
         et de prendre toujours exemple sur sa brûlante charité.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -8940,7 +8958,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Apollinaire, évêque et martyr",
     collecte: [{class:"grandelettrine", texte:`Conduis tes fidèles, Seigneur, 
         sur la voie du salut éternel`},
-        {class:"indent1p", texte:`que le bienheureux évêque Apollinaire a montrée 
+        {class:"indentallp", texte:`que le bienheureux évêque Apollinaire a montrée 
         par son enseignement et son martyre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         d’observer tes commandements avec persévérance <span style="color: #b30000;">/</span> 
@@ -8954,7 +8972,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Laurent de Brindisi, prêtre et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         pour la gloire de ton nom et le salut des âmes,`},
-        {class:"indent1p", texte:`tu as donné au prêtre saint Laurent de Brindisi
+        {class:"indentallp", texte:`tu as donné au prêtre saint Laurent de Brindisi
         un esprit de conseil et de force ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, accorde-nous ce même esprit
         pour voir ce que nous devons faire, <span style="color: #b30000;">/</span>
@@ -8973,7 +8991,7 @@ que tu préparais à la face des peuples.`}],
         vers mon Dieu et votre Dieu. »`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         c’est à Marie Madeleine`},
-        {class:"indent1p", texte:`que ton Fils unique a confié
+        {class:"indentallp", texte:`que ton Fils unique a confié
         la première annonce de la joie pascale ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à sa prière et à son exemple,
         de proclamer que le Christ est vivant <span style="color: #b30000;">/</span>
@@ -9008,7 +9026,7 @@ que tu préparais à la face des peuples.`}],
         et tous ensemble ils louent le Fils de Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as conduit sainte Brigitte par divers chemins de vie,`},
-        {class:"indent1p", texte:`et tu lui as enseigné de façon admirable la sagesse de la croix
+        {class:"indentallp", texte:`et tu lui as enseigné de façon admirable la sagesse de la croix
         par la contemplation de la Passion de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à chacun de nous, quel que soit son état de vie, <span style="color: #b30000;">/</span>
         de savoir te chercher en toute chose.`},
@@ -9018,7 +9036,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu de grande bonté, <span style="color: #b30000;">+</span> 
         en sainte Brigitte tu as fait disparaître ce qui devait vieillir,`},
-        {class:"indent1p", texte:`pour créer un être nouveau à ton image ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour créer un être nouveau à ton image ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions, accorde-nous
         d’être renouvelés comme elle, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`afin que nous puissions te plaire
@@ -9031,7 +9049,7 @@ que tu préparais à la face des peuples.`}],
         de préférence à tes semblables.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous te prions ; <span style="color: #b30000;">+</span> 
         fais que, soutenus par la force de ce sacrement`},
-        {class:"indent1p", texte:`et instruits par l’exemple de sainte Brigitte, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`et instruits par l’exemple de sainte Brigitte, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`nous te cherchions toujours et par-dessus tout, 
         donnant forme en ce monde à l’humanité nouvelle.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -9042,7 +9060,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Charbel Makhlouf, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as appelé le prêtre saint Charbel`},
-        {class:"indent1p", texte:`au combat singulier du désert,`},
+        {class:"indentallp", texte:`au combat singulier du désert,`},
         {class:"indent1all", texte:`et tu l’as comblé de multiples dons spirituels ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en supplions :
         donne-nous d’imiter le Seigneur en sa Passion <span style="color: #b30000;">/</span>
@@ -9059,7 +9077,7 @@ que tu préparais à la face des peuples.`}],
         en train de réparer leurs filets, et il les appela.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         tu as consacré l’offrande du bienheureux Jacques,`},
-        {class:"indent1p", texte:`le premier de tes Apôtres à verser pour toi son sang, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`le premier de tes Apôtres à verser pour toi son sang, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ton Église
         de trouver dans son témoignage une force, <span style="color: #b30000;">/</span>
         et dans sa protection un appui constant.`},
@@ -9069,7 +9087,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Purifie-nous, Seigneur, 
         par la Passion de ton Fils,`},
-        {class:"indent1p", texte:`puisqu’elle est le baptême qui nous sauve ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`puisqu’elle est le baptême qui nous sauve ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous pourrons alors t’offrir un sacrifice agréable <span style="color: #b30000;">/</span>
         en la fête du bienheureux Jacques,
         le premier des Apôtres à boire à la coupe du Christ.`},
@@ -9093,7 +9111,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `car le Seigneur leur a donné la bénédiction promise à tous les peuples.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur, Dieu de nos Pères, <span style="color: #b30000;">+</span> 
         tu as donné aux bienheureux Joachim et Anne`},
-        {class:"indent1p", texte:`la grâce d’engendrer celle qui deviendrait la mère de ton Fils,
+        {class:"indentallp", texte:`la grâce d’engendrer celle qui deviendrait la mère de ton Fils,
         le Verbe fait chair ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à leur commune prière, <span style="color: #b30000;">/</span>
         le salut que tu as promis à ton peuple.`},
@@ -9128,7 +9146,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Une femme nommée Marthe le reçut dans sa maison.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         ton Fils acceptait l’hospitalité que la bienheureuse`},
-        {class:"indent1p", texte:`Marthe lui offrait dans sa maison ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`Marthe lui offrait dans sa maison ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         d’être fidèles à servir le Christ en nos frères <span style="color: #b30000;">/</span>
         pour que tu nous reçoives dans la demeure des cieux.`},
@@ -9138,7 +9156,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous proclamons les merveilles, 
         accomplies pour tes bienheureux amis,`},
-        {class:"indent1p", texte:`Seigneur, Dieu de majesté,`},
+        {class:"indentallp", texte:`Seigneur, Dieu de majesté,`},
         {class:"indent1all", texte:`et nous te supplions humblement ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`toi qui appréciais le dévouement de leur charité, <span style="color: #b30000;">/</span>
         accepte l’hommage de notre service.`},
@@ -9162,7 +9180,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Saint Pierre Chrysologue, évêque et docteur de l’église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fait du bienheureux évêque Pierre Chrysologue`},
-        {class:"indent1p", texte:`un remarquable prédicateur de ton Verbe incarné ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`un remarquable prédicateur de ton Verbe incarné ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, accorde-nous
         de méditer sans cesse en notre coeur les mystères du salut <span style="color: #b30000;">/</span>
         et d’en témoigner par toute notre vie.`},
@@ -9179,7 +9197,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `« Jésus Christ est Seigneur » à la gloire de Dieu le Père.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, 
         pour que rayonne la plus grande gloire de ton nom, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`tu as suscité dans ton Église saint Ignace de Loyola ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as suscité dans ton Église saint Ignace de Loyola ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’avec son aide et à sn exemple,
         après avoir combattu sur la terre, <span style="color: #b30000;">/</span>
         nous partagions sa victoire dans le ciel.`},
@@ -9199,7 +9217,7 @@ que tu préparais à la face des peuples.`}],
         et comme je voudrais qu’il soit déjà allumé !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que le sacrifice de louange, Seigneur, 
         offert pour te rendre grâce`},
-        {class:"indent1p", texte:`en l’honneur de saint Ignace, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en l’honneur de saint Ignace, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous conduire à louer sans fin <span style="color: #b30000;">/</span> 
         ton immense gloire.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -9211,7 +9229,7 @@ que tu préparais à la face des peuples.`}],
     titre: "S. ALPHONSE-MARIE DE LIGUORI, évêque et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, 
         toi qui toujours suscites en ton Église`},
-        {class:"indent1p", texte:`de nouveaux exemples de vertu, <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`de nouveaux exemples de vertu, <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`fais-nous marcher avec ardeur pour le salut des âmes 
         sur les traces de l’évêque saint Alphonse-Marie de Liguori, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que nous obtenions comme lui <span style="color: #b30000;">/</span>
@@ -9229,7 +9247,7 @@ que tu préparais à la face des peuples.`}],
       ],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fait de saint Alphonse-Marie`},
-        {class:"indent1p", texte:`un intendant fidèle
+        {class:"indentallp", texte:`un intendant fidèle
         et le prédicateur du grand mystère que nous célébrons ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d’y communier souvent <span style="color: #b30000;">/</span>
         et, par cette communion, de te bénir à jamais.`},
@@ -9241,7 +9259,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT EUSÈBE DE VERCEIL, évêque",
     collecte: [{class:"grandelettrine", texte:`Accorde-nous, Seigneur Dieu, <span style="color: #b30000;">+</span> 
         de savoir imiter le courage`},
-        {class:"indent1p", texte:`du bienheureux évêque Eusèbe de Verceil
+        {class:"indentallp", texte:`du bienheureux évêque Eusèbe de Verceil
         pour affirmer la divinité du Christ ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`gardant ainsi la foi qu’il a enseignée, <span style="color: #b30000;">/</span>
         nous obtiendrons de participer à la vie de ton Fils.`},
@@ -9253,7 +9271,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT PIERRE-JULIEN EYMARD, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as fait rayonner saint Pierre-Julien`},
-        {class:"indent1p", texte:`d’un amour admirable pour le saint sacrement
+        {class:"indentallp", texte:`d’un amour admirable pour le saint sacrement
         du Corps et du Sang de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de savoir, nous aussi, <span style="color: #b30000;">/</span>
         goûter la richesse du festin auquel tu nous convies.`},
@@ -9271,7 +9289,7 @@ que tu préparais à la face des peuples.`}],
         et moi pour le monde.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu de puissance et de miséricorde, <span style="color: #b30000;">+</span> 
         tu as fait de saint Jean-Marie Vianney`},
-        {class:"indent1p", texte:`un prêtre admirable, 
+        {class:"indentallp", texte:`un prêtre admirable, 
         passionnément dévoué à son ministère pastoral ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par sa prière et à son exemple,
         d’avoir pour nos frères une charité qui les gagne au Christ, <span style="color: #b30000;">/</span>
@@ -9282,7 +9300,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         que descende sur cette offrande sainte`},
-        {class:"indent1p", texte:`la plénitude invisible de l’Esprit ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la plénitude invisible de l’Esprit ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous, à la prière de saint Jean-Marie Vianney,
         d’approcher toujours de ce grand mystère <span style="color: #b30000;">/</span>
         avec un corps chaste et un cœur pur.`},
@@ -9294,7 +9312,7 @@ que tu préparais à la face des peuples.`}],
         je l’accomplis pour son corps qui est l’Église.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Fortifiés par le pain du ciel, 
         nous te supplions, Seigneur : <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`grâce à cette nourriture, saint Jean-Marie
+        {class:"indentallp", texte:`grâce à cette nourriture, saint Jean-Marie
         endurait sans faiblir toutes les contradictions ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais-nous progresser de jour en jour
         par ses mérites et comme lui, <span style="color: #b30000;">/</span>
@@ -9323,7 +9341,7 @@ que tu préparais à la face des peuples.`}],
         écoutez-le ! »`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         dans la transfiguration glorieuse de ton Fils unique,`},
-        {class:"indent1p", texte:`tu as confirmé par le témoignage de Moïse et d’Élie
+        {class:"indentallp", texte:`tu as confirmé par le témoignage de Moïse et d’Élie
         la vérité des mystères de la foi,`},
         {class:"indent1all", texte:`et tu as donné à l’avance
         un signe merveilleux de notre pleine adoption filiale ; <span style="color: #b30000;">*</span>`},
@@ -9345,7 +9363,7 @@ que tu préparais à la face des peuples.`}],
         car nous le verrons tel qu’il est.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">*</span> 
         que cette nourriture venue du ciel nous transforme`},
-        {class:"indent1p", texte:`en l’image de ton Fils dont tu as révélé la splendeur <span style="color: #b30000;">/</span> 
+        {class:"indentallp", texte:`en l’image de ton Fils dont tu as révélé la splendeur <span style="color: #b30000;">/</span> 
         par la gloire de la Transfiguration.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
     ],
@@ -9355,7 +9373,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT SIXTE II, pape, ET SES COMPAGNONS, martyrs",
     collecte: [{class:"grandelettrine", texte:`Nous te le demandons, Dieu tout-puissant : <span style="color: #b30000;">+</span> 
         par la force de l’Esprit Saint,`},
-        {class:"indent1p", texte:`fais que nous soyons accueillants à la foi 
+        {class:"indentallp", texte:`fais que nous soyons accueillants à la foi 
         et résolus à la confesser, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`toi qui as accordé au bienheureux Sixte et à ses compagnons 
         la grâce de donner leur vie <span style="color: #b30000;">/</span> 
@@ -9369,7 +9387,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT GAÉTAN, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu inspiras au prêtre saint Gaétan`},
-        {class:"indent1p", texte:`de vivre à la manière des Apôtres ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de vivre à la manière des Apôtres ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à son exemple et par son intercession,
         de mettre toujours en toi notre confiance,
         et de chercher sans relâche ton Royaume.`},
@@ -9394,7 +9412,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Par l’intercession de saint Dominique, <span style="color: #b30000;">+</span> 
         écoute avec bienveillance, Seigneur,`},
-        {class:"indent1p", texte:`les prières que nous te présentons ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les prières que nous te présentons ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et par la puissance de ce sacrifice, 
         soutiens ceux qui luttent pour la foi, <span style="color: #b30000;">/</span> 
         en leur donnant la protection de ta grâce.`},
@@ -9423,7 +9441,7 @@ que tu préparais à la face des peuples.`}],
         et moi pour le monde.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu de nos pères, <span style="color: #b30000;">+</span> 
         tu as conduit la sainte martyre Thérèse-Bénédicte`},
-        {class:"indent1p", texte:`à connaître ton Fils crucifié 
+        {class:"indentallp", texte:`à connaître ton Fils crucifié 
         et à l’imiter jusque dans la mort ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, 
         accorde à tous de reconnaître dans le Christ leur Sauveur <span style="color: #b30000;">/</span> 
@@ -9433,7 +9451,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dans ta bonté, Seigneur, <span style="color: #b30000;">+</span> 
         accepte les présents que nous voulons te consacrer,`},
-        {class:"indent1p", texte:`en mémoire de la sainte martyre Thérèse-Bénédicte,
+        {class:"indentallp", texte:`en mémoire de la sainte martyre Thérèse-Bénédicte,
         et rends-les parfaits, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`toi qui as mené à leur perfection
         les multiples sacrifices de l’ancienne Alliance <span style="color: #b30000;">/</span>
@@ -9446,7 +9464,7 @@ que tu préparais à la face des peuples.`}],
         je ne crains aucun mal, car tu es avec moi, Seigneur.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`En ce jour où nous honorons sainte Thérèse-Bénédicte, 
         Dieu de grande bonté, nous te prions : <span style="color: #b30000;">*</span>`},
-        {class:"indent1p", texte:`que les fruits de l’arbre de la croix
+        {class:"indentallp", texte:`que les fruits de l’arbre de la croix
         donnent force à nos coeurs ;`},
         {class:"indent1all", texte:`fidèlement attachés au Christ en ce monde,
         nous pourrons, au paradis, manger de l’arbre de la vie.`},
@@ -9463,7 +9481,7 @@ que tu préparais à la face des peuples.`}],
         et de rejoindre dans la joie le Seigneur Jésus Christ.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         c’est l’ardeur de ton amour`},
-        {class:"indent1p", texte:`qui a fait resplendir le bienheureux Laurent 
+        {class:"indentallp", texte:`qui a fait resplendir le bienheureux Laurent 
         par la fidélité du service et la gloire du martyre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d’aimer ce qu’il aimait, <span style="color: #b30000;">/</span>
         et d’accomplir ce qu’il a enseigné.`},
@@ -9474,7 +9492,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille avec bienveillance, Seigneur, 
         les offrandes que nous te présentons`},
-        {class:"indent1p", texte:`dans la joie de fêter le bienheureux Laurent : <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`dans la joie de fêter le bienheureux Laurent : <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`fais qu’elles servent à notre salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
@@ -9506,7 +9524,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE JEANNE-FRANÇOISE DE CHANTAL, religieuse",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         en sainte Jeanne-Françoise de Chantal`},
-        {class:"indent1p", texte:`tu as fait resplendir une remarquable sainteté 
+        {class:"indentallp", texte:`tu as fait resplendir une remarquable sainteté 
         par divers chemins de vie ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à sa prière, accorde-nous 
         de progresser dans la fidélité à notre vocation <span style="color: #b30000;">/</span> 
@@ -9520,7 +9538,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTS PONTIEN, pape, et HIPPOLYTE, prêtre, martyrs",
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">+</span> 
         que la persévérance de tes saints martyrs,`},
-        {class:"indent1p", texte:`si précieuse pour toi,`},
+        {class:"indentallp", texte:`si précieuse pour toi,`},
         {class:"indent1all", texte:`augmente en nous le désir de t’aimer, <span style="color: #b30000;">/</span>
         et stimule en nos coeurs une foi toujours plus solide.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -9538,7 +9556,7 @@ que tu préparais à la face des peuples.`}],
         c’est à moi que vous l’avez fait.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as mis au coeur de saint Maximilien-Marie, prêtre et martyr,`},
-        {class:"indent1p", texte:`un ardent amour pour la Vierge immaculée, 
+        {class:"indentallp", texte:`un ardent amour pour la Vierge immaculée, 
         un grand souci des âmes et une vive charité pour le prochain ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession, 
         de nous dépenser pour ta gloire dans le service des autres <span style="color: #b30000;">/</span> 
@@ -9579,7 +9597,7 @@ que tu préparais à la face des peuples.`}],
         et proclament les louanges du Fils de Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         tu as élevé jusqu’à la gloire du ciel,`},
-        {class:"indent1p", texte:`dans son âme et son corps,
+        {class:"indentallp", texte:`dans son âme et son corps,
         Marie, la Vierge immaculée, la mère de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que, toujours tendus vers les réalités d’en haut, <span style="color: #b30000;">/</span>
         nous obtenions de partager sa gloire.`},
@@ -9610,7 +9628,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT ÉTIENNE DE HONGRIE",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné à saint Étienne de Hongrie`},
-        {class:"indent1p", texte:`de travailler à l’extension de ton Église
+        {class:"indentallp", texte:`de travailler à l’extension de ton Église
         quand il était roi sur la terre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’il soit pour elle un défenseur, <span style="color: #b30000;">/</span>
         maintenant qu’il est dans la gloire du ciel.`},
@@ -9623,7 +9641,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT JEAN EUDES, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as choisi le prêtre saint Jean Eudes`},
-        {class:"indent1p", texte:`pour qu’il annonce l’insondable richesse du Christ ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour qu’il annonce l’insondable richesse du Christ ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de suivre son exemple et ses enseignements, 
         afin de te connaître toujours davantage <span style="color: #b30000;">/</span>
         et de vivre dans la fidélité à la lumière de l’Évangile.`},
@@ -9639,7 +9657,7 @@ que tu préparais à la face des peuples.`}],
         dont l’enseignement, tel un fleuve, irrigua le peuple de Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu que saint Bernard,`},
-        {class:"indent1p", texte:`dévoré par l’amour de ta maison,
+        {class:"indentallp", texte:`dévoré par l’amour de ta maison,
         soit dans ton Eglise une lampe qui éclaire et qui brûle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, accorde-nous
         d’avancer toujours en fils de la lumière, <span style="color: #b30000;">/</span>
@@ -9673,7 +9691,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT PIE X, pape",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         pour sauvegarder la foi catholique,`},
-        {class:"indent1p", texte:`et récapituler toutes choses dans le Christ,
+        {class:"indentallp", texte:`et récapituler toutes choses dans le Christ,
         tu as comblé le pape saint Pie X
         de sagesse divine et de courage apostolique ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de suivre ses instructions et ses exemples <span style="color: #b30000;">/</span>
@@ -9704,7 +9722,7 @@ que tu préparais à la face des peuples.`}],
         vêtue d’étoffes d’or.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu que la Mère de ton Fils`},
-        {class:"indent1p", texte:`soit notre Mère et notre Reine ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`soit notre Mère et notre Reine ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que, soutenus par son intercession,
         nous obtenions dans le royaume des Cieux <span style="color: #b30000;">/</span>
         la gloire promise à tes enfants.`},
@@ -9734,7 +9752,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE ROSE DE LIMA, vierge",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as inspiré à sainte Rose de Lima,`},
-        {class:"indent1p", texte:`brûlant de ton amour, 
+        {class:"indentallp", texte:`brûlant de ton amour, 
         de quitter le monde pour s’attacher à toi seul
         dans une austère pénitence ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
@@ -9752,7 +9770,7 @@ que tu préparais à la face des peuples.`}],
         annoncez parmi les nations sa gloire,`}],
     collecte: [{class:"grandelettrine", texte:`Fortifie en nous, Seigneur, 
         la foi sincère qui unissait à ton Fils`},
-        {class:"indent1p", texte:`le bienheureux apôtre Barthélemy ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`le bienheureux apôtre Barthélemy ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et fais qu’à sa prière,
         ton Église devienne pour tous les peuples <span style="color: #b30000;">/</span>
         le sacrement du salut.`},
@@ -9773,7 +9791,7 @@ que tu préparais à la face des peuples.`}],
         dit le Seigneur.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous avons reçu, Seigneur, 
         le gage du salut éternel`},
-        {class:"indent1p", texte:`en célébrant la fête du bienheureux apôtre Barthélemy ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en célébrant la fête du bienheureux apôtre Barthélemy ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions : 
         que cette communion nous soit un secours <span style="color: #b30000;">/</span> 
         pour la vie présente et la vie future.`},
@@ -9789,7 +9807,7 @@ que tu préparais à la face des peuples.`}],
         et je rends grâce à ton nom`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as appelé saint Louis`},
-        {class:"indent1p", texte:`de la charge d’une royauté terrestre
+        {class:"indentallp", texte:`de la charge d’une royauté terrestre
         à la gloire du royaume des Cieux ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         de rechercher ton Royaume éternel <span style="color: #b30000;">/</span>
@@ -9800,7 +9818,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as rendu saint Louis admirable sur la terre`},
-        {class:"indent1p", texte:`et tu l’as glorifié dans le ciel ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et tu l’as glorifié dans le ciel ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que nous brûlions comme lui de ton amour <span style="color: #b30000;">/</span> 
         quand nous prenons place autour de l’autel 
         pour t’offrir le sacrifice rédempteur.`},
@@ -9811,7 +9829,7 @@ que tu préparais à la face des peuples.`}],
         le Seigneur le sauve au jour du malheur.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu très bon, <span style="color: #b30000;">+</span> 
         tu as donné à saint Louis`},
-        {class:"indent1p", texte:`un amour exemplaire pour les pauvres ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`un amour exemplaire pour les pauvres ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que, rénovés à la table eucharistique,
         nous sachions, comme lui, reconnaître et servir le Christ <span style="color: #b30000;">/</span>
         dans les plus déshérités de nos frères.`},
@@ -9823,7 +9841,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT JOSEPH DE CALASANZ, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as comblé de tant de patience et de charité`},
-        {class:"indent1p", texte:`le prêtre saint Joseph de Calasanz
+        {class:"indentallp", texte:`le prêtre saint Joseph de Calasanz
         qu’il consacra toute sa vie
         à éduquer les enfants et à les former à toute vertu ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous vénérons en lui un maître de sagesse, <span style="color: #b30000;">/</span>
@@ -9850,7 +9868,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE MONIQUE",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, réconfort des affligés, <span style="color: #b30000;">+</span> 
         tu accueillais avec amour les larmes`},
-        {class:"indent1p", texte:`de la bienheureuse Monique 
+        {class:"indentallp", texte:`de la bienheureuse Monique 
         pour la conversion de son fils Augustin ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à la prière de la mère et du fils,
         de savoir pleurer nos péchés <span style="color: #b30000;">/</span>
@@ -9902,7 +9920,7 @@ que tu préparais à la face des peuples.`}],
         oui, vraiment je les aime.`}],
     collecte: [{class:"grandelettrine", texte:`Tu as voulu, Seigneur Dieu, 
         que le bienheureux Jean Baptiste`},
-        {class:"indent1p", texte:`soit le précurseur de ton Fils 
+        {class:"indentallp", texte:`soit le précurseur de ton Fils 
         dans sa naissance et dans sa mort ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`il a donné sa vie pour la justice et la vérité : <span style="color: #b30000;">/</span>
         accorde-nous de savoir, comme lui,
@@ -9913,7 +9931,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Par l’offrande que nous te présentons, Seigneur, <span style="color: #b30000;">+</span> 
         accorde-nous de marcher`},
-        {class:"indent1p", texte:`sur tes chemins dans la droiture,`},
+        {class:"indentallp", texte:`sur tes chemins dans la droiture,`},
         {class:"indent1all", texte:`celle que le bienheureux Jean Baptiste, 
         voix de celui qui crie dans le désert, <span style="color: #b30000;">/</span> 
         enseigna et confirma par le témoignage de son sang.`},
@@ -9925,7 +9943,7 @@ que tu préparais à la face des peuples.`}],
         et moi, que je diminue.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous avons célébré le jour 
         où le bienheureux Jean Baptiste est né au ciel,`},
-        {class:"indent1p", texte:`et nous avons reçu les sacrements du salut : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous avons reçu les sacrements du salut : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, Seigneur, de contempler en eux 
         les merveilles dont ils sont le signe, <span style="color: #b30000;">/</span> 
         et, plus encore, de goûter leur action en nous.`},
@@ -9942,7 +9960,7 @@ que tu préparais à la face des peuples.`}],
         et, sans relâche, célébrait son amour.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu veilles sur tes peuples avec bonté,`},
-        {class:"indent1p", texte:`et tu les gouvernes avec amour ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et tu les gouvernes avec amour ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par l’intercession du pape saint Grégoire,
         accorde un esprit de sagesse
         à ceux qui ont reçu de toi la charge de conduire l’Église : <span style="color: #b30000;">/</span>`},
@@ -9954,7 +9972,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Exauce notre prière, Seigneur : <span style="color: #b30000;">*</span> 
         fais qu’au jour où nous célébrons saint Grégoire,`},
-        {class:"indent1p", texte:`cette offrande nous soit profitable, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`cette offrande nous soit profitable, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`car tu as voulu que, par l’oblation de ce sacrifice, 
         soient remis les péchés du monde entier.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -9965,14 +9983,14 @@ que tu préparais à la face des peuples.`}],
         pour donner à chacun, en temps voulu, sa part de blé.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Ceux que tu fortifies, Seigneur, 
         par le Christ, pain vivant,`},
-        {class:"indent1p", texte:`forme-les aussi par le Christ, le seul maître, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`forme-les aussi par le Christ, le seul maître, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`pour qu’en la fête de saint Grégoire, 
         ils soient instruits de ta vérité <span style="color: #b30000;">/</span> 
         et la mettent en oeuvre dans la charité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
-
+//Thérèse de Calcutta ?
   "NBVM": {
     titre: "NATIVITÉ DE LA BIENHEUREUSE VIERGE MARIE",
     antienne_ouverture: [
@@ -9981,7 +9999,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `par elle s’est levé le Soleil de justice, le Christ notre Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Ouvre à tes serviteurs 
         les richesses de la grâce du ciel,`},
-        {class:"indent1p", texte:`Seigneur, nous t’en prions : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`Seigneur, nous t’en prions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque la maternité de la bienheureuse Vierge Marie 
         fut à l’origine de notre salut <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`que la fête de sa Nativité 
@@ -9992,7 +10010,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dans son amour pour l’humanité, 
         que ton Fils unique vienne à notre secours,`},
-        {class:"indent1p", texte:`Seigneur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`Seigneur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`sa naissance n’a pas altéré 
         mais consacré l’intégrité virginale de sa mère ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’il nous délivre de nos péchés <span style="color: #b30000;">/</span>
@@ -10013,7 +10031,7 @@ que tu préparais à la face des peuples.`}],
         c’est lui qui sauvera son peuple de ses péchés.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Qu’exulte ton Eglise, Seigneur, <span style="color: #b30000;">*</span>
         elle dont tu as refait les forces`},
-        {class:"indent1p", texte:`par des saints mystères, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par des saints mystères, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`car elle se réjouit de la Nativité 
         de la bienheureuse Vierge Marie <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`qui fit lever sur le monde 
@@ -10026,7 +10044,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT PIERRE CLAVER, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fait de saint Pierre Claver`},
-        {class:"indent1p", texte:`l’esclave des esclaves,`},
+        {class:"indentallp", texte:`l’esclave des esclaves,`},
         {class:"indent1all", texte:`et tu lui as donné la force de leur venir en aide
         avec une patience et une charité admirables ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
@@ -10046,7 +10064,7 @@ que tu préparais à la face des peuples.`}],
         que jamais ta louange ne quittera la bouche des hommes.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">*</span> 
         que la bienheureuse Vierge Marie`},
-        {class:"indent1p", texte:`obtienne les bienfaits de ta miséricorde <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`obtienne les bienfaits de ta miséricorde <span style="color: #b30000;">/</span>
         en faveur de tous ceux qui célèbrent son nom glorieux.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -10063,7 +10081,7 @@ que tu préparais à la face des peuples.`}],
         car Dieu a regardé son humble servante.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Puissions-nous, Seigneur, 
         obtenir la grâce de ta bénédiction,`},
-        {class:"indent1p", texte:`par l’intercession de Marie, Mère de Dieu ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par l’intercession de Marie, Mère de Dieu ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’en célébrant son nom avec honneur, <span style="color: #b30000;">/</span>
         nous recevions son secours 
         dans toutes les difficultés de la vie.`},
@@ -10079,7 +10097,7 @@ que tu préparais à la face des peuples.`}],
         brilleront comme les étoiles pour toujours et à jamais.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, force de ceux qui espèrent en toi, <span style="color: #b30000;">+</span> 
         tu as fait briller le bienheureux évêque Jean Chrysostome`},
-        {class:"indent1p", texte:`par une merveilleuse éloquence 
+        {class:"indentallp", texte:`par une merveilleuse éloquence 
         et par les épreuves qu’il a endurées ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous la grâce de suivre ses enseignements <span style="color: #b30000;">/</span>
         pour avoir la force d’imiter sa patience inébranlable.`},
@@ -10089,7 +10107,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Daigne accepter, Seigneur Dieu, 
         ce sacrifice que nous t’offrons de grand coeur,`},
-        {class:"indent1p", texte:`en faisant mémoire du bienheureux Jean Chrysostome : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en faisant mémoire du bienheureux Jean Chrysostome : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fidèles à son enseignement, 
         nous voulons nous offrir tout entiers <span style="color: #b30000;">/</span> 
         en célébrant ta louange.`},
@@ -10100,7 +10118,7 @@ que tu préparais à la face des peuples.`}],
         le Christ, puissance de Dieu et sagesse de Dieu.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu de miséricorde, <span style="color: #b30000;">+</span> 
         que les mystères auxquels nous avons communié`},
-        {class:"indent1p", texte:`en faisant mémoire du bienheureux Jean Chrysostome,`},
+        {class:"indentallp", texte:`en faisant mémoire du bienheureux Jean Chrysostome,`},
         {class:"indent1all", texte:`nous affermissent dans ton amour <span style="color: #b30000;">/</span> 
         et fassent de nous les témoins fidèles de ta vérité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -10116,7 +10134,7 @@ que tu préparais à la face des peuples.`}],
         par lui, nous sommes sauvés et délivrés.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu qu’en acceptant la croix`},
-        {class:"indent1p", texte:`ton Fils unique sauve l’humanité ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ton Fils unique sauve l’humanité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :
         fais qu’ayant connu dès ici-bas ce mystère, <span style="color: #b30000;">/</span>
         nous obtenions au ciel les fruits de la rédemption.`},
@@ -10126,7 +10144,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en supplions, Seigneur, 
         que l’offrande du sacrifice`},
-        {class:"indent1p", texte:`nous purifie de tout péché, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous purifie de tout péché, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque sur l’autel de la croix <span style="color: #b30000;">/</span> 
         elle a enlevé le péché du monde entier.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -10152,7 +10170,7 @@ que tu préparais à la face des peuples.`}],
         et toi, ton âme sera traversée d’un glaive. »`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         quand ton Fils était élevé sur la croix,`},
-        {class:"indent1p", texte:`tu as voulu que sa Mère, remplie de compassion, 
+        {class:"indentallp", texte:`tu as voulu que sa Mère, remplie de compassion, 
         se tienne debout auprès de lui : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ton Église 
         de s’unir, elle aussi, à la passion du Christ, <span style="color: #b30000;">/</span> 
@@ -10162,7 +10180,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Pour la gloire de ton nom, Dieu de miséricorde, <span style="color: #b30000;">+</span>
         accepte les prières et les offrandes que nous te présentons`},
-        {class:"indent1p", texte:`en l’honneur de la bienheureuse Vierge Marie, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en l’honneur de la bienheureuse Vierge Marie, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque, dans ta bonté, tu as fait d’elle notre Mère très aimante <span style="color: #b30000;">/</span> 
         quand elle se tenait près de la croix de Jésus.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
@@ -10185,7 +10203,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTS CORNEILLE, pape, et CYPRIEN, évêque, martyrs",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné à ton peuple,`},
-        {class:"indent1p", texte:`dans les bienheureux Corneille et Cyprien,
+        {class:"indentallp", texte:`dans les bienheureux Corneille et Cyprien,
         des pasteurs dévoués et d’invincibles martyrs ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par leur intercession, fortifie notre courage et notre foi, <span style="color: #b30000;">/</span>
         et accorde-nous de travailler avec empressement
@@ -10196,7 +10214,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accepte, nous t’en prions, Seigneur, 
         les offrandes que ton peuple te présente`},
-        {class:"indent1p", texte:`pour célébrer la passion de tes saints martyrs ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour célébrer la passion de tes saints martyrs ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`elles ont rendu les bienheureux Corneille et Cyprien 
         courageux dans la persécution : <span style="color: #b30000;">/</span> 
         qu’elles nous obtiennent aussi d’être fermes dans l’adversité.`},
@@ -10216,7 +10234,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT ROBERT BELLARMIN, évêque et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné à l’évêque saint Robert Bellarmin`},
-        {class:"indent1p", texte:`une science et une force admirables
+        {class:"indentallp", texte:`une science et une force admirables
         pour défendre la foi de ton Église ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, accorde à ton peuple <span style="color: #b30000;">/</span>
         le bonheur de garder cette foi dans toute sa pureté.`},
@@ -10229,7 +10247,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Sainte Hildegarde de Bingen, vierge et docteur de l’Eglise",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, source de la vie, <span style="color: #b30000;">+</span> 
         tu as rempli sainte Hildegarde`},
-        {class:"indent1p", texte:`de l’esprit prophétique ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de l’esprit prophétique ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions : accorde-nous, 
         à son exemple et par son intercession, 
         de connaître tes chemins <span style="color: #b30000;">/</span>`},
@@ -10239,12 +10257,12 @@ que tu préparais à la face des peuples.`}],
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
         Dieu, pour les siècles des siècles.`},
     ],},
-
+//Robert bellarmine ?
     "ST_JAN": {
     titre: "SAINT JANVIER, évêque et martyr",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu nous donnes de vénérer la mémoire`},
-        {class:"indent1p", texte:`de saint Janvier, ton martyr ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de saint Janvier, ton martyr ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de nous réjouir avec lui <span style="color: #b30000;">/</span>
         dans l’éternité bienheureuse.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -10256,7 +10274,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Bienheureuse Vierge Marie de la Salette",
     collecte: [{class:"grandelettrine", texte:`Seigneur, tu as réconcilié le monde avec toi,
         par le sang de ton Fils,`},
-        {class:"indent1p", texte:`et tu as placé a mère près de la Croix,
+        {class:"indentallp", texte:`et tu as placé a mère près de la Croix,
         pour la réconciliation des pécheurs ;`},
         {class:"indent1all", texte:`accorde-nous, par l’intercession de la Vierge Marie <span style="color: #b30000;">/</span>
         d’obtenir le pardon de nos péchés.`},
@@ -10273,7 +10291,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `aussi ont-ils reçu leur récompense dans le ciel.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu que, par toute la terre,`},
-        {class:"indent1p", texte:`se multiplient tes enfants d’adoption`},
+        {class:"indentallp", texte:`se multiplient tes enfants d’adoption`},
         {class:"indent1all", texte:`et tu as fait que le sang des saints martyrs
         André et ses compagnons
         devienne une magnifique semence de chrétiens ; <span style="color: #b30000;">*</span>`},
@@ -10297,7 +10315,7 @@ que tu préparais à la face des peuples.`}],
         devant mon Père qui est aux cieux.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nourris du pain des forts
         en la célébration de tes saints martyrs,`},
-        {class:"indent1p", texte:`nous te supplions instamment, Seigneur : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te supplions instamment, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de rester fidèlement unis au Christ <span style="color: #b30000;">/</span> 
         pour travailler dans l’Église au salut de tous.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -10312,7 +10330,7 @@ que tu préparais à la face des peuples.`}],
         tout ce que je vous ai commandé.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         dans ta miséricorde sans égale,`},
-        {class:"indent1p", texte:`tu as choisi le bienheureux Matthieu
+        {class:"indentallp", texte:`tu as choisi le bienheureux Matthieu
         pour faire de ce publicain un apôtre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous, par sa prière et à son exemple, <span style="color: #b30000;">/</span>
         de te suivre et de nous attacher à toi fermement.`},
@@ -10335,7 +10353,7 @@ que tu préparais à la face des peuples.`}],
         mais des pécheurs, dit le Seigneur.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu nous fais participer, Seigneur, 
         à la joie du salut, que le bienheureux Matthieu éprouva`},
-        {class:"indent1p", texte:`en accueillant tout heureux 
+        {class:"indentallp", texte:`en accueillant tout heureux 
         le Sauveur dans sa maison ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous de pouvoir toujours refaire nos forces 
         à la table de celui qui est venu appeler au salut <span style="color: #b30000;">/</span> 
@@ -10348,7 +10366,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT PIO DE PIETRELCINA, prêtre",
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         par une grâce particulière`},
-        {class:"indent1p", texte:`tu as donné au prêtre saint Pio
+        {class:"indentallp", texte:`tu as donné au prêtre saint Pio
         de participer à la croix de ton Fils,`},
         {class:"indent1all", texte:`et, dans son ministère,
         tu as renouvelé les merveilles de ta miséricorde ; <span style="color: #b30000;">*</span>`},
@@ -10394,7 +10412,7 @@ que tu préparais à la face des peuples.`}],
         guérir les coeurs brisés.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné au prêtre saint Vincent de Paul`},
-        {class:"indent1p", texte:`toutes les qualités d’un apôtre 
+        {class:"indentallp", texte:`toutes les qualités d’un apôtre 
         afin de secourir les pauvres et de former les prêtres ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous la même ferveur 
         pour aimer ce qu’il a aimé <span style="color: #b30000;">/</span> 
@@ -10405,7 +10423,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné à saint Vincent,`},
-        {class:"indent1p", texte:`de conformer toute sa vie 
+        {class:"indentallp", texte:`de conformer toute sa vie 
         aux saints mystères qu’il célébrait ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que nous devenions nous-mêmes, 
         par la puissance de ce sacrifice, <span style="color: #b30000;">/</span> 
@@ -10431,7 +10449,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT VENCESLAS, martyr",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu inspirais au saint martyr Venceslas`},
-        {class:"indent1p", texte:`de préférer le royaume du ciel à celui de la terre ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de préférer le royaume du ciel à celui de la terre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         la force de renoncer à nous-mêmes <span style="color: #b30000;">/</span>
         pour nous attacher à toi de tout notre coeur.`},
@@ -10462,7 +10480,7 @@ que tu préparais à la face des peuples.`}],
         attentifs au son de sa parole !`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         avec une sagesse admirable,`},
-        {class:"indent1p", texte:`tu assignes leurs fonctions aux anges et aux hommes ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu assignes leurs fonctions aux anges et aux hommes ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :`},
         {class:"indent1all", texte:`fais que notre vie soit protégée sur la terre <span style="color: #b30000;">/</span>
         par ceux qui, dans le ciel,
@@ -10473,7 +10491,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Le sacrifice de louange ; <span style="color: #b30000;">*</span> 
         porté par les anges en présence de ta gloire,`},
-        {class:"indent1p", texte:`nous te l’offrons, Seigneur, 
+        {class:"indentallp", texte:`nous te l’offrons, Seigneur, 
         avec nos humbles prières : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accueille-le favorablement, <span style="color: #b30000;">/</span> 
         pour qu’il nous obtienne le salut.`},
@@ -10498,7 +10516,7 @@ que tu préparais à la face des peuples.`}],
         il donne du fruit en son temps.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné au bienheureux prêtre`},
-        {class:"indent1p", texte:`Jérôme de goûter la sainte Écriture et d’en vivre ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`Jérôme de goûter la sainte Écriture et d’en vivre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que ton peuple se nourrisse plus abondamment de ta Parole <span style="color: #b30000;">/</span>
         et trouve en elle la source de la vie.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -10545,7 +10563,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous proclamons tes merveilles, 
         accomplies en sainte Thérèse,`},
-        {class:"indent1p", texte:`Seigneur, Dieu de majesté,`},
+        {class:"indentallp", texte:`Seigneur, Dieu de majesté,`},
         {class:"indent1all", texte:`et nous te supplions humblement ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`toi qui appréciais les mérites de sa vie : <span style="color: #b30000;">/</span>
         accepte l’hommage de notre service.`},
@@ -10570,7 +10588,7 @@ que tu préparais à la face des peuples.`}],
         chantez sa louange et proclamez sa gloire, éternellement.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         dans ton admirable Providence,`},
-        {class:"indent1p", texte:`tu envoies tes saints Anges pour nous garder ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu envoies tes saints Anges pour nous garder ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ceux qui te prient 
         le bienfait de leur constante protection <span style="color: #b30000;">/</span> 
         et la joie de vivre en leur compagnie pour toujours.`},
@@ -10605,7 +10623,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `mais le Seigneur l’accueille.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné à saint François d’Assise`},
-        {class:"indent1p", texte:`d’être configuré au Christ pauvre et humble ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`d’être configuré au Christ pauvre et humble ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous la force d’emprunter les mêmes chemins 
         pour suivre ton Fils <span style="color: #b30000;">/</span>
         et pour vivre unis à toi dans une joyeuse charité.`},
@@ -10624,19 +10642,19 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Heureux les pauvres de coeur, car le royaume des Cieux est à eux !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Par le sacrement que nous avons reçu, 
         accorde-nous, Seigneur,`},
-        {class:"indent1p", texte:`d’imiter la charité de saint François 
+        {class:"indentallp", texte:`d’imiter la charité de saint François 
         et son ardeur apostolique, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`pour que nous goûtions les fruits de ton amour <span style="color: #b30000;">/</span> 
         et les fassions abonder en vue du salut de tous.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
-
+//Ste Faustine ?
   "ST_BRU": {
     titre: "SAINT BRUNO, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         toi qui as appelé saint Bruno`},
-        {class:"indent1p", texte:`à te servir dans la solitude, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à te servir dans la solitude, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         de savoir rester libres pour toi <span style="color: #b30000;">/</span>
         au milieu des changements de ce monde.`},
@@ -10674,7 +10692,7 @@ que tu préparais à la face des peuples.`}],
         tu lui donneras le nom de Jésus.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur notre Dieu, 
         nous qui annonçons dans ce sacrement`},
-        {class:"indent1p", texte:`la mort et la résurrection de ton Fils : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la mort et la résurrection de ton Fils : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous prenons part à ses souffrances, <span style="color: #b30000;">/</span> 
         donne-nous de trouver le réconfort et de partager sa gloire.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
@@ -10685,7 +10703,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT DENIS, évêque, et ses compagnons, martyrs",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as envoyé le bienheureux Denis et ses compagnons`},
-        {class:"indent1p", texte:`annoncer aux nations ta gloire,`},
+        {class:"indentallp", texte:`annoncer aux nations ta gloire,`},
         {class:"indent1all", texte:`et tu les as gardés inébranlables dans la souffrance ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions, accorde-nous la grâce de les imiter 
         en sachant mépriser la faveur du monde, <span style="color: #b30000;">/</span> 
@@ -10699,19 +10717,19 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT JEAN LÉONARDI, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, source de tous biens, <span style="color: #b30000;">+</span> 
         tu as suscité le prêtre saint Jean Léonardi,`},
-        {class:"indent1p", texte:`pour que ton Évangile soit annoncé aux nations ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour que ton Évangile soit annoncé aux nations ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’à sa prière, la vraie foi se propage <span style="color: #b30000;">/</span> 
         toujours et en tout lieu.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
         Dieu, pour les siècles des siècles.`},
     ],},
-
+//Jean XXIII ?
     "ST_CAL": {
     titre: "SAINT CALLISTE Ier, pape et martyr",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as suscité le bienheureux pape Calliste`},
-        {class:"indent1p", texte:`pour servir ton Église et honorer les fidèles défunts ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour servir ton Église et honorer les fidèles défunts ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions : fortifie-nous par le témoignage de sa foi 
         afin que, libérés de l’esclavage de ce monde qui passe, <span style="color: #b30000;">/</span> 
         nous méritions d’obtenir l’héritage qui ne passe pas.`},
@@ -10728,7 +10746,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Mon âme a soif de Dieu, le Dieu vivant.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as suscité par ton Esprit sainte Thérèse d’Avila`},
-        {class:"indent1p", texte:`pour montrer à l’Église 
+        {class:"indentallp", texte:`pour montrer à l’Église 
         le chemin de la perfection qu’elle doit rechercher ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais-nous trouver notre nourriture dans sa doctrine spirituelle <span style="color: #b30000;">/</span> 
         et brûler du désir d’une vraie sainteté.`},
@@ -10747,7 +10765,7 @@ que tu préparais à la face des peuples.`}],
         ta fidélité, je l’annonce d’âge en âge.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span> 
         donne à la famille de ceux qui te servent,`},
-        {class:"indent1p", texte:`déjà rassasiée par le pain du ciel,`},
+        {class:"indentallp", texte:`déjà rassasiée par le pain du ciel,`},
         {class:"indent1all", texte:`de connaître, comme sainte Thérèse, <span style="color: #b30000;">/</span> 
         la joie de chanter ta miséricorde pour l’éternité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -10771,7 +10789,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE MARGUERITE-MARIE ALACOQUE, vierge",
     collecte: [{class:"grandelettrine", texte:`Répands sur nous, Seigneur, 
         l’Esprit que tu as donné en abondance`},
-        {class:"indent1p", texte:`à sainte Marguerite-Marie : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à sainte Marguerite-Marie : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`alors nous pourrons connaître, nous aussi, 
         l’amour du Christ qui surpasse toute connaissance, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`nous serons comblés, 
@@ -10790,7 +10808,7 @@ que tu préparais à la face des peuples.`}],
         qui m’a aimé et s’est livré lui-même pour moi.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         par le témoignage des saints martyrs,`},
-        {class:"indent1p", texte:`tu embellis ta sainte Eglise corps de ton Fils ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu embellis ta sainte Eglise corps de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :`},
         {class:"indent1all", texte:`de même que la passion du bienheureux Ignace d’Antioche, 
         célébrée en ce jour, 
@@ -10814,7 +10832,7 @@ que tu préparais à la face des peuples.`}],
         pour devenir le pain très pur du Christ. »`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur, que le pain du ciel, 
         reçu en la fête du bienheureux Ignace,`},
-        {class:"indent1p", texte:`refasse nos forces <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`refasse nos forces <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et nous donne d’être chrétiens, <span style="color: #b30000;">/</span> 
         tant par le nom que par nos actes.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -10831,7 +10849,7 @@ que tu préparais à la face des peuples.`}],
         qui annonce le salut.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as choisi le bienheureux Luc`},
-        {class:"indent1p", texte:`pour révéler, par sa parole et ses écrits 
+        {class:"indentallp", texte:`pour révéler, par sa parole et ses écrits 
         le mystère de ton amour envers les pauvres ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à ceux qui se réclament de ton Nom 
         d’être avec persévérance un seul coeur et une seule âme, <span style="color: #b30000;">/</span>`},
@@ -10843,7 +10861,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Par le don qui vient du ciel, 
         accorde-nous, Seigneur,`},
-        {class:"indent1p", texte:`de te servir d’un coeur libre, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de te servir d’un coeur libre, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que nos offrandes, présentées en la fête du bienheureux Luc, <span style="color: #b30000;">/</span>
         nous procurent la guérison et la gloire.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -10863,7 +10881,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTS JEAN DE BRÉBEUF et ISAAC JOGUES, prêtres, et leurs compagnons, martyrs",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu manifester la bienheureuse espérance du Royaume éternel`},
-        {class:"indent1p", texte:`par l’action missionnaire et le sang versé de tes martyrs, 
+        {class:"indentallp", texte:`par l’action missionnaire et le sang versé de tes martyrs, 
         saints Jean de Brébeuf, Isaac Jogues et leurs compagnons ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à leur intercession, donne aux chrétiens <span style="color: #b30000;">/</span> 
         une foi qui s’affermisse de jour en jour.`},
@@ -10879,7 +10897,7 @@ que tu préparais à la face des peuples.`}],
         que Jésus Christ, ce Messie crucifié.`}],
     collecte: [{class:"grandelettrine", texte:`Que le prêtre saint Paul de la Croix, 
         animé d’un amour sans pareil pour Jésus crucifié,`},
-        {class:"indent1p", texte:`nous obtienne ta grâce, Seigneur, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous obtienne ta grâce, Seigneur, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que, stimulés par son exemple, <span style="color: #b30000;">/</span> 
         nous ayons plus de courage pour prendre notre croix.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -10888,7 +10906,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span> 
         regarde le sacrifice que nous offrons`},
-        {class:"indent1p", texte:`en faisant mémoire de saint Paul de la Croix : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en faisant mémoire de saint Paul de la Croix : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous d’imiter dans nos actes <span style="color: #b30000;">/</span> 
         les mystères de la passion du Seigneur que nous célébrons.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
@@ -10898,19 +10916,19 @@ que tu préparais à la face des peuples.`}],
         le Christ, puissance de Dieu et sagesse de Dieu.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         en saint Paul tu as fait resplendir de manière admirable`},
-        {class:"indent1p", texte:`le mystère de la croix ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`le mystère de la croix ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous sommes fortifiés par ce sacrifice, 
         accorde-nous de rester fidèlement unis au Christ, <span style="color: #b30000;">/</span> 
         et de travailler dans l’Église au salut de tous.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
-
+//St JPII ?
   "ST_JEA_CAP": {
     titre: "SAINT JEAN DE CAPISTRAN, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as suscité saint Jean de Capistran`},
-        {class:"indent1p", texte:`pour fortifier ton peuple dans les épreuves ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour fortifier ton peuple dans les épreuves ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous te prions avec confiance : 
         garde-nous en sûreté sous ta protection, <span style="color: #b30000;">/</span> 
         et assure à ton Église une paix durable.`},
@@ -10923,7 +10941,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT ANTOINE-MARIE CLARET, évêque",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné à l’évêque saint Antoine-Marie Claret`},
-        {class:"indent1p", texte:`une charité et une patience admirables 
+        {class:"indentallp", texte:`une charité et une patience admirables 
         pour annoncer l’Évangile parmi les peuples ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, accorde-nous 
         de rechercher ce qui te plaît, <span style="color: #b30000;">/</span>`},
@@ -10941,7 +10959,7 @@ que tu préparais à la face des peuples.`}],
         il les a choisis et leur a donné une gloire éternelle.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu nous as conduits à la connaissance de ton nom`},
-        {class:"indent1p", texte:`par la prédication des bienheureux Apôtres ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par la prédication des bienheureux Apôtres ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’à l’intercession des saints Simon et Jude, 
         ton Église ne cesse de grandir <span style="color: #b30000;">/</span> 
         en accueillant toujours de nouveaux peuples de croyants.`},
@@ -10951,7 +10969,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En vénérant la gloire éternelle 
         des saints Apôtres Simon et Jude`},
-        {class:"indent1p", texte:`nous te supplions, Seigneur : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te supplions, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accueille nos prières <span style="color: #b30000;">/</span>
         et fais-nous participer dignement
         aux mystères que nous célébrons.`},
@@ -10980,7 +10998,7 @@ que tu préparais à la face des peuples.`}],
         ils en glorifient le Fils de Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         tu nous donnes de célébrer dans une même fête`},
-        {class:"indent1p", texte:`la gloire de tous les saints ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la gloire de tous les saints ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisqu’une telle multitude intercède pour nous, 
         accorde-nous ce que nous désirons, 
         l’abondance de ta miséricorde.`},
@@ -10990,7 +11008,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Daigne accepter, Seigneur, 
         l’offrande que nous te présentons`},
-        {class:"indent1p", texte:`en l’honneur de tous les saints ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en l’honneur de tous les saints ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous croyons qu’ils sont déjà dans la paix de l’immortalité, <span style="color: #b30000;">/</span> 
         accorde-nous d’éprouver aussi leur sollicitude 
         pour notre salut.`},
@@ -11003,7 +11021,7 @@ que tu préparais à la face des peuples.`}],
         car le royaume des Cieux est à eux !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu es admirable, Seigneur Dieu ; <span style="color: #b30000;">+</span> 
         tu es le seul saint,`},
-        {class:"indent1p", texte:`toi que nous adorons dans tous les saints ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`toi que nous adorons dans tous les saints ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous implorons ta grâce : 
         quand par elle nous serons parvenus à la sainteté 
         dans la plénitude de ton amour, <span style="color: #b30000;">/</span>`},
@@ -11055,7 +11073,7 @@ que tu préparais à la face des peuples.`}],
         et que brille pour eux la lumière sans fin.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu es la gloire de tes fidèles, tu es la vie des justes,`},
-        {class:"indent1p", texte:`et ton propre Fils nous a rachetés 
+        {class:"indentallp", texte:`et ton propre Fils nous a rachetés 
         par sa mort et sa résurrection ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`regarde avec bienveillance tes serviteurs défunts : <span style="color: #b30000;">/</span> 
         puisqu’ils ont cru au mystère de notre résurrection, 
@@ -11077,7 +11095,7 @@ que tu préparais à la face des peuples.`}],
         en compagnie des saints, car tu es bon, Seigneur.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Après avoir communié, Seigneur, 
         au sacrement de ton Fils unique,`},
-        {class:"indent1p", texte:`immolé pour nous et ressuscité dans la gloire, <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`immolé pour nous et ressuscité dans la gloire, <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`nous te supplions pour tes serviteurs défunts : <span style="color: #b30000;">*</span> 
         fais que, purifiés par le mystère pascal, <span style="color: #b30000;">/</span> 
         ils obtiennent la gloire que donne la résurrection à venir.`},
@@ -11093,7 +11111,7 @@ que tu préparais à la face des peuples.`}],
         par son Esprit qui habite en nous.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         ton Fils unique a triomphé de la mort,`},
-        {class:"indent1p", texte:`et tu l’as fait passer dans le royaume des Cieux ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et tu l’as fait passer dans le royaume des Cieux ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à tes serviteurs défunts 
         de partager sa victoire sur la mort <span style="color: #b30000;">/</span> 
         pour te contempler éternellement, 
@@ -11104,7 +11122,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille avec bonté, Seigneur, 
         l’offrande que nous te présentons`},
-        {class:"indent1p", texte:`pour tous ceux qui reposent dans le Christ : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour tous ceux qui reposent dans le Christ : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que cet incomparable sacrifice, 
         en les arrachant aux liens de la mort, <span style="color: #b30000;">/</span> 
         leur obtienne la vie éternelle.`},
@@ -11125,7 +11143,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT MARTIN DE PORRÈS, religieux",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as conduit saint Martin de Porrès`},
-        {class:"indent1p", texte:`jusqu’à la gloire du ciel 
+        {class:"indentallp", texte:`jusqu’à la gloire du ciel 
         par un chemin d’humilité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous de suivre son exemple, <span style="color: #b30000;">/</span> 
         pour mériter d’être élevés avec lui dans les cieux.`},
@@ -11154,7 +11172,7 @@ que tu préparais à la face des peuples.`}],
       ],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que la participation aux saints mystères, 
         nous t’en prions, Seigneur,`},
-        {class:"indent1p", texte:`nous donne la force d’âme <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`nous donne la force d’âme <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`qui rendit saint Charles 
         fidèle à sa mission et débordant de charité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -11174,7 +11192,7 @@ que tu préparais à la face des peuples.`}],
         et lui-même, Dieu avec eux, sera leur Dieu.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu bâtis la demeure éternelle de ta gloire`},
-        {class:"indent1p", texte:`avec des pierres vivantes et choisies ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`avec des pierres vivantes et choisies ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`répands sur ton Église 
         l’abondance de la grâce que tu lui as donné : <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`que le peuple de tes fidèles ne cesse de grandir 
@@ -11195,7 +11213,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur, l’offrande que nous te présentons ; <span style="color: #b30000;">*</span> 
         et donne à ceux qui te prient`},
-        {class:"indent1p", texte:`d’être fortifiés par tes sacrements <span style="color: #b30000;">/</span> 
+        {class:"indentallp", texte:`d’être fortifiés par tes sacrements <span style="color: #b30000;">/</span> 
         et de voir leurs demandes exaucées.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
@@ -11205,7 +11223,7 @@ que tu préparais à la face des peuples.`}],
         pour devenir le sacerdoce saint.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu que ton Église de la terre`},
-        {class:"indent1p", texte:`préfigure pour nous la Jérusalem d’en haut ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`préfigure pour nous la Jérusalem d’en haut ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions :`},
         {class:"indent1all", texte:`puisque nous avons participé à ce sacrement, 
         fais de nous le temple de ta grâce <span style="color: #b30000;">/</span> 
@@ -11222,7 +11240,7 @@ que tu préparais à la face des peuples.`}],
         pour que lui appartienne à jamais la dignité du sacerdoce.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu ne laisses pas les puissances de la Mort`},
-        {class:"indent1p", texte:`l’emporter sur ton Église, 
+        {class:"indentallp", texte:`l’emporter sur ton Église, 
         fondée sur le roc inébranlable de l’apôtre Pierre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à l’intercession du bienheureux pape Léon, 
         donne-lui de rester ferme dans ta vérité, <span style="color: #b30000;">/</span> 
@@ -11262,7 +11280,7 @@ que tu préparais à la face des peuples.`}],
         qui agira selon mon coeur et mon esprit, dit le Seigneur.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as été glorifié par la vie et par la mort`},
-        {class:"indent1p", texte:`du bienheureux évêque Martin ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`du bienheureux évêque Martin ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`renouvelle en nos coeurs les merveilles de ta grâce, <span style="color: #b30000;">/</span> 
         pour que ni la mort, ni la vie 
         ne puissent nous séparer de ton amour.`},
@@ -11272,7 +11290,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Sanctifie cette offrande, Seigneur Dieu ; <span style="color: #b30000;">+</span> 
         heureux de fêter saint Martin,`},
-        {class:"indent1p", texte:`nous te la présentons : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te la présentons : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’elle nous aide toujours à marcher vers toi <span style="color: #b30000;">/</span> 
         à travers les épreuves et les joies de cette vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -11299,7 +11317,7 @@ que tu préparais à la face des peuples.`}],
         car ils avaient toujours un même esprit et une même foi.`}],
     collecte: [{class:"grandelettrine", texte:`Réveille en ton Église, Seigneur, 
         l’Esprit dont fut rempli saint Josaphat,`},
-        {class:"indent1p", texte:`vrai berger qui donna sa vie pour ses brebis ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`vrai berger qui donna sa vie pour ses brebis ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`permets qu’avec l’appui de sa prière, 
         et fortifiés par le même Esprit, <span style="color: #b30000;">/</span>
         nous n’ayons pas peur de donner notre vie pour nos frères.`},
@@ -11330,7 +11348,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT ALBERT LE GRAND, évêque et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as voulu que l’évêque saint Albert`},
-        {class:"indent1p", texte:`mérite le nom de grand
+        {class:"indentallp", texte:`mérite le nom de grand
         pour avoir concilié sagesse humaine et foi divine ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à l’école d’un tel maître, 
         de parvenir, à travers nos progrès dans les sciences, <span style="color: #b30000;">/</span> 
@@ -11345,7 +11363,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE MARGUERITE D’ÉCOSSE",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu rendis sainte Marguerite d’Écosse`},
-        {class:"indent1p", texte:`admirable par sa charité rayonnante envers les pauvres ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`admirable par sa charité rayonnante envers les pauvres ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à son exemple et par son intercession, <span style="color: #b30000;">/</span>
         d’être au milieu des hommes un reflet de ta bonté.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -11357,7 +11375,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE GERTRUDE, vierge",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as aimé la demeure que tu t’es préparée`},
-        {class:"indent1p", texte:`dans le coeur de sainte Gertrude ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`dans le coeur de sainte Gertrude ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession,`},
         {class:"indent1all", texte:`dissipe, en ta bonté, les ténèbres de nos coeurs, <span style="color: #b30000;">/</span> 
         pour nous faire goûter la joie 
@@ -11371,7 +11389,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE ÉLISABETH DE HONGRIE",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as donné à sainte Élisabeth de Hongrie`},
-        {class:"indent1p", texte:`de reconnaître et de vénérer le Christ dans les pauvres ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de reconnaître et de vénérer le Christ dans les pauvres ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession, 
         de servir avec une inépuisable charité <span style="color: #b30000;">/</span> <span style="color: #b30000;">*</span>
         ceux qui sont dans le besoin et dans l’épreuve.`},
@@ -11388,7 +11406,7 @@ que tu préparais à la face des peuples.`}],
         ainsi, les peuples te rendront grâce, toujours et à jamais !`}],
     collecte: [{class:"grandelettrine", texte:`Garde ton Église, Seigneur, 
         sous la protection des apôtres Pierre et Paul ; <span style="color: #b30000;">*</span>`},
-        {class:"indent1p", texte:`puisqu’ils l’ont initiée à la connaissance des réalités divines, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`puisqu’ils l’ont initiée à la connaissance des réalités divines, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`qu’ils obtiennent pour elle, jusqu’à la fin des temps, 
         une grâce toujours plus abondante.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -11417,7 +11435,7 @@ que tu préparais à la face des peuples.`}],
     titre: "PRÉSENTATION DE LA VIERGE MARIE",
     collecte: [{class:"grandelettrine", texte:`Puisque nous célébrons la glorieuse mémoire 
         de la très sainte Vierge Marie, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous t’en prions, Seigneur, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, Seigneur, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession, <span style="color: #b30000;">/</span> 
         d’avoir part, nous aussi, à la plénitude de ta grâce.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -11429,7 +11447,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE CÉCILE, vierge et martyre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu nous réjouis chaque année`},
-        {class:"indent1p", texte:`par la célébration de sainte Cécile, ta servante ;`},
+        {class:"indentallp", texte:`par la célébration de sainte Cécile, ta servante ;`},
         {class:"indent1all", texte:`nous t’en prions :`},
         {class:"indent1all", texte:`que le récit de sa vie, transmis avec ferveur, <span style="color: #b30000;">*</span> 
         nous invite à l’imiter <span style="color: #b30000;">/</span> 
@@ -11457,7 +11475,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT COLOMBAN, abbé",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         en saint Colomban`},
-        {class:"indent1p", texte:`tu as réuni de façon admirable 
+        {class:"indentallp", texte:`tu as réuni de façon admirable 
         la mission d’annoncer l’Évangile 
         et l’attachement à la vie monastique ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’à sa prière et à son exemple, 
@@ -11491,7 +11509,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois, Père très saint, 
         les offrandes que nous te présentons`},
-        {class:"indent1p", texte:`en célébrant les saints martyrs du Vietnam, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en célébrant les saints martyrs du Vietnam, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`pour qu’au milieu des difficultés de notre vie, 
         nous puissions être trouvés toujours fidèles <span style="color: #b30000;">/</span> 
         et nous offrir à toi en sacrifice qui te plaise.`},
@@ -11502,7 +11520,7 @@ que tu préparais à la face des peuples.`}],
         car le royaume des Cieux est à eux !`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nourris et fortifiés par un même pain
         en la fête de tes saints martyrs,`},
-        {class:"indent1p", texte:`nous te supplions, Seigneur : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te supplions, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`garde-nous unis dans ton amour, <span style="color: #b30000;">/</span>
         afin que nous obtenions la récompense éternelle, 
         promise à ceux qui souffrent pour toi.`},
@@ -11514,7 +11532,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE CATHERINE D’ALEXANDRIE, vierge et martyre",
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
         tu as donné en exemple à ton peuple`},
-        {class:"indent1p", texte:`la bienheureuse Catherine d’Alexandrie, 
+        {class:"indentallp", texte:`la bienheureuse Catherine d’Alexandrie, 
         vierge et victorieuse dans le martyre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, fortifie notre foi et notre courage, <span style="color: #b30000;">/</span> 
         et accorde-nous de travailler avec empressement
@@ -11541,7 +11559,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span> 
         en la fête du bienheureux André,`},
-        {class:"indent1p", texte:`accorde-nous de te plaire`},
+        {class:"indentallp", texte:`accorde-nous de te plaire`},
         {class:"indent1all", texte:`par les offrandes que nous t’apportons : 
         accueille-les pour que nous en recevions la vie.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -11568,7 +11586,7 @@ que tu préparais à la face des peuples.`}],
         je proclamerai ton nom devant mes frères.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         par la prédication de saint François Xavier,`},
-        {class:"indent1p", texte:`tu as acquis pour toi des peuples nombreux ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as acquis pour toi des peuples nombreux ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde aux fidèles d’avoir une ardeur aussi vive pour la foi, <span style="color: #b30000;">/</span> 
         et à la sainte Église la joie d’avoir en tout lieu <span style="color: #b30000;">/</span> 
         une descendance innombrable.`},
@@ -11633,7 +11651,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `il l’a rempli de l’esprit de sagesse et d’intelligence, et l’a revêtu de gloire.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as fait du bienheureux évêque Ambroise`},
-        {class:"indent1p", texte:`un docteur de la foi catholique 
+        {class:"indentallp", texte:`un docteur de la foi catholique 
         et un modèle de courage digne des Apôtres ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`suscite en ton Église des hommes selon ton coeur, <span style="color: #b30000;">/</span>
         qui la gouvernent avec courage et sagesse.`},
@@ -11669,7 +11687,7 @@ que tu préparais à la face des peuples.`}],
         comme la fiancée que parent ses joyaux.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as préparé à ton Fils une demeure digne de lui`},
-        {class:"indent1p", texte:`par la Conception immaculée de la Vierge, <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`par la Conception immaculée de la Vierge, <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`que tu as préservée de tout péché 
         par une grâce venant déjà de la mort de ton Fils ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à son intercession, 
@@ -11681,7 +11699,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille avec bienveillance, Seigneur, 
         le sacrifice du salut que nous t’offrons en célébrant`},
-        {class:"indent1p", texte:`la Conception immaculée de la bienheureuse Vierge Marie ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la Conception immaculée de la bienheureuse Vierge Marie ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous reconnaissons 
         que la prévenance de ta grâce 
         l’a gardée pure de tout péché, <span style="color: #b30000;">/</span>`},
@@ -11695,7 +11713,7 @@ que tu préparais à la face des peuples.`}],
         le Christ, notre Dieu.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que notre participation à ces sacrements, 
         Seigneur notre Dieu,`},
-        {class:"indent1p", texte:`guérisse en nous les blessures de la faute originelle <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`guérisse en nous les blessures de la faute originelle <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`dont tu as préservé de manière unique la bienheureuse Marie <span style="color: #b30000;">/</span> 
         en sa conception immaculée.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -11706,7 +11724,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT JUAN DIEGO CUAUHTLATOATZIN",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         par saint Juan Diego`},
-        {class:"indent1p", texte:`tu as montré la tendresse de la très sainte Vierge Marie 
+        {class:"indentallp", texte:`tu as montré la tendresse de la très sainte Vierge Marie 
         à l’égard de ton peuple ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession, 
         d’accomplir toujours ta volonté <span style="color: #b30000;">/</span> 
@@ -11720,7 +11738,7 @@ que tu préparais à la face des peuples.`}],
     titre: "Bienheureuse Vierge Marie de Lorette",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         afin d’accomplir les promesses faites à nos pères,`},
-        {class:"indent1p", texte:`tu as choisi la bienheureuse Vierge Marie,
+        {class:"indentallp", texte:`tu as choisi la bienheureuse Vierge Marie,
         pour qu’elle devienne la Mère du Sauveur ;`},
         {class:"indent1all", texte:`accorde-nous de suivre l’exemple 
         de celle qui te fut agréable par son humilité 
@@ -11744,7 +11762,7 @@ que tu préparais à la face des peuples.`}],
     titre: "BIENHEUREUSE VIERGE MARIE DE GUADALOUPE",
     collecte: [{class:"grandelettrine", texte:`Dieu, Père des miséricordes, <span style="color: #b30000;">+</span> 
         tu as placé ton peuple`},
-        {class:"indent1p", texte:`sous le patronage particulier 
+        {class:"indentallp", texte:`sous le patronage particulier 
         de la Mère très sainte de ton Fils : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde à tous ceux qui invoquent Notre-Dame de Guadaloupe 
         de travailler avec une foi plus vive 
@@ -11759,7 +11777,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINTE LUCIE, vierge et martyre",
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">+</span> 
         que sainte Lucie, vierge et martyre,`},
-        {class:"indent1p", texte:`intercède pour nous dans la gloire 
+        {class:"indentallp", texte:`intercède pour nous dans la gloire 
         et qu’elle ranime notre ferveur, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`pour que nous chantions aujourd’hui sa naissance au ciel <span style="color: #b30000;">/</span> 
         et puissions contempler les réalités éternelles.`},
@@ -11777,7 +11795,7 @@ que tu préparais à la face des peuples.`}],
         et moi pour le monde.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu inspiras au prêtre saint Jean`},
-        {class:"indent1p", texte:`le renoncement total à lui-même 
+        {class:"indentallp", texte:`le renoncement total à lui-même 
         et un extraordinaire amour de la croix ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de suivre fidèlement son exemple, <span style="color: #b30000;">/</span> 
         et de parvenir ainsi à la contemplation éternelle de ta gloire.`},
@@ -11798,7 +11816,7 @@ que tu préparais à la face des peuples.`}],
         et qu’il me suive.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         en saint Jean tu as fait resplendir de manière admirable`},
-        {class:"indent1p", texte:`le mystère de la croix ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`le mystère de la croix ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous sommes fortifiés par ce sacrifice, 
         accorde-nous de rester fidèlement unis au Christ, <span style="color: #b30000;">/</span>
         et de travailler dans l’Église au salut de tous.`},
@@ -11810,7 +11828,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT PIERRE CANISIUS, prêtre et docteur de l’Église",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         pour sauvegarder la foi catholique,`},
-        {class:"indent1p", texte:`tu as soutenu le courage et la science 
+        {class:"indentallp", texte:`tu as soutenu le courage et la science 
         du prêtre saint Pierre Canisius ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, accorde à ceux qui cherchent la vérité 
         d’avoir le bonheur de te trouver, toi, le seul Dieu, <span style="color: #b30000;">/</span>`},
@@ -11825,7 +11843,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT JEAN DE KENTY, prêtre",
     collecte: [{class:"grandelettrine", texte:`Accorde-nous, Dieu tout-puissant, 
         de progresser dans l’intelligence de ton mystère,`},
-        {class:"indent1p", texte:`à l’exemple du prêtre saint Jean de Kenty, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à l’exemple du prêtre saint Jean de Kenty, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et de trouver auprès de toi le pardon <span style="color: #b30000;">/</span> 
         après avoir fait preuve de miséricorde envers tous.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -11849,7 +11867,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur : <span style="color: #b30000;">*</span> 
         accepte les offrandes`},
-        {class:"indent1p", texte:`que nous te présentons de grand coeur <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`que nous te présentons de grand coeur <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`en ce jour où nous y invite la glorieuse mémoire 
         du bienheureux Étienne, ton martyr.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -11879,7 +11897,7 @@ que tu préparais à la face des peuples.`}],
         et l’a revêtu de gloire.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu nous as ouvert les profondeurs ineffables de ton Verbe`},
-        {class:"indent1p", texte:`grâce au bienheureux apôtre Jean ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`grâce au bienheureux apôtre Jean ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t’en prions, accorde-nous 
         de saisir avec une intelligence éclairée <span style="color: #b30000;">/</span> 
         la parole qu’il a si bien fait retentir à nos oreilles.`},
@@ -11889,7 +11907,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Sanctifie, Seigneur, 
         les offrandes que nous te présentons ; <span style="color: #b30000;">*</span>`},
-        {class:"indent1p", texte:`tandis que nous participons à ce repas eucharistique,`},
+        {class:"indentallp", texte:`tandis que nous participons à ce repas eucharistique,`},
         {class:"indent1all", texte:`accorde-nous de puiser à la même source 
         les secrets du Verbe éternel <span style="color: #b30000;">/</span> 
         que tu révélas à ton apôtre Jean 
@@ -11902,7 +11920,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Tous, nous avons eu part à sa plénitude.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">*</span> 
         que le Verbe fait chair,`},
-        {class:"indent1p", texte:`proclamé par le bienheureux apôtre Jean, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`proclamé par le bienheureux apôtre Jean, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`demeure toujours en nous 
         grâce au sacrement que nous venons de célébrer.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
@@ -11917,7 +11935,7 @@ que tu préparais à la face des peuples.`}],
         et ne cessent de chanter : Gloire à toi, Seigneur !`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         aujourd’hui, sans parler mais en mourant,`},
-        {class:"indent1p", texte:`les martyrs innocents ont proclamé ta louange ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`les martyrs innocents ont proclamé ta louange ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que notre vie tout entière <span style="color: #b30000;">/</span> 
         témoigne de la foi que notre bouche proclame.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -11949,7 +11967,7 @@ que tu préparais à la face des peuples.`}],
     titre: "SAINT THOMAS BECKET, évêque et martyr",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> tu as donné à saint Thomas Becket, 
         ton martyr, une telle grandeur d’âme`},
-        {class:"indent1p", texte:`qu’il sacrifia sa vie pour la justice ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`qu’il sacrifia sa vie pour la justice ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession, 
         de perdre, pour le Christ, notre vie en ce monde <span style="color: #b30000;">/</span> 
         afin de pouvoir la trouver dans le ciel.`},
@@ -11981,10 +11999,10 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Dieu est admirable dans son temple saint,
         le Dieu d'Israël,`},
         {class:"indent1all", texte: `c’est lui qui donne à son peuple force et puissance.
-        Béni soit Dieu <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span> !`}],
+        Béni soit Dieu <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span> !`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         chaque année tu fais revivre pour nous`},
-        {class:"indent1p", texte:`le jour où cette église a été consacrée ;`},
+        {class:"indentallp", texte:`le jour où cette église a été consacrée ;`},
         {class:"indent1all", texte:`écoute les prières de ton peuple:`},
         {class:"indent1all", texte:`fais que l'on te serve toujours en ce lieu
         dans la pureté du coeur <span style="color: #b30000;">/</span>
@@ -11995,7 +12013,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Alors que nous rappelons devant toi, Seigneur,
         le jour où tu as rempli ta maison`},
-        {class:"indent1p", texte:`de gloire et de sainteté, <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`de gloire et de sainteté, <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`nous te prions de nous transformer nous-mêmes <span style="color: #b30000;">/</span>
         en offrandes qui te soient toujours agréables.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -12004,7 +12022,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Vous êtes un sanctuaire de Dieu,
         et l'Esprit de Dieu habite en vous.`},
         {class:"indent1all", texte: `Le sanctuaire de Dieu est saint,
-        et ce sanctuaire, c'est vous <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et ce sanctuaire, c'est vous <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Accorde au peuple qui t'est consacré, Seigneur,
         de recueillir les fruits et la joie de ta bénédiction, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin qu'ayant pris part à la liturgie de cette fête, <span style="color: #b30000;">/</span>
@@ -12018,15 +12036,15 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `La Ville sainte, la Jérusalem nouvelle,
         je l'ai vue qui descendait du ciel, d'auprès de Dieu,
-        prête pour les noces, comme une épouse parée pour son mari <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        prête pour les noces, comme une épouse parée pour son mari <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Voici la demeure de Dieu avec les hommes ;
         il demeurera avec eux,`},
         {class:"indent1all", texte: `et ils seront son peuple,
-        et lui-même, Dieu avec eux, sera leur Dieu <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et lui-même, Dieu avec eux, sera leur Dieu <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu bâtis la demeure éternelle de ta gloire`},
-        {class:"indent1p", texte:`avec des pierres vivantes et choisies ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`avec des pierres vivantes et choisies ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`répands sur ton Église
         l'abondance de la grâce que tu lui as donnée : <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`que le peuple de tes fidèles ne cesse de grandir
@@ -12055,14 +12073,14 @@ que tu préparais à la face des peuples.`}],
     antienne_communion: [
         {class:"indent1all", texte:`Comme pierres vivantes,
         entrez dans la construction de la demeure spirituelle,
-        pour devenir le sacerdoce saint <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        pour devenir le sacerdoce saint <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte:`Ma maison sera appelée maison de prière, dit le Seigneur,`},
         {class:"indent1all", texte: `là, quiconque demande reçoit ; qui cherche trouve ;
-        à qui frappe, on ouvrira <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        à qui frappe, on ouvrira <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as voulu que ton Église de la terre`},
-        {class:"indent1p", texte:`préfigure pour nous la Jérusalem d'en haut ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`préfigure pour nous la Jérusalem d'en haut ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t'en prions :
         puisque nous avons participé à ce sacrement,
         fais de nous le temple de ta grâce <span style="color: #b30000;">/</span>
@@ -12071,7 +12089,7 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "BVMTO_I": {
+  "CVMTO_I": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - I. POUR LE TEMPS ORDINAIRE",
     antienne_ouverture: [
         {class:"indent1all", texte: `Nous te saluons, Mère très sainte :`},
@@ -12079,7 +12097,7 @@ que tu préparais à la face des peuples.`}],
         pour les siècles sans fin.`}],
     collecte: [{class:"grandelettrine", texte:`À nous qui te servons, Seigneur Dieu,
         donne la joie d'avoir toujours`},
-        {class:"indent1p", texte:`la santé de l'esprit et du corps, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la santé de l'esprit et du corps, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et, par la glorieuse intercession
         de la bienheureuse Marie toujours vierge,
         libère-nous des tristesses du temps présent, <span style="color: #b30000;">/</span>
@@ -12090,7 +12108,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t’en prions, Seigneur, <span style="color: #b30000;">+</span>
         accueille les supplications de ton peuple`},
-        {class:"indent1p", texte:`quand il te présente ce sacrifice ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`quand il te présente ce sacrifice ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu'à l'intercession de la bienheureuse Marie,
         Mère de ton Fils, <span style="color: #b30000;">/</span>
         nulle attente ne soit déçue,
@@ -12099,7 +12117,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Dans son amour pour l'humanité,
         que ton Fils unique vienne à notre secours, Seigneur ; <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`sa naissance n'a pas altéré
+        {class:"indentallp", texte:`sa naissance n'a pas altéré
         mais consacré l'intégrité virginale de sa mère ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu'il nous délivre de nos péchés <span style="color: #b30000;">/</span>
         et te rende agréable cette offrande.`},
@@ -12118,7 +12136,7 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "BVMTO_II": {
+  "CVMTO_II": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - II. POUR LE TEMPS ORDINAIRE",
     antienne_ouverture: [
         {class:"indent1all", texte: `Bienheureuse es-tu, Vierge Marie :
@@ -12153,7 +12171,7 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "BVMTO_III": {
+  "CVMTO_III": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - III. POUR LE TEMPS ORDINAIRE",
     antienne_ouverture: [
         {class:"indent1all", texte: `Bénie sois-tu, Vierge Marie, par le Dieu Très-Haut,
@@ -12162,7 +12180,7 @@ que tu préparais à la face des peuples.`}],
         ne s'effacera de la mémoire des hommes.`}],
     collecte: [{class:"grandelettrine", texte:`Puisque nous célébrons la glorieuse mémoire
         de la très sainte Vierge Marie, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`nous t’en prions, Seigneur, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous t’en prions, Seigneur, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à son intercession, <span style="color: #b30000;">/</span>
         d'avoir part, nous aussi, à la plénitude de ta grâce.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -12171,7 +12189,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En célébrant dans la joie la Mère de ton Fils,
         nous t'offrons, Seigneur, ce sacrifice de louange,`},
-        {class:"indent1p", texte:`et nous t'en prions : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous t'en prions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que, par cet échange très saint, <span style="color: #b30000;">/</span>
         nous entrions toujours davantage
         dans l'éternelle rédemption.`},
@@ -12190,7 +12208,7 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "BVMTO_IV": {
+  "CVMTO_IV": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - IV. POUR LE TEMPS ORDINAIRE",
     antienne_ouverture: [
         {class:"indent1all", texte: `Les plus riches du peuple quêteront ton visage :
@@ -12228,7 +12246,7 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "BVMTO_V": {
+  "CVMTO_V": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - V. POUR LE TEMPS ORDINAIRE",
     antienne_ouverture: [
         {class:"indent1all", texte: `Je te salue, Marie, comblée de grâce,
@@ -12237,7 +12255,7 @@ que tu préparais à la face des peuples.`}],
         et le fruit de tes entrailles est béni.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as choisi la bienheureuse Vierge Marie,`},
-        {class:"indent1p", texte:`humble parmi les humbles, pauvre parmi les pauvres,
+        {class:"indentallp", texte:`humble parmi les humbles, pauvre parmi les pauvres,
         pour être la Mère du Sauveur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t'en prions, accorde-nous, à son exemple,
         de t'offrir l'hommage d'une foi sincère <span style="color: #b30000;">/</span>
@@ -12262,7 +12280,7 @@ que tu préparais à la face des peuples.`}],
         car le Puissant fit pour toi des merveilles.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Accorde, Seigneur, à ton Église,
         fortifiée par la puissance de ce sacrement,`},
-        {class:"indent1p", texte:`de courir avec allégresse sur les chemins de l'Évangile ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de courir avec allégresse sur les chemins de l'Évangile ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu'elle parvienne un jour
         à la bienheureuse vision de paix, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`dont la Vierge Marie, ton humble servante,
@@ -12271,7 +12289,7 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "BVMTO_VI": {
+  "CVMTO_VI": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - VI. POUR LE TEMPS ORDINAIRE",
     antienne_ouverture: [
         {class:"indent1all", texte: `Sur l'arbre de Jessé, un rameau a fleuri :
@@ -12280,7 +12298,7 @@ que tu préparais à la face des peuples.`}],
         réconciliant en lui la terre et le ciel.`}],
     collecte: [{class:"grandelettrine", texte:`Que vienne à notre aide,
         Seigneur, nous t'en prions,`},
-        {class:"indent1p", texte:`l'admirable intercession
+        {class:"indentallp", texte:`l'admirable intercession
         de la bienheureuse Marie toujours vierge ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu'elle nous obtienne la joie
         de vivre dans la paix que tu nous donnes, <span style="color: #b30000;">/</span>
@@ -12291,7 +12309,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous te présentons, Seigneur,
         ces offrandes de réconciliation et de louange,`},
-        {class:"indent1p", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu’en imitant l’exemple de la bienheureuse Vierge Marie, <span style="color: #b30000;">/</span>
         nous puissions nous offrir à toi
         en sacrifice saint, capable de te plaire.`},
@@ -12302,20 +12320,20 @@ que tu préparais à la face des peuples.`}],
         oui, Dieu te bénit pour toujours.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur, toi qui nous as nourris du pain du ciel, <span style="color: #b30000;">+</span>
         accorde-nous d'imiter la bienheureuse Vierge Marie,`},
-        {class:"indent1p", texte:`en te servant par une vie sans tache, <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`en te servant par une vie sans tache, <span style="color: #b30000;">/</span>
         en te magnifiant avec elle dans une louange sincère.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
-  "BVMTO_VII": {
+  "CVMTO_VII": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - VII. POUR LE TEMPS ORDINAIRE",
     antienne_ouverture: [
         {class:"indent1all", texte: `Exulte mon esprit en Dieu, mon Sauveur !
         Il s'est penché sur son humble servante.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as voulu choisir la bienheureuse Marie`},
-        {class:"indent1p", texte:`comme sanctuaire virginal et demeure de ton Verbe ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`comme sanctuaire virginal et demeure de ton Verbe ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous le refuge de sa protection, <span style="color: #b30000;">/</span>
         et nous pourrons l'honorer d'un coeur joyeux.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -12340,7 +12358,7 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "BVMTO_VIII": {
+  "CVMTO_VIII": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - VIII. POUR LE TEMPS ORDINAIRE",
     antienne_ouverture: [
         {class:"indent1all", texte: `Heureuse es-tu, sainte Vierge Marie,
@@ -12349,7 +12367,7 @@ que tu préparais à la face des peuples.`}],
         il est notre salut et notre rédemption.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t'en prions, Dieu tout-puissant : <span style="color: #b30000;">+</span>
         puisque tes fidèles sont heureux`},
-        {class:"indent1p", texte:`d'être sous la protection de Marie, la Vierge très sainte,`},
+        {class:"indentallp", texte:`d'être sous la protection de Marie, la Vierge très sainte,`},
         {class:"indent1all", texte:`accorde-leur, par sa maternelle intercession,
         d'être délivrés de tout mal sur la terre <span style="color: #b30000;">/</span>
         et conduits aux joies éternelles dans le ciel.`},
@@ -12359,7 +12377,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En la mémoire de la bienheureuse Marie, Mère de Dieu, <span style="color: #b30000;">+</span>
         regarde, Seigneur, les prières et les offrandes`},
-        {class:"indent1p", texte:`présentées par tes fidèles : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`présentées par tes fidèles : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu'elles soient agréables à tes yeux, <span style="color: #b30000;">/</span>
         et nous obtiennent le secours de ta miséricorde.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -12377,7 +12395,7 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "BVMTA": {
+  "CVMTA": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - POUR LE TEMPS DE L'AVENT",
     antienne_ouverture: [
         {class:"indent1all", texte: `Cieux, distillez d'en haut votre rosée,
@@ -12390,7 +12408,7 @@ que tu préparais à la face des peuples.`}],
         il sera appelé Fils du Très-Haut. »`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as voulu qu'à l'annonce de l'Ange,`},
-        {class:"indent1p", texte:`ton Verbe prît chair dans le sein de la Vierge Marie ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`ton Verbe prît chair dans le sein de la Vierge Marie ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`réponds à nos supplications :
         puisque nous la croyons vraiment Mère de Dieu, <span style="color: #b30000;">/</span>
         fais que nous trouvions secours dans sa prière auprès de toi.`},
@@ -12400,7 +12418,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         afin d'accomplir les promesses faites à nos pères,`},
-        {class:"indent1p", texte:`tu as choisi la bienheureuse Vierge Marie,
+        {class:"indentallp", texte:`tu as choisi la bienheureuse Vierge Marie,
         pour qu'elle devienne la Mère du Sauveur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de suivre l'exemple
         de celle qui te fut agréable par son humilité <span style="color: #b30000;">/</span>
@@ -12411,7 +12429,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur, les dons que nous te présentons, <span style="color: #b30000;">+</span>
         et, par ta puissance,`},
-        {class:"indent1p", texte:`fais qu'ils deviennent le sacrement du salut, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`fais qu'ils deviennent le sacrement du salut, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`dans lequel les sacrifices de nos pères
         trouvent leur accomplissement, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`lorsque l'Agneau véritable est offert,
@@ -12425,14 +12443,14 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `on lui donnera le nom d'Emmanuel.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Puissent les mystères que nous avons reçus,
         Seigneur notre Dieu,`},
-        {class:"indent1p", texte:`manifester toujours en nous ta miséricorde,`},
+        {class:"indentallp", texte:`manifester toujours en nous ta miséricorde,`},
         {class:"indent1all", texte:`pour que, célébrant fidèlement la mémoire de sa Mère, <span style="color: #b30000;">/</span>
         nous soyons sauvés par l'incarnation de ton Fils.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
     ],
   },
 
-  "BVMTN": {
+  "CVMTN": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - POUR LE TEMPS DE NOEL",
     antienne_ouverture: [
         {class:"indent1all", texte: `La jeune fille a enfanté le Roi dont le nom est éternel ;
@@ -12444,7 +12462,7 @@ que tu préparais à la face des peuples.`}],
         tu l'as reçu dans tes entrailles quand il s'est fait homme.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par la virginité féconde de la bienheureuse Marie,`},
-        {class:"indent1p", texte:`tu as offert au genre humain les bienfaits du salut éternel ;`},
+        {class:"indentallp", texte:`tu as offert au genre humain les bienfaits du salut éternel ;`},
         {class:"indent1all", texte:`accorde-nous d'éprouver qu'intercède en notre faveur
         celle qui nous permit d'accueillir l'auteur de la vie, <span style="color: #b30000;">/</span>
         Jésus Christ, ton Fils, notre Seigneur.`},
@@ -12453,7 +12471,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as voulu que le Verbe engendré de toute éternité`},
-        {class:"indent1p", texte:`naisse du sein de la Vierge ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`naisse du sein de la Vierge ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par l'intercession de la bienheureuse Marie, nous te prions :
         fais que le Verbe illumine nos ténèbres
         par la splendeur de sa présence, <span style="color: #b30000;">/</span>
@@ -12463,7 +12481,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En célébrant les jours bénis que tu as consacrés
         par la naissance, dans le cours du temps,`},
-        {class:"indent1p", texte:`de ton Fils unique
+        {class:"indentallp", texte:`de ton Fils unique
         et son enfantement par la Vierge Marie,`},
         {class:"indent1all", texte:`nous te prions, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que cette offrande nous sanctifie <span style="color: #b30000;">/</span>
@@ -12482,14 +12500,14 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "BVMTP": {
+  "CVMTP": {
     titre: "COMMUN DE LA BIENHEUREUSE VIERGE MARIE - POUR LE TEMPS PASCAL",
     antienne_ouverture: [
         {class:"indent1all", texte: `Tu as changé mon deuil en une danse ;
         Seigneur, tu m'as comblée de joie, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par la résurrection de ton Fils, notre Seigneur Jésus, le Christ,`},
-        {class:"indent1p", texte:`tu as voulu donner la joie au monde : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as voulu donner la joie au monde : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par sa Mère, la Vierge Marie, <span style="color: #b30000;">/</span>
         d'obtenir le bonheur de la vie éternelle.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -12498,7 +12516,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois, Père très saint, l'humble offrande
         que nous te présentons dans la joie,`},
-        {class:"indent1p", texte:`en célébrant la mémoire de la bienheureuse Vierge Marie ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en célébrant la mémoire de la bienheureuse Vierge Marie ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu'en nous unissant au sacrifice du Christ,
         nous recevions la consolation dès maintenant <span style="color: #b30000;">/</span>
         et le salut pour l'éternité.`},
@@ -12540,7 +12558,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Reçois, Père très saint,
         les offrandes que nous te présentons`},
-        {class:"indent1p", texte:`en faisant mémoire de tes saints martyrs ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en faisant mémoire de tes saints martyrs ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde aux serviteurs que nous sommes
         d'être inébranlables <span style="color: #b30000;">/</span>
         dans la confession de ton nom.`},
@@ -12555,7 +12573,7 @@ que tu préparais à la face des peuples.`}],
         ils sont morts pour le Christ et vivent à jamais.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         en tes saints martyrs`},
-        {class:"indent1p", texte:`tu as fait resplendir de manière admirable
+        {class:"indentallp", texte:`tu as fait resplendir de manière admirable
         le mystère de la croix ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous sommes fortifiés par ce sacrifice,
         accorde-nous de rester fidèlement unis au Christ, <span style="color: #b30000;">/</span>
@@ -12578,7 +12596,7 @@ que tu préparais à la face des peuples.`}],
         et mérité la couronne éternelle.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu as donné à tes saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`la grâce de souffrir pour le Christ ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la grâce de souffrir pour le Christ ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde aussi ton secours à notre fragilité,
         afin qu'en imitant ces martyrs
         qui n'ont pas hésité à mourir pour toi, <span style="color: #b30000;">/</span>
@@ -12590,7 +12608,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En célébrant le témoignage de tes martyrs,
         qui est d'un grand prix à tes yeux,`},
-        {class:"indent1p", texte:`nous te supplions, Seigneur ;`},
+        {class:"indentallp", texte:`nous te supplions, Seigneur ;`},
         {class:"indent1all", texte:`accepte le sacrifice que nous te consacrons : <span style="color: #b30000;">/</span>
         qu'il te plaise, qu'il nous purifie de nos péchés
         et te rende agréables les demandes de tes serviteurs.`},
@@ -12604,7 +12622,7 @@ que tu préparais à la face des peuples.`}],
         ne craignez pas ceux qui vous persécutent.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nourris du pain du ciel,
         et devenus un seul corps dans le Christ,`},
-        {class:"indent1p", texte:`nous te prions, Seigneur : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te prions, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de n'être jamais séparés de son amour, <span style="color: #b30000;">/</span>
         mais, à l'exemple de tes saints martyrs <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,
         d'avoir le courage de tout surmonter
@@ -12625,7 +12643,7 @@ que tu préparais à la face des peuples.`}],
         car les élus de Dieu recevront grâce et paix.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur, tu as donné à nos frères
         la couronne du martyre : <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`quelle soit notre joie ;`},
+        {class:"indentallp", texte:`quelle soit notre joie ;`},
         {class:"indent1all", texte:`puisque nous croyons en toi,
         accorde-nous de grandir comme eux en vertu <span style="color: #b30000;">/</span>
         et d'être réconfortés par leur surabondante intercession.`},
@@ -12643,7 +12661,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accepte, nous t'en prions, Seigneur,
         les offrandes que ton peuple te présente`},
-        {class:"indent1p", texte:`pour célébrer la passion de tes saints martyrs ;`},
+        {class:"indentallp", texte:`pour célébrer la passion de tes saints martyrs ;`},
         {class:"indent1all", texte:`elles ont rendu les saints <span style="color: #b30000;">N.</span>et <span style="color: #b30000;">N.</span>
         courageux dans la persécution : <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`qu’elles nous obtiennent aussi d'être fermes dans l'adversité.`},
@@ -12677,7 +12695,7 @@ que tu préparais à la face des peuples.`}],
         car il y eut toujours en eux un seul esprit et une seule foi.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu nous réjouis chaque année`},
-        {class:"indent1p", texte:`en la fête des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en la fête des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tandis que nous célébrons leur naissance au ciel, <span style="color: #b30000;">/</span>
         accorde-nous d'imiter leur courage dans le martyre.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -12686,7 +12704,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par le don de ta grâce`},
-        {class:"indent1p", texte:`tu as conduit les saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> à une gloire incomparable ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as conduit les saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> à une gloire incomparable ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par les mérites et l'intercession des martyrs,
         accorde à tes serviteurs le pardon des péchés, <span style="color: #b30000;">/</span>
         et donne-leur d'être libérés de toute adversité.`},
@@ -12696,7 +12714,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous te présentons, Seigneur, ces offrandes en sacrifice
         pour célébrer la mémoire des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,`},
-        {class:"indent1p", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tu leur as donné de rayonner d'une foi sainte, <span style="color: #b30000;">/</span>
         accorde-nous largement le pardon et la paix.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -12710,7 +12728,7 @@ que tu préparais à la face des peuples.`}],
         sans pouvoir tuer l'âme, dit le Seigneur.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Par cette communion au sacrement du ciel,
         accorde-nous, Seigneur, les multiples richesses de ta grâce`},
-        {class:"indent1p", texte:`en la fête des saints martyrs <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en la fête des saints martyrs <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que leur courage au combat nous enseigne
         la fermeté dans la persévérance <span style="color: #b30000;">/</span>
         et la joie d'une sainte victoire.`},
@@ -12730,7 +12748,7 @@ que tu préparais à la face des peuples.`}],
         mais ils sont dans la paix.`}],
     collecte: [{class:"grandelettrine", texte:`Dans ta miséricorde, nous t'en prions, Seigneur,
         augmente en nous la foi : <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`elle fit la gloire de tes saints martyrs <span style="color: #b30000;">N.</span>et <span style="color: #b30000;">N.</span>
+        {class:"indentallp", texte:`elle fit la gloire de tes saints martyrs <span style="color: #b30000;">N.</span>et <span style="color: #b30000;">N.</span>
         qui la gardèrent jusqu'à verser leur sang ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que cette même foi vécue en vérité <span style="color: #b30000;">/</span>
         fasse de nous des justes.`},
@@ -12740,7 +12758,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Sur les offrandes que nous présentons pour le sacrifice,
         nous t'en prions, Seigneur,`},
-        {class:"indent1p", texte:`jette un regard favorable, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`jette un regard favorable, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`pour qu'à l'exemple des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,
         nous obtenions, par un amour fervent, <span style="color: #b30000;">/</span>
         ce que nous célébrons dans le mystère
@@ -12787,7 +12805,7 @@ que tu préparais à la face des peuples.`}],
         car la sagesse est plus puissante que tout.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu de puissance et de miséricorde, <span style="color: #b30000;">+</span>
         toi qui as donné à ton saint martyr <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`d'être vainqueur dans les supplices de sa passion, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`d'être vainqueur dans les supplices de sa passion, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, en ce jour où nous célébrons son triomphe, <span style="color: #b30000;">/</span>
         de rester, par ta protection, invincibles
         face aux pièges de l'Ennemi.`},
@@ -12840,7 +12858,7 @@ que tu préparais à la face des peuples.`}],
         en lui devenant semblable dans la mort.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu as donné à saint <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`de combattre jusqu'à la mort pour la justice ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de combattre jusqu'à la mort pour la justice ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à son intercession, accorde-nous
         de supporter par amour pour toi toutes les adversités, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et de mettre toute notre force à nous hâter vers toi,
@@ -12902,7 +12920,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         en toi la foi trouve sa constance,`},
-        {class:"indent1p", texte:`et la faiblesse la force ;`},
+        {class:"indentallp", texte:`et la faiblesse la force ;`},
         {class:"indent1all", texte:`par l’exemple et la prière des martyrs <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,
         fais-nous participer
         à la passion et à la résurrection de ton Fils unique, <span style="color: #b30000;">/</span>`},
@@ -12947,7 +12965,7 @@ que tu préparais à la face des peuples.`}],
         depuis la fondation du monde, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur, tu as donné à tes saints martyrs <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>
         de proclamer avec liberté`},
-        {class:"indent1p", texte:`la passion et la résurrection de ton Fils unique,
+        {class:"indentallp", texte:`la passion et la résurrection de ton Fils unique,
         et de répandre leur sang précieux par une mort glorieuse ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t'en prions : que la célébration de leur fête <span style="color: #b30000;">/</span>
         emplisse nos coeurs d'allégresse.`},
@@ -12992,7 +13010,7 @@ que tu préparais à la face des peuples.`}],
         victorieux par sa fidélité aux commandements du Seigneur, alléluia.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         pour le rayonnement de ton Église,`},
-        {class:"indent1p", texte:`tu as bien voulu honorer le bienheureux <span style="color: #b30000;">N.</span>
+        {class:"indentallp", texte:`tu as bien voulu honorer le bienheureux <span style="color: #b30000;">N.</span>
         de la victoire du martyre :`},
         {class:"indent1all", texte:`dans ta bienveillance, donne-nous de marcher sur ses traces
         en imitant comme lui la passion du Seigneur, <span style="color: #b30000;">/</span>
@@ -13021,7 +13039,7 @@ que tu préparais à la face des peuples.`}],
         la mort de ses amis les saints, alléluia.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dans la joie de ce jour de fête,
         nous avons reçu de toi, Seigneur, le don du ciel`},
-        {class:"indent1p", texte:`et nous te supplions : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te supplions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque, dans ce banquet divin,
         nous annonçons la mort de ton Fils, <span style="color: #b30000;">/</span>
         fais-nous participer avec les saints martyrs
@@ -13036,7 +13054,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Que la croix de notre Seigneur Jésus Christ
         soit notre seule fierté.`},
         {class:"indent1all", texte: `Le langage de la croix est puissance de Dieu
-        pour nous qui avons été sauvés <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        pour nous qui avons été sauvés <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu de puissance et de miséricorde,
         nous supplions ton infinie bonté : <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`par la prédication des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,
@@ -13058,12 +13076,12 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte:`Heureux ceux qui sont persécutés pour la justice,
-        car le royaume des Cieux est à eux <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        car le royaume des Cieux est à eux <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte:`Celui qui se déclarera pour moi devant les hommes,
         dit le Seigneur,`},
         {class:"indent1all", texte: `moi aussi, je me déclarerai pour lui
-        devant mon Père qui est aux cieux <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        devant mon Père qui est aux cieux <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu nous as rassasiés, Seigneur, des joies du ciel,
         et nous te supplions encore :`},
         {class:"indent1all", texte:`comme pour les saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,
@@ -13079,10 +13097,10 @@ que tu préparais à la face des peuples.`}],
     titre: "COMMUN DES MARTYRS - III. POUR LES MISSIONNAIRES MARTYRS A. Pour un missionnaire martyr",
     antienne_ouverture: [
         {class:"indent1all", texte: `C'est pour l'oeuvre du Christ que saint <span style="color: #b30000;">N.</span> est mort ;
-        il a risqué sa vie pour l'accomplir <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        il a risqué sa vie pour l'accomplir <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t'en prions, Dieu tout-puissant,
         donne-nous d'imiter, par un attachement sincère,`},
-        {class:"indent1p", texte:`la foi de saint <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`la foi de saint <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`qui, pour l'avoir propagée,
         a mérité la couronne du martyre.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -13091,14 +13109,14 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En commémorant le martyre de saint <span style="color: #b30000;">N.</span>,
         nous présentons nos offrandes à ton autel,`},
-        {class:"indent1p", texte:`et nous te prions, Seigneur : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te prions, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous d'imiter dans nos actes <span style="color: #b30000;">/</span>
         les mystères de la passion du Seigneur que nous célébrons.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
       ],
     antienne_communion: [
         {class:"indent1all", texte: `Celui qui perdra sa vie à cause de moi et de l’Évangile
-        la sauvera, dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        la sauvera, dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`En célébrant le banquet du ciel,
         nous te prions, Seigneur :`},
         {class:"indent1all", texte:`que le souvenir du saint martyr <span style="color: #b30000;">N.</span>
@@ -13112,15 +13130,15 @@ que tu préparais à la face des peuples.`}],
     titre: "COMMUN DES MARTYRS - IV. POUR UNE VIERGE MARTYRE",
     antienne_ouverture: [
         {class:"indent1all", texte: `Voici qu'elle suit l'Agneau, crucifié pour nous,
-        la vierge fidèle, victime pure, offrande immaculée <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        la vierge fidèle, victime pure, offrande immaculée <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Bienheureuse vierge,
         renonçant à elle-même et portant sa croix,`},
         {class:"indent1all", texte: `elle a imité le Seigneur, époux des vierges
-        et prince des martyrs <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et prince des martyrs <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu nous réjouis en ce jour anniversaire`},
-        {class:"indent1p", texte:`où nous commémorons sainte <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`où nous commémorons sainte <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous l'appui de ses mérites, <span style="color: #b30000;">/</span>
         puisqu'elle est pour nous un modèle rayonnant
         de chasteté et de force d'âme.`},
@@ -13136,10 +13154,10 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte: `L'Agneau qui se tient au milieu du Trône
-        les conduira aux sources des eaux de la vie <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        les conduira aux sources des eaux de la vie <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as donné à sainte <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`d'être couronnée parmi les saints,
+        {class:"indentallp", texte:`d'être couronnée parmi les saints,
         au double titre de vierge et de martyre ;`},
         {class:"indent1all", texte:`par la force de ce sacrement,
         rends-nous forts pour surmonter le mal <span style="color: #b30000;">/</span>
@@ -13154,10 +13172,10 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Le royaume des Cieux appartient
         à celles qui ont méprisé la vie de ce monde,`},
         {class:"indent1all", texte: `elles sont parvenues aux récompenses du Royaume,
-        elles ont lavé leurs robes dans le sang de l'Agneau <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        elles ont lavé leurs robes dans le sang de l'Agneau <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         par toi, la puissance se déploie dans la faiblesse ; <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`écoute tous ceux qui célèbrent la gloire de sainte <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`écoute tous ceux qui célèbrent la gloire de sainte <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`de toi, elle reçut la force de vaincre, <span style="color: #b30000;">/</span>
         de toi aussi, qu'elle nous obtienne toujours la grâce de la victoire.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -13174,7 +13192,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Détachées de leur propre vie,
         elles sont allées jusqu'à mourir.`},
         {class:"indent1all", texte: `Cieux, soyez donc dans la joie,
-        et vous qui avez aux cieux votre demeure <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et vous qui avez aux cieux votre demeure <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Alors que nous faisons mémoire de sainte N,
         nous te supplions humblement, Seigneur : <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`en prenant part à ce sacrement,
@@ -13191,17 +13209,17 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Le Seigneur s'est choisi saint <span style="color: #b30000;">N.</span> comme grand prêtre,`},
         {class:"indent1all", texte: `et, lui ouvrant ses trésors,
-        il l'a comblé de tous les biens <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        il l'a comblé de tous les biens <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Voici le grand prêtre
         qui pendant sa vie fut agréable à Dieu.`},
         {class:"indent1all", texte: `C'est pourquoi le Seigneur a fait serment
-        de le faire grandir au milieu de son peuple <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        de le faire grandir au milieu de son peuple <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [
         {class:"rubrique", texte:`Pour un pape :`},
         {class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu as voulu que saint <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`ait la charge de tout ton peuple
+        {class:"indentallp", texte:`ait la charge de tout ton peuple
         et le soutienne par la parole et par l'exemple ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à sa prière, garde les pasteurs de ton Église
         et le troupeau qui leur est confié, <span style="color: #b30000;">/</span>
@@ -13212,7 +13230,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Pour un évêque :`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         en saint <span style="color: #b30000;">N.</span>, tu as voulu donner à ton Église`},
-        {class:"indent1p", texte:`l'exemple du bon pasteur ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`l'exemple du bon pasteur ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession, <span style="color: #b30000;">/</span>
         de pouvoir demeurer éternellement
         dans les pâturages où tu conduis ton troupeau.`},
@@ -13228,7 +13246,7 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte: `Le bon pasteur, le vrai berger,
-        a donné sa vie pour ses brebis <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        a donné sa vie pour ses brebis <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span>
         que le sacrement reçu attise en nous le feu de la charité`},
         {class:"indent1all", texte:`dont l'ardeur enflammait saint <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">/</span>
@@ -13248,7 +13266,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Pour un pape :`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as établi saint <span style="color: #b30000;">N.</span> comme pasteur de toute l'Église,`},
-        {class:"indent1p", texte:`tu l'as fait briller par la splendeur admirable
+        {class:"indentallp", texte:`tu l'as fait briller par la splendeur admirable
         de sa vertu et de sa doctrine ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tandis que nous honorons les mérites d'un tel évêque,
         accorde-nous de rayonner devant les hommes en faisant le bien, <span style="color: #b30000;">/</span>
@@ -13259,7 +13277,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span>
         tu as constitué saint <span style="color: #b30000;">N.</span> successeur de l'apôtre Pierre`},
-        {class:"indent1p", texte:`et tu lui as confié le soin de l'Église universelle ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et tu lui as confié le soin de l'Église universelle ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, garde toujours ton troupeau bien-aimé, <span style="color: #b30000;">/</span>
         afin qu'il avance vers la patrie du ciel
         par une foi intègre et une charité parfaite.`},
@@ -13269,7 +13287,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Pour un évêque :`},
         {class:"grandelettrine", texte:`Accorde-nous, Dieu tout-puissant,
         de célébrer dignement la mémoire`},
-        {class:"indent1p", texte:`de l'évêque saint <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`de l'évêque saint <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`comme tu as voulu qu'il soutienne par la parole et par l'exemple
         ceux dont il avait la charge, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais-nous ressentir toujours <span style="color: #b30000;">/</span>
@@ -13280,14 +13298,14 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Exauce notre prière, Seigneur : <span style="color: #b30000;">*</span>
         fais qu’au jour où nous célébrons saint <span style="color: #b30000;">N.</span>,`},
-        {class:"indent1p", texte:`cette offrande nous soit profitable, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`cette offrande nous soit profitable, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`car tu as voulu que, par l'oblation de ce sacrifice,
         soient remis les péchés du monde entier.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [
         {class:"indent1all", texte: `Seigneur, toi, tu sais tout :
-        tu sais bien que je t'aime <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        tu sais bien que je t'aime <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         en cette fête de saint <span style="color: #b30000;">N.</span>,`},
         {class:"indent1all", texte:`que la puissance des dons reçus de toi
@@ -13303,15 +13321,15 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Je m’occuperai de mes brebis, je veillerai sur elles, dit le Seigneur,
         je susciterai à leur tête un seul berger.`},
-        {class:"indent1all", texte: `Moi, le Seigneur, je serai leur Dieu <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        {class:"indent1all", texte: `Moi, le Seigneur, je serai leur Dieu <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Voici l'intendant fidèle et avisé
         que le maître a établi sur sa maison,
-        pour donner à chacun, en temps voulu, sa part de blé <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        pour donner à chacun, en temps voulu, sa part de blé <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [
         {class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu as donné à l'évêque saint <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`la charge de présider ton peuple saint ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`la charge de présider ton peuple saint ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque, par ses mérites, il intercède en notre faveur, <span style="color: #b30000;">/</span>
         accorde-nous largement la grâce de ta tendresse.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -13320,7 +13338,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Dieu éternel et tout-puissant,
         tu as donné saint <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`comme évêque à ta sainte Église ; <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`comme évêque à ta sainte Église ; <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`fais que s'enracine à jamais en nos coeurs
         ce qu'il a enseigné sous ton inspiration divine ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et puisque, par ta grâce,
@@ -13333,7 +13351,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En cette fête de saint <span style="color: #b30000;">N.</span>,
         Seigneur, nous t'en prions, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`regarde avec bonté les offrandes
+        {class:"indentallp", texte:`regarde avec bonté les offrandes
         que nous déposons sur l'autel qui t'est consacré ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en nous procurant ton pardon, <span style="color: #b30000;">/</span>
         qu'elles servent à la gloire de ton nom.`},
@@ -13343,11 +13361,11 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Ce n'est pas vous qui m'avez choisi, dit le Seigneur,
         c’est moi qui vous ai choisis et établis,`},
         {class:"indent1all", texte:`afin que vous alliez, que vous portiez du fruit,
-        et que votre fruit demeure <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        et que votre fruit demeure <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte:`Heureux ce serviteur que le maître,`},
         {class:"indent1all", texte: `quand il arrivera et frappera à la porte,
-        trouvera en train de veiller <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        trouvera en train de veiller <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Déjà rénovés par ces mystères très saints,
         nous te supplions humblement, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisions-nous, en prenant exemple sur saint <span style="color: #b30000;">N.</span>
@@ -13365,10 +13383,10 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Voici l'intendant fidèle et avisé
         que le maitre a établi sur sa maison,
-        pour donner à chacun, en temps voulu, sa part de blé <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        pour donner à chacun, en temps voulu, sa part de blé <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as mis au nombre de tes saints pasteurs`},
-        {class:"indent1p", texte:`saint <span style="color: #b30000;">N.</span> qui brûlait d'une charité vraiment divine
+        {class:"indentallp", texte:`saint <span style="color: #b30000;">N.</span> qui brûlait d'une charité vraiment divine
         et dont la grande foi a triomphé du monde ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         de persévérer dans la foi et la charité, <span style="color: #b30000;">/</span>
@@ -13379,7 +13397,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as donné à saint <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`une profonde connaissance de la doctrine venue de toi ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`une profonde connaissance de la doctrine venue de toi ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         de garder fidèlement ce qu'il a enseigné <span style="color: #b30000;">/</span>
         et d'en témoigner par notre vie.`},
@@ -13389,7 +13407,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille, Seigneur, les offrandes
         que ton peuple te présente`},
-        {class:"indent1p", texte:`en la fête de saint <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en la fête de saint <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu'elles nous obtiennent,
         comme nous en avons l'espérance, <span style="color: #b30000;">/</span>
         d'éprouver le secours de ta bonté.`},
@@ -13397,15 +13415,15 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte:`Je suis venu pour que les brebis aient la vie,
-        la vie en abondance, dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        la vie en abondance, dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Voici les signes qui accompagneront
         ceux qui croiront en moi, dit le Seigneur :`},
         {class:"indent1all", texte:`ils expulseront les démons ; ils imposeront les mains aux malades,
-        et les malades s'en trouveront bien <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et les malades s'en trouveront bien <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Après avoir communié
         au Corps sacré et au Sang précieux de ton Fils,`},
-        {class:"indent1p", texte:`nous te supplions, Seigneur notre Dieu : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous te supplions, Seigneur notre Dieu : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que, sûrs de la rédemption, nous possédions enfin <span style="color: #b30000;">/</span>
         ce que nous célébrons avec ferveur.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -13416,13 +13434,13 @@ que tu préparais à la face des peuples.`}],
     titre: "COMMUN DES PASTEURS III. POUR DES PASTEURS A. Pour plusieurs pasteurs",
     antienne_ouverture: [
         {class:"indent1all", texte: `Je vous donnerai des pasteurs selon mon coeur ;
-        ils vous conduiront avec sagesse et intelligence <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        ils vous conduiront avec sagesse et intelligence <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Prêtres du Seigneur, bénissez le Seigneur !`},
-        {class:"indent1all", texte: `Saints et humbles de coeur, louez Dieu <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `Saints et humbles de coeur, louez Dieu <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         pour que les saints (évêques) <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`soient les pasteurs de ton peuple,
+        {class:"indentallp", texte:`soient les pasteurs de ton peuple,
         tu les as comblés d'un esprit d'amour et de vérité ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous célébrons leur fête,
         accorde-nous de progresser en les imitant, <span style="color: #b30000;">/</span>
@@ -13440,7 +13458,7 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte: `Le Fils de l’homme n'est pas venu pour être servi, mais pour servir,
-        et donner sa vie en rançon pour la multitude <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et donner sa vie en rançon pour la multitude <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous avons reçu, Seigneur, le sacrement du ciel
         en faisant mémoire des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t'en prions :`},
@@ -13450,11 +13468,11 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "CPPUP_1": {
+  "CPPUP_I": {
     titre: "COMMUN DES PASTEURS III. POUR DES PASTEURS B. Pour un pasteur 1",
     antienne_ouverture: [
         {class:"indent1all", texte: `Que tes prêtres soient vêtus de justice,
-        que tes fidèles crient de joie <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        que tes fidèles crient de joie <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t'en supplions, Dieu tout-puissant : <span style="color: #b30000;">*</span>
         par l'intercession de (l'évêque) saint <span style="color: #b30000;">N.</span>,`},
         {class:"indent1all", texte:`multiplie en nous les dons de ta grâce, <span style="color: #b30000;">/</span>
@@ -13465,7 +13483,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Regarde, Seigneur,
         les offrandes déposées sur ton autel`},
-        {class:"indent1p", texte:`en l'honneur de saint <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en l'honneur de saint <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et, comme tu lui as donné la gloire
         par ces saints mystères, <span style="color: #b30000;">/</span>
         accorde-nous largement ton pardon.`},
@@ -13475,33 +13493,33 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Heureux le serviteur que son maître, en arrivant,
         trouvera vigilant !`},
         {class:"indent1all", texte:`Amen, je vous le déclare :
-        il l'établira sur tous ses biens <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        il l'établira sur tous ses biens <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Voici le serviteur fidèle et avisé
         que le maître a établi sur sa maison,
-        pour donner à chacun, en temps voulu, sa part de blé <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        pour donner à chacun, en temps voulu, sa part de blé <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Par cette communion à la table du ciel, Dieu toutpuissant, <span style="color: #b30000;">+</span>
         raffermis et augmente les forces d'en haut`},
-        {class:"indent1p", texte:`en tous ceux qui célèbrent la fête de saint <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en tous ceux qui célèbrent la fête de saint <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`aide-nous à garder dans son intégrité le don de la foi, <span style="color: #b30000;">/</span>
         et à marcher sur le chemin du salut qui nous est proposé.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
-  "CPPUP_2": {
+  "CPPUP_II": {
     titre: "COMMUN DES PASTEURS III. POUR DES PASTEURS B. Pour un pasteur 2",
     antienne_ouverture: [
         {class:"indent1all", texte: `L’esprit du Seigneur est sur moi,
         parce que le Seigneur m'a consacré par l'onction.`},
         {class:"indent1all", texte: `Il m’a envoyé porter la Bonne Nouvelle aux pauvres,
-        guérir les coeurs brisés <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        guérir les coeurs brisés <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Le Seigneur l'a choisi comme son prêtre,
-        pour qu'il lui offre le sacrifice de louange <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        pour qu'il lui offre le sacrifice de louange <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Lumière des fidèles et pasteur des âmes, <span style="color: #b30000;">+</span>
         Dieu qui as donné à ton Église (l'évêque) saint <span style="color: #b30000;">N.</span>,`},
-        {class:"indent1p", texte:`pour être le berger de ton troupeau,
+        {class:"indentallp", texte:`pour être le berger de ton troupeau,
         le nourrir par sa parole et l'instruire par son exemple, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         de garder la foi que sa parole a transmise, <span style="color: #b30000;">/</span>
@@ -13519,7 +13537,7 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte: `Je suis avec vous tous les jours, dit le Seigneur,
-        jusqu'à la fin du monde <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        jusqu'à la fin du monde <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que cette communion à tes mystères, Seigneur,
         nous achemine vers les joies éternelles <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que saint <span style="color: #b30000;">N.</span> a méritées par un service fidèle.`},
@@ -13539,10 +13557,10 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Mes paroles que j’ai mises dans ta bouche
         ne quitteront plus ta bouche, dit le Seigneur ;`},
-        {class:"indent1all", texte: `et tes offrandes seront agréées sur mon autel <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `et tes offrandes seront agréées sur mon autel <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu de puissance et de miséricorde, <span style="color: #b30000;">+</span>
         tu as voulu que la prédication de saint <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`apporte à nos pères la lumière de l'Évangile ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`apporte à nos pères la lumière de l'Évangile ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t'en prions :`},
         {class:"indent1all", texte:`puisque nous sommes fiers de porter le nom de chrétiens, <span style="color: #b30000;">/</span>
         accorde-nous de montrer sans cesse par nos oeuvres
@@ -13553,7 +13571,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Regarde,Seigneur, ta famille : <span style="color: #b30000;">+</span>
         (l'évêque) saint <span style="color: #b30000;">N.</span> l’a engendrée par la parole de vérité`},
-        {class:"indent1p", texte:`et l'a nourrie du sacrement de la vie ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et l'a nourrie du sacrement de la vie ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à sa prière, accorde une fervente charité <span style="color: #b30000;">/</span>
         à ceux dont ta grâce a fait des fidèles par son ministère.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -13562,19 +13580,19 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Sois favorable à notre prière, Dieu tout-puissant : <span style="color: #b30000;">*</span>
         fais que le sacrifice offert par ton peuple`},
-        {class:"indent1p", texte:`en mémoire de saint <span style="color: #b30000;">N.</span> <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`en mémoire de saint <span style="color: #b30000;">N.</span> <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`devienne, par ta bienveillance, don du ciel.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [
         {class:"indent1all", texte:`Le Fils de l'homme est venu pour servir
-        et donner sa vie en rançon pour la multitude <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        et donner sa vie en rançon pour la multitude <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `La pierre de fondation, personne ne peut en poser d'autre
-        que celle qui s'y trouve : Jésus Christ <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        que celle qui s'y trouve : Jésus Christ <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous avons reçu, Seigneur,
         le gage de la rédemption éternelle`},
-        {class:"indent1p", texte:`en nous réjouissant de fêter saint <span style="color: #b30000;">N.</span>,`},
+        {class:"indentallp", texte:`en nous réjouissant de fêter saint <span style="color: #b30000;">N.</span>,`},
         {class:"indent1all", texte:`et nous te prions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que cette communion nous soit un secours <span style="color: #b30000;">/</span>
         pour la vie présente et la vie future.`},
@@ -13588,10 +13606,10 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Voici les saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> :
         le Seigneur les a vraiment aimés,`},
         {class:"indent1all", texte: `il les a choisis et leur a donné une gloire éternelle,
-        l'Église est éclairée par leur enseignement <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        l'Église est éclairée par leur enseignement <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Regarde, Seigneur, ton Église (qui est à <span style="color: #b30000;">N.</span>) : <span style="color: #b30000;">+</span>
         tu lui as donné de recevoir la première annonce de la foi,`},
-        {class:"indent1p", texte:`grâce au dévouement apostolique des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`grâce au dévouement apostolique des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par leur intercession, accorde-lui <span style="color: #b30000;">/</span>
         de rester fidèlement attachée à la vie chrétienne.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -13600,7 +13618,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         par la prédication des saints (évêques) <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,`},
-        {class:"indent1p", texte:`tu as appelé nos pères à l'admirable lumière de l'Évangile ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu as appelé nos pères à l'admirable lumière de l'Évangile ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à leur intercession, <span style="color: #b30000;">/</span>
         de grandir dans la grâce et la connaissance
         de Jésus Christ, ton Fils, notre Seigneur.`},
@@ -13609,7 +13627,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous t'en prions, Seigneur, <span style="color: #b30000;">+</span>
         accueille les offrandes que ton peuple te présente`},
-        {class:"indent1p", texte:`en la fête des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en la fête des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et, dans ta bonté, donne-nous un coeur pur <span style="color: #b30000;">/</span>
         qui te soit agréable.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -13619,15 +13637,15 @@ que tu préparais à la face des peuples.`}],
         car le serviteur ne sait pas ce que fait son maitre ;`},
         {class:"indent1all", texte:`je vous appelle mes amis,
         car tout ce que j'ai entendu de mon Père,
-        je vous lai fait connaitre <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        je vous lai fait connaitre <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Peuple racheté par Dieu,
         vous tous, annoncez les merveilles
         de celui qui vous a appelés des ténèbres
-        à son admirable lumière <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        à son admirable lumière <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`En la fête des saints <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,
         que le sacrement du salut reçu à ton autel, Seigneur,`},
-        {class:"indent1p", texte:`nous remplisse de joie ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous remplisse de joie ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`attentifs à tes bienfaits,
         nous évoquons avec respect
         les magnifiques origines de notre foi, <span style="color: #b30000;">/</span>
@@ -13636,19 +13654,19 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "CPPDM_1": {
+  "CPPDM_I": {
     titre: "COMMUN DES PASTEURS V. POUR DES MISSIONNAIRES 1",
     antienne_ouverture: [
         {class:"indent1all", texte: `Voici les saints <span style="color: #b30000;">N.</span>et <span style="color: #b30000;">N.</span> :`},
         {class:"indent1all", texte: `ils sont les amis de Dieu,
         dont la gloire fut de proclamer
-        la vérité reçue du Seigneur<span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        la vérité reçue du Seigneur<span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Je te rendrai grâce parmi les peuples, Seigneur ;
-        je proclamerai ton nom devant mes frères <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        je proclamerai ton nom devant mes frères <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as donné aux peuples qui ne te connaissaient pas`},
-        {class:"indent1p", texte:`de passer des ténèbres à la lumière de la vérité
+        {class:"indentallp", texte:`de passer des ténèbres à la lumière de la vérité
         grâce à (l'évêque) saint <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         de rester fermes dans la foi, <span style="color: #b30000;">/</span>`},
@@ -13660,7 +13678,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         toi qui as consacré ce jour de joie`},
-        {class:"indent1p", texte:`en glorifiant saint <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en glorifiant saint <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous dans ta bonté
         de nous appliquer à garder intacte
         la foi dont il fut l'infatigable témoin, <span style="color: #b30000;">/</span>
@@ -13671,19 +13689,19 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         regarde le sacrifice que nous offrons`},
-        {class:"indent1p", texte:`en la fête de saint <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en la fête de saint <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous d'imiter dans notre vie <span style="color: #b30000;">/</span>
         les mystères de la passion du Seigneur que nous célébrons.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
       ],
     antienne_communion: [
         {class:"indent1all", texte:`C'est moi qui ferai paître mon troupeau,
-        et c'est moi qui le ferai reposer, dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        et c'est moi qui le ferai reposer, dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte:`Ce que je vous dis dans les ténèbres,
         dites-le en pleine lumière, dit le Seigneur ;`},
         {class:"indent1all", texte: `ce que vous entendez au creux de l'oreille,
-        proclamez-le sur les toits <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        proclamez-le sur les toits <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur, par la puissance du mystère que nous célébrons,
         affermis tes serviteurs dans la vraie foi : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-leur de la proclamer partout,
@@ -13694,17 +13712,17 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "CPPDM_2": {
+  "CPPDM_II": {
     titre: "COMMUN DES PASTEURS V. POUR DES MISSIONNAIRES 2",
     antienne_ouverture: [
         {class:"indent1all", texte: `Comme ils sont beaux sur les montagnes,
         les pas du messager,`},
         {class:"indent1all", texte: `celui qui annonce la paix,
         qui porte la bonne nouvelle,
-        qui annonce le salut <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        qui annonce le salut <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as voulu que l’oeuvre apostolique de saint <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`et son zèle à te servir
+        {class:"indentallp", texte:`et son zèle à te servir
         fassent grandir ton Église ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par son intercession, qu’elle obtienne <span style="color: #b30000;">/</span>
         une foi et une sainteté toujours en progrès.`},
@@ -13720,26 +13738,26 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte:`Allez dans le monde entier, proclamez l’Évangile :
-        je suis avec vous tous les jours, dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        je suis avec vous tous les jours, dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte:`Demeurez en moi, comme moi en vous, dit le Seigneur.`},
         {class:"indent1all", texte:`Celui qui demeure en moi,
         et en qui je demeure,`},
-        {class:"indent1all", texte: `celui-là porte beaucoup de fruit <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `celui-là porte beaucoup de fruit <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span>
         que le sacrement reçu nourrisse en nous la foi`},
-        {class:"indent1p", texte:`enseignée par la prédication des Apôtres <span style="color: #b30000;">/</span>
+        {class:"indentallp", texte:`enseignée par la prédication des Apôtres <span style="color: #b30000;">/</span>
         et gardée avec sollicitude par saint <span style="color: #b30000;">N.</span>`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
 
-  "CPPDM_3": {
+  "CPPDM_III": {
     titre: "COMMUN DES PASTEURS V. POUR DES MISSIONNAIRES 3",
     antienne_ouverture: [
         {class:"indent1all", texte: `Annoncez parmi les nations la gloire du Seigneur,
         chez tous les peuples ses merveilles,`},
-        {class:"indent1all", texte: `car il est grand, le Seigneur, hautement loué <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `car il est grand, le Seigneur, hautement loué <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Par ta miséricorde ineffable, Seigneur Dieu, <span style="color: #b30000;">+</span>
         saint <span style="color: #b30000;">N.</span> a proclamé l'insondable richesse du Christ ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à son intercession, accorde-nous
@@ -13762,11 +13780,11 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte:`Le Seigneur envoya ses disciples pour annoncer dans les villes :
-        « Le règne de Dieu s'est approché de vous <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>. »`},
+        « Le règne de Dieu s'est approché de vous <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>. »`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte:`Ceux qui ont reçu la semence dans la bonne terre,
         dans un coeur bon et généreux,`},
-        {class:"indent1all", texte: `portent du fruit par leur persévérance <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `portent du fruit par leur persévérance <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que la communion à tes saints mystères, Seigneur,
         ravive nos forces ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous avons la joie de célébrer
@@ -13782,14 +13800,14 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Au milieu de son Église, le Seigneur a donné la parole à saint <span style="color: #b30000;">N.</span> ;`},
         {class:"indent1all", texte: `il l'a rempli de l'esprit de sagesse et d'intelligence,
-        et lui a donné un vêtement de gloire <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        et lui a donné un vêtement de gloire <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Les lèvres du juste méditent la sagesse
         et sa bouche énonce le droit.`},
-        {class:"indent1all", texte: `La loi de son Dieu est dans son coeur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `La loi de son Dieu est dans son coeur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu as donné (l'évêque) saint <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`comme docteur à ton Église ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`comme docteur à ton Église ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que s'enracine à jamais en nos coeurs
         ce qu'il a enseigné sous ton inspiration divine ; <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et puisque, par ta grâce,
@@ -13802,7 +13820,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Daigne accepter, Seigneur Dieu,
         ce sacrifice que nous t'offrons de grand coeur,`},
-        {class:"indent1p", texte:`en la fête de saint <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en la fête de saint <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fidèles à son enseignement,
         nous voulons nous offrir tout entiers <span style="color: #b30000;">/</span>
         en célébrant ta louange.`},
@@ -13811,10 +13829,10 @@ que tu préparais à la face des peuples.`}],
     antienne_communion: [
         {class:"indent1all", texte:`Voici le serviteur fidèle et avisé
         que le maître a établi sur sa maison,
-        pour donner à chacun, en temps voulu, sa part de blé <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        pour donner à chacun, en temps voulu, sa part de blé <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Qui médite la loi du Seigneur jour et nuit
-        donne du fruit en son temps <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        donne du fruit en son temps <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Ceux que tu fortifies, Seigneur, par le Christ, pain vivant,
         forme-les aussi par le Christ, le seul maitre, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`pour qu’en la fête de saint <span style="color: #b30000;">N.</span>,
@@ -13830,14 +13848,14 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Ceux qui ont l'intelligence resplendiront
         comme la splendeur du firmament,`},
         {class:"indent1all", texte: `ceux qui sont des maitres de justice pour la multitude
-        billeront comme les étoiles pour toujours et à jamais <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        billeront comme les étoiles pour toujours et à jamais <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Les peuples raconteront la sagesse des saints,
         l’Église proclamera leurs louanges,`},
-        {class:"indent1all", texte: `et leur nom reste vivant pour toutes les générations <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `et leur nom reste vivant pour toutes les générations <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as donné à saint <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`une profonde connaissance de la doctrine venue de toi ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`une profonde connaissance de la doctrine venue de toi ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         de garder fidèlement ce qu'il a enseigné <span style="color: #b30000;">/</span>
         et d'en témoigner par notre vie.`},
@@ -13868,14 +13886,14 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Que les vierges louent le nom du Seigneur,
         le seul au-dessus de tout nom ;
-        sur le ciel et sur la terre, sa splendeur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        sur le ciel et sur la terre, sa splendeur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Les vierges sont conduites vers le roi
         dans la joie et l'allégresse ;`},
-        {class:"indent1all", texte: `elles entrent au palais du roi, le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `elles entrent au palais du roi, le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Multiplie pour nous, Seigneur, les signes de ta miséricorde, <span style="color: #b30000;">*</span>
         et puisque nous avons la joie de célébrer avec ferveur`},
-        {class:"indent1p", texte:`la fête des saintes vierges <span style="color: #b30000;">N.</span>et <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`la fête des saintes vierges <span style="color: #b30000;">N.</span>et <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`donne-nous le bonheur d'être en leur compagnie à jamais.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
@@ -13883,7 +13901,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous proclamons tes merveilles, Seigneur,
         en la mémoire des vierges saintes <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,`},
-        {class:"indent1p", texte:`et nous te présentons nos offrandes : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te présentons nos offrandes : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`tu as reconnu les mérites de leur vie, <span style="color: #b30000;">/</span>
         accepte, nous t'en prions, l'hommage de ceux qui te servent.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -13891,15 +13909,15 @@ que tu préparais à la face des peuples.`}],
     antienne_communion: [
         {class:"indent1all", texte:`Quand l’Époux arriva,`},
         {class:"indent1all", texte:`les vierges qui étaient prêtes
-        entrèrent avec lui pour les noces <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        entrèrent avec lui pour les noces <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte:`Celui qui m'aime sera aimé de mon Père,
         dit le Seigneur ;`},
         {class:"indent1all", texte: `nous viendrons vers lui
-        et, chez lui, nous nous ferons une demeure <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et, chez lui, nous nous ferons une demeure <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que cette communion à tes mystères, Seigneur,
         en la fête des saintes vierges <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,`},
-        {class:"indent1p", texte:`nous encourage et nous éclaire,`},
+        {class:"indentallp", texte:`nous encourage et nous éclaire,`},
         {class:"indent1all", texte:`pour que nous sachions attendre la venue de ton Fils <span style="color: #b30000;">/</span>
         et soyons admis à ses noces dans le Royaume.`},
         {class:"indent1all", texte:`Lui qui vit et règne pour les siècles des siècles.`},
@@ -13912,14 +13930,14 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Voici la vierge sage,
         elle est au nombre des jeunes filles prévoyantes ;`},
         {class:"indent1all", texte: `sa lampe allumée,
-        elle est sortie à la rencontre du Christ <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        elle est sortie à la rencontre du Christ <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Que tu es belle, vierge du Christ !`},
         {class:"indent1all", texte: `Tu as mérité de recevoir la couronne du Seigneur,
-        la couronne de la virginité à jamais <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        la couronne de la virginité à jamais <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Exauce nos prières, Dieu notre Sauveur, <span style="color: #b30000;">*</span>
         afin qu'en célébrant dans la joie`},
-        {class:"indent1p", texte:`la mémoire de la vierge sainte <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`la mémoire de la vierge sainte <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`nous apprenions à te servir
         avec un amour sincère.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -13928,7 +13946,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous proclamons tes merveilles,
         accomplies en la bienheureuse vierge, sainte <span style="color: #b30000;">N.</span>,`},
-        {class:"indent1p", texte:`Seigneur, Dieu de majesté, <span style="color: #b30000;">+</span>`},
+        {class:"indentallp", texte:`Seigneur, Dieu de majesté, <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`et nous te supplions humblement :`},
         {class:"indent1all", texte:`toi qui appréciais les mérites de sa vie, <span style="color: #b30000;">/</span>
         accepte l'hommage de notre service.`},
@@ -13936,15 +13954,15 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte:`Voici l'Époux qui vient !
-        Sortez à la rencontre du Christ, le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        Sortez à la rencontre du Christ, le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte:`J’ai demandé une chose au Seigneur,
         la seule que je cherche :`},
         {class:"indent1all", texte: `habiter la maison du Seigneur
-        tous les jours de ma vie <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        tous les jours de ma vie <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`En participant au don que tu nous as fait,
         Seigneur notre Dieu,`},
-        {class:"indent1p", texte:`nous avons renouvelé nos forces,
+        {class:"indentallp", texte:`nous avons renouvelé nos forces,
         et nous te supplions encore : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu'à l'exemple de sainte <span style="color: #b30000;">N.</span>,
         portant dans notre corps la mort de Jésus, <span style="color: #b30000;">/</span>
@@ -13958,13 +13976,13 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Réjouissons-nous, exultons,
         parce que le Seigneur de l'univers a aimé
-        la bienheureuse <span style="color: #b30000;">N.</span>, vierge sainte et glorieuse <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        la bienheureuse <span style="color: #b30000;">N.</span>, vierge sainte et glorieuse <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Voici la vierge sage,`},
         {class:"indent1all", texte: `le Seigneur l'a trouvée en train de veiller ;
         elle avait emporté de l'huile pour sa lampe ;`},
         {class:"indent1all", texte: `à la venue du Seigneur,
-        elle est entrée avec lui pour les noces <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        elle est entrée avec lui pour les noces <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, tu as multiplié tes grâces
         en faveur de sainte <span style="color: #b30000;">N.</span>, vierge bienheureuse ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d'imiter ses vertus sur la terre, <span style="color: #b30000;">/</span>
@@ -13975,7 +13993,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien, pour une fondatrice :`},
         {class:"grandelettrine", texte:`Seigneur notre Dieu, <span style="color: #b30000;">+</span>
         fais que la vierge sainte <span style="color: #b30000;">N.</span>, ton épouse fidèle,`},
-        {class:"indent1p", texte:`attise en nos coeurs ce foyer d'amour`},
+        {class:"indentallp", texte:`attise en nos coeurs ce foyer d'amour`},
         {class:"indent1all", texte:`qu'elle fit brûler dans l'âme de ses compagnes, <span style="color: #b30000;">/</span>
         pour la gloire éternelle de ton Église.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -13996,10 +14014,10 @@ que tu préparais à la face des peuples.`}],
         avec leurs lampes, des flacons d'huile.`},
         {class:"indent1all", texte:`Au milieu de la nuit, il y eut un cri :`},
         {class:"indent1all", texte: `« Voici l'époux qui vient !
-        Sortez à la rencontre du Christ Seigneur » <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        Sortez à la rencontre du Christ Seigneur » <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur,
         que la communion au Corps et au Sang de ton Fils unique`},
-        {class:"indent1p", texte:`nous détache des réalités passagères ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous détache des réalités passagères ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`ainsi nous serons capables, à l'exemple de sainte <span style="color: #b30000;">N.</span>,
         de te servir sur la terre par une vraie charité <span style="color: #b30000;">/</span>
         et de connaître au ciel la joie de te contempler sans fin.`},
@@ -14011,10 +14029,10 @@ que tu préparais à la face des peuples.`}],
     titre: "COMMUN DES VIERGES II. POUR UNE VIERGE 3",
     antienne_ouverture: [
         {class:"indent1all", texte: `Viens, épouse du Christ, reçois la couronne
-        que le Seigneur t'a préparée pour l'éternité <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        que le Seigneur t'a préparée pour l'éternité <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte: `Elle a préféré l'amour du Seigneur Jésus Christ
-        à l'emprise de ce monde et à tout ce qui passe <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        à l'emprise de ce monde et à tout ce qui passe <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as promis d'habiter les coeurs purs ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`par l'intercession de la vierge sainte <span style="color: #b30000;">N.</span>,
@@ -14026,7 +14044,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte:`Ou bien`},
         {class:"grandelettrine", texte:`Exauce nos prières, Seigneur,
         en ce jour où nous rappelons les vertus`},
-        {class:"indent1p", texte:`de la vierge sainte <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de la vierge sainte <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais-nous demeurer constamment dans ton amour <span style="color: #b30000;">/</span>
         et grandir toujours en lui jusqu'à la fin de notre vie.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -14035,7 +14053,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accepte, Seigneur, l'humble hommage
         que nous te présentons`},
-        {class:"indent1p", texte:`en mémoire de la vierge sainte <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en mémoire de la vierge sainte <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et, par cette offrande immaculée, <span style="color: #b30000;">/</span>
         fais-nous brûler sans cesse en ta présence
         d'un amour fidèle et saint.`},
@@ -14043,10 +14061,10 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte:`La vierge prévoyante a choisi la meilleure part,
-        celle qui ne lui sera pas enlevée <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        celle qui ne lui sera pas enlevée <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte:`Au milieu de la nuit, il y eut un cri :`},
-        {class:"indent1all", texte: `« Voici l'époux qui vient, sortez à sa rencontre » <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `« Voici l'époux qui vient, sortez à sa rencontre » <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Déjà réconfortés par le pain du ciel,
         nous implorons humblement ta bonté, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en ce jour où nous avons la joie de faire mémoire de sainte <span style="color: #b30000;">N.</span>,
@@ -14063,10 +14081,10 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Que tes oeuvres, Seigneur, te rendent grâce
         et que tes fidèles te bénissent !`},
         {class:"indent1all", texte: `Ils diront la gloire de ton règne,
-        ils parleront de tes exploits <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        ils parleront de tes exploits <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu nous donnes des preuves toujours nouvelles de ton amour`},
-        {class:"indent1p", texte:`quand tu glorifies les saints dans le ciel ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`quand tu glorifies les saints dans le ciel ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous dans ta bonté
         d'être soutenus par leur prière
         et encouragés par leur exemple <span style="color: #b30000;">/</span>
@@ -14083,12 +14101,12 @@ que tu préparais à la face des peuples.`}],
     antienne_communion: [
         {class:"indent1all", texte:`Que les justes soient en fête,
         qu'ils exultent devant la face de Dieu,
-        débordants de joie <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        débordants de joie <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien`},
         {class:"indent1all", texte:`Heureux les serviteurs que le maître, à son arrivée,
         trouvera en train de veiller.`},
         {class:"indent1all", texte: `Amen, je vous le dis : c’est lui qui, la ceinture autour des reins,
-        les fera prendre place à table et passera pour les servir <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        les fera prendre place à table et passera pour les servir <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant,
         Père de tout réconfort et de toute paix, <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`accorde à ta famille,
@@ -14103,7 +14121,7 @@ que tu préparais à la face des peuples.`}],
     titre: "COMMUN DES SAINTS ET DES SAINTES I. POUR LES SAINTS DE TOUS ORDRES A. Pour plusieurs saints 2",
     antienne_ouverture: [
         {class:"indent1all", texte: `Le juste trouvera dans le Seigneur joie et espérance,
-        et tous les coeurs droits, leur louange<span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et tous les coeurs droits, leur louange<span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, tu le vois : <span style="color: #b30000;">+</span>
         nous sommes faibles et ne pouvons tenir ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en ta miséricorde, fais que l'exemple des saints <span style="color: #b30000;">/</span>
@@ -14114,14 +14132,14 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu tout-puissant, nous t'en supplions : <span style="color: #b30000;">*</span>
         que cette humble offrande en l'honneur des saints`},
-        {class:"indent1p", texte:`te soit agréable <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`te soit agréable <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et purifie nos corps
         aussi bien que nos esprits.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [
         {class:"indent1all", texte: `Si quelqu'un veut me servir, qu'il me suive, dit le Seigneur ;
-        et là où je suis, là aussi sera mon serviteur<span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et là où je suis, là aussi sera mon serviteur<span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`En l'anniversaire des saints,
         nous te prions, Seigneur : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`maintenant que nous sommes vivifiés par le sacrement reçu, <span style="color: #b30000;">/</span>`},
@@ -14137,7 +14155,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Le juste fleurira comme un palmier,
         il se multipliera comme un cèdre du Liban ;`},
         {class:"indent1all", texte: `planté dans les parvis du Seigneur,
-        il grandira dans la maison de notre Dieu <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        il grandira dans la maison de notre Dieu <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Que tes fidèles obtiennent ton aide, Seigneur,
         par la juste prière des saints : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous célébrons leur fête avec amour, <span style="color: #b30000;">/</span>
@@ -14159,7 +14177,7 @@ que tu préparais à la face des peuples.`}],
     antienne_communion: [
         {class:"indent1all", texte:`Venez à moi, vous tous qui peinez
         sous le poids du fardeau, dit le Seigneur,`},
-        {class:"indent1all", texte: `et moi, je vous procurerai le repos <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `et moi, je vous procurerai le repos <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Que cette communion à ton sacrement, Seigneur,
         nous procure le salut <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et qu'elle nous affermisse <span style="color: #b30000;">/</span>
@@ -14175,10 +14193,10 @@ que tu préparais à la face des peuples.`}],
         dont le Seigneur est la confiance.`},
         {class:"indent1all", texte: `Il sera comme un arbre, planté près des eaux,
         qui pousse, vers le courant, ses racines.`},
-        {class:"indent1all", texte: `Il ne craint pas quand vient la chaleur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `Il ne craint pas quand vient la chaleur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Nous t’en prions, Dieu tout-puissant : <span style="color: #b30000;">+</span>
         que l'exemple des saints`},
-        {class:"indent1p", texte:`nous incite à mener une vie meilleure ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`nous incite à mener une vie meilleure ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisque nous célébrons la mémoire des saints <span style="color: #b30000;">N.</span>et <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">/</span>
         fais-nous aussi la grâce de toujours imiter leurs actes.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -14187,7 +14205,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`En ce jour où nous célébrons la fête des saints,
         nous implorons, Seigneur, ta bonté`},
-        {class:"indent1p", texte:`en déposant nos dons sur ton autel : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en déposant nos dons sur ton autel : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu'ils servent à ta gloire dans le ciel <span style="color: #b30000;">/</span>
         et nous obtiennent l'abondance de ta grâce.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -14195,7 +14213,7 @@ que tu préparais à la face des peuples.`}],
     antienne_communion: [
         {class:"indent1all", texte:`Comme le Père m'a aimé,
         moi aussi je vous ai aimés, dit le Seigneur.`},
-        {class:"indent1all", texte: `Demeurez dans mon amour <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `Demeurez dans mon amour <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t'en prions, Seigneur notre Dieu, <span style="color: #b30000;">*</span>
         que les divins mystères célébrés en mémoire des saints <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`réalisent à jamais en nous le salut et la paix.`},
@@ -14208,10 +14226,10 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Seigneur, le juste se réjouit de ta force ;
         quelle vive allégresse lui donne ton salut !`},
-        {class:"indent1all", texte: `Tu as répondu au désir de son âme <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `Tu as répondu au désir de son âme <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         pour ouvrir à notre faiblesse le chemin du salut,`},
-        {class:"indent1p", texte:`tu nous donnes le secours et l'exemple des saints ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`tu nous donnes le secours et l'exemple des saints ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`alors que nous célébrons l'anniversaire de saint <span style="color: #b30000;">N.</span>,
         fais que nous avancions vers toi <span style="color: #b30000;">/</span>
         en le prenant pour modèle.`},
@@ -14228,13 +14246,13 @@ que tu préparais à la face des peuples.`}],
     antienne_communion: [
         {class:"indent1all", texte:`Si quelqu'un veut marcher à ma suite,`},
         {class:"indent1all", texte:`qu’il renonce à lui-même, qu’il prenne sa croix,
-        et qu'il me suive, dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        et qu'il me suive, dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte:`Ou bien, pour les dirigeants politiques :`},
         {class:"indent1all", texte: `Cherchez d'abord le royaume de Dieu,
-        et tout vous sera donné par surcroît, dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        et tout vous sera donné par surcroît, dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur,
         que cette communion à ton sacrement,`},
-        {class:"indent1p", texte:`reçue en mémoire de saint <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`reçue en mémoire de saint <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`sanctifie nos esprits et nos coeurs, <span style="color: #b30000;">/</span>
         pour que nous devenions participants de la nature divine.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -14247,10 +14265,10 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `La loi de vérité était dans sa bouche,
         et rien de mal ne se trouvait sur ses lèvres.`},
         {class:"indent1all", texte: `Dans la paix et la droiture, il marchait avec le Seigneur ;
-        nombreux furent ceux qu'il détourna de la faute<span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        nombreux furent ceux qu'il détourna de la faute<span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         toi seul est saint,`},
-        {class:"indent1p", texte:`et sans toi personne n'est bon ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et sans toi personne n'est bon ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par l'intercession de saint <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">/</span>
         de lui ressembler pour ne pas être privés de ta gloire.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -14267,7 +14285,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Heureux les coeurs purs,
         car ils verront Dieu.`},
         {class:"indent1all", texte: `Heureux les artisans de paix,
-        car ils seront appelés fils de Dieu <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        car ils seront appelés fils de Dieu <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Comblés par le sacrement que tu as donné, Seigneus,
         nous t’adressons cette prière : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`puisqu'en la fête de saint <span style="color: #b30000;">N.</span>,
@@ -14283,14 +14301,14 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Le juste fleurira comme un palmier,
         il se multipliera comme un cèdre du Liban ;`},
         {class:"indent1all", texte: `planté dans les parvis du Seigneur,
-        il grandira dans la maison de notre Dieu <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        il grandira dans la maison de notre Dieu <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Les lèvres du juste méditent la sagesse
         et sa bouche énonce le droit.`},
-        {class:"indent1all", texte: `La loi de son Dieu est dans son coeur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `La loi de son Dieu est dans son coeur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Accorde-nous, Seigneur,
         au milieu des changements de ce monde,`},
-        {class:"indent1p", texte:`de nous attacher de tout coeur aux réalités du ciel, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`de nous attacher de tout coeur aux réalités du ciel, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`toi qui nous as donné dans le saint abbé <span style="color: #b30000;">N.</span> <span style="color: #b30000;">/</span>
         un modèle de perfection évangélique.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -14299,7 +14317,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Tandis que nous approchons de ton autel, Seigneur, <span style="color: #b30000;">+</span>
         donne-nous ce sentiment d'amour pour toi`},
-        {class:"indent1p", texte:`qui consumait saint <span style="color: #b30000;">N.</span>, abbé, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`qui consumait saint <span style="color: #b30000;">N.</span>, abbé, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin que nous puissions t'offrir ce sacrifice, <span style="color: #b30000;">/</span>
         d'un coeur pur et brûlant de charité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -14307,10 +14325,10 @@ que tu préparais à la face des peuples.`}],
     antienne_communion: [
         {class:"indent1all", texte:`Voici le serviteur fidèle et avisé
         que le maître a établi sur sa maison,
-        pour donner à chacun, en temps voulu, sa part de blé <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        pour donner à chacun, en temps voulu, sa part de blé <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte:`Le plus grand parmi vous sera votre serviteur,`},
-        {class:"indent1all", texte: `dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Par la puissance du sacrement que nous avons reçu, Seigneur,
         renouvelle nos coeurs, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`afin qu'à l'exemple de saint <span style="color: #b30000;">N.</span>, abbé,
@@ -14325,14 +14343,14 @@ que tu préparais à la face des peuples.`}],
     titre: "COMMUN DES SAINTS ET DES SAINTES II. POUR LES MOINES ET LES RELIGIEUX B. Pour un moine",
     antienne_ouverture: [
         {class:"indent1all", texte: `Là où des frères, tous ensemble, glorifient Dieu,
-        le Seigneur donnera sa bénédiction <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        le Seigneur donnera sa bénédiction <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Je n'avais que ta louange à la bouche,
         pour te chanter.`},
-        {class:"indent1all", texte: `Joie sur mes lèvres qui chantent pour toi <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        {class:"indent1all", texte: `Joie sur mes lèvres qui chantent pour toi <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         dans ta bonté, tu as appelé ton serviteur, saint <span style="color: #b30000;">N.</span>,`},
-        {class:"indent1p", texte:`à marcher à la suite du Christ ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à marcher à la suite du Christ ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         la force de renoncer à nous-mêmes, <span style="color: #b30000;">/</span>
         et de nous attacher à toi de tout notre coeur.`},
@@ -14349,10 +14367,10 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte:`Ceux qui ont entendu la Parole dans un coeur bon et généreux
-        portent du fruit par leur persévérance <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        portent du fruit par leur persévérance <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Heureux les habitants de ta maison, Seigneur :
-        ils pourront te chanter à jamais <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        ils pourront te chanter à jamais <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous t'en prions, Seigneur notre Dieu, <span style="color: #b30000;">*</span>
         forts du soutien de saint <span style="color: #b30000;">N.</span>,`},
         {class:"indent1all", texte:`puissions-nous garder un juste équilibre de vie <span style="color: #b30000;">/</span>
@@ -14366,15 +14384,15 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Pour moi, comme un bel olivier dans la maison de Dieu,`},
         {class:"indent1all", texte: `j’espère en la miséricorde de mon Dieu,
-        sans fin, à jamais <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        sans fin, à jamais <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Au royaume de ce monde, à toute sa splendeur,
         j’ai préféré l'amour de mon Seigneur Jésus Christ,`},
         {class:"indent1all", texte: `je l’ai vu, je l’ai aimé,
-        je lui ai donné ma foi, entre tous je l'ai choisi <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        je lui ai donné ma foi, entre tous je l'ai choisi <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as appelé ta servante, sainte <span style="color: #b30000;">N.</span>,`},
-        {class:"indent1p", texte:`à te chercher par-dessus tout ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`à te chercher par-dessus tout ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à son exemple et par son intercession,
         de te servir dans la pureté et l'humilité du coeur, <span style="color: #b30000;">/</span>
         et de parvenir ainsi à ta gloire éternelle.`},
@@ -14384,7 +14402,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Consacre, Seigneur,
         les dons que nous te présentons avec ferveur,`},
-        {class:"indent1p", texte:`en la mémoire de sainte <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en la mémoire de sainte <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`toi qui nous enseignes,
         grâce au réconfort que tu nous donnes maintenant, <span style="color: #b30000;">/</span>
         à ne jamais désespérer des promesses éternelles. <span style="color: #b30000;">*</span>`},
@@ -14392,11 +14410,11 @@ que tu préparais à la face des peuples.`}],
       ],
     antienne_communion: [
         {class:"indent1all", texte:`D'heureuses paroles jaillissent de mon coeur
-        quand je dis mes poèmes pour le roi <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        quand je dis mes poèmes pour le roi <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte:`Une seule chose est nécessaire.`},
         {class:"indent1all", texte: `Elle a choisi la meilleure part,
-        celle qui ne lui sera pas enlevée <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        celle qui ne lui sera pas enlevée <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu nous as recréés, Seigneur, aux sources du salut,
         et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`à l'intercession de sainte <span style="color: #b30000;">N.</span>, rends-nous capables,
@@ -14410,13 +14428,13 @@ que tu préparais à la face des peuples.`}],
     titre: "COMMUN DES SAINTS ET DES SAINTES II. POUR LES MOINES ET LES RELIGIEUX D. Pour les religieux et les religieuses 1",
     antienne_ouverture: [
         {class:"indent1all", texte: `Seigneur, mon partage et ma coupe :
-        de toi dépend mon sort <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        de toi dépend mon sort <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien, pour une religieuse :`},
         {class:"indent1all", texte: `Le Seigneur l'a fiancée à lui pour toujours,
-        dans la fidélité et la miséricorde <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        dans la fidélité et la miséricorde <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as donné à saint(e) <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`d'imiter avec persévérance le Christ humble et pauvre ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`d'imiter avec persévérance le Christ humble et pauvre ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, par son intercession,
         de marcher dans la fidélité à l'appel que nous avons reçu, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`et de parvenir ainsi à la perfection
@@ -14426,7 +14444,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dieu de grande bonté, <span style="color: #b30000;">+</span>
         en saint(e) <span style="color: #b30000;">N.</span>, tu as détruit l'homme ancien`},
-        {class:"indent1p", texte:`pour créer un homme nouveau à ton image ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`pour créer un homme nouveau à ton image ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous d'être renouvelés comme lui (elle), <span style="color: #b30000;">/</span>
         afin que nous puissions te plaire
         en t'offrant ce sacrifice qui nous réconcilie avec toi.`},
@@ -14436,10 +14454,10 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Amen, je vous le dis :`},
         {class:"indent1all", texte:`vous qui avez tout quitté pour me suivre,
         vous recevrez le centuple,`},
-        {class:"indent1all", texte:`et vous aurez en héritage la vie éternelle <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        {class:"indent1all", texte:`et vous aurez en héritage la vie éternelle <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien, pour une religieuse :`},
         {class:"indent1all", texte: `Le Seigneur est mon partage,
-        il est bon pour l'âme qui le cherche <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        il est bon pour l'âme qui le cherche <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Par la puissance de ce sacrement,
         Seigneur, nous te prions : <span style="color: #b30000;">+</span>`},
         {class:"indent1all", texte:`conduis-nous sans cesse dans la voie de ton amour,
@@ -14455,14 +14473,14 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Saint <span style="color: #b30000;">N.</span> a obtenu, du Seigneur, la bénédiction,
         et de Dieu son Sauveur, la miséricorde.`},
-        {class:"indent1all", texte:`Voici le peuple de ceux qui cherchent Dieu <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        {class:"indent1all", texte:`Voici le peuple de ceux qui cherchent Dieu <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte:`Joie pour les coeurs qui cherchent Dieu.`},
         {class:"indent1all", texte: `Cherchez le Seigneur, et vous serez affermis,
-        recherchez sans trêve sa face <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        recherchez sans trêve sa face <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as appelé saint(e) <span style="color: #b30000;">N.</span>`},
-        {class:"indent1p", texte:`à rechercher en ce monde ton royaume
+        {class:"indentallp", texte:`à rechercher en ce monde ton royaume
         en s'efforçant de pratiquer une charité parfaite ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que, fortifiés par son intercession, <span style="color: #b30000;">/</span>
         nous avancions dans la joie spirituelle
@@ -14473,17 +14491,17 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accepte, Seigneur, comme un hommage de tes serviteur
         l'offrande que nous déposons sur ton autel`},
-        {class:"indent1p", texte:`en faisant mémoire de saint(e) <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en faisant mémoire de saint(e) <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`et permets que, libérés des fardeaux d'ici-bas, <span style="color: #b30000;">/</span>
         nous n'ayons d'autre richesse que toi.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [
         {class:"indent1all", texte:`Goûtez et voyez : le Seigneur est bon !
-        Heureux qui trouve en lui son espérance <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        Heureux qui trouve en lui son espérance <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Heureux les pauvres de coeur,
-        car le royaume des Cieux est à eux <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        car le royaume des Cieux est à eux <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Soutenus par la force de ce sacrement,
         nous t'en prions, Dieu tout-puissant : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`que nous apprenions, en suivant l'exemple de saint(e) N,
@@ -14501,14 +14519,14 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Amen, je vous le dis :
         chaque fois que vous l'avez fait
         à l'un de ces plus petits de mes frères,
-        c'est à moi que vous l'avez fait <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        c'est à moi que vous l'avez fait <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `À pleines mains, il donne au pauvre ;
         à jamais se maintiendra sa justice,
-        sa puissance grandira, et sa gloire <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        sa puissance grandira, et sa gloire <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as enseigné à ton Église`},
-        {class:"indent1p", texte:`que tous les commandements divins
+        {class:"indentallp", texte:`que tous les commandements divins
         trouvent leur accomplissement
         dans l'amour de Dieu et du prochain ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous de mettre en oeuvre cette charité
@@ -14521,21 +14539,21 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accueille,Seigneur, les dons offerts par ton peuple ; <span style="color: #b30000;">+</span>
         et puisque nous rappelons l'oeuvre d'amour infini`},
-        {class:"indent1p", texte:`accomplie par ton Fils, <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`accomplie par ton Fils, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous, à l'exemple de saint(e) <span style="color: #b30000;">N.</span>, <span style="color: #b30000;">/</span>
         d'être affermis dans notre amour pour toi et pour le prochain.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [
         {class:"indent1all", texte:`Il n’y a pas de plus grand amour
-        que de donner sa vie pour ses amis, dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        que de donner sa vie pour ses amis, dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `À ceci, tous reconnaîtront que vous êtes mes disciples :
         si vous avez de l'amour les uns pour les autres,
-        dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Tu as refait nos forces, Seigneur,
         par tes saints mystères,`},
-        {class:"indent1p", texte:`et nous te prions : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te prions : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`donne-nous de suivre les exemples de saint(e) <span style="color: #b30000;">N.</span>,
         qui te manifesta un attachement indéfectible, <span style="color: #b30000;">/</span>
         et servit ton peuple avec une charité sans limite.`},
@@ -14555,14 +14573,14 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Laissez les enfants venir à moi, dit le Seigneur.`},
         {class:"indent1all", texte: `Ne les empêchez pas,
-        car le royaume de Dieu est à ceux qui leur ressemblent <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        car le royaume de Dieu est à ceux qui leur ressemblent <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Celui qui observera et enseignera les commandements du Seigneur,
         celui-là sera déclaré grand dans le royaume des Cieux,
-        dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu as suscité saint <span style="color: #b30000;">N.</span> dans ton Église`},
-        {class:"indent1p", texte:`pour qu'il enseigne le chemin du salut
+        {class:"indentallp", texte:`pour qu'il enseigne le chemin du salut
         à ceux qui lui étaient confiés ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`accorde-nous, à son exemple, de suivre le Christ, le seul Maitre, <span style="color: #b30000;">/</span>
         afin de parvenir jusqu'à toi en compagnie de nos frères.`},
@@ -14572,7 +14590,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Accepte, Seigneur, nous t'en prions,
         le sacrifice que ton peuple consacré`},
-        {class:"indent1p", texte:`t’offre aujourd'hui en mémoire de saint <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`t’offre aujourd'hui en mémoire de saint <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu'en ayant participé à ce mystère, <span style="color: #b30000;">/</span>
         nous devenions des témoins de ta charité.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -14580,10 +14598,10 @@ que tu préparais à la face des peuples.`}],
     antienne_communion: [
         {class:"indent1all", texte:`Si vous ne changez pas
         pour devenir comme les enfants, dit le Seigneur,`},
-        {class:"indent1all", texte:`vous n’entrerez pas dans le royaume des Cieux <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        {class:"indent1all", texte:`vous n’entrerez pas dans le royaume des Cieux <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Celui qui me suit ne marche pas dans les ténèbres,
-        mais il aura la lumière de la vie, dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        mais il aura la lumière de la vie, dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Dieu tout-puissant, <span style="color: #b30000;">+</span>
         fais que nous trouvions un soutien dans ce repas sacré, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`pour qu’à l'exemple de saint <span style="color: #b30000;">N.</span>,
@@ -14593,22 +14611,22 @@ que tu préparais à la face des peuples.`}],
     ],
   },
 
-  "CSPSF_1": {
+  "CSPSF_I": {
     titre: "COMMUN DES SAINTS ET DES SAINTES V. POUR LES SAINTES FEMMES 1",
     antienne_ouverture: [
         {class:"indent1all", texte: `La femme qui craint le Seigneur
         mérite la louange.`},
         {class:"indent1all", texte: `Ses fils la disent bienheureuse,
-        et son mari fait son éloge <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`},
+        et son mari fait son éloge <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`},
         {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Ses doigts s'ouvrent en faveur du pauvre,
         elle tend la main au malheureux,
-        elle ne mange pas le pain de l’oisiveté <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        elle ne mange pas le pain de l’oisiveté <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [
         {class:"rubrique", texte: `Pour une sainte femme :`},
         {class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
         tu nous réjouis chaque année`},
-        {class:"indent1p", texte:`par la fête de sainte <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`par la fête de sainte <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais qu'en menant une vie sainte, <span style="color: #b30000;">/</span>
         nous imitions celle que nous honorons dans cette célébration.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -14617,7 +14635,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte: `Ou bien, pour plusieurs saintes :`},
         {class:"grandelettrine", texte:`Nous t'en prions, Dieu tout-puissant : <span style="color: #b30000;">*</span>
         accorde-nous le secours du ciel`},
-        {class:"indent1p", texte:`par l'intercession des saintes <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,`},
+        {class:"indentallp", texte:`par l'intercession des saintes <span style="color: #b30000;">N.</span> et <span style="color: #b30000;">N.</span>,`},
         {class:"indent1all", texte:`dont la vie admirable est pour tous
         un exemple utile au salut.`},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -14626,7 +14644,7 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Nous te présentons, Seigneur, ce sacrifice
         en mémoire de sainte <span style="color: #b30000;">N.</span>,`},
-        {class:"indent1p", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`et nous te supplions humblement : <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`qu’avec ton pardon, <span style="color: #b30000;">/</span>
         il nous apporte le salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
@@ -14651,10 +14669,10 @@ que tu préparais à la face des peuples.`}],
     titre: "COMMUN DES SAINTS ET DES SAINTES V. POUR LES SAINTES FEMMES 2",
     antienne_ouverture: [
         {class:"indent1all", texte: `Voici une femme pleine de sagesse qui bâtit sa maison ;
-        celle qui craint le Seigneur marche avec droiture <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        celle qui craint le Seigneur marche avec droiture <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu,
         toi qui élèves les humbles, <span style="color: #b30000;">+</span>`},
-        {class:"indent1p", texte:`tu as voulu que sainte <span style="color: #b30000;">N.</span>
+        {class:"indentallp", texte:`tu as voulu que sainte <span style="color: #b30000;">N.</span>
         se distingue par une charité et une patience remarquables ;`},
         {class:"indent1all", texte:`accorde-nous, à sa prière et par ses mérites,
         de toujours porter notre croix <span style="color: #b30000;">/</span>
@@ -14665,7 +14683,7 @@ que tu préparais à la face des peuples.`}],
         {class:"rubrique", texte: `Ou bien`},
         {class:"grandelettrine", texte:`Répands sur nous, Seigneur,
         cet esprit de connaissance et d'amour`},
-        {class:"indent1p", texte:`dont tu as comblé ta servante, sainte <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`dont tu as comblé ta servante, sainte <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`en cherchant, comme elle, à te suivre
         par un attachement véritable, <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`puissions-nous croire et agir
@@ -14676,17 +14694,17 @@ que tu préparais à la face des peuples.`}],
     ],
     priereSurLesOffrandes: [{class:"grandelettrine", texte:`Regarde, Seigneur, le sacrifice de ton peuple ; <span style="color: #b30000;">*</span>
         il te l'offre d'un coeur fervent`},
-        {class:"indent1p", texte:`en l'honneur de sainte <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">/</span>`},
+        {class:"indentallp", texte:`en l'honneur de sainte <span style="color: #b30000;">N.</span> : <span style="color: #b30000;">/</span>`},
         {class:"indent1all", texte:`qu'il en ressente les effets pour son salut.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
     antienne_communion: [
         {class:"indent1all", texte:`Celui qui fait la volonté de mon Père qui est aux cieux,`},
         {class:"indent1all", texte: `celui-là est pour moi un frère, une soeur, une mère,
-        dit le Seigneur <span style="color: #b30000;">(T.P.</span>alléluia<span style="color: #b30000;">)</span>.`}],
+        dit le Seigneur <span style="color: #b30000;">(T.P. </span>alléluia<span style="color: #b30000;">)</span>.`}],
     priereApresLaCommunion: [{class:"grandelettrine", texte:`Nous voici comblés de ces dons
         que nous avons reçus de toi, Seigneur,`},
-        {class:"indent1p", texte:`en célébrant la fête de sainte <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
+        {class:"indentallp", texte:`en célébrant la fête de sainte <span style="color: #b30000;">N.</span> ; <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`nous t'en prions :`},
         {class:"indent1all", texte:`fais qu'ils nous purifient, <span style="color: #b30000;">/</span>
         qu’ils nous aident et nous protègent.`},
@@ -14701,7 +14719,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: ``},
         {class:"indent1all", texte: ``}],
     collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"", texte:``},
         {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
@@ -14727,7 +14745,7 @@ que tu préparais à la face des peuples.`}],
   "": {
     titre: "",
     collecte: [{class:"grandelettrine", texte:``},
-        {class:"indent1p", texte:``},
+        {class:"indentallp", texte:``},
         {class:"indent1all", texte:``},
         {class:"indent1all", texte:``},
         {class:"indent1all", texte:``},

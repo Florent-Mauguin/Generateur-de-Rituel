@@ -14,7 +14,7 @@
       summary: '',
       items: [
         { icon: '📝', label: "Suite et fin de l'integration des oraisons : 100% (476/476). Soit plus de 15 000 lignes de code..." },
-        { icon: '🙏', label: "Ajout d'indications pour le service de l'autel" },
+        { icon: '🙏', label: "Ajout du rituel du jeudi Saint, du vendredi Saint" },
       ]
    },
     */

@@ -1066,7 +1066,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             et sans fin nous proclamons\u00A0:`}]
 },
 
-"1SSVR": {
+"1SR": {
         titre: "PRÉFACE DES SAINTS ET SAINTES, VIERGES ET RELIGIEUX",
     soustitre: "Signification de la vie consacrée",
     rubrique:`Cette préface se dit aux solennités et fêtes des saints et saintes, vierges, religieux ou religieuses. On peut la dire aux mémoires de ces saints.`,
@@ -1266,7 +1266,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             et d’une seule voix nous proclamons\u00A0:`}]
 },
 
-"1D": {
+"1DE": {
         titre: "1ʳᵉ PRÉFACE DES DÉFUNTS",
     soustitre: "L’espérance de la résurrection dans le Christ",
     rubrique:`Cette préface se dit aux messes des défunts.`,
@@ -1297,7 +1297,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             et sans fin nous proclamons\u00A0:`}]
 },
 
-"2D": {
+"2DE": {
         titre: "2ᵉ PRÉFACE DES DÉFUNTS",
     soustitre: "Le Christ est mort pour que nous vivions",
     rubrique:`Cette préface se dit aux messes des défunts.`,
@@ -1322,7 +1322,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             nous te louons dans la joie en proclamant\u00A0:`}]
 },
 
-"3D": {
+"3DE": {
         titre: "3ᵉ PRÉFACE DES DÉFUNTS",
     soustitre: "Le Christ, salut et vie",
     rubrique:`Cette préface se dit aux messes des défunts.`,
@@ -1348,7 +1348,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             pour chanter et proclamer\u00A0:`}]
 },
 
-"4D": {
+"4DE": {
         titre: "4ᵉ PRÉFACE DES DÉFUNTS",
     soustitre: "De la vie sur terre à la gloire du ciel",
     rubrique:`Cette préface se dit aux messes des défunts.`,
@@ -1377,7 +1377,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             et sans fin nous proclamons\u00A0:`}]
 },
 
-"5D": {
+"5DE": {
         titre: "5ᵉ PRÉFACE DES DÉFUNTS",
     soustitre: "Grâce à la victoire du Christ, nous ressusciterons avec lui",
     rubrique:`Cette préface se dit aux messes des défunts.`,
@@ -1402,7 +1402,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             et t’adorer sans fin en proclamant\u00A0:`}]
 },
 
-"1B": {
+"1BS": {
         titre: "PRÉFACE DU BAPTÊME DU SEIGNEUR",
     soustitre: "Le Baptême du Seigneur",
     rubrique:``,
@@ -1596,7 +1596,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             et, dans la joie, nous te célébrons en proclamant\u00A0:`}]
 },
 
-"1CR": {
+"1MR": {
         titre: "PRÉFACE DE LA MESSE CHRISMALE",
     soustitre: "Le sacerdoce du Christ et le ministère des prêtres",
     rubrique:``,
@@ -1675,7 +1675,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
         et sans fin nous proclamons\u00A0:`}]
 },
 
-"1P": {
+"1PE": {
         titre: "PRÉFACE DE LA PENTECÔTE",
     soustitre: "Le mystère de la Pentecôte",
     rubrique:``,
@@ -1799,7 +1799,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
             et sans fin nous proclamons\u00A0:`}]
 },
 
-"1CRU": {
+"1CR": {
         titre: "PRÉFACE DU CHRIST ROI DE L’UNIVERS",
     soustitre: "Le Christ, Roi de l’univers",
     rubrique:``,
@@ -2129,7 +2129,7 @@ On peut la dire aussi à la solennité du Corps et du Sang du Christ et aux Mess
 },
 
 "1_CROIX_G": {
-        titre: "PRÉFACE DE LA LA CROIX GLORIEUSE",
+        titre: "PRÉFACE DE LA CROIX GLORIEUSE",
     soustitre: "La victoire de la Croix glorieuse",
     rubrique:`On peut également employer la préface de la Passion n° 1`,
     items: [ 

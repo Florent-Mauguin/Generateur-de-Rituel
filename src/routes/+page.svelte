@@ -5,8 +5,10 @@ JS
 <script>
     import { onMount } from 'svelte';
     import { ritual } from '$lib/ritual.js';
+    import { Rituelplus } from '$lib/ritual+.js';
     import { Oraisons } from '$lib/oraisons';
     import { preface } from '$lib/prefaces';
+    import { benedictions } from '$lib/benedictions';
     import FileSaver from "file-saver";
     import { Document, Indent, Packer, Paragraph, TextRun } from "docx";
     import Roadmap from '$lib/components/Roadmap.svelte';
@@ -14,23 +16,21 @@ JS
     import cierges from '$lib/assets/cierges.svg';
     import encensoir from '$lib/assets/encensoir.svg';
     import missel from '$lib/assets/missel.svg';
-    import croix from '$lib/assets/croix.svg';
+    import croixdeprocession from '$lib/assets/croixdeprocession.svg';
     import imginsigne from '$lib/assets/imginsigne.svg';
     import acolytat from '$lib/assets/acolytat.svg';
     import * as romcalModule from 'romcal';
     const { Romcal } = romcalModule; 
     import { France_Fr } from '@romcal/calendar.france';
     import { liturgyRules } from '$lib/mapping.js';
-    
 const romcal = new Romcal({ localizedCalendar: France_Fr });
 
 // --- Variables d'état ---
   let selectedDate = new Date().toISOString().split('T')[0];
   let availableEvents = []; // Toutes les fêtes du jour
   let selectedEventId = ""; // L'ID choisi par l'utilisateur
-  let lastLoadedEventId = "";
   let currentStep = "choice"; 
-let projectType = ""; // 'messe', 'sacrement', ou 'mixte'
+  let projectType = ""; // 'messe', 'sacrement', ou 'mixte'
 
 // Formulaire
   export let version = "0.4";
@@ -39,7 +39,8 @@ let projectType = ""; // 'messe', 'sacrement', ou 'mixte'
   let celebrationType = "Solennité";
   let CelebrationduJour = "";
   let selectedCommunId = "";
-  
+  $: anneeLiturgique = liturgicalContext.anneeLiturgique;
+
   // Options
   let [secret, hideCredo, hideGloria, hidePE, kyriegrec, glorialatin, DoxologieLt, sanctusLt, agnusLt ] = [false, false, false, false, false, false, false, false, false];
   let [Showpreface, Showoraisons] = [true, true];
@@ -52,6 +53,8 @@ let projectType = ""; // 'messe', 'sacrement', ou 'mixte'
   let InvitS = "5";
   let PriereC = "3";
   let Choixpreface = "";
+  let precision = "";
+  let RituelduJour = "";
   let ChoixOraison = "";
   let OraisonsDuJour = "";
   let availablePrefaces = [];
@@ -61,14 +64,22 @@ let projectType = ""; // 'messe', 'sacrement', ou 'mixte'
   let Communicantes = "Semaine";
   let NotrePère = "NP1";
   let Apologies = "1";
-  let Conclusion = "1";
+  let envoi = "1";
   let Messe = "";
+  let croix = "1";
+  let exultet = "1";
+  let litbap = "A";
+  let renonciation = "1";
+  let entreerameaux = "1";
+
+  let Conclusion = "1"; // "1"=Standard, "2"=Prière Peuple, "3"=Solennelle
+  let Benediction = "";
 
 //paramètres servants
   let showservants = false;
   let [incense, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes] = [false, false, false, false, false, false];
   
-  let [showAutresParams, hideliturgieeucharistique, hideLiturgieParole, Sacrements, Servants, showAutresceremonie] = [false, false, false, false, false, false];
+  let [showAutresParams, hideliturgieeucharistique, hideritesInitiaux, hideLiturgieParole, hideritesdeConclusion, Sacrements, Servants, showAutresceremonie] = [false, false, false, false, false, false, false, false];
   let [hideRubriques, presenceBishop, presenceDiacre, showcat, aspersion] = [false, false, false, false, false];
   let servants = 0;
   let filteredRitual = [];
@@ -84,6 +95,12 @@ let projectType = ""; // 'messe', 'sacrement', ou 'mixte'
     const events = calendar[dateStr] || [];
     availableEvents = events;
     if (events.length > 0) selectedEventId = events[0].id;
+    const isOctavePaques = events.some(event => 
+      event.id === 'easter_sunday' || event.id === 'easter_monday' || event.id === 'easter_tuesday' ||
+      event.id === 'easter_wednesday' || event.id === 'easter_thursday' || event.id === 'easter_friday' ||
+      event.id === 'easter_saturday' || event.id === 'holy_saturday' || event.id === 'divine_mercy_sunday'
+    );
+    if (isOctavePaques) { envoi = "5" } else { envoi = "1"}
   }
 
   function applyLiturgyMapping(fete) {
@@ -96,8 +113,32 @@ let projectType = ""; // 'messe', 'sacrement', ou 'mixte'
         selectedCommunId = regles.CommunSource || ""; 
     }
 
+  if (typeCredo === "NA") {
+        hideCredo = true;
+    } else {
+        hideCredo = false;
+    }
+
+    // 1. Priorité Haute : Mapping direct (Bénédiction Solennelle)
+    Benediction = regles.Benediction || "";
+    if (Benediction !== "") {Conclusion = "3";}
+    // 2. Priorité Moyenne : Automatique si Prière sur le Peuple existe
+    else if (Oraisons[regles.ChoixOraison]?.priereSurLePeuple) {
+        Conclusion = "2";
+    } 
+    // 3. Par défaut : Standard
+    else {
+        Conclusion = "1";
+    }
+
   CelebrationduJour = regles.CelebrationduJour || fete.name;
   ChoixOraison = regles.ChoixOraison || "";
+  RituelduJour = regles.RituelduJour || "";
+  hideritesdeConclusion = regles.hideritesdeConclusion || false;
+  hideLiturgieParole = regles.hideLiturgieParole || false;
+  hideliturgieeucharistique = regles.hideliturgieeucharistique || false;
+  hideritesInitiaux = regles.hideritesInitiaux || false;
+  precision = regles.precision || "";
   
   // Gestion du choix multiple de préfaces
 availablePrefaces = []; 
@@ -121,12 +162,12 @@ availablePrefaces = [];
     }
 
   typeCredo = regles.typeCredo || "NC";
+  Communicantes = regles.Communicantes || "Semaine";
   celebrationType = regles.celebrationType || "Semaine";
   Showoraisons = true;
   Showpreface = true;
 }
 
-  
 
   let [showPopup, dontShowAgain, forceOpen] = [false, false, false];
   let currentPage = 0;
@@ -202,15 +243,37 @@ function closePopup() {
   }
 
 
+  //Fonction pour la PE4 et ses contraintes
+const liturgyConstraints = {
+  PE4: (ctx) =>
+    ctx.season === "ORDINARY_TIME" && !ctx.hasProperPreface,
+};
+function getLiturgicalContext(event) {
+  if (!event) return {};
+
+  const sundayCycle = event.cycles?.sundayCycle;
+
+  return {
+    season: event.seasons?.[0],
+    rank: event.rank,
+    isSunday: event.calendar?.dayOfWeek === 0,
+    hasProperPreface: event.hasProperPreface ?? false,
+    anneeLiturgique: sundayCycle ? sundayCycle.replace("YEAR_", "") : "" // A, B, C
+  };
+}
+$: liturgicalContext = getLiturgicalContext(selectedEvent);
+function isAllowed(option, context) {
+  const rule = liturgyConstraints[option];
+  if (!rule) return true;
+  return rule(context);
+}
+$: if (!isAllowed("PE4", liturgicalContext) && typePE === "PE4") {
+  typePE = "PE3";
+}
+
 
 
  // Construction du rituel complet
-$: fullRitual = [
-  ...ritual.ritesInitiaux,
-...(hideLiturgieParole ? [] : ritual.liturgiedelaparole),
-...(hideliturgieeucharistique ? [] : ritual.liturgieeucharistique),
-  ...ritual.ritesdeConclusion
-];
 
 $: {
     const feteChoisie = availableEvents.find(e => e.id === selectedEventId);
@@ -238,18 +301,28 @@ function getCssColor(event) {
   return colorMap[color] || color;
 }
 
-$: {hideLiturgieParole, selectedEventId, inputRituelName, secret, hideGloria, glorialatin, sanctusLt, agnusLt,
-    DoxologieLt, hideCredo, Showpreface, hidePE, Showoraisons, hideliturgieeucharistique, kyriegrec,
-    Bapteme, PremiereCommunion, Confirmation, Mariage, Ordination, celebrationType, selectedCommunId,
-    sacrementDesMalades, salutation, ChoixPenitentiel, typeCredo, presenceDiacre,
-    InvitS, PriereC, Choixpreface, typePE, AcclamationEucharistique, aspersion,
-    Communicantes, NotrePère, Apologies, Conclusion, hideRubriques, showservants,
+$: {hideLiturgieParole, selectedEventId, inputRituelName, secret, hideGloria, glorialatin, sanctusLt, agnusLt, Conclusion,
+    DoxologieLt, hideCredo, Showpreface, hidePE, Showoraisons, hideliturgieeucharistique, kyriegrec, precision,
+    Bapteme, PremiereCommunion, Confirmation, Mariage, Ordination, celebrationType, selectedCommunId, exultet,
+    sacrementDesMalades, salutation, ChoixPenitentiel, typeCredo, presenceDiacre, RituelduJour, croix, litbap, anneeLiturgique,
+    InvitS, PriereC, Choixpreface, typePE, AcclamationEucharistique, aspersion, hideritesdeConclusion, entreerameaux,
+    Communicantes, NotrePère, Apologies, envoi, hideRubriques, showservants, hideritesInitiaux, renonciation,
     presenceBishop, incense, servants, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes;
     
     generateRitual();
 }
 // Génération du rituel filtré
 function generateRitual() {
+  const fullRitual = [
+...(ritual.autresrituel || []),
+...(hideritesInitiaux ? [] : ritual.ritesInitiaux),
+...(hideLiturgieParole ? [] : ritual.liturgiedelaparole),
+...(hideliturgieeucharistique ? [] : ritual.liturgieeucharistique),
+...(hideritesdeConclusion ? [] : ritual.ritesdeConclusion),
+];
+
+  console.log(Benediction);
+  console.log(Conclusion);
     rituelName = inputRituelName;
 
     // 1. Mise à jour des données (Préfaces et Oraisons)
@@ -264,17 +337,19 @@ function generateRitual() {
     } else if (ChoixOraison) {
         OraisonsDuJour = Oraisons[ChoixOraison] || null;
     }
+    if (RituelduJour && Rituelplus[RituelduJour]) {
+            const rituelPropre = Rituelplus[RituelduJour];}
 
     // 2. Préparation du contexte des options
     const options = {
-        presenceBishop, kyriegrec, glorialatin, agnusLt, sanctusLt,
-        incense, hideliturgieeucharistique, servants, presenceDiacre, 
+        presenceBishop, kyriegrec, glorialatin, agnusLt, sanctusLt, precision, Conclusion,
+        incense, hideliturgieeucharistique, servants, presenceDiacre, croix,
         showservants, cruciferaire, ceroferaire, porteinsigne, portemissel, 
-        acolytes, celebrationType, secret, hideRubriques, Apologies, 
-        Communicantes, Messe, aspersion, salutation, ChoixPenitentiel, 
-        hideGloria, OraisonsDuJour, Showoraisons, hideCredo, typeCredo, 
+        acolytes, celebrationType, secret, hideRubriques, Apologies, exultet,
+        Communicantes, Messe, aspersion, salutation, ChoixPenitentiel, renonciation,
+        hideGloria, OraisonsDuJour, Showoraisons, hideCredo, typeCredo, entreerameaux,
         InvitS, PriereC, preface, hidePE, typePE, AcclamationEucharistique, 
-        DoxologieLt, NotrePère, Conclusion
+        DoxologieLt, NotrePère, envoi, litbap, anneeLiturgique
     };
 
     // 3. Sous-fonction de filtrage sécurisée
@@ -320,6 +395,36 @@ function generateRitual() {
                 filteredRitual.push({ type: "oraison", segments: OraisonsDuJour[key] });
             }
             continue;}
+          
+          if (sType === "insert-SurLePeuple") {
+            if (Conclusion=== "2") filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.priereSurLePeuple });
+            continue; }
+
+          if (sType === "insert-benediction") {
+    if (Conclusion === "3") {
+        filteredRitual.push(benedictions[Benediction]); }
+    continue; }
+            
+            if (sType.startsWith("insert-") && !sType.includes("antienne") && !sType.includes("priere")) {
+    const sectionKey = sType.replace("insert-", "");
+    
+    if (RituelduJour && Rituelplus[RituelduJour]) {
+        const rituelPropre = Rituelplus[RituelduJour];
+        const dataSection = rituelPropre[sectionKey];
+
+        if (dataSection && Array.isArray(dataSection)) {
+            dataSection.forEach(item => {
+              if (checkConditions(item)) {
+                filteredRitual.push({
+                    ...item,
+                    type: item.type || "text" 
+                });
+              }
+            });
+            continue; 
+        }
+    }
+}
 
         // Gestion préface
         if (sType === "titre-preface") {
@@ -436,13 +541,13 @@ HTML
 <button class="choice-btn disabled" disabled title="Bientôt disponible">
     <span class="choice-icon">🕊️</span>
     <span class="choice-title">Rituel de Sacrement</span>
-    <span class="choice-desc">(Bientôt disponible)</span>
+    <span class="choice-desc">(Prochainement)</span>
   </button>
 
   <button class="choice-btn disabled" disabled title="Bientôt disponible">
     <span class="choice-icon">✨</span>
     <span class="choice-title">Messe + Sacrement</span>
-    <span class="choice-desc">(Bientôt disponible)</span>
+    <span class="choice-desc">(Prochainement)</span>
   </button>
       </div>
     </div>
@@ -528,7 +633,20 @@ Afficher la date
     </div>
   </div>
 {/if}
+
+{#if selectedEvent && liturgyRules[selectedEvent.id]?.CommunOptions?.length >= 2}
+  <div class="common-selector no-print">
+    <p>Choisir le commun : </p>
+    <select bind:value={selectedCommunId}>
+      {#each liturgyRules[selectedEvent.id].CommunOptions as option}
+        <option value={option.id}>{option.label}</option>
+      {/each}
+    </select>
+  </div>
+{/if}
 </div>
+
+
 
 <div class="prempare" style="margin-bottom: 0.2rem">
     <div class="panel">
@@ -561,16 +679,6 @@ Afficher la date
               <span class="slider"></span>
             </div>
           </label>
-                      {#if selectedEvent && liturgyRules[selectedEvent.id]?.CommunOptions}
-  <div class="common-selector no-print">
-    <p>Choisir le commun :</p>
-    <select bind:value={selectedCommunId}>
-      {#each liturgyRules[selectedEvent.id].CommunOptions as option}
-        <option value={option.id}>{option.label}</option>
-      {/each}
-    </select>
-  </div>
-{/if}
           <label class="toggle-container">
             <span class="label-text">Bénédiction et aspersion de l'eau</span>
             <div class="switch">
@@ -578,7 +686,29 @@ Afficher la date
               <span class="slider"></span>
             </div>
           </label>
+          <label class="toggle-container">
+            <span class="label-text">Prières secrètes</span>
+            <div class="switch">
+              <input type="checkbox" bind:checked={secret} />
+              <span class="slider"></span>
+            </div>
+          </label>
+      <div class="common-selector no-print" style="margin-left: 0rem; justify-content: space-between;">
+    <p>Bénédiction</p>
+    <select bind:value={Conclusion}>
+        <option value="1">Forme Standard</option>
+        <option value="2">Prière sur le Peuple</option>
+        <option value="3">Bénédiction Solennelle</option>
+    </select>
+      </div>
 
+    {#if Conclusion === "3"}
+        <select class=" toggle-container common-selector no-print" bind:value={Benediction}>
+            <option value="">-- Choisir une bénédiction --</option>
+            <option value="TO_1">Temps Ordinaire I</option>
+            </select>
+    {/if}
+          <!--
           <div class="panel" style="padding: 0.2rem">
         <div class="panel-header" role="button" tabindex="0" aria-expanded={showcat}
           on:click={() => showcat = !showcat}
@@ -646,10 +776,10 @@ Afficher la date
           </label>
 </div>
 {/if}
+ -->
     </div>
     {/if}
     </div>
-  
 
 
 <!-- Début section sacrements 
@@ -707,7 +837,7 @@ Afficher la date
           <div class="servants-grid">
           <label class="servant-option">
             <input type="checkbox" bind:checked={cruciferaire} name="Cruciféraire">
-            <img src={croix} alt="Cruciféraire">
+            <img src={croixdeprocession} alt="Cruciféraire">
             <span>Cruciféraire</span>
           </label>
           <label class="servant-option">
@@ -980,6 +1110,7 @@ Afficher la date
       <button class:selected={typePE === "PE3"} 
         on:click={() => { typePE = "PE3";  }}>Prière Eucharistique 3</button>
       <button class:selected={typePE === "PE4"} 
+        disabled={!isAllowed("PE4", liturgicalContext)}
         on:click={() => { typePE = "PE4";  }}>Prière Eucharistique 4</button>
     </div>
         <h3 class="H3">{@html step.texte}</h3>
@@ -1048,18 +1179,29 @@ Afficher la date
     </div>
   </div>
 
-    {:else if step.id === "Conclusion"}
+    {:else if step.id === "envoi" && envoi !== "5"}
  <div class="variant-header">
     <h3 class="H3 no-print no-wrap">{@html step.texte}</h3>
     <div class="variant-buttons no-print no-wrap">
-      <button class:selected={Conclusion === "1"} 
-        on:click={() => { Conclusion = "1";  }}>1 </button>
-      <button class:selected={Conclusion === "2"} 
-        on:click={() => { Conclusion = "2";  }}>2 </button>
-      <button class:selected={Conclusion === "3"} 
-        on:click={() => { Conclusion = "3";  }}>3 </button>
-      <button class:selected={Conclusion === "4"} 
-        on:click={() => { Conclusion = "4";  }}>4 </button>
+      <button class:selected={envoi === "1"} 
+        on:click={() => { envoi = "1";  }}>1 </button>
+      <button class:selected={envoi === "2"} 
+        on:click={() => { envoi = "2";  }}>2 </button>
+      <button class:selected={envoi === "3"} 
+        on:click={() => { envoi = "3";  }}>3 </button>
+      <button class:selected={envoi === "4"} 
+        on:click={() => { envoi = "4";  }}>4 </button>
+    </div>
+  </div>
+
+  {:else if step.id === "Croix"}
+  <div class="variant-header">
+    <h3>{@html step.texte}</h3>
+    <div class="variant-buttons no-print">
+      <button class:selected={croix === "1"} 
+        on:click={() => { croix = "1";  }}>1 </button>
+      <button class:selected={croix === "2"} 
+        on:click={() => { croix = "2";  }}>2 </button>
     </div>
   </div>
 
@@ -1074,6 +1216,54 @@ Afficher la date
         <p class="{item.type} {item.class || ''}">{@html item.texte}</p>
       {/if}
     {/each}
+  </div>
+
+  {:else if step.id === "exultet"}
+  <div class="variant-header">
+    <h3>{@html step.texte}</h3>
+    <div class="vb2 no-print">
+      <button class:selected={exultet === "1"} 
+        on:click={() => { exultet = "1";  }}>forme longue</button>
+      <button class:selected={exultet === "2"} 
+        on:click={() => { exultet = "2";  }}>forme brève</button>
+    </div>
+  </div>
+
+  {:else if step.id === "liturgiebaptismale"}
+  <div class="">
+    <h3>{@html step.texte}</h3>
+    <div class="variant-buttons2 no-print no-wrap" style="margin-top: 0;">
+      <button class:selected={litbap === "A"} 
+        on:click={() => { litbap = "A";  }}>Bénédiction de l’eau baptismale et baptême</button>
+      <button class:selected={litbap === "B"} 
+        on:click={() => { litbap = "B";  }}>Bénédiction de l’eau baptismale</button>
+      <button class:selected={litbap === "C"} 
+        on:click={() => { litbap = "C";  }}>Bénédiction de l’eau</button>
+    </div>
+  </div>
+
+  {:else if step.id === "renonciation"}
+  <div class="variant-header">
+    <h3>{@html step.texte}</h3>
+    <div class="vb2 no-wrap no-print">
+      <button class:selected={renonciation === "1"} 
+        on:click={() => { renonciation = "1";  }}>Formule 1</button>
+      <button class:selected={renonciation === "2"} 
+        on:click={() => { renonciation = "2";  }}>Formule 2</button>
+    </div>
+  </div>
+
+  {:else if step.id === "entreerameaux"}
+  <div class="variant-header">
+    <h3>{@html step.texte}</h3>
+    <div class="variant-buttons2 no-print no-wrap" style="margin-top: 0;">
+      <button class:selected={entreerameaux === "1"} 
+        on:click={() => { entreerameaux = "1";  }}>Procession</button>
+      <button class:selected={entreerameaux === "2"} 
+        on:click={() => { entreerameaux = "2";  }}>Entrée solennelle</button>
+      <button class:selected={entreerameaux === "3"} 
+        on:click={() => { entreerameaux = "3";  }}>Entrée simple</button>
+    </div>
   </div>
 
 {:else}
@@ -1115,9 +1305,9 @@ CSS
 .container { background: transparent; display: grid; grid-template-columns: 400px 1fr; height: 100vh; width: 100vw; transition: grid-template-columns 0.3s ease; }
 .sidebar { background-color: transparent; color: white; padding: 20px; overflow-y: auto; position: sticky; scrollbar-width: none; -ms-overflow-style: none; }
 .sidebar::-webkit-scrollbar { display: none; }
-.card-wrap { background: #E1E1E1; --r: 20px; border-radius: 10px; padding: 2.5rem 8rem 0rem 8rem; margin: 20px auto; display: flex; justify-content: center; width: 100%; box-sizing: border-box; }
+.card-wrap { background: #E2E3E4; --r: 20px; border-radius: 10px; padding: 2.5rem 8rem 0rem 8rem; margin: 20px auto; display: flex; justify-content: center; width: 100%; box-sizing: border-box; }
 /* --- LA FEUILLE UNIQUE (Blanche) --- */
-.card { background: #fff; padding: 40px 80px; box-shadow:0 4px 20px rgba(0,0,0,.15); width: 100%; max-width: 850px; min-height: 180mm; box-sizing: border-box; position: sticky; top: 20px; height: calc(100vh - 40px); overflow-y: auto; }
+.card { background: #fff; padding: 40px 80px; box-shadow:0px 0px 2px #C6C6C6; width: 100%; max-width: 850px; min-height: 180mm; box-sizing: border-box; position: sticky; top: 20px; height: calc(100vh - 40px); overflow-y: auto; }
 .brand-chip { display: flex; align-items: center; margin-bottom: 1.5rem; background-color: #4A141C; /* Le rouge bordeaux de la maquette */ color: #ffffff; display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 20px; /* Très arrondi pour l'effet "chipset" */ font-size: 0.85rem; letter-spacing: 1px; }
 .prempare { background-color: #50504F; /* Le rouge bordeaux de la maquette */ color: #ffffff; padding: 15px 14px; border-radius: 10px; margin-bottom: 1rem; }
 /***************************************************** * BASE TYPO *****************************************************/
@@ -1135,10 +1325,14 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
 .premiergénéré { text-align: center; font-size: 2rem; margin:0.5rem 0 1rem 0; color: #b30000; font-family: garamond }
 .sansmarge { margin:0 0 1rem 0; }
 /***************************************************** * DIALOGUES (V / ℟) *****************************************************/
-.dialogueV { font-weight: bold; font-size: 1.2rem; line-height:1.2; }
-.dialogueR { font-size: 1.2rem; margin-bottom: 0.5rem; line-height:1.2; }
+.dialogueV { font-weight: 600; font-size: 1.2rem; line-height:1.2; margin: 0; }
+.dialogueR { margin-top: 0rem; font-size: 1.2rem; margin-bottom: 0.5rem; line-height:1.2; }
 .dialogueR::before { content: "℟. "; color: var(--accent); }
 .tableau .rubrique { margin: 0.5rem 0; }
+.colonnes2 {display: flex; justify-content: space-between; }
+.colonnes2 .dialogueV {margin: 0!important;}
+.colonnes2 .rubrique {margin: 0!important;}
+.colonnes2 .dialogueR {margin: 0!important;}
 /***************************************************** * ORAISON *****************************************************/
 .oraison-texte p { margin: 0; font-weight: bold; font-size: 1.2rem; line-height: 1.2; }
 .oraison-row{ display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; }
@@ -1170,6 +1364,7 @@ h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2r
 .indent1gg { text-indent: 70px; }
 .indentallg { padding-left: 50px; }
 .indentallp { padding-left: 20px; }
+.italic { font-style: italic; }
 p.centre { text-align: center; line-height: 1; font-weight: 400; font-size: 1.6rem;}
 .lettrine::first-letter { color: var(--accent); font-weight: bold }
 .sautdeligne {line-height: 0.6;}
@@ -1182,7 +1377,7 @@ p.centre { text-align: center; line-height: 1; font-weight: 400; font-size: 1.6r
 .panel-header { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.5rem 0.6rem; cursor: pointer; border-radius: calc(var(--radius) - 4px); transition: background 0.12s ease, transform 0.08s ease; border: 2px solid transparent; }
 .panel-content { padding: 0.6rem 0.2rem 0.2rem 0.2rem; }
 /* arrow */
-.arrow{ color:#E1E1E1; transition: transform .18s ease; }
+.arrow{ color:#E2E3E4; transition: transform .18s ease; }
 .arrow.open{ transform: rotate(90deg); color:#3D3D3D; }
 /***************************************************** * CHAMPS DE FORMULAIRE *****************************************************/
 label { display: block; }
@@ -1193,8 +1388,8 @@ input[type="text"], #NomRituel { width: 100%; box-sizing: border-box; padding: 0
 /***************************************************** * GRILLE SACREMENTS *****************************************************/
 .sacrements-grid{ display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0.5rem 1rem; align-items:start; }
 /***************************************************** * BOUTONS *****************************************************/
-.css-button-sharp--grey { min-width: 130px; height: 40px; color: #E1E1E1; padding: 6px 14px; font-weight: 700; cursor: pointer; transition: all 0.18s ease; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; justify-content: center; border: 2px solid #4A141C; background: #4A141C; }
-.css-button-sharp--grey:hover { background: #E1E1E1; color: #4A141C; transform: translateY(-2px); }
+.css-button-sharp--grey { min-width: 130px; height: 40px; color: #E2E3E4; padding: 6px 14px; font-weight: 700; cursor: pointer; transition: all 0.18s ease; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; justify-content: center; border: 2px solid #4A141C; background: #4A141C; }
+.css-button-sharp--grey:hover { background: #E2E3E4; color: #4A141C; transform: translateY(-2px); }
 .css-button-ghost { background: transparent; color: var(--brand); border: 2px dashed rgba(73,80,87,0.12); }
 .button-section { position: sticky; overflow: auto; display: flex; gap: 110px; flex-wrap: wrap; align-items: center; height: 80px; margin-bottom: 40px; }
 .variant-buttons.no-wrap { display:flex; flex-wrap: nowrap; }
@@ -1206,16 +1401,19 @@ input[type="text"], #NomRituel { width: 100%; box-sizing: border-box; padding: 0
 .variant-header h2 { flex: 1; /* Permet au titre de prendre tout l'espace disponible */ text-align: center; /* Centre le texte du titre */ margin: 1rem 0rem; /* Supprime les marges par défaut */ }
 .variant-header h3 { flex: 1; /* Permet au titre de prendre tout l'espace disponible */ text-align: center; /* Centre le texte du titre */ margin: 1rem 0rem 0.5rem 0rem; /* Supprime les marges par défaut */ }
 .variant-header h4 { flex: 1; /* Permet au titre de prendre tout l'espace disponible */ text-align: center; /* Centre le texte du titre */ margin: 1rem 0rem; /* Supprime les marges par défaut */ font-weight: normal; }
-.variant-buttons { display: grid; /* Crée exactement 3 colonnes de largeur égale */ grid-template-columns: repeat(3, 1fr); gap: 8px; /* Espace entre les boutons */ max-width: 300px; /* Ajustez selon la largeur souhaitée pour l'ensemble */ }
+.variant-buttons { display: flex; gap: 8px; max-width: 120px; flex-wrap: wrap; /* Ajustez selon la largeur souhaitée pour l'ensemble */ }
 .boutons2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; max-width: 300px; }
 .boutons4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-width: 300px; }
 .boutons5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; max-width: 300px; }
 .variant-buttons button { margin-left: 0.3rem; padding: 4px 8px; border: 1px solid #555; border-radius: 5px; background: white; cursor: pointer; }
 .variant-buttons button.selected { background: #652430; color: white; font-weight: bold; }
-.variant-buttons2 button { margin-left: 0.3rem; padding: 12px 8px; border: 1px solid #b1b1b1; border-radius: 5px; background: #E9ECEF; cursor: pointer; font-weight: bold; }
+.variant-buttons2 button { max-width: 20rem; margin-left: 0.3rem; padding: 12px 8px; border: 1px solid #b1b1b1; border-radius: 5px; background: #E9ECEF; cursor: pointer; font-weight: bold; }
 .variant-buttons2 button.selected { background: #652430; color: white; font-weight: bold; }
 .btn-toggle-latin { padding: 10px; width: 100%; border: 2px solid #652430; background: white; color: #652430; cursor: pointer; font-weight: bold; transition: all 0.3s; }
 .btn-toggle-latin.active { background: #652430; color: white; }
+.vb2 {display:flex; flex-wrap: nowrap;}
+.vb2 button { margin-left: 0.3rem; padding: 4px 8px; border: 1px solid #555; border-radius: 5px; background: white; cursor: pointer; }
+.vb2 button.selected { background: #652430; color: white; font-weight: bold; }
 /***************************************************** * SAUTS DE PAGE (PDF/WORD) *****************************************************/
 .page-break { display: block; height: 0; margin: 0; padding: 0; break-after: page; }
 .card .oraison-texte, .card p, .card .H1, .card .H2 { break-inside: avoid; }
@@ -1410,4 +1608,23 @@ input:checked + .slider:before { transform: translateX(20px); }
     box-shadow: none;
     background: #2a2a2a;
 }
+
+.common-selector {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+}
+
+.common-selector select {
+  margin-left: 0.5rem;
+  width: 160px;
+  height: 35px;
+	padding: 0.4rem;
+	border: 1px solid;
+	border-radius: 10px;
+	background-color: #E9ECEF;
+  color: #414141;
+}
+
+
 </style>
