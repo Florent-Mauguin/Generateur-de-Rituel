@@ -325,89 +325,18 @@ export const benedictions = {
     puissions-nous tous vivre sans fin avec lui dans la joie.`, type: "dialogueV" },
     { class: "", texte: `Amen.`, type: "dialogueR" },
   ]},
-  "": { 
-    items:[
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-  ]},
-  "": { 
-    items:[
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-  ]},
-  "": { 
-    items:[
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-  ]},
-  "": { 
-    items:[
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-  ]},
-  "": { 
-    items:[
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-  ]},
-  "": { 
-    items:[
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-  ]},
-  "": { 
-    items:[
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "indent1all", texte: ``, type: "dialogueV" },
-    { class: "", texte: `Amen.`, type: "dialogueR" },
-  ]},
 }
- 
+ /*
+   "": { 
+    items:[
+    { class: "indent1all", texte: ``, type: "dialogueV" },
+    { class: "indent1all", texte: ``, type: "dialogueV" },
+    { class: "", texte: `Amen.`, type: "dialogueR" },
+    { class: "indent1all", texte: ``, type: "dialogueV" },
+    { class: "indent1all", texte: ``, type: "dialogueV" },
+    { class: "", texte: `Amen.`, type: "dialogueR" },
+    { class: "indent1all", texte: ``, type: "dialogueV" },
+    { class: "indent1all", texte: ``, type: "dialogueV" },
+    { class: "", texte: `Amen.`, type: "dialogueR" },
+  ]},
+*/

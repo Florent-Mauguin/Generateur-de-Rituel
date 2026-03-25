@@ -1840,8 +1840,8 @@ ritesdeConclusion: [
   { texte: `RITES DE CONCLUSION`, type: "H2", conditions: {} },
   { texte: `Si c’est nécessaire, on fait alors brièvement les annonces pour la communauté présente.`, type: "rubrique", conditions: {} },
 //Conclusion 1
-  { texte: `On fait ensuite le renvoi. Le prêtre, tourné vers le peuple, dit en étendant les mains\u00A0:`, type: "rubrique", conditions: {presenceBishop:false} },
-  { texte: `On fait ensuite le renvoi. L'évêque, tourné vers le peuple, dit en étendant les mains\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
+  { texte: `On fait ensuite le renvoi. Le prêtre, tourné vers le peuple, dit en étendant les mains\u00A0:`, type: "rubrique", conditions: {presenceBishop:false, Conclusion :"1"} },
+  { texte: `On fait ensuite le renvoi. L'évêque, tourné vers le peuple, dit en étendant les mains\u00A0:`, type: "rubrique", conditions: {presenceBishop:true, Conclusion :"1"} },
   {class: "lettrine indent1g", texte: `Le Seigneur soit avec vous.`, type: "dialogueV", conditions: {Conclusion :"1"} },
   { texte: `Le peuple répond :`, type: "rubriqueinterne", conditions: {Conclusion :"1"} },
   {class: "indent1g", texte: `Et avec votre esprit.`, type: "dialogueR", conditions: {Conclusion :"1"} },

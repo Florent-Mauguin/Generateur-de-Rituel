@@ -86,7 +86,7 @@ const romcal = new Romcal({ localizedCalendar: France_Fr });
 
 
 // --- Logique Réactive ---
-  $: if (selectedDate) { updateCalendarData(selectedDate); }
+  $: if (selectedDate) { updateCalendarData(selectedDate);  }
 
   async function updateCalendarData(dateStr) {
     if (!romcal) return;
@@ -101,6 +101,7 @@ const romcal = new Romcal({ localizedCalendar: France_Fr });
       event.id === 'easter_saturday' || event.id === 'holy_saturday' || event.id === 'divine_mercy_sunday'
     );
     if (isOctavePaques) { envoi = "5" } else { envoi = "1"}
+    scrollToTop();
   }
 
   function applyLiturgyMapping(fete) {
@@ -321,8 +322,7 @@ function generateRitual() {
 ...(hideritesdeConclusion ? [] : ritual.ritesdeConclusion),
 ];
 
-  console.log(Benediction);
-  console.log(Conclusion);
+//  console.log(Benediction);
     rituelName = inputRituelName;
 
     // 1. Mise à jour des données (Préfaces et Oraisons)
@@ -698,17 +698,19 @@ Afficher la date
     <select bind:value={Conclusion}>
         <option value="1">Forme Standard</option>
         <option value="2">Prière sur le Peuple</option>
-        <option value="3">Bénédiction Solennelle</option>
+        {#if Benediction !== ""}
+          <option value="3">Bénédiction Solennelle</option>
+        {/if}
     </select>
       </div>
-
+          <!--
     {#if Conclusion === "3"}
         <select class=" toggle-container common-selector no-print" bind:value={Benediction}>
             <option value="">-- Choisir une bénédiction --</option>
             <option value="TO_1">Temps Ordinaire I</option>
             </select>
     {/if}
-          <!--
+
           <div class="panel" style="padding: 0.2rem">
         <div class="panel-header" role="button" tabindex="0" aria-expanded={showcat}
           on:click={() => showcat = !showcat}
@@ -1426,7 +1428,6 @@ input[type="text"], #NomRituel { width: 100%; box-sizing: border-box; padding: 0
 .modal h2 { font-size: 2rem; margin: 0 0 0.5rem; text-align: center; }
 .modal p { text-align: justify; font-size: 1.1rem; /* Taille de police standard pour le contenu */ line-height: 1.6; margin-bottom: 1.5rem; color: #444; }
 .nav { display: flex; justify-content: space-between; }
-@media (max-width: 600px) { .modal { width: 80%; /* prend 80% de la largeur du mobile */ max-width: 80%; border-radius: 12px; padding: 1rem; } }
 .btn-close { position: absolute; top: 4px; right: 12px; background: transparent; border: none; font-size: 40px; color: #999; cursor: pointer; line-height: 1; padding: 5px; transition: color 0.2s; }
 .btn-close:hover { color: var(--accent, #b30000); /* Devient rouge au survol */ }
 /***************************************************** * BOUTONS MODAL *****************************************************/
@@ -1471,29 +1472,7 @@ input[type="date"], input[type="text"] { padding: 0.38rem 0.5rem; border: 1px so
 .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
 input:checked + .slider { background-color: #4A141C; }
 input:checked + .slider:before { transform: translateX(20px); }
-/* --- MEDIA QUERIES (TABLETTES ET MOBILES) --- */
-@media (max-width: 768px) {
-/* ---- STRUCTURE GÉNÉRALE ---- */
-.container { grid-template-columns: 1fr; height: auto; }
-.sidebar { position: relative; padding: 1rem; max-height: none; }
-.card-wrap { padding: 1rem; margin: 0; border-radius: 0px; }
-.card { padding: 1.2rem 1rem; border-radius: 8px; max-width: 100%; min-height: auto; }
-.scrollToTopButton { display: flex; /* ✅ réaffiche le bouton */ right: 25px; /* position mobile */ bottom: 10px; margin-left: 0; width: 44px; height: 44px; font-size: 1.6rem; }
-.onboard-btn { margin: 0 1.5rem 0 0.5rem; width: 60px; height: 60px; border-radius: 50%; border: none; background: #4A141C; color: #E1E1E1; font-size: 2rem; font-weight: bold; cursor: pointer; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); transition: transform 0.1s ease; display: flex; align-items: center; flex-direction: row-reverse; justify-content: center; } }
-@media (max-width: 1024px) { .container { grid-template-columns: 1fr; /* On passe sur une seule colonne */ }
-.sidebar { height: auto; position: relative; padding: 1rem; }
-.card-wrap { padding: 15px; /* On réduit l'espace autour de la feuille */ }
-.card { padding: 20px; /* On réduit les marges internes du document */ box-shadow: none; /* Plus léger pour le mobile */ }
-/* Ajustement des titres pour mobile */
-.premiergénéré { font-size: 1.5rem !important; } }
-/* --- FIXATIONS POUR L'INTERFACE --- */
-/* Bouton flottant de contact - adaptation mobile */
-@media (max-width: 600px) { .floating-contact-btn { top: 15px; right: 15px; padding: 8px; border-radius: 100%; /* Bouton rond */ }
-.floating-contact-btn .text { display: none; /* On ne garde que l'icône sur petit téléphone */ } }
-/* Zone de boutons (Export) fixe sur mobile pour être toujours accessible */
-@media (max-width: 768px) { .button-section { position: initial; background: var(--dark-bg); display: flex; flex-direction: row-reverse; gap: 50px; justify-content: right; z-index: 999; }
-/* On ajoute une marge en bas du rituel pour ne pas cacher le texte sous les boutons fixes */
-.card-wrap { padding-bottom: 80px; } }
+
 .servants-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(12px, 1fr));
@@ -1626,5 +1605,140 @@ input:checked + .slider:before { transform: translateX(20px); }
   color: #414141;
 }
 
+/* --- MEDIA QUERIES (RESPONSIVE DESIGN) --- */
 
+/* TABLETTES & PETITS ÉCRANS (jusqu'à 1024px) */
+@media (max-width: 1024px) { 
+  .container { 
+    grid-template-columns: 300px 1fr; /* Réduit la largeur de la sidebar */
+  }
+  .card-wrap { 
+    padding: 1.5rem; /* Marges réduites autour de la feuille */
+  }
+  .card { 
+    padding: 2rem 3rem; /* Marges internes de la feuille réduites */
+  }
+  .button-section {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+/* MOBILES (jusqu'à 768px) */
+@media (max-width: 768px) {
+  /* On redonne le scroll naturel à la page sur mobile */
+  :global(body, html) {
+    height: auto !important;
+    overflow: auto !important; 
+  }
+
+  /* La grille devient une simple colonne (empilement) */
+  .container { 
+    display: flex;
+    flex-direction: column;
+    height: auto; 
+  }
+
+  /* La barre latérale prend toute la largeur et n'est plus "sticky" */
+  .sidebar { 
+    width: 100%;
+    position: relative; 
+    padding: 1rem; 
+    max-height: none; 
+    box-sizing: border-box;
+  }
+
+  /* Ajustement de la zone du rituel */
+  .card-wrap { 
+    padding: 1rem; 
+    margin: 0; 
+    border-radius: 0px; 
+  }
+  .card { 
+    padding: 1.5rem 1rem; 
+    border-radius: 8px; 
+    max-width: 100%; 
+    min-height: auto;
+    height: auto;
+    position: relative;
+    top: 0;
+  }
+
+  /* Ajustement des boutons et variantes pour qu'ils ne débordent pas */
+  .variant-header, .variant-header2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .variant-buttons, .variant-buttons2, .boutons2, .boutons4, .boutons5, .vb2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    gap: 8px;
+    margin-top: 1rem;
+  }
+  
+  .variant-buttons button, .variant-buttons2 button, .vb2 button {
+    max-width: none; /* Annule le max-width: 20rem qui posait problème */
+    flex: 1 1 auto;
+    margin: 0;
+  }
+
+  /* Boutons d'export en bas */
+  .button-section { 
+    position: relative; 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: center; 
+    padding: 1rem 0;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Ajustements typographiques mineurs */
+  .premiergénéré { 
+    font-size: 1.5rem !important; 
+  }
+  
+  /* Boutons flottants */
+  .scrollToTopButton { 
+    display: flex; 
+    right: 20px; 
+    bottom: 20px; 
+    margin-left: 0; 
+    width: 44px; 
+    height: 44px; 
+    font-size: 1.6rem; 
+  }
+  
+  .floating-contact-btn { 
+    top: 15px; 
+    right: 15px; 
+    padding: 8px; 
+    border-radius: 50%; 
+  }
+  .floating-contact-btn .text { 
+    display: none; 
+  }
+  
+  .onboard-btn { 
+    margin: 0; 
+    width: 50px; 
+    height: 50px; 
+    font-size: 1.5rem; 
+  }
+}
+
+/* TRÈS PETITS ÉCRANS (jusqu'à 480px) */
+@media (max-width: 480px) {
+  .servants-grid {
+    grid-template-columns: repeat(2, minmax(10px, 1fr)); /* 2 colonnes au lieu de 3 pour les servants */
+  }
+  .H1 { font-size: 1.5rem; }
+  .H2 { font-size: 1.2rem; }
+  p, .dialogueR, .dialogueV, .oraison-texte p { font-size: 0.95rem; }
+}
 </style>
