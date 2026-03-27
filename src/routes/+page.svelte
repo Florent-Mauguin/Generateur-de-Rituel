@@ -1420,7 +1420,18 @@ input[type="text"], #NomRituel { width: 100%; box-sizing: border-box; padding: 0
 .page-break { display: block; height: 0; margin: 0; padding: 0; break-after: page; }
 .card .oraison-texte, .card p, .card .H1, .card .H2 { break-inside: avoid; }
 /***************************************************** * MOBILE — POLICES LÉGÈREMENT RÉDUITES *****************************************************/
-@media (max-width: 600px) { .H1 { font-size: 1.5rem; margin :1.5rem 0 1rem 0; } .premiergénéré { margin :0.5rem 0 1rem 0; } .H2 { font-size: 1.2rem; margin: 1rem 0 1rem 0; } .H3 { font-size: 1rem; } p { font-size: 0.7rem; } p.centre { font-size: 1rem; } .oraison-texte p { font-size: 0.8rem; } .preface-texte p { font-size: 0.8rem; } .dialogueR { font-size: 0.8rem; } .dialogueV { font-size: 0.8rem; } .indent1g { text-indent: 15px; } .indentallg { padding-left: 30px; } .grandelettrine::first-letter { font-size: 36px; } .variant-buttons button { padding: 2px 4px; margin-left: 0; } }
+@media (max-width: 600px) { 
+  .H1 { font-size: 1.3rem; margin :1.5rem 0 0.5rem 0; } 
+  .premiergénéré { margin :0.5rem 0 1rem 0; } 
+  h2 { font-size: 1.1rem; margin: 1rem 0 0.5rem 0 !important; } 
+  .H2 { font-size: 1.1rem }
+  .H3 { font-size: 0.8rem; } 
+  p { font-size: 0.7rem; } p.centre { font-size: 1rem; } 
+  .oraison-texte p, .preface-texte p, .dialogueR, .dialogueV, .servants-line{ font-size: 0.8rem; } 
+  .indent1g { text-indent: 15px; } 
+  .indentallg { padding-left: 30px; } 
+  .grandelettrine::first-letter { font-size: 36px; } 
+  .variant-buttons button { padding: 2px 4px; margin-left: 0; } }
 /***************************************************** * ONBOARDING MODAL *****************************************************/
 .overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); inset: 0; /* couvre toute la page */ pointer-events: auto; }
 .modal { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 2rem 2rem 1.5rem 2rem; max-height: 70vh; border-radius: 10px; width: 500px; max-width: 90%; box-shadow: 0 10px 25px rgba(0,0,0,0.2); overflow: hidden; display: flex; flex-direction: column; z-index: 100; }
@@ -1597,9 +1608,8 @@ input:checked + .slider:before { transform: translateX(20px); }
 .common-selector select {
   margin-left: 0.5rem;
   width: 160px;
-  height: 35px;
 	padding: 0.4rem;
-	border: 1px solid;
+	border: 1px solid rgba(0,0,0,0.08);
 	border-radius: 10px;
 	background-color: #E9ECEF;
   color: #414141;
@@ -1664,27 +1674,31 @@ input:checked + .slider:before { transform: translateX(20px); }
     top: 0;
   }
 
-  /* Ajustement des boutons et variantes pour qu'ils ne débordent pas */
-  .variant-header, .variant-header2 {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
   .variant-buttons, .variant-buttons2, .boutons2, .boutons4, .boutons5, .vb2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
     gap: 8px;
-    margin-top: 1rem;
+  }
+
+  .variant-buttons.no-wrap { display:flex; flex-wrap: nowrap;   margin-left: 1rem;}
+
+  .btn-toggle-latin {
+    width: max-content;
+    padding: 8px;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
   }
   
   .variant-buttons button, .variant-buttons2 button, .vb2 button {
     max-width: none; /* Annule le max-width: 20rem qui posait problème */
     flex: 1 1 auto;
     margin: 0;
+    padding: 0.2rem 0.5rem;
   }
+  .welcome-card {width: 80% }
+.choice-btn { padding: 20px; }
 
   /* Boutons d'export en bas */
   .button-section { 
@@ -1695,7 +1709,7 @@ input:checked + .slider:before { transform: translateX(20px); }
     justify-content: center; 
     padding: 1rem 0;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   /* Ajustements typographiques mineurs */
@@ -1717,7 +1731,7 @@ input:checked + .slider:before { transform: translateX(20px); }
   .floating-contact-btn { 
     top: 15px; 
     right: 15px; 
-    padding: 8px; 
+    padding: 8px 12px; 
     border-radius: 50%; 
   }
   .floating-contact-btn .text { 
@@ -1732,13 +1746,5 @@ input:checked + .slider:before { transform: translateX(20px); }
   }
 }
 
-/* TRÈS PETITS ÉCRANS (jusqu'à 480px) */
-@media (max-width: 480px) {
-  .servants-grid {
-    grid-template-columns: repeat(2, minmax(10px, 1fr)); /* 2 colonnes au lieu de 3 pour les servants */
-  }
-  .H1 { font-size: 1.5rem; }
-  .H2 { font-size: 1.2rem; }
-  p, .dialogueR, .dialogueV, .oraison-texte p { font-size: 0.95rem; }
-}
+
 </style>
