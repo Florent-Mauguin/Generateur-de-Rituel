@@ -1,6 +1,6 @@
 import { text } from "@sveltejs/kit";
 
-export const ritual = {
+export const rituel = {
 autresrituel: [
       { type: "insert-autresrituel"},
 ],

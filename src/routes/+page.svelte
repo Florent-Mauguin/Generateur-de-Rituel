@@ -4,8 +4,8 @@ JS
 
 <script>
     import { onMount } from 'svelte';
-    import { ritual } from '$lib/ritual.js';
-    import { Rituelplus } from '$lib/ritual+.js';
+    import { rituel } from '$lib/rituel.js';
+    import { Rituelplus } from '$lib/rituel+.js';
     import { Oraisons } from '$lib/oraisons';
     import { preface } from '$lib/prefaces';
     import { benedictions } from '$lib/benedictions';
@@ -77,17 +77,14 @@ const romcal = new Romcal({ localizedCalendar: France_Fr });
 
 //paramètres servants
   let showservants = false;
-  let [incense, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes] = [false, false, false, false, false, false];
-  
+  let [incense, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes] = [false, true, true, false, true, true];
   let [showAutresParams, hideliturgieeucharistique, hideritesInitiaux, hideLiturgieParole, hideritesdeConclusion, Sacrements, Servants, showAutresceremonie] = [false, false, false, false, false, false, false, false];
   let [hideRubriques, presenceBishop, presenceDiacre, showcat, aspersion] = [false, false, false, false, false];
   let servants = 0;
-  let filteredRitual = [];
-
+  let filteredRituel = [];
 
 // --- Logique Réactive ---
-  $: if (selectedDate) { updateCalendarData(selectedDate);  }
-
+  $: if (selectedDate) { updateCalendarData(selectedDate) }
   async function updateCalendarData(dateStr) {
     if (!romcal) return;
     const year = parseInt(dateStr.split('-')[0]);
@@ -108,29 +105,18 @@ const romcal = new Romcal({ localizedCalendar: France_Fr });
     const regles = liturgyRules[fete.id];
     if (!regles) return;
 
-  if (regles.CommunOptions) {
-        selectedCommunId = regles.CommunOptions[0].id;
-    } else {
-        selectedCommunId = regles.CommunSource || ""; 
-    }
+  if (regles.CommunOptions) { selectedCommunId = regles.CommunOptions[0].id }
+     else {selectedCommunId = regles.CommunSource || ""}
 
-  if (typeCredo === "NA") {
-        hideCredo = true;
-    } else {
-        hideCredo = false;
-    }
+  if (typeCredo === "NA") {hideCredo = true;} else {hideCredo = false;}
 
     // 1. Priorité Haute : Mapping direct (Bénédiction Solennelle)
     Benediction = regles.Benediction || "";
     if (Benediction !== "") {Conclusion = "3";}
     // 2. Priorité Moyenne : Automatique si Prière sur le Peuple existe
-    else if (Oraisons[regles.ChoixOraison]?.priereSurLePeuple) {
-        Conclusion = "2";
-    } 
+    else if (Oraisons[regles.ChoixOraison]?.priereSurLePeuple) { Conclusion = "2"; } 
     // 3. Par défaut : Standard
-    else {
-        Conclusion = "1";
-    }
+    else { Conclusion = "1"; }
 
   CelebrationduJour = regles.CelebrationduJour || fete.name;
   ChoixOraison = regles.ChoixOraison || "";
@@ -161,7 +147,6 @@ availablePrefaces = [];
             availablePrefaces = [{ id: regles.Choixpreface, label: "Préface propre" }];
         }
     }
-
   typeCredo = regles.typeCredo || "NC";
   Communicantes = regles.Communicantes || "Semaine";
   celebrationType = regles.celebrationType || "Semaine";
@@ -182,9 +167,7 @@ availablePrefaces = [];
 
 onMount(async () => {
     const seenVersion = localStorage.getItem("welcomePopupVersionSeen");
-    if (seenVersion !== version) {
-      showPopup = true;
-    }
+    if (seenVersion !== version) { showPopup = true; }
   });
 
   // ouverture forcée
@@ -196,13 +179,12 @@ onMount(async () => {
 
 function closePopup() {
     localStorage.setItem("welcomePopupVersionSeen", version);
-    showPopup = false;
-}
+    showPopup = false; }
 
-
+/*
 // Génération du document Word
   async function generateWord() {
-    if (!filteredRitual || filteredRitual.length === 0) return;
+    if (!filteredRituel || filteredRituel.length === 0) return;
    
     // Créer un document Word
     const doc = new Document({
@@ -212,7 +194,7 @@ function closePopup() {
             margin: { top: 1000, right: 1000, bottom: 1000, left: 1000 } // marges en twips (~1/20 pt)
           }
         },
-        children: filteredRitual.map(step => {
+        children: filteredRituel.map(step => {
           // Styles par type
           const styleProps = {
             font: "fontFamily",
@@ -242,13 +224,11 @@ function closePopup() {
     const blob = await Packer.toBlob(doc);
     FileSaver.saveAs(blob, "rituel.docx");
   }
-
+*/
 
   //Fonction pour la PE4 et ses contraintes
 const liturgyConstraints = {
-  PE4: (ctx) =>
-    ctx.season === "ORDINARY_TIME" && !ctx.hasProperPreface,
-};
+  PE4: (ctx) => ctx.season === "ORDINARY_TIME" && !ctx.hasProperPreface, };
 function getLiturgicalContext(event) {
   if (!event) return {};
 
@@ -273,14 +253,10 @@ $: if (!isAllowed("PE4", liturgicalContext) && typePE === "PE4") {
 }
 
 
-
  // Construction du rituel complet
-
 $: {
     const feteChoisie = availableEvents.find(e => e.id === selectedEventId);
-    if (feteChoisie) {
-        applyLiturgyMapping(feteChoisie);
-    }
+    if (feteChoisie) { applyLiturgyMapping(feteChoisie)}
 }
 
 $: selectedEvent = availableEvents.find(e => e.id === selectedEventId) || availableEvents[0];
@@ -288,16 +264,7 @@ $: selectedEvent = availableEvents.find(e => e.id === selectedEventId) || availa
 // Fonction pour convertir le nom de la couleur Romcal en valeur CSS utilisable
 function getCssColor(event) {
   if (!event || !event.colors || event.colors.length === 0) return '#ccc';
-  
-  const colorMap = {
-    'white': '#ffffff',
-    'red': '#B30000',
-    'green': '#008000',
-    'violet': '#7f00ff',
-    'rose': '#ff69b4',
-    'black': '#000000'
-  };
-
+  const colorMap = {'white': '#ffffff', 'red': '#B30000', 'green': '#008000', 'violet': '#7f00ff', 'rose': '#ff69b4', 'black': '#000000'};
   const color = event.colors[0];
   return colorMap[color] || color;
 }
@@ -308,18 +275,18 @@ $: {hideLiturgieParole, selectedEventId, inputRituelName, secret, hideGloria, gl
     sacrementDesMalades, salutation, ChoixPenitentiel, typeCredo, presenceDiacre, RituelduJour, croix, litbap, anneeLiturgique,
     InvitS, PriereC, Choixpreface, typePE, AcclamationEucharistique, aspersion, hideritesdeConclusion, entreerameaux,
     Communicantes, NotrePère, Apologies, envoi, hideRubriques, showservants, hideritesInitiaux, renonciation,
-    presenceBishop, incense, servants, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes;
-    
-    generateRitual();
+    presenceBishop, incense, servants, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes;    
+    generateRituel();
 }
+
 // Génération du rituel filtré
-function generateRitual() {
-  const fullRitual = [
-...(ritual.autresrituel || []),
-...(hideritesInitiaux ? [] : ritual.ritesInitiaux),
-...(hideLiturgieParole ? [] : ritual.liturgiedelaparole),
-...(hideliturgieeucharistique ? [] : ritual.liturgieeucharistique),
-...(hideritesdeConclusion ? [] : ritual.ritesdeConclusion),
+function generateRituel() {
+  const fullRituel = [
+...(rituel.autresrituel || []),
+...(hideritesInitiaux ? [] : rituel.ritesInitiaux),
+...(hideLiturgieParole ? [] : rituel.liturgiedelaparole),
+...(hideliturgieeucharistique ? [] : rituel.liturgieeucharistique),
+...(hideritesdeConclusion ? [] : rituel.ritesdeConclusion),
 ];
 
 //  console.log(Benediction);
@@ -378,9 +345,8 @@ function generateRitual() {
     };
 
     // 4. Boucle principale
-    filteredRitual = [];
-
-    for (const step of fullRitual) {
+    filteredRituel = [];
+    for (const step of fullRituel) {
         // Protection contre les objets sans type
         const sType = step.type || "";
 
@@ -388,25 +354,25 @@ function generateRitual() {
         if (!showservants && sType === "servants") continue;
 
         // Gestion des oraisons
-        if (sType.startsWith("insert-antienne") || sType.startsWith("insert-priere") || sType.startsWith("insert-collecte")) {
-            const key = sType.replace("insert-", "");
-            if (Showoraisons && OraisonsDuJour && OraisonsDuJour[key]) {
-                if (sType.includes("antienne") && celebrationType !== "Semaine") continue;
-                filteredRitual.push({ type: "oraison", segments: OraisonsDuJour[key] });
-            }
-            continue;}
+          if (sType.startsWith("insert-antienne") || sType.startsWith("insert-priere") || sType.startsWith("insert-collecte")) {
+              const key = sType.replace("insert-", "");
+              if (Showoraisons && OraisonsDuJour && OraisonsDuJour[key]) {
+                  if (sType.includes("antienne") && celebrationType !== "Semaine") continue;
+                  filteredRituel.push({ type: "oraison", segments: OraisonsDuJour[key] });
+              }
+              continue;}
           
           if (sType === "insert-SurLePeuple") {
-            if (Conclusion=== "2") filteredRitual.push({ type: "oraison", segments: OraisonsDuJour.priereSurLePeuple });
+            if (Conclusion=== "2") filteredRituel.push({ type: "oraison", segments: OraisonsDuJour.priereSurLePeuple });
             continue; }
 
           if (sType === "insert-benediction") {
-    if (Conclusion === "3") {
-        filteredRitual.push(benedictions[Benediction]); }
-    continue; }
-            
-            if (sType.startsWith("insert-") && !sType.includes("antienne") && !sType.includes("priere")) {
-    const sectionKey = sType.replace("insert-", "");
+            if (Conclusion === "3") {
+                filteredRituel.push(benedictions[Benediction]); }
+            continue; }
+                    
+          if (sType.startsWith("insert-") && !sType.includes("antienne") && !sType.includes("priere")) {
+            const sectionKey = sType.replace("insert-", "");
     
     if (RituelduJour && Rituelplus[RituelduJour]) {
         const rituelPropre = Rituelplus[RituelduJour];
@@ -415,7 +381,7 @@ function generateRitual() {
         if (dataSection && Array.isArray(dataSection)) {
             dataSection.forEach(item => {
               if (checkConditions(item)) {
-                filteredRitual.push({
+                filteredRituel.push({
                     ...item,
                     type: item.type || "text" 
                 });
@@ -425,16 +391,15 @@ function generateRitual() {
         }
     }
 }
-
         // Gestion préface
         if (sType === "titre-preface") {
-            if (Showpreface && prefacedujour) filteredRitual.push({ type: "preface-titre", texte: prefacedujour.titre });
+            if (Showpreface && prefacedujour) filteredRituel.push({ type: "preface-titre", texte: prefacedujour.titre });
             continue; }
         if (sType === "soustitre-preface") {
-            if (Showpreface && prefacedujour) filteredRitual.push({ type: "soustitre-preface", texte: prefacedujour.soustitre });
+            if (Showpreface && prefacedujour) filteredRituel.push({ type: "soustitre-preface", texte: prefacedujour.soustitre });
             continue; }
         if (sType === "insert-preface") {
-            if (Showpreface && prefacedujour && typePE !== "PE4") filteredRitual.push({ type: "preface", segments: prefacedujour.items });
+            if (Showpreface && prefacedujour && typePE !== "PE4") filteredRituel.push({ type: "preface", segments: prefacedujour.items });
             continue; }
 
         // --- LOGIQUE DE FILTRAGE ---
@@ -444,17 +409,11 @@ function generateRitual() {
         // 2. Si l'étape a des items, on les filtre
         if (step.items && Array.isArray(step.items)) {
             const filteredItems = step.items.filter(checkConditions);
-            // On ajoute l'élément avec ses items filtrés (même si la liste est vide, 
-            // car l'élément parent peut avoir un type "H3" ou "tableau" important)
-            filteredRitual.push({ ...step, items: filteredItems });
+            // On ajoute l'élément avec ses items filtrés (même si la liste est vide, car l'élément parent peut avoir un type "H3" ou "tableau" important)
+            filteredRituel.push({ ...step, items: filteredItems });
         } else {
             // Étape simple sans sous-items
-            filteredRitual.push(step);
-        }
-
-        // Gestion du saut de page
-        if (step.pageBreak) {
-            filteredRitual.push({ type: "pageBreak" });
+            filteredRituel.push(step);
         }
     }
 }
@@ -647,62 +606,59 @@ Afficher la date
 </div>
 
 
-
 <div class="prempare" style="margin-bottom: 0.2rem">
-    <div class="panel">
-<!-- Option Eucharistie -->
-<div class="panel-header"
-  role="button"
-  tabindex="0"
-  aria-expanded={showAutresceremonie}
-  on:click={() => showAutresceremonie = !showAutresceremonie}
-  on:keydown={(e) => {if (e.key === 'Enter' || e.key === ' ') {e.preventDefault(); showAutresceremonie = !showAutresceremonie; }
-  }}
->
-  <span>Eucharistie</span>
-  <span class="arrow {showAutresceremonie ? 'open' : ''}">▶</span>
-</div>
+<details class="panel" bind:open={showAutresceremonie}>
+  <summary class="panel-header">
+    <span>Eucharistie</span>
+    <span class="arrow" class:open={showAutresceremonie}>▶</span>
+  </summary>
 
-{#if showAutresceremonie}
-    <div class="panel-content">
-          <label class="toggle-container">
-            <span class="label-text">Présence d'un évêque</span>
-            <div class="switch">
-              <input type="checkbox" bind:checked={presenceBishop} />
-              <span class="slider"></span>
-            </div>
-          </label>
-          <label class="toggle-container">
-            <span class="label-text">Présence d'un diacre</span>
-            <div class="switch">
-              <input type="checkbox" bind:checked={presenceDiacre} />
-              <span class="slider"></span>
-            </div>
-          </label>
-          <label class="toggle-container">
-            <span class="label-text">Bénédiction et aspersion de l'eau</span>
-            <div class="switch">
-              <input type="checkbox" bind:checked={aspersion} on:change={handleAspersion} />
-              <span class="slider"></span>
-            </div>
-          </label>
-          <label class="toggle-container">
-            <span class="label-text">Prières secrètes</span>
-            <div class="switch">
-              <input type="checkbox" bind:checked={secret} />
-              <span class="slider"></span>
-            </div>
-          </label>
-      <div class="common-selector no-print" style="margin-left: 0rem; justify-content: space-between;">
-    <p>Bénédiction</p>
-    <select bind:value={Conclusion}>
+  <div class="panel-content">
+    <label class="toggle-container">
+      <span class="label-text">Présence d'un évêque</span>
+      <div class="switch">
+        <input type="checkbox" bind:checked={presenceBishop} />
+        <span class="slider"></span>
+      </div>
+    </label>
+    
+    <label class="toggle-container">
+      <span class="label-text">Présence d'un diacre</span>
+      <div class="switch">
+        <input type="checkbox" bind:checked={presenceDiacre} />
+        <span class="slider"></span>
+      </div>
+    </label>
+    
+    <label class="toggle-container">
+      <span class="label-text">Bénédiction et aspersion de l'eau</span>
+      <div class="switch">
+        <input type="checkbox" bind:checked={aspersion} on:change={handleAspersion} />
+        <span class="slider"></span>
+      </div>
+    </label>
+    
+    <label class="toggle-container">
+      <span class="label-text">Prières secrètes</span>
+      <div class="switch">
+        <input type="checkbox" bind:checked={secret} />
+        <span class="slider"></span>
+      </div>
+    </label>
+    
+    <div class="common-selector no-print" style="margin-left: 0rem; justify-content: space-between;">
+      <p>Bénédiction</p>
+      <select bind:value={Conclusion}>
         <option value="1">Forme Standard</option>
         <option value="2">Prière sur le Peuple</option>
         {#if Benediction !== ""}
           <option value="3">Bénédiction Solennelle</option>
         {/if}
-    </select>
-      </div>
+      </select>
+    </div>
+  </div>
+</details>
+
           <!--
     {#if Conclusion === "3"}
         <select class=" toggle-container common-selector no-print" bind:value={Benediction}>
@@ -779,9 +735,6 @@ Afficher la date
 </div>
 {/if}
  -->
-    </div>
-    {/if}
-    </div>
 
 
 <!-- Début section sacrements 
@@ -812,66 +765,64 @@ Afficher la date
 </div>
  -->
 <!-- Début section Servants -->
-<div class="panel">
-<div class="panel-header"
-  role="button"
-  tabindex="0"
-  aria-expanded={Servants}
-  on:click={() => Servants = !Servants}
-  on:keydown={(e) => {
-    if (e.key === 'Enter' || e.key === ' ') {e.preventDefault(); Servants = !Servants; }
-  }}
->
-  <span>Service de l'autel</span>
-  <span class="arrow {Servants ? 'open' : ''}">▶</span>
-</div>
+<details class="panel" bind:open={Servants}>
+  <summary class="panel-header">
+    <span>Service de l'autel</span>
+    <span class="arrow" class:open={Servants}>▶</span>
+  </summary>
 
-{#if Servants}
-        <div class="grid-buttons">
-          <label class="toggle-container">
-            <span class="label-text">Afficher les commentaires</span>
-            <div class="switch">
-              <input type="checkbox" bind:checked={showservants} />
-              <span class="slider"></span>
-            </div>
-          </label>
-          {#if showservants}
-          <div class="servants-grid">
+  <div class="panel-content">
+    <div class="grid-buttons">
+      <label class="toggle-container">
+        <span class="label-text">Afficher les commentaires</span>
+        <div class="switch">
+          <input type="checkbox" bind:checked={showservants} />
+          <span class="slider"></span>
+        </div>
+      </label>
+
+      {#if showservants}
+        <div class="servants-grid">
           <label class="servant-option">
             <input type="checkbox" bind:checked={cruciferaire} name="Cruciféraire">
             <img src={croixdeprocession} alt="Cruciféraire">
             <span>Cruciféraire</span>
           </label>
+
           <label class="servant-option">
             <input type="checkbox" bind:checked={ceroferaire} name="Céroféraires">
             <img src={cierges} alt="Céroféraires">
             <span>Céroféraires</span>
           </label>
+
           <label class="servant-option">
             <input type="checkbox" bind:checked={acolytes} name="Acolytes">
             <img src={acolytat} alt="Acolytes">
             <span>Acolytes</span>
           </label>
+
           <label class="servant-option">
             <input type="checkbox" bind:checked={portemissel} name="Porte-missel">
             <img src={missel} alt="Porte-missel">
             <span>Porte-missel</span>
           </label>
+
           <label class="servant-option">
             <input type="checkbox" bind:checked={incense} name="Thuriféraire et naviculaire">
             <img src={encensoir} alt="Thuriféraire et naviculaire">
             <span>Thuriféraire et naviculaire</span>
           </label>
+          
           <label class="servant-option">
             <input type="checkbox" bind:checked={porteinsigne} name="Porte-insignes">
             <img src={imginsigne} alt="Porte-insignes">
             <span>Porte-insignes</span>
           </label>
-           </div>
-              {/if}
         </div>
-   {/if}
-</div> 
+      {/if}
+    </div>
+  </div>
+</details>
 <!-- Fin section Servants -->
 
 
@@ -882,9 +833,7 @@ Afficher la date
   aria-expanded={showAutresParams}
   on:click={() => showAutresParams = !showAutresParams}
   on:keydown={(e) => {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showAutresParams = !showAutresParams; }
-  }}
->
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showAutresParams = !showAutresParams; } }} >
   <span>Autres paramètres</span>
   <span class="arrow {showAutresParams ? 'open' : ''}">▶</span>
 </div>
@@ -899,10 +848,7 @@ Afficher la date
             </div>
           </label>
         </div>
-
       {/if}
-
-
 </div>
 </div>
 
@@ -918,17 +864,15 @@ Afficher la date
      <div class="card-wrap">
     <div class="card" bind:this={card} 
     on:scroll={scrollFunction}>
-{#if filteredRitual.length > 0}
+{#if filteredRituel.length > 0}
       {#if rituelName}
         <h2 class=" nomdurituel">{rituelName}</h2>
       {/if}
       <h2 class="premiergénéré">{CelebrationduJour}</h2>
 
-  {#each filteredRitual as step}
-    {#if step.type === "pageBreak"}
-      <div class="page-break" aria-hidden="true"></div>
+  {#each filteredRituel as step}
 
-  {:else if step.type === "servants"}
+  {#if step.type === "servants"}
   <div class="servants-container no-print-break">
     {#if step.items}
       {#each step.items as item}
@@ -972,7 +916,7 @@ Afficher la date
                 // On recharge les données de la préface choisie
                 prefacedujour = preface[Choixpreface]; 
                 // On relance la génération du rituel
-                generateRitual(); 
+                generateRituel(); 
             }}
           >
             {pref.label || (i + 1)}
@@ -1292,7 +1236,6 @@ Afficher la date
 <!-- Ajouter une condition
           {#if celebrationType === "Dominicale"}
   <div class="sub-options">
-
   {/if}
 -->
 
@@ -1326,6 +1269,10 @@ p { line-height: 1.3; font-family: var(--font-main); text-align: justify; }
 h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2rem; letter-spacing: 0.2px;}
 .premiergénéré { text-align: center; font-size: 2rem; margin:0.5rem 0 1rem 0; color: #b30000; font-family: garamond }
 .sansmarge { margin:0 0 1rem 0; }
+details::marker {
+  content: "✝ ";
+  font-size: 1.2em;
+}
 /***************************************************** * DIALOGUES (V / ℟) *****************************************************/
 .dialogueV { font-weight: 600; font-size: 1.2rem; line-height:1.2; margin: 0; }
 .dialogueR { margin-top: 0rem; font-size: 1.2rem; margin-bottom: 0.5rem; line-height:1.2; }
@@ -1449,7 +1396,7 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .onboard-btn { margin: 0 1.5rem 0 0.5rem; width: 60px; height: 60px; border-radius: 50%; border: none; background: #4A141C; color: #E1E1E1; font-size: 2rem; font-weight: bold; cursor: pointer; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); transition: transform 0.1s ease; display: flex; align-items: center; justify-content: center; }
 .onboard-btn:hover { transform: scale(1.12); }
 /***************************************************** * Liturgie du jour - Sélecteur d'événements *****************************************************/
-.event-card { display: flex; align-items: center; gap: 12px; padding: 10px 10px 10px 10px; background: #E1E1E1; cursor: pointer; margin: 0.5rem 0 0 0; border-left: 12px solid #ccc; /* Épaisseur par défaut */ color: #3D3D3D; font-size: 1rem; border-radius: 0 6px 6px 0; /* Arrondi uniquement à droite */ transition: all 0.2s ease; }
+.event-card { display: flex; align-items: center; gap: 12px; padding: 10px 10px 10px 10px; background: #E1E1E1; cursor: pointer; margin: 0.5rem 0 0 0; border-left: 12px solid #ccc; border-right: 1px solid rgba(0,0,0,0.08); color: #3D3D3D; font-size: 1rem; border-radius: 0 6px 6px 0; /* Arrondi uniquement à droite */ transition: all 0.2s ease; }
 .event-card.active { background: #e9ecef; box-shadow: inset 2px 0 5px rgba(0,0,0,0.1); }
 .details { display: flex; flex-direction: column; }
 .name { font-weight: bold; }
@@ -1470,7 +1417,8 @@ input[type="date"], input[type="text"] { padding: 0.38rem 0.5rem; border: 1px so
 .card { max-width: none !important; width: 100% !important; margin: 0 !important; box-shadow: none !important; border: none !important; background: white !important; overflow: visible !important; height: auto !important; }
 .card-wrap { padding: 0 !important; margin: 0; }
 /* Évite les coupures moches */
-.card p, .card .oraison-texte, .card .preface-texte, .card h2, .card h3 { break-inside: avoid; } }
+.card p, .card .oraison-texte, .card .preface-texte, .card h2, .card h3 { break-inside: avoid; orphans: 3;  widows: 3; } 
+h1, h2, h3, h4, .titre-oraison, .titre-rubrique { break-after: avoid; page-break-after: avoid;}}
 /***************************************************** * BOUTON DE CONTACT *****************************************************/
 .floating-contact-btn { position: absolute; top: 28px; right: 8px; z-index: 2000; /* Au-dessus de la sidebar et du rituel */ display: flex; align-items: center; gap: 4px; background-color: #4A141C; color: #E1E1E1; text-decoration: none; padding: 4px 10px; cursor: pointer; border-radius: 10px; border: 1px solid #4A141C;; font-family: sans-serif; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; }
 .floating-contact-btn:hover { background: #E1E1E1; color: #4A141C; transform: translateY(-2px); }

@@ -13,7 +13,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-      base: '/Generateur-de-Rituel' 
+      base: '' 
     },
 	prerender: {
       entries: ['*'] // prérendre toutes les pages

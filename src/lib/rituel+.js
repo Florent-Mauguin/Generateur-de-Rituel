@@ -474,9 +474,10 @@ export const Rituelplus = {
         {class: "", texte: `Quiconque participe à la messe de la Vigile peut communier une seconde fois à la messe du jour de Pâques. Tout prêtre qui célèbre ou concélèbre la messe de la Vigile peut de nouveau célébrer ou concélébrer la messe du jour de Pâques.`, type: "rubrique", conditions: {} },
         {class: "", texte: `La Vigile pascale tient lieu de l’Office des lectures.`, type: "rubrique", conditions: {} },
         {class: "", texte: `On prépare des cierges pour tous ceux qui vont participer à la Vigile. Toutes les lumières de l’église sont éteintes.`, type: "rubrique", conditions: {} },
-        {class: "", texte: `OUVERTURE SOLENNELLE DE LA VIGILE`, type: "H3", conditions: {} },
-        {class: "", texte: `ou : OFFICE DE LA LUMIÈRE`, type: "H3", conditions: {} },
-        {class: "", texte: `<span style="font-weight: bold;">Bénédiction du feu et préparation du cierge</span>`, type: "H4", conditions: {} },
+        {class: "", texte: `On ne confiera de cierge aux servants qu'après avoir jugé de leur aptitude à le porter avec dignité. Lors d'une longue vigile, on évitera d'imposer cette charge aux plus jeunes, de peur que la charge du cierge ne devienne une occasion de distraction pour l'assemblée.`, type: "servants", conditions: {} },
+        {class: "", texte: `OUVERTURE SOLENNELLE DE LA VIGILE
+        ou : OFFICE DE LA LUMIÈRE`, type: "H1", conditions: {} },
+        {class: "", texte: `<span style="font-weight: bold;">Bénédiction du feu et préparation du cierge</span>`, type: "H3", conditions: {} },
         {class: "", texte: `À l’endroit qui convient, hors de l’église, on prépare un feu. Lorsque le peuple est rassemblé en cet endroit, le prêtre s’y rend avec les ministres dont l’un porte le cierge pascal. On ne porte pas la croix de procession ni les luminaires.`, type: "rubrique", conditions: {} },
         {class: "", texte: `Là où il n’est pas possible d’allumer un feu en dehors de l’église, on adapte le rite de la bénédiction du feu. Le peuple se rassemble alors à l’intérieur de l’église. Le prêtre, accompagné des ministres portant le cierge pascal, se rend à la porte de l’église. Le peuple, autant que possible, se tourne vers le prêtre.`, type: "rubrique", conditions: {} },
         {class: "", texte: `Le prêtre et les fidèles font le signe de la croix pendant qu’il dit : <span style="color: #000;">Au nom du Père, et du Fils, et du Saint-Esprit</span>. Ensuite, il salue comme à l’ordinaire le peuple rassemblé et lui explique brièvement le sens de la vigile de cette nuit. Il le fait en ces termes ou en d’autres semblables :`, type: "rubrique", conditions: {} },
@@ -530,7 +531,7 @@ export const Rituelplus = {
         {class: "", texte: `Le prêtre allume alors le cierge pascal avec une flamme provenant du feu nouveau. Il dit :`, type: "rubrique", conditions: {} },
         {class: "indent1all", texte: `Que la lumière du Christ, ressuscitant dans la gloire,
         dissipe les ténèbres de notre coeur et de notre esprit.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `<span style="font-weight: bold;">Procession</span>`, type: "H4", conditions: {} },
+        {class: "", texte: `<span style="font-weight: bold;">Procession</span>`, type: "H3", conditions: {} },
         {class: "", texte: `Le cierge étant allumé, un des ministres prend des charbons ardents du feu et les dépose dans un encensoir, et le prêtre impose l’encens, comme d’habitude. Le diacre reçoit du ministre le cierge pascal et la procession commence.`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class: "", texte: `Le cierge étant allumé, un des ministres prend des charbons ardents du feu et les dépose dans un encensoir, et le prêtre impose l’encens, comme d’habitude. Le ministre qui convient, reçoit du ministre le cierge pascal et la procession commence.`, type: "rubrique", conditions: {presenceDiacre: false} },
         {class: "", texte: `Le thuriféraire tenant l’encensoir fumant marche devant le diacre qui porte le cierge pascal. Viennent ensuite le prêtre avec les ministres et le peuple, qui portent en mains leurs cierges éteints.`, type: "rubrique", conditions: {presenceDiacre: true} },
@@ -554,7 +555,7 @@ export const Rituelplus = {
         {class: "indent1g", texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {} },
         {class: "", texte: `Ensuite le diacre dépose le cierge pascal sur un grand chandelier préparé près de l’ambon ou au milieu du sanctuaire. Et on allume les lumières de l’église, excepté les cierges de l’autel.`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class: "", texte: `Ensuite le ministre dépose le cierge pascal sur un grand chandelier préparé près de l’ambon ou au milieu du sanctuaire. Et on allume les lumières de l’église, excepté les cierges de l’autel.`, type: "rubrique", conditions: {presenceDiacre: false} },
-        {class: "", texte: `<span style="font-weight: bold;">Annonce de Pâques</span>`, type: "H4", conditions: {} },
+        {class: "", texte: `<span style="font-weight: bold;">Annonce de Pâques</span>`, type: "H3", conditions: {} },
         {class: "", texte: `Lorsqu’il parvient à l’autel, le prêtre se rend à son siège, il donne son cierge à un ministre, il impose et bénit l’encens, comme à l’évangile de la messe.`, type: "rubrique", conditions: {presenceDiacre: false} },
         {class: "", texte: `Lorsqu’il parvient à l’autel, le prêtre se rend à son siège, il donne son cierge à un ministre, il impose et bénit l’encens, comme à l’évangile de la messe. Le diacre se présente au prêtre en disant : <span style="color: #000;">Père bénissez-moi</span>, il demande et reçoit la bénédiction du prêtre qui dit à voix basse :`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class: "", texte: `Que le Seigneur soit dans votre coeur et sur vos lèvres 
@@ -781,7 +782,7 @@ export const Rituelplus = {
         {class: "indent1all", texte: `lui qui vit et règne pour les siècles des siècles.`, type: "dialogueV", conditions: {exultet:"2"} },
         {class: "indent1all", texte: `Amen.`, type: "dialogueR", conditions: {exultet:"2"} },
 //Liturgie de la parole
-        {class: "", texte: `LITURGIE DE LA PAROLE`, type: "H3", conditions: {} },
+        {class: "", texte: `LITURGIE DE LA PAROLE`, type: "H1", conditions: {} },
         {class: "", texte: `En cette Vigile qui est « la mère de toutes les Vigiles », sont proposées neuf lectures, à savoir sept de l’Ancien Testament et deux du Nouveau (l’épître et l’évangile). Ces lectures doivent être lues partout où c’est possible, pour que soit conservée la nature de la Vigile qui exige une longue durée.`, type: "rubrique", conditions: {} },
         {class: "", texte: `Cependant, pour de graves raisons d’ordre pastoral, on peut réduire le nombre des lectures de l’Ancien Testament ; mais on respectera toujours la règle selon laquelle la Parole de Dieu constitue un élément fondamental de la Vigile dans la nuit de Pâques. On fera donc au moins trois lectures de l’Ancien Testament, tirées de la Loi et des Prophètes, et l’on chantera leurs psaumes responsoriaux respectifs. On n’omettra jamais le récit du chap. 4 de l’Exode (3e lecture), avec son cantique.`, type: "rubrique", conditions: {} },
         {class: "", texte: `Après avoir déposé leurs cierges, tous s’assoient. Avant le commencement des lectures, le prêtre s’adresse au peuple dans les termes suivants ou en d’autres semblables :`, type: "rubrique", conditions: {} },
@@ -800,7 +801,7 @@ export const Rituelplus = {
         cette oeuvre de salut inaugurée dans le mystère de Pâques.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
         {class: "", texte: `Ensuite commencent les lectures. Un lecteur monte à l’ambon et proclame la première lecture. La lecture achevée, un psalmiste ou un chantre monte à son tour à l’ambon pour chanter un psaume, auquel le peuple s’associe par un répons. Tous se lèvent ensuite, et le prêtre dit : <span style="color: #000;">Prions le Seigneur</span>. Après que tous ont prié quelque temps en silence, il dit l’oraison répondant à la lecture. On peut même remplacer le psaume responsorial par un temps de silence et, dans ce cas, on omet la pause après <span style="color: #000;">Prions le Seigneur</span>.`, type: "rubrique", conditions: {} },
-        {class: "", texte: `<span style="font-weight: bold;">Prières après les lectures</span>`, type: "H4", conditions: {} },
+        {class: "", texte: `<span style="font-weight: bold;">Prières après les lectures</span>`, type: "H3", conditions: {} },
 //Lecture 1        
         {class: "", texte: `PREMIÈRE LECTURE`, type: "rubrique", conditions: {} },
         {class: "", texte: `Après le récit de la création (Gn 1, 1–2, 2 ou Gn 1, 1.26-31a) et le psaume (103 ou 32), le prêtre dit au choix l’une des deux prières suivantes. La seconde est dite de préférence après la lecture brève qui ne traite que de la création de l’homme.`, type: "rubrique", conditions: {} },
@@ -1023,7 +1024,7 @@ export const Rituelplus = {
         {class: "", texte: `HOMÉLIE`, type: "rubrique", conditions: {} },
         {class: "", texte: `Aussitôt après l’évangile, que l’homélie ne soit jamais omise, même si elle est brève.`, type: "rubrique", conditions: {} },
 //Liturgie baptismale
-                {texte: `LITURGIE BAPTISMALE`, type: "H3", conditions: {} },
+                {texte: `LITURGIE BAPTISMALE`, type: "H1", conditions: {} },
         {id: "liturgiebaptismale", texte: ``, type: "H3", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
         {class: "", texte: `Après l’homélie, on invite les catéchumènes à s’approcher de la fontaine baptismale. Les adultes sont accompagnés par leurs parrains et marraines ; les enfants, par leurs parents, leurs parrains et marraines ; les tout-petits sont portés par leurs parents accompagnés des parrains et marraines, devant l’assemblée.`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
@@ -1032,7 +1033,7 @@ export const Rituelplus = {
         {class: "", texte: `S’il y a une procession vers le baptistère, ou vers les fonts baptismaux, aussitôt on commence la procession. Le ministre avec le cierge pascal précède.`, type: "rubrique", conditions: {litbap: "B"} },
         {class: "", texte: `Si la procession pour se rendre aux fonts baptismaux est assez longue, les Litanies sont chantées pendant la procession ; dans ce cas, l’appel des catéchumènes se fait avant la procession.`, type: "rubrique", conditions: {litbap: "A"} },
         {class: "", texte: `Si la procession pour se rendre aux fonts baptismaux est assez longue, les Litanies sont chantées pendant la procession.`, type: "rubrique", conditions: {litbap: "B"} },
-        {class: "", texte: `<span style="font-weight: bold;">Monition</span>`, type: "H4", conditions: {litbap: ["A", "B"]} },
+        {class: "", texte: `<span style="font-weight: bold;">Monition</span>`, type: "H3", conditions: {litbap: ["A", "B"]} },
         {class: "", texte: `Le prêtre fait la monition d’introduction en ces termes ou d’autres semblables :`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
         {class: "", texte: `Frères et soeurs bien-aimés,`, type: "dialogueV", conditions: {litbap: "A"} },
         {class: "indent1all", texte: `en priant tous ensemble
@@ -1047,7 +1048,7 @@ export const Rituelplus = {
         de sanctifier par sa grâce cette fontaine baptismale,`, type: "dialogueV", conditions: {litbap: "B"} },
         {class: "indent1all", texte: `et de compter au nombre de ses enfants d’adoption dans le Christ
         ceux qui renaîtront par le baptême.`, type: "dialogueV", conditions: {litbap: "B"} },
-        {class: "", texte: `<span style="font-weight: bold;">Litanies</span>`, type: "H4", conditions: {litbap: ["A", "B"]} },
+        {class: "", texte: `<span style="font-weight: bold;">Litanies</span>`, type: "H3", conditions: {litbap: ["A", "B"]} },
         {class: "", texte: `Les litanies sont chantées par deux chantres. Tous se tiennent debout (en raison du Temps pascal) et répondent aux invocations.`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
         {class: "", texte: `Dans les litanies, on peut ajouter quelques noms à la liste des saints, notamment ceux du titulaire de l’église et des patrons du lieu et ceux des futurs baptisés.`, type: "rubrique", conditions: {litbap: "A"} },
         {class: "", texte: `Dans les litanies, on peut ajouter quelques noms à la liste des saints, notamment ceux du titulaire de l’église et des patrons du lieu`, type: "rubrique", conditions: {litbap: "B"} },
@@ -1210,7 +1211,7 @@ export const Rituelplus = {
         les gestes de notre humble ministère.`, type: "dialogueV", conditions: {litbap: "A"} },
         {class: "", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {litbap: "A"} },
         {class: "", texte: `Amen.`, type: "dialogueR", conditions: {litbap: "A"} },
-        {class: "", texte: `<span style="font-weight: bold;">Bénédiction de l’eau baptismale</span>`, type: "H4", conditions: {litbap: ["A", "B"]} },
+        {class: "", texte: `<span style="font-weight: bold;">Bénédiction de l’eau baptismale</span>`, type: "H3", conditions: {litbap: ["A", "B"]} },
         {class: "", texte: `Le prêtre bénit ensuite l’eau baptismale, en disant, les mains étendues, la prière suivante :`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
         {class: "grandelettrine", texte: `Seigneur Dieu,
         par ta puissance invisible,`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
@@ -1271,11 +1272,11 @@ export const Rituelplus = {
         {class: "", texte: `Le cierge est ensuite retiré de l’eau, tandis que le peuple chante l’acclamation :`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
         {class: "indentallg", texte: `Fontaines du Seigneur, bénissez le Seigneur !
         À lui, haute gloire, louange éternelle !`, type: "dialogueR", conditions: {litbap: ["A", "B"]} },
-        {class: "", texte: `<span style="font-weight: bold;">Baptême et confirmation</span>`, type: "H4", conditions: {litbap: ["A"]} },
+        {class: "", texte: `<span style="font-weight: bold;">Baptême et confirmation</span>`, type: "H3", conditions: {litbap: ["A"]} },
         {class: "", texte: ``, type: "dialogueV", conditions: {litbap: "A"} },
 //Rituel baptême et confirmation
 
-        {class: "", texte: `<span style="font-weight: bold;">Bénédiction de l’eau</span>`, type: "H4", conditions: {litbap: "C"} },
+        {class: "", texte: `<span style="font-weight: bold;">Bénédiction de l’eau</span>`, type: "H3", conditions: {litbap: "C"} },
         {class: "", texte: `Lorsqu’il n’y a pas lieu de bénir de l’eau baptismale (pas de baptême ni de fonts baptismaux à bénir), le prêtre bénit l’eau dont il aspergera le peuple à la fin de la rénovation de la profession de foi baptismale, en disant :`, type: "rubrique", conditions: {litbap: "C"} },
         {class: "grandelettrine", texte: `Frères et soeurs bien-aimés,
         supplions humblement Dieu notre Seigneur`, type: "dialogueV", conditions: {litbap: "C"} },
@@ -1309,7 +1310,7 @@ export const Rituelplus = {
         {class: "", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {litbap: "C"} },
         {class: "", texte: `Amen.`, type: "dialogueR", conditions: {litbap: "C"} },
 //Renouvellement des promesses du baptême
-        {class: "", texte: `<span style="font-weight: bold;">Renouvellement des promesses du baptême</span>`, type: "H4", conditions: {} },
+        {class: "", texte: `<span style="font-weight: bold;">Renouvellement des promesses du baptême</span>`, type: "H3", conditions: {} },
         {class: "grandelettrine", texte: `Frères et soeurs bien-aimés,
         par le mystère pascal`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `nous avons été mis au tombeau avec le Christ dans le baptême,
