@@ -516,7 +516,7 @@ HTML
 <!--
 -->
 <a 
-  href="mailto:contact.genrc@gmail.com" 
+  href="mailto:contact@ricat.fr" 
   class="floating-contact-btn no-print"
   title="Signaler un bug ou me contacter"
 >
