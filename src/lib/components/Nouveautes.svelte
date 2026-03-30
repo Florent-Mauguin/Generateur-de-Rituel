@@ -7,17 +7,18 @@
   };
 
   const releases: Release[] = [
-    /*
+    /*    */
 {
       version: 'v0.5',
       date: 'mars 2026',
-      summary: '',
+      summary: 'Prêt pour la semaine sainte !',
       items: [
-        { icon: '📝', label: "Suite et fin de l'integration des oraisons : 100% (476/476). Soit plus de 15 000 lignes de code..." },
-        { icon: '🙏', label: "Ajout du rituel du jeudi Saint, du vendredi Saint" },
+        { icon: '🌐', label: "Nouvelle adresse du générateur : Ricat.fr" },
+        { icon: '🗺️', label: "Suite et fin du mapping : tel jour -> telle préface, oraison, etc." },
+        { icon: '✝️', label: "Intégration des bénédictions solennelles et prières sur le peuple" },
+        { icon: '🛁', label: "Ajout de rituels spécifiques : Rameaux, messe chrismale, Jeudi saint, Vendredi saint et Vigile pascale" },
       ]
    },
-    */
 {
       version: 'v0.4',
       date: 'fevrier 2026',

@@ -4847,24 +4847,39 @@ Dieu, pour les siècles des siècles.`},
 
       "PAQ": {
     titre: "MESSE DU JOUR DE PÂQUES",
-    antienne_ouverture: [{class:"indent1all", texte: ``},
-        {class:"indent1all", texte: ``}],
-    collecte: [{class:"grandelettrine", texte:``},
-        {class:"indentallp", texte:``},
-        {class:"indent1all", texte:``},
-        {class:"", texte:``},
-        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
-qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
-Dieu, pour les siècles des siècles.`},
+    antienne_ouverture: [{class:"indent1all", texte: `Je suis ressuscité, et je suis avec toi, alléluia.`},
+        {class:"indent1all", texte: `Ta main s’est posée sur moi, alléluia,
+        ta sagesse s’est montrée admirable, alléluia, alléluia.`},
+        {class:"rubrique", texte: `ou bien`},
+        {class:"indent1all", texte: `Le Christ est vraiment ressuscité, alléluia.`},
+        {class:"indent1all", texte: `À lui, la gloire et la souveraineté
+pour les siècles des siècles, alléluia, alléluia.`}
     ],
-    priereSurLesOffrandes: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    collecte: [{class:"grandelettrine", texte:`Aujourd’hui, Seigneur Dieu, <span style="color: #b30000;">+</span>
+        par ton Fils unique, vainqueur de la mort,`},
+        {class:"indentallp", texte:`tu nous as ouvert les portes de l’éternité ; <span style="color: #b30000;">*</span>`},
+        {class:"indent1all", texte:`tandis que nous fêtons solennellement
+        la résurrection du Seigneur, nous t’en prions :`},
+        {class:"indent1all", texte:`accorde-nous d’être renouvelés par ton Esprit <span style="color: #b30000;">/</span>
+        pour que nous ressuscitions dans la lumière de la vie.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
+        Dieu, pour les siècles des siècles.`},
+    ],
+    priereSurLesOffrandes: [{class:"grandelettrine", texte:`Dans l’exultation de la joie pascale, Seigneur,
+        nous t’offrons ce sacrifice : <span style="color: #b30000;">*</span>`},
+        {class:"indent1all", texte:`c’est par lui que ton Église,
+        de manière admirable, <span style="color: #b30000;">/</span>
+        naît à la vie nouvelle et reçoit sa nourriture.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
       ],
-    antienne_communion: [{class:"indent1all", texte:``},
-      {class:"indent1all", texte: ``}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:``},
-        {class:"indent1all", texte:``},
+    antienne_communion: [{class:"indent1all", texte:`Le Christ, notre agneau pascal, a été immolé.`},
+        {class:"indent1all", texte: `Célébrons la fête en partageant un pain non fermenté,
+        signe de droiture et de vérité, alléluia.`}],
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span>
+        ne cesse pas de veiller avec tendresse sur ton Église, <span style="color: #b30000;">*</span>`},
+        {class:"indent1all", texte:`afin que, déjà renouvelée par les sacrements de Pâques, <span style="color: #b30000;">/</span>
+        elle parvienne à la lumière de la résurrection.`},
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
@@ -12525,7 +12540,7 @@ que tu préparais à la face des peuples.`}],
     antienne_communion: [
         {class:"indent1all", texte: `Réjouis-toi, Vierge Mère,
         car le Christ s'est relevé du tombeau, alléluia.`}],
-    priereApresLaCommunion: [{class:"grandelettrine", texte:`Réconfortés par les sacrements de Paques,
+    priereApresLaCommunion: [{class:"grandelettrine", texte:`Réconfortés par les sacrements de Pâques,
         nous t'en prions, Seigneur, <span style="color: #b30000;">*</span>`},
         {class:"indent1all", texte:`fais que, célébrant la mémoire de la Mère de ton Fils, <span style="color: #b30000;">/</span>
         nous manifestions dans notre chair vouée à la mort

@@ -33,7 +33,7 @@ const romcal = new Romcal({ localizedCalendar: France_Fr });
   let projectType = ""; // 'messe', 'sacrement', ou 'mixte'
 
 // Formulaire
-  export let version = "0.4";
+  export let version = "0.5";
   let inputRituelName = "";
   let rituelName = "";
   let celebrationType = "Solennité";
@@ -158,9 +158,14 @@ availablePrefaces = [];
   let [showPopup, dontShowAgain, forceOpen] = [false, false, false];
   let currentPage = 0;
   const pages = [
-    { title: "Bienvenue", content: `Je m'appelle <b>Florent Mauguin</b> et suis séminariste pour le diocèse de Versailles et la communauté de l'Emmanuel. 
+    { title: "Bienvenue sur Ricat !", content: `Je m'appelle <b>Florent Mauguin</b> et suis séminariste pour le diocèse de Versailles et la communauté de l'Emmanuel. 
 <br><br>L'objectif de ce projet est simple : <b>générer en quelques clics un rituel imprimable</b> et adapté à sa paroisse pour la célébration de l'eucharistie et des sacrements.
-<br><br><b>⚠️ L'outil est encore en cours de développement !</b><br>Il n'est pas tout à fait utilisable en l'état.` },
+<br><br><b>⚠️ L'outil est encore en cours de développement !</b>
+<br>Merci de vérifier, avant toute utilisation, que le rituel généré correspond bien aux livres liturgiques officiels.
+<br><br>
+<p style="font-size: 0.8rem;"><b>Ricat.fr</b> est un outil d'aide à la préparation liturgique basé sur le moteur <b>Romcal</b>.
+<br>Les textes liturgiques sont la propriété exclusive de l'<b>AELF</b>. Ce service n'en est qu'un vecteur technique de mise en forme.
+<br>Avertissement : Ce générateur ne remplace pas les livres liturgiques officiels (Missel, Rituels) dotés de l'Imprimatur. Seule la version imprimée par les autorités ecclésiastiques fait foi.</p>` },
     { title: "Nouveautés", content: "" },
     { title: "Roadmap" }
   ];
@@ -226,23 +231,49 @@ function closePopup() {
   }
 */
 
-  //Fonction pour la PE4 et ses contraintes
+function computeHasGloria(event, ctx) {
+  if (!event) return true;
+  const { rank, precedence, periods, id } = event;
+  const season = ctx.season;
+  const isSunday = ctx.isSunday;
+// ✅ EXCEPTIONS MAJEURES (AVANT tout)
+  if ( id === "thursday_of_the_lords_supper" || id === "holy_thursday") {return true; }
+  // ❌ Avent & Carême
+  if (season === "ADVENT" || season === "LENT") {
+    if (rank === "SOLEMNITY") return true;
+    return false; }
+  // ✅ Solennités / fêtes / dimanches
+  if (rank === "SOLEMNITY" || rank === "FEAST" || isSunday) {
+    return true; }
+  return false;
+}
+
+$: presenceBishop = selectedEvent?.id === "holy_thursday";
+//Fonction pour la PE4 et ses contraintes
 const liturgyConstraints = {
-  PE4: (ctx) => ctx.season === "ORDINARY_TIME" && !ctx.hasProperPreface, };
+  PE4: (ctx) => ctx.season === "ORDINARY_TIME" && !ctx.hasProperPreface,};
+
 function getLiturgicalContext(event) {
   if (!event) return {};
 
   const sundayCycle = event.cycles?.sundayCycle;
 
-  return {
+  const context = {
     season: event.seasons?.[0],
     rank: event.rank,
     isSunday: event.calendar?.dayOfWeek === 0,
     hasProperPreface: event.hasProperPreface ?? false,
-    anneeLiturgique: sundayCycle ? sundayCycle.replace("YEAR_", "") : "" // A, B, C
+    anneeLiturgique: sundayCycle
+      ? sundayCycle.replace("YEAR_", "")
+      : ""
   };
-}
+    context.hasGloria = computeHasGloria(event, context);
+      return context;
+  
+    }
 $: liturgicalContext = getLiturgicalContext(selectedEvent);
+$: hideGloria = !liturgicalContext.hasGloria;
+
 function isAllowed(option, context) {
   const rule = liturgyConstraints[option];
   if (!rule) return true;
@@ -289,7 +320,7 @@ function generateRituel() {
 ...(hideritesdeConclusion ? [] : rituel.ritesdeConclusion),
 ];
 
-//  console.log(Benediction);
+console.log(typeCredo);
     rituelName = inputRituelName;
 
     // 1. Mise à jour des données (Préfaces et Oraisons)
@@ -427,6 +458,7 @@ function generateRituel() {
   }
 }
 
+
 let card; // Cette variable sera liée à ton élément HTML
   let showScrollButton = false;
 
@@ -529,7 +561,7 @@ HTML
   <div class="sidebar no-print">
     <div class="brand-chip">
       <span class="brand-dot"></span>
-      <span>Version 0.4<br></span>
+      <span>Version 0.5<br></span>
       <span class="brand-icon">☰</span>
     </div>
     <h1 class="titre-principal">Générateur de rituels catholiques</h1>

@@ -1,25 +1,6 @@
 <script>
   export let quarters = [
     {
-      icon: "☔",
-      title: "Printemps 2026",
-      statusplannifié: "Plannifié",
-      items: [
-        {
-          title: "Ready pour Pâques",
-          desc: "Génération du rituel des offices de la Semaine Sainte",
-          priority: "Haute",
-          color: "red"
-        },
-        {
-          title: "Mapping",
-          desc: "Relier chaque oraison à son jour",
-          priority: "Haute",
-          color: "red"
-        }
-      ]
-    },
-    {
       icon: "⛺",
       title: "Été 2026",
       statusplannifié: "Plannifié",
@@ -48,18 +29,6 @@
           desc: "Ajout des rituels des sacrements restants (mariage, onction des malades, ordination)",
           priority: "Haute",
           color: "red"
-        },
-        {
-          title: "Service de l'autel",
-          desc: "Génération de rituels pour servants d'autel et ceremoniaire",
-          priority: "Haute",
-          color: "red"
-        } ,
-        {
-          title: "Evêque, concelebrant, diacre",
-          desc: "Adaptation du rituel en fonction de la présence de différents ministères",
-          priority: "Basse",
-          color: "yellow"
         },
         {
           title: "Exportation Word",

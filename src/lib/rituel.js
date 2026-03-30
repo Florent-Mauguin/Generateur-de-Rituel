@@ -217,9 +217,9 @@ et, par la célébration de cette eucharistie,`,  type: "dialogueV", conditions:
     { texte:`Amen.`,  type: "dialogueR", conditions: {aspersion: true}},
 
 // Gloria
-  { id:"gloria", texte: "GLOIRE À DIEU", type: "H2", conditions: {hideGloria: false, celebrationType: ["Dominicale", "Fête", "Solennité"]}},
+  { id:"gloria", texte: "GLOIRE À DIEU", type: "H2", conditions: {hideGloria: false}},
     { type: "insert-gloria"},
-  { type: "dialogueV", conditions: {hideGloria: false, glorialatin: false, celebrationType: ["Dominicale", "Fête", "Solennité"]}, class:"grandelettrine",
+  { type: "dialogueV", conditions: {hideGloria: false, glorialatin: false}, class:"grandelettrine",
   texte: `Gloire à Dieu, au plus haut des cieux, 
   et paix sur la terre aux hommes qu’il aime. 
   Nous te louons, nous te bénissons, 
@@ -355,7 +355,7 @@ liturgiedelaparole: [
       { type: "insert-apreshomelie"},
 
 //Credo
-  { id: "Professiondefoi",texte: `PROFESSION DE FOI`, type: "H2", conditions: {hideCredo: false, celebrationType: ["Dominicale", "Solennité"]} },
+  { id: "Professiondefoi",texte: `PROFESSION DE FOI`, type: "H2", conditions: {hideCredo: false, celebrationType: ["Dominicale", "Solennité"], typeCredo: ["NC", "Lt", "AP"]} },
   { texte: "<b>Le porte-missel</b> présente au président le missel pour la profession de foi et pour l'invitation sacerdotale de la prière universelle.", type:"servants", conditions: {portemissel: true}},
 
   
@@ -458,6 +458,7 @@ d’où il viendra juger les vivants et les morts.`, type: "dialogueV" },
   { texte: `Quelques invitations sacerdotales et prières de conclusion sont proposées ici pour la commodité du prêtre et n’excluent pas l’usage d’autres formules.`, type: "rubrique", conditions: {celebrationType: ["Dominicale", "Solennité"], presenceBishop:false} },
   { texte: `Quelques invitations sacerdotales et prières de conclusion sont proposées ici pour la commodité de l'évêque et n’excluent pas l’usage d’autres formules.`, type: "rubrique", conditions: {celebrationType: ["Dominicale", "Solennité"], presenceBishop:true} },
   { id:"InvitS", texte: `INVITATION SACERDOTALE`, type: "H4", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
+  { conditions: {celebrationType: ["Dominicale", "Solennité"]}, class: "tableau",items:[
     { class:"lettrine",texte: `Tandis que nous attendons l’avènement
 de notre Seigneur Jésus Christ,
 implorons sa miséricorde
@@ -500,10 +501,11 @@ de nous inspirer lui-même
 une prière qui il puisse exaucer.`, type: "dialogueV", conditions: {InvitS: "9"} },
   { class:"lettrine", texte: `Et maintenant, frères bien-aimés,
 ouvrons nos coeurs à toutes les souffrances
-et à tous les besoins de nos frères les hommes.`, type: "dialogueV", conditions: {InvitS: "10"} },
+et à tous les besoins de nos frères les hommes.`, type: "dialogueV", conditions: {InvitS: "10"} }]},
 
   {class:"sautdeligne", texte: `\n`, conditions: {celebrationType: ["Dominicale", "Solennité"]}, type: "dialogueV"},
   { id:"PriereC", texte: `PRIÈRES DE CONCLUSION`, type: "H4", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
+  { conditions: {celebrationType: ["Dominicale", "Solennité"]}, class: "tableau",items:[
   {class:"indent1all lettrine", texte: `À tes fidèles, Seigneur,
 tends une main secourable :`, type: "dialogueV", conditions: {PriereC: "1"} },
 {class:"indent1all", texte: `Qu’ils te cherchent de tout coeur,
@@ -550,7 +552,7 @@ rassemblés en ton Nom,`, type: "dialogueV", conditions: {PriereC: "9"} },
 {class:"indent1all", texte: `Écoute les supplications de ta famille
 et daigne répondre à ses appels.`, type: "dialogueV", conditions: {PriereC: "9"} },
 { texte: `Toi qui vis et règnes pour les siècles des siècles.`, type: "dialogueV", conditions: {PriereC: "9" }},
-
+  ]}
 ],
 
 liturgieeucharistique: [

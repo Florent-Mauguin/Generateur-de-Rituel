@@ -472,10 +472,11 @@ export const liturgyRules = {
     },
   "holy_thursday": {
         CelebrationduJour: "Messe Chrismale",
+        RituelduJour: "chrismale",
         ChoixOraison: "CHR",
         Choixpreface: "1MR",
         typeCredo: "NA",
-        celebrationType: "Semaine",
+        celebrationType: "Solennité",
         Communicantes: "Semaine"
     },
   "thursday_of_the_lords_supper": {
@@ -523,7 +524,8 @@ export const liturgyRules = {
         Choixpreface: "1PA",
         typeCredo: "NC",
         celebrationType: "Semaine",
-        Communicantes: "Pâques"
+        Communicantes: "Pâques",
+        Benediction: "Pâques"
     },
   "easter_tuesday": {
         CelebrationduJour: "Mardi dans l'octave de Pâques",
@@ -531,7 +533,8 @@ export const liturgyRules = {
         Choixpreface: "1PA",
         typeCredo: "NC",
         celebrationType: "Semaine",
-        Communicantes: "Pâques"
+        Communicantes: "Pâques",
+        Benediction: "Pâques"
     },
   "easter_wednesday": {
         CelebrationduJour: "Mercredi dans l'octave de Pâques",
@@ -539,7 +542,8 @@ export const liturgyRules = {
         Choixpreface: "1PA",
         typeCredo: "NC",
         celebrationType: "Semaine",
-        Communicantes: "Pâques"
+        Communicantes: "Pâques",
+        Benediction: "Pâques"
     },
   "easter_thursday": {
         CelebrationduJour: "Jeudi dans l'octave de Pâques",
@@ -547,7 +551,8 @@ export const liturgyRules = {
         Choixpreface: "1PA",
         typeCredo: "NC",
         celebrationType: "Semaine",
-        Communicantes: "Pâques"
+        Communicantes: "Pâques",
+        Benediction: "Pâques"
     },
   "easter_friday": {
         CelebrationduJour: "Vendredi dans l'octave de Pâques",
@@ -555,7 +560,8 @@ export const liturgyRules = {
         Choixpreface: "1PA",
         typeCredo: "NC",
         celebrationType: "Semaine",
-        Communicantes: "Pâques"
+        Communicantes: "Pâques",
+        Benediction: "Pâques"
     },
   "easter_saturday": {
         CelebrationduJour: "Samedi dans l'octave de Pâques",
@@ -563,7 +569,8 @@ export const liturgyRules = {
         Choixpreface: "1PA",
         typeCredo: "NC",
         celebrationType: "Semaine",
-        Communicantes: "Pâques"
+        Communicantes: "Pâques",
+        Benediction: "Pâques"
     },
   "divine_mercy_sunday": {
         CelebrationduJour: "Deuxième Dimanche de Pâques ou de la Miséricorde Divine",
@@ -571,7 +578,8 @@ export const liturgyRules = {
         Choixpreface: "1PA",
         typeCredo: "NC",
         celebrationType: "Dominicale",
-        Communicantes: "Pâques"
+        Communicantes: "Pâques",
+        Benediction: "Pâques"
     },
   "easter_time_2_monday": {
         CelebrationduJour: "Lundi de la deuxième semaine",

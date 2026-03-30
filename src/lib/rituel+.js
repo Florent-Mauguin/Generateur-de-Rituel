@@ -114,15 +114,15 @@ export const Rituelplus = {
         { texte: "Le <b>porte-missel</b> présente au président le missel à chaque oraison", type:"servants", conditions: {portemissel: true}},
         {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
         {class: "", texte: `<span style="color: #000; font-weight: bold";>I.</span> POUR LA SAINTE ÉGLISE`, type: "rubrique", conditions: {} },
-        {class: "", texte: `Prions, frères et soeurs bien-aimés, pour la sainte Église de Dieu :`, type: "dialogueV", conditions: {} },
+        {class: "", texte: `Prions, frères et soeurs bien-aimés, pour la sainte Église de Dieu\u00A0:`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `que notre Dieu et Seigneur
         lui donne la paix,
         la rassemble dans l’unité
         et la garde par toute la terre ;`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `qu’il nous accorde une vie calme et paisible,
         pour glorifier Dieu le Père tout-puissant.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Tous prient en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {presenceBishop: false} },
-        {class: "", texte: `Tous prient en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {presenceBishop: true} },
+        {class: "", texte: `Tous prient en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: false} },
+        {class: "", texte: `Tous prient en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: true} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         dans le Christ, tu as révélé ta gloire à tous les peuples ; <span style="color: #b30000;">*</span>`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `protège l’oeuvre de ta miséricorde,
@@ -135,11 +135,11 @@ export const Rituelplus = {
         {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },    
         {class: "", texte: `<span style="color: #000; font-weight: bold";>II.</span> POUR LE PAPE`, type: "rubrique", conditions: {} },
         {class: "indent1all", texte: `Prions pour notre saint Père le pape <span style="color: #B30000;";>N.</span>,
-        choisi par Dieu notre Seigneur dans le collège des évêques :`, type: "dialogueV", conditions: {} },
+        choisi par Dieu notre Seigneur dans le collège des évêques\u00A0:`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `qu’il le garde sain et sauf au service de son Église
         pour gouverner le peuple saint de Dieu.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Tous prient en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {presenceBishop: false} },
-        {class: "", texte: `Tous prient en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {presenceBishop: true} },
+        {class: "", texte: `Tous prient en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: false} },
+        {class: "", texte: `Tous prient en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: true} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant
         dont la sagesse organise toutes choses, <span style="color: #b30000;">+</span>`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `écoute en ta bonté notre prière : <span style="color: #b30000;">*</span>`, type: "dialogueV", conditions: {} },
@@ -155,8 +155,8 @@ export const Rituelplus = {
         {class: "indent1all", texte: `Prions pour notre évêque <span style="color: #B30000;";>N.</span>,
         pour tous les évêques, les prêtres, les diacres de l’Église
         et pour l’ensemble du peuple des fidèles.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Tous prient en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {presenceBishop: false} },
-        {class: "", texte: `Tous prient en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {presenceBishop: true} },
+        {class: "", texte: `Tous prient en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: false} },
+        {class: "", texte: `Tous prient en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: true} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant
         dont l’Esprit sanctifie et gouverne`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `le corps entier de l’Église, <span style="color: #b30000;">+</span>`, type: "dialogueV", conditions: {} },
@@ -169,15 +169,15 @@ export const Rituelplus = {
 
         {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },    
         {class: "", texte: `<span style="color: #000; font-weight: bold";>IV.</span> POUR LES CATÉCHUMÈNES`, type: "rubrique", conditions: {} },
-        {class: "indent1all", texte: `Prions pour les (nos) catéchumènes :`, type: "dialogueV", conditions: {} },
+        {class: "indent1all", texte: `Prions pour les (nos) catéchumènes\u00A0:`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `Que Dieu notre Seigneur
         ouvre leur coeur à sa parole,
         et les accueille dans sa miséricorde ;`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `après avoir reçu le pardon de tous leurs péchés
         par le bain de la naissance nouvelle,`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `qu’ils soient reconnus comme appartenant au Christ Jésus notre Seigneur.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Tous prient en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {presenceBishop: false} },
-        {class: "", texte: `Tous prient en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {presenceBishop: true} },
+        {class: "", texte: `Tous prient en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: false} },
+        {class: "", texte: `Tous prient en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: true} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant,
         toi qui assures la fécondité de ton Église`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `en lui donnant toujours de nouveaux enfants, <span style="color: #b30000;">+</span>`, type: "dialogueV", conditions: {} },
@@ -191,11 +191,11 @@ export const Rituelplus = {
         {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },    
         {class: "", texte: `<span style="color: #000; font-weight: bold";>V.</span> POUR L’UNITÉ DES CHRÉTIENS`, type: "rubrique", conditions: {} },
         {class: "indent1all", texte: `Prions pour tous nos frères et soeurs qui croient au Christ
-        et cherchent à faire la vérité :`, type: "dialogueV", conditions: {} },
+        et cherchent à faire la vérité\u00A0:`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `que le Seigneur notre Dieu
         les rassemble et les garde dans son unique Église.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Tous prient en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {presenceBishop: false} },
-        {class: "", texte: `Tous prient en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {presenceBishop: true} },
+        {class: "", texte: `Tous prient en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: false} },
+        {class: "", texte: `Tous prient en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: true} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant,
         toi qui rassembles ce qui est dispersé,`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `et qui gardes ce que tu as rassemblé, <span style="color: #b30000;">+</span>`, type: "dialogueV", conditions: {} },
@@ -210,11 +210,11 @@ export const Rituelplus = {
         {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },    
         {class: "", texte: `<span style="color: #000; font-weight: bold";>VI.</span> POUR LES JUIFS`, type: "rubrique", conditions: {} },
         {class: "indent1all", texte: `Prions pour les Juifs
-        à qui le Seigneur notre Dieu a parlé en premier :`, type: "dialogueV", conditions: {} },
+        à qui le Seigneur notre Dieu a parlé en premier\u00A0:`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `qu’il leur donne de progresser dans l’amour de son Nom
         et dans la fidélité à son Alliance.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Tous prient en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {presenceBishop: false} },
-        {class: "", texte: `Tous prient en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {presenceBishop: true} },
+        {class: "", texte: `Tous prient en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: false} },
+        {class: "", texte: `Tous prient en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: true} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant,
         toi qui as confié tes promesses`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `à Abraham et à sa descendance, <span style="color: #b30000;">+</span>`, type: "dialogueV", conditions: {} },
@@ -226,11 +226,11 @@ export const Rituelplus = {
 
         {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },    
         {class: "", texte: `<span style="color: #000; font-weight: bold";>VII.</span> POUR CEUX QUI NE CROIENT PAS AU CHRIST`, type: "rubrique", conditions: {} },
-        {class: "indent1all", texte: `Prions pour ceux qui ne croient pas au Christ :`, type: "dialogueV", conditions: {} },
+        {class: "indent1all", texte: `Prions pour ceux qui ne croient pas au Christ\u00A0:`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `demandons qu’à la lumière de l’Esprit Saint,
         ils puissent s’engager, eux aussi, sur le chemin du salut.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Tous prient en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {presenceBishop: false} },
-        {class: "", texte: `Tous prient en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {presenceBishop: true} },
+        {class: "", texte: `Tous prient en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: false} },
+        {class: "", texte: `Tous prient en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: true} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         donne à ceux qui ne reconnaissent pas le Christ`, type: "dialogueV", conditions: {} },
         {class: "indentallp", texte: `de marcher en ta présence d’un coeur sincère,
@@ -243,11 +243,11 @@ export const Rituelplus = {
 
         {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },    
         {class: "", texte: `<span style="color: #000; font-weight: bold";>VIII.</span> POUR CEUX QUI NE CROIENT PAS EN DIEU`, type: "rubrique", conditions: {} },
-        {class: "indent1all", texte: `Prions pour ceux qui ne connaissent pas Dieu :`, type: "dialogueV", conditions: {} },
+        {class: "indent1all", texte: `Prions pour ceux qui ne connaissent pas Dieu\u00A0:`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `demandons qu’en recherchant d’un coeur sincère ce qui est droit
         ils puissent parvenir jusqu’à Dieu lui-même.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Tous prient en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {presenceBishop: false} },
-        {class: "", texte: `Tous prient en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {presenceBishop: true} },
+        {class: "", texte: `Tous prient en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: false} },
+        {class: "", texte: `Tous prient en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: true} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         tu as créé l’être humain`, type: "dialogueV", conditions: {} },
         {class: "indentallp", texte: `pour qu’il te cherche dans un désir inlassable
@@ -265,12 +265,12 @@ export const Rituelplus = {
         {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },    
         {class: "", texte: `<span style="color: #000; font-weight: bold";>IX.</span> POUR LES POUVOIRS PUBLICS`, type: "rubrique", conditions: {} },
         {class: "indent1all", texte: `Prions pour les chefs d’État
-        et tous les responsables des affaires publiques :`, type: "dialogueV", conditions: {} },
+        et tous les responsables des affaires publiques\u00A0:`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `que le Seigneur notre Dieu
         dirige leur esprit et leur coeur selon sa volonté
         pour la paix véritable et la liberté de tous.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Tous prient en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {presenceBishop: false} },
-        {class: "", texte: `Tous prient en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {presenceBishop: true} },
+        {class: "", texte: `Tous prient en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: false} },
+        {class: "", texte: `Tous prient en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: true} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant,
         le coeur humain et les droits des peuples`, type: "dialogueV", conditions: {} },
         {class: "indentallp", texte: `sont dans ta main ; <span style="color: #b30000;">+</span>`, type: "dialogueV", conditions: {} },
@@ -292,8 +292,8 @@ export const Rituelplus = {
         ramène chez eux les exilés,
         donne la force aux malades,
         et, aux mourants, accorde le salut.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Tous prient en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {presenceBishop: false} },
-        {class: "", texte: `Tous prient en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {presenceBishop: true} },
+        {class: "", texte: `Tous prient en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: false} },
+        {class: "", texte: `Tous prient en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop: true} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant,
         consolation des affligés,`, type: "dialogueV", conditions: {} },
         {class: "indentallp", texte: `force de ceux qui peinent, <span style="color: #b30000;">+</span>`, type: "dialogueV", conditions: {} },
@@ -330,7 +330,7 @@ export const Rituelplus = {
         {class: "", texte: `L'évêque ou le diacre ou un autre ministre idoine, accompagné des autres ministres, se rend près de la porte de l’église où il prend la Croix non voilée, les autres ministres prennent les cierges allumés, et tous s’avancent en procession à travers l’église vers le sanctuaire.`, type: "rubrique", conditions: {croix:"2", presenceBishop: true, presenceDiacre: true} },
         {class: "", texte: `Le prêtre ou un autre ministre idoine, accompagné des autres ministres, se rend près de la porte de l’église où il prend la Croix non voilée, les autres ministres prennent les cierges allumés, et tous s’avancent en procession à travers l’église vers le sanctuaire.`, type: "rubrique", conditions: {croix:"2", presenceBishop: true, presenceDiacre: false} },
         {class: "", texte: `L'évêque ou un autre ministre idoine, accompagné des autres ministres, se rend près de la porte de l’église où il prend la Croix non voilée, les autres ministres prennent les cierges allumés, et tous s’avancent en procession à travers l’église vers le sanctuaire.`, type: "rubrique", conditions: {croix:"2", presenceBishop: true, presenceDiacre: false} },
-        {class: "", texte: `Près de la porte, puis au milieu de l’église, enfin devant l’entrée du sanctuaire, celui qui porte la Croix l’élève en chantant :`, type: "rubrique", conditions: {croix:"2"} },
+        {class: "", texte: `Près de la porte, puis au milieu de l’église, enfin devant l’entrée du sanctuaire, celui qui porte la Croix l’élève en chantant\u00A0:`, type: "rubrique", conditions: {croix:"2"} },
         {class: "indent1all indentallg", texte: `Voici le bois de la Croix,
         qui a porté le salut du monde.`, type: "dialogueV", conditions: {croix:"2"} },
         {class: "indent1g", texte: `Venez, adorons !`, type: "dialogueR", conditions: {croix:"2"} },
@@ -357,8 +357,8 @@ export const Rituelplus = {
         {class: "", texte: `Lorsque le diacre a placé le Saint-Sacrement sur l’autel et découvert le ciboire, le prêtre s’approche, il monte à l’autel et fait la génuflexion.`, type: "rubrique", conditions: {presenceBishop:false, presenceDiacre: true} },
         {class: "", texte: `Lorsque le diacre a placé le Saint-Sacrement sur l’autel et découvert le ciboire, l'évêque s’approche, il monte à l’autel et fait la génuflexion.`, type: "rubrique", conditions: {presenceBishop:true, presenceDiacre: true} },
         { id:"NotrePère", class:"no-print", texte: ``, type: "H3", conditions: {} },
-        {class: "", texte: `Ensuite le prêtre dit à voix haute, les mains jointes :`, type: "rubrique", conditions: {presenceBishop:false} },
-        {class: "", texte: `Ensuite l'évêque dit à voix haute, les mains jointes :`, type: "rubrique", conditions: {presenceBishop:true} },
+        {class: "", texte: `Ensuite le prêtre dit à voix haute, les mains jointes\u00A0:`, type: "rubrique", conditions: {presenceBishop:false} },
+        {class: "", texte: `Ensuite l'évêque dit à voix haute, les mains jointes\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
         { texte: `Comme nous l’avons appris du Sauveur,
         et selon son commandement, nous osons dire\u00A0:`, type: "dialogueV", conditions: {NotrePère:"NP1"} },
         { texte: `Unis dans le même Esprit,
@@ -397,7 +397,7 @@ export const Rituelplus = {
         { texte: `Les mains étendues, le prêtre, seul, continue\u00A0:`, type: "rubrique", conditions: {presenceBishop:false} },
         { texte: `Les mains étendues, l'évêque, seul, continue\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
         {class:"grandelettrine", texte: `Délivre-nous de tout mal, Seigneur,
-        et donne la paix à notre temps :`, type: "dialogueV", conditions: {} },
+        et donne la paix à notre temps\u00A0:`, type: "dialogueV", conditions: {} },
         { texte: `soutenus par ta miséricorde,`, type: "dialogueV", conditions: {} },
         {class:"indent1all", texte: `nous serons libérés de tout péché,
         à l’abri de toute épreuve ;`, type: "dialogueV", conditions: {} },
@@ -448,8 +448,8 @@ export const Rituelplus = {
         {class: "", texte: `Pour le renvoi de l’assemblée, le diacre, ou, à son défaut, l'évêque lui-même peut dire l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction.</span>`, type: "rubrique", conditions: {presenceBishop:true, presenceDiacre:true} },
         {class: "", texte: `Pour le renvoi de l’assemblée, le prêtre peut dire l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction.</span>`, type: "rubrique", conditions: {presenceBishop:false, presenceDiacre:false} },
         {class: "", texte: `Pour le renvoi de l’assemblée, l'évêque peut dire l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction.</span>`, type: "rubrique", conditions: {presenceBishop:true, presenceDiacre:false} },
-        {class: "", texte: `Puis le prêtre, debout, tourné vers le peuple, et en étendant les mains sur lui, dit cette prière sur le peuple :`, type: "rubrique", conditions: {presenceBishop:false} },
-        {class: "", texte: `Puis l'évêque, debout, tourné vers le peuple, et en étendant les mains sur lui, dit cette prière sur le peuple :`, type: "rubrique", conditions: {presenceBishop:true} },
+        {class: "", texte: `Puis le prêtre, debout, tourné vers le peuple, et en étendant les mains sur lui, dit cette prière sur le peuple\u00A0:`, type: "rubrique", conditions: {presenceBishop:false} },
+        {class: "", texte: `Puis l'évêque, debout, tourné vers le peuple, et en étendant les mains sur lui, dit cette prière sur le peuple\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
         {class: "grandelettrine", texte: `Que ta bénédiction, nous t’en prions, Seigneur, 
         descende en abondance sur ton peuple`, type: "dialogueV", conditions: {} },
         {class: "indentallp", texte: `qui a célébré la mort de ton Fils
@@ -474,13 +474,16 @@ export const Rituelplus = {
         {class: "", texte: `Quiconque participe à la messe de la Vigile peut communier une seconde fois à la messe du jour de Pâques. Tout prêtre qui célèbre ou concélèbre la messe de la Vigile peut de nouveau célébrer ou concélébrer la messe du jour de Pâques.`, type: "rubrique", conditions: {} },
         {class: "", texte: `La Vigile pascale tient lieu de l’Office des lectures.`, type: "rubrique", conditions: {} },
         {class: "", texte: `On prépare des cierges pour tous ceux qui vont participer à la Vigile. Toutes les lumières de l’église sont éteintes.`, type: "rubrique", conditions: {} },
-        {class: "", texte: `On ne confiera de cierge aux servants qu'après avoir jugé de leur aptitude à le porter avec dignité. Lors d'une longue vigile, on évitera d'imposer cette charge aux plus jeunes, de peur que la charge du cierge ne devienne une occasion de distraction pour l'assemblée.`, type: "servants", conditions: {} },
+        {class: "", texte: `On ne confiera de cierge aux servants qu'après avoir jugé de leur aptitude à le porter avec dignité. Lors d'une longue vigile, on veillera à ce que ces cierges ne deviennent pas une occasion de distraction pour l'assemblée.`, type: "servants", conditions: {} },
         {class: "", texte: `OUVERTURE SOLENNELLE DE LA VIGILE
         ou : OFFICE DE LA LUMIÈRE`, type: "H1", conditions: {} },
         {class: "", texte: `<span style="font-weight: bold;">Bénédiction du feu et préparation du cierge</span>`, type: "H3", conditions: {} },
+        { texte: `Pas de <b>cruciféraire</b> pour la bénédiction du feu et pour la procession`, type:"servants", conditions: {cruciferaire: true, ceroferaire: false}},
+        { texte: `Pas de <b>céroféraire</b> pour la bénédiction du feu et pour la procession`, type:"servants", conditions: {ceroferaire: true, cruciferaire: false}},
+        { texte: `Pas de <b>cruciféraire</b> ni de <b>céroféraire</b> pour la bénédiction du feu et pour la procession`, type:"servants", conditions: {ceroferaire: true, cruciferaire: true}},
         {class: "", texte: `À l’endroit qui convient, hors de l’église, on prépare un feu. Lorsque le peuple est rassemblé en cet endroit, le prêtre s’y rend avec les ministres dont l’un porte le cierge pascal. On ne porte pas la croix de procession ni les luminaires.`, type: "rubrique", conditions: {} },
         {class: "", texte: `Là où il n’est pas possible d’allumer un feu en dehors de l’église, on adapte le rite de la bénédiction du feu. Le peuple se rassemble alors à l’intérieur de l’église. Le prêtre, accompagné des ministres portant le cierge pascal, se rend à la porte de l’église. Le peuple, autant que possible, se tourne vers le prêtre.`, type: "rubrique", conditions: {} },
-        {class: "", texte: `Le prêtre et les fidèles font le signe de la croix pendant qu’il dit : <span style="color: #000;">Au nom du Père, et du Fils, et du Saint-Esprit</span>. Ensuite, il salue comme à l’ordinaire le peuple rassemblé et lui explique brièvement le sens de la vigile de cette nuit. Il le fait en ces termes ou en d’autres semblables :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Le prêtre et les fidèles font le signe de la croix pendant qu’il dit : <span style="color: #000;">Au nom du Père, et du Fils, et du Saint-Esprit</span>. Ensuite, il salue comme à l’ordinaire le peuple rassemblé et lui explique brièvement le sens de la vigile de cette nuit. Il le fait en ces termes ou en d’autres semblables\u00A0:`, type: "rubrique", conditions: {} },
         {class: "", texte: `Frères et soeurs bien-aimés,`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `en cette nuit très sainte
         où notre Seigneur Jésus Christ est passé de la mort à la vie,
@@ -491,7 +494,7 @@ export const Rituelplus = {
         ainsi nous aurons l’espérance d’avoir part à son triomphe sur la mort
         et de vivre avec lui en Dieu.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `\n`, type: "", conditions: {} },
-        {class: "", texte: `Ensuite le prêtre bénit le feu, en disant, les mains étendues :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Ensuite le prêtre bénit le feu, en disant, les mains étendues\u00A0:`, type: "rubrique", conditions: {} },
         {class: "", texte: `Prions le Seigneur.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
         {class: "grandelettrine", texte: `Seigneur Dieu,
@@ -504,7 +507,7 @@ export const Rituelplus = {
         aux fêtes de l’éternelle lumière.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `Amen.`, type: "dialogueR", conditions: {} },
-        {class: "", texte: `Après la bénédiction du feu nouveau, un acolyte ou un autre ministre présente le cierge pascal au prêtre qui préside, et celui-ci, avec un stylet, pratique sur le cierge une incision en forme de croix. Ensuite il trace au-dessus de cette croix la lettre grecque Alpha, au-dessous, la lettre Oméga, et, entre les bras de la croix, les quatre chiffres du millésime de l’année en cours. Il prononce en même temps les paroles suivantes :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Après la bénédiction du feu nouveau, un acolyte ou un autre ministre présente le cierge pascal au prêtre qui préside, et celui-ci, avec un stylet, pratique sur le cierge une incision en forme de croix. Ensuite il trace au-dessus de cette croix la lettre grecque Alpha, au-dessous, la lettre Oméga, et, entre les bras de la croix, les quatre chiffres du millésime de l’année en cours. Il prononce en même temps les paroles suivantes\u00A0:`, type: "rubrique", conditions: {} },
         {class: "", texte: `<span style="color: #b30000;">1.</span> Le Christ, hier et aujourd’hui,`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `(il grave le bras vertical)`, type: "rubriqueinterne", conditions: {} },
         {class: "", texte: `<span style="color: #b30000;">2.</span> Commencement et fin de toutes choses,`, type: "dialogueV", conditions: {} },
@@ -522,48 +525,63 @@ export const Rituelplus = {
         {class: "", texte: `<span style="color: #b30000;">8.</span> pour les siècles sans fin. Amen.`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `(il grave le quatrième chiffre de l’année dans l’angle inférieur droit de la croix)`, type: "rubriqueinterne", conditions: {} },
                 {class: "", texte: `\n`, type: "", conditions: {} },
-        {class: "", texte: `Après l'incision en forme de croix et les autres signes, le prêtre peut fixer dans le cierge cinq grains d’encens, qu’il dispose en forme de croix, en disant :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Après l'incision en forme de croix et les autres signes, le prêtre peut fixer dans le cierge cinq grains d’encens, qu’il dispose en forme de croix, en disant\u00A0:`, type: "rubrique", conditions: {} },
         {class: "indent1p", texte: `<span style="color: #b30000;">1.</span> Par ses saintes plaies,`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `<span style="color: #b30000;">2.</span> ses plaies glorieuses,`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `<span style="color: #b30000;">3.</span> que le Christ Seigneur`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `<span style="color: #b30000;">4.</span> nous garde`, type: "dialogueV", conditions: {} },
         {class: "indent1p", texte: `<span style="color: #b30000;">5.</span> et nous protège. Amen.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Le prêtre allume alors le cierge pascal avec une flamme provenant du feu nouveau. Il dit :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Le prêtre allume alors le cierge pascal avec une flamme provenant du feu nouveau. Il dit\u00A0:`, type: "rubrique", conditions: {} },
         {class: "indent1all", texte: `Que la lumière du Christ, ressuscitant dans la gloire,
         dissipe les ténèbres de notre coeur et de notre esprit.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `<span style="font-weight: bold;">Procession</span>`, type: "H3", conditions: {} },
+        {class:"", texte: `<b>Le thuriféraire</b> apporte l'encensoir au célébrant qui impose l'encens.`, type:"servants", conditions: {incense:true} },
         {class: "", texte: `Le cierge étant allumé, un des ministres prend des charbons ardents du feu et les dépose dans un encensoir, et le prêtre impose l’encens, comme d’habitude. Le diacre reçoit du ministre le cierge pascal et la procession commence.`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class: "", texte: `Le cierge étant allumé, un des ministres prend des charbons ardents du feu et les dépose dans un encensoir, et le prêtre impose l’encens, comme d’habitude. Le ministre qui convient, reçoit du ministre le cierge pascal et la procession commence.`, type: "rubrique", conditions: {presenceDiacre: false} },
         {class: "", texte: `Le thuriféraire tenant l’encensoir fumant marche devant le diacre qui porte le cierge pascal. Viennent ensuite le prêtre avec les ministres et le peuple, qui portent en mains leurs cierges éteints.`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class: "", texte: `Le thuriféraire tenant l’encensoir fumant marche devant le ministre qui porte le cierge pascal. Viennent ensuite le prêtre avec les ministres et le peuple, qui portent en mains leurs cierges éteints.`, type: "rubrique", conditions: {presenceDiacre: false} },
-        {class: "", texte: `À la porte de l’église, le diacre, se tenant debout et élevant le cierge, chante :`, type: "rubrique", conditions: {presenceDiacre: true} },
-        {class: "", texte: `À la porte de l’église, le ministre, se tenant debout et élevant le cierge, chante :`, type: "rubrique", conditions: {presenceDiacre: false} },
+        { texte: "La procession d'entrée se déroule dans l'ordre suivant :", type:"servants", conditions: {} },
+        { texte: "- le thuriféraire avec l'encensoir fumant et le naviculaire à sa droite s'il est droitier (gauche s'il est gaucher) de façon à ce que l'encensoir soit au milieu des deux", type:"servants", conditions: {incense: true}},
+        { texte: "- le diacre portant le cierge pascal", type:"servants", conditions: {presenceDiacre: true}},
+        { texte: "- le ministre portant le cierge pascal", type:"servants", conditions: {presenceDiacre: false}},
+        { texte: "- les servants par ordre de taille", type:"servants", conditions: {}},
+        { texte: "- les prêtres concélébrants", type:"servants", conditions: {}},
+        { texte: "- le célébrant", type:"servants", conditions: {}},
+        { texte: "- les porte-insignes", type:"servants", conditions: {porteinsigne: true}},
+        {class: "", texte: `À la porte de l’église, le diacre, se tenant debout et élevant le cierge, chante\u00A0:`, type: "rubrique", conditions: {presenceDiacre: true} },
+        {class: "", texte: `À la porte de l’église, le ministre, se tenant debout et élevant le cierge, chante\u00A0:`, type: "rubrique", conditions: {presenceDiacre: false} },
         {class: "indent1g", texte: `Lumière du Christ.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Et tous répondent :`, type: "rubriqueinterne", conditions: {} },
+        {class: "", texte: `Et tous répondent\u00A0:`, type: "rubriqueinterne", conditions: {} },
         {class: "indent1g", texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {} },
         {class: "", texte: `Le prêtre allume son cierge à la flamme du cierge pascal.`, type: "rubrique", conditions: {} },
-        {class: "", texte: `Ensuite, le diacre avance au milieu de l’église et se tenant debout, il élève le cierge et chante de nouveau :`, type: "rubrique", conditions: {presenceDiacre: true} },
-        {class: "", texte: `Ensuite, le ministre avance au milieu de l’église et se tenant debout, il élève le cierge et chante de nouveau :`, type: "rubrique", conditions: {presenceDiacre: false} },
+        {class: "", texte: `Ensuite, le diacre avance au milieu de l’église et se tenant debout, il élève le cierge et chante de nouveau\u00A0:`, type: "rubrique", conditions: {presenceDiacre: true} },
+        {class: "", texte: `Ensuite, le ministre avance au milieu de l’église et se tenant debout, il élève le cierge et chante de nouveau\u00A0:`, type: "rubrique", conditions: {presenceDiacre: false} },
         {class: "indent1g", texte: `Lumière du Christ.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Et tous répondent :`, type: "rubriqueinterne", conditions: {} },
+        {class: "", texte: `Et tous répondent\u00A0:`, type: "rubriqueinterne", conditions: {} },
         {class: "indent1g", texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {} },
+        { texte: "Les servants transmettent aux fidèles la lumière reçue du cierge pascal.", type:"servants", conditions: {}},
         {class: "", texte: `Tous allument leurs cierges à la flamme du cierge pascal et s’avancent.`, type: "rubrique", conditions: {} },
-        {class: "", texte: `Lorsque le diacre arrive devant l’autel, il se tient debout, tourné vers le peuple, élève le cierge et chante une troisième fois :`, type: "rubrique", conditions: {presenceDiacre: true} },
-        {class: "", texte: `Lorsque le ministre arrive devant l’autel, il se tient debout, tourné vers le peuple, élève le cierge et chante une troisième fois :`, type: "rubrique", conditions: {presenceDiacre: false} },
+        {class: "", texte: `Lorsque le diacre arrive devant l’autel, il se tient debout, tourné vers le peuple, élève le cierge et chante une troisième fois\u00A0:`, type: "rubrique", conditions: {presenceDiacre: true} },
+        {class: "", texte: `Lorsque le ministre arrive devant l’autel, il se tient debout, tourné vers le peuple, élève le cierge et chante une troisième fois\u00A0:`, type: "rubrique", conditions: {presenceDiacre: false} },
         {class: "indent1g", texte: `Lumière du Christ.`, type: "dialogueV", conditions: {} },
-        {class: "", texte: `Et tous répondent :`, type: "rubriqueinterne", conditions: {} },
+        {class: "", texte: `Et tous répondent\u00A0:`, type: "rubriqueinterne", conditions: {} },
         {class: "indent1g", texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {} },
         {class: "", texte: `Ensuite le diacre dépose le cierge pascal sur un grand chandelier préparé près de l’ambon ou au milieu du sanctuaire. Et on allume les lumières de l’église, excepté les cierges de l’autel.`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class: "", texte: `Ensuite le ministre dépose le cierge pascal sur un grand chandelier préparé près de l’ambon ou au milieu du sanctuaire. Et on allume les lumières de l’église, excepté les cierges de l’autel.`, type: "rubrique", conditions: {presenceDiacre: false} },
+        // A vérifier 
+        { texte: "Parvenu devant l'autel, l'évêque remet la crosse et dépose la mitre <b>aux porte-insignes</b>", type:"servants", conditions: {porteinsigne: true}},
         {class: "", texte: `<span style="font-weight: bold;">Annonce de Pâques</span>`, type: "H3", conditions: {} },
+        { texte: `<b>Le thuriféraire</b> s'avance, le prêtre met l'encens dans l'encensoir et le bénit sans rien dire.`, type:"servants", conditions: {incense: true, presenceBishop: false}},
+        { texte: `<b>Le thuriféraire</b> s'avance, l'évêque met l'encens dans l'encensoir et le bénit sans rien dire.`, type:"servants", conditions: {incense: true, presenceBishop: true}},
         {class: "", texte: `Lorsqu’il parvient à l’autel, le prêtre se rend à son siège, il donne son cierge à un ministre, il impose et bénit l’encens, comme à l’évangile de la messe.`, type: "rubrique", conditions: {presenceDiacre: false} },
-        {class: "", texte: `Lorsqu’il parvient à l’autel, le prêtre se rend à son siège, il donne son cierge à un ministre, il impose et bénit l’encens, comme à l’évangile de la messe. Le diacre se présente au prêtre en disant : <span style="color: #000;">Père bénissez-moi</span>, il demande et reçoit la bénédiction du prêtre qui dit à voix basse :`, type: "rubrique", conditions: {presenceDiacre: true} },
+        {class: "", texte: `Lorsqu’il parvient à l’autel, le prêtre se rend à son siège, il donne son cierge à un ministre, il impose et bénit l’encens, comme à l’évangile de la messe. Le diacre se présente au prêtre en disant : <span style="color: #000;">Père bénissez-moi</span>, il demande et reçoit la bénédiction du prêtre qui dit à voix basse\u00A0:`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class: "", texte: `Que le Seigneur soit dans votre coeur et sur vos lèvres 
         pour que vous puissiez dignement annoncer
         la grande joie de Pâques :
         au nom du Père, et du Fils, <span style="color: #b30000;">✠</span> et du Saint-Esprit.`, type: "voixbasse", conditions: {presenceDiacre: true} },
-        { texte: `Le diacre fait le signe de la croix et répond :`, type: "rubrique", conditions: {presenceDiacre: true} },
+        { texte: `Le diacre fait le signe de la croix et répond\u00A0:`, type: "rubrique", conditions: {presenceDiacre: true} },
         { texte: `Amen.`, type: "voixbasse", conditions: {presenceDiacre: true} },
+        { texte: `<b>Le thuriféraire</b> accompagne le ministre à l'ambon.`, type:"servants", conditions: {incense:true}},
         {class: "", texte: `Après avoir encensé le livre et le cierge pascal, le diacre, qui va chanter l’annonce pascale, monte à l’ambon, ou se rend au pupitre, et il commence cette Annonce, tous étant debout et tenant dans leurs mains leurs cierges allumés.`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class: "", texte: `En l’absence de diacre, l’annonce pascale peut être proclamée, par le prêtre lui-même, ou par un autre prêtre concélébrant. Si cependant, par nécessité, l’Annonce est faite par un chantre laïc, celui-ci omet les paroles depuis <span style="color: #000;">Et vous, mes frères bien-aimés…</span>, jusqu’à la fin de l’invitation. Il omet également la salutation : <span style="color: #000;">Le Seigneur soit avec vous.</span>`, type: "rubrique", conditions: {presenceDiacre: false} },
         {id: "exultet", texte: `\n`, type: "", conditions: {} },
@@ -574,7 +592,7 @@ export const Rituelplus = {
         pour la victoire d’un si grand Roi !`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `Que la terre, elle aussi, soit heureuse,
-        irradiée de tant de feux :`, type: "dialogueV", conditions: {exultet:"1"} },
+        irradiée de tant de feux\u00A0:`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `illuminée de la splendeur du Roi éternel,
         qu’elle voie s’en aller l’obscurité
         qui recouvrait le monde entier !`, type: "dialogueV", conditions: {exultet:"1"} },
@@ -590,7 +608,7 @@ export const Rituelplus = {
         la miséricorde de Dieu tout-puissant.`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `Il m’a choisi dans mon indignité
-        pour être à son service :`, type: "dialogueV", conditions: {exultet:"1"} },
+        pour être à son service\u00A0:`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `qu’il répande la clarté de sa lumière,
         pour que je puisse chanter la louange du cierge pascal<span style="color: #b30000;">]</span>`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "", texte: `\n`, type: "dialogueV", conditions: {exultet:"1"} },
@@ -626,7 +644,7 @@ export const Rituelplus = {
         {class: "indent1all", texte: `Voici la nuit
         qui arrache au monde corrompu, aveuglé par le mal,
         ceux qui, aujourd’hui et dans tout l’univers,
-        ont mis leur foi dans le Christ :`, type: "dialogueV", conditions: {exultet:"1"} },
+        ont mis leur foi dans le Christ\u00A0:`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `nuit qui les rend à la grâce
         et leur ouvre la communion des saints.`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"1"} },
@@ -665,7 +683,7 @@ export const Rituelplus = {
         que la sainte Église t’offre par nos mains.`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `Mais déjà nous savons ce que proclame cette colonne
-        qui brûle avec éclat en l’honneur de Dieu :`, type: "dialogueV", conditions: {exultet:"1"} },
+        qui brûle avec éclat en l’honneur de Dieu\u00A0:`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `quand on en transmet la flamme,
         sa clarté ne diminue pas.`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"1"} },
@@ -677,7 +695,7 @@ export const Rituelplus = {
         nuit où le ciel s’unit à la terre,
         où l’homme rencontre Dieu.`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"1"} },
-        {class: "indent1all", texte: `Aussi nous t’en prions, Seigneur :`, type: "dialogueV", conditions: {exultet:"1"} },
+        {class: "indent1all", texte: `Aussi nous t’en prions, Seigneur\u00A0:`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `permets que ce cierge consacré en l’honneur de ton nom
         brûle sans déclin pour dissiper les ténèbres de cette nuit.`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `Qu’il te soit d’un parfum agréable
@@ -696,7 +714,7 @@ export const Rituelplus = {
         pour la victoire d’un si grand Roi !`, type: "dialogueV", conditions: {exultet:"2"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"2"} },
         {class: "indent1all", texte: `Que la terre, elle aussi, soit heureuse,
-        irradiée de tant de feux :`, type: "dialogueV", conditions: {exultet:"2"} },
+        irradiée de tant de feux\u00A0:`, type: "dialogueV", conditions: {exultet:"2"} },
         {class: "indent1all", texte: `illuminée de la splendeur du Roi éternel,
         qu’elle voie s’en aller l’obscurité
         qui recouvrait le monde entier !`, type: "dialogueV", conditions: {exultet:"2"} },
@@ -738,7 +756,7 @@ export const Rituelplus = {
         {class: "indent1all", texte: `Voici la nuit
         qui arrache au monde corrompu, aveuglé par le mal,
         ceux qui, aujourd’hui et dans tout l’univers,
-        ont mis leur foi dans le Christ :`, type: "dialogueV", conditions: {exultet:"2"} },
+        ont mis leur foi dans le Christ\u00A0:`, type: "dialogueV", conditions: {exultet:"2"} },
         {class: "indent1all", texte: `nuit qui les rend à la grâce
         et leur ouvre la communion des saints.`, type: "dialogueV", conditions: {exultet:"2"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"2"} },
@@ -769,7 +787,7 @@ export const Rituelplus = {
         (la flamme montant de) cette colonne de cire (oeuvre des abeilles)
         que la sainte Église t’offre par nos mains.`, type: "dialogueV", conditions: {exultet:"2"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"2"} },
-        {class: "indent1all", texte: `Aussi nous t’en prions, Seigneur :`, type: "dialogueV", conditions: {exultet:"2"} },
+        {class: "indent1all", texte: `Aussi nous t’en prions, Seigneur\u00A0:`, type: "dialogueV", conditions: {exultet:"2"} },
         {class: "indent1all", texte: `permets que ce cierge consacré en l’honneur de ton nom
         brûle sans déclin pour dissiper les ténèbres de cette nuit.`, type: "dialogueV", conditions: {exultet:"2"} },
         {class: "indent1all", texte: `Qu’il te soit d’un parfum agréable
@@ -781,11 +799,12 @@ export const Rituelplus = {
         qui répand sur le genre humain sa lumière et sa paix,`, type: "dialogueV", conditions: {exultet:"2"} },
         {class: "indent1all", texte: `lui qui vit et règne pour les siècles des siècles.`, type: "dialogueV", conditions: {exultet:"2"} },
         {class: "indent1all", texte: `Amen.`, type: "dialogueR", conditions: {exultet:"2"} },
+        { texte: `<b>Le thuriféraire</b> retourne à sa place`, type:"servants", conditions: {incense:true}},
 //Liturgie de la parole
         {class: "", texte: `LITURGIE DE LA PAROLE`, type: "H1", conditions: {} },
         {class: "", texte: `En cette Vigile qui est « la mère de toutes les Vigiles », sont proposées neuf lectures, à savoir sept de l’Ancien Testament et deux du Nouveau (l’épître et l’évangile). Ces lectures doivent être lues partout où c’est possible, pour que soit conservée la nature de la Vigile qui exige une longue durée.`, type: "rubrique", conditions: {} },
         {class: "", texte: `Cependant, pour de graves raisons d’ordre pastoral, on peut réduire le nombre des lectures de l’Ancien Testament ; mais on respectera toujours la règle selon laquelle la Parole de Dieu constitue un élément fondamental de la Vigile dans la nuit de Pâques. On fera donc au moins trois lectures de l’Ancien Testament, tirées de la Loi et des Prophètes, et l’on chantera leurs psaumes responsoriaux respectifs. On n’omettra jamais le récit du chap. 4 de l’Exode (3e lecture), avec son cantique.`, type: "rubrique", conditions: {} },
-        {class: "", texte: `Après avoir déposé leurs cierges, tous s’assoient. Avant le commencement des lectures, le prêtre s’adresse au peuple dans les termes suivants ou en d’autres semblables :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Après avoir déposé leurs cierges, tous s’assoient. Avant le commencement des lectures, le prêtre s’adresse au peuple dans les termes suivants ou en d’autres semblables\u00A0:`, type: "rubrique", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
         {class: "indent1all", texte: `Frères et soeurs bien-aimés,
         nous voici entrés dans la Vigile solennelle :
@@ -830,7 +849,7 @@ export const Rituelplus = {
         {class: "", texte: `\n`, type: "dialogueV", conditions: {} },
 //Lecture 2
         {class: "", texte: `DEUXIÈME LECTURE`, type: "rubrique", conditions: {} },
-        {class: "", texte: `Après le récit du sacrifice d’Abraham (Gn 22, 1-18 ou Gn 22, 1-2.9a.10-13.15-18) et le psaume (15), le prêtre dit la prière suivante :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Après le récit du sacrifice d’Abraham (Gn 22, 1-18 ou Gn 22, 1-2.9a.10-13.15-18) et le psaume (15), le prêtre dit la prière suivante\u00A0:`, type: "rubrique", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
         {class: "", texte: `Prions le Seigneur.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
@@ -847,7 +866,7 @@ export const Rituelplus = {
         {class: "", texte: `\n`, type: "dialogueV", conditions: {} },
 //Lecture 3
         {class: "", texte: `TROISIÈME LECTURE`, type: "rubrique", conditions: {} },
-        {class: "", texte: `Après le récit du passage de la mer Rouge, lecture qui doit toujours être faite (Ex 14, 15–15, 1a) et son cantique (Ex 15), le prêtre dit au choix l’une des deux prières suivantes :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Après le récit du passage de la mer Rouge, lecture qui doit toujours être faite (Ex 14, 15–15, 1a) et son cantique (Ex 15), le prêtre dit au choix l’une des deux prières suivantes\u00A0:`, type: "rubrique", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
         {class: "", texte: `Prions le Seigneur.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
@@ -866,7 +885,7 @@ export const Rituelplus = {
         {class: "grandelettrine", texte: `Seigneur Dieu, <span style="color: #b30000;">+</span>
         dans la lumière de la Nouvelle Alliance,`, type: "dialogueV", conditions: {} },
         {class: "indent1allp", texte: `tu as donné leur sens
-        aux merveilles accomplies autrefois :`, type: "dialogueV", conditions: {} },
+        aux merveilles accomplies autrefois\u00A0:`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `on reconnaît dans la mer Rouge
         l’image de la fontaine baptismale,`, type: "dialogueV", conditions: {} },
         {class: "indent1all", texte: `et le peuple délivré de la servitude
@@ -896,7 +915,7 @@ export const Rituelplus = {
         {class: "", texte: `\n`, type: "dialogueV", conditions: {} },
 //Lecture 5
         {class: "", texte: `CINQUIÈME LECTURE`, type: "rubrique", conditions: {} },
-        {class: "", texte: `Après l’oracle d’Isaïe sur le salut offert à tous gratuitement (Is 55, 1-11) et le cantique (Is 12), le prêtre dit la prière suivante :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Après l’oracle d’Isaïe sur le salut offert à tous gratuitement (Is 55, 1-11) et le cantique (Is 12), le prêtre dit la prière suivante\u00A0:`, type: "rubrique", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
         {class: "", texte: `Prions le Seigneur.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
@@ -912,7 +931,7 @@ export const Rituelplus = {
         {class: "", texte: `\n`, type: "dialogueV", conditions: {} },
 //Lecture 6
         {class: "", texte: `SIXIÈME LECTURE`, type: "rubrique", conditions: {} },
-        {class: "", texte: `Après l’oracle de Baruc sur la source de la sagesse (Ba 3, 9-15.32–4,4) et le psaume (18), le prêtre dit la prière suivante :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Après l’oracle de Baruc sur la source de la sagesse (Ba 3, 9-15.32–4,4) et le psaume (18), le prêtre dit la prière suivante\u00A0:`, type: "rubrique", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
         {class: "", texte: `Prions le Seigneur.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
@@ -927,7 +946,7 @@ export const Rituelplus = {
         {class: "", texte: `\n`, type: "dialogueV", conditions: {} },
 //Lecture 7
         {class: "", texte: `SEPTIÈME LECTURE`, type: "rubrique", conditions: {} },
-        {class: "", texte: `Après l’oracle d’Ézékiel sur le coeur nouveau et l’esprit nouveau (Ez 36, 16-28) et le psaume 41–42), le prêtre dit l’une des deux prières suivantes :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Après l’oracle d’Ézékiel sur le coeur nouveau et l’esprit nouveau (Ez 36, 16-28) et le psaume 41–42), le prêtre dit l’une des deux prières suivantes\u00A0:`, type: "rubrique", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
         {class: "", texte: `Prions le Seigneur.`, type: "dialogueV", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
@@ -1034,7 +1053,7 @@ export const Rituelplus = {
         {class: "", texte: `Si la procession pour se rendre aux fonts baptismaux est assez longue, les Litanies sont chantées pendant la procession ; dans ce cas, l’appel des catéchumènes se fait avant la procession.`, type: "rubrique", conditions: {litbap: "A"} },
         {class: "", texte: `Si la procession pour se rendre aux fonts baptismaux est assez longue, les Litanies sont chantées pendant la procession.`, type: "rubrique", conditions: {litbap: "B"} },
         {class: "", texte: `<span style="font-weight: bold;">Monition</span>`, type: "H3", conditions: {litbap: ["A", "B"]} },
-        {class: "", texte: `Le prêtre fait la monition d’introduction en ces termes ou d’autres semblables :`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
+        {class: "", texte: `Le prêtre fait la monition d’introduction en ces termes ou d’autres semblables\u00A0:`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
         {class: "", texte: `Frères et soeurs bien-aimés,`, type: "dialogueV", conditions: {litbap: "A"} },
         {class: "indent1all", texte: `en priant tous ensemble
         pour ceux d’entre nous qui vont être baptisés,
@@ -1200,7 +1219,7 @@ export const Rituelplus = {
         { type: "dialogueV", texte: "Ô Christ, exauce-nous,"},
         { type: "dialogueV", texte: "Ô Christ, exauce-nous,"}]},
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {litbap: ["A", "B"]} },
-        {class: "", texte: `À la fin des litanies, le prêtre, étendant les mains, dit cette oraison :`, type: "rubrique", conditions: {litbap: ["A"]} },
+        {class: "", texte: `À la fin des litanies, le prêtre, étendant les mains, dit cette oraison\u00A0:`, type: "rubrique", conditions: {litbap: ["A"]} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
         viens agir dans les sacrements`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
         {class: "indent1p", texte: `qui révèlent ta grande tendresse ; <span style="color: #b30000;">*</span>`, type: "dialogueV", conditions: {litbap: ["A"]} },
@@ -1212,7 +1231,7 @@ export const Rituelplus = {
         {class: "", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {litbap: "A"} },
         {class: "", texte: `Amen.`, type: "dialogueR", conditions: {litbap: "A"} },
         {class: "", texte: `<span style="font-weight: bold;">Bénédiction de l’eau baptismale</span>`, type: "H3", conditions: {litbap: ["A", "B"]} },
-        {class: "", texte: `Le prêtre bénit ensuite l’eau baptismale, en disant, les mains étendues, la prière suivante :`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
+        {class: "", texte: `Le prêtre bénit ensuite l’eau baptismale, en disant, les mains étendues, la prière suivante\u00A0:`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
         {class: "grandelettrine", texte: `Seigneur Dieu,
         par ta puissance invisible,`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
         {class: "indent1allp", texte: `tu accomplis des merveilles dans tes sacrements,
@@ -1257,8 +1276,8 @@ export const Rituelplus = {
         et renaisse de l’eau et de l’Esprit Saint
         pour la vie nouvelle d’enfant de Dieu.`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
         {class: "indent1all", texte: `Le ministre peut, si cela lui paraît opportun, plonger le cierge pascal dans l’eau une fois ou trois fois ; 
-        puis il continue :`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
-        {class: "indent1all", texte: `Nous t’en prions, Seigneur :`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
+        puis il continue\u00A0:`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
+        {class: "indent1all", texte: `Nous t’en prions, Seigneur\u00A0:`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
         {class: "indent1all", texte: `par ton Fils,
         que la puissance de l’Esprit Saint
         descende dans l’eau qui remplit cette fontaine`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
@@ -1269,7 +1288,7 @@ export const Rituelplus = {
         {class: "indent1all", texte: `Lui qui vit et règne avec toi dans l’unité du Saint-Esprit,
         Dieu, pour les siècles des siècles.`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
         {class: "", texte: `Amen.`, type: "dialogueR", conditions: {litbap: ["A", "B"]} },
-        {class: "", texte: `Le cierge est ensuite retiré de l’eau, tandis que le peuple chante l’acclamation :`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
+        {class: "", texte: `Le cierge est ensuite retiré de l’eau, tandis que le peuple chante l’acclamation\u00A0:`, type: "rubrique", conditions: {litbap: ["A", "B"]} },
         {class: "indentallg", texte: `Fontaines du Seigneur, bénissez le Seigneur !
         À lui, haute gloire, louange éternelle !`, type: "dialogueR", conditions: {litbap: ["A", "B"]} },
         {class: "", texte: `<span style="font-weight: bold;">Baptême et confirmation</span>`, type: "H3", conditions: {litbap: ["A"]} },
@@ -1277,14 +1296,14 @@ export const Rituelplus = {
 //Rituel baptême et confirmation
 
         {class: "", texte: `<span style="font-weight: bold;">Bénédiction de l’eau</span>`, type: "H3", conditions: {litbap: "C"} },
-        {class: "", texte: `Lorsqu’il n’y a pas lieu de bénir de l’eau baptismale (pas de baptême ni de fonts baptismaux à bénir), le prêtre bénit l’eau dont il aspergera le peuple à la fin de la rénovation de la profession de foi baptismale, en disant :`, type: "rubrique", conditions: {litbap: "C"} },
+        {class: "", texte: `Lorsqu’il n’y a pas lieu de bénir de l’eau baptismale (pas de baptême ni de fonts baptismaux à bénir), le prêtre bénit l’eau dont il aspergera le peuple à la fin de la rénovation de la profession de foi baptismale, en disant\u00A0:`, type: "rubrique", conditions: {litbap: "C"} },
         {class: "grandelettrine", texte: `Frères et soeurs bien-aimés,
         supplions humblement Dieu notre Seigneur`, type: "dialogueV", conditions: {litbap: "C"} },
         {class: "indent1all", texte: `de bénir cette eau qu’il a créée ;
         nous allons en être aspergés en souvenir de notre baptême ;`, type: "dialogueV", conditions: {litbap: "C"} },
         {class: "indent1all", texte: `que Dieu lui-même nous renouvelle
         afin que nous demeurions fidèles à l’Esprit que nous avons reçu.`, type: "dialogueV", conditions: {litbap: "C"} },
-        {class: "", texte: `Tous prient quelques instants en silence. Puis le prêtre continue, les mains étendues :`, type: "rubrique", conditions: {litbap: "C"} },
+        {class: "", texte: `Tous prient quelques instants en silence. Puis le prêtre continue, les mains étendues\u00A0:`, type: "rubrique", conditions: {litbap: "C"} },
         {class: "grandelettrine", texte: `Seigneur notre Dieu,
         sois favorable aux prières de ton peuple`, type: "dialogueV", conditions: {litbap: "C"} },
         {class: "indent1p", texte: `qui veille en cette nuit très sainte ;`, type: "dialogueV", conditions: {litbap: "C"} },
@@ -1294,7 +1313,7 @@ export const Rituelplus = {
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {litbap: ["C"]} },
         {class: "indent1all", texte: `Tu l’as créée pour féconder la terre
         et donner à nos corps fraîcheur et pureté.`, type: "dialogueV", conditions: {litbap: "C"} },
-        {class: "", texte: `Tu en as fait aussi l’instrument de ta miséricorde :`, type: "dialogueV", conditions: {litbap: "C"} },
+        {class: "", texte: `Tu en as fait aussi l’instrument de ta miséricorde\u00A0:`, type: "dialogueV", conditions: {litbap: "C"} },
         {class: "indent1all", texte: `par elle tu as libéré ton peuple de la servitude
         et tu as étanché sa soif dans le désert ;`, type: "dialogueV", conditions: {litbap: "C"} },
         {class: "indent1all", texte: `par elle les prophètes ont annoncé la nouvelle Alliance
@@ -1319,7 +1338,7 @@ export const Rituelplus = {
         renouvelons les promesses faites au moment de notre baptême,
         quand nous avons renoncé à Satan et à ses oeuvres,
         et promis de servir Dieu dans la sainte Église catholique.`, type: "dialogueV", conditions: {} },
-        {texte: `Ainsi donc :`, type: "dialogueV", conditions: {} },
+        {texte: `Ainsi donc\u00A0:`, type: "dialogueV", conditions: {} },
         {id:"renonciation", texte: ``, type: "sautdeligne", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
         {class: "", texte: `Pour vivre dans la liberté des enfants de Dieu, renoncez-vous au péché ?`, type: "dialogueV", conditions: {renonciation: "1"} },
@@ -1348,7 +1367,7 @@ export const Rituelplus = {
         à la communion des saints, au pardon des péchés,
         à la résurrection de la chair, et à la vie éternelle ?`, type: "dialogueV", conditions: {} },
         {class: "", texte: `Je crois.`, type: "dialogueR", conditions: {} },
-        {class: "", texte: `Le prêtre conclut :`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Le prêtre conclut\u00A0:`, type: "rubrique", conditions: {} },
         {class: "grandelettrine", texte: `Que Dieu tout-puissant, Père de notre Seigneur Jésus Christ,
         qui nous a fait renaître par l’eau et l’Esprit Saint,`, type: "dialogueV", conditions: {} },
         {class: "", texte: `et qui nous a accordé le pardon des péchés,`, type: "dialogueV", conditions: {} },
@@ -1396,7 +1415,7 @@ export const Rituelplus = {
         {class: "indent1all", texte: `Six jours avant la fête de la Pâque,
         lorsque le Seigneur fit son entrée à Jérusalem,
         les enfants allèrent à sa rencontre.`, type: "dialogueV", conditions: {entreerameaux: "3"} },
-        {class: "", texte: `Ils tenaient en main des branches de palmier, et criaient à pleine voix :`, type: "dialogueV", conditions: {entreerameaux: "3"} },
+        {class: "", texte: `Ils tenaient en main des branches de palmier, et criaient à pleine voix\u00A0:`, type: "dialogueV", conditions: {entreerameaux: "3"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {entreerameaux: "3"} },
         {class: "indentallp", texte: `<span style="color: #b30000;">R/.</span> Hosanna au plus haut des cieux !
         Sois béni, toi qui viens dans l’abondance de ta miséricorde !`, type: "dialogueV", conditions: {entreerameaux: "3"} },
@@ -1414,7 +1433,7 @@ export const Rituelplus = {
         {class: "", texte: ``, type: "rubrique", conditions: {entreerameaux: "3"} },
         {class: "", texte: ``, type: "rubrique", conditions: {entreerameaux: "3"} },
         
-        {class: "", texte: `Alors le prêtre et les fidèles se signent, pendant que le prêtre dit : <span style="color: #000;">Au nom du Père, et du Fils, et du Saint-Esprit</span>. Ensuite il salue le peuple comme d’habitude, et fait une brève monition pour inviter les fidèles à participer à la célébration de ce jour d’une manière active et consciente. Il le fait en ces termes ou en d’autres semblables :`, type: "rubrique", conditions: {entreerameaux: ["1", "2"]} },
+        {class: "", texte: `Alors le prêtre et les fidèles se signent, pendant que le prêtre dit : <span style="color: #000;">Au nom du Père, et du Fils, et du Saint-Esprit</span>. Ensuite il salue le peuple comme d’habitude, et fait une brève monition pour inviter les fidèles à participer à la célébration de ce jour d’une manière active et consciente. Il le fait en ces termes ou en d’autres semblables\u00A0:`, type: "rubrique", conditions: {entreerameaux: ["1", "2"]} },
         {class: "indent1all", texte: `Frères et soeurs bien-aimés,
         depuis le début du Carême,
         nous avons préparé nos coeurs
@@ -1431,7 +1450,7 @@ export const Rituelplus = {
         {class: "indent1all", texte: `et suivons le Seigneur,
         afin qu’associés par grâce à la croix,
         nous ayons part à la résurrection et à la vie.`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"]} },
-        {class: "", texte: `Après cette monition, le prêtre, les mains étendues, dit l’une des deux prières suivantes :`, type: "rubrique", conditions: {entreerameaux: ["1", "2"]} },
+        {class: "", texte: `Après cette monition, le prêtre, les mains étendues, dit l’une des deux prières suivantes\u00A0:`, type: "rubrique", conditions: {entreerameaux: ["1", "2"]} },
         {class: "", texte: `Prions le Seigneur.`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"]} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {entreerameaux: ["1", "2"]} },
         {class: "grandelettrine", texte: `Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span>
@@ -1460,7 +1479,7 @@ export const Rituelplus = {
         {class: "indentallg", texte: `arrivèrent en vue de Bethphagé,
         sur les pentes du mont des Oliviers.`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "", texte: `Alors Jésus envoya deux disciples`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
-        {class: "indent1p", texte: `en leur disant :`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
+        {class: "indent1p", texte: `en leur disant\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indentallg indent1all", texte: `« Allez au village qui est en face de vous ;
         vous trouverez aussitôt une ânesse attachée
         et son petit avec elle.`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
@@ -1469,8 +1488,8 @@ export const Rituelplus = {
         vous répondrez :
         ‘Le Seigneur en a besoin’.
         Et aussitôt on les laissera partir. »`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
-        {class: "", texte: `Cela est arrivé pour que soit accomplie la parole prononcée par le prophète :`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
-        {class: "indentallg italic indent1all", texte: `Dites à la fille de Sion :`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
+        {class: "", texte: `Cela est arrivé pour que soit accomplie la parole prononcée par le prophète\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
+        {class: "indentallg italic indent1all", texte: `Dites à la fille de Sion\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indentallg indent1all italic", texte: `Voici ton roi qui vient vers toi,
         plein de douceur,`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indentallg indent1all italic", texte: `monté sur une ânesse et un petit âne,
@@ -1485,15 +1504,15 @@ export const Rituelplus = {
         d’autres coupaient des branches aux arbres
         et en jonchaient la route.`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indent1all", texte: `Les foules qui marchaient devant Jésus et celles qui suivaient
-        criaient :`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
+        criaient\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indentallg", texte: `« <span style="font-style: italic;">Hosanna</span> au fils de David !
         <span style="font-style: italic;">Béni soit celui qui vient au nom du Seigneur !
         Hosanna</span> au plus haut des cieux ! »`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indent1all", texte: `Comme Jésus entrait à Jérusalem,
         toute la ville fut en proie à l’agitation,`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
-        {class: "indent1p", texte: `et disait :`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
+        {class: "indent1p", texte: `et disait\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indent1g", texte: `« Qui est cet homme ? »`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
-        {class: "", texte: `Et les foules répondaient :`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
+        {class: "", texte: `Et les foules répondaient\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indentallg indent1all", texte: `« C’est le prophète Jésus,
         de Nazareth en Galilée. »`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
 //Ajouter évangiles années B et C
@@ -1513,15 +1532,15 @@ export const Rituelplus = {
         imitons les foules de Jérusalem
         heureuses d’acclamer Jésus,
         et avançons dans la paix.`, type: "dialogueV", conditions: {entreerameaux: "1"} },
-        {class: "", texte: `ou bien seulement :`, type: "rubrique", conditions: {entreerameaux: "1"} },
+        {class: "", texte: `ou bien seulement\u00A0:`, type: "rubrique", conditions: {entreerameaux: "1"} },
         {class: "indent1p", texte: `Avançons dans la paix.`, type: "dialogueV", conditions: {entreerameaux: "1"} },
-        {class: "", texte: `Dans ce cas, tous répondent :`, type: "rubriqueinterne", conditions: {entreerameaux: "1"} },
+        {class: "", texte: `Dans ce cas, tous répondent\u00A0:`, type: "rubriqueinterne", conditions: {entreerameaux: "1"} },
         {class: "indent1p", texte: `Au nom du Christ. Amen.`, type: "dialogueR", conditions: {entreerameaux: "1"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {entreerameaux: "1"} },
         {class: "", texte: `On part donc, selon l’usage, en procession vers l’église où l’on doit célébrer la messe. En tête, le thuriféraire portant l’encensoir allumé (si l’on fait usage de l’encens), puis un acolyte ou un autre ministre portant la croix, ornée de rameaux, selon la coutume locale, et entouré de deux ministres portant des cierges allumés. Ensuite vient le diacre portant le livre des Évangiles, le prêtre avec les autres ministres, et, après eux, tous les fidèles, rameaux en mains.`, type: "rubrique", conditions: {entreerameaux: "1", presenceDiacre: true} },
         {class: "", texte: `On part donc, selon l’usage, en procession vers l’église où l’on doit célébrer la messe. En tête, le thuriféraire portant l’encensoir allumé (si l’on fait usage de l’encens), puis un acolyte ou un autre ministre portant la croix, ornée de rameaux, selon la coutume locale, et entouré de deux ministres portant des cierges allumés. Ensuite vient le prêtre avec les autres ministres, et, après eux, tous les fidèles, rameaux en mains.`, type: "rubrique", conditions: {entreerameaux: "1", presenceDiacre: false} },
         {class: "", texte: `Tandis que la procession s’avance, la schola et le peuple chantent les chants en l’honneur du Christ Roi.`, type: "rubrique", conditions: {entreerameaux: "1"} },
-        {class: "", texte: `À l’entrée de la procession dans l’église, on chante un chant évoquant l’entrée du Seigneur :`, type: "rubrique", conditions: {entreerameaux: "1"} },
+        {class: "", texte: `À l’entrée de la procession dans l’église, on chante un chant évoquant l’entrée du Seigneur\u00A0:`, type: "rubrique", conditions: {entreerameaux: "1"} },
         {class: "", texte: `Quand le prêtre est arrivé à l’autel, il le vénère et éventuellement l’encense. Ensuite, il se rend à son siège où, s’il l’a utilisée, il dépose la chape pour prendre la chasuble. Il omet les autres rites d’ouverture de la messe et, s’il le juge à propos, le <span style="color: #000;">Kyrie</span>. Il dit alors la Prière d’ouverture de la messe, qui se poursuit comme d’habitude.`, type: "rubrique", conditions: {entreerameaux: ["1", "2"]} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {entreerameaux: ["1", "2"]} },
         {class: "", texte: `(`, type: "rubrique", conditions: {entreerameaux: ["1", "2"]} },
@@ -1563,12 +1582,12 @@ export const Rituelplus = {
         { texte: "LITURGIE DE LA PAROLE", type: "H1", conditions: {} },
         { texte: "LECTURES", type: "H2", conditions: {} },
         { texte: "Première lecture", type: "H3", conditions: {} },
-        { texte: `À la fin de la lecture, le lecteur proclame ou chante :`, type: "rubrique", conditions: {} },
+        { texte: `À la fin de la lecture, le lecteur proclame ou chante\u00A0:`, type: "rubrique", conditions: {} },
         {class:"lettrine", texte: `Parole du Seigneur.`, type: "dialogueV", conditions: {} },
         { texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {} },
         { texte: "Psaume", type: "H3", conditions: {} },
         { texte: "Deuxième lecture", type: "H3", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
-        { texte: `À la fin de la lecture, le lecteur proclame ou chante :`, type: "rubrique", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
+        { texte: `À la fin de la lecture, le lecteur proclame ou chante\u00A0:`, type: "rubrique", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
         {class:"lettrine", texte: `Parole du Seigneur.`, type: "dialogueV", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
         { texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
         { texte: "Évangile", type: "H3", conditions: {} },
@@ -1582,38 +1601,38 @@ export const Rituelplus = {
         { texte: `Avant de chanter la Passion, seuls les diacres, mais non pas les autres, viennent demander la bénédiction du prêtre, comme c’est le cas avant l’Évangile.`, type: "rubrique", conditions: {presenceDiacre: true} },
         { texte: `Père, bénissez-moi.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: true} },
         { texte: `Père, bénissez-moi.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: false, presenceBishop:true} },
-        { texte: `Le prêtre dit à voix basse :`, type: "rubrique", conditions: {secret:true, presenceDiacre: true, presenceBishop: false} },
-        { texte: `L'évêque dit à voix basse :`, type: "rubrique", conditions: {secret:true, presenceBishop: true} },
+        { texte: `Le prêtre dit à voix basse\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: true, presenceBishop: false} },
+        { texte: `L'évêque dit à voix basse\u00A0:`, type: "rubrique", conditions: {secret:true, presenceBishop: true} },
         { texte: `Que le Seigneur soit dans votre coeur et sur vos lèvres 
             pour que vous proclamiez dignement son Évangile : 
             au nom du Père, et du Fils, <span style="color: #b30000;">✠</span> et du Saint-Esprit.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: true} },
         { texte: `Que le Seigneur soit dans votre coeur et sur vos lèvres 
             pour que vous proclamiez dignement son Évangile : 
             au nom du Père, et du Fils, <span style="color: #b30000;">✠</span> et du Saint-Esprit.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: false, presenceBishop:true} },
-        { texte: `Le diacre fait le signe de la croix et répond :`, type: "rubrique", conditions: {secret:true, presenceDiacre: true} },
-        { texte: `Le prêtre fait le signe de la croix et répond :`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop:true } },
+        { texte: `Le diacre fait le signe de la croix et répond\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: true} },
+        { texte: `Le prêtre fait le signe de la croix et répond\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop:true } },
         { texte: `Amen.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: true} },
         { texte: `Amen.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: false, presenceBishop:true}},
         { texte: `L'évêque dépose la mitre et se lève.`, type:"servants", conditions: {porteinsigne: true, presenceBishop: true}},
-        { texte: `Le prêtre, incliné devant l’autel, prie tout bas :`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop: false} },
+        { texte: `Le prêtre, incliné devant l’autel, prie tout bas\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop: false} },
         { texte: `Purifie mon coeur et mes lèvres, 
             Dieu tout-puissant, 
             pour que j’annonce dignement ton saint Évangile.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: false, presenceBishop: false} },
         { texte: `Ensuite, le diacre prend avec respect l'évangéliaire et, sans faire d'inclination devant l'autel, il s'avance jusqu'à l’ambon en portant le livre solennellement.`, type: "rubrique", conditions: {presenceDiacre: true} },
-        { texte: `Le prêtre dit :`, type: "rubrique", conditions: {presenceDiacre: false} },
-        { texte: `Le diacre dit :`, type: "rubrique", conditions: {presenceDiacre: true} },
+        { texte: `Le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceDiacre: false} },
+        { texte: `Le diacre dit\u00A0:`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class:"lettrine", texte: `La Passion de notre Seigneur Jésus Christ selon saint <span style="color: #b30000;">N.</span>`, type: "dialogueV", conditions: {} },
         { texte: `L'évêque reçoit la crosse`, type:"servants", conditions: {porteinsigne: true}},
         { texte: `Puis le prêtre proclame l’Évangile.`, type: "rubrique", conditions: {incense:false, presenceDiacre: false} },
         { texte: `Puis le diacre proclame l’Évangile.`, type: "rubrique", conditions: {incense:false, presenceDiacre: true} },
         {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
-        { texte: `L’Évangile achevé, le prêtre dit ou chante :`, type: "rubrique", conditions: {presenceDiacre: false} },
-        { texte: `L’Évangile achevé, le diacre dit ou chante :`, type: "rubrique", conditions: {presenceDiacre: true} },
+        { texte: `L’Évangile achevé, le prêtre dit ou chante\u00A0:`, type: "rubrique", conditions: {presenceDiacre: false} },
+        { texte: `L’Évangile achevé, le diacre dit ou chante\u00A0:`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class:"lettrine", texte: `Acclamons la Parole de Dieu.`, type: "dialogueV", conditions: {} },
         { texte: `Louange à toi, Seigneur Jésus !`, type: "dialogueR", conditions: {} },
         {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
-        { texte: `Ensuite, il vénère le livre d’un baiser en disant tout bas :`, type: "rubrique", conditions: {secret:true, presenceBishop: false} },
-        { texte: `Ensuite, il vénère le livre d’un baiser ou le porte à baiser à l'évêque, qui dit à voix basse :`, type: "rubrique", conditions: {secret:true, presenceBishop: true} },
+        { texte: `Ensuite, il vénère le livre d’un baiser en disant tout bas\u00A0:`, type: "rubrique", conditions: {secret:true, presenceBishop: false} },
+        { texte: `Ensuite, il vénère le livre d’un baiser ou le porte à baiser à l'évêque, qui dit à voix basse\u00A0:`, type: "rubrique", conditions: {secret:true, presenceBishop: true} },
         { texte: `Que cet Évangile efface mes péchés.`, type: "voixbasse", conditions: {secret:true} },
         { texte: `Si l'évêque prêche depuis sa cathèdre, il reçoit la mitre`, type:"servants", conditions: {porteinsigne: true}},
         { texte: `Après la lecture du récit de la Passion, on peut faire une brève homélie si on le juge à propos. On peut aussi observer un moment de silence.`, type: "rubrique", conditions: {} },
@@ -1769,7 +1788,7 @@ export const Rituelplus = {
         {class:"sautdeligne", texte: `\n`, conditions: {}, type: "dialogueV"},
         { id:"PriereC", texte: `PRIÈRES DE CONCLUSION`, type: "H4", conditions: {} },
         {class:"indent1all lettrine", texte: `À tes fidèles, Seigneur,
-        tends une main secourable :`, type: "dialogueV", conditions: {PriereC: "1"} },
+        tends une main secourable\u00A0:`, type: "dialogueV", conditions: {PriereC: "1"} },
         {class:"indent1all", texte: `Qu’ils te cherchent de tout coeur,
         et voient exaucées leurs justes demandes.`, type: "dialogueV", conditions: {PriereC: "1"} },
         {class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "1" }},
@@ -1786,7 +1805,7 @@ export const Rituelplus = {
         Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {celebrationType: ["Dominicale", "Solennité"], PriereC: "3"} },
         {class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {celebrationType: ["Dominicale", "Solennité"], PriereC: "3" }},
         {class:"indent1all lettrine", texte: `Seigneur, viens au secours de ton peuple
-        qui espère en ta miséricorde :`, type: "dialogueV", conditions: {PriereC: "4"} },
+        qui espère en ta miséricorde\u00A0:`, type: "dialogueV", conditions: {PriereC: "4"} },
         {class:"indent1all", texte: `Que ta puissance le soutienne en cette vie
         et le conduise aux joies de l’éternité.`, type: "dialogueV", conditions: {PriereC: "4"} },
         {class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "4" }},
@@ -1795,7 +1814,7 @@ export const Rituelplus = {
         {class:"indent1all", texte: `Accueille les prières de ceux qui croient en toi,
         exauce les désirs de ceux qui te supplient.`, type: "dialogueV", conditions: {PriereC: "5"} },
         {class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "5" }},
-        {class:"indent1all lettrine", texte: `Seigneur, écoute avec bonté les prières de ton peuple :`, type: "dialogueV", conditions: {PriereC: "6"} },
+        {class:"indent1all lettrine", texte: `Seigneur, écoute avec bonté les prières de ton peuple\u00A0:`, type: "dialogueV", conditions: {PriereC: "6"} },
         {class:"indent1all", texte: `Accorde à tous ce qu’ils te demandent
         et à chacun ce qu’il lui faut.`, type: "dialogueV", conditions: {PriereC: "6"} },
         {class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "6" }},
@@ -1804,7 +1823,7 @@ export const Rituelplus = {
         {class:"indent1all", texte: `Et, dans ta bonté, daigne les exaucer.`, type: "dialogueV", conditions: {PriereC: "7"} },
         {class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "7" }},
         {class:"indent1all lettrine", texte: `Aux appels de ton peuple en prière,
-        réponds, Seigneur, en ta bonté :`, type: "dialogueV", conditions: {PriereC: "8"} },
+        réponds, Seigneur, en ta bonté\u00A0:`, type: "dialogueV", conditions: {PriereC: "8"} },
         {class:"indent1all", texte: `Donne à chacun la claire vision de ce qu’il doit faire
         et la force de l’accomplir.`, type: "dialogueV", conditions: {PriereC: "8"} },
         {class:"", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "8" }},
@@ -1814,7 +1833,47 @@ export const Rituelplus = {
         {class:"indent1all", texte: `Écoute les supplications de ta famille
         et daigne répondre à ses appels.`, type: "dialogueV", conditions: {PriereC: "9"} },
         {class:"", texte: `Toi qui vis et règnes pour les siècles des siècles.`, type: "dialogueV", conditions: {PriereC: "9" }},
-
-
     ],},
+"chrismale": {
+    titre: "MESSE CHRISMALE",
+    autresrituel: [
+        {class:"", texte: `La bénédiction de l’huile des malades, de l’huile des catéchumènes et la consécration du chrême est faite par l’évêque selon le rite fixé dans le Pontifical romain, d’après la coutume, en ce jour, et elle doit être célébrée au cours d’une messe, dans la matinée.`, type: "rubrique", conditions: {}},
+        {class:"", texte: `Mais si ce jour-là on ne peut que difficilement réunir le clergé et le peuple autour de l’évêque, il est permis d’anticiper la Messe chrismale à un autre jour, mais qui soit proche de Pâques.`, type: "rubrique", conditions: {}},
+        {class:"", texte: `Cette messe concélébrée par l’évêque et son presbytérium doit être comme une manifestation de la communion des prêtres avec leur évêque. C’est pourquoi il convient que tous les prêtres, autant que possible, participent à cette célébration et qu’ils communient sous les deux espèces. Pour signifier l’unité du presbytérium du diocèse, il est souhaitable que les prêtres qui concélèbrent avec l’évêque viennent des diverses régions du diocèse.`, type: "rubrique", conditions: {}},
+        {class:"", texte: `Selon l’usage traditionnel, la bénédiction de l’huile des malades se fait avant la conclusion de la Prière eucharistique; la bénédiction de l’huile des catéchumènes et la consécration du chrême, après la communion. Toutefois, pour des motifs pastoraux, il est permis d’accomplir tout le rite de la bénédiction après la liturgie de la Parole.`, type: "rubrique", conditions: {}},
+        ],
+    avanthomelie: [
+        {class:"", texte: `Partant du texte des lectures qui ont été proclamées dans la liturgie de la Parole, l'évêque parle au peuple et à ses prêtres de l’onction reçue lors de l’ordination sacerdotale ; il exhorte les prêtres à garder la fidélité dans leur fonction et les invite à renouveler publiquement leurs promesses sacerdotales.`, type:"rubrique", conditions: {} },
+    ],
+    apreshomelie: [
+        {class: "", texte: `<span style="font-weight: bold;">Rénovation des promesses sacerdotales</span>`, type: "H3", conditions: {} },
+        {class:"", texte: `À la fin de son homélie, l’évêque engage le dialogue avec les prêtres, en ces termes ou d’autres semblables\u00A0:`, type:"rubrique", conditions: {} },
+        {class:"", texte: `Fils très chers, en cet anniversaire du jour où le Christ fit participer ses Apôtres et chacun d’entre nous à son sacerdoce, voulez-vous, devant votre évêque et le peuple saint de Dieu, renouveler les engagements que vous avez pris autrefois ?`, type:"dialogueV", conditions: {} },
+        {class:"", texte: `Les prêtres répondent ensemble\u00A0:`, type:"rubrique", conditions: {} },
+        {class:"", texte: `Oui, je le veux.`, type:"dialogueR", conditions: {} },
+        {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
+        {class:"", texte: `Voulez-vous vivre toujours plus unis au Seigneur Jésus et chercher à lui ressembler, en renonçant à vous-mêmes, en étant fidèles aux engagements attachés à la charge ministérielle que vous avez reçue avec joie, par amour du Christ et pour le service de son Église, au jour de votre ordination sacerdotale ?`, type:"dialogueV", conditions: {} },
+        {class:"", texte: `Les prêtres\u00A0:`, type:"rubrique", conditions: {} },
+        {class:"", texte: `Oui, je le veux.`, type:"dialogueR", conditions: {} },
+        {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
+        {class:"", texte: `Voulez-vous être les fidèles intendants des mystères de Dieu par la sainte eucharistie et les autres célébrations liturgiques, et assurer fidèlement la charge sainte de l’enseignement, à la suite du Christ, notre Tête et notre Pasteur, avec désintéressement et souci des âmes ?`, type:"dialogueV", conditions: {} },
+        {class:"", texte: `Les prêtres\u00A0:`, type:"rubrique", conditions: {} },
+        {class:"", texte: `Oui, je le veux.`, type:"dialogueR", conditions: {} },
+        {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
+        {class:"", texte: `Ensuite, tourné vers le peuple, l’évêque poursuit\u00A0:`, type:"rubrique", conditions: {} },
+        {class:"", texte: `Et vous, frères et soeurs bien-aimés, priez pour vos prêtres : que le Seigneur répande sur eux ses dons en abondance, afin qu’ils soient les fidèles ministres du Christ, le Souverain Prêtre, et vous conduisent à lui, la source du salut.`, type:"dialogueV", conditions: {} },
+        {class:"", texte: `Le peuple\u00A0:`, type:"rubrique", conditions: {} },
+        {class:"", texte: `Ô Christ, écoute-nous ; ô Christ, exauce-nous.`, type:"dialogueR", conditions: {} },
+        {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
+        {class:"", texte: `L’évêque\u00A0:`, type:"rubrique", conditions: {} },
+        {class:"", texte: `Priez aussi pour moi, votre évêque : que je sois fidèle à la charge apostolique qui m’a été confiée, malgré ma faiblesse ; que je reflète parmi vous une image vivante et toujours plus parfaite du Christ Prêtre, Bon Pasteur, Maître et Serviteur de tous.`, type:"dialogueV", conditions: {} },
+        {class:"", texte: `Le peuple\u00A0:`, type:"rubrique", conditions: {} },
+        {class:"", texte: `Ô Christ, écoute-nous ; ô Christ, exauce-nous.`, type:"dialogueR", conditions: {} },
+        {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
+        {class:"", texte: `L’évêque\u00A0:`, type:"rubrique", conditions: {} },
+        {class:"", texte: `Que le Seigneur nous garde les uns et les autres dans son amour ; que lui-même nous conduise, pasteurs et brebis, jusqu’à la vie éternelle.`, type:"dialogueV", conditions: {} },
+        {class:"", texte: `Tous\u00A0:`, type:"rubrique", conditions: {} },
+        {class:"", texte: `Amen.`, type:"dialogueR", conditions: {} },
+    ],
+}
 }
