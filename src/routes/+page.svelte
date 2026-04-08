@@ -570,9 +570,9 @@ HTML
 {/if}
 
 <div class="container">
-<div class="Paramètres" class:open={menuOpen}>
-    <button class="close-menu no-print" on:click={toggleMenu}>×</button>
   <div class="sidebar no-print">
+  <div class="Paramètres no-print" class:open={menuOpen}>
+    <button class="close-menu no-print" on:click={toggleMenu}>×</button>
     <div class="brand-chip">
       <span class="brand-dot"></span>
       <span>Version 0.5<br></span>
@@ -693,7 +693,7 @@ Afficher la date
     </label>
     
     <div class="common-selector no-print" style="margin-left: 0rem; justify-content: space-between;">
-      <p>Bénédiction</p>
+      <label>Bénédiction</label>
       <select bind:value={Conclusion}>
         <option value="1">Forme Standard</option>
         <option value="2">Prière sur le Peuple</option>
@@ -899,13 +899,13 @@ Afficher la date
         </div> </div>
       {/if}
 </div>
-</div>
 
   <div  class="button-section">
       <button class="onboard-btn no-print" on:click={() => forceOpen = true}>?</button>
       <button title="Choisir ensuite “Enregistrer au format PDF”" class="css-button-sharp--grey" on:click={() => window.print()}>Exporter en PDF</button>
       <!-- <button class="css-button-sharp--grey" on:click={generateWord}>Exporter en Word</button>  -->
   </div>
+</div>
 </div>
 
 
@@ -1442,11 +1442,11 @@ input[type="text"], #NomRituel { width: 100%; box-sizing: border-box; padding: 0
 .card .oraison-texte, .card p, .card .h1, .card .h2 { break-inside: avoid; }
 /***************************************************** * MOBILE — POLICES LÉGÈREMENT RÉDUITES *****************************************************/
 @media (max-width: 600px) { 
-  .h1, p.h1 { font-size: calc(1.3rem * var(--scale, 1)); margin :1.2rem 0 0.5rem 0; } 
+  .h1, p.h1 { font-size: calc(1.1rem * var(--scale, 1)); margin :1.2rem 0 0.5rem 0; } 
   .premiergénéré { margin :0.5rem 0 1rem 0; } 
-  h2, p.h2 { font-size: calc(1.1rem * var(--scale, 1)); margin: 1rem 0 0.5rem 0 !important; } 
+  h2, p.h2 { font-size: calc(0.9rem * var(--scale, 1)); margin: 1rem 0 0.5rem 0 !important; } 
   h3, p.h3 { font-size: calc(0.7rem * var(--scale, 1)); } 
-  .rubrique, .rubriqueinterne { font-size: calc(0.8rem * var(--scale, 1)); } 
+  .rubrique, .rubriqueinterne { font-size: calc(0.7rem * var(--scale, 1)); } 
   p { font-size: calc(0.7rem * var(--scale, 1)); } p.centre { font-size: calc(1rem * var(--scale, 1)); } 
   .oraison-texte p, .preface-texte p, .dialogueR, .dialogueV, .servants-line{ font-size: calc(0.8rem * var(--scale, 1)); } 
   .indent1g { text-indent: calc(15px * var(--scale, 1)); } 
@@ -1676,9 +1676,9 @@ input:checked + .slider:before { transform: translateX(20px); }
   .sidebar { 
     width: 100%;
     position: relative; 
-    padding: 1rem; 
     max-height: none; 
     box-sizing: border-box;
+    padding: 0rem;
   }
 
   /* Ajustement de la zone du rituel */
@@ -1788,7 +1788,7 @@ input:checked + .slider:before { transform: translateX(20px); }
   accent-color: #710000; /* La couleur rouge sombre de votre charte si souhaité */
 }
 
-/* --- Gestion du menu sur mobile --- */
+ /* --- Gestion du menu sur mobile --- */
 .hamburger-trigger, .close-menu, .menu-overlay {
   display: none; }
 
@@ -1796,6 +1796,8 @@ input:checked + .slider:before { transform: translateX(20px); }
   display: block;
   position: relative;
   width: 100%;
+  height: auto;
+  overflow: visible;
 }
 
 /* --- 2. CONFIGURATION MOBILE (En dessous de 1024px) --- */
@@ -1813,7 +1815,6 @@ input:checked + .slider:before { transform: translateX(20px); }
     padding: 10px 15px;
     font-size: 1.2rem;
   }
-
   .close-menu {
     display: block;
     position: absolute;
@@ -1826,7 +1827,6 @@ input:checked + .slider:before { transform: translateX(20px); }
     z-index: 10000;
 
   }
-
   .menu-overlay {
     display: block;
     position: fixed;
@@ -1842,15 +1842,20 @@ input:checked + .slider:before { transform: translateX(20px); }
     width: 320px;
     height: 100vh;
     background: #3D3D3D;
-    z-index: 1002;
+    z-index: 2002;
     transition: left 0.3s ease;
     box-shadow: 2px 0 10px rgba(0,0,0,0.5);
     overflow-y: auto;
+    padding: 1rem;
   }
 
+
   .Paramètres.open {
+
     left: 0;
+
   }
-}
+
+} 
 
 </style>
