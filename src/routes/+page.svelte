@@ -40,6 +40,9 @@ const romcal = new Romcal({ localizedCalendar: France_Fr });
   let CelebrationduJour = "";
   let selectedCommunId = "";
   $: anneeLiturgique = liturgicalContext.anneeLiturgique;
+  let fontSizeScale = 1;
+  let menuOpen = false;
+  function toggleMenu() {menuOpen = !menuOpen;}
 
   // Options
   let [secret, hideCredo, hideGloria, hidePE, kyriegrec, glorialatin, DoxologieLt, sanctusLt, agnusLt ] = [false, false, false, false, false, false, false, false, false];
@@ -70,6 +73,8 @@ const romcal = new Romcal({ localizedCalendar: France_Fr });
   let exultet = "1";
   let litbap = "A";
   let renonciation = "1";
+  let renonciation2 = "1";
+  let bapteme = "ablution"; 
   let entreerameaux = "1";
 
   let Conclusion = "1"; // "1"=Standard, "2"=Prière Peuple, "3"=Solennelle
@@ -301,11 +306,11 @@ function getCssColor(event) {
 }
 
 $: {hideLiturgieParole, selectedEventId, inputRituelName, secret, hideGloria, glorialatin, sanctusLt, agnusLt, Conclusion,
-    DoxologieLt, hideCredo, Showpreface, hidePE, Showoraisons, hideliturgieeucharistique, kyriegrec, precision,
+    DoxologieLt, hideCredo, Showpreface, hidePE, Showoraisons, hideliturgieeucharistique, kyriegrec, precision, bapteme,
     Bapteme, PremiereCommunion, Confirmation, Mariage, Ordination, celebrationType, selectedCommunId, exultet,
     sacrementDesMalades, salutation, ChoixPenitentiel, typeCredo, presenceDiacre, RituelduJour, croix, litbap, anneeLiturgique,
     InvitS, PriereC, Choixpreface, typePE, AcclamationEucharistique, aspersion, hideritesdeConclusion, entreerameaux,
-    Communicantes, NotrePère, Apologies, envoi, hideRubriques, showservants, hideritesInitiaux, renonciation,
+    Communicantes, NotrePère, Apologies, envoi, hideRubriques, showservants, hideritesInitiaux, renonciation, renonciation2,
     presenceBishop, incense, servants, cruciferaire, ceroferaire, porteinsigne, portemissel, acolytes;    
     generateRituel();
 }
@@ -341,10 +346,10 @@ console.log(typeCredo);
     // 2. Préparation du contexte des options
     const options = {
         presenceBishop, kyriegrec, glorialatin, agnusLt, sanctusLt, precision, Conclusion,
-        incense, hideliturgieeucharistique, servants, presenceDiacre, croix,
+        incense, hideliturgieeucharistique, servants, presenceDiacre, croix, bapteme,
         showservants, cruciferaire, ceroferaire, porteinsigne, portemissel, 
         acolytes, celebrationType, secret, hideRubriques, Apologies, exultet,
-        Communicantes, Messe, aspersion, salutation, ChoixPenitentiel, renonciation,
+        Communicantes, Messe, aspersion, salutation, ChoixPenitentiel, renonciation, renonciation2,
         hideGloria, OraisonsDuJour, Showoraisons, hideCredo, typeCredo, entreerameaux,
         InvitS, PriereC, preface, hidePE, typePE, AcclamationEucharistique, 
         DoxologieLt, NotrePère, envoi, litbap, anneeLiturgique
@@ -440,7 +445,7 @@ console.log(typeCredo);
         // 2. Si l'étape a des items, on les filtre
         if (step.items && Array.isArray(step.items)) {
             const filteredItems = step.items.filter(checkConditions);
-            // On ajoute l'élément avec ses items filtrés (même si la liste est vide, car l'élément parent peut avoir un type "H3" ou "tableau" important)
+            // On ajoute l'élément avec ses items filtrés (même si la liste est vide, car l'élément parent peut avoir un type "h3" ou "tableau" important)
             filteredRituel.push({ ...step, items: filteredItems });
         } else {
             // Étape simple sans sous-items
@@ -556,8 +561,17 @@ HTML
   <span class="text">Contact / Bug</span>
 </a>
 
+<button class="hamburger-trigger no-print" on:click={toggleMenu}>
+  <span>☰</span>
+</button>
+
+{#if menuOpen}
+  <div class="menu-overlay no-print" on:click={toggleMenu}></div>
+{/if}
 
 <div class="container">
+<div class="Paramètres" class:open={menuOpen}>
+    <button class="close-menu no-print" on:click={toggleMenu}>×</button>
   <div class="sidebar no-print">
     <div class="brand-chip">
       <span class="brand-dot"></span>
@@ -567,7 +581,7 @@ HTML
     <h1 class="titre-principal">Générateur de rituels catholiques</h1>
 
 
-  <div class="Paramètres">
+  
     <div class="prempare">
      <input id="NomRituel" bind:value={inputRituelName} placeholder="Donnez un nom à votre Rituel" type="text">
 <!--
@@ -804,7 +818,6 @@ Afficher la date
   </summary>
 
   <div class="panel-content">
-    <div class="grid-buttons">
       <label class="toggle-container">
         <span class="label-text">Afficher les commentaires</span>
         <div class="switch">
@@ -852,7 +865,6 @@ Afficher la date
           </label>
         </div>
       {/if}
-    </div>
   </div>
 </details>
 <!-- Fin section Servants -->
@@ -871,15 +883,20 @@ Afficher la date
 </div>
 
   {#if showAutresParams}
-        <div class="grid-buttons">
-          <label class="toggle-container">
+        <label class="toggle-container">
             <span class="label-text">Ne pas afficher les rubriques :</span>
             <div class="switch">
               <input type="checkbox" bind:checked={hideRubriques} />
               <span class="slider"></span>
             </div>
-          </label>
-        </div>
+        </label>
+        <div class="font-size-control">
+        <span class="label-text">Taille du texte ({Math.round(fontSizeScale * 100)}%)</span>
+        <div class="slider-container">
+            <input type="range" min="0.75" max="1.5" step="0.05" 
+              bind:value={fontSizeScale}
+              class="custom-slider"/>
+        </div> </div>
       {/if}
 </div>
 </div>
@@ -895,7 +912,8 @@ Afficher la date
   <!-- Affichage du rituel généré -->
      <div class="card-wrap">
     <div class="card" bind:this={card} 
-    on:scroll={scrollFunction}>
+    on:scroll={scrollFunction}
+    style="--scale: {fontSizeScale}">
 {#if filteredRituel.length > 0}
       {#if rituelName}
         <h2 class=" nomdurituel">{rituelName}</h2>
@@ -936,7 +954,7 @@ Afficher la date
 
 {:else if step.type === "preface-titre"}
   <div class="variant-header">
-    <h3 class="H3">{step.texte}</h3>
+    <h3 class="h3">{step.texte}</h3>
     
     {#if availablePrefaces && availablePrefaces.length > 1}
       <div class="variant-buttons boutons4 no-print">
@@ -1091,7 +1109,7 @@ Afficher la date
         disabled={!isAllowed("PE4", liturgicalContext)}
         on:click={() => { typePE = "PE4";  }}>Prière Eucharistique 4</button>
     </div>
-        <h3 class="H3">{@html step.texte}</h3>
+        <h3 class="h3">{@html step.texte}</h3>
   </div>
 
 {:else if step.id === "Anamnèse"}
@@ -1123,7 +1141,7 @@ Afficher la date
 
   {:else if step.id === "NotrePère"}
  <div class="variant-header">
-    <h3 class="H3 no-print">{@html step.texte}</h3>
+    <h3 class="h3 no-print">{@html step.texte}</h3>
     <div class="variant-buttons no-print">
       <button class:selected={NotrePère === "NP1"} 
         on:click={() => { NotrePère = "NP1";  }}>1 </button>
@@ -1136,7 +1154,7 @@ Afficher la date
 
     {:else if step.id === "Apologies"}
  <div class="variant-header">
-    <h3 class="H3 no-print">{@html step.texte}</h3>
+    <h3 class="h3 no-print">{@html step.texte}</h3>
     <div class="variant-buttons boutons2 no-print">
       <button class:selected={Apologies === "1"} 
         on:click={() => { Apologies = "1";  }}>1 </button>
@@ -1159,7 +1177,7 @@ Afficher la date
 
     {:else if step.id === "envoi" && envoi !== "5"}
  <div class="variant-header">
-    <h3 class="H3 no-print no-wrap">{@html step.texte}</h3>
+    <h3 class="h3 no-print no-wrap">{@html step.texte}</h3>
     <div class="variant-buttons no-print no-wrap">
       <button class:selected={envoi === "1"} 
         on:click={() => { envoi = "1";  }}>1 </button>
@@ -1231,6 +1249,30 @@ Afficher la date
     </div>
   </div>
 
+  {:else if step.id === "renonciation2"}
+  <div class="variant-header">
+    <h3>{@html step.texte}</h3>
+    <div class="vb2 no-wrap no-print">
+      <button class:selected={renonciation2 === "1"} 
+        on:click={() => { renonciation2 = "1";  }}>Formule 1</button>
+      <button class:selected={renonciation2 === "2"} 
+        on:click={() => { renonciation2 = "2";  }}>Formule 2</button>
+      <button class:selected={renonciation2 === "3"} 
+        on:click={() => { renonciation2 = "3";  }}>Formule 3</button>
+    </div>
+  </div>
+
+  {:else if step.id === "bapteme"}
+  <div class="variant-header">
+    <h3>{@html step.texte}</h3>
+    <div class="vb2 no-wrap no-print">
+      <button class:selected={bapteme === "ablution"} 
+        on:click={() => { bapteme = "ablution";  }}>Baptême par ablution</button>
+      <button class:selected={bapteme === "immersion"} 
+        on:click={() => { bapteme = "immersion";  }}>Baptême par immersion</button>
+    </div>
+  </div>
+
   {:else if step.id === "entreerameaux"}
   <div class="variant-header">
     <h3>{@html step.texte}</h3>
@@ -1280,7 +1322,7 @@ CSS
 :root { --brand: #495057; --accent: #b30000 !important; /* rouge liturgique */ --bg: #fff; --card: #ffffff; --muted: #6c757d; --radius: 10px; --pad: 1rem; --gap: 1rem; --font-main: "Times New Roman", Times, serif; }
 :global(body, html) { background-color: #3D3D3D; margin: 0; padding: 0; height: 100vh; overflow: hidden; /* Empêche le scroll sur toute la page */ }
 .container { background: transparent; display: grid; grid-template-columns: 400px 1fr; height: 100vh; width: 100vw; transition: grid-template-columns 0.3s ease; }
-.sidebar { background-color: transparent; color: white; padding: 20px; overflow-y: auto; position: sticky; scrollbar-width: none; -ms-overflow-style: none; }
+.sidebar { background-color: transparent; color: white; padding: 20px; overflow-y: auto; position: sticky; scrollbar-width: none; }
 .sidebar::-webkit-scrollbar { display: none; }
 .card-wrap { background: #E2E3E4; --r: 20px; border-radius: 10px; padding: 2.5rem 8rem 0rem 8rem; margin: 20px auto; display: flex; justify-content: center; width: 100%; box-sizing: border-box; }
 /* --- LA FEUILLE UNIQUE (Blanche) --- */
@@ -1292,22 +1334,22 @@ CSS
 .tableau p { margin: 0; /* Supprime les marges */ white-space: pre-line; text-align: left; }
 p { line-height: 1.3; font-family: var(--font-main); text-align: justify; }
 /***************************************************** * TITRES *****************************************************/
-.H1, .H2, .H3, .H4 { font-family: var(--font-main); display: block; text-align: center; page-break-inside: avoid; }
-.nomdurituel {text-align: right; font-size: 1.2rem; margin:0 0 2rem 0; font-weight: 600 }
-.H1 { font-size: 1.8rem; font-weight: 700; margin:3rem 0 1rem 0; }
-.H2 { font-size: 1.4rem; font-weight: 700; margin:1.5rem 0 1rem 0;}
-.H3 { font-size: 1.1rem; color: var(--accent); font-weight: 700; margin:1.5rem 0 1rem 0;}
-.H4 { font-size: 1rem; font-weight: 300; margin:1rem 0 0.5rem 0; }
-h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: 2rem; letter-spacing: 0.2px;}
-.premiergénéré { text-align: center; font-size: 2rem; margin:0.5rem 0 1rem 0; color: #b30000; font-family: garamond }
+.h1, .h2, .h3, .h4 { font-family: var(--font-main); display: block; text-align: center; page-break-inside: avoid; }
+.nomdurituel {text-align: right; font-size: calc(1.2rem * var(--scale, 1)); margin:0 0 2rem 0; font-weight: 600 }
+h1, p.h1 { font-size: calc(1.8rem * var(--scale, 1)); font-weight: 700; margin:2rem 0 1rem 0; }
+h2, p.h2 { font-size: calc(1.4rem * var(--scale, 1)); font-weight: 700; margin:1.5rem 0 1rem 0;}
+h3, p.h3 { font-size: calc(1.1rem * var(--scale, 1)); color: var(--accent); font-weight: 700; margin:1.5rem 0 1rem 0;}
+h4, p.h4 { font-size: calc(1rem * var(--scale, 1)); font-weight: 300; margin:1rem 0 0.5rem 0; }
+h1.titre-principal { text-align: center; margin: 0 0 var(--gap) 0; font-size: calc(2rem * var(--scale, 1)); letter-spacing: 0.2px;}
+.premiergénéré { text-align: center; font-size: calc(2rem * var(--scale, 1)); margin:0.5rem 0 1rem 0; color: #b30000; font-family: garamond }
 .sansmarge { margin:0 0 1rem 0; }
 details::marker {
   content: "✝ ";
   font-size: 1.2em;
 }
 /***************************************************** * DIALOGUES (V / ℟) *****************************************************/
-.dialogueV { font-weight: 600; font-size: 1.2rem; line-height:1.2; margin: 0; }
-.dialogueR { margin-top: 0rem; font-size: 1.2rem; margin-bottom: 0.5rem; line-height:1.2; }
+.dialogueV { font-weight: 600; font-size: calc(1.2rem * var(--scale, 1)); line-height:1.2; margin: 0; }
+.dialogueR { margin-top: 0rem; font-size: calc(1.2rem * var(--scale, 1)); margin-bottom: 0.5rem; line-height:1.2; }
 .dialogueR::before { content: "℟. "; color: var(--accent); }
 .tableau .rubrique { margin: 0.5rem 0; }
 .colonnes2 {display: flex; justify-content: space-between; }
@@ -1315,12 +1357,12 @@ details::marker {
 .colonnes2 .rubrique {margin: 0!important;}
 .colonnes2 .dialogueR {margin: 0!important;}
 /***************************************************** * ORAISON *****************************************************/
-.oraison-texte p { margin: 0; font-weight: bold; font-size: 1.2rem; line-height: 1.2; }
+.oraison-texte p { margin: 0; font-weight: bold; font-size: calc(1.2rem * var(--scale, 1)); line-height: 1.2; }
 .oraison-row{ display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; }
-.preface-texte p { margin: 0; font-weight: bold; font-size: 1.2rem; line-height: 1.1; }
+.preface-texte p { margin: 0; font-weight: bold; font-size: calc(1.2rem * var(--scale, 1)); line-height: 1.1; }
 /***************************************************** * INDENTATIONS ET RUBRIQUES *****************************************************/
-.rubrique { color: var(--accent); margin:0.3rem 0; font-weight: normal; }
-.rubriqueinterne { color: var(--accent); margin:0;}
+.rubrique { color: var(--accent); margin:0.3rem 0; font-weight: normal; font-size: calc(1rem * var(--scale, 1)); }
+.rubriqueinterne { color: var(--accent); margin:0; font-size: calc(1rem * var(--scale, 1));}
 /* Le conteneur global */
 .servants-container {
     border-left: 5px solid #2F5D8A;
@@ -1346,12 +1388,12 @@ details::marker {
 .indentallg { padding-left: 50px; }
 .indentallp { padding-left: 20px; }
 .italic { font-style: italic; }
-p.centre { text-align: center; line-height: 1; font-weight: 400; font-size: 1.6rem;}
+p.centre { text-align: center; line-height: 1; font-weight: 400; font-size: calc(1.6rem * var(--scale, 1));}
 .lettrine::first-letter { color: var(--accent); font-weight: bold }
 .sautdeligne {line-height: 0.6;}
 .preface-texte .sautdeligne { line-height: 0.6; }
-.voixbasse { font-style: italic; font-size: 1.2rem; line-height:1.1; }
-.grandelettrine::first-letter { color: var(--accent); font-size: 52px; font-weight: 700; float: left; line-height: 0.85; padding-top: 0.3rem; }
+.voixbasse { font-style: italic; font-size: calc(1.2rem * var(--scale, 1)); line-height:1.1; }
+.grandelettrine::first-letter { color: var(--accent); font-size: calc(52px * var(--scale, 1)); font-weight: 700; float: left; line-height: 0.85; padding-top: 0.3rem; }
 /***************************************************** * PANELS — (PARAMÈTRES DU GÉNÉRATEUR) *****************************************************/
 .panel { margin-bottom: 0.75rem; padding: 0.6rem; border-radius: calc(var(--radius) - 2px); border: 3px solid rgba(23, 24, 24, 0.175); }
 .panel + .panel-header { margin-top: 1rem; } /* espace visuel entre blocks */
@@ -1397,22 +1439,23 @@ input[type="text"], #NomRituel { width: 100%; box-sizing: border-box; padding: 0
 .vb2 button.selected { background: #652430; color: white; font-weight: bold; }
 /***************************************************** * SAUTS DE PAGE (PDF/WORD) *****************************************************/
 .page-break { display: block; height: 0; margin: 0; padding: 0; break-after: page; }
-.card .oraison-texte, .card p, .card .H1, .card .H2 { break-inside: avoid; }
+.card .oraison-texte, .card p, .card .h1, .card .h2 { break-inside: avoid; }
 /***************************************************** * MOBILE — POLICES LÉGÈREMENT RÉDUITES *****************************************************/
 @media (max-width: 600px) { 
-  .H1 { font-size: 1.3rem; margin :1.5rem 0 0.5rem 0; } 
+  .h1, p.h1 { font-size: calc(1.3rem * var(--scale, 1)); margin :1.2rem 0 0.5rem 0; } 
   .premiergénéré { margin :0.5rem 0 1rem 0; } 
-  h2 { font-size: 1.1rem; margin: 1rem 0 0.5rem 0 !important; } 
-  .H2 { font-size: 1.1rem }
-  .H3 { font-size: 0.8rem; } 
-  p { font-size: 0.7rem; } p.centre { font-size: 1rem; } 
-  .oraison-texte p, .preface-texte p, .dialogueR, .dialogueV, .servants-line{ font-size: 0.8rem; } 
-  .indent1g { text-indent: 15px; } 
-  .indentallg { padding-left: 30px; } 
-  .grandelettrine::first-letter { font-size: 36px; } 
-  .variant-buttons button { padding: 2px 4px; margin-left: 0; } }
+  h2, p.h2 { font-size: calc(1.1rem * var(--scale, 1)); margin: 1rem 0 0.5rem 0 !important; } 
+  h3, p.h3 { font-size: calc(0.7rem * var(--scale, 1)); } 
+  .rubrique, .rubriqueinterne { font-size: calc(0.8rem * var(--scale, 1)); } 
+  p { font-size: calc(0.7rem * var(--scale, 1)); } p.centre { font-size: calc(1rem * var(--scale, 1)); } 
+  .oraison-texte p, .preface-texte p, .dialogueR, .dialogueV, .servants-line{ font-size: calc(0.8rem * var(--scale, 1)); } 
+  .indent1g { text-indent: calc(15px * var(--scale, 1)); } 
+  .indentallg { padding-left: calc(30px * var(--scale, 1)); } 
+  .modal {width: 300px !important; max-height: 80vh !important;}
+  .grandelettrine::first-letter { font-size: calc(36px * var(--scale, 1)); } 
+  .variant-buttons button { padding: calc(2px * var(--scale, 1)) calc(4px * var(--scale, 1)); margin-left: 0; } }
 /***************************************************** * ONBOARDING MODAL *****************************************************/
-.overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); inset: 0; /* couvre toute la page */ pointer-events: auto; }
+.overlay { position: fixed; inset: 0; inset: 0; /* couvre toute la page */ pointer-events: auto; }
 .modal { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 2rem 2rem 1.5rem 2rem; max-height: 70vh; border-radius: 10px; width: 500px; max-width: 90%; box-shadow: 0 10px 25px rgba(0,0,0,0.2); overflow: hidden; display: flex; flex-direction: column; z-index: 100; }
 .modal-body { flex: 1; padding: 0 0.5rem; overflow-y: auto; /* scroll si contenu trop grand */ margin: 0 0 1rem 0; }
 .modal h2 { font-size: 2rem; margin: 0 0 0.5rem; text-align: center; }
@@ -1694,7 +1737,7 @@ input:checked + .slider:before { transform: translateX(20px); }
 
   /* Ajustements typographiques mineurs */
   .premiergénéré { 
-    font-size: 1.5rem !important; 
+    font-size: calc(1.5rem * var(--scale, 1)) !important; 
   }
   
   /* Boutons flottants */
@@ -1725,6 +1768,89 @@ input:checked + .slider:before { transform: translateX(20px); }
     font-size: 1.5rem; 
   }
 }
+.font-size-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Label au dessus du slider */
+  gap: 5px;
+  padding: 5px 0;
+}
 
+.slider-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.custom-slider {
+  width: 100%;
+  cursor: pointer;
+  accent-color: #710000; /* La couleur rouge sombre de votre charte si souhaité */
+}
+
+/* --- Gestion du menu sur mobile --- */
+.hamburger-trigger, .close-menu, .menu-overlay {
+  display: none; }
+
+.Paramètres {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* --- 2. CONFIGURATION MOBILE (En dessous de 1024px) --- */
+@media (max-width: 1024px) {
+  .hamburger-trigger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    background: #4A141C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    z-index: 10000;
+
+  }
+
+  .menu-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+
+  .Paramètres {
+    position: fixed;
+    top: 0;
+    left: -400px; /* Caché à gauche */
+    width: 320px;
+    height: 100vh;
+    background: #3D3D3D;
+    z-index: 1002;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+    overflow-y: auto;
+  }
+
+  .Paramètres.open {
+    left: 0;
+  }
+}
 
 </style>
