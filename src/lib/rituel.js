@@ -1,6 +1,9 @@
 import { text } from "@sveltejs/kit";
 
 export const rituel = {
+sacrements: [
+      { type: "insert-sacrements"},
+],
 autresrituel: [
       { type: "insert-autresrituel"},
 ],
@@ -11,7 +14,7 @@ ritesInitiaux: [
   {texte: `Lorsque le peuple est rassemblé, l'évêque s’avance vers l’autel avec les ministres, pendant le chant d’entrée.`, type: "rubrique", conditions: {celebrationType: ["Solennité", "Dominicale", "Fête"], presenceBishop: true} },
   {texte: `Lorsque le peuple est rassemblé, le prêtre s’avance vers l’autel avec les ministres.`, type: "rubrique", conditions: {celebrationType: "Semaine", presenceBishop: false } },
   {texte: `Lorsque le peuple est rassemblé, l'évêque s’avance vers l’autel avec les ministres.`, type: "rubrique", conditions: {celebrationType: "Semaine", presenceBishop: true } },
-    { texte: "La procession d'entrée se déroule dans l'ordre suivant :", type:"servants", conditions: {} },
+    { texte: "La procession d'entrée se déroule dans l'ordre suivant\u00A0:", type:"servants", conditions: {} },
     { texte: "- le thuriféraire avec l'encensoir fumant et le naviculaire à sa droite s'il est droitier (gauche s'il est gaucher) de façon à ce que l'encensoir soit au milieu des deux", type:"servants", conditions: {incense: true}},
     { texte: "- le cruciféraire", type:"servants", conditions: {cruciferaire: true}},
     { texte: "- les céroferaires avec leurs cierges", type:"servants", conditions: {ceroferaire: true}},
@@ -33,15 +36,15 @@ ritesInitiaux: [
   { texte: "S’il n’y a pas de chant pour l´entrée, on fait réciter l´antienne que propose le Missel, soit par les fidèles, soit par un lecteur ou, autrement, par l'évêque lui-même.", type: "rubrique", conditions: {celebrationType: "Semaine", presenceBishop: true}},
   { texte: `ANTIENNE D’OUVERTURE`, type: "h3"  , conditions: {oraisons : true, celebrationType: "Semaine"}},
   { type: "insert-antienne_ouverture"},
-  { texte: "Le chant d’entrée achevé, le prêtre et les fidèles, debout, font le signe de la croix, tandis que le prêtre, tourné vers le peuple dit :", type: "rubrique", conditions: {celebrationType: ["Solennité", "Dominicale", "Fête"], presenceBishop: false } },
-  { texte: "Le chant d’entrée achevé, l'évêque et les fidèles, debout, font le signe de la croix, tandis que l'évêque, tourné vers le peuple dit :", type: "rubrique", conditions: {celebrationType: ["Solennité", "Dominicale", "Fête"], presenceBishop: true } },
-  { texte: "Ensuite, le prêtre et les fidèles, debout, font le signe de la croix, tandis que le prêtre, tourné vers le peuple dit :", type: "rubrique", conditions: {celebrationType: "Semaine", presenceBishop: false}},
-  { texte: "Ensuite, l'évêque et les fidèles, debout, font le signe de la croix, tandis que l'évêque, tourné vers le peuple dit :", type: "rubrique", conditions: {celebrationType: "Semaine", presenceBishop: true} },
+  { texte: "Le chant d’entrée achevé, le prêtre et les fidèles, debout, font le signe de la croix, tandis que le prêtre, tourné vers le peuple dit\u00A0:", type: "rubrique", conditions: {celebrationType: ["Solennité", "Dominicale", "Fête"], presenceBishop: false } },
+  { texte: "Le chant d’entrée achevé, l'évêque et les fidèles, debout, font le signe de la croix, tandis que l'évêque, tourné vers le peuple dit\u00A0:", type: "rubrique", conditions: {celebrationType: ["Solennité", "Dominicale", "Fête"], presenceBishop: true } },
+  { texte: "Ensuite, le prêtre et les fidèles, debout, font le signe de la croix, tandis que le prêtre, tourné vers le peuple dit\u00A0:", type: "rubrique", conditions: {celebrationType: "Semaine", presenceBishop: false}},
+  { texte: "Ensuite, l'évêque et les fidèles, debout, font le signe de la croix, tandis que l'évêque, tourné vers le peuple dit\u00A0:", type: "rubrique", conditions: {celebrationType: "Semaine", presenceBishop: true} },
   {class:"lettrine", texte: "Au nom du Père, et du Fils, et du Saint-Esprit.", type: "dialogueV", conditions: {} },
     { texte: "Amen.", type: "dialogueR", conditions: {} },
   { id: "Salutation", texte: "SALUTATION", type: "h2", conditions: {} },
-    {texte: "Puis, les mains étendues, le prêtre salue le peuple en disant :", type:"rubrique", conditions: {presenceBishop: false} },
-    {texte: "Puis, les mains étendues, l'évêque salue le peuple en disant :", type:"rubrique", conditions: {presenceBishop: true} },
+    {texte: "Puis, les mains étendues, le prêtre salue le peuple en disant\u00A0:", type:"rubrique", conditions: {presenceBishop: false} },
+    {texte: "Puis, les mains étendues, l'évêque salue le peuple en disant\u00A0:", type:"rubrique", conditions: {presenceBishop: true} },
     {class:"lettrine", texte: "La paix soit avec vous.", type: "dialogueV", conditions: {presenceBishop: true, salutation: "S3"} },
     {class:"lettrine", texte: "Le Seigneur soit avec vous.", type: "dialogueV", conditions: {presenceBishop: false, salutation: "S3"} },
     {class:"lettrine", texte: `La grâce de Jésus, le Christ, notre Seigneur, 
@@ -59,8 +62,8 @@ ritesInitiaux: [
     { texte: "L'évêque, le diacre ou un autre ministre peut introduire très brièvement les fidèles à la messe du jour.", type:"rubrique", conditions: {presenceDiacre: true, presenceBishop: true} },
 // Acte pénitentiel   
     { id: "ActePenitentiel",texte: "ACTE PENITENTIEL", type: "h2", conditions: {aspersion: false} },
-  { texte: "Le prêtre invite les fidèles à faire l’acte pénitentiel :", type: "rubrique", conditions: {aspersion: false, presenceBishop: false} },
-  { texte: "L'évêque invite les fidèles à faire l’acte pénitentiel :", type: "rubrique", conditions: {aspersion: false, presenceBishop: true} },
+  { texte: "Le prêtre invite les fidèles à faire l’acte pénitentiel\u00A0:", type: "rubrique", conditions: {aspersion: false, presenceBishop: false} },
+  { texte: "L'évêque invite les fidèles à faire l’acte pénitentiel\u00A0:", type: "rubrique", conditions: {aspersion: false, presenceBishop: true} },
   {class:"lettrine", texte: `Frères et sœurs,
 préparons-nous à célébrer le mystère de l’Eucharistie,
 en reconnaissant que nous avons péché.`, type: "dialogueV", conditions: {aspersion: false} },
@@ -68,7 +71,7 @@ en reconnaissant que nous avons péché.`, type: "dialogueV", conditions: {asper
 // PREMIERE FORMULE
   { texte: `On fait une brève pause en silence.`, type: "rubrique", conditions: {ChoixPenitentiel: "1CP", aspersion: false} },
   {class:"sautdeligne", texte: `\n`, type: "", conditions: {ChoixPenitentiel: "1CP", aspersion: false} },
-  { texte: "Tous disent ensemble la formule de confession générale :", type: "rubrique", conditions: {ChoixPenitentiel: "1CP", aspersion: false} },
+  { texte: "Tous disent ensemble la formule de confession générale\u00A0:", type: "rubrique", conditions: {ChoixPenitentiel: "1CP", aspersion: false} },
   {class:"lettrine indent1all", texte: `Je confesse à Dieu tout-puissant,
 je reconnais devant vous, frères et sœurs,`, type: "dialogueV", conditions: {ChoixPenitentiel: "1CP", aspersion: false} },
   {class:"indent1all", texte: `que j’ai péché
@@ -76,7 +79,7 @@ en pensée, en parole,
 par action et par omission ;`, type: "dialogueV", conditions: {ChoixPenitentiel: "1CP", aspersion: false} },
   {class:"indent1g", texte: `On se frappe la poitrine en disant`, type: "rubriqueinterne", conditions: {ChoixPenitentiel: "1CP", aspersion: false} },
   {class:"indent1p", texte: `oui, j’ai vraiment péché.`, type: "dialogueV", conditions: {ChoixPenitentiel: "1CP", aspersion: false} },
-  {class:"indent1g", texte: `On continue :`, type: "rubriqueinterne", conditions: {ChoixPenitentiel: "1CP", aspersion: false} },
+  {class:"indent1g", texte: `On continue\u00A0:`, type: "rubriqueinterne", conditions: {ChoixPenitentiel: "1CP", aspersion: false} },
   {class:"indent1all", texte: `C’est pourquoi je supplie
 la bienheureuse Vierge Marie,
 les anges et tous les saints,
@@ -85,8 +88,8 @@ de prier pour moi le Seigneur notre Dieu.`, type: "dialogueV", conditions: {Choi
 
 // DEUXIEME FORMULE
   {class:"sautdeligne", texte: `\n`, type: "", conditions: {ChoixPenitentiel: "2CP", aspersion: false} },
-  { texte: `On fait une brève pause en silence. Puis le prêtre dit :`, type: "rubrique", conditions: {ChoixPenitentiel: "2CP", aspersion: false, presenceBishop: false} },
-  { texte: `On fait une brève pause en silence. Puis l'évêque dit :`, type: "rubrique", conditions: {ChoixPenitentiel: "2CP", aspersion: false, presenceBishop: true} },
+  { texte: `On fait une brève pause en silence. Puis le prêtre dit\u00A0:`, type: "rubrique", conditions: {ChoixPenitentiel: "2CP", aspersion: false, presenceBishop: false} },
+  { texte: `On fait une brève pause en silence. Puis l'évêque dit\u00A0:`, type: "rubrique", conditions: {ChoixPenitentiel: "2CP", aspersion: false, presenceBishop: true} },
   {class:"lettrine", texte: `Prends pitié de nous, Seigneur.`, type: "dialogueV", conditions: {ChoixPenitentiel: "2CP", aspersion: false} },
   { texte: `Nous avons péché contre toi.`, type: "dialogueR", conditions: {ChoixPenitentiel: "2CP", aspersion: false} },
   {class:"lettrine", texte: `Montre-nous, Seigneur, ta miséricorde.`, type: "dialogueV", conditions: {ChoixPenitentiel: "2CP", aspersion: false} },
@@ -94,25 +97,25 @@ de prier pour moi le Seigneur notre Dieu.`, type: "dialogueV", conditions: {Choi
 
 // TROISIEME FORMULE
   { texte: `On fait une brève pause en silence.`, type: "rubrique", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
-  { texte: `Puis le prêtre ou un autre ministre chante ou dit les invocations suivantes :`, type: "rubrique", conditions: {ChoixPenitentiel: "3CP", aspersion: false, presenceDiacre: false, presenceBishop: false} },
-  { texte: `Puis l'évêque ou un autre ministre chante ou dit les invocations suivantes :`, type: "rubrique", conditions: {ChoixPenitentiel: "3CP", aspersion: false, presenceDiacre: false, presenceBishop: true} },
-  { texte: `Puis le prêtre, le diacre ou un autre ministre chante ou dit les invocations suivantes :`, type: "rubrique", conditions: {ChoixPenitentiel: "3CP", aspersion: false, presenceDiacre: true, presenceBishop: false} },
-  { texte: `Puis l'évêque, le diacre ou un autre ministre chante ou dit les invocations suivantes :`, type: "rubrique", conditions: {ChoixPenitentiel: "3CP", aspersion: false, presenceDiacre: true, presenceBishop: true} },
+  { texte: `Puis le prêtre ou un autre ministre chante ou dit les invocations suivantes\u00A0:`, type: "rubrique", conditions: {ChoixPenitentiel: "3CP", aspersion: false, presenceDiacre: false, presenceBishop: false} },
+  { texte: `Puis l'évêque ou un autre ministre chante ou dit les invocations suivantes\u00A0:`, type: "rubrique", conditions: {ChoixPenitentiel: "3CP", aspersion: false, presenceDiacre: false, presenceBishop: true} },
+  { texte: `Puis le prêtre, le diacre ou un autre ministre chante ou dit les invocations suivantes\u00A0:`, type: "rubrique", conditions: {ChoixPenitentiel: "3CP", aspersion: false, presenceDiacre: true, presenceBishop: false} },
+  { texte: `Puis l'évêque, le diacre ou un autre ministre chante ou dit les invocations suivantes\u00A0:`, type: "rubrique", conditions: {ChoixPenitentiel: "3CP", aspersion: false, presenceDiacre: true, presenceBishop: true} },
   {class:"lettrine", texte: `Seigneur Jésus, envoyé pour guérir`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
-  { texte: `les cœurs qui reviennent vers toi :`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
+  { texte: `les cœurs qui reviennent vers toi\u00A0:`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
   {class:"indent1p", texte: `Seigneur, prends pitié.`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
   { texte: `Seigneur, prends pitié.`, type: "dialogueR", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
-  {class:"lettrine", texte: `Ô Christ, venu appeler les pécheurs :`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
+  {class:"lettrine", texte: `Ô Christ, venu appeler les pécheurs\u00A0:`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
   {class:"indent1p", texte: `O Christ, prends pitié.`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
   { texte: `Ô Christ, prends pitié.`, type: "dialogueR", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
   {class:"lettrine", texte: `Seigneur, qui sièges à la droite du Père`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
-  { texte: `où tu intercèdes pour nous :`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
+  { texte: `où tu intercèdes pour nous\u00A0:`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
   {class:"indent1p", texte: `Seigneur, prends pitié.`, type: "dialogueV", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
   { texte: `Seigneur, prends pitié.`, type: "dialogueR", conditions: {ChoixPenitentiel: "3CP", aspersion: false} },
 
   {class:"sautdeligne", texte: `\n`, type: "", conditions: {aspersion: false} },
-{ texte: `Puis le prêtre prononce l’absolution :`, type: "rubrique", conditions: {aspersion: false, presenceBishop: false} },
-{ texte: `Puis l'évêque prononce l’absolution :`, type: "rubrique", conditions: {aspersion: false, presenceBishop: true} },
+{ texte: `Puis le prêtre prononce l’absolution\u00A0:`, type: "rubrique", conditions: {aspersion: false, presenceBishop: false} },
+{ texte: `Puis l'évêque prononce l’absolution\u00A0:`, type: "rubrique", conditions: {aspersion: false, presenceBishop: true} },
   {class:"lettrine indent1all", texte: `Que Dieu tout-puissant
 nous fasse miséricorde ;`, type: "dialogueV", conditions: {aspersion: false} },
   {class:"indent1all", texte: `qu’il nous pardonne nos péchés
@@ -144,8 +147,8 @@ et nous conduise à la vie éternelle.`, type: "dialogueV", conditions: {aspersi
     { texte: "BÉNÉDICTION ET ASPERSION DE L’EAU BÉNITE", type: "h2", conditions: {aspersion: true} },
     { texte: "La bénédiction de l’eau et l’aspersion, en mémoire du baptême, peuvent se faire aux messes dominicales, surtout au temps pascal, même à celles qui sont célébrées dès le samedi soir. L'aspersion tient lieu d’acte pénitentiel au début de la messe.", type: "rubrique", conditions: {aspersion: true} },
     { texte: `<b>Un servant</b> s'avance avec le vase contenant l'eau à bénir`, type:"servants", conditions: {aspersion: true}},
-    { texte: "Après la salutation, le prêtre, debout au siège, tourné vers le peuple, ayant devant lui le vase avec l’eau à bénir, invite à prier en ces termes ou d’autres semblables :", type: "rubrique", conditions: {aspersion: true, presenceBishop: false} },
-    { texte: "Après la salutation, l'évêque, debout au siège, tourné vers le peuple, ayant devant lui le vase avec l’eau à bénir, invite à prier en ces termes ou d’autres semblables :", type: "rubrique", conditions: {aspersion: true, presenceBishop: true} },
+    { texte: "Après la salutation, le prêtre, debout au siège, tourné vers le peuple, ayant devant lui le vase avec l’eau à bénir, invite à prier en ces termes ou d’autres semblables\u00A0:", type: "rubrique", conditions: {aspersion: true, presenceBishop: false} },
+    { texte: "Après la salutation, l'évêque, debout au siège, tourné vers le peuple, ayant devant lui le vase avec l’eau à bénir, invite à prier en ces termes ou d’autres semblables\u00A0:", type: "rubrique", conditions: {aspersion: true, presenceBishop: true} },
     {class:"indent1all", texte:`Frères et sœurs bien-aimés,
 demandons au demandons au Seigneur de bénir cette eau qu’il a créée ;
 nous allons en être aspergés en mémoire de notre baptême : 
@@ -169,7 +172,7 @@ et accueillir pleinement le salut que tu nous donnes.`,  type: "dialogueV", cond
     {class:"grandelettrine", texte:`Seigneur, Dieu tout-puissant, 
 toi qui es la source et l’origine`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "5CP"}},
     {class:"indent1p", texte:`de toute vie du corps et de l’âme, 
-nous te prions de bénir <span style="color: #b30000;">✠</span> cette eau :`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "5CP"}},
+nous te prions de bénir <span style="color: #b30000;">✠</span> cette eau\u00A0:`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "5CP"}},
     {class:"indent1all", texte:`nous y recourons avec confiance 
 pour implorer le pardon de nos fautes
 et obtenir la protection de ta grâce
@@ -183,14 +186,14 @@ et nous soustraire aux périls de l’âme et du corps.`,  type: "dialogueV", co
     {texte:`Par le Christ, notre Seigneur.`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "5CP"}},
 
     {class:"grandelettrine", texte:`Seigneur, Dieu tout-puissant: 
-sois favorable aux prières de ton peuple :`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "6CP"}},
+sois favorable aux prières de ton peuple\u00A0:`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "6CP"}},
     {class:"indent1p", texte:`alors que nous venons célébrer la merveille de notre création`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "6CP"}},
     {class:"indent1all", texte:`tandis que nous célébrons la merveille de notre création 
 et la merveille plus grande encore de notre rédemption, 
 daigne bénir <span style="color: #b30000;">✠</span> cette eau.`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "6CP"}},
     {class:"indent1all", texte:`Tu l’as créée pour féconder la terre
 et donner à nos corps fraîcheur et pureté.`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "6CP"}},
-    {class:"indent1all", texte:`Tu en as fait aussi l’instrument de ta miséricorde :`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "6CP"}},
+    {class:"indent1all", texte:`Tu en as fait aussi l’instrument de ta miséricorde\u00A0:`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "6CP"}},
     {class:"indent1all", texte:`par elle tu as libéré ton peuple de la servitude
 et tu as étanché sa soif dans le désert ;`,  type: "dialogueV", conditions: {aspersion: true, ChoixPenitentiel: "6CP"}},
     {class:"indent1all", texte:`par elle les prophètes ont annoncé la nouvelle Alliance
@@ -208,8 +211,8 @@ les baptisés de Pâques.`,  type: "dialogueV", conditions: {aspersion: true, Ch
 //Ajouter la bénédiction du sel ?
     { texte: `<b>Un servant</b> accompagne le célébrant, portant le vase d’eau bénite pour l’aspersion.`, type:"servants", conditions: {aspersion: true}},
     {texte:`Ensuite, prenant le goupillon, il se signe lui-même avec l’eau, puis il asperge les ministres et l’assemblée, en circulant dans l’église si cela est utile pour la signification du geste. Pendant ce temps, on chante un chant approprié.`,  type: "rubrique", conditions: {aspersion: true}},
-    {texte:`Revenu au siège, le prêtre, tourné vers le peuple, les mains jointes, dit, quand le chant est terminé :`,  type: "rubrique", conditions: {aspersion: true, presenceBishop: false}},
-    {texte:`Revenu au siège, l'évêque, tourné vers le peuple, les mains jointes, dit, quand le chant est terminé :`,  type: "rubrique", conditions: {aspersion: true, presenceBishop: true}},
+    {texte:`Revenu au siège, le prêtre, tourné vers le peuple, les mains jointes, dit, quand le chant est terminé\u00A0:`,  type: "rubrique", conditions: {aspersion: true, presenceBishop: false}},
+    {texte:`Revenu au siège, l'évêque, tourné vers le peuple, les mains jointes, dit, quand le chant est terminé\u00A0:`,  type: "rubrique", conditions: {aspersion: true, presenceBishop: true}},
     {class:"grandelettrine", texte:`Que Dieu tout-puissant nous purifie de nos péchés 
 et, par la célébration de cette eucharistie,`,  type: "dialogueV", conditions: {aspersion: true}},
     {class:"indent1p", texte:`nous rende dignes de participer à la table de son Royaume,`,  type: "dialogueV", conditions: {aspersion: true}},
@@ -258,8 +261,8 @@ et, par la célébration de cette eucharistie,`,  type: "dialogueV", conditions:
 // Oraison
 { texte: `PRIERE D’OUVERTURE (COLLECTE)`, type: "h2"  , conditions: {oraisons : true}},
 { texte: "<b>Le porte-missel</b> présente au président le missel pour la prière d’ouverture (collecte).", type:"servants", conditions: {portemissel: true}},
-{ texte: "L’hymne finie, le prêtre, les mains jointes, dit ou chante :", type: "rubrique", conditions: {oraisons : true, presenceBishop: false } },
-{ texte: "L’hymne finie, l'évêque, les mains jointes, dit ou chante :", type: "rubrique", conditions: {oraisons : true, presenceBishop: true } },
+{ texte: "L’hymne finie, le prêtre, les mains jointes, dit ou chante\u00A0:", type: "rubrique", conditions: {oraisons : true, presenceBishop: false } },
+{ texte: "L’hymne finie, l'évêque, les mains jointes, dit ou chante\u00A0:", type: "rubrique", conditions: {oraisons : true, presenceBishop: true } },
 {class:"lettrine", texte: `Prions le Seigneur.`, type: "dialogueV" , conditions: {oraisons : true}},
 {class:"sautdeligne", texte: `\n`, type: "", conditions: {oraisons: true} },
 { texte:`Tous prient en silence quelques instants, en même temps que le prêtre.
@@ -279,12 +282,12 @@ liturgiedelaparole: [
   { texte: "LITURGIE DE LA PAROLE", type: "h1", conditions: {} },
   { texte: "LECTURES", type: "h2", conditions: {} },
   { texte: "Première lecture", type: "h3", conditions: {} },
-  { texte: `À la fin de la lecture, le lecteur proclame ou chante :`, type: "rubrique", conditions: {} },
+  { texte: `À la fin de la lecture, le lecteur proclame ou chante\u00A0:`, type: "rubrique", conditions: {} },
   {class:"lettrine", texte: `Parole du Seigneur.`, type: "dialogueV", conditions: {} },
   { texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {} },
   { texte: "Psaume", type: "h3", conditions: {} },
   { texte: "Deuxième lecture", type: "h3", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
-  { texte: `À la fin de la lecture, le lecteur proclame ou chante :`, type: "rubrique", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
+  { texte: `À la fin de la lecture, le lecteur proclame ou chante\u00A0:`, type: "rubrique", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
   {class:"lettrine", texte: `Parole du Seigneur.`, type: "dialogueV", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
   { texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
   { texte: "Évangile", type: "h3", conditions: {} },
@@ -292,38 +295,38 @@ liturgiedelaparole: [
   {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
   { texte: `<b>Le thuriféraire</b> s'avance, le prêtre met l'encens dans l'encensoir et le bénit sans rien dire.`, type:"servants", conditions: {incense: true, presenceBishop: false}},
   { texte: `<b>Le thuriféraire</b> s'avance, l'évêque met l'encens dans l'encensoir et le bénit sans rien dire.`, type:"servants", conditions: {incense: true, presenceBishop: true}},
-  { texte: `Puis le diacre qui va proclamer l’Évangile, incliné profondément devant le prêtre, demande la bénédiction, en disant à voix basse :`, type: "rubrique", conditions: {secret:true, presenceDiacre: true, presenceBishop: false} },
-  { texte: `Puis le diacre qui va proclamer l’Évangile, incliné profondément devant l'évêque, demande la bénédiction, en disant à voix basse :`, type: "rubrique", conditions: {secret:true, presenceDiacre: true, presenceBishop: true} },
-  { texte: `Puis le prêtre qui va proclamer l’Évangile, incliné profondément devant l'évêque, demande la bénédiction, en disant à voix basse :`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop: true} },
+  { texte: `Puis le diacre qui va proclamer l’Évangile, incliné profondément devant le prêtre, demande la bénédiction, en disant à voix basse\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: true, presenceBishop: false} },
+  { texte: `Puis le diacre qui va proclamer l’Évangile, incliné profondément devant l'évêque, demande la bénédiction, en disant à voix basse\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: true, presenceBishop: true} },
+  { texte: `Puis le prêtre qui va proclamer l’Évangile, incliné profondément devant l'évêque, demande la bénédiction, en disant à voix basse\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop: true} },
   { texte: `Père, bénissez-moi.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: true} },
   { texte: `Père, bénissez-moi.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: false, presenceBishop:true} },
-  { texte: `Le prêtre dit à voix basse :`, type: "rubrique", conditions: {secret:true, presenceDiacre: true, presenceBishop: false} },
-  { texte: `L'évêque dit à voix basse :`, type: "rubrique", conditions: {secret:true, presenceBishop: true} },
+  { texte: `Le prêtre dit à voix basse\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: true, presenceBishop: false} },
+  { texte: `L'évêque dit à voix basse\u00A0:`, type: "rubrique", conditions: {secret:true, presenceBishop: true} },
   { texte: `Que le Seigneur soit dans votre coeur et sur vos lèvres 
     pour que vous proclamiez dignement son Évangile : 
     au nom du Père, et du Fils, <span style="color: #b30000;">✠</span> et du Saint-Esprit.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: true} },
   { texte: `Que le Seigneur soit dans votre coeur et sur vos lèvres 
     pour que vous proclamiez dignement son Évangile : 
     au nom du Père, et du Fils, <span style="color: #b30000;">✠</span> et du Saint-Esprit.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: false, presenceBishop:true} },
-  { texte: `Le diacre fait le signe de la croix et répond :`, type: "rubrique", conditions: {secret:true, presenceDiacre: true} },
-  { texte: `Le prêtre fait le signe de la croix et répond :`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop:true } },
+  { texte: `Le diacre fait le signe de la croix et répond\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: true} },
+  { texte: `Le prêtre fait le signe de la croix et répond\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop:true } },
   { texte: `Amen.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: true} },
   { texte: `Amen.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: false, presenceBishop:true}},
   { texte: `L'évêque dépose la mitre et se lève.`, type:"servants", conditions: {porteinsigne: true, presenceBishop: true}},
-  { texte: `Le prêtre, incliné devant l’autel, prie tout bas :`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop: false} },
+  { texte: `Le prêtre, incliné devant l’autel, prie tout bas\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop: false} },
   { texte: `Purifie mon coeur et mes lèvres, 
     Dieu tout-puissant, 
     pour que j’annonce dignement ton saint Évangile.`, type: "voixbasse", conditions: {secret:true, presenceDiacre: false, presenceBishop: false} },
   { texte: `<b>Les céroféraires</b> accompagnent le ministre à l'ambon.`, type:"servants", conditions: {incense:false, ceroferaire: true}},
   { texte: `<b>Le thuriféraire</b> et <b>les céroféraires</b> accompagnent le ministre à l'ambon.`, type:"servants", conditions: {incense:true, ceroferaire: true}},
   { texte: `<b>Le thuriféraire</b> accompagne le ministre à l'ambon.`, type:"servants", conditions: {incense:true, ceroferaire: false}},
-  { texte: `Ensuite, le prêtre se rend à l’ambon, et il dit ou chante :`, type: "rubrique", conditions: {presenceDiacre: false} },
+  { texte: `Ensuite, le prêtre se rend à l’ambon, et il dit ou chante\u00A0:`, type: "rubrique", conditions: {presenceDiacre: false} },
   { texte: `Ensuite, le diacre prend avec respect l'évangéliaire et, sans faire d'inclination devant l'autel, il s'avance jusqu'à l’ambon en portant le livre solennellement.`, type: "rubrique", conditions: {presenceDiacre: true} },
-  { texte: `Il dit ou chante :`, type: "rubrique", conditions: {presenceDiacre: true} },
+  { texte: `Il dit ou chante\u00A0:`, type: "rubrique", conditions: {presenceDiacre: true} },
   {class:"lettrine", texte: `Le Seigneur soit avec vous.`, type: "dialogueV", conditions: {} },
   { texte: `Et avec votre esprit.`, type: "dialogueR", conditions: {} },
-  { texte: `Le prêtre dit :`, type: "rubrique", conditions: {presenceDiacre: false} },
-  { texte: `Le diacre poursuit :`, type: "rubrique", conditions: {presenceDiacre: true} },
+  { texte: `Le prêtre dit\u00A0:`, type: "rubrique", conditions: {presenceDiacre: false} },
+  { texte: `Le diacre poursuit\u00A0:`, type: "rubrique", conditions: {presenceDiacre: true} },
   {class:"lettrine", texte: `Évangile de Jésus Christ <span style="color: #b30000;">✠</span> selon saint <span style="color: #b30000;">N.</span>`, type: "dialogueV", conditions: {} },
   { texte: `Gloire à toi, Seigneur !`, type: "dialogueR", conditions: {} },
   { texte: `L'évêque reçoit la crosse`, type:"servants", conditions: {porteinsigne: true}},
@@ -334,13 +337,13 @@ liturgiedelaparole: [
   { texte: `Puis le diacre encense le livre, si l’on utilise l’encens, et il proclame l’Évangile.`, type: "rubrique", conditions: {incense:true, presenceDiacre: true} },
   { texte: `Puis le diacre proclame l’Évangile.`, type: "rubrique", conditions: {incense:false, presenceDiacre: true} },
   {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
-  { texte: `L’Évangile achevé, le prêtre dit ou chante :`, type: "rubrique", conditions: {presenceDiacre: false} },
-  { texte: `L’Évangile achevé, le diacre dit ou chante :`, type: "rubrique", conditions: {presenceDiacre: true} },
+  { texte: `L’Évangile achevé, le prêtre dit ou chante\u00A0:`, type: "rubrique", conditions: {presenceDiacre: false} },
+  { texte: `L’Évangile achevé, le diacre dit ou chante\u00A0:`, type: "rubrique", conditions: {presenceDiacre: true} },
   {class:"lettrine", texte: `Acclamons la Parole de Dieu.`, type: "dialogueV", conditions: {} },
   { texte: `Louange à toi, Seigneur Jésus !`, type: "dialogueR", conditions: {} },
   {class:"sautdeligne", texte: `\n`, type: "", conditions: {} },
-  { texte: `Ensuite, il vénère le livre d’un baiser en disant tout bas :`, type: "rubrique", conditions: {secret:true, presenceBishop: false} },
-  { texte: `Ensuite, il vénère le livre d’un baiser ou le porte à baiser à l'évêque, qui dit à voix basse :`, type: "rubrique", conditions: {secret:true, presenceBishop: true} },
+  { texte: `Ensuite, il vénère le livre d’un baiser en disant tout bas\u00A0:`, type: "rubrique", conditions: {secret:true, presenceBishop: false} },
+  { texte: `Ensuite, il vénère le livre d’un baiser ou le porte à baiser à l'évêque, qui dit à voix basse\u00A0:`, type: "rubrique", conditions: {secret:true, presenceBishop: true} },
   { texte: `Que cet Évangile efface mes péchés.`, type: "voixbasse", conditions: {secret:true} },
   { texte: `<b>Les céroféraires</b> retournent  à leur place`, type:"servants", conditions: {ceroferaire:true, incense:false}},
   { texte: `<b>Les céroféraires</b> et <b>le thuriféraire</b> retournent  à leur place`, type:"servants", conditions: {ceroferaire:true, incense:true}},
@@ -507,7 +510,7 @@ et à tous les besoins de nos frères les hommes.`, type: "dialogueV", condition
   { id:"PriereC", texte: `PRIÈRES DE CONCLUSION`, type: "h4", conditions: {celebrationType: ["Dominicale", "Solennité"]} },
   { conditions: {celebrationType: ["Dominicale", "Solennité"]}, class: "tableau",items:[
   {class:"indent1all lettrine", texte: `À tes fidèles, Seigneur,
-tends une main secourable :`, type: "dialogueV", conditions: {PriereC: "1"} },
+tends une main secourable\u00A0:`, type: "dialogueV", conditions: {PriereC: "1"} },
 {class:"indent1all", texte: `Qu’ils te cherchent de tout coeur,
 et voient exaucées leurs justes demandes.`, type: "dialogueV", conditions: {PriereC: "1"} },
 { texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "1" }},
@@ -524,7 +527,7 @@ et donne-lui la joie d’être exaucé.
 Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {celebrationType: ["Dominicale", "Solennité"], PriereC: "3"} },
 { texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {celebrationType: ["Dominicale", "Solennité"], PriereC: "3" }},
 {class:"indent1all lettrine", texte: `Seigneur, viens au secours de ton peuple
-qui espère en ta miséricorde :`, type: "dialogueV", conditions: {PriereC: "4"} },
+qui espère en ta miséricorde\u00A0:`, type: "dialogueV", conditions: {PriereC: "4"} },
 {class:"indent1all", texte: `Que ta puissance le soutienne en cette vie
 et le conduise aux joies de l’éternité.`, type: "dialogueV", conditions: {PriereC: "4"} },
 { texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "4" }},
@@ -533,7 +536,7 @@ tu vois tous les besoins de notre vie humaine.`, type: "dialogueV", conditions: 
 {class:"indent1all", texte: `Accueille les prières de ceux qui croient en toi,
 exauce les désirs de ceux qui te supplient.`, type: "dialogueV", conditions: {PriereC: "5"} },
 { texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "5" }},
-{class:"indent1all lettrine", texte: `Seigneur, écoute avec bonté les prières de ton peuple :`, type: "dialogueV", conditions: {PriereC: "6"} },
+{class:"indent1all lettrine", texte: `Seigneur, écoute avec bonté les prières de ton peuple\u00A0:`, type: "dialogueV", conditions: {PriereC: "6"} },
 {class:"indent1all", texte: `Accorde à tous ce qu’ils te demandent
 et à chacun ce qu’il lui faut.`, type: "dialogueV", conditions: {PriereC: "6"} },
 { texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "6" }},
@@ -542,7 +545,7 @@ que tu inspires toi-même à ton Église,`, type: "dialogueV", conditions: {Prie
 {class:"indent1all", texte: `Et, dans ta bonté, daigne les exaucer.`, type: "dialogueV", conditions: {PriereC: "7"} },
 { texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "7" }},
 {class:"indent1all lettrine", texte: `Aux appels de ton peuple en prière,
-réponds, Seigneur, en ta bonté :`, type: "dialogueV", conditions: {PriereC: "8"} },
+réponds, Seigneur, en ta bonté\u00A0:`, type: "dialogueV", conditions: {PriereC: "8"} },
 {class:"indent1all", texte: `Donne à chacun la claire vision de ce qu’il doit faire
 et la force de l’accomplir.`, type: "dialogueV", conditions: {PriereC: "8"} },
 { texte: `Par le Christ, notre Seigneur.`, type: "dialogueV", conditions: {PriereC: "8" }},
@@ -565,16 +568,16 @@ liturgieeucharistique: [
   Pendant ce temps, les ministres placent sur l’autel le missel, le corporal, le purificatoire, le calice et la pale.
   Il est bon que les fidèles manifestent leur participation par une offrande, en apportant le pain et le vin pour la célébration de l’eucharistie, ou même d’autres dons destinés à subvenir aux besoins de l’Église et des pauvres.`, type: "rubrique", conditions: {} },
   { type: "insert-offertoire"},
-  { texte: `Le prêtre, debout à l’autel, prend la patène avec le pain, et la tient à deux mains, un peu élevée au-dessus de l’autel, en disant :`, type: "rubrique", conditions: {presenceBishop:false} },
+  { texte: `Le prêtre, debout à l’autel, prend la patène avec le pain, et la tient à deux mains, un peu élevée au-dessus de l’autel, en disant\u00A0:`, type: "rubrique", conditions: {presenceBishop:false} },
   { texte: `L'évêque dépose la mitre`, type:"servants", conditions: {porteinsigne: true}},
-  { texte: `L'évêque, debout à l’autel, prend la patène avec le pain, et la tient à deux mains, un peu élevée au-dessus de l’autel, en disant :`, type: "rubrique", conditions: {presenceBishop:true} },
+  { texte: `L'évêque, debout à l’autel, prend la patène avec le pain, et la tient à deux mains, un peu élevée au-dessus de l’autel, en disant\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
   {class:"grandelettrine indentallg", texte: `Tu es béni, Seigneur, Dieu de l’univers :
 nous avons reçu de ta bonté
 le pain que nous te présentons,
 fruit de la terre et du travail des hommes ;
 il deviendra pour nous le pain de la vie.`, type: "dialogueV", conditions: {} },
-  { texte: `S’il n’y a pas de chant d’offertoire, le prêtre peut dire ces paroles à haute voix ; à la fin, le peuple peut dire l’acclamation :`, type: "rubrique", conditions: {presenceBishop:false} },
-  { texte: `S’il n’y a pas de chant d’offertoire, l'évêque peut dire ces paroles à haute voix ; à la fin, le peuple peut dire l’acclamation :`, type: "rubrique", conditions: {presenceBishop:true} },
+  { texte: `S’il n’y a pas de chant d’offertoire, le prêtre peut dire ces paroles à haute voix ; à la fin, le peuple peut dire l’acclamation\u00A0:`, type: "rubrique", conditions: {presenceBishop:false} },
+  { texte: `S’il n’y a pas de chant d’offertoire, l'évêque peut dire ces paroles à haute voix ; à la fin, le peuple peut dire l’acclamation\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
   {class:"indentallg", texte: `Béni soit Dieu, maintenant et toujours !`, type: "dialogueR", conditions: {} },
   { texte: `Le prêtre, verse le vin et un peu d’eau dans le calice, en disant tout bas\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: false,presenceBishop:false } },
   { texte: `Un prêtre, verse le vin et un peu d’eau dans le calice, en disant tout bas\u00A0:`, type: "rubrique", conditions: {secret:true, presenceDiacre: false, presenceBishop:true } },
@@ -591,11 +594,11 @@ de Celui qui a voulu prendre notre humanité.`, type: "voixbasse", conditions: {
   le vin que nous te présentons,
   fruit de la vigne et du travail des hommes ;
   il deviendra pour nous le vin du Royaume éternel.`, type: "dialogueV", conditions: {} },
-  { texte: `S’il n’y a pas de chant d’offertoire, le prêtre peut dire ces paroles à haute voix ; à la fin, le peuple peut dire l’acclamation :`, type: "rubrique", conditions: {presenceBishop:false} },
-  { texte: `S’il n’y a pas de chant d’offertoire, l'évêque peut dire ces paroles à haute voix ; à la fin, le peuple peut dire l’acclamation :`, type: "rubrique", conditions: {presenceBishop:true} },
+  { texte: `S’il n’y a pas de chant d’offertoire, le prêtre peut dire ces paroles à haute voix ; à la fin, le peuple peut dire l’acclamation\u00A0:`, type: "rubrique", conditions: {presenceBishop:false} },
+  { texte: `S’il n’y a pas de chant d’offertoire, l'évêque peut dire ces paroles à haute voix ; à la fin, le peuple peut dire l’acclamation\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
   {class:"indentallg", texte: `Béni soit Dieu, maintenant et toujours !`, type: "dialogueR", conditions: {} },
-  { texte: `Ensuite, le prêtre, profondément incliné, dit tout bas :`, type: "rubrique", conditions: {secret:true, presenceBishop:false} },
-  { texte: `Ensuite, l'évêque, profondément incliné, dit tout bas :`, type: "rubrique", conditions: {secret:true, presenceBishop:true } },
+  { texte: `Ensuite, le prêtre, profondément incliné, dit tout bas\u00A0:`, type: "rubrique", conditions: {secret:true, presenceBishop:false} },
+  { texte: `Ensuite, l'évêque, profondément incliné, dit tout bas\u00A0:`, type: "rubrique", conditions: {secret:true, presenceBishop:true } },
   { texte: `Le coeur humble et contrit,
   nous te supplions, Seigneur,
   accueille-nous :
@@ -621,7 +624,7 @@ de Celui qui a voulu prendre notre humanité.`, type: "voixbasse", conditions: {
   {class:"grandelettrine indentallg", texte: `Priez, frères (et soeurs) :
 que mon sacrifice, qui est aussi le vôtre,
 soit agréable à Dieu le Père tout-puissant.`, type: "dialogueV", conditions: {} },
-  { texte: `Le peuple se lève et répond :`, type: "rubrique", conditions: {} },
+  { texte: `Le peuple se lève et répond\u00A0:`, type: "rubrique", conditions: {} },
   {class:"indentallg", texte: `Que le Seigneur reçoive de vos mains ce sacrifice
 à la louange et à la gloire de son nom,
 pour notre bien et celui de toute l’Église.`, type: "dialogueR", conditions: {} },
@@ -656,7 +659,7 @@ pour notre bien et celui de toute l’Église.`, type: "dialogueR", conditions: 
             par le Christ, notre Seigneur.`, type: "dialogueV"},
         {class:"sautdeligne", texte: `\n`, type: "dialogueV",},
         {class:"indent1all", texte:`Dans le mystère de sa Pâque,
-            il a fait une œuvre merveilleuse :`, type: "dialogueV"},
+            il a fait une œuvre merveilleuse\u00A0:`, type: "dialogueV"},
         {class:"indent1all", texte:`car nous étions esclaves de la mort et du péché,
             et nous sommes appelés à partager sa gloire ;`, type: "dialogueV"},
         {class:"indent1all", texte:`nous portons désormais ces noms glorieux :
@@ -709,7 +712,7 @@ par Jésus Christ, ton Fils, notre Seigneur,`, type: "dialogueV", conditions: {}
   {class:"indent1p", texte: `et de bénir <span style="color: #b30000;">✠</span> ces dons, ces offrandes,
 sacrifice pur et saint,`, type: "dialogueV", conditions: {} },
   { texte: `<b>Les servants</b> se mettent à genoux.`, type:"servants", conditions: {}},
-  {class:"indent1g", texte: `il étend les mains et continue :`, type: "rubriqueinterne", conditions: {} },
+  {class:"indent1g", texte: `il étend les mains et continue\u00A0:`, type: "rubriqueinterne", conditions: {} },
   {class:"indent1all", texte: `que nous te présentons
 avant tout pour ta sainte Église catholique\u00A0:`, type: "dialogueV", conditions: {} },
   {class:"indent1all", texte: `accorde-lui la paix et protège-la,
@@ -804,7 +807,7 @@ Mère de notre Dieu et Seigneur, Jésus Christ,`, type: "dialogueV", conditions:
 //Pour la fête de tous les saints
   {class: "grandelettrine", texte:`Unis dans une même communion,
   nous célébrons le jour
-  consacré à la mémoire de tous les saints :`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
+  consacré à la mémoire de tous les saints\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
   {class: "indent1all", texte:`ils ont imité le Christ pendant leur vie
   et, à leur mort, ils ont reçu de lui la couronne de gloire ;`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
   {class: "indent1all", texte:`et vénérant d’abord la mémoire
@@ -892,7 +895,7 @@ il rompit le pain,`, type: "dialogueV" },
   {class:"sautdeligne", texte: `\n`},
   {class: "centre", texte: `« Pʀᴇɴᴇᴢ, ᴇᴛ ᴍᴀɴɢᴇᴢ-ᴇɴ ᴛᴏᴜs :
 ᴄᴇᴄɪ ᴇsᴛ ᴍᴏɴ Cᴏʀᴘs
-ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs. »`, type: "dialogueV" },
+ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs.\u00A0»`, type: "dialogueV" },
   { texte: `Il montre au peuple l’hostie consacrée, la repose sur la patène, et adore en faisant la génuflexion.`, type: "rubrique" },
   { texte: `<b>Le thuriféraire</b> encense de trois coups d'encensoir l'hostie lors de l'élévation`, type:"servants", conditions: {incense:true}},
   {class:"sautdeligne", texte: `\n`},
@@ -932,7 +935,7 @@ où le Christ est ressuscité d’entre les morts.`, type: "dialogueV", conditio
   nous célébrons le jour très saint <span style="color: #b30000;">ou (</span>la nuit très sainte<span style="color: #b30000;">)</span>`, type: "dialogueV", conditions: {Communicantes:"Nativité"} },
   {class: "indent1all", texte:`où Marie, dans la gloire de sa virginité,
   enfanta le Sauveur du monde.`, type: "dialogueV", conditions: {Communicantes:"Nativité"} },
-  {class: "indent1all", texte:`Par lui, notre Rédempteur et notre Seigneur, nous te prions :`, type: "dialogueV", conditions: {Communicantes:"Nativité"} },
+  {class: "indent1all", texte:`Par lui, notre Rédempteur et notre Seigneur, nous te prions\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Nativité"} },
 //Pour l'épiphanie
   {class:"grandelettrine", texte: `Toi qui es vraiment Saint,
   toi qui es la source de toute sainteté, Dieu notre Père,`, type: "dialogueV", conditions: {Communicantes:"Epiphanie"} },
@@ -943,7 +946,7 @@ où le Christ est ressuscité d’entre les morts.`, type: "dialogueV", conditio
   qui partage éternellement ta propre gloire`, type: "dialogueV", conditions: {Communicantes:"Epiphanie"} },
   {class: "indent1all", texte:`s’est manifesté à nos yeux
   dans un vrai corps pris de notre chair ;`, type: "dialogueV", conditions: {Communicantes:"Epiphanie"} },
-  {class: "indent1all", texte:`Par lui, notre Rédempteur et notre Seigneur, nous te prions :`, type: "dialogueV", conditions: {Communicantes:"Epiphanie"} },
+  {class: "indent1all", texte:`Par lui, notre Rédempteur et notre Seigneur, nous te prions\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Epiphanie"} },
 //De la Veillée pascale jusqu’au 2e dimanche de Pâques inclus
   {class:"grandelettrine", texte: `Toi qui es vraiment Saint,
   toi qui es la source de toute sainteté, Dieu notre Père,`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
@@ -952,7 +955,7 @@ où le Christ est ressuscité d’entre les morts.`, type: "dialogueV", conditio
   nous célébrons le jour très saint <span style="color: #b30000;">ou (</span>la nuit très sainte<span style="color: #b30000;">)</span>`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
   {class: "indent1all", texte:`où ressuscita selon la chair
   notre Seigneur Jésus Christ ;`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
-  {class: "indent1all", texte:`Par lui, notre Rédempteur et notre Sauveur, nous te prions :`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
+  {class: "indent1all", texte:`Par lui, notre Rédempteur et notre Sauveur, nous te prions\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
 //Pour la présentation du Seigneur au temple
   {class:"grandelettrine", texte: `Toi qui es vraiment Saint,
   toi qui es la source de toute sainteté, Dieu notre Père,`, type: "dialogueV", conditions: {Communicantes:"Ascension"} },
@@ -963,7 +966,7 @@ où le Christ est ressuscité d’entre les morts.`, type: "dialogueV", conditio
     son enfant nouveau-né,
     ton Fils unique, notre Seigneur`, type: "dialogueV", conditions: {Communicantes:"Présentation"} },
   {class: "indent1all", texte:`Par lui, lumière née de ta lumière,
-    nous te prions :`, type: "dialogueV", conditions: {Communicantes:"Présentation"} },
+    nous te prions\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Présentation"} },
 //Pour l'Ascension du Seigneur
   {class:"grandelettrine", texte: `Toi qui es vraiment Saint,
   toi qui es la source de toute sainteté, Dieu notre Père,`, type: "dialogueV", conditions: {Communicantes:"Ascension"} },
@@ -973,7 +976,7 @@ où le Christ est ressuscité d’entre les morts.`, type: "dialogueV", conditio
   {class: "indent1all", texte:`où notre Seigneur, ton Fils unique,
   ayant pris notre nature avec sa faiblesse,
   la fit entrer dans ta gloire, à ta droite ;`, type: "dialogueV", conditions: {Communicantes:"Ascension"} },
-  {class: "indent1all", texte:`Par lui, qui siège désormais à ta droite, nous te prions :`, type: "dialogueV", conditions: {Communicantes:"Ascension"} },
+  {class: "indent1all", texte:`Par lui, qui siège désormais à ta droite, nous te prions\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Ascension"} },
 //Pour le dimanche de la Pentecôte
   {class:"grandelettrine", texte: `Toi qui es vraiment Saint,
   toi qui es la source de toute sainteté, Dieu notre Père,`, type: "dialogueV", conditions: {Communicantes:"Pentecôte"} },
@@ -982,7 +985,7 @@ où le Christ est ressuscité d’entre les morts.`, type: "dialogueV", conditio
   nous célébrons le jour très saint`, type: "dialogueV", conditions: {Communicantes:"Pentecôte"} },
   {class: "indent1all", texte:`où l’Esprit Saint s’est manifesté aux Apôtres
   par d’innombrables langues de feu ;`, type: "dialogueV", conditions: {Communicantes:"Pentecôte"} },
-  {class: "indent1all", texte:`et nous te prions, Seigneur :`, type: "dialogueV", conditions: {Communicantes:"Pentecôte"} },
+  {class: "indent1all", texte:`et nous te prions, Seigneur\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Pentecôte"} },
 //Pour l'Assomption de la Vierge Marie
   {class:"grandelettrine", texte: `Toi qui es vraiment Saint,
   toi qui es la source de toute sainteté, Dieu notre Père,`, type: "dialogueV", conditions: {Communicantes:"Assomption"} },
@@ -993,19 +996,19 @@ où le Christ est ressuscité d’entre les morts.`, type: "dialogueV", conditio
   Jésus Christ, notre Seigneur.`, type: "dialogueV", conditions: {Communicantes:"Assomption"} },
   {class:"indent1all", texte: `Par lui, qui est à l’origine de notre foi
   et qui la mène à sa perfection,`, type: "dialogueV", conditions: {Communicantes:"Assomption"} },
-  {class: "indent1all", texte:`nous te prions :`, type: "dialogueV", conditions: {Communicantes:"Assomption"} },
+  {class: "indent1all", texte:`nous te prions\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Assomption"} },
 //Pour la fête de tous les saints
   {class:"grandelettrine", texte: `Toi qui es vraiment Saint,
   toi qui es la source de toute sainteté, Dieu notre Père,`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
   {class:"indent1all", texte: `nous voici rassemblés devant toi,
   et, dans la communion de toute l’Église,
   nous célébrons le jour
-  consacré à la mémoire de tous les saints :`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
+  consacré à la mémoire de tous les saints\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
   {class: "indent1all", texte:`ils ont suivi le Christ pendant leur vie
   et, à leur mort, ils ont reçu de lui la couronne de gloire.`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
   {class: "indent1all", texte:`Par lui, qui est à l’origine de notre foi
   et qui la mène à sa perfection,
-  nous te prions :`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
+  nous te prions\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
 //Pour le jeudi saint
   {class:"grandelettrine", texte: `Toi qui es vraiment Saint,
   toi qui es la source de toute sainteté, Dieu notre Père,`, type: "dialogueV", conditions: {precision:"jeudisaint"} },
@@ -1014,11 +1017,11 @@ où le Christ est ressuscité d’entre les morts.`, type: "dialogueV", conditio
   nous célébrons le jour très saint
 où notre Seigneur Jésus Christ fut livré pour nous.`, type: "dialogueV", conditions: {precision:"jeudisaint"} },
   {class: "indent1all", texte:`Par lui, notre Rédempteur et Sauveur, que tu as glorifié,
-  nous te prions :`, type: "dialogueV", conditions: {precision:"jeudisaint"} },
+  nous te prions\u00A0:`, type: "dialogueV", conditions: {precision:"jeudisaint"} },
 //En semaine
   {class:"grandelettrine", texte: `Toi qui es vraiment Saint,
   toi qui es la source de toute sainteté,`, type: "dialogueV", conditions: {Communicantes:"Semaine"} },
-  {class:"grandelettrine", texte: `Seigneur, nous te prions :`, type: "dialogueV", conditions: {Communicantes:"Semaine"} },
+  {class:"grandelettrine", texte: `Seigneur, nous te prions\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Semaine"} },
 
   {class:"indent1g", texte: `Il joint les mains, et, les tenant étendues sur les offrandes, il dit\u00A0:`, type: "rubriqueinterne", conditions: {} },
   { texte: `Sanctifie ces offrandes
@@ -1044,7 +1047,7 @@ et le donna à ses disciples, en disant\u00A0:`, type: "dialogueV" },
   {class:"sautdeligne", texte: `\n`},
   {class: "centre", texte: `« Pʀᴇɴᴇᴢ, ᴇᴛ ᴍᴀɴɢᴇᴢ-ᴇɴ ᴛᴏᴜs :
 ᴄᴇᴄɪ ᴇsᴛ ᴍᴏɴ Cᴏʀᴘs
-ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs. »`, type: "dialogueV" },
+ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs.\u00A0»`, type: "dialogueV" },
   { texte: `Il montre au peuple l’hostie consacrée, la repose sur la patène, et adore en faisant la génuflexion.`, type: "rubrique" },
   { texte: `<b>Le thuriféraire</b> encense de trois coups d'encensoir l'hostie lors de l'élévation`, type:"servants", conditions: {incense:true}},
   {class:"sautdeligne", texte: `\n`},
@@ -1095,7 +1098,7 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
   enfanta le Sauveur du monde ;`, type: "dialogueV", conditions: {Communicantes:"Nativité"} },
   {class: "indent1all", texte:`Par lui, notre Rédempteur et notre Seigneur,
   nous te supplions de consacrer toi-même
-  les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicantes:"Nativité"} },
+  les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Nativité"} },
 //Pour l'épiphanie
   {class: "grandelettrine", texte:`C<span></span>’est pourquoi nous voici rassemblés devant toi, Dieu notre Père, 
   et, dans la communion de toute l’Église,
@@ -1106,7 +1109,7 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
   dans un vrai corps pris de notre chair ;`, type: "dialogueV", conditions: {Communicantes:"Epiphanie"} },
   {class: "indent1all", texte:`Par lui, notre Rédempteur et notre Sauveur,
   nous te supplions de consacrer toi-même
-  les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicantes:"Epiphanie"} },
+  les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Epiphanie"} },
 //De la Veillée pascale jusqu’au 2e dimanche de Pâques inclus
   {class: "grandelettrine", texte:`C<span></span>’est pourquoi nous voici rassemblés devant toi, Dieu notre Père,
   et, dans la communion de toute l’Église,
@@ -1115,7 +1118,7 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
   notre Seigneur Jésus Christ ;`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
   {class: "indent1all", texte:`Par lui que tu as élevé à ta droite,
   nous te supplions de consacrer toi-même
-  les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
+  les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
 //Pour la présentation du Seigneur au temple
   {class: "grandelettrine", texte:`C<span></span>’est pourquoi nous voici rassemblés devant toi, Dieu notre Père, 
   et, dans la communion de toute l’Église,
@@ -1125,7 +1128,7 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
     ton Fils unique, notre Seigneur`, type: "dialogueV", conditions: {Communicantes:"Présentation"} },
   {class: "indent1all", texte:`Par lui, lumière née de ta lumière,
     nous te supplions de consacrer toi-même
-    les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicantes:"Présentation"} },
+    les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Présentation"} },
 //Pour l'Ascension du Seigneur
   {class: "grandelettrine", texte:`C<span></span>’est pourquoi nous voici rassemblés devant toi, Dieu notre Père, 
   et, dans la communion de toute l’Église,
@@ -1135,7 +1138,7 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
   la fit entrer dans ta gloire, à ta droite ;`, type: "dialogueV", conditions: {Communicantes:"Ascension"} },
   {class: "indent1all", texte:`Par lui, qui siège désormais à ta droite,
   nous te supplions de consacrer toi-même
-  les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicantes:"Ascension"} },
+  les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Ascension"} },
 //Pour le dimanche de la Pentecôte
   {class: "grandelettrine", texte:`C<span></span>’est pourquoi nous voici rassemblés devant toi, Dieu notre Père, 
   et, dans la communion de toute l’Église,
@@ -1143,7 +1146,7 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
   {class: "indent1all", texte:`où l’Esprit Saint s’est manifesté aux Apôtres
   par d’innombrables langues de feu ;`, type: "dialogueV", conditions: {Communicantes:"Pentecôte"} },
   {class: "indent1all", texte:`nous te supplions de consacrer toi-même
-  les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicantes:"Pentecôte"} },
+  les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Pentecôte"} },
 //Pour l'Assomption de la Vierge Marie
   {class: "grandelettrine", texte:`C<span></span>’est pourquoi nous voici rassemblés devant toi, Dieu notre Père, 
   et, dans la communion de toute l’Église,
@@ -1153,18 +1156,18 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
   {class: "indent1all", texte:`Par lui, qui est à l’origine de notre foi
   et qui la mène à sa perfection,`, type: "dialogueV", conditions: {Communicantes:"Assomption"} },  
   {class: "indent1all", texte:`nous te supplions de consacrer toi-même
-  les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicantes:"Assomption"} },
+  les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Assomption"} },
 //Pour la fête de tous les saints
   {class: "grandelettrine", texte:`C<span></span>’est pourquoi nous voici rassemblés devant toi, Dieu notre Père, 
   et, dans la communion de toute l’Église,
   nous célébrons le jour
-  consacré à la mémoire de tous les saints :`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
+  consacré à la mémoire de tous les saints\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
   {class: "indent1all", texte:`ils ont suivi le Christ pendant leur vie
   et, à leur mort, ils ont reçu de lui la couronne de gloire ;`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
   {class: "indent1all", texte:`Par lui, qui est à l’origine de notre foi
   et qui la mène à sa perfection,`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },  
   {class: "indent1all", texte:`nous te supplions de consacrer toi-même
-  les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
+  les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Toussaint"} },
 //Pour le jeudi saint
   {class: "grandelettrine", texte:`C<span></span>’est pourquoi nous voici rassemblés devant toi, Dieu notre Père, 
   et, dans la communion de toute l’Église,`, type: "dialogueV", conditions: {Communicantes:"jeudisaint"} },
@@ -1172,11 +1175,11 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
 { texte:`où notre Seigneur Jésus Christ fut livré pour nous.`, type: "dialogueV", conditions: {Communicantes:"jeudisaint"} },
   {class: "indent1all", texte:`Par lui notre Rédempteur et Sauveur, que tu as glorifié,
 nous te supplions de consacrer toi-même
-les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicantes:"jeudisaint"} },  
+les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {Communicantes:"jeudisaint"} },  
 //En semaine
   {class:"grandelettrine", texte: `C<span></span>’est pourquoi nous te supplions, Seigneur,
 de consacrer toi-même
-les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicantes:"Semaine"} },
+les offrandes que nous apportons\u00A0:`, type: "dialogueV", conditions: {Communicantes:"Semaine"} },
 
   { texte: `Il joint les mains, puis, les tenant étendues sur les offrandes, il dit\u00A0:`, type: "rubrique", conditions: {} },
   {class: "indentallp", texte: `Sanctifie-les par ton Esprit 
@@ -1200,7 +1203,7 @@ les offrandes que nous apportons :`, type: "dialogueV", conditions: {Communicant
   {class:"sautdeligne", texte: `\n`},
   {class: "centre", texte: `« Pʀᴇɴᴇᴢ, ᴇᴛ ᴍᴀɴɢᴇᴢ-ᴇɴ ᴛᴏᴜs :
 ᴄᴇᴄɪ ᴇsᴛ ᴍᴏɴ Cᴏʀᴘs
-ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs. »`, type: "dialogueV" },
+ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs.\u00A0»`, type: "dialogueV" },
   { texte: `Il montre au peuple l’hostie consacrée, la repose sur la patène, et adore en faisant la génuflexion.`, type: "rubrique" },
   { texte: `<b>Le thuriféraire</b> encense de trois coups d'encensoir l'hostie lors de l'élévation`, type:"servants", conditions: {incense:true}},
   {class:"sautdeligne", texte: `\n`},
@@ -1228,7 +1231,7 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
   {class: "grandelettrine indentallp", texte: `Père très saint, 
     nous proclamons que tu es grand`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `et que tu as fait toutes choses 
-    avec sagesse et par amour :`, type: "dialogueV", conditions: {} },
+    avec sagesse et par amour\u00A0:`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `tu as créé l’homme à ton image 
     et tu lui as confié l’univers,`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `afin qu’en te servant, toi seul, son Créateur, 
@@ -1269,7 +1272,7 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
   { texte: `Il joint les mains puis, les tenant étendues sur les offrandes, il dit\u00A0:`, type: "rubrique", conditions: {} },
   {class: "grandelettrine", texte: `Que ce même Esprit Saint, 
     nous t’en prions, Seigneur,`, type: "dialogueV", conditions: {} },
-  { texte: `sanctifie ces offrandes :`, type: "dialogueV", conditions: {} },
+  { texte: `sanctifie ces offrandes\u00A0:`, type: "dialogueV", conditions: {} },
   {class: "indent1g", texte: `Il joint les mains puis il fait le signe de croix sur le pain et le calice, en disant\u00A0:`, type: "rubriqueinterne", conditions: {} },
   {class: "indent1all", texte: `qu’elles deviennent ainsi
     le Corps <span style="color: #b30000;">✠</span> et le Sang
@@ -1283,7 +1286,7 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
   {class: "grandelettrine", texte: `Quand l’heure fut venue où tu allais le glorifier,
     Père très saint,`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `comme il avait aimé les siens qui étaient dans le monde, 
-    il les aima jusqu’au bout :`, type: "dialogueV", conditions: {} },
+    il les aima jusqu’au bout\u00A0:`, type: "dialogueV", conditions: {} },
   { texte: `pendant le repas qu’il partageait avec eux,`, type: "dialogueV", conditions: {} },
   {class: "indent1g", texte: `Il prend le pain et, le tenant un peu au-dessus de l’autel, il continue\u00A0:`, type: "rubriqueinterne", conditions: {} },
   {class: "indent1all", texte: `il prit le pain, 
@@ -1294,7 +1297,7 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
   {class:"sautdeligne", texte: `\n`},
   {class: "centre", texte: `« Pʀᴇɴᴇᴢ, ᴇᴛ ᴍᴀɴɢᴇᴢ-ᴇɴ ᴛᴏᴜs :
 ᴄᴇᴄɪ ᴇsᴛ ᴍᴏɴ Cᴏʀᴘs
-ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs. »`, type: "dialogueV" },
+ʟɪᴠʀᴇ́ ᴘᴏᴜʀ ᴠᴏᴜs.\u00A0»`, type: "dialogueV" },
   { texte: `Il montre au peuple l’hostie consacrée, la repose sur la patène, et adore en faisant la génuflexion.`, type: "rubrique" },
   { texte: `<b>Le thuriféraire</b> encense de trois coups d'encensoir l'hostie lors de l'élévation`, type:"servants", conditions: {incense:true}},
   {class:"sautdeligne", texte: `\n`},
@@ -1319,19 +1322,19 @@ Vᴏᴜs ғᴇʀᴇᴢ ᴄᴇʟᴀ ᴇɴ ᴍᴇ́ᴍᴏɪʀᴇ ᴅᴇ ᴍᴏɪ.\
 
 //Acclamation eucharistique / Anamnèse
   { id: "Anamnèse", texte: `Puis il introduit une des acclamations suivantes\u00A0:`, type: "rubrique", conditions: {hidePE: false} },
-  {class: "indent1g lettrine", texte: `Il est grand, le mystère de la foi :`, type: "dialogueV", conditions: {AcclamationEucharistique: "AE1", hidePE: false} },
+  {class: "indent1g lettrine", texte: `Il est grand, le mystère de la foi\u00A0:`, type: "dialogueV", conditions: {AcclamationEucharistique: "AE1", hidePE: false} },
   {class: "indentallg", texte: `Nous annonçons ta mort, Seigneur Jésus,
 nous proclamons ta résurrection,
 nous attendons ta venue dans la gloire.`, type: "dialogueR", conditions: {AcclamationEucharistique: "AE1", hidePE: false} },
-    {class: "indent1g lettrine", texte: `Acclamons le mystère de la foi :`, type: "dialogueV", conditions: {AcclamationEucharistique: "AE2", hidePE: false} },
+    {class: "indent1g lettrine", texte: `Acclamons le mystère de la foi\u00A0:`, type: "dialogueV", conditions: {AcclamationEucharistique: "AE2", hidePE: false} },
   {class: "indentallg", texte: `Quand nous mangeons ce Pain
 et buvons à cette Coupe,
 nous annonçons ta mort, Seigneur ressuscité,
 et nous attendons que tu viennes.`, type: "dialogueR", conditions: {AcclamationEucharistique: "AE2", hidePE: false} },
-    {class: "indent1g lettrine", texte: `Qu’il soit loué, le mystère de la foi :`, type: "dialogueV", conditions: {AcclamationEucharistique: "AE3", hidePE: false} },
+    {class: "indent1g lettrine", texte: `Qu’il soit loué, le mystère de la foi\u00A0:`, type: "dialogueV", conditions: {AcclamationEucharistique: "AE3", hidePE: false} },
   {class: "indentallg", texte: `Sauveur du monde, sauve-nous !
 Par ta croix et ta résurrection, tu nous as libérés.`, type: "dialogueR", conditions: {AcclamationEucharistique: "AE3", hidePE: false} },
-    {class: "indent1g lettrine", texte: `Proclamons le mystère de la foi :`, type: "dialogueV", conditions: {AcclamationEucharistique: "AE4", hidePE: false} },
+    {class: "indent1g lettrine", texte: `Proclamons le mystère de la foi\u00A0:`, type: "dialogueV", conditions: {AcclamationEucharistique: "AE4", hidePE: false} },
   {class: "indentallg", texte: `Gloire à toi qui étais mort,
 gloire à toi qui es vivant,
 notre Sauveur et notre Dieu :
@@ -1362,7 +1365,7 @@ oblation sainte et immaculée,`, type: "dialogueV" },
   {class: "indent1all", texte: `regarde ces offrandes avec amour
 et, dans ta bienveillance, accepte-les`, type: "dialogueV" },
   { texte: `Incliné, les mains jointes, il continue\u00A0:`, type: "rubriqueinterne" },
-  { texte: `Nous t’en supplions, Dieu tout-puissant :`, type: "dialogueV" },
+  { texte: `Nous t’en supplions, Dieu tout-puissant\u00A0:`, type: "dialogueV" },
   {class: "indent1all", texte: `Qu’elles soient portées
 par les mains de ton saint Ange`, type: "dialogueV" },
   {class: "indent1all", texte: `en présence de ta gloire,
@@ -1408,7 +1411,7 @@ mais en accordant largement ton pardon.`, type: "dialogueV" },
   {class: "indent1g", texte: `Il joint les mains.`, type: "rubriqueinterne" },
   {class: "indent1p", texte: `Par le Christ, notre Seigneur.`, type: "dialogueV" },
   {class:"sautdeligne", texte: `\n`},
-  { texte: `Il continue :`, type: "rubriqueinterne" },
+  { texte: `Il continue\u00A0:`, type: "rubriqueinterne" },
   {class: "indent1all", texte: `Par lui, tu ne cesses de créer tous ces biens,
 tu les sanctifies, leur donnes la vie,
 les bénis, et nous en fais le don.`, type: "dialogueV" },
@@ -1431,19 +1434,19 @@ les bénis, et nous en fais le don.`, type: "dialogueV" },
     en un seul corps.`, type: "dialogueV", conditions: {} },
   {class:"sautdeligne", texte: `\n`},
   {class: "grandelettrine", texte: `Souviens-toi, Seigneur, 
-    de ton Église répandue à travers le monde :`, type: "dialogueV", conditions: {} },
+    de ton Église répandue à travers le monde\u00A0:`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `fais-la grandir dans ta charité 
     en union avec ton serviteur notre pape <span style="color: #b30000;">N.</span>, 
     notre évêque <span style="color: #b30000;">N.</span>`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `et tous les évêques, les prêtres et les diacres.`, type: "dialogueV", conditions: {} },
   {class:"sautdeligne", texte: `\n`},
 //Ajout Pâques
-  {texte: `De la Veillée pascale jusqu’au deuxième dimanche de Pâques inclus, on peut ajouter :`, type: "rubrique", conditions: {Communicantes:"Pâques"} },
+  {texte: `De la Veillée pascale jusqu’au deuxième dimanche de Pâques inclus, on peut ajouter\u00A0:`, type: "rubrique", conditions: {Communicantes:"Pâques"} },
   {class: "grandelettrine", texte: `Souviens-toi des baptisés de Pâques
 que tu as fait renaître de l’eau et de l’Esprit Saint`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
   { texte: `pour une vie nouvelle dans le Christ.`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
 //Ajout Défunts
-  {texte: `Aux messes pour les défunts, on peut ajouter :`, type: "rubrique", conditions: {Messe:"Défunts"} },
+  {texte: `Aux messes pour les défunts, on peut ajouter\u00A0:`, type: "rubrique", conditions: {Messe:"Défunts"} },
   {class: "grandelettrine", texte: `Souviens-toi de <span style="color: #b30000;">N.</span> <span style="color: #b30000;">ou</span> celui (celle) (ton serviteur <span style="color: #b30000;">ou</span> ta servante)
 qui a quitté ce monde (aujourd’hui)`, type: "dialogueV", conditions: {Messe:"Défunts"} },
   {class: "indent1p", texte: `et que tu appelles auprès de toi.`, type: "dialogueV", conditions: {Messe:"Défunts"} },
@@ -1457,7 +1460,7 @@ accorde-lui de participer à sa résurrection.`, type: "dialogueV", conditions: 
     accueille-les dans la lumière de ton visage.`, type: "dialogueV", conditions: {} },
   {class:"sautdeligne", texte: `\n`},
   {class: "grandelettrine", texte: `Sur nous tous enfin, 
-    nous implorons ta bonté :`, type: "dialogueV", conditions: {} },
+    nous implorons ta bonté\u00A0:`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `permets qu’avec la Vierge Marie, 
     la bienheureuse Mère de Dieu, 
     avec saint Joseph, son époux, 
@@ -1491,7 +1494,7 @@ accorde-lui de participer à sa résurrection.`, type: "dialogueV", conditions: 
   {class: "grandelettrine", texte: `Que l’Esprit Saint fasse de nous 
     une éternelle offrande à ta gloire,`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `pour que nous obtenions un jour l’héritage promis, 
-    avec tes élus :`, type: "dialogueV", conditions: {} },
+    avec tes élus\u00A0:`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `en premier lieu la bienheureuse Vierge Marie, 
     Mère de Dieu,`, type: "dialogueV", conditions: {} },
   { texte: `avec saint Joseph, son époux, 
@@ -1513,13 +1516,13 @@ accorde-lui de participer à sa résurrection.`, type: "dialogueV", conditions: 
     et tout le peuple que tu as racheté.`, type: "dialogueV", conditions: {} },
   {class:"sautdeligne", texte: `\n`},
   //Ajout Pâques
-  {texte: `De la Veillée pascale jusqu’au deuxième dimanche de Pâques inclus, on peut ajouter :`, type: "rubrique", conditions: {Communicantes:"Pâques"} },
+  {texte: `De la Veillée pascale jusqu’au deuxième dimanche de Pâques inclus, on peut ajouter\u00A0:`, type: "rubrique", conditions: {Communicantes:"Pâques"} },
   {class: "grandelettrine", texte: `Souviens-toi des baptisés de Pâques
   que tu as fait renaître de l’eau et de l’Esprit Saint`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
   { texte: `pour une vie nouvelle dans le Christ.`, type: "dialogueV", conditions: {Communicantes:"Pâques"} },
 //Ajout Défunts
 //A completer
-  {texte: `Aux messes pour les défunts, on peut dire :`, type: "rubrique", conditions: {Messe:"Défunts"} },
+  {texte: `Aux messes pour les défunts, on peut dire\u00A0:`, type: "rubrique", conditions: {Messe:"Défunts"} },
   {class: "grandelettrine", texte: `Souviens-toi de <span style="color: #b30000;">N.</span> <span style="color: #b30000;">ou</span> celui (celle) (ton serviteur <span style="color: #b30000;">ou</span> ta servante)
   qui a quitté ce monde (aujourd’hui)`, type: "dialogueV", conditions: {Messe:"Défunts"} },
   {class: "indent1p", texte: `et que tu appelles auprès de toi.`, type: "dialogueV", conditions: {Messe:"Défunts"} },
@@ -1529,7 +1532,7 @@ accorde-lui de participer à sa résurrection.`, type: "dialogueV", conditions: 
   et transformera nos pauvres corps à l’image de son corps glorieux.`, type: "dialogueV", conditions: {Messe:"Défunts"} },  
   {class: "indent1all", texte: `Souviens-toi aussi de nos frères et soeurs défunts,
   souviens-toi de tous ceux qui ont quitté ce monde
-  et trouvent grâce devant toi :`, type: "dialogueV", conditions: {Messe:"Défunts"} },
+  et trouvent grâce devant toi\u00A0:`, type: "dialogueV", conditions: {Messe:"Défunts"} },
   {class: "indent1all", texte: `en ta bienveillance,
   reçois-les dans ton Royaume,
   où nous espérons être comblés de ta gloire,
@@ -1548,7 +1551,7 @@ accorde-lui de participer à sa résurrection.`, type: "dialogueV", conditions: 
   {class: "grandelettrine", texte: `Pour nos frères et soeurs défunts, 
     et pour tous ceux qui ont quitté ce monde`, type: "dialogueV", conditions: {} },
   {class: "indentallp", texte: `et trouvent grâce devant toi, 
-    nous te prions :`, type: "dialogueV", conditions: {} },
+    nous te prions\u00A0:`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `en ta bienveillance, 
     accueille-les dans ton royaume,`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `où nous espérons être comblés de ta gloire, 
@@ -1564,7 +1567,7 @@ accorde-lui de participer à sa résurrection.`, type: "dialogueV", conditions: 
   { texte: `Ensuite, les mains étendues, l'évêque dit\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
   {class: "grandelettrine", texte: `Voilà pourquoi, Seigneur, 
     nous célébrons aujourd’hui`, type: "dialogueV", conditions: {} },
-  {class: "indent1p", texte: `le mémorial de notre rédemption :`, type: "dialogueV", conditions: {} },
+  {class: "indent1p", texte: `le mémorial de notre rédemption\u00A0:`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `en rappelant la mort du Christ 
     et sa descente au séjour des morts,`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `en proclamant sa résurrection 
@@ -1584,7 +1587,7 @@ accorde-lui de participer à sa résurrection.`, type: "dialogueV", conditions: 
     une vivante offrande à la louange de ta gloire.`, type: "dialogueV", conditions: {} },
   {class:"sautdeligne", texte: `\n`},
   {class: "grandelettrine", texte: `Et maintenant, Seigneur, rappelle-toi 
-    tous ceux pour qui nous offrons le sacrifice :`, type: "dialogueV", conditions: {} },
+    tous ceux pour qui nous offrons le sacrifice\u00A0:`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `en premier lieu, ton serviteur notre pape <span style="color: #b30000;">N.</span>, 
     notre évêque <span style="color: #b30000;">N.</span>, et l’ensemble des évêques, 
     les prêtres et les diacres,`, type: "dialogueV", conditions: {} },
@@ -1634,7 +1637,7 @@ est tibi Deo Patri omnipoténti,`, type: "dialogueV", conditions:{hidePE: false,
   { texte: `omnis honor et glória,`, type: "dialogueV", conditions:{hidePE: false, DoxologieLt: true}  },
   {class:"indent1p", texte: `per ómnia sǽcula sæculórum.`, type: "dialogueV", conditions:{hidePE: false, DoxologieLt: true} },
   
-  {class:"indent1p", texte: `Le peuple acclame :`, type: "rubrique", conditions:{hidePE: false}  },
+  {class:"indent1p", texte: `Le peuple acclame\u00A0:`, type: "rubrique", conditions:{hidePE: false}  },
   { texte: `Amen.`, type: "dialogueR", conditions:{hidePE: false },},
 
   { texte: `RITE DE LA COMMUNION`, type: "h2", conditions: {} },
@@ -1680,7 +1683,7 @@ sanctificétur nomen tuum ;,`, type: "dialogueV", conditions: {NotrePère:"NP3"}
   { texte: `Les mains étendues, le prêtre, seul, continue\u00A0:`, type: "rubrique", conditions: {presenceBishop:false} },
   { texte: `Les mains étendues, l'évêque, seul, continue\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
   {class:"grandelettrine", texte: `Délivre-nous de tout mal, Seigneur,
-et donne la paix à notre temps :`, type: "dialogueV", conditions: {} },
+et donne la paix à notre temps\u00A0:`, type: "dialogueV", conditions: {} },
   { texte: `soutenus par ta miséricorde,`, type: "dialogueV", conditions: {} },
   {class:"indent1all", texte: `nous serons libérés de tout péché,
 à l’abri de toute épreuve ;`, type: "dialogueV", conditions: {} },
@@ -1694,9 +1697,9 @@ pour les siècles des siècles !`, type: "dialogueR", conditions: {} },
   { texte: `Ensuite, les mains étendues, le prêtre dit à haute voix\u00A0:`, type: "rubrique", conditions: {presenceBishop:false} },
   { texte: `Ensuite, les mains étendues, l'évêque dit à haute voix\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
   {class: "grandelettrine", texte: `Seigneur Jésus Christ,
-tu as dit à tes Apôtres :`, type: "dialogueV", conditions: {} },
+tu as dit à tes Apôtres\u00A0:`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `« Je vous laisse la paix,
-je vous donne ma paix » ;`, type: "dialogueV", conditions: {} },
+je vous donne ma paix\u00A0» ;`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `ne regarde pas nos péchés
 mais la foi de ton Église ;`, type: "dialogueV", conditions: {} },
   {class: "indent1all", texte: `pour que ta volonté s’accomplisse,
@@ -1704,7 +1707,7 @@ donne-lui toujours cette paix,`, type: "dialogueV", conditions: {} },
   { texte: `et conduis-la vers l’unité parfaite,`, type: "dialogueV", conditions: {} },
   {class: "indent1g", texte: `il joint les mains`, type: "rubriqueinterne", conditions: {} },
   {class: "indent1p", texte: `toi qui vis et règnes pour les siècles des siècles.`, type: "dialogueV", conditions: {} },
-  { texte: `Le peuple répond :`, type: "rubrique", conditions: {} },
+  { texte: `Le peuple répond\u00A0:`, type: "rubrique", conditions: {} },
   { texte: `Amen`, type: "dialogueR", conditions: {} },
 
   { texte: `\n`, type: "", conditions: {hideRubriques:true} },
@@ -1713,7 +1716,7 @@ donne-lui toujours cette paix,`, type: "dialogueV", conditions: {} },
   {class: "indentallg grandelettrine", texte: `Que la paix du Seigneur
 soit toujours avec vous.`, type: "dialogueV", conditions: {} },
   { texte: `Il joint les mains.`, type: "rubriqueinterne", conditions: {} },
-  { texte: `Le peuple répond :`, type: "rubrique", conditions: {} },
+  { texte: `Le peuple répond\u00A0:`, type: "rubrique", conditions: {} },
   {class: "indentallg", texte: `Et avec votre esprit.`, type: "dialogueR", conditions: {} },
   { texte: `Ensuite, si cela convient, le prêtre ajoute\u00A0:`, type: "rubrique", conditions: {presenceDiacre: false, presenceBishop:false} },
   { texte: `Ensuite, si cela convient, l'évêque ajoute\u00A0:`, type: "rubrique", conditions: {presenceDiacre: false, presenceBishop:true} },
@@ -1806,7 +1809,7 @@ et je serai guéri.`, type: "dialogueV", conditions: {} },
   { texte: `Le prêtre prend la patène ou le ciboire, et s’approche des communiants ; il montre à chacun l’hostie en l’élevant légèrement, et dit\u00A0:`, type: "rubrique", conditions: {presenceBishop:false} },
   { texte: `L'évêque prend la patène ou le ciboire, et s’approche des communiants ; il montre à chacun l’hostie en l’élevant légèrement, et dit\u00A0:`, type: "rubrique", conditions: {presenceBishop:true} },
   {class: "lettrine indent1g", texte: `Le Corps du Christ.`, type: "dialogueV", conditions: {hideRubriques:false} },
-  { texte: `Le communiant répond :`, type: "rubriqueinterne", conditions: {hideRubriques:false} },
+  { texte: `Le communiant répond\u00A0:`, type: "rubriqueinterne", conditions: {hideRubriques:false} },
   {class: "indent1g", texte: `Amen.`, type: "dialogueR", conditions: {} },
   { texte: `Et il communie.`, type: "rubrique", conditions: {} },
   { texte: `Lorsque la distribution de la communion est achevée, le prêtre ou l’acolyte purifie la patène au-dessus du calice, et le calice lui-même.`, type: "rubrique", conditions: {presenceDiacre: false, presenceBishop:false} },
@@ -1841,37 +1844,37 @@ ritesdeConclusion: [
   { texte: `RITES DE CONCLUSION`, type: "h1", conditions: {} },
   { texte: `Si c’est nécessaire, on fait alors brièvement les annonces pour la communauté présente.`, type: "rubrique", conditions: {} },
 //Conclusion 1
-  { texte: `On fait ensuite le renvoi. Le prêtre, tourné vers le peuple, dit en étendant les mains\u00A0:`, type: "rubrique", conditions: {presenceBishop:false, Conclusion :"1"} },
-  { texte: `On fait ensuite le renvoi. L'évêque, tourné vers le peuple, dit en étendant les mains\u00A0:`, type: "rubrique", conditions: {presenceBishop:true, Conclusion :"1"} },
-  {class: "lettrine indent1g", texte: `Le Seigneur soit avec vous.`, type: "dialogueV", conditions: {Conclusion :"1"} },
-  { texte: `Le peuple répond :`, type: "rubriqueinterne", conditions: {Conclusion :"1"} },
-  {class: "indent1g", texte: `Et avec votre esprit.`, type: "dialogueR", conditions: {Conclusion :"1"} },
-  { texte: `Le prêtre bénit le peuple, en disant :`, type: "rubriqueinterne", conditions: {presenceBishop:false, Conclusion :"1"} },
-  { texte: `L'évêque bénit le peuple, en disant :`, type: "rubriqueinterne", conditions: {presenceBishop:true, Conclusion :"1"} },
+  { texte: `On fait ensuite le renvoi. Le prêtre, tourné vers le peuple, dit en étendant les mains\u00A0:`, type: "rubrique", conditions: {presenceBishop:false, Conclusion:"1"} },
+  { texte: `On fait ensuite le renvoi. L'évêque, tourné vers le peuple, dit en étendant les mains\u00A0:`, type: "rubrique", conditions: {presenceBishop:true, Conclusion:"1"} },
+  {class: "lettrine indent1g", texte: `Le Seigneur soit avec vous.`, type: "dialogueV", conditions: {Conclusion:"1"} },
+  { texte: `Le peuple répond\u00A0:`, type: "rubriqueinterne", conditions: {Conclusion:"1"} },
+  {class: "indent1g", texte: `Et avec votre esprit.`, type: "dialogueR", conditions: {Conclusion:"1"} },
+  { texte: `Le prêtre bénit le peuple, en disant\u00A0:`, type: "rubriqueinterne", conditions: {presenceBishop:false, Conclusion:"1"} },
+  { texte: `L'évêque bénit le peuple, en disant\u00A0:`, type: "rubriqueinterne", conditions: {presenceBishop:true, Conclusion:"1"} },
   {class: "grandelettrine indentallg", texte: `Que Dieu tout-puissant vous bénisse,
-  le Père, et le Fils, <span style="color: #b30000;">✠</span> et le Saint-Esprit.`, type: "dialogueV", conditions: {Conclusion :"1"} },
-  { texte: `Le peuple répond :`, type: "rubriqueinterne", conditions: {Conclusion :"1"} },
-  {class: "indentallg", texte: `Amen.`, type: "dialogueR", conditions: {Conclusion :"1"} },
+  le Père, et le Fils, <span style="color: #b30000;">✠</span> et le Saint-Esprit.`, type: "dialogueV", conditions: {Conclusion:"1"} },
+  { texte: `Le peuple répond\u00A0:`, type: "rubriqueinterne", conditions: {Conclusion:"1"} },
+  {class: "indentallg", texte: `Amen.`, type: "dialogueR", conditions: {Conclusion:"1"} },
 //Conclusion 2
-  { texte: `Le diacre, ou à son défaut le prêtre, dit l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction</span>. Puis le prêtre, les mains étendues sur le peuple, prononce la prière :`, type: "rubrique", conditions: {Conclusion :"2", presenceDiacre: true} },
-  { texte: `Le prêtre, dit l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction</span>. Puis le prêtre, les mains étendues sur le peuple, prononce la prière :`, type: "rubrique", conditions: {Conclusion :"2", presenceDiacre: false} },
-  { type : "insert-SurLePeuple", conditions: {Conclusion :"2"}},
-  { texte: `Le peuple répond :`, type: "rubriqueinterne", conditions: {Conclusion :"2"} },
-  {class: "indentallg", texte: `Amen.`, type: "dialogueR", conditions: {Conclusion :"2"} },
-  { texte: `Après la prière, le prêtre ajoute toujours :`, type: "rubrique", conditions: {Conclusion :"2"} },
+  { texte: `Le diacre, ou à son défaut le prêtre, dit l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction</span>. Puis le prêtre, les mains étendues sur le peuple, prononce la prière\u00A0:`, type: "rubrique", conditions: {Conclusion:"2", presenceDiacre: true} },
+  { texte: `Le prêtre, dit l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction</span>. Puis le prêtre, les mains étendues sur le peuple, prononce la prière\u00A0:`, type: "rubrique", conditions: {Conclusion:"2", presenceDiacre: false} },
+  { type : "insert-SurLePeuple", conditions: {Conclusion:"2"}},
+  { texte: `Le peuple répond\u00A0:`, type: "rubriqueinterne", conditions: {Conclusion:"2"} },
+  {class: "indentallg", texte: `Amen.`, type: "dialogueR", conditions: {Conclusion:"2"} },
+  { texte: `Après la prière, le prêtre ajoute toujours\u00A0:`, type: "rubrique", conditions: {Conclusion:"2"} },
   {class: "grandelettrine", texte: `Et que la bénédiction de Dieu tout-puissant,
     le Père, et le Fils, <span style="color: #b30000;">✠</span> et le Saint-Esprit,
-    descende sur vous et y demeure toujours.`, type: "dialogueV", conditions: {Conclusion :"2"} },
-  { texte: `Amen.`, type: "dialogueR", conditions: {Conclusion :"2"} },
+    descende sur vous et y demeure toujours.`, type: "dialogueV", conditions: {Conclusion:"2"} },
+  { texte: `Amen.`, type: "dialogueR", conditions: {Conclusion:"2"} },
 //Conclusion 3
-  { texte: `Le diacre dit l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction</span>. Puis le prêtre, les mains étendues sur le peuple, prononce la prière :`, type: "rubrique", conditions: {Conclusion :"3", presenceDiacre: true} },
-  { texte: `Le prêtre, dit l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction</span>. Puis le prêtre, les mains étendues sur le peuple, prononce la prière :`, type: "rubrique", conditions: {Conclusion :"3", presenceDiacre: false} },
+  { texte: `Le diacre dit l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction</span>. Puis le prêtre, les mains étendues sur le peuple, prononce la prière\u00A0:`, type: "rubrique", conditions: {Conclusion:"3", presenceDiacre: true} },
+  { texte: `Le prêtre, dit l’invitation : <span style="color: #000;">Inclinez-vous pour la bénédiction</span>. Puis le prêtre, les mains étendues sur le peuple, prononce la prière\u00A0:`, type: "rubrique", conditions: {Conclusion:"3", presenceDiacre: false} },
   { type : "insert-benediction"},
   {class:"sautdeligne", texte: `\n`},
   {class: "grandelettrine", texte: `Et que la bénédiction de Dieu tout-puissant,
     le Père, et le Fils, <span style="color: #b30000;">✠</span> et le Saint-Esprit,
-    descende sur vous et y demeure toujours.`, type: "dialogueV", conditions: {Conclusion :"3"} },
-  { texte: `Amen.`, type: "dialogueR", conditions: {Conclusion :"3"} },
+    descende sur vous et y demeure toujours.`, type: "dialogueV", conditions: {Conclusion:"3"} },
+  { texte: `Amen.`, type: "dialogueR", conditions: {Conclusion:"3"} },
 
 //Envoi
   { id:"envoi", class:"no-print", texte: "", type: "h3", conditions:{} },    
@@ -1883,7 +1886,7 @@ ritesdeConclusion: [
   {class: "lettrine indent1g", texte: `Allez en paix, glorifiez le Seigneur par votre vie.`, type: "dialogueV", conditions: {envoi:"3"} },
   {class: "lettrine indent1g", texte: `Allez en paix.`, type: "dialogueV", conditions: {envoi:"4"} },
   {class: "lettrine indent1g", texte: `Allez dans la paix du Christ, alléluia, alléluia.`, type: "dialogueV", conditions: {envoi:"5"} },
-  { texte: `Le peuple répond :`, type: "rubriqueinterne", conditions: {} },
+  { texte: `Le peuple répond\u00A0:`, type: "rubriqueinterne", conditions: {} },
   {class: "indent1g", texte: `Nous rendons grâce à Dieu.`, type: "dialogueR", conditions: {envoi:["1","2","3","4"]} },
   {class: "indent1g", texte: `Nous rendons grâce à Dieu, alléluia, alléluia.`, type: "dialogueR", conditions: {envoi:"5"} },
   { texte: `Ensuite, selon l’usage, le prêtre vénère l’autel par un baiser, comme au commencement. Après une inclination profonde, faite en même temps que les ministres, il se retire.`, type: "rubrique", conditions: {presenceBishop:false} },

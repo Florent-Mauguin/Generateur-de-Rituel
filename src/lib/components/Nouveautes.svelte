@@ -8,6 +8,17 @@
 
   const releases: Release[] = [
     /*    */
+    {
+      version: 'v0.6',
+      date: 'avril 2026',
+      summary: 'Célébration des sacrements hors messe',
+      items: [
+        { icon: '🕊️', label: 'Mise en place de la partie "Rituel de Sacrement"'},
+        { icon: '🛁', label: "Ajout du rituel de baptême des petits enfants hors messe" },
+        { icon: '👰', label: "Ajout du rituel de mariage hors messe" },
+        { icon: '🔎', label: "Ajout d'une option de modification de la taille des textes" },
+      ]
+   },
 {
       version: 'v0.5',
       date: 'mars 2026',

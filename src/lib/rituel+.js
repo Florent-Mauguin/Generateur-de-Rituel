@@ -312,10 +312,10 @@ export const Rituelplus = {
         {class: "", texte: `Le diacre, avec les ministres, ou un autre ministre idoine se rend à la sacristie d’où il apporte la croix recouverte d’un voile violet ; il s’avance en procession à travers l’église jusqu’au milieu du sanctuaire, accompagné de deux ministres qui portent des cierges allumés.`, type: "rubrique", conditions: {croix:"1", presenceDiacre: true} },
         {class: "", texte: `Un autre ministre idoine, avec les ministres se rend à la sacristie d’où il apporte la croix recouverte d’un voile violet ; il s’avance en procession à travers l’église jusqu’au milieu du sanctuaire, accompagné de deux ministres qui portent des cierges allumés.`, type: "rubrique", conditions: {croix:"1", presenceDiacre: false} },
         { texte: `<b>Les céroféraires</b> accompagnent la procession de la croix`, type:"servants", conditions: {ceroferaire:true} },
-        {class: "", texte: `Le prêtre, debout devant l’autel, tourné vers le peuple, prend la croix, en découvre un peu le sommet et l’élève en commençant <span style="color: #000;">« Voici le bois de la Croix…»</span>, un diacre l’aidant dans le chant, ou, le cas échéant, une schola. Tous répondent : <span style="color: #000;">« Venez, adorons. »</span>`, type: "rubrique", conditions: {croix:"1", presenceDiacre: true, presenceBishop: false} },
-        {class: "", texte: `Le prêtre, debout devant l’autel, tourné vers le peuple, prend la croix, en découvre un peu le sommet et l’élève en commençant <span style="color: #000;">« Voici le bois de la Croix…»</span>, une schola l’aidant dans le chant. Tous répondent : <span style="color: #000;">« Venez, adorons. »</span>`, type: "rubrique", conditions: {croix:"1", presenceDiacre: false, presenceBishop: false} },
-        {class: "", texte: `L'évêque, debout devant l’autel, tourné vers le peuple, prend la croix, en découvre un peu le sommet et l’élève en commençant <span style="color: #000;">« Voici le bois de la Croix…»</span>, un diacre l’aidant dans le chant, ou, le cas échéant, une schola. Tous répondent : <span style="color: #000;">« Venez, adorons. »</span>`, type: "rubrique", conditions: {croix:"1", presenceDiacre: true, presenceBishop: true} },
-        {class: "", texte: `L'évêque, debout devant l’autel, tourné vers le peuple, prend la croix, en découvre un peu le sommet et l’élève en commençant <span style="color: #000;">« Voici le bois de la Croix…»</span>, une schola l’aidant dans le chant. Tous répondent : <span style="color: #000;">« Venez, adorons. »</span>`, type: "rubrique", conditions: {croix:"1", presenceDiacre: false, presenceBishop: true} },
+        {class: "", texte: `Le prêtre, debout devant l’autel, tourné vers le peuple, prend la croix, en découvre un peu le sommet et l’élève en commençant <span style="color: #000;">« Voici le bois de la Croix…»</span>, un diacre l’aidant dans le chant, ou, le cas échéant, une schola. Tous répondent : <span style="color: #000;">« Venez, adorons.\u00A0»</span>`, type: "rubrique", conditions: {croix:"1", presenceDiacre: true, presenceBishop: false} },
+        {class: "", texte: `Le prêtre, debout devant l’autel, tourné vers le peuple, prend la croix, en découvre un peu le sommet et l’élève en commençant <span style="color: #000;">« Voici le bois de la Croix…»</span>, une schola l’aidant dans le chant. Tous répondent : <span style="color: #000;">« Venez, adorons.\u00A0»</span>`, type: "rubrique", conditions: {croix:"1", presenceDiacre: false, presenceBishop: false} },
+        {class: "", texte: `L'évêque, debout devant l’autel, tourné vers le peuple, prend la croix, en découvre un peu le sommet et l’élève en commençant <span style="color: #000;">« Voici le bois de la Croix…»</span>, un diacre l’aidant dans le chant, ou, le cas échéant, une schola. Tous répondent : <span style="color: #000;">« Venez, adorons.\u00A0»</span>`, type: "rubrique", conditions: {croix:"1", presenceDiacre: true, presenceBishop: true} },
+        {class: "", texte: `L'évêque, debout devant l’autel, tourné vers le peuple, prend la croix, en découvre un peu le sommet et l’élève en commençant <span style="color: #000;">« Voici le bois de la Croix…»</span>, une schola l’aidant dans le chant. Tous répondent : <span style="color: #000;">« Venez, adorons.\u00A0»</span>`, type: "rubrique", conditions: {croix:"1", presenceDiacre: false, presenceBishop: true} },
         {class: "indent1all indentallg", texte: `Voici le bois de la Croix,
         qui a porté le salut du monde.`, type: "dialogueV", conditions: {croix:"1"} },
         {class: "indentallg", texte: `Venez, adorons !`, type: "dialogueR", conditions: {croix:"1"} },
@@ -468,7 +468,7 @@ export const Rituelplus = {
     "vigilepascale": {
     titre: "Vigile pascale",
     autresrituel: [
-        {class: "", texte: `Selon une tradition très ancienne, cette nuit est « une veille en l’honneur du Seigneur » (Ex 12, 42). Elle est ordonnée de telle sorte que, selon la recommandation de l’Évangile (Lc 12, 35 sv.), les fidèles, tenant en main leurs flambeaux allumés, soient semblables à des hommes qui attendent leur maître, afin qu’à son retour il les trouve en train de veiller et les fasse asseoir à sa table.`, type: "rubrique", conditions: {} },
+        {class: "", texte: `Selon une tradition très ancienne, cette nuit est « une veille en l’honneur du Seigneur\u00A0» (Ex 12, 42). Elle est ordonnée de telle sorte que, selon la recommandation de l’Évangile (Lc 12, 35 sv.), les fidèles, tenant en main leurs flambeaux allumés, soient semblables à des hommes qui attendent leur maître, afin qu’à son retour il les trouve en train de veiller et les fasse asseoir à sa table.`, type: "rubrique", conditions: {} },
         {class: "", texte: `La Vigile pascale doit se célébrer entièrement de nuit. Elle ne peut commencer avant la tombée de la nuit, et elle doit être achevée avant l’aube du dimanche.`, type: "rubrique", conditions: {} },
         {class: "", texte: `La messe de la Vigile, même si elle est célébrée avant minuit, est la messe pascale du dimanche de Pâques.`, type: "rubrique", conditions: {} },
         {class: "", texte: `Quiconque participe à la messe de la Vigile peut communier une seconde fois à la messe du jour de Pâques. Tout prêtre qui célèbre ou concélèbre la messe de la Vigile peut de nouveau célébrer ou concélébrer la messe du jour de Pâques.`, type: "rubrique", conditions: {} },
@@ -540,7 +540,7 @@ export const Rituelplus = {
         {class: "", texte: `Le cierge étant allumé, un des ministres prend des charbons ardents du feu et les dépose dans un encensoir, et le prêtre impose l’encens, comme d’habitude. Le ministre qui convient, reçoit du ministre le cierge pascal et la procession commence.`, type: "rubrique", conditions: {presenceDiacre: false} },
         {class: "", texte: `Le thuriféraire tenant l’encensoir fumant marche devant le diacre qui porte le cierge pascal. Viennent ensuite le prêtre avec les ministres et le peuple, qui portent en mains leurs cierges éteints.`, type: "rubrique", conditions: {presenceDiacre: true} },
         {class: "", texte: `Le thuriféraire tenant l’encensoir fumant marche devant le ministre qui porte le cierge pascal. Viennent ensuite le prêtre avec les ministres et le peuple, qui portent en mains leurs cierges éteints.`, type: "rubrique", conditions: {presenceDiacre: false} },
-        { texte: "La procession d'entrée se déroule dans l'ordre suivant :", type:"servants", conditions: {} },
+        { texte: "La procession d'entrée se déroule dans l'ordre suivant\u00A0:", type:"servants", conditions: {} },
         { texte: "- le thuriféraire avec l'encensoir fumant et le naviculaire à sa droite s'il est droitier (gauche s'il est gaucher) de façon à ce que l'encensoir soit au milieu des deux", type:"servants", conditions: {incense: true}},
         { texte: "- le diacre portant le cierge pascal", type:"servants", conditions: {presenceDiacre: true}},
         { texte: "- le ministre portant le cierge pascal", type:"servants", conditions: {presenceDiacre: false}},
@@ -670,7 +670,7 @@ export const Rituelplus = {
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `Voici la nuit dont il est écrit :
         « La nuit resplendira comme le jour ;
-        la nuit même est lumière pour ma joie. »`, type: "dialogueV", conditions: {exultet:"1"} },
+        la nuit même est lumière pour ma joie.\u00A0»`, type: "dialogueV", conditions: {exultet:"1"} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {exultet:"1"} },
         {class: "indent1all", texte: `Car le pouvoir sanctifiant de cette nuit
         chasse les crimes et lave les fautes,
@@ -802,7 +802,7 @@ export const Rituelplus = {
         { texte: `<b>Le thuriféraire</b> retourne à sa place`, type:"servants", conditions: {incense:true}},
 //Liturgie de la parole
         {class: "", texte: `LITURGIE DE LA PAROLE`, type: "h1", conditions: {} },
-        {class: "", texte: `En cette Vigile qui est « la mère de toutes les Vigiles », sont proposées neuf lectures, à savoir sept de l’Ancien Testament et deux du Nouveau (l’épître et l’évangile). Ces lectures doivent être lues partout où c’est possible, pour que soit conservée la nature de la Vigile qui exige une longue durée.`, type: "rubrique", conditions: {} },
+        {class: "", texte: `En cette Vigile qui est « la mère de toutes les Vigiles\u00A0», sont proposées neuf lectures, à savoir sept de l’Ancien Testament et deux du Nouveau (l’épître et l’évangile). Ces lectures doivent être lues partout où c’est possible, pour que soit conservée la nature de la Vigile qui exige une longue durée.`, type: "rubrique", conditions: {} },
         {class: "", texte: `Cependant, pour de graves raisons d’ordre pastoral, on peut réduire le nombre des lectures de l’Ancien Testament ; mais on respectera toujours la règle selon laquelle la Parole de Dieu constitue un élément fondamental de la Vigile dans la nuit de Pâques. On fera donc au moins trois lectures de l’Ancien Testament, tirées de la Loi et des Prophètes, et l’on chantera leurs psaumes responsoriaux respectifs. On n’omettra jamais le récit du chap. 4 de l’Exode (3e lecture), avec son cantique.`, type: "rubrique", conditions: {} },
         {class: "", texte: `Après avoir déposé leurs cierges, tous s’assoient. Avant le commencement des lectures, le prêtre s’adresse au peuple dans les termes suivants ou en d’autres semblables\u00A0:`, type: "rubrique", conditions: {} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {} },
@@ -1262,7 +1262,7 @@ export const Rituelplus = {
         il laissa couler de son côté ouvert du sang et de l’eau ;`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
         {class: "indent1all", texte: `et quand il fut ressuscité, il donna cet ordre à ses disciples :
         « Allez ! Enseignez toutes les nations :
-        baptisez-les au nom du Père, et du Fils, et du Saint-Esprit. »`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
+        baptisez-les au nom du Père, et du Fils, et du Saint-Esprit.\u00A0»`, type: "dialogueV", conditions: {litbap: ["A", "B"]} },
         {class: "", texte: `\n`, type: "sautdeligne", conditions: {litbap: ["A", "B"]} },
         {class: "indent1all", texte: `Maintenant, Seigneur Dieu,
         regarde le visage de ton Église
@@ -1322,24 +1322,24 @@ export const Rituelplus = {
         {class: "", texte: `<span style="font-weight: bold;">Profession de foi</span>`, type: "h3", conditions: {litbap: ["A"]} },
         {class: "", texte: `Ensuite, le prêtre interroge chaque adulte sur la foi et, s’il y a des petits enfants, il invite tous les parents, parrains et marraines à faire en même temps la triple profession de foi, comme c’est indiqué dans les Rituels respectifs.`, type: "rubrique", conditions: {litbap: ["A"]} },
         {class: "", texte: `Le prêtre interroge chacun des futurs baptisés. S’ils sont nombreux, la profession de foi peut être faite soit par tous ensemble, soit par groupes.`, type: "rubrique", conditions: {litbap: ["A"]} },
-        {class: "", texte: `Le prêtre :`, type: "rubrique", conditions: {litbap: ["A"]} },
+        {class: "", texte: `Le prêtre\u00A0:`, type: "rubrique", conditions: {litbap: ["A"]} },
         {class: "grandelettrine", texte: `N<span style="color: #b30000;">.</span>, croyez-vous en Dieu, le Père tout-puissant, 
         créateur du ciel et de la terre ?`, type: "dialogueV", conditions: {litbap: ["A"]} },
-        {class: "", texte: `L’élu :`, type: "rubrique", conditions: {litbap: ["A"]} },
+        {class: "", texte: `L’élu\u00A0:`, type: "rubrique", conditions: {litbap: ["A"]} },
         {class: "", texte: `Je crois.`, type: "dialogueR", conditions: {litbap: ["A"]} },
-        {class: "", texte: `Le prêtre :`, type: "rubrique", conditions: {litbap: ["A"]} },
+        {class: "", texte: `Le prêtre\u00A0:`, type: "rubrique", conditions: {litbap: ["A"]} },
         {class: "indent1all", texte: `Croyez-vous en Jésus Christ, son Fils unique, notre Seigneur,
         qui est né de la Vierge Marie,
         a souffert la passion, a été enseveli,
         est ressuscité d’entre les morts,
         et qui est assis à la droite du Père ?`, type: "dialogueV", conditions: {litbap: ["A"]} },
-        {class: "", texte: `L’élu :`, type: "rubrique", conditions: {litbap: ["A"]} },
+        {class: "", texte: `L’élu\u00A0:`, type: "rubrique", conditions: {litbap: ["A"]} },
         {class: "", texte: `Je crois.`, type: "dialogueR", conditions: {litbap: ["A"]} },
-        {class: "", texte: `Le prêtre :`, type: "rubrique", conditions: {litbap: ["A"]} },
+        {class: "", texte: `Le prêtre\u00A0:`, type: "rubrique", conditions: {litbap: ["A"]} },
         {class: "indent1all", texte: `Croyez-vous en l’Esprit Saint, à la sainte Église catholique,
         à la communion des saints, au pardon des péchés,
         à la résurrection de la chair, et à la vie éternelle ?`, type: "dialogueV", conditions: {litbap: ["A"]} },
-        {class: "", texte: `L’élu :`, type: "rubrique", conditions: {litbap: ["A"]} },
+        {class: "", texte: `L’élu\u00A0:`, type: "rubrique", conditions: {litbap: ["A"]} },
         {class: "", texte: `Je crois.`, type: "dialogueR", conditions: {litbap: ["A"]} },
         {class: "", texte: `Si, durant cette nuit, il y a de nombreux baptêmes, le rite peut être ordonné de la manière suivante : aussitôt après la réponse de ceux qui doivent être baptisés et celle des parrains et marraine ainsi que des parents, le célébrant demande et reçoit la rénovation de la profession de foi baptismale de tous ceux qui sont présents.`, type: "rubrique", conditions: {litbap: ["A"]} },
         {class: "", texte: `<span style="font-weight: bold;">Rite de l'eau</span>`, type: "h3", conditions: {litbap: ["A"]} },
@@ -1570,7 +1570,7 @@ export const Rituelplus = {
         {class: "indentallg indent1all", texte: `Et si l’on vous dit quelque chose,
         vous répondrez :
         ‘Le Seigneur en a besoin’.
-        Et aussitôt on les laissera partir. »`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
+        Et aussitôt on les laissera partir.\u00A0»`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "", texte: `Cela est arrivé pour que soit accomplie la parole prononcée par le prophète\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indentallg italic indent1all", texte: `Dites à la fille de Sion\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indentallg indent1all italic", texte: `Voici ton roi qui vient vers toi,
@@ -1590,14 +1590,14 @@ export const Rituelplus = {
         criaient\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indentallg", texte: `« <span style="font-style: italic;">Hosanna</span> au fils de David !
         <span style="font-style: italic;">Béni soit celui qui vient au nom du Seigneur !
-        Hosanna</span> au plus haut des cieux ! »`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
+        Hosanna</span> au plus haut des cieux !\u00A0»`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indent1all", texte: `Comme Jésus entrait à Jérusalem,
         toute la ville fut en proie à l’agitation,`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indent1p", texte: `et disait\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
-        {class: "indent1g", texte: `« Qui est cet homme ? »`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
+        {class: "indent1g", texte: `« Qui est cet homme ?\u00A0»`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "", texte: `Et les foules répondaient\u00A0:`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
         {class: "indentallg indent1all", texte: `« C’est le prophète Jésus,
-        de Nazareth en Galilée. »`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
+        de Nazareth en Galilée.\u00A0»`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "A"} },
 //Ajouter évangiles années B et C
         {class: "", texte: `ANNÉE B (Mc 11, 1-10 ou Jn 12, 12-16)`, type: "rubrique", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "B"} },
         {class: "", texte: `<span style="color: #b30000;">✠</span> Évangile de Jésus Christ selon saint Matthieu`, type: "dialogueV", conditions: {entreerameaux: ["1", "2"], anneeLiturgique: "B"} },

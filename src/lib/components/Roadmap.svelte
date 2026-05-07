@@ -64,9 +64,7 @@
       <div class="quarter-content">
         <div class="header">
           <h2>{q.title}</h2>
-  {#if q.statusencours}
-    <span class="statusencours">{q.statusencours}</span>
-  {:else if q.statusplannifié}
+  {#if q.statusplannifié}
     <span class="statusplannifié">{q.statusplannifié}</span>
   {/if}
         </div>
