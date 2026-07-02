@@ -3248,7 +3248,7 @@ export const liturgyRules = {
   "angela_merici_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_ANG",
-        CommunOptions: [{ id: "CSPLE", label: "Commun des éducateurs" }, { id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }],
+        CommunOptions: [{ id: "CSPLE", label: "Commun des saints pour des éducateurs" }, { id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3266,7 +3266,7 @@ export const liturgyRules = {
   "john_bosco_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JEA_B",
-        CommunOptions: [{ id: "CSPLE", label: "Commun des éducateurs" }, { id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }],
+        CommunOptions: [{ id: "CSPLE", label: "Commun des saints pour des éducateurs" }, { id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3320,7 +3320,7 @@ export const liturgyRules = {
   "jerome_emiliani": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JER_E",
-        CommunOptions: [{ id: "CSPLE", label: "Commun des éducateurs" }],
+        CommunOptions: [{ id: "CSPLE", label: "Commun des saints pour des éducateurs" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3433,7 +3433,7 @@ export const liturgyRules = {
   "frances_of_rome_religious": {
         CelebrationduJour: "",
         ChoixOraison: "STE_FRA_R",
-        CommunOptions: [{ id: "CSPSF_I", label: "Commun des saints pour une sainte femme 1" }, { id: "CSPSF_II", label: "Commun des saints pour une sainte femme 2" }, { id: "CSMRR_I", label: "Commun des saints religieux 1" }, { id: "CSMRR_II", label: "Commun des saints religieux 2" }],
+        CommunOptions: [{ id: "CSPSF_I", label: "Commun des saints pour une sainte femme 1" }, { id: "CSPSF_II", label: "Commun des saints pour une sainte femme 2" }, { id: "CSMRR_I", label: "Commun des saintes religieuses 1" }, { id: "CSMRR_II", label: "Commun des saintes religieuses 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3442,7 +3442,7 @@ export const liturgyRules = {
   "patrick_of_ireland_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_PAT",
-        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1" }, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2" }, { id: "CPPDM_I", label: "Commun des pasteurs missionnaires 1" }, { id: "CPPDM_II", label: "Commun des pasteurs missionnaires 2" }],
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1" }, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2" }, { id: "CPPDM_I", label: "Commun des pasteurs missionnaires 1" }, { id: "CPPDM_II", label: "Commun des pasteurs missionnaires 2" }, { id: "CPPDM_III", label: "Commun des pasteurs missionnaires 3" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3513,7 +3513,7 @@ export const liturgyRules = {
   "john_baptist_de_la_salle_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JBS",
-        CommunOptions: [{ id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }, { id: "CSPLE", label: "Commun des éducateurs" }],
+        CommunOptions: [{ id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }, { id: "CSPLE", label: "Commun des saints pour des éducateurs" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3522,7 +3522,7 @@ export const liturgyRules = {
   "stanislaus_of_szczepanow_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_STA",
-        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1" }, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2" }, { id: "CMHUM_I", label: "Commun des martyrs 1 au temps ordinaire" }, { id: "CMHUM_II", label: "Commun des martyrs 2 au temps ordinaire" }, { id: "CMDUM", label: "Commun des martyrs au temps pascal" }],
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1" }, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2" }, { id: "CMHUM_I", label: "Commun des martyrs 1 au Temps ordinaire" }, { id: "CMHUM_II", label: "Commun des martyrs 2 au Temps ordinaire" }, { id: "CMDUM", label: "Commun des martyrs au Temps pascal" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3531,7 +3531,7 @@ export const liturgyRules = {
   "martin_i_pope": {
         CelebrationduJour: "",
         ChoixOraison: "ST_MAR_1",
-        CommunOptions: [{ id: "CPPPE_I", label: "Commun des pasteurs papes 1" }, { id: "CPPPE_II", label: "Commun des pasteurs papes 2" }, { id: "CMHUM_I", label: "Commun des martyrs 1 au temps ordinaire" }, { id: "CMHUM_II", label: "Commun des martyrs 2 au temps ordinaire" }, { id: "CMDUM", label: "Commun des martyrs au temps pascal" }],
+        CommunOptions: [{ id: "CPPPE_I", label: "Commun des pasteurs papes 1" }, { id: "CPPPE_II", label: "Commun des pasteurs papes 2" }, { id: "CMHUM_I", label: "Commun des martyrs 1 au Temps ordinaire" }, { id: "CMHUM_II", label: "Commun des martyrs 2 au Temps ordinaire" }, { id: "CMDUM", label: "Commun des martyrs au Temps pascal" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3576,7 +3576,7 @@ export const liturgyRules = {
   "mark_evangelist": {
         CelebrationduJour: "",
         ChoixOraison: "ST_MARC",
-        Choixpreface: "", //apotre 2
+        Choixpreface: "2AP", //apotre 2
         typeCredo: "NC",
         celebrationType: "Fête",
         Communicantes: "Semaine"
@@ -3643,6 +3643,7 @@ export const liturgyRules = {
   "john_of_avila_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JEA_A",
+        CommunOptions: [{ id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }, { id: "CDDDE_I", label: "Commun des docteurs 1" }, { id: "CDDDE_II", label: "Commun des docteurs 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3651,6 +3652,7 @@ export const liturgyRules = {
   "nereus_of_terracina_and_achilleus_of_terracina_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "STS_NA",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1 au Temps ordinaire" }, { id: "CMHPM_II", label: "Commun des martyrs 2 au Temps ordinaire" }, { id: "CMHPM_III", label: "Commun des martyrs 3 au Temps ordinaire" }, { id: "CMHPM_IV", label: "Commun des martyrs 4 au Temps ordinaire" }, { id: "CMHPM_V", label: "Commun des martyrs 5 au Temps ordinaire" }, { id: "CMDPM_I", label: "Commun des martyrs au Temps pascal 1" },  { id: "CMDPM_II", label: "Commun des martyrs au Temps pascal 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3659,6 +3661,7 @@ export const liturgyRules = {
   "pancras_of_rome_martyr": {
         CelebrationduJour: "",
         ChoixOraison: "ST_PAN",
+        CommunOptions: [{ id: "CMHUM_I", label: "Commun des martyrs 1 au Temps ordinaire" }, { id: "CMHUM_II", label: "Commun des martyrs 2 au Temps ordinaire" }, { id: "CMDUM", label: "Commun des martyrs au Temps pascal" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3667,6 +3670,7 @@ export const liturgyRules = {
   "our_lady_of_fatima": {
         CelebrationduJour: "",
         ChoixOraison: "BSE_VMF",
+        CommunOptions: [{ id: "CVMTO_I", label: "Commun de la bienheureuse Vierge Marie 1 au Temps ordinaire" }, { id: "CVMTO_II", label: "Commun de la bienheureuse Vierge Marie 2 au Temps ordinaire" }, { id: "CVMTO_III", label: "Commun de la bienheureuse Vierge Marie 3 au Temps ordinaire" }, {id: "CVMTO_IV", label: "Commun de la bienheureuse Vierge Marie 4 au Temps ordinaire" }, {id: "CVMTO_V", label: "Commun de la bienheureuse Vierge Marie 5 au Temps ordinaire" }, {id: "CVMTO_VI", label: "Commun de la bienheureuse Vierge Marie 6 au Temps ordinaire" }, {id: "CVMTO_VII", label: "Commun de la bienheureuse Vierge Marie 7 au Temps ordinaire" },  {id: "CVMTO_VIII", label: "Commun de la bienheureuse Vierge Marie 8 au Temps ordinaire" }, { id: "CVMTP", label: "Commun de la Vierge Marie au Temps pascal" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3683,6 +3687,7 @@ export const liturgyRules = {
   "john_i_pope": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JEA_I",
+        CommunOptions: [{ id: "CPPPE_I", label: "Commun des pasteurs papes 1" }, { id: "CPPPE_II", label: "Commun des pasteurs papes 2" }, { id: "CMHUM_I", label: "Commun des martyrs 1 au Temps ordinaire" }, { id: "CMHUM_II", label: "Commun des martyrs 2 au Temps ordinaire" }, { id: "CMDUM", label: "Commun des martyrs au Temps pascal" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3691,6 +3696,7 @@ export const liturgyRules = {
   "bernardine_of_siena_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_BER_S",
+        CommunOptions: [{ id: "CPPDM_I", label: "Commun des pasteurs missionnaires 1" }, { id: "CPPDM_II", label: "Commun des pasteurs missionnaires 2" }, { id: "CPPDM_III", label: "Commun des pasteurs missionnaires 3" }, { id: "CSMRR_I", label: "Commun des saints religieux 1" }, { id: "CSMRR_II", label: "Commun des saints religieux 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3699,6 +3705,7 @@ export const liturgyRules = {
   "christopher_magallanes_priest_and_companions_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "ST_CHR",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1 au Temps ordinaire" }, { id: "CMHPM_II", label: "Commun des martyrs 2 au Temps ordinaire" }, { id: "CMHPM_III", label: "Commun des martyrs 3 au Temps ordinaire" }, { id: "CMHPM_IV", label: "Commun des martyrs 4 au Temps ordinaire" }, { id: "CMHPM_V", label: "Commun des martyrs 5 au Temps ordinaire" }, { id: "CMDPM_I", label: "Commun des martyrs au Temps pascal 1" },  { id: "CMDPM_II", label: "Commun des martyrs au Temps pascal 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3707,6 +3714,7 @@ export const liturgyRules = {
   "rita_of_cascia_religious": {
         CelebrationduJour: "",
         ChoixOraison: "STE_RIT",
+        CommunOptions: [{ id: "CSMRR_I", label: "Commun des saintes religieuses 1" }, { id: "CSMRR_II", label: "Commun des saintes religieuses 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3715,6 +3723,7 @@ export const liturgyRules = {
   "bede_the_venerable_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_BED",
+        CommunOptions: [{ id: "CSMRM_I", label: "Commun des saints pour un moine" }, { id: "CDDDE_I", label: "Commun des docteurs 1" }, { id: "CDDDE_II", label: "Commun des docteurs 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3723,6 +3732,7 @@ export const liturgyRules = {
   "gregory_vii_pope": {
         CelebrationduJour: "",
         ChoixOraison: "ST_GRE_VII",
+        CommunOptions: [{ id: "CPPPE_I", label: "Commun des pasteurs papes 1" }, { id: "CPPPE_II", label: "Commun des pasteurs papes 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3731,6 +3741,7 @@ export const liturgyRules = {
   "mary_magdalene_de_pazzi_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_MMP",
+        CommunOptions: [{ id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }, { id: "CSMRR_I", label: "Commun des saintes religieuses 1" }, { id: "CSMRR_II", label: "Commun des saintes religieuses 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3747,6 +3758,7 @@ export const liturgyRules = {
   "augustine_of_canterbury_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_AUG_C",
+        CommunOptions: [{ id: "CPPDM_I", label : "Commun des pasteurs missionnaires 1"}, { id: "CPPDM_II", label : "Commun des pasteurs missionnaires 2"}, { id: "CPPDM_III", label : "Commun des pasteurs missionnaires 3"}, { id: "CPPUE_I", label : "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label : "Commun des pasteurs évêques 2"}],        
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3755,6 +3767,7 @@ export const liturgyRules = {
   "paul_vi_pope": {
         CelebrationduJour: "",
         ChoixOraison: "ST_PAU_VI",
+        CommunOptions: [{ id: "CPPPE_I", label: "Commun des pasteurs papes 1" }, { id: "CPPPE_II", label: "Commun des pasteurs papes 2" }],       
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3795,6 +3808,7 @@ export const liturgyRules = {
   "marcellinus_of_rome_and_peter_the_exorcist_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "STS_MP",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1 au Temps ordinaire" }, { id: "CMHPM_II", label: "Commun des martyrs 2 au Temps ordinaire" }, { id: "CMHPM_III", label: "Commun des martyrs 3 au Temps ordinaire" }, { id: "CMHPM_IV", label: "Commun des martyrs 4 au Temps ordinaire" }, { id: "CMHPM_V", label: "Commun des martyrs 5 au Temps ordinaire" }, { id: "CMDPM_I", label: "Commun des martyrs au Temps pascal 1" },  { id: "CMDPM_II", label: "Commun des martyrs au Temps pascal 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3811,6 +3825,7 @@ export const liturgyRules = {
   "boniface_of_mainz_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_BONI",
+        CommunOptions: [{ id: "CMHUM_I", label : "Commun des martyrs 1 au Temps ordinaire"}, { id: "CMHUM_II", label : "Commun des martyrs 2 au Temps ordinaire"}, { id: "CMDUM", label : "Commun des martyrs au Temps pascal"}, { id: "CPPDM_I", label : "Commun des pasteurs missionnaires 1"}, { id: "CPPDM_II", label : "Commun des pasteurs missionnaires 2"}, { id: "CPPDM_III", label : "Commun des pasteurs missionnaires 3"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3819,6 +3834,7 @@ export const liturgyRules = {
   "norbert_of_xanten_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_NOR",
+        CommunOptions: [{ id: "CPPUE_I", label : "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label : "Commun des pasteurs évêques 2"}, { id: "CSMRR_I", label : "Commun des saints religieux 1"}, { id: "CSMRR_II", label : "Commun des saints religieux 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3827,6 +3843,7 @@ export const liturgyRules = {
   "ephrem_the_syrian_deacon": {
         CelebrationduJour: "",
         ChoixOraison: "ST_EPH",
+        CommunOptions: [{ id: "CDDDE_I", label : "Commun des docteurs de l'Église 1"}, { id: "CDDDE_II", label : "Commun des docteurs de l'Église 2"}],        
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3843,6 +3860,7 @@ export const liturgyRules = {
   "anthony_of_padua_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_ANT_P",
+        CommunOptions: [{ id: "CPPUP_I", label : "Commun des pasteurs 1"}, { id: "CPPUP_II", label : "Commun des pasteurs 2"}, { id: "CDDDE_I", label : "Commun des docteurs de l'Église 1"}, { id: "CDDDE_II", label : "Commun des docteurs de l'Église 2"}, { id: "CSMRR_I", label : "Commun des saints religieux 1"}, { id: "CSMRR_II", label : "Commun des saints religieux 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3851,6 +3869,7 @@ export const liturgyRules = {
   "romuald_of_ravenna_abbot": {
         CelebrationduJour: "",
         ChoixOraison: "ST_ROM",
+        CommunOptions: [{ id: "CSMRA", label : "Commun des saints pour un abbé"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3867,6 +3886,7 @@ export const liturgyRules = {
   "paulinus_of_nola_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_PDN",
+        CommunOptions: [{ id: "CPPUE_I", label : "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label : "Commun des pasteurs évêques 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3875,6 +3895,7 @@ export const liturgyRules = {
   "john_fisher_bishop_and_thomas_more_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "STS_JFTM",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1" }, { id: "CMHPM_II", label: "Commun des martyrs 2" }, { id: "CMHPM_III", label: "Commun des martyrs 3" }, { id: "CMHPM_IV", label: "Commun des martyrs 4" }, { id: "CMHPM_V", label: "Commun des martyrs 5" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3891,6 +3912,7 @@ export const liturgyRules = {
   "cyril_of_alexandria_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_CYR_A",
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}, { id: "CDDDE_I", label: "Commun des docteurs 1"}, { id: "CDDDE_II", label: "Commun des docteurs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3915,6 +3937,7 @@ export const liturgyRules = {
   "first_martyrs_of_the_holy_roman_church": {
         CelebrationduJour: "",
         ChoixOraison: "PMER",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1" }, { id: "CMHPM_II", label: "Commun des martyrs 2" }, { id: "CMHPM_III", label: "Commun des martyrs 3" }, { id: "CMHPM_IV", label: "Commun des martyrs 4" }, { id: "CMHPM_V", label: "Commun des martyrs 5" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3931,6 +3954,7 @@ export const liturgyRules = {
   "elizabeth_of_portugal": {
         CelebrationduJour: "",
         ChoixOraison: "STE_ELI_P",
+        CommunOptions: [{ id: "CSSAC", label: "Commun des saints ayant exercé une activité caritative" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3939,6 +3963,7 @@ export const liturgyRules = {
   "anthony_zaccaria_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_AMZ",
+        CommunOptions: [{ id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }, { id: "CSPLE", label: "Commun des saints pour des éducateurs" }, { id: "CSMRR_I", label: "Commun des saints religieux 1" }, { id: "CSMRR_II", label: "Commun des saints religieux 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3947,6 +3972,7 @@ export const liturgyRules = {
   "maria_goretti_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_MAR_G",
+        CommunOptions: [{ id: "CMUVM", label: "Commun des vierges martyres" }, { id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }],        
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3955,6 +3981,7 @@ export const liturgyRules = {
   "augustine_zhao_rong_priest_and_companions_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "ST_AUG_ZR",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1" }, { id: "CMHPM_II", label: "Commun des martyrs 2" }, { id: "CMHPM_III", label: "Commun des martyrs 3" }, { id: "CMHPM_IV", label: "Commun des martyrs 4" }, { id: "CMHPM_V", label: "Commun des martyrs 5" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3971,6 +3998,7 @@ export const liturgyRules = {
   "henry_ii_emperor": {
         CelebrationduJour: "",
         ChoixOraison: "ST_HEN",
+        CommunOptions: [{ id: "CSTOU_I", label : "Commun des saints 1"}, { id: "CSTOU_II", label : "Commun des saints 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3979,6 +4007,7 @@ export const liturgyRules = {
   "camillus_de_lellis_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_CAM_L",
+        CommunOptions: [{ id: "CSSAC", label: "Commun des saints ayant exercé une activité caritative" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3987,6 +4016,7 @@ export const liturgyRules = {
   "bonaventure_of_bagnoregio_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_BONA",
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}, { id: "CDDDE_I", label: "Commun des docteurs 1"}, { id: "CDDDE_II", label: "Commun des docteurs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -3995,6 +4025,7 @@ export const liturgyRules = {
   "our_lady_of_mount_carmel": {
         CelebrationduJour: "",
         ChoixOraison: "NDMC",
+        CommunOptions: [{ id: "CVMTO_I", label: "Commun de la bienheureuse Vierge Marie 1" }, { id: "CVMTO_II", label: "Commun de la bienheureuse Vierge Marie 2" }, { id: "CVMTO_III", label: "Commun de la bienheureuse Vierge Marie 3" }, {id: "CVMTO_IV", label: "Commun de la bienheureuse Vierge Marie 4" }, {id: "CVMTO_V", label: "Commun de la bienheureuse Vierge Marie 5" }, {id: "CVMTO_VI", label: "Commun de la bienheureuse Vierge Marie 6" }, {id: "CVMTO_VII", label: "Commun de la bienheureuse Vierge Marie 7" },  {id: "CVMTO_VIII", label: "Commun de la bienheureuse Vierge Marie 8"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4003,6 +4034,7 @@ export const liturgyRules = {
   "apollinaris_of_ravenna_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_APO",
+        CommunOptions: [{ id: "CMHUM_I", label : "Commun des martyrs 1"}, { id: "CMHUM_II", label : "Commun des martyrs 2"}, { id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4011,6 +4043,7 @@ export const liturgyRules = {
   "lawrence_of_brindisi_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_LAU_B",
+        CommunOptions: [{ id: "CPPUP_I", label: "Commun des pasteurs 1"}, { id: "CPPUP_II", label: "Commun des pasteurs 2"}, { id: "CDDDE_I", label: "Commun des docteurs 1"}, { id: "CDDDE_II", label: "Commun des docteurs 2"}, { id: "CSMRR_I", label : "Commun des saints religieux 1"}, { id: "CSMRR_II", label : "Commun des saints religieux 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4027,6 +4060,7 @@ export const liturgyRules = {
   "bridget_of_sweden_religious": {
         CelebrationduJour: "",
         ChoixOraison: "STE_BRI",
+        CommunOptions: [{ id: "CSPSF_I", label: "Commun des saints pour une sainte femme 1" }, { id: "CSPSF_II", label: "Commun des saints pour une sainte femme 2" }, { id: "CSMRR_I", label: "Commun des saintes religieuses 1" }, { id: "CSMRR_II", label: "Commun des saintes religieuses 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4035,6 +4069,7 @@ export const liturgyRules = {
   "sharbel_makhluf_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_CHA_M",
+        CommunOptions: [{ id: "CPPUP_I", label : "Commun des pasteurs 1"}, { id: "CPPUP_II", label : "Commun des pasteurs 2"}, { id: "CSMRM_I", label: "Commun des saints pour un moine" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4067,6 +4102,7 @@ export const liturgyRules = {
   "peter_chrysologus_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_PIE_CHR",
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}, { id: "CDDDE_I", label: "Commun des docteurs 1"}, { id: "CDDDE_II", label: "Commun des docteurs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4083,6 +4119,7 @@ export const liturgyRules = {
   "alphonsus_mary_liguori_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_AML",
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}, { id: "CDDDE_I", label: "Commun des docteurs 1"}, { id: "CDDDE_II", label: "Commun des docteurs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4091,6 +4128,7 @@ export const liturgyRules = {
   "eusebius_of_vercelli_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_EUS_V",
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4099,6 +4137,7 @@ export const liturgyRules = {
   "peter_julian_eymard_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_PJE",
+        CommunOptions: [{ id: "CSMRR_I", label: "Commun des saints religieux 1" }, { id: "CSMRR_II", label: "Commun des saints religieux 2" }, { id: "CPPUP_I", label : "Commun des pasteurs 1"}, { id: "CPPUP_II", label : "Commun des pasteurs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4107,6 +4146,7 @@ export const liturgyRules = {
   "john_mary_vianney_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JMV",
+        CommunOptions: [{ id: "CPPUP_I", label : "Commun des pasteurs 1"}, { id: "CPPUP_II", label : "Commun des pasteurs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4115,6 +4155,7 @@ export const liturgyRules = {
   "dedication_of_the_basilica_of_saint_mary_major": {
         CelebrationduJour: "",
         ChoixOraison: "DBSMM",
+        CommunOptions: [{ id: "CVMTO_I", label: "Commun de la bienheureuse Vierge Marie 1" }, { id: "CVMTO_II", label: "Commun de la bienheureuse Vierge Marie 2" }, { id: "CVMTO_III", label: "Commun de la bienheureuse Vierge Marie 3" }, {id: "CVMTO_IV", label: "Commun de la bienheureuse Vierge Marie 4" }, {id: "CVMTO_V", label: "Commun de la bienheureuse Vierge Marie 5" }, {id: "CVMTO_VI", label: "Commun de la bienheureuse Vierge Marie 6" }, {id: "CVMTO_VII", label: "Commun de la bienheureuse Vierge Marie 7" },  {id: "CVMTO_VIII", label: "Commun de la bienheureuse Vierge Marie 8"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4131,6 +4172,7 @@ export const liturgyRules = {
   "sixtus_ii_pope_and_companions_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "ST_SIX_II",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1" }, { id: "CMHPM_II", label: "Commun des martyrs 2" }, { id: "CMHPM_III", label: "Commun des martyrs 3" }, { id: "CMHPM_IV", label: "Commun des martyrs 4" }, { id: "CMHPM_V", label: "Commun des martyrs 5" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4139,6 +4181,7 @@ export const liturgyRules = {
   "cajetan_of_thiene_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_GAE",
+        CommunOptions: [{ id: "CPPUP_I", label : "Commun des pasteurs 1"}, { id: "CPPUP_II", label : "Commun des pasteurs 2"}, { id: "CSMRR_I", label: "Commun des saints religieux 1" }, { id: "CSMRR_II", label: "Commun des saints religieux 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4171,6 +4214,7 @@ export const liturgyRules = {
   "clare_of_assisi_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_CLA",
+        CommunOptions: [{ id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }, { id: "CSMRM_II", label: "Commun des saints pour une moniale" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4179,6 +4223,7 @@ export const liturgyRules = {
   "jane_frances_de_chantal_religious": {
         CelebrationduJour: "",
         ChoixOraison: "STE_JFC",
+        CommunOptions: [{ id: "CSMRR_I", label: "Commun des saintes religieuses 1" }, { id: "CSMRR_II", label: "Commun des saintes religieuses 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4187,6 +4232,7 @@ export const liturgyRules = {
   "pontian_i_pope_and_hippolytus_of_rome_priest": {
         CelebrationduJour: "",
         ChoixOraison: "STS_PH",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1" }, { id: "CMHPM_II", label: "Commun des martyrs 2" }, { id: "CMHPM_III", label: "Commun des martyrs 3" }, { id: "CMHPM_IV", label: "Commun des martyrs 4" }, { id: "CMHPM_V", label: "Commun des martyrs 5" }, { id: "CPPPP", label : "Commun des pasteurs"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4200,6 +4246,7 @@ export const liturgyRules = {
         celebrationType: "Semaine",
         Communicantes: "Semaine"
     },
+//Messe de la veille au soir
   "assumption_of_the_blessed_virgin_mary": {
         CelebrationduJour: "",
         ChoixOraison: "ASSBVM",
@@ -4211,6 +4258,7 @@ export const liturgyRules = {
   "stephen_i_of_hungary": {
         CelebrationduJour: "",
         ChoixOraison: "ST_ETI_H",
+        CommunOptions: [{ id: "CSTOU_I", label : "Commun des saints 1"}, { id: "CSTOU_II", label : "Commun des saints 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4219,6 +4267,7 @@ export const liturgyRules = {
   "john_eudes_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JE",
+        CommunOptions: [{ id: "CPPUP_I", label : "Commun des pasteurs 1"}, { id: "CPPUP_II", label : "Commun des pasteurs 2"}, { id: "CSMRR_I", label: "Commun des saints religieux 1" }, { id: "CSMRR_II", label: "Commun des saints religieux 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4235,6 +4284,7 @@ export const liturgyRules = {
   "pius_x_pope": {
         CelebrationduJour: "",
         ChoixOraison: "ST_PIE_X",
+        CommunOptions: [{ id: "CPPPE_I", label : "Commun des pasteurs papes 1"}, { id: "CPPPE_II", label : "Commun des pasteurs papes 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4251,6 +4301,7 @@ export const liturgyRules = {
   "rose_of_lima_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_ROS_L",
+        CommunOptions: [{ id: "CVPUV_I", label : "Commun des vierges 1"}, { id: "CVPUV_II", label : "Commun des vierges 2"}, { id: "CVPUV_III", label : "Commun des vierges 3"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4275,6 +4326,7 @@ export const liturgyRules = {
   "joseph_of_calasanz_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JOS_C",
+        CommunOptions: [{ id: "CSPLE", label: "Commun des saints pour des éducateurs" }, { id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4283,6 +4335,7 @@ export const liturgyRules = {
   "monica_of_hippo": {
         CelebrationduJour: "",
         ChoixOraison: "STE_MON",
+        CommunOptions: [{ id: "CSPSF_I", label : "Commun des saints pour une sainte femme 1"}, { id: "CSPSF_II", label : "Commun des saints pour une sainte femme 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4332,6 +4385,7 @@ export const liturgyRules = {
   "peter_claver_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_PIE_CLA",
+        CommunOptions: [{ id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }, { id: "CSSAC", label : "Commun des saints ayant exercé une activité caritative"} ],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4372,6 +4426,7 @@ export const liturgyRules = {
   "cornelius_i_pope_and_cyprian_of_carthage_bishop_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "STS_CC",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1" }, { id: "CMHPM_II", label: "Commun des martyrs 2" }, { id: "CMHPM_III", label: "Commun des martyrs 3" }, { id: "CMHPM_IV", label: "Commun des martyrs 4" }, { id: "CMHPM_V", label: "Commun des martyrs 5" }, { id: "CPPUE_I", label : "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label : "Commun des pasteurs évêques 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4380,6 +4435,7 @@ export const liturgyRules = {
   "hildegard_of_bingen_abbess": {
         CelebrationduJour: "",
         ChoixOraison: "STE_HIL_BIN",
+        CommunOptions: [{ id: "CVPUV_I", label : "Commun des vierges 1"}, { id: "CVPUV_II", label : "Commun des vierges 2"}, { id: "CVPUV_III", label : "Commun des vierges 3"}, { id: "CSMRM_II", label : "Commun des saints pour une moniale"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4387,7 +4443,8 @@ export const liturgyRules = {
     },
   "robert_bellarmine_bishop": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "ST_ROB_BEL",
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}, { id: "CDDDE_I", label: "Commun des docteurs 1"}, { id: "CDDDE_II", label: "Commun des docteurs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4396,6 +4453,7 @@ export const liturgyRules = {
   "januarius_i_of_benevento_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JAN",
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}, { id: "CMHUM_I", label: "Commun des martyrs 1"}, { id: "CMHUM_II", label: "Commun des martyrs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4420,6 +4478,7 @@ export const liturgyRules = {
   "pius_francesco_forgione_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_PIO_PIE",
+        CommunOptions: [{ id: "CPPUP_I", label : "Commun des pasteurs 1"}, { id: "CPPUP_II", label : "Commun des pasteurs 2"}, { id: "CSMRR_I", label: "Commun des saints religieux 1" }, { id: "CSMRR_II", label: "Commun des saints religieux 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4428,6 +4487,7 @@ export const liturgyRules = {
   "cosmas_of_cilicia_and_damian_of_cilicia_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "STS_CD",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1" }, { id: "CMHPM_II", label: "Commun des martyrs 2" }, { id: "CMHPM_III", label: "Commun des martyrs 3" }, { id: "CMHPM_IV", label: "Commun des martyrs 4" }, { id: "CMHPM_V", label: "Commun des martyrs 5" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4444,6 +4504,7 @@ export const liturgyRules = {
   "wenceslaus_i_of_bohemia_martyr": {
         CelebrationduJour: "",
         ChoixOraison: "ST_VEN",
+        CommunOptions: [{ id: "CMHUM_I", label: "Commun des martyrs 1" }, { id: "CMHUM_II", label: "Commun des martyrs 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4452,6 +4513,7 @@ export const liturgyRules = {
   "lawrence_ruiz_and_companions_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "ST_LAU_RUI",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1" }, { id: "CMHPM_II", label: "Commun des martyrs 2" }, { id: "CMHPM_III", label: "Commun des martyrs 3" }, { id: "CMHPM_IV", label: "Commun des martyrs 4" }, { id: "CMHPM_V", label: "Commun des martyrs 5" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4499,7 +4561,8 @@ export const liturgyRules = {
     },
   "faustina_kowalska_virgin": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "STE_FAU_KOW",
+        CommunOptions: [{ id: "CVPUV_I", label : "Commun des vierges 1"}, { id: "CVPUV_II", label : "Commun des vierges 2"}, { id: "CVPUV_III", label : "Commun des vierges 3"}, { id: "CSMRM_II", label : "Commun des saints pour une moniale"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4508,6 +4571,7 @@ export const liturgyRules = {
   "bruno_of_cologne_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_BRU",
+        CommunOptions: [{ id: "CSMRM_I", label: "Commun des saints pour un moine" }, { id: "CPPUP_I", label : "Commun des pasteurs 1"}, { id: "CPPUP_II", label : "Commun des pasteurs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4524,6 +4588,7 @@ export const liturgyRules = {
   "denis_of_paris_bishop_and_companions_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "ST_DEN",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1" }, { id: "CMHPM_II", label: "Commun des martyrs 2" }, { id: "CMHPM_III", label: "Commun des martyrs 3" }, { id: "CMHPM_IV", label: "Commun des martyrs 4" }, { id: "CMHPM_V", label: "Commun des martyrs 5" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4532,6 +4597,7 @@ export const liturgyRules = {
   "john_leonardi_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JEA_LEO",
+        CommunOptions: [{ id: "CPPDM_I", label: "Commun des pasteurs missionnaires 1" }, { id: "CPPDM_II", label: "Commun des pasteurs missionnaires 2" }, { id: "CPPDM_III", label: "Commun des pasteurs missionnaires 3" }, { id: "CSSAC", label : "Commun des saints ayant exercé une activité caritative"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4539,7 +4605,8 @@ export const liturgyRules = {
     },
   "john_xxiii_pope": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "ST_JEA_XXIII",
+        CommunOptions: [{ id: "CPPPE_I", label : "Commun des pasteurs papes 1"}, { id: "CPPPE_II", label : "Commun des pasteurs papes 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4548,6 +4615,7 @@ export const liturgyRules = {
   "callistus_i_pope": {
         CelebrationduJour: "",
         ChoixOraison: "ST_CAL",
+        CommunOptions: [{ id: "CMHUM_I", label: "Commun des martyrs 1" }, { id: "CMHUM_II", label: "Commun des martyrs 2" }, { id: "CPPPE_I", label : "Commun des pasteurs papes 1"}, { id: "CPPPE_II", label : "Commun des pasteurs papes 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4564,6 +4632,7 @@ export const liturgyRules = {
   "hedwig_of_silesia_religious": {
         CelebrationduJour: "",
         ChoixOraison: "STE_EDW",
+        CommunOptions: [{ id: "CSMRR_I", label: "Commun des saintes religieuses 1" }, { id: "CSMRR_II", label: "Commun des saintes religieuses 2" }, { id: "CSPSF_I", label: "Commun des saints pour une sainte femme 1" }, { id: "CSPSF_II", label: "Commun des saints pour une sainte femme 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4572,6 +4641,7 @@ export const liturgyRules = {
   "margaret_mary_alacoque_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_MMA",
+        CommunOptions: [{ id: "CVPUV_I", label : "Commun des vierges 1"}, { id: "CVPUV_II", label : "Commun des vierges 2"}, { id: "CVPUV_III", label : "Commun des vierges 3"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4596,6 +4666,7 @@ export const liturgyRules = {
   "john_de_brebeuf_isaac_jogues_priests_and_companions_martyrs": {
         CelebrationduJour: "",
         ChoixOraison: "STS_JBIJ",
+        CommunOptions: [{ id: "CMMPM", label : "Commun des missionnaires martyrs"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4611,7 +4682,8 @@ export const liturgyRules = {
     },
   "john_paul_ii_pope": {
         CelebrationduJour: "",
-        ChoixOraison: "",
+        ChoixOraison: "ST_JEA_PII",
+        CommunOptions: [{ id: "CPPPE_I", label : "Commun des pasteurs papes 1"}, { id: "CPPPE_II", label : "Commun des pasteurs papes 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4620,6 +4692,7 @@ export const liturgyRules = {
   "john_of_capistrano_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JEA_CAP",
+        CommunOptions: [{ id: "CPPDM_I", label: "Commun des pasteurs missionnaires 1" }, { id: "CPPDM_II", label: "Commun des pasteurs missionnaires 2" }, { id: "CPPDM_III", label: "Commun des pasteurs missionnaires 3" }, { id: "CSMRR_I", label: "Commun des saints religieux 1" }, { id: "CSMRR_II", label: "Commun des saints religieux 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4628,6 +4701,7 @@ export const liturgyRules = {
   "anthony_mary_claret_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_AMC",
+        CommunOptions: [{ id: "CPPDM_I", label: "Commun des pasteurs missionnaires 1" }, { id: "CPPDM_II", label: "Commun des pasteurs missionnaires 2" }, { id: "CPPDM_III", label: "Commun des pasteurs missionnaires 3" }, { id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4652,8 +4726,8 @@ export const liturgyRules = {
 // A completer
   "commemoration_of_all_the_faithful_departed": {
         CelebrationduJour: "",
-        ChoixOraison: "",
-        Choixpreface: "",
+        ChoixOraison: "CTFD_1",
+        PrefacesOptionnelles: [{ id: "1DE", label: "1" }, { id: "2DE", label: "2" }, { id: "3DE", label: "3" }, { id: "4DE", label: "4" }, { id: "5DE", label: "5" }],
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Semaine"
@@ -4661,6 +4735,7 @@ export const liturgyRules = {
   "martin_de_porres_religious": {
         CelebrationduJour: "",
         ChoixOraison: "ST_MAR_POR",
+        CommunOptions: [{ id: "CSMRR_I", label: "Commun des saints religieux 1" }, { id: "CSMRR_II", label: "Commun des saints religieux 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4669,6 +4744,7 @@ export const liturgyRules = {
   "charles_borromeo_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_CHA_BOR",
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4709,6 +4785,7 @@ export const liturgyRules = {
   "albert_the_great_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_ALB_GRA",
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}, { id: "CDDDE_I", label: "Commun des docteurs 1"}, { id: "CDDDE_II", label: "Commun des docteurs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4717,6 +4794,7 @@ export const liturgyRules = {
   "margaret_of_scotland": {
         CelebrationduJour: "",
         ChoixOraison: "STE_MAR_ECO",
+        CommunOptions: [{ id: "CSSAC", label : "Commun des saints ayant exercé une activité caritative"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4725,6 +4803,7 @@ export const liturgyRules = {
   "gertrude_the_great_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_GER",
+        CommunOptions: [{ id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }, { id: "CSMRM_II", label: "Commun des saints pour une moniale" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4733,6 +4812,7 @@ export const liturgyRules = {
   "elizabeth_of_hungary_religious": {
         CelebrationduJour: "",
         ChoixOraison: "STE_ELI_HON",
+        CommunOptions: [{ id: "CSSAC", label : "Commun des saints ayant exercé une activité caritative"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4749,6 +4829,7 @@ export const liturgyRules = {
   "presentation_of_the_blessed_virgin_mary": {
         CelebrationduJour: "",
         ChoixOraison: "PVM",
+        CommunOptions: [{ id: "CVMTO_I", label: "Commun de la bienheureuse Vierge Marie 1" }, { id: "CVMTO_II", label: "Commun de la bienheureuse Vierge Marie 2" }, { id: "CVMTO_III", label: "Commun de la bienheureuse Vierge Marie 3" }, {id: "CVMTO_IV", label: "Commun de la bienheureuse Vierge Marie 4" }, {id: "CVMTO_V", label: "Commun de la bienheureuse Vierge Marie 5" }, {id: "CVMTO_VI", label: "Commun de la bienheureuse Vierge Marie 6" }, {id: "CVMTO_VII", label: "Commun de la bienheureuse Vierge Marie 7" },  {id: "CVMTO_VIII", label: "Commun de la bienheureuse Vierge Marie 8"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4757,6 +4838,7 @@ export const liturgyRules = {
   "cecilia_of_rome_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_CEC",
+        CommunOptions: [{ id: "CMUVM", label: "Commun des vierges martyres" }, { id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4765,6 +4847,7 @@ export const liturgyRules = {
   "clement_i_pope": {
         CelebrationduJour: "",
         ChoixOraison: "ST_CLE_I",
+        CommunOptions: [{ id: "CMHUM_I", label: "Commun des martyrs 1" }, { id: "CMHUM_II", label: "Commun des martyrs 2" }, { id: "CPPPE_I", label : "Commun des pasteurs papes 1"}, { id: "CPPPE_II", label : "Commun des pasteurs papes 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4773,6 +4856,7 @@ export const liturgyRules = {
   "columban_of_luxeuil_abbot": {
         CelebrationduJour: "",
         ChoixOraison: "ST_COL",
+        CommunOptions: [{ id: "CPPDM_I", label: "Commun des pasteurs missionnaires 1" }, { id: "CPPDM_II", label: "Commun des pasteurs missionnaires 2" }, { id: "CPPDM_III", label: "Commun des pasteurs missionnaires 3" }, { id: "CSMRA", label: "Commun des saints pour un abbé" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4789,6 +4873,7 @@ export const liturgyRules = {
   "catherine_of_alexandria_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_CAT_ALE",
+        CommunOptions: [{ id: "CMUVM", label: "Commun des vierges martyres" }, { id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4813,6 +4898,7 @@ export const liturgyRules = {
   "john_damascene_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JEA_DAM",
+        CommunOptions: [{ id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }, { id: "CDDDE_I", label: "Commun des docteurs 1" }, { id: "CDDDE_II", label: "Commun des docteurs 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4821,6 +4907,7 @@ export const liturgyRules = {
   "nicholas_of_myra_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_NIC",
+        CommunOptions: [{ id: "CPPUE_I", label: "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label: "Commun des pasteurs évêques 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4845,6 +4932,7 @@ export const liturgyRules = {
   "juan_diego_cuauhtlatoatzin": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JDC",
+        CommunOptions: [{ id: "CSTOU_I", label: "Commun des saints 1" }, { id: "CSTOU_II", label: "Commun des saints 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4853,6 +4941,7 @@ export const liturgyRules = {
   "our_lady_of_loreto": {
         CelebrationduJour: "",
         ChoixOraison: "BVML",
+        CommunOptions: [{ id: "CVMTO_I", label: "Commun de la bienheureuse Vierge Marie 1" }, { id: "CVMTO_II", label: "Commun de la bienheureuse Vierge Marie 2" }, { id: "CVMTO_III", label: "Commun de la bienheureuse Vierge Marie 3" }, {id: "CVMTO_IV", label: "Commun de la bienheureuse Vierge Marie 4" }, {id: "CVMTO_V", label: "Commun de la bienheureuse Vierge Marie 5" }, {id: "CVMTO_VI", label: "Commun de la bienheureuse Vierge Marie 6" }, {id: "CVMTO_VII", label: "Commun de la bienheureuse Vierge Marie 7" },  {id: "CVMTO_VIII", label: "Commun de la bienheureuse Vierge Marie 8"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4861,6 +4950,7 @@ export const liturgyRules = {
   "damasus_i_pope": {
         CelebrationduJour: "",
         ChoixOraison: "ST_DAM_I",
+        CommunOptions: [{ id: "CPPPE_I", label : "Commun des pasteurs papes 1"}, { id: "CPPPE_II", label : "Commun des pasteurs papes 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4869,6 +4959,7 @@ export const liturgyRules = {
   "our_lady_of_guadalupe": {
         CelebrationduJour: "",
         ChoixOraison: "BVMG",
+        CommunOptions: [{ id: "CVMTO_I", label: "Commun de la bienheureuse Vierge Marie 1" }, { id: "CVMTO_II", label: "Commun de la bienheureuse Vierge Marie 2" }, { id: "CVMTO_III", label: "Commun de la bienheureuse Vierge Marie 3" }, {id: "CVMTO_IV", label: "Commun de la bienheureuse Vierge Marie 4" }, {id: "CVMTO_V", label: "Commun de la bienheureuse Vierge Marie 5" }, {id: "CVMTO_VI", label: "Commun de la bienheureuse Vierge Marie 6" }, {id: "CVMTO_VII", label: "Commun de la bienheureuse Vierge Marie 7" },  {id: "CVMTO_VIII", label: "Commun de la bienheureuse Vierge Marie 8"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4877,6 +4968,7 @@ export const liturgyRules = {
   "lucy_of_syracuse_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_LUC",
+        CommunOptions: [{ id: "CMUVM", label: "Commun des vierges martyres" }, { id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4893,6 +4985,7 @@ export const liturgyRules = {
   "peter_canisius_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_PIE_CAN",
+        CommunOptions: [{ id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }, { id: "CDDDE_I", label: "Commun des docteurs 1" }, { id: "CDDDE_II", label: "Commun des docteurs 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4901,6 +4994,7 @@ export const liturgyRules = {
   "john_of_kanty_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_JEA_KEN",
+        CommunOptions: [{ id: "CPPUP_I", label: "Commun des pasteurs 1" }, { id: "CPPUP_II", label: "Commun des pasteurs 2" }, { id: "CSSAC", label: "Commun des saints ayant exercé une activité caritative" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4933,6 +5027,7 @@ export const liturgyRules = {
   "thomas_becket_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_THO_BEC",
+        CommunOptions: [{ id: "CMHUM_I", label: "Commun des martyrs 1" }, { id: "CMHUM_II", label: "Commun des martyrs 2" }, { id: "CPPUE_I", label : "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label : "Commun des pasteurs évêques 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4941,6 +5036,7 @@ export const liturgyRules = {
   "sylvester_i_pope": {
         CelebrationduJour: "",
         ChoixOraison: "ST_SYL_I",
+        CommunOptions: [{ id: "CPPPE_I", label : "Commun des pasteurs papes 1"}, { id: "CPPPE_II", label : "Commun des pasteurs papes 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4949,6 +5045,7 @@ export const liturgyRules = {
   "genevieve_of_paris_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_GEN",
+        CommunOptions: [{ id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }, { id: "CSSAC", label: "Commun des saints ayant exercé une activité caritative" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4957,6 +5054,7 @@ export const liturgyRules = {
   "remigius_of_reims_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_REM",
+        CommunOptions: [{ id: "CPPUE_I", label : "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label : "Commun des pasteurs évêques 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4965,6 +5063,7 @@ export const liturgyRules = {
   "bernadette_soubirous_virgin": {
         CelebrationduJour: "",
         ChoixOraison: "STE_BER_SOU",
+        CommunOptions: [{ id: "CVPUV_I", label: "Commun des vierges 1" }, { id: "CVPUV_II", label: "Commun des vierges 2" }, { id: "CVPUV_III", label: "Commun des vierges 3" }, { id: "CSMRR_I", label: "Commun des saintes religieuses 1" }, { id: "CSMRR_II", label: "Commun des saintes religieuses 2" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4973,6 +5072,7 @@ export const liturgyRules = {
   "louise_de_marillac_religious": {
         CelebrationduJour: "",
         ChoixOraison: "STE_LOU_MAR",
+        CommunOptions: [{ id: "CSPSF_I", label : "Commun des saints pour une sainte femme 1"}, { id: "CSPSF_II", label : "Commun des saints pour une sainte femme 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4981,6 +5081,7 @@ export const liturgyRules = {
   "ivo_of_kermartin_priest": {
         CelebrationduJour: "",
         ChoixOraison: "ST_YVE",
+        CommunOptions: [{ id: "CSSAC", label: "Commun des saints ayant exercé une activité caritative" }, { id: "CPPUP_I", label:"Commun des pasteurs 1"}, { id: "CPPUP_II", label:"Commun des pasteurs 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -4995,8 +5096,9 @@ export const liturgyRules = {
         Communicantes: "Semaine"
     },
   "pothinus_of_lyon_bishop_blandina_of_lyon_virgin_and_companions_martyrs": {
-        CelebrationduJour: "STS_PB",
-        ChoixOraison: "",
+        CelebrationduJour: "",
+        ChoixOraison: "STS_PB",
+        CommunOptions: [{ id: "CMHPM_I", label: "Commun des martyrs 1" }, { id: "CMHPM_II", label: "Commun des martyrs 2" }, { id: "CMHPM_III", label: "Commun des martyrs 3" }, { id: "CMHPM_IV", label: "Commun des martyrs 4" }, { id: "CMHPM_V", label: "Commun des martyrs 5" }],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -5005,6 +5107,7 @@ export const liturgyRules = {
   "clotilde_of_burgundy": {
         CelebrationduJour: "",
         ChoixOraison: "STE_CLO",
+        CommunOptions: [{ id: "CSPSF_I", label : "Commun des saints pour une sainte femme 1"}, { id: "CSPSF_II", label : "Commun des saints pour une sainte femme 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -5013,6 +5116,7 @@ export const liturgyRules = {
   "caesarius_of_arles_bishop": {
         CelebrationduJour: "",
         ChoixOraison: "ST_CES_ARL",
+        CommunOptions: [{ id: "CPPUE_I", label : "Commun des pasteurs évêques 1"}, { id: "CPPUE_II", label : "Commun des pasteurs évêques 2"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
@@ -5021,18 +5125,20 @@ export const liturgyRules = {
   "our_lady_of_la_salette": {
         CelebrationduJour: "",
         ChoixOraison: "BVMS",
+        CommunOptions: [{ id: "CVMTO_I", label: "Commun de la bienheureuse Vierge Marie 1" }, { id: "CVMTO_II", label: "Commun de la bienheureuse Vierge Marie 2" }, { id: "CVMTO_III", label: "Commun de la bienheureuse Vierge Marie 3" }, {id: "CVMTO_IV", label: "Commun de la bienheureuse Vierge Marie 4" }, {id: "CVMTO_V", label: "Commun de la bienheureuse Vierge Marie 5" }, {id: "CVMTO_VI", label: "Commun de la bienheureuse Vierge Marie 6" }, {id: "CVMTO_VII", label: "Commun de la bienheureuse Vierge Marie 7" },  {id: "CVMTO_VIII", label: "Commun de la bienheureuse Vierge Marie 8"}],
         Choixpreface: "",
         typeCredo: "NC",
         celebrationType: "Semaine",
         Communicantes: "Semaine"
     },
   "dedication_of_consecrated_churches": {
-        ChoixOraison: "NOEL", // Ta variable pour aller chercher l'oraison
-        Choixpreface: "P_NOEL", // Ta variable pour le select de préface
+        CelebrationduJour: "",
+        ChoixOraison: "", 
+        CommunOptions: [{ id: "ADDEC", label : "Commun de la dédicace dans l’église consacrée"}, { id: "ADHEC", label : "Commun de la dédicace en dehors de l’église consacrée"}],
+        Choixpreface: "", 
         typeCredo: "NC",
         celebrationType: "Semaine",
-        Communicantes: "Semaine", // Nicée-Constantinople
-        CelebrationduJour: "Messe de la Nativité"
+        Communicantes: "Semaine", 
     },
 
 

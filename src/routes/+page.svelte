@@ -116,6 +116,7 @@ JS
   function applyLiturgyMapping(fete) {
     const regles = liturgyRules[fete.id];
     if (!regles) return;
+    
 
   if (regles.CommunOptions) { selectedCommunId = regles.CommunOptions[0].id }
      else {selectedCommunId = regles.CommunSource || ""}
@@ -1048,8 +1049,8 @@ CSS
 .sidebar { background-color: transparent; color: white; padding: 20px; overflow-y: auto; position: sticky; scrollbar-width: none; }
 .sidebar::-webkit-scrollbar { display: none; }
 /* --- LA FEUILLE UNIQUE (Blanche) --- */
-.brand-chip { display: flex; align-items: center; margin-bottom: 1.5rem; background-color: #4A141C; /* Le rouge bordeaux de la maquette */ color: #ffffff; display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 20px; /* Très arrondi pour l'effet "chipset" */ font-size: 0.85rem; letter-spacing: 1px; }
-.prempare { background-color: #50504F; /* Le rouge bordeaux de la maquette */ color: #ffffff; padding: 15px 14px; border-radius: 10px; margin-bottom: 1rem; }
+.brand-chip { display: flex; align-items: center; margin-bottom: 1.5rem; background-color: #4A141C; color: #ffffff; display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 20px; font-family: "Times New Roman"; font-size: 0.85rem; letter-spacing: 1px; gap: 4px; }
+.prempare { background-color: #50504F; color: #ffffff; padding: 15px 14px; border-radius: 10px; margin-bottom: 1rem; }
 /***************************************************** * BASE TYPO *****************************************************/
 p { line-height: 1.3; font-family: var(--font-main); text-align: justify; }
 /***************************************************** * TITRES *****************************************************/

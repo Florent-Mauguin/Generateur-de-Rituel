@@ -5156,7 +5156,7 @@ pour les siècles des siècles, alléluia, alléluia.`}
     ],
   },
   
-      "2PA_M": {
+      "2PA_MA": {
     titre: "MARDI DE LA DEUXIÈME SEMAINE",
     antienne_ouverture: [{class:"indent1all", texte: `Soyons dans la joie, exultons, et rendons gloire à Dieu !
         Il règne, le Seigneur notre Dieu, le Souverain de l’univers, alléluia.`}],
@@ -6112,7 +6112,7 @@ pour les siècles des siècles, alléluia, alléluia.`}
     ],
   },
   
-      "6PA_M": {
+      "6PA_MA": {
     titre: "MARDI DE LA SIXIÈME SEMAINE",
     antienne_ouverture: [{class:"indent1all", texte: ``},
         {class:"indent1all", texte: ``}],
@@ -6400,7 +6400,7 @@ Dieu, pour les siècles des siècles.`},
     ],
   },
 
-        "7PA_M": {
+        "7PA_MA": {
     titre: "MARDI DE LA SEPTIÈME SEMAINE",
     antienne_ouverture: [{class:"indent1all", texte: `Je suis le Premier et le Dernier, je suis le Vivant, dit le Seigneur,
         j’étais mort, et me voilà vivant pour les siècles, alléluia.`}],
@@ -10664,7 +10664,21 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
-//Ste Faustine ?
+
+  "STE_FAU_KOW": {
+    titre: "SAINTE FAUSTINE KOWALSKA, vierge",
+    collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
+        tu as confié à sainte Faustine`},
+        {class:"indentallp", texte:`la mission de faire connaître les immenses richesses
+        de ta miséricorde infinie ; <span style="color: #b30000;">*</span>`},
+        {class:"indent1all", texte:`par son intercession, accorde nous de mettre, à son exemple,
+        toute notre confiance en ta bonté <span style="color: #b30000;">/</span>
+        et de pratiquer généreusement une charité active`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
+        Dieu, pour les siècles des siècles.`},
+    ],},
+
   "ST_BRU": {
     titre: "SAINT BRUNO, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
@@ -10739,7 +10753,22 @@ que tu préparais à la face des peuples.`}],
         qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
         Dieu, pour les siècles des siècles.`},
     ],},
-//Jean XXIII ?
+
+    "ST_JEA_XXIII": {
+    titre: "SAINT JEAN XXIII, pape",
+    collecte: [{class:"grandelettrine", texte:`Dieu éternel et tout-puissant, <span style="color: #b30000;">+</span> 
+        dans le pape saint Jean XXIII`},
+        {class:"indent1all", texte:`tu as fait resplendir à travers le monde entier
+        l'image vivante du Christ, le bon pasteur ; <span style="color: #b30000;">*</span>`},
+        {class:"", texte:`nous t'en prions :`},
+        {class:"indent1all", texte:`accorde-nous, à son intercession,
+        de pouvoir répandre avec joie <span style="color: #b30000;">/</span> 
+        l'abondance de la charité chrétienne.`},
+        {class:"indent1all", texte:`Par Jésus Christ, ton Fils, notre Seigneur, <span style="color: #b30000;">+</span>
+        qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
+        Dieu, pour les siècles des siècles.`},
+    ],},
+
     "ST_CAL": {
     titre: "SAINT CALLISTE Ier, pape et martyr",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
@@ -10938,8 +10967,21 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte:`Par le Christ, notre Seigneur.`},
     ],
   },
-//St JPII ?
-  "ST_JEA_CAP": {
+
+  "ST_JEA_PII": {
+    titre: "SAINT JEAN PAUL II, pape",
+    collecte: [{class:"grandelettrine", texte:`Dieu, riche en miséricorde, <span style="color: #b30000;">+</span> 
+        tu as appelé le pape saint Jean-Paul II`},
+        {class:"indentallp", texte:`à guider ton Église répandue dans le monde entier ; <span style="color: #b30000;">*</span>`},
+        {class:"indent1all", texte:`accorde-nous, forts de son enseignement,
+        d'ouvrir nos coeurs avec confiance
+        à la grâce du salut apporté par le Christ, <span style="color: #b30000;">/</span> 
+        unique Rédempteur de l'homme.`},
+        {class:"indent1all", texte:`Lui qui vit et règne avec toi dans l’unité du Saint-Esprit, <span style="color: #b30000;">/</span>
+        Dieu, pour les siècles des siècles.`},
+    ],},
+
+    "ST_JEA_CAP": {
     titre: "SAINT JEAN DE CAPISTRAN, prêtre",
     collecte: [{class:"grandelettrine", texte:`Seigneur Dieu, <span style="color: #b30000;">+</span> 
         tu as suscité saint Jean de Capistran`},
@@ -12416,7 +12458,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `Cieux, distillez d'en haut votre rosée,
         que descende le juste, comme une pluie,
         que la terre s'ouvre, et que germe le Sauveur.`},
-        {class:"indent1all", texte: `Ou bien`},
+        {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `L’Ange dit à Marie :`},
         {class:"indent1all", texte: `« Tu as trouvé grâce auprès de Dieu.
         Voici que tu vas concevoir et enfanter un fils,
@@ -12471,7 +12513,7 @@ que tu préparais à la face des peuples.`}],
         {class:"indent1all", texte: `La jeune fille a enfanté le Roi dont le nom est éternel ;
         connaissant la joie d'être mère, elle garde l'honneur d'être vierge ;
         femme à nulle autre pareille, elle restera sans égale.`},
-        {class:"indent1all", texte: `Ou bien`},
+        {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Vierge Marie, Mère de Dieu,`},
         {class:"indent1all", texte: `celui que l'univers entier ne peut contenir,
         tu l'as reçu dans tes entrailles quand il s'est fait homme.`}],
@@ -12604,7 +12646,7 @@ que tu préparais à la face des peuples.`}],
         mais le Seigneur chaque fois le délivre.`},
         {class:"indent1all", texte: `Il veille sur chacun de ses os :
         pas un ne sera brisé.`},
-        {class:"indent1all", texte: `Ou bien`},
+        {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Ils viennent de la grande épreuve ;
         ils ont lavé leurs robes dans le sang de l'Agneau.`},
         {class:"indent1all", texte: `Ils ont livré leur corps au supplice pour Dieu
@@ -12651,7 +12693,7 @@ que tu préparais à la face des peuples.`}],
     antienne_ouverture: [
         {class:"indent1all", texte: `Le Seigneur est le salut pour les justes,
         leur abri au temps de la détresse.`},
-        {class:"indent1all", texte: `Ou bien`},
+        {class:"rubrique", texte: `Ou bien`},
         {class:"indent1all", texte: `Comme l'or au creuset, le Seigneur a éprouvé ses élus ;
         comme une offrande parfaite, il les accueille.`},
         {class:"indent1all", texte: `Au temps de sa visite, ils resplendiront,
